@@ -17,7 +17,6 @@ write_doc('01_OVERALL_SYSTEM_ARCHITECTURE.md', """# BHARAT 3D: Overall System Ar
 
 **Project Name:** BHARAT 3D  
 **Tagline:** 2D-to-3D Spatial Property & Infrastructure Registry  
-**Smart India Hackathon Problem Statement ID:** #26011  
 **Category:** Government Geospatial Intelligence / Cadastral Modernization  
 
 ---

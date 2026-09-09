@@ -7,7 +7,7 @@
 
 ## 1. Executive Summary & Interaction Model Overhaul
 
-To align with national digital cadastre directives and provide a realistic digital twin experience for the Smart India Hackathon (SIH), the spatial interface is strictly decoupled into two distinct viewports:
+To align with national digital cadastre directives and provide a realistic digital twin experience for national 3D geospatial registries, the spatial interface is strictly decoupled into two distinct viewports:
 
 `	ext
 +-------------------------------------------------------------+

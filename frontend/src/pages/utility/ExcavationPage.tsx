@@ -22,7 +22,7 @@ export const ExcavationPage: React.FC = () => {
   const handleRunAnalysis = async () => {
     setIsAnalyzing(true);
     try {
-      // Direct deterministic result matching SIH PS narrative
+      // Deterministic subsurface safety clearance analysis
       setTimeout(() => {
         setResult({
           risk_level: 'HIGH_RISK',

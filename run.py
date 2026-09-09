@@ -5,8 +5,8 @@ import time
 
 def run():
     print("==========================================================")
-    print(" 🇮🇳  BHARAT 3D: 2D-to-3D Spatial Property Registry")
-    print("     Smart India Hackathon Prototype (Problem #26011)")
+    print("     BHARAT 3D: 2D-to-3D Spatial Property Registry")
+    print("     Enterprise National Cadastre Platform")
     print("==========================================================")
 
     # 1. Check/Seed Database

@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center space-x-2">
             <h1 className="text-base font-bold tracking-tight text-white">BHARAT 3D</h1>
-            <span className="text-[10px] bg-navy-800 text-slate-300 font-mono px-1.5 py-0.5 rounded border border-navy-700">v1.0-SIH</span>
+            <span className="text-[10px] bg-navy-800 text-slate-300 font-mono px-1.5 py-0.5 rounded border border-navy-700">v1.0-PROD</span>
           </div>
           <p className="text-[11px] text-slate-400 font-medium">2D-to-3D Spatial Property & Infrastructure Registry</p>
         </div>

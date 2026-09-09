@@ -1,8 +1,7 @@
-# BHARAT 3D — Master Hackathon Jury Demonstration Script & Execution Guide
+# BHARAT 3D — Master Demonstration Script & Execution Guide
 
 **Project Name:** BHARAT 3D  
 **Tagline:** 2D-First Spatial Property & Subterranean Infrastructure Cadastral Platform  
-**Smart India Hackathon Problem Statement ID:** #26011  
 **Category:** Government Geospatial Intelligence / Cadastral Modernization  
 
 ---

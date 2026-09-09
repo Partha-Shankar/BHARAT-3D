@@ -1,7 +1,6 @@
-@echo off
 echo ==========================================================
 echo  BHARAT 3D - 2D-to-3D Spatial Property Registry
-echo  Smart India Hackathon Prototype (Problem #26011)
+echo  Enterprise National Cadastre Platform
 echo ==========================================================
 
 echo [1/3] Generating datasets & seeding database...

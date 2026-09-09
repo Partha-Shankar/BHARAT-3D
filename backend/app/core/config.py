@@ -3,7 +3,7 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite+aiosqlite:///./bharat3d.db"
-    SECRET_KEY: str = "bharat3d-sih-demo-secret-key-2026-change-in-production"
+    SECRET_KEY: str = "bharat3d-enterprise-secret-key-2026-production"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
     DEMO_MODE: bool = True

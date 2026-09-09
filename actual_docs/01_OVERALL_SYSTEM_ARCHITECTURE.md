@@ -2,7 +2,6 @@
 
 **Project Name:** BHARAT 3D  
 **Tagline:** 2D-to-3D Spatial Property & Infrastructure Registry  
-**Smart India Hackathon Problem Statement ID:** #26011  
 **Category:** Government Geospatial Intelligence / Cadastral Modernization  
 
 ---
