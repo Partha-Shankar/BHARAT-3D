@@ -16,7 +16,8 @@ def create_tables(conn):
         role TEXT NOT NULL
     );
 
-    CREATE TABLE IF NOT EXISTS projects (
+    DROP TABLE IF EXISTS projects;
+    CREATE TABLE projects (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
         status TEXT NOT NULL,

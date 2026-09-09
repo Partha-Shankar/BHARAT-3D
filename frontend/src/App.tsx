@@ -9,7 +9,9 @@ import UtilityLayout from './components/layout/UtilityLayout';
 import CitizenLayout from './components/layout/CitizenLayout';
 
 // Pages
+import { LandingPage } from './pages/LandingPage';
 import { LoginPage } from './pages/LoginPage';
+
 import { DashboardPage as SurveyorDashboard } from './pages/surveyor/DashboardPage';
 import { ProjectsPage } from './pages/surveyor/ProjectsPage';
 import { AreaSelectionPage } from './pages/surveyor/AreaSelectionPage';
@@ -17,6 +19,8 @@ import { DataUploadPage } from './pages/surveyor/DataUploadPage';
 import { ProcessingPage } from './pages/surveyor/ProcessingPage';
 import { MapPage } from './pages/surveyor/MapPage';
 import { EditorPage } from './pages/surveyor/EditorPage';
+import { Viewer3DPage } from './pages/surveyor/Viewer3DPage';
+import { Full3DWorldPage } from './pages/surveyor/Full3DWorldPage';
 import { RegistryPage } from './pages/surveyor/RegistryPage';
 import { ViolationsPage } from './pages/shared/ViolationsPage';
 import { AuditPage } from './pages/shared/AuditPage';
@@ -31,6 +35,10 @@ export const App: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
 
       <Route element={<ProtectedRoute />}>
+        {/* Full-screen 3D Mini-City Digital Twin routes (No layout chrome/sidebars) */}
+        <Route path="/3d-space/:areaId" element={<Full3DWorldPage />} />
+        <Route path="/3d-space" element={<Full3DWorldPage />} />
+
         {/* Surveyor & Admin Routes */}
         <Route path="/surveyor" element={<SurveyorLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
@@ -40,17 +48,25 @@ export const App: React.FC = () => {
           <Route path="upload" element={<DataUploadPage />} />
           <Route path="processing" element={<ProcessingPage />} />
           <Route path="map" element={<MapPage />} />
+          <Route path="3d-viewer" element={<Full3DWorldPage />} />
+          <Route path="3d-space/:areaId" element={<Full3DWorldPage />} />
+          <Route path="3d-space" element={<Full3DWorldPage />} />
           <Route path="editor" element={<EditorPage />} />
           <Route path="registry" element={<RegistryPage />} />
           <Route path="violations" element={<ViolationsPage />} />
           <Route path="audit" element={<AuditPage />} />
         </Route>
 
+        {/* Global 3D Viewer Route */}
+        <Route path="/3d-viewer" element={<Full3DWorldPage />} />
+
         {/* Municipality Routes */}
         <Route path="/municipality" element={<MunicipalityLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<MunicipalDashboard />} />
           <Route path="map" element={<MapPage />} />
+          <Route path="3d-viewer" element={<Full3DWorldPage />} />
+          <Route path="3d-space" element={<Full3DWorldPage />} />
           <Route path="properties" element={<RegistryPage />} />
           <Route path="violations" element={<ViolationsPage />} />
           <Route path="compliance" element={<ViolationsPage />} />
@@ -64,6 +80,8 @@ export const App: React.FC = () => {
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<ExcavationPage />} />
           <Route path="map" element={<MapPage />} />
+          <Route path="3d-viewer" element={<Full3DWorldPage />} />
+          <Route path="3d-space" element={<Full3DWorldPage />} />
           <Route path="excavation" element={<ExcavationPage />} />
           <Route path="assets" element={<MapPage />} />
         </Route>
@@ -72,14 +90,18 @@ export const App: React.FC = () => {
         <Route path="/citizen" element={<CitizenLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<CitizenDashboard />} />
+          <Route path="3d-viewer" element={<Full3DWorldPage />} />
+          <Route path="3d-space" element={<Full3DWorldPage />} />
           <Route path="tax" element={<CitizenDashboard />} />
           <Route path="documents" element={<CitizenDashboard />} />
         </Route>
       </Route>
 
-      <Route path="/" element={<Navigate to="/login" replace />} />
-      <Route path="*" element={<Navigate to="/login" replace />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/welcome" element={<LandingPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+
   );
 };
 

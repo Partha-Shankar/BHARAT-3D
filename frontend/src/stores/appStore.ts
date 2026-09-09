@@ -22,7 +22,18 @@ interface AppState {
   setEditorActive: (active: boolean) => void;
   activeDatasetVersion: number;
   setActiveDatasetVersion: (version: number) => void;
+  customSurveyPolygon: any | null;
+  setCustomSurveyPolygon: (polygon: any | null) => void;
 }
+
+const getInitialPolygon = () => {
+  try {
+    const saved = localStorage.getItem('bharat3d_custom_polygon');
+    return saved ? JSON.parse(saved) : null;
+  } catch (e) {
+    return null;
+  }
+};
 
 export const useAppStore = create<AppState>((set) => ({
   activeProject: null,
@@ -43,4 +54,16 @@ export const useAppStore = create<AppState>((set) => ({
   setEditorActive: (active) => set({ editorActive: active }),
   activeDatasetVersion: 1,
   setActiveDatasetVersion: (version) => set({ activeDatasetVersion: version }),
+  customSurveyPolygon: getInitialPolygon(),
+  setCustomSurveyPolygon: (polygon) => {
+    try {
+      if (polygon) {
+        localStorage.setItem('bharat3d_custom_polygon', JSON.stringify(polygon));
+      } else {
+        localStorage.removeItem('bharat3d_custom_polygon');
+      }
+    } catch (e) {}
+    set({ customSurveyPolygon: polygon });
+  },
 }));
+

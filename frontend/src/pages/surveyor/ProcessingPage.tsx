@@ -195,7 +195,7 @@ export const ProcessingPage: React.FC = () => {
                 onClick={() => navigate(`/surveyor/map?project_id=${projectId}&area_id=${areaId}`)}
                 className="shadow-lg font-bold"
               >
-                <span>View 3D Cadastral Map</span>
+                <span>View 2D Cadastral Map (3D Spaces Highlighted)</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
 

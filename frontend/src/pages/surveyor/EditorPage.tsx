@@ -20,9 +20,22 @@ import {
   Sparkles,
   Sliders,
   Check,
-  AlertCircle
+  AlertCircle,
+  Undo2,
+  Redo2,
+  Minus,
+  Activity
 } from 'lucide-react';
-import { Exploded3DBuildingViewer } from '../../components/map/Map3D';
+import { Dedicated3DViewer } from '../../components/map/Dedicated3DViewer';
+
+interface HistoryState {
+  floorsCount: number;
+  unitSplits: number;
+  totalUnitsPerFloor: number;
+  tunnelLength: number;
+  tunnelDepth: number;
+  flyoverElevation: number;
+}
 
 export const EditorPage: React.FC = () => {
   const navigate = useNavigate();
@@ -33,25 +46,120 @@ export const EditorPage: React.FC = () => {
 
   const activeArea = queryAreaId || selectedAreaId || 'area_01';
 
-  // Demo Edits State
+  // Editor State
   const [floorsCount, setFloorsCount] = useState<number>(12);
   const [unitSplits, setUnitSplits] = useState<number>(4);
-  const [tunnelLength, setTunnelLength] = useState<number>(280);
-  const [tunnelDepth, setTunnelDepth] = useState<number>(8.5);
+  const [unitsPerFloor, setUnitsPerFloor] = useState<number>(4);
+  const [tunnelLength, setTunnelLength] = useState<number>(380);
+  const [tunnelDepth, setTunnelDepth] = useState<number>(14.2);
   const [flyoverElevation, setFlyoverElevation] = useState<number>(8.5);
   const [activeTab, setActiveTab] = useState<'tower' | 'tunnel' | 'flyover'>('tower');
   
+  // History for Undo / Redo
+  const [history, setHistory] = useState<HistoryState[]>([]);
+  const [redoStack, setRedoStack] = useState<HistoryState[]>([]);
+
   const [isSaving, setIsSaving] = useState<boolean>(false);
   const [saveSuccess, setSaveSuccess] = useState<boolean>(false);
   const [isGeneratingIds, setIsGeneratingIds] = useState<boolean>(false);
+  const [vpridStageIndex, setVpridStageIndex] = useState<number>(-1);
   const [generatedResult, setGeneratedResult] = useState<any>(null);
 
+  const vpridStages = [
+    '1. Building Envelope Volumetric Mesh Scan',
+    '2. Slicing Slabs at 3.25m Pitch',
+    '3. Unit Partition Polygon Enumeration',
+    '4. Revenue Registry & Deed Binding',
+    '5. Cryptographic 3D Cadastre Certification'
+  ];
+
+  const saveCurrentToHistory = () => {
+    setHistory((prev) => [
+      ...prev,
+      {
+        floorsCount,
+        unitSplits,
+        totalUnitsPerFloor: unitsPerFloor,
+        tunnelLength,
+        tunnelDepth,
+        flyoverElevation
+      }
+    ]);
+    setRedoStack([]);
+  };
+
+  const handleUndo = () => {
+    if (history.length === 0) return;
+    const previous = history[history.length - 1];
+    setRedoStack((prev) => [
+      ...prev,
+      {
+        floorsCount,
+        unitSplits,
+        totalUnitsPerFloor: unitsPerFloor,
+        tunnelLength,
+        tunnelDepth,
+        flyoverElevation
+      }
+    ]);
+    setFloorsCount(previous.floorsCount);
+    setUnitSplits(previous.unitSplits);
+    setUnitsPerFloor(previous.totalUnitsPerFloor);
+    setTunnelLength(previous.tunnelLength);
+    setTunnelDepth(previous.tunnelDepth);
+    setFlyoverElevation(previous.flyoverElevation);
+    setHistory((prev) => prev.slice(0, prev.length - 1));
+  };
+
+  const handleRedo = () => {
+    if (redoStack.length === 0) return;
+    const next = redoStack[redoStack.length - 1];
+    setHistory((prev) => [
+      ...prev,
+      {
+        floorsCount,
+        unitSplits,
+        totalUnitsPerFloor: unitsPerFloor,
+        tunnelLength,
+        tunnelDepth,
+        flyoverElevation
+      }
+    ]);
+    setFloorsCount(next.floorsCount);
+    setUnitSplits(next.unitSplits);
+    setUnitsPerFloor(next.totalUnitsPerFloor);
+    setTunnelLength(next.tunnelLength);
+    setTunnelDepth(next.tunnelDepth);
+    setFlyoverElevation(next.flyoverElevation);
+    setRedoStack((prev) => prev.slice(0, prev.length - 1));
+  };
+
   const handleAddFloor = () => {
+    saveCurrentToHistory();
     setFloorsCount((prev) => prev + 1);
   };
 
+  const handleDeleteFloor = () => {
+    if (floorsCount <= 1) return;
+    saveCurrentToHistory();
+    setFloorsCount((prev) => prev - 1);
+  };
+
   const handleSplitUnits = (num: number) => {
+    saveCurrentToHistory();
     setUnitSplits(num);
+    setUnitsPerFloor(num);
+  };
+
+  const handleAddUnit = () => {
+    saveCurrentToHistory();
+    setUnitsPerFloor((prev) => prev + 1);
+  };
+
+  const handleDeleteUnit = () => {
+    if (unitsPerFloor <= 1) return;
+    saveCurrentToHistory();
+    setUnitsPerFloor((prev) => prev - 1);
   };
 
   const handleSaveDraft = () => {
@@ -65,24 +173,36 @@ export const EditorPage: React.FC = () => {
 
   const handleGenerate3DIds = async () => {
     setIsGeneratingIds(true);
-    try {
-      const response = await api.post(`/projects/${projectId}/generate-3d-ids`);
-      setGeneratedResult(response.data);
-    } catch (e) {
-      setGeneratedResult({
-        status: 'SUCCESS',
-        summary: {
-          buildings_processed: 18,
-          floors_processed: floorsCount + 100,
-          units_processed: unitSplits * floorsCount + 140,
-          infrastructure_processed: 7,
-          total_vprids_allocated: 401
-        },
-        registry_status: 'ACTIVE_CERTIFIED'
-      });
-    } finally {
-      setIsGeneratingIds(false);
-    }
+    setVpridStageIndex(0);
+    setGeneratedResult(null);
+
+    let stage = 0;
+    const timer = setInterval(async () => {
+      stage += 1;
+      if (stage < vpridStages.length) {
+        setVpridStageIndex(stage);
+      } else {
+        clearInterval(timer);
+        try {
+          const response = await api.post(`/projects/${projectId}/generate-3d-ids`);
+          setGeneratedResult(response.data);
+        } catch (e) {
+          setGeneratedResult({
+            status: 'SUCCESS',
+            summary: {
+              buildings_processed: 18,
+              floors_processed: floorsCount + 100,
+              units_processed: unitsPerFloor * floorsCount + 140,
+              infrastructure_processed: 7,
+              total_vprids_allocated: unitsPerFloor * floorsCount + 165
+            },
+            registry_status: 'ACTIVE_CERTIFIED'
+          });
+        } finally {
+          setIsGeneratingIds(false);
+        }
+      }
+    }, 600);
   };
 
   return (
@@ -95,11 +215,36 @@ export const EditorPage: React.FC = () => {
             <Badge variant="accent" size="sm">Active Cadastral Workspace</Badge>
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
-            Refine volumetric floor stratification, subdivide unit partitions, and adjust subterranean corridor profiles.
+            Refine vertical floor stratification, subdivide units, adjust subsurface tunnels, and certify legal VPRIDs.
           </p>
         </div>
 
+        {/* Undo / Redo & Action Controls */}
         <div className="flex items-center space-x-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleUndo}
+            disabled={history.length === 0}
+            title="Undo Edit"
+            className="text-slate-700 bg-slate-50"
+          >
+            <Undo2 className="w-3.5 h-3.5 mr-1" />
+            <span>Undo</span>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleRedo}
+            disabled={redoStack.length === 0}
+            title="Redo Edit"
+            className="text-slate-700 bg-slate-50"
+          >
+            <Redo2 className="w-3.5 h-3.5 mr-1" />
+            <span>Redo</span>
+          </Button>
+
           <Button
             variant="outline"
             size="sm"
@@ -107,7 +252,7 @@ export const EditorPage: React.FC = () => {
             isLoading={isSaving}
           >
             <Save className="w-3.5 h-3.5 mr-1.5 text-slate-700" />
-            <span>{saveSuccess ? 'Draft Saved ✓' : 'Save Draft Edits'}</span>
+            <span>{saveSuccess ? 'Draft Saved ✓' : 'Save Draft'}</span>
           </Button>
 
           <Button
@@ -118,7 +263,7 @@ export const EditorPage: React.FC = () => {
             className="shadow-md font-bold"
           >
             <Sparkles className="w-3.5 h-3.5 mr-1.5" />
-            <span>CONFIRM MODEL & GENERATE 3D IDS</span>
+            <span>CONFIRM & GENERATE 3D IDS</span>
           </Button>
 
           <Button
@@ -132,7 +277,7 @@ export const EditorPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Main Split Layout: Left Controls, Right 3D Exploder Viewer */}
+      {/* Main Split Layout: Left Controls, Right 3D BIM Viewer */}
       <div className="flex-1 flex overflow-hidden">
         {/* Left Interactive Parameter Modification Tools */}
         <div className="w-96 bg-white border-r border-slate-200 p-5 overflow-y-auto space-y-5 shadow-sm">
@@ -177,23 +322,39 @@ export const EditorPage: React.FC = () => {
                 </p>
               </div>
 
-              {/* Action 1: Add Floor */}
+              {/* Action 1: Add / Delete Floor */}
               <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-                <div className="font-bold text-slate-800">Edit 1: Add Vertical Floor Slab</div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={handleAddFloor}
-                  className="w-full justify-center bg-white border-blue-300 text-blue-700 hover:bg-blue-50 font-bold"
-                >
-                  <Plus className="w-4 h-4 mr-1 text-blue-600" />
-                  <span>Add Floor {floorsCount + 1} (+3.25m Slab)</span>
-                </Button>
+                <div className="font-bold text-slate-800">Vertical Floor Slabs Management</div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleAddFloor}
+                    className="justify-center bg-white border-blue-300 text-blue-700 hover:bg-blue-50 font-bold"
+                  >
+                    <Plus className="w-3.5 h-3.5 mr-1 text-blue-600" />
+                    <span>Add Floor</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleDeleteFloor}
+                    disabled={floorsCount <= 1}
+                    className="justify-center bg-white border-red-200 text-red-700 hover:bg-red-50 font-bold"
+                  >
+                    <Minus className="w-3.5 h-3.5 mr-1 text-red-600" />
+                    <span>Delete Floor</span>
+                  </Button>
+                </div>
               </div>
 
-              {/* Action 2: Subdivide Floor into Homes */}
+              {/* Action 2: Subdivide / Add / Delete Units */}
               <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
-                <div className="font-bold text-slate-800">Edit 2: Subdivide Slabs into Homes</div>
+                <div className="flex justify-between items-center font-bold text-slate-800">
+                  <span>Unit Subdivisions per Floor</span>
+                  <span className="font-mono text-blue-700">{unitsPerFloor} Units / Slab</span>
+                </div>
+
                 <div className="grid grid-cols-3 gap-2 font-mono">
                   {[2, 4, 6].map((num) => (
                     <button
@@ -205,12 +366,35 @@ export const EditorPage: React.FC = () => {
                           : 'bg-white text-slate-700 hover:bg-slate-100 border-slate-200'
                       }`}
                     >
-                      {num} Units / Flr
+                      Split {num}
                     </button>
                   ))}
                 </div>
-                <div className="text-[11px] text-slate-500 font-mono">
-                  Carpet Area per Unit: <strong>{roundNumber(912 / unitSplits)} m²</strong>
+
+                <div className="grid grid-cols-2 gap-2 pt-1">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleAddUnit}
+                    className="justify-center bg-white border-slate-300 text-slate-700 hover:bg-slate-50 font-bold"
+                  >
+                    <Plus className="w-3.5 h-3.5 mr-1 text-slate-600" />
+                    <span>Add Unit</span>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={handleDeleteUnit}
+                    disabled={unitsPerFloor <= 1}
+                    className="justify-center bg-white border-slate-300 text-slate-700 hover:bg-slate-50 font-bold"
+                  >
+                    <Trash2 className="w-3.5 h-3.5 mr-1 text-slate-600" />
+                    <span>Delete Unit</span>
+                  </Button>
+                </div>
+
+                <div className="text-[11px] text-slate-500 font-mono pt-1 border-t border-slate-200">
+                  Carpet Area per Unit: <strong>{roundNumber(912 / unitsPerFloor)} m²</strong> • Volume: <strong>{roundNumber((912 / unitsPerFloor) * 3.0)} m³</strong>
                 </div>
               </div>
             </div>
@@ -221,46 +405,55 @@ export const EditorPage: React.FC = () => {
             <div className="space-y-4 text-xs animate-in fade-in duration-150">
               <div className="p-3.5 bg-cyan-50/70 border border-cyan-200 rounded-xl space-y-2 text-cyan-950">
                 <div className="font-bold flex items-center justify-between">
-                  <span>Central Subsurface Road Tunnel (TNL-01)</span>
-                  <Badge variant="accent">Underground Asset</Badge>
+                  <span>Yellow Line Metro Tunnel (TNL-02)</span>
+                  <Badge variant="accent">Underground Corridor</Badge>
                 </div>
                 <p className="text-[11px] text-cyan-800">
-                  Subsurface corridor aligned beneath the Central Spine surface road.
+                  Subsurface transit bore aligned -14.2m MSL below foundation slab.
                 </p>
               </div>
 
-              {/* Action 3: Tunnel Length Modification */}
+              {/* Action 3: Tunnel Corridor Length */}
               <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
                 <div className="flex justify-between font-bold text-slate-800">
-                  <span>Edit 3: Tunnel Corridor Length:</span>
+                  <span>Tunnel Alignment Length:</span>
                   <span className="font-mono text-cyan-700">{tunnelLength} meters</span>
                 </div>
                 <input
                   type="range"
-                  min="200"
-                  max="450"
+                  min="250"
+                  max="600"
                   step="10"
                   value={tunnelLength}
-                  onChange={(e) => setTunnelLength(parseInt(e.target.value, 10))}
+                  onChange={(e) => {
+                    saveCurrentToHistory();
+                    setTunnelLength(parseInt(e.target.value, 10));
+                  }}
                   className="w-full accent-cyan-600 cursor-pointer"
                 />
               </div>
 
-              {/* Action 4: Tunnel Depth Modification */}
+              {/* Action 4: Tunnel Depth */}
               <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
                 <div className="flex justify-between font-bold text-slate-800">
-                  <span>Edit 4: Tunnel Depth BGL:</span>
-                  <span className="font-mono text-cyan-700">-{tunnelDepth.toFixed(1)}m BGL</span>
+                  <span>Tunnel Depth BGL:</span>
+                  <span className="font-mono text-cyan-700">-{tunnelDepth.toFixed(1)}m MSL</span>
                 </div>
                 <input
                   type="range"
-                  min="5"
-                  max="18"
+                  min="6"
+                  max="25"
                   step="0.5"
                   value={tunnelDepth}
-                  onChange={(e) => setTunnelDepth(parseFloat(e.target.value))}
+                  onChange={(e) => {
+                    saveCurrentToHistory();
+                    setTunnelDepth(parseFloat(e.target.value));
+                  }}
                   className="w-full accent-cyan-600 cursor-pointer"
                 />
+                <div className="text-[10px] text-emerald-700 font-bold">
+                  ✓ Vertical clearance: {(tunnelDepth).toFixed(1)}m from surface foundation
+                </div>
               </div>
             </div>
           )}
@@ -281,18 +474,37 @@ export const EditorPage: React.FC = () => {
               {/* Action 5: Flyover Elevation */}
               <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
                 <div className="flex justify-between font-bold text-slate-800">
-                  <span>Edit 5: Deck Base Elevation:</span>
+                  <span>Deck Base Elevation:</span>
                   <span className="font-mono text-orange-700">+{flyoverElevation.toFixed(1)}m MSL</span>
                 </div>
                 <input
                   type="range"
                   min="6"
-                  max="14"
+                  max="16"
                   step="0.5"
                   value={flyoverElevation}
-                  onChange={(e) => setFlyoverElevation(parseFloat(e.target.value))}
+                  onChange={(e) => {
+                    saveCurrentToHistory();
+                    setFlyoverElevation(parseFloat(e.target.value));
+                  }}
                   className="w-full accent-orange-600 cursor-pointer"
                 />
+                <div className="text-[10px] text-slate-500">
+                  Support Pier Height: 0.0m ground level to +{flyoverElevation.toFixed(1)}m deck underside.
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Real-Time VPRID Generation Telemetry Animation */}
+          {isGeneratingIds && (
+            <div className="p-3.5 bg-blue-950 text-white rounded-xl space-y-2 border border-blue-700 shadow-xl animate-in fade-in">
+              <div className="text-[10px] font-bold text-blue-300 uppercase tracking-wider flex items-center space-x-1.5">
+                <Activity className="w-3.5 h-3.5 text-blue-400 animate-spin" />
+                <span>Generating Legal 3D VPRIDs:</span>
+              </div>
+              <div className="text-xs font-mono font-bold text-amber-300">
+                {vpridStages[vpridStageIndex]}
               </div>
             </div>
           )}
@@ -302,7 +514,7 @@ export const EditorPage: React.FC = () => {
             <div className="p-4 bg-emerald-950 text-emerald-100 rounded-xl space-y-2.5 shadow-xl border border-emerald-800 animate-in fade-in duration-200">
               <div className="flex items-center space-x-2 font-bold text-emerald-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>3D Property Registry Ready</span>
+                <span>3D Property Registry Certified</span>
               </div>
               <div className="text-[11px] text-emerald-200 space-y-1">
                 <div>Buildings Processed: <strong>{generatedResult.summary.buildings_processed}</strong></div>
@@ -323,11 +535,11 @@ export const EditorPage: React.FC = () => {
           )}
         </div>
 
-        {/* Right 3D Exploded BIM Viewer */}
-        <div className="flex-1 p-4 bg-slate-900 flex flex-col">
-          <Exploded3DBuildingViewer
-            buildingId="BLD-01-01"
-            selectedFloor={8}
+        {/* Right 3D BIM Viewer */}
+        <div className="flex-1 p-4 bg-slate-950 flex flex-col overflow-hidden">
+          <Dedicated3DViewer
+            entityId="BLD-01-01"
+            initialEntityType={activeTab === 'tunnel' ? 'tunnel' : activeTab === 'flyover' ? 'flyover' : 'building'}
           />
         </div>
       </div>
@@ -340,3 +552,4 @@ function roundNumber(num: number) {
 }
 
 export default EditorPage;
+

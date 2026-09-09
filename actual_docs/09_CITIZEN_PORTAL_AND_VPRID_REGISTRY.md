@@ -1,30 +1,37 @@
 # BHARAT 3D: Citizen Portal & 3D Property Registry (VPRID)
 
-## 1. Volumetric Property Registry ID (VPRID) Taxonomy
+## 1. Volumetric Property Registry ID (3D ULPIN / VPRID) Taxonomy
 
-Under BHARAT 3D, every individual high-rise unit receives a unique, globally queryable 3D cadastral identifier:
+Under BHARAT 3D and MoHUA Standard B3D-STD-2026-ULPIN-01 / ISO 19152 LADM, property identifiers are deterministically assigned:
 
-$$\text{VPRID} = \text{VPR}-\underbrace{\text{BLD001}}_{\text{Building ID}}-\underbrace{\text{F08}}_{\text{Floor}}-\underbrace{\text{U04}}_{\text{Unit Number}}$$
+\\text{3D ULPIN} = [\\text{ISO}]-[\\text{State}]-[\\text{District}]-[\\text{2D Base ULPIN}]-[\\text{Building}]-[\\text{Floor}]-[\\text{Unit}]-[\\text{Usage}]
 
-Example: `VPR-BLD001-F08-U04` (Flat 804, Floor 8, Aarav Heights Condominium).
-
----
-
-## 2. Citizen Property Card & Digital Deed Inspection
-
-When a citizen searches their ULPIN or VPRID, the portal displays:
-- **True 3D Spatial Geometry**: Exact floor elevation ($Z = 239.0\text{ m}$ to $242.0\text{ m}$ MSL), ceiling height ($3.0\text{ m}$), and 3D volumetric space ($345.6\text{ m}^3$).
-- **Verified Carpet Area**: $115.2\text{ m}^2$ ($1,240\text{ sq.ft}$).
-- **Registered Title Ownership**: Priya Mehta (Owner) / Rohan Gupta (Tenant).
-- **Encumbrance Status**: Clear title, 0 legal disputes, bank mortgage registered with State Bank of India.
-- **Municipal Property Tax**: $₹18,400 / \text{year}$ (Status: Paid).
+Example: IN-DL-01-849201-B01-F08-U804-R (Flat 804, Floor 8, Aarav Heights Condominium).
 
 ---
 
-## 3. Simulated Online Tax Settlement
+## 2. 2D Base ULPIN vs 3D ULPIN Allocation
 
-Citizens can simulate municipal property tax payments with 1 click:
-1. Citizen views outstanding dues.
-2. Selects payment gateway (UPI / NetBanking / Debit Card).
-3. Instant digital settlement updates SQLite/PostGIS database in real-time.
-4. Downloads official **Government 3D Digital Cadastre Ownership Certificate**.
+1. **Vertically Stratified Units (3D ULPIN)**:
+   - High-rise residential apartments (IN-DL-01-849201-B01-F08-U804-R).
+   - Commercial retail showrooms (IN-DL-01-849203-B04-F01-S102-C).
+   - Infrastructure Rights-of-Way (Flyovers INF-FLY-DL01-0004, Metro Tunnels INF-TUN-DL01-0012, Basement Parking INF-BSM-849201-B02).
+
+2. **Unified Freehold Plotted Lands (2D Base ULPIN)**:
+   - Independent residential villas (IN-DL-01-849210-VIL-01): Retain single 2D Base ULPIN from center of earth to sky (*ad coelum*).
+
+3. **Institutional Negative Invariants**:
+   - Hospitals (INF-HSP-DL01-0001): Unified institutional asset (clinical wards do not receive individual subdivided 3D ULPINs).
+
+4. **Unauthorized Vertical Violations**:
+   - Sharma Plaza (IN-DL-01-849205-B07-F05-UNAUTHORIZED): Floors 5 & 6 flagged as unauthorized airspace encroachments.
+
+---
+
+## 3. Citizen Property Card & Digital Deed Inspection
+
+When a citizen searches their ULPIN or VPRID:
+- **True 3D Spatial Geometry**: Exact floor elevation, ceiling height, volume, and carpet area.
+- **Verified Title Ownership & Tenancy**: Owner / Tenant legal status.
+- **Encumbrance Status**: Clear title, bank mortgages, legal notices.
+- **Municipal Property Tax**: Automated tax calculation and 1-click digital settlement with certified 3D Cadastre Ownership Certificate generation.

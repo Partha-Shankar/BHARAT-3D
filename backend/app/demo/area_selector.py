@@ -25,14 +25,12 @@ class DemoAreaSelector:
     """
     @staticmethod
     def select_area_for_job(job_id: Any, project_id: Any = 1, polygon_geojson: Optional[str] = None) -> str:
-        if polygon_geojson:
-            seed_str = f"{project_id}_{polygon_geojson}_{job_id}"
-        else:
-            seed_str = f"{project_id}_{job_id}"
-            
-        hash_val = int(hashlib.md5(seed_str.encode("utf-8")).hexdigest(), 16)
-        area_num = (hash_val % 10) + 1
+        import random
+        import time
+        # Select randomly across the 10 distinct 3D map combinations
+        area_num = random.randint(1, 10)
         return f"area_{area_num:02d}"
+
 
     @staticmethod
     def get_area_dir(area_id: str) -> str:
