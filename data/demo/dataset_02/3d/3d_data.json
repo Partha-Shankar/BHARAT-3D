@@ -1,0 +1,3391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-01",
+        "name": "Metro District Aarav Heights Tower",
+        "entity_type": "building",
+        "height": 39.0,
+        "base_height": 0.0,
+        "color": "#2563EB",
+        "floors": 12,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F01-U01",
+        "vprid": "VPR-BLD0201-F01-U01",
+        "name": "Metro District \u2022 Flat 101",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F01-U02",
+        "vprid": "VPR-BLD0201-F01-U02",
+        "name": "Metro District \u2022 Flat 102",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F01-U03",
+        "vprid": "VPR-BLD0201-F01-U03",
+        "name": "Metro District \u2022 Flat 103",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F01-U04",
+        "vprid": "VPR-BLD0201-F01-U04",
+        "name": "Metro District \u2022 Flat 104",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F02-U01",
+        "vprid": "VPR-BLD0201-F02-U01",
+        "name": "Metro District \u2022 Flat 201",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F02-U02",
+        "vprid": "VPR-BLD0201-F02-U02",
+        "name": "Metro District \u2022 Flat 202",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F02-U03",
+        "vprid": "VPR-BLD0201-F02-U03",
+        "name": "Metro District \u2022 Flat 203",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F02-U04",
+        "vprid": "VPR-BLD0201-F02-U04",
+        "name": "Metro District \u2022 Flat 204",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F03-U01",
+        "vprid": "VPR-BLD0201-F03-U01",
+        "name": "Metro District \u2022 Flat 301",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F03-U02",
+        "vprid": "VPR-BLD0201-F03-U02",
+        "name": "Metro District \u2022 Flat 302",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F03-U03",
+        "vprid": "VPR-BLD0201-F03-U03",
+        "name": "Metro District \u2022 Flat 303",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F03-U04",
+        "vprid": "VPR-BLD0201-F03-U04",
+        "name": "Metro District \u2022 Flat 304",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F04-U01",
+        "vprid": "VPR-BLD0201-F04-U01",
+        "name": "Metro District \u2022 Flat 401",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F04-U02",
+        "vprid": "VPR-BLD0201-F04-U02",
+        "name": "Metro District \u2022 Flat 402",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F04-U03",
+        "vprid": "VPR-BLD0201-F04-U03",
+        "name": "Metro District \u2022 Flat 403",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F04-U04",
+        "vprid": "VPR-BLD0201-F04-U04",
+        "name": "Metro District \u2022 Flat 404",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F05-U01",
+        "vprid": "VPR-BLD0201-F05-U01",
+        "name": "Metro District \u2022 Flat 501",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F05-U02",
+        "vprid": "VPR-BLD0201-F05-U02",
+        "name": "Metro District \u2022 Flat 502",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F05-U03",
+        "vprid": "VPR-BLD0201-F05-U03",
+        "name": "Metro District \u2022 Flat 503",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F05-U04",
+        "vprid": "VPR-BLD0201-F05-U04",
+        "name": "Metro District \u2022 Flat 504",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F06-U01",
+        "vprid": "VPR-BLD0201-F06-U01",
+        "name": "Metro District \u2022 Flat 601",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F06-U02",
+        "vprid": "VPR-BLD0201-F06-U02",
+        "name": "Metro District \u2022 Flat 602",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F06-U03",
+        "vprid": "VPR-BLD0201-F06-U03",
+        "name": "Metro District \u2022 Flat 603",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F06-U04",
+        "vprid": "VPR-BLD0201-F06-U04",
+        "name": "Metro District \u2022 Flat 604",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F07-U01",
+        "vprid": "VPR-BLD0201-F07-U01",
+        "name": "Metro District \u2022 Flat 701",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F07-U02",
+        "vprid": "VPR-BLD0201-F07-U02",
+        "name": "Metro District \u2022 Flat 702",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F07-U03",
+        "vprid": "VPR-BLD0201-F07-U03",
+        "name": "Metro District \u2022 Flat 703",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F07-U04",
+        "vprid": "VPR-BLD0201-F07-U04",
+        "name": "Metro District \u2022 Flat 704",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F08-U01",
+        "vprid": "VPR-BLD0201-F08-U01",
+        "name": "Metro District \u2022 Flat 801",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F08-U02",
+        "vprid": "VPR-BLD0201-F08-U02",
+        "name": "Metro District \u2022 Flat 802",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F08-U03",
+        "vprid": "VPR-BLD0201-F08-U03",
+        "name": "Metro District \u2022 Flat 803",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F08-U04",
+        "vprid": "VPR-BLD0201-F08-U04",
+        "name": "Metro District \u2022 Flat 804",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#F59E0B",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 18400,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F09-U01",
+        "vprid": "VPR-BLD0201-F09-U01",
+        "name": "Metro District \u2022 Flat 901",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F09-U02",
+        "vprid": "VPR-BLD0201-F09-U02",
+        "name": "Metro District \u2022 Flat 902",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F09-U03",
+        "vprid": "VPR-BLD0201-F09-U03",
+        "name": "Metro District \u2022 Flat 903",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F09-U04",
+        "vprid": "VPR-BLD0201-F09-U04",
+        "name": "Metro District \u2022 Flat 904",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F10-U01",
+        "vprid": "VPR-BLD0201-F10-U01",
+        "name": "Metro District \u2022 Flat 1001",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F10-U02",
+        "vprid": "VPR-BLD0201-F10-U02",
+        "name": "Metro District \u2022 Flat 1002",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F10-U03",
+        "vprid": "VPR-BLD0201-F10-U03",
+        "name": "Metro District \u2022 Flat 1003",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F10-U04",
+        "vprid": "VPR-BLD0201-F10-U04",
+        "name": "Metro District \u2022 Flat 1004",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F11-U01",
+        "vprid": "VPR-BLD0201-F11-U01",
+        "name": "Metro District \u2022 Flat 1101",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F11-U02",
+        "vprid": "VPR-BLD0201-F11-U02",
+        "name": "Metro District \u2022 Flat 1102",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F11-U03",
+        "vprid": "VPR-BLD0201-F11-U03",
+        "name": "Metro District \u2022 Flat 1103",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F11-U04",
+        "vprid": "VPR-BLD0201-F11-U04",
+        "name": "Metro District \u2022 Flat 1104",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F12-U01",
+        "vprid": "VPR-BLD0201-F12-U01",
+        "name": "Metro District \u2022 Flat 1201",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F12-U02",
+        "vprid": "VPR-BLD0201-F12-U02",
+        "name": "Metro District \u2022 Flat 1202",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F12-U03",
+        "vprid": "VPR-BLD0201-F12-U03",
+        "name": "Metro District \u2022 Flat 1203",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21763085,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634423
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634531
+            ],
+            [
+              77.21763085,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0201-F12-U04",
+        "vprid": "VPR-BLD0201-F12-U04",
+        "name": "Metro District \u2022 Flat 1204",
+        "entity_type": "unit",
+        "building_id": "BLD-02-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21676951,
+              28.63346
+            ],
+            [
+              77.21707713,
+              28.63346
+            ],
+            [
+              77.21707713,
+              28.63364
+            ],
+            [
+              77.21676951,
+              28.63364
+            ],
+            [
+              77.21676951,
+              28.63346
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-02",
+        "name": "Metro District Residency Block B",
+        "entity_type": "building",
+        "height": 15.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21846143,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.634225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-03",
+        "name": "Metro District Civic Grand Mall & Retail Hub",
+        "entity_type": "mall",
+        "height": 18.5,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21933303,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.634855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-04",
+        "name": "Metro District Central Junction Railway Terminal",
+        "entity_type": "building",
+        "height": 12.0,
+        "base_height": 0.0,
+        "color": "#0D9488",
+        "floors": 2,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21738475,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-05",
+        "name": "Metro District Metro Interchange Station (Elevated +6m)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 6.0,
+        "color": "#7C3AED",
+        "floors": 2,
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21615426,
+              28.633955
+            ],
+            [
+              77.21964066,
+              28.633955
+            ],
+            [
+              77.21964066,
+              28.634081
+            ],
+            [
+              77.21615426,
+              28.634081
+            ],
+            [
+              77.21615426,
+              28.633955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-02-01",
+        "name": "Metro District Elevated Bypass Flyover (Deck: +8.5m)",
+        "entity_type": "flyover",
+        "height": 10.7,
+        "base_height": 8.5,
+        "color": "#EA580C",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21633884,
+              28.634
+            ],
+            [
+              77.21637985,
+              28.634
+            ],
+            [
+              77.21637985,
+              28.634036
+            ],
+            [
+              77.21633884,
+              28.634036
+            ],
+            [
+              77.21633884,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-01",
+        "name": "Metro District Flyover Concrete Pier P-1",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21695408,
+              28.634
+            ],
+            [
+              77.2169951,
+              28.634
+            ],
+            [
+              77.2169951,
+              28.634036
+            ],
+            [
+              77.21695408,
+              28.634036
+            ],
+            [
+              77.21695408,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-02",
+        "name": "Metro District Flyover Concrete Pier P-2",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21756933,
+              28.634
+            ],
+            [
+              77.21761034,
+              28.634
+            ],
+            [
+              77.21761034,
+              28.634036
+            ],
+            [
+              77.21756933,
+              28.634036
+            ],
+            [
+              77.21756933,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-03",
+        "name": "Metro District Flyover Concrete Pier P-3",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21818457,
+              28.634
+            ],
+            [
+              77.21822559,
+              28.634
+            ],
+            [
+              77.21822559,
+              28.634036
+            ],
+            [
+              77.21818457,
+              28.634036
+            ],
+            [
+              77.21818457,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-04",
+        "name": "Metro District Flyover Concrete Pier P-4",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21879982,
+              28.634
+            ],
+            [
+              77.21884084,
+              28.634
+            ],
+            [
+              77.21884084,
+              28.634036
+            ],
+            [
+              77.21879982,
+              28.634036
+            ],
+            [
+              77.21879982,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-05",
+        "name": "Metro District Flyover Concrete Pier P-5",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21941507,
+              28.634
+            ],
+            [
+              77.21945608,
+              28.634
+            ],
+            [
+              77.21945608,
+              28.634036
+            ],
+            [
+              77.21941507,
+              28.634036
+            ],
+            [
+              77.21941507,
+              28.634
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-02-06",
+        "name": "Metro District Flyover Concrete Pier P-6",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21728221,
+              28.633802
+            ],
+            [
+              77.22015336,
+              28.633802
+            ],
+            [
+              77.22015336,
+              28.63391
+            ],
+            [
+              77.21728221,
+              28.63391
+            ],
+            [
+              77.21728221,
+              28.633802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-02-01",
+        "name": "Metro District Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "entity_type": "tunnel",
+        "height": 4.8,
+        "base_height": 0.2,
+        "depth_meters": 8.5,
+        "color": "#0891B2",
+        "usage": "SUBTERRANEAN_ROAD",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21676951,
+              28.635125
+            ],
+            [
+              77.22066607,
+              28.635125
+            ],
+            [
+              77.22066607,
+              28.635215
+            ],
+            [
+              77.21676951,
+              28.635215
+            ],
+            [
+              77.21676951,
+              28.635125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-02-02",
+        "name": "Metro District Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "entity_type": "tunnel",
+        "height": 5.6,
+        "base_height": 0.2,
+        "depth_meters": 14.2,
+        "color": "#06B6D4",
+        "usage": "SUBTERRANEAN_METRO",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21848194,
+              28.634243
+            ],
+            [
+              77.21910744,
+              28.634243
+            ],
+            [
+              77.21910744,
+              28.634612
+            ],
+            [
+              77.21848194,
+              28.634612
+            ],
+            [
+              77.21848194,
+              28.634243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-02-01",
+        "name": "Metro District Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "entity_type": "tunnel",
+        "height": 3.8,
+        "base_height": 0.2,
+        "depth_meters": 6.0,
+        "color": "#0284C7",
+        "usage": "SUBTERRANEAN_PARKING",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21882033,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-07",
+        "name": "Metro District Sharma Plaza (Sanctioned G+4)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 0.0,
+        "color": "#64748B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21882033,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-07-ILLEGAL-FLOORS",
+        "name": "Metro District Sharma Plaza (UNAUTHORIZED Floors 5 & 6)",
+        "entity_type": "violation",
+        "height": 21.2,
+        "base_height": 14.0,
+        "color": "#DC2626",
+        "floors": 2,
+        "usage": "VIOLATION",
+        "violation_code": "VLT-001",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21810254,
+              28.63409
+            ],
+            [
+              77.21818457,
+              28.63409
+            ],
+            [
+              77.21818457,
+              28.634135
+            ],
+            [
+              77.21810254,
+              28.634135
+            ],
+            [
+              77.21810254,
+              28.63409
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "VLT-02-ENC-01",
+        "name": "Metro District Commercial Footpath Encroachment (18.6 m\u00b2)",
+        "entity_type": "violation",
+        "height": 3.5,
+        "base_height": 0.0,
+        "color": "#EF4444",
+        "usage": "VIOLATION",
+        "violation_code": "VLT-003",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21607223,
+              28.633919
+            ],
+            [
+              77.21632858,
+              28.633919
+            ],
+            [
+              77.21632858,
+              28.634126
+            ],
+            [
+              77.21607223,
+              28.634126
+            ],
+            [
+              77.21607223,
+              28.633919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-08",
+        "name": "Metro District Urban Property #8",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21706688,
+              28.634018
+            ],
+            [
+              77.2173745,
+              28.634018
+            ],
+            [
+              77.2173745,
+              28.634252
+            ],
+            [
+              77.21706688,
+              28.634252
+            ],
+            [
+              77.21706688,
+              28.634018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-09",
+        "name": "Metro District Urban Property #9",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 3,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21798975,
+              28.634036
+            ],
+            [
+              77.21827686,
+              28.634036
+            ],
+            [
+              77.21827686,
+              28.634198
+            ],
+            [
+              77.21798975,
+              28.634198
+            ],
+            [
+              77.21798975,
+              28.634036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-10",
+        "name": "Metro District Urban Property #10",
+        "entity_type": "building",
+        "height": 12.8,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 4,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21888185,
+              28.634054
+            ],
+            [
+              77.21916897,
+              28.634054
+            ],
+            [
+              77.21916897,
+              28.634279
+            ],
+            [
+              77.21888185,
+              28.634279
+            ],
+            [
+              77.21888185,
+              28.634054
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-11",
+        "name": "Metro District Urban Property #11",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21617477,
+              28.634648
+            ],
+            [
+              77.21642087,
+              28.634648
+            ],
+            [
+              77.21642087,
+              28.634837
+            ],
+            [
+              77.21617477,
+              28.634837
+            ],
+            [
+              77.21617477,
+              28.634648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-12",
+        "name": "Metro District Urban Property #12",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21701561,
+              28.634666
+            ],
+            [
+              77.21729247,
+              28.634666
+            ],
+            [
+              77.21729247,
+              28.634891
+            ],
+            [
+              77.21701561,
+              28.634891
+            ],
+            [
+              77.21701561,
+              28.634666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-13",
+        "name": "Metro District Urban Property #13",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21803076,
+              28.634729
+            ],
+            [
+              77.21828711,
+              28.634729
+            ],
+            [
+              77.21828711,
+              28.634927
+            ],
+            [
+              77.21803076,
+              28.634927
+            ],
+            [
+              77.21803076,
+              28.634729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-14",
+        "name": "Metro District Urban Property #14",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21892287,
+              28.634639
+            ],
+            [
+              77.21917922,
+              28.634639
+            ],
+            [
+              77.21917922,
+              28.634846
+            ],
+            [
+              77.21892287,
+              28.634846
+            ],
+            [
+              77.21892287,
+              28.634639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-15",
+        "name": "Metro District Urban Property #15",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21607223,
+              28.635521
+            ],
+            [
+              77.21633884,
+              28.635521
+            ],
+            [
+              77.21633884,
+              28.635737
+            ],
+            [
+              77.21607223,
+              28.635737
+            ],
+            [
+              77.21607223,
+              28.635521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-16",
+        "name": "Metro District Urban Property #16",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21715916,
+              28.635485
+            ],
+            [
+              77.21745653,
+              28.635485
+            ],
+            [
+              77.21745653,
+              28.635701
+            ],
+            [
+              77.21715916,
+              28.635701
+            ],
+            [
+              77.21715916,
+              28.635485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-17",
+        "name": "Metro District Urban Property #17",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21790771,
+              28.635503
+            ],
+            [
+              77.2181128,
+              28.635503
+            ],
+            [
+              77.2181128,
+              28.635728
+            ],
+            [
+              77.21790771,
+              28.635728
+            ],
+            [
+              77.21790771,
+              28.635503
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-18",
+        "name": "Metro District Urban Property #18",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21901516,
+              28.635422
+            ],
+            [
+              77.21927151,
+              28.635422
+            ],
+            [
+              77.21927151,
+              28.635656
+            ],
+            [
+              77.21901516,
+              28.635656
+            ],
+            [
+              77.21901516,
+              28.635422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-19",
+        "name": "Metro District Urban Property #19",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

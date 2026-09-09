@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21848194,
+              28.634243
+            ],
+            [
+              77.21910744,
+              28.634243
+            ],
+            [
+              77.21910744,
+              28.634612
+            ],
+            [
+              77.21848194,
+              28.634612
+            ],
+            [
+              77.21848194,
+              28.634243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-02-01",
+        "name": "Metro District Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Metro District Mall Ltd",
+        "parent_building": "BLD-02-03"
+      }
+    }
+  ]
+}

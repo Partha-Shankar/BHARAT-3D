@@ -1,0 +1,1891 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22856987,
+              28.628614
+            ],
+            [
+              77.22910306,
+              28.628614
+            ],
+            [
+              77.22910306,
+              28.628992
+            ],
+            [
+              77.22856987,
+              28.628992
+            ],
+            [
+              77.22856987,
+              28.628614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-001",
+        "ulpin": "IN-06-0001",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-601",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22918509,
+              28.628623
+            ],
+            [
+              77.22971829,
+              28.628623
+            ],
+            [
+              77.22971829,
+              28.629001
+            ],
+            [
+              77.22918509,
+              28.629001
+            ],
+            [
+              77.22918509,
+              28.628623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-002",
+        "ulpin": "IN-06-0002",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-602",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22974905,
+              28.628668
+            ],
+            [
+              77.23028224,
+              28.628668
+            ],
+            [
+              77.23028224,
+              28.629046
+            ],
+            [
+              77.22974905,
+              28.629046
+            ],
+            [
+              77.22974905,
+              28.628668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-003",
+        "ulpin": "IN-06-0003",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-603",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23035402,
+              28.628668
+            ],
+            [
+              77.23088721,
+              28.628668
+            ],
+            [
+              77.23088721,
+              28.629046
+            ],
+            [
+              77.23035402,
+              28.629046
+            ],
+            [
+              77.23035402,
+              28.628668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-004",
+        "ulpin": "IN-06-0004",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-604",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23103076,
+              28.628641
+            ],
+            [
+              77.23156395,
+              28.628641
+            ],
+            [
+              77.23156395,
+              28.629019
+            ],
+            [
+              77.23103076,
+              28.629019
+            ],
+            [
+              77.23103076,
+              28.628641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-005",
+        "ulpin": "IN-06-0005",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-605",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23164598,
+              28.628632
+            ],
+            [
+              77.23217918,
+              28.628632
+            ],
+            [
+              77.23217918,
+              28.62901
+            ],
+            [
+              77.23164598,
+              28.62901
+            ],
+            [
+              77.23164598,
+              28.628632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-006",
+        "ulpin": "IN-06-0006",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-606",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23222019,
+              28.628668
+            ],
+            [
+              77.23275338,
+              28.628668
+            ],
+            [
+              77.23275338,
+              28.629046
+            ],
+            [
+              77.23222019,
+              28.629046
+            ],
+            [
+              77.23222019,
+              28.628668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-007",
+        "ulpin": "IN-06-0007",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-607",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23280465,
+              28.628677
+            ],
+            [
+              77.23333785,
+              28.628677
+            ],
+            [
+              77.23333785,
+              28.629055
+            ],
+            [
+              77.23280465,
+              28.629055
+            ],
+            [
+              77.23280465,
+              28.628677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-008",
+        "ulpin": "IN-06-0008",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-608",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22850835,
+              28.629091
+            ],
+            [
+              77.22904154,
+              28.629091
+            ],
+            [
+              77.22904154,
+              28.629469
+            ],
+            [
+              77.22850835,
+              28.629469
+            ],
+            [
+              77.22850835,
+              28.629091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-009",
+        "ulpin": "IN-06-0009",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-609",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22919535,
+              28.6291
+            ],
+            [
+              77.22972854,
+              28.6291
+            ],
+            [
+              77.22972854,
+              28.629478
+            ],
+            [
+              77.22919535,
+              28.629478
+            ],
+            [
+              77.22919535,
+              28.6291
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-010",
+        "ulpin": "IN-06-0010",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-610",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2297593,
+              28.6291
+            ],
+            [
+              77.23029249,
+              28.6291
+            ],
+            [
+              77.23029249,
+              28.629478
+            ],
+            [
+              77.2297593,
+              28.629478
+            ],
+            [
+              77.2297593,
+              28.6291
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-011",
+        "ulpin": "IN-06-0011",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-611",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23034376,
+              28.629118
+            ],
+            [
+              77.23087696,
+              28.629118
+            ],
+            [
+              77.23087696,
+              28.629496
+            ],
+            [
+              77.23034376,
+              28.629496
+            ],
+            [
+              77.23034376,
+              28.629118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-012",
+        "ulpin": "IN-06-0012",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-612",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23096924,
+              28.629136
+            ],
+            [
+              77.23150243,
+              28.629136
+            ],
+            [
+              77.23150243,
+              28.629514
+            ],
+            [
+              77.23096924,
+              28.629514
+            ],
+            [
+              77.23096924,
+              28.629136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-013",
+        "ulpin": "IN-06-0013",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-613",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23162548,
+              28.629091
+            ],
+            [
+              77.23215867,
+              28.629091
+            ],
+            [
+              77.23215867,
+              28.629469
+            ],
+            [
+              77.23162548,
+              28.629469
+            ],
+            [
+              77.23162548,
+              28.629091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-014",
+        "ulpin": "IN-06-0014",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-614",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23222019,
+              28.629118
+            ],
+            [
+              77.23275338,
+              28.629118
+            ],
+            [
+              77.23275338,
+              28.629496
+            ],
+            [
+              77.23222019,
+              28.629496
+            ],
+            [
+              77.23222019,
+              28.629118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-015",
+        "ulpin": "IN-06-0015",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-615",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23281491,
+              28.629127
+            ],
+            [
+              77.2333481,
+              28.629127
+            ],
+            [
+              77.2333481,
+              28.629505
+            ],
+            [
+              77.23281491,
+              28.629505
+            ],
+            [
+              77.23281491,
+              28.629127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-016",
+        "ulpin": "IN-06-0016",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-616",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22855962,
+              28.629541
+            ],
+            [
+              77.22909281,
+              28.629541
+            ],
+            [
+              77.22909281,
+              28.629919
+            ],
+            [
+              77.22855962,
+              28.629919
+            ],
+            [
+              77.22855962,
+              28.629541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-017",
+        "ulpin": "IN-06-0017",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-617",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22913383,
+              28.629568
+            ],
+            [
+              77.22966702,
+              28.629568
+            ],
+            [
+              77.22966702,
+              28.629946
+            ],
+            [
+              77.22913383,
+              28.629946
+            ],
+            [
+              77.22913383,
+              28.629568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-018",
+        "ulpin": "IN-06-0018",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-618",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22976956,
+              28.629532
+            ],
+            [
+              77.23030275,
+              28.629532
+            ],
+            [
+              77.23030275,
+              28.62991
+            ],
+            [
+              77.22976956,
+              28.62991
+            ],
+            [
+              77.22976956,
+              28.629532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-019",
+        "ulpin": "IN-06-0019",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-619",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23038478,
+              28.629523
+            ],
+            [
+              77.23091797,
+              28.629523
+            ],
+            [
+              77.23091797,
+              28.629901
+            ],
+            [
+              77.23038478,
+              28.629901
+            ],
+            [
+              77.23038478,
+              28.629523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-020",
+        "ulpin": "IN-06-0020",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-620",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23103076,
+              28.629568
+            ],
+            [
+              77.23156395,
+              28.629568
+            ],
+            [
+              77.23156395,
+              28.629946
+            ],
+            [
+              77.23103076,
+              28.629946
+            ],
+            [
+              77.23103076,
+              28.629568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-021",
+        "ulpin": "IN-06-0021",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-621",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23157421,
+              28.629559
+            ],
+            [
+              77.2321074,
+              28.629559
+            ],
+            [
+              77.2321074,
+              28.629937
+            ],
+            [
+              77.23157421,
+              28.629937
+            ],
+            [
+              77.23157421,
+              28.629559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-022",
+        "ulpin": "IN-06-0022",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-622",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23223044,
+              28.62955
+            ],
+            [
+              77.23276364,
+              28.62955
+            ],
+            [
+              77.23276364,
+              28.629928
+            ],
+            [
+              77.23223044,
+              28.629928
+            ],
+            [
+              77.23223044,
+              28.62955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-023",
+        "ulpin": "IN-06-0023",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-623",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23288668,
+              28.629559
+            ],
+            [
+              77.23341987,
+              28.629559
+            ],
+            [
+              77.23341987,
+              28.629937
+            ],
+            [
+              77.23288668,
+              28.629937
+            ],
+            [
+              77.23288668,
+              28.629559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-024",
+        "ulpin": "IN-06-0024",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-624",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22852886,
+              28.629991
+            ],
+            [
+              77.22906205,
+              28.629991
+            ],
+            [
+              77.22906205,
+              28.630369
+            ],
+            [
+              77.22852886,
+              28.630369
+            ],
+            [
+              77.22852886,
+              28.629991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-025",
+        "ulpin": "IN-06-0025",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-625",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22919535,
+              28.630027
+            ],
+            [
+              77.22972854,
+              28.630027
+            ],
+            [
+              77.22972854,
+              28.630405
+            ],
+            [
+              77.22919535,
+              28.630405
+            ],
+            [
+              77.22919535,
+              28.630027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-026",
+        "ulpin": "IN-06-0026",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-626",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22972854,
+              28.630009
+            ],
+            [
+              77.23026173,
+              28.630009
+            ],
+            [
+              77.23026173,
+              28.630387
+            ],
+            [
+              77.22972854,
+              28.630387
+            ],
+            [
+              77.22972854,
+              28.630009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-027",
+        "ulpin": "IN-06-0027",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-627",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23040528,
+              28.629982
+            ],
+            [
+              77.23093848,
+              28.629982
+            ],
+            [
+              77.23093848,
+              28.63036
+            ],
+            [
+              77.23040528,
+              28.63036
+            ],
+            [
+              77.23040528,
+              28.629982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-028",
+        "ulpin": "IN-06-0028",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-628",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23098975,
+              28.630018
+            ],
+            [
+              77.23152294,
+              28.630018
+            ],
+            [
+              77.23152294,
+              28.630396
+            ],
+            [
+              77.23098975,
+              28.630396
+            ],
+            [
+              77.23098975,
+              28.630018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-029",
+        "ulpin": "IN-06-0029",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-629",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23163573,
+              28.629991
+            ],
+            [
+              77.23216892,
+              28.629991
+            ],
+            [
+              77.23216892,
+              28.630369
+            ],
+            [
+              77.23163573,
+              28.630369
+            ],
+            [
+              77.23163573,
+              28.629991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-030",
+        "ulpin": "IN-06-0030",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-630",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23220994,
+              28.630027
+            ],
+            [
+              77.23274313,
+              28.630027
+            ],
+            [
+              77.23274313,
+              28.630405
+            ],
+            [
+              77.23220994,
+              28.630405
+            ],
+            [
+              77.23220994,
+              28.630027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-031",
+        "ulpin": "IN-06-0031",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-631",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23281491,
+              28.629973
+            ],
+            [
+              77.2333481,
+              28.629973
+            ],
+            [
+              77.2333481,
+              28.630351
+            ],
+            [
+              77.23281491,
+              28.630351
+            ],
+            [
+              77.23281491,
+              28.629973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-032",
+        "ulpin": "IN-06-0032",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-632",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22858013,
+              28.630432
+            ],
+            [
+              77.22911332,
+              28.630432
+            ],
+            [
+              77.22911332,
+              28.63081
+            ],
+            [
+              77.22858013,
+              28.63081
+            ],
+            [
+              77.22858013,
+              28.630432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-033",
+        "ulpin": "IN-06-0033",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-633",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22919535,
+              28.630486
+            ],
+            [
+              77.22972854,
+              28.630486
+            ],
+            [
+              77.22972854,
+              28.630864
+            ],
+            [
+              77.22919535,
+              28.630864
+            ],
+            [
+              77.22919535,
+              28.630486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-034",
+        "ulpin": "IN-06-0034",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-634",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22981057,
+              28.630477
+            ],
+            [
+              77.23034376,
+              28.630477
+            ],
+            [
+              77.23034376,
+              28.630855
+            ],
+            [
+              77.22981057,
+              28.630855
+            ],
+            [
+              77.22981057,
+              28.630477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-035",
+        "ulpin": "IN-06-0035",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-635",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23042579,
+              28.630477
+            ],
+            [
+              77.23095899,
+              28.630477
+            ],
+            [
+              77.23095899,
+              28.630855
+            ],
+            [
+              77.23042579,
+              28.630855
+            ],
+            [
+              77.23042579,
+              28.630477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-036",
+        "ulpin": "IN-06-0036",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-636",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23096924,
+              28.630414
+            ],
+            [
+              77.23150243,
+              28.630414
+            ],
+            [
+              77.23150243,
+              28.630792
+            ],
+            [
+              77.23096924,
+              28.630792
+            ],
+            [
+              77.23096924,
+              28.630414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-037",
+        "ulpin": "IN-06-0037",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-637",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23162548,
+              28.630477
+            ],
+            [
+              77.23215867,
+              28.630477
+            ],
+            [
+              77.23215867,
+              28.630855
+            ],
+            [
+              77.23162548,
+              28.630855
+            ],
+            [
+              77.23162548,
+              28.630477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-038",
+        "ulpin": "IN-06-0038",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-638",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23226121,
+              28.630414
+            ],
+            [
+              77.2327944,
+              28.630414
+            ],
+            [
+              77.2327944,
+              28.630792
+            ],
+            [
+              77.23226121,
+              28.630792
+            ],
+            [
+              77.23226121,
+              28.630414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-039",
+        "ulpin": "IN-06-0039",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-639",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23284567,
+              28.630432
+            ],
+            [
+              77.23337886,
+              28.630432
+            ],
+            [
+              77.23337886,
+              28.63081
+            ],
+            [
+              77.23284567,
+              28.63081
+            ],
+            [
+              77.23284567,
+              28.630432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-040",
+        "ulpin": "IN-06-0040",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-640",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22852886,
+              28.630936
+            ],
+            [
+              77.22906205,
+              28.630936
+            ],
+            [
+              77.22906205,
+              28.631314
+            ],
+            [
+              77.22852886,
+              28.631314
+            ],
+            [
+              77.22852886,
+              28.630936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-041",
+        "ulpin": "IN-06-0041",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-641",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22916459,
+              28.630936
+            ],
+            [
+              77.22969778,
+              28.630936
+            ],
+            [
+              77.22969778,
+              28.631314
+            ],
+            [
+              77.22916459,
+              28.631314
+            ],
+            [
+              77.22916459,
+              28.630936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-042",
+        "ulpin": "IN-06-0042",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-642",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22974905,
+              28.630864
+            ],
+            [
+              77.23028224,
+              28.630864
+            ],
+            [
+              77.23028224,
+              28.631242
+            ],
+            [
+              77.22974905,
+              28.631242
+            ],
+            [
+              77.22974905,
+              28.630864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-043",
+        "ulpin": "IN-06-0043",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-643",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23038478,
+              28.630918
+            ],
+            [
+              77.23091797,
+              28.630918
+            ],
+            [
+              77.23091797,
+              28.631296
+            ],
+            [
+              77.23038478,
+              28.631296
+            ],
+            [
+              77.23038478,
+              28.630918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-044",
+        "ulpin": "IN-06-0044",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-644",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23103076,
+              28.630873
+            ],
+            [
+              77.23156395,
+              28.630873
+            ],
+            [
+              77.23156395,
+              28.631251
+            ],
+            [
+              77.23103076,
+              28.631251
+            ],
+            [
+              77.23103076,
+              28.630873
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-045",
+        "ulpin": "IN-06-0045",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-645",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23157421,
+              28.630909
+            ],
+            [
+              77.2321074,
+              28.630909
+            ],
+            [
+              77.2321074,
+              28.631287
+            ],
+            [
+              77.23157421,
+              28.631287
+            ],
+            [
+              77.23157421,
+              28.630909
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-06-046",
+        "ulpin": "IN-06-0046",
+        "ward_id": "Ward 19",
+        "area_name": "Central Market Zone",
+        "survey_number": "SY-646",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Market Zone"
+      }
+    }
+  ]
+}

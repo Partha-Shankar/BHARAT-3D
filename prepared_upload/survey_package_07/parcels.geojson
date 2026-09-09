@@ -1,0 +1,1932 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19258024,
+              28.623641
+            ],
+            [
+              77.19311341,
+              28.623641
+            ],
+            [
+              77.19311341,
+              28.624019
+            ],
+            [
+              77.19258024,
+              28.624019
+            ],
+            [
+              77.19258024,
+              28.623641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-001",
+        "ulpin": "IN-07-0001",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-701",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19319543,
+              28.623632
+            ],
+            [
+              77.1937286,
+              28.623632
+            ],
+            [
+              77.1937286,
+              28.62401
+            ],
+            [
+              77.19319543,
+              28.62401
+            ],
+            [
+              77.19319543,
+              28.623632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-002",
+        "ulpin": "IN-07-0002",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-702",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19375936,
+              28.623677
+            ],
+            [
+              77.19429253,
+              28.623677
+            ],
+            [
+              77.19429253,
+              28.624055
+            ],
+            [
+              77.19375936,
+              28.624055
+            ],
+            [
+              77.19375936,
+              28.623677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-003",
+        "ulpin": "IN-07-0003",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-703",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19434379,
+              28.623677
+            ],
+            [
+              77.19487696,
+              28.623677
+            ],
+            [
+              77.19487696,
+              28.624055
+            ],
+            [
+              77.19434379,
+              28.624055
+            ],
+            [
+              77.19434379,
+              28.623677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-004",
+        "ulpin": "IN-07-0004",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-704",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19503076,
+              28.623614
+            ],
+            [
+              77.19556393,
+              28.623614
+            ],
+            [
+              77.19556393,
+              28.623992
+            ],
+            [
+              77.19503076,
+              28.623992
+            ],
+            [
+              77.19503076,
+              28.623614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-005",
+        "ulpin": "IN-07-0005",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-705",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19564595,
+              28.623614
+            ],
+            [
+              77.19617912,
+              28.623614
+            ],
+            [
+              77.19617912,
+              28.623992
+            ],
+            [
+              77.19564595,
+              28.623992
+            ],
+            [
+              77.19564595,
+              28.623614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-006",
+        "ulpin": "IN-07-0006",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-706",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19626115,
+              28.623623
+            ],
+            [
+              77.19679431,
+              28.623623
+            ],
+            [
+              77.19679431,
+              28.624001
+            ],
+            [
+              77.19626115,
+              28.624001
+            ],
+            [
+              77.19626115,
+              28.623623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-007",
+        "ulpin": "IN-07-0007",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-707",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19687634,
+              28.623614
+            ],
+            [
+              77.19740951,
+              28.623614
+            ],
+            [
+              77.19740951,
+              28.623992
+            ],
+            [
+              77.19687634,
+              28.623992
+            ],
+            [
+              77.19687634,
+              28.623614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-008",
+        "ulpin": "IN-07-0008",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-708",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19249821,
+              28.6241
+            ],
+            [
+              77.19303138,
+              28.6241
+            ],
+            [
+              77.19303138,
+              28.624478
+            ],
+            [
+              77.19249821,
+              28.624478
+            ],
+            [
+              77.19249821,
+              28.6241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-009",
+        "ulpin": "IN-07-0009",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-709",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19319543,
+              28.6241
+            ],
+            [
+              77.1937286,
+              28.6241
+            ],
+            [
+              77.1937286,
+              28.624478
+            ],
+            [
+              77.19319543,
+              28.624478
+            ],
+            [
+              77.19319543,
+              28.6241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-010",
+        "ulpin": "IN-07-0010",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-710",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19379012,
+              28.624127
+            ],
+            [
+              77.19432329,
+              28.624127
+            ],
+            [
+              77.19432329,
+              28.624505
+            ],
+            [
+              77.19379012,
+              28.624505
+            ],
+            [
+              77.19379012,
+              28.624127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-011",
+        "ulpin": "IN-07-0011",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-711",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19437455,
+              28.624109
+            ],
+            [
+              77.19490772,
+              28.624109
+            ],
+            [
+              77.19490772,
+              28.624487
+            ],
+            [
+              77.19437455,
+              28.624487
+            ],
+            [
+              77.19437455,
+              28.624109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-012",
+        "ulpin": "IN-07-0012",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-712",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19503076,
+              28.624136
+            ],
+            [
+              77.19556393,
+              28.624136
+            ],
+            [
+              77.19556393,
+              28.624514
+            ],
+            [
+              77.19503076,
+              28.624514
+            ],
+            [
+              77.19503076,
+              28.624136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-013",
+        "ulpin": "IN-07-0013",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-713",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19561519,
+              28.624118
+            ],
+            [
+              77.19614836,
+              28.624118
+            ],
+            [
+              77.19614836,
+              28.624496
+            ],
+            [
+              77.19561519,
+              28.624496
+            ],
+            [
+              77.19561519,
+              28.624118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-014",
+        "ulpin": "IN-07-0014",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-714",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19620988,
+              28.624127
+            ],
+            [
+              77.19674305,
+              28.624127
+            ],
+            [
+              77.19674305,
+              28.624505
+            ],
+            [
+              77.19620988,
+              28.624505
+            ],
+            [
+              77.19620988,
+              28.624127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-015",
+        "ulpin": "IN-07-0015",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-715",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19680457,
+              28.624127
+            ],
+            [
+              77.19733773,
+              28.624127
+            ],
+            [
+              77.19733773,
+              28.624505
+            ],
+            [
+              77.19680457,
+              28.624505
+            ],
+            [
+              77.19680457,
+              28.624127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-016",
+        "ulpin": "IN-07-0016",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-716",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19251872,
+              28.624541
+            ],
+            [
+              77.19305189,
+              28.624541
+            ],
+            [
+              77.19305189,
+              28.624919
+            ],
+            [
+              77.19251872,
+              28.624919
+            ],
+            [
+              77.19251872,
+              28.624541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-017",
+        "ulpin": "IN-07-0017",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-717",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19317493,
+              28.62455
+            ],
+            [
+              77.19370809,
+              28.62455
+            ],
+            [
+              77.19370809,
+              28.624928
+            ],
+            [
+              77.19317493,
+              28.624928
+            ],
+            [
+              77.19317493,
+              28.62455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-018",
+        "ulpin": "IN-07-0018",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-718",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19381063,
+              28.624568
+            ],
+            [
+              77.19434379,
+              28.624568
+            ],
+            [
+              77.19434379,
+              28.624946
+            ],
+            [
+              77.19381063,
+              28.624946
+            ],
+            [
+              77.19381063,
+              28.624568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-019",
+        "ulpin": "IN-07-0019",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-719",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19434379,
+              28.624514
+            ],
+            [
+              77.19487696,
+              28.624514
+            ],
+            [
+              77.19487696,
+              28.624892
+            ],
+            [
+              77.19434379,
+              28.624892
+            ],
+            [
+              77.19434379,
+              28.624514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-020",
+        "ulpin": "IN-07-0020",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-720",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.195,
+              28.624586
+            ],
+            [
+              77.19553317,
+              28.624586
+            ],
+            [
+              77.19553317,
+              28.624964
+            ],
+            [
+              77.195,
+              28.624964
+            ],
+            [
+              77.195,
+              28.624586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-021",
+        "ulpin": "IN-07-0021",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-721",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19564595,
+              28.624541
+            ],
+            [
+              77.19617912,
+              28.624541
+            ],
+            [
+              77.19617912,
+              28.624919
+            ],
+            [
+              77.19564595,
+              28.624919
+            ],
+            [
+              77.19564595,
+              28.624541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-022",
+        "ulpin": "IN-07-0022",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-722",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19626115,
+              28.624514
+            ],
+            [
+              77.19679431,
+              28.624514
+            ],
+            [
+              77.19679431,
+              28.624892
+            ],
+            [
+              77.19626115,
+              28.624892
+            ],
+            [
+              77.19626115,
+              28.624514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-023",
+        "ulpin": "IN-07-0023",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-723",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19684558,
+              28.624586
+            ],
+            [
+              77.19737875,
+              28.624586
+            ],
+            [
+              77.19737875,
+              28.624964
+            ],
+            [
+              77.19684558,
+              28.624964
+            ],
+            [
+              77.19684558,
+              28.624586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-024",
+        "ulpin": "IN-07-0024",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-724",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19250847,
+              28.625036
+            ],
+            [
+              77.19304164,
+              28.625036
+            ],
+            [
+              77.19304164,
+              28.625414
+            ],
+            [
+              77.19250847,
+              28.625414
+            ],
+            [
+              77.19250847,
+              28.625036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-025",
+        "ulpin": "IN-07-0025",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-725",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19316467,
+              28.624991
+            ],
+            [
+              77.19369784,
+              28.624991
+            ],
+            [
+              77.19369784,
+              28.625369
+            ],
+            [
+              77.19316467,
+              28.625369
+            ],
+            [
+              77.19316467,
+              28.624991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-026",
+        "ulpin": "IN-07-0026",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-726",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19381063,
+              28.625009
+            ],
+            [
+              77.19434379,
+              28.625009
+            ],
+            [
+              77.19434379,
+              28.625387
+            ],
+            [
+              77.19381063,
+              28.625387
+            ],
+            [
+              77.19381063,
+              28.625009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-027",
+        "ulpin": "IN-07-0027",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-727",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19437455,
+              28.624982
+            ],
+            [
+              77.19490772,
+              28.624982
+            ],
+            [
+              77.19490772,
+              28.62536
+            ],
+            [
+              77.19437455,
+              28.62536
+            ],
+            [
+              77.19437455,
+              28.624982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-028",
+        "ulpin": "IN-07-0028",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-728",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19502051,
+              28.625036
+            ],
+            [
+              77.19555367,
+              28.625036
+            ],
+            [
+              77.19555367,
+              28.625414
+            ],
+            [
+              77.19502051,
+              28.625414
+            ],
+            [
+              77.19502051,
+              28.625036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-029",
+        "ulpin": "IN-07-0029",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-729",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19560494,
+              28.624964
+            ],
+            [
+              77.19613811,
+              28.624964
+            ],
+            [
+              77.19613811,
+              28.625342
+            ],
+            [
+              77.19560494,
+              28.625342
+            ],
+            [
+              77.19560494,
+              28.624964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-030",
+        "ulpin": "IN-07-0030",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-730",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19626115,
+              28.625036
+            ],
+            [
+              77.19679431,
+              28.625036
+            ],
+            [
+              77.19679431,
+              28.625414
+            ],
+            [
+              77.19626115,
+              28.625414
+            ],
+            [
+              77.19626115,
+              28.625036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-031",
+        "ulpin": "IN-07-0031",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-731",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19688659,
+              28.624964
+            ],
+            [
+              77.19741976,
+              28.624964
+            ],
+            [
+              77.19741976,
+              28.625342
+            ],
+            [
+              77.19688659,
+              28.625342
+            ],
+            [
+              77.19688659,
+              28.624964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-032",
+        "ulpin": "IN-07-0032",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-732",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19251872,
+              28.625441
+            ],
+            [
+              77.19305189,
+              28.625441
+            ],
+            [
+              77.19305189,
+              28.625819
+            ],
+            [
+              77.19251872,
+              28.625819
+            ],
+            [
+              77.19251872,
+              28.625441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-033",
+        "ulpin": "IN-07-0033",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-733",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19316467,
+              28.625486
+            ],
+            [
+              77.19369784,
+              28.625486
+            ],
+            [
+              77.19369784,
+              28.625864
+            ],
+            [
+              77.19316467,
+              28.625864
+            ],
+            [
+              77.19316467,
+              28.625486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-034",
+        "ulpin": "IN-07-0034",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-734",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19373885,
+              28.625486
+            ],
+            [
+              77.19427202,
+              28.625486
+            ],
+            [
+              77.19427202,
+              28.625864
+            ],
+            [
+              77.19373885,
+              28.625864
+            ],
+            [
+              77.19373885,
+              28.625486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-035",
+        "ulpin": "IN-07-0035",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-735",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19434379,
+              28.625477
+            ],
+            [
+              77.19487696,
+              28.625477
+            ],
+            [
+              77.19487696,
+              28.625855
+            ],
+            [
+              77.19434379,
+              28.625855
+            ],
+            [
+              77.19434379,
+              28.625477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-036",
+        "ulpin": "IN-07-0036",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-736",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19498975,
+              28.62545
+            ],
+            [
+              77.19552291,
+              28.62545
+            ],
+            [
+              77.19552291,
+              28.625828
+            ],
+            [
+              77.19498975,
+              28.625828
+            ],
+            [
+              77.19498975,
+              28.62545
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-037",
+        "ulpin": "IN-07-0037",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-737",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19560494,
+              28.625477
+            ],
+            [
+              77.19613811,
+              28.625477
+            ],
+            [
+              77.19613811,
+              28.625855
+            ],
+            [
+              77.19560494,
+              28.625855
+            ],
+            [
+              77.19560494,
+              28.625477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-038",
+        "ulpin": "IN-07-0038",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-738",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19625089,
+              28.625459
+            ],
+            [
+              77.19678406,
+              28.625459
+            ],
+            [
+              77.19678406,
+              28.625837
+            ],
+            [
+              77.19625089,
+              28.625837
+            ],
+            [
+              77.19625089,
+              28.625459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-039",
+        "ulpin": "IN-07-0039",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-739",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19688659,
+              28.625441
+            ],
+            [
+              77.19741976,
+              28.625441
+            ],
+            [
+              77.19741976,
+              28.625819
+            ],
+            [
+              77.19688659,
+              28.625819
+            ],
+            [
+              77.19688659,
+              28.625441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-040",
+        "ulpin": "IN-07-0040",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-740",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19256999,
+              28.625882
+            ],
+            [
+              77.19310315,
+              28.625882
+            ],
+            [
+              77.19310315,
+              28.62626
+            ],
+            [
+              77.19256999,
+              28.62626
+            ],
+            [
+              77.19256999,
+              28.625882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-041",
+        "ulpin": "IN-07-0041",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-741",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19314417,
+              28.625864
+            ],
+            [
+              77.19367733,
+              28.625864
+            ],
+            [
+              77.19367733,
+              28.626242
+            ],
+            [
+              77.19314417,
+              28.626242
+            ],
+            [
+              77.19314417,
+              28.625864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-042",
+        "ulpin": "IN-07-0042",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-742",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19373885,
+              28.625891
+            ],
+            [
+              77.19427202,
+              28.625891
+            ],
+            [
+              77.19427202,
+              28.626269
+            ],
+            [
+              77.19373885,
+              28.626269
+            ],
+            [
+              77.19373885,
+              28.625891
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-043",
+        "ulpin": "IN-07-0043",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-743",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19440531,
+              28.625927
+            ],
+            [
+              77.19493848,
+              28.625927
+            ],
+            [
+              77.19493848,
+              28.626305
+            ],
+            [
+              77.19440531,
+              28.626305
+            ],
+            [
+              77.19440531,
+              28.625927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-044",
+        "ulpin": "IN-07-0044",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-744",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19498975,
+              28.6259
+            ],
+            [
+              77.19552291,
+              28.6259
+            ],
+            [
+              77.19552291,
+              28.626278
+            ],
+            [
+              77.19498975,
+              28.626278
+            ],
+            [
+              77.19498975,
+              28.6259
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-045",
+        "ulpin": "IN-07-0045",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-745",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1956357,
+              28.625864
+            ],
+            [
+              77.19616887,
+              28.625864
+            ],
+            [
+              77.19616887,
+              28.626242
+            ],
+            [
+              77.1956357,
+              28.626242
+            ],
+            [
+              77.1956357,
+              28.625864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-046",
+        "ulpin": "IN-07-0046",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-746",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19624064,
+              28.625909
+            ],
+            [
+              77.19677381,
+              28.625909
+            ],
+            [
+              77.19677381,
+              28.626287
+            ],
+            [
+              77.19624064,
+              28.626287
+            ],
+            [
+              77.19624064,
+              28.625909
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-07-047",
+        "ulpin": "IN-07-0047",
+        "ward_id": "Ward 05",
+        "area_name": "Civic Transit Zone",
+        "survey_number": "SY-747",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Transit Zone"
+      }
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20843606,
+              28.628315
+            ],
+            [
+              77.20882569,
+              28.628315
+            ],
+            [
+              77.20882569,
+              28.628531
+            ],
+            [
+              77.20843606,
+              28.628531
+            ],
+            [
+              77.20843606,
+              28.628315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-01",
+        "name": "Central Heights Aarav Heights Tower",
+        "ulpin": "IN-01-0008",
+        "building_code": "BLD-01-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20776958,
+              28.62746
+            ],
+            [
+              77.20807718,
+              28.62746
+            ],
+            [
+              77.20807718,
+              28.62764
+            ],
+            [
+              77.20776958,
+              28.62764
+            ],
+            [
+              77.20776958,
+              28.62746
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-02",
+        "name": "Central Heights Residency Block B",
+        "ulpin": "IN-01-0014",
+        "building_code": "BLD-01-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20946141,
+              28.628225
+            ],
+            [
+              77.21012789,
+              28.628225
+            ],
+            [
+              77.21012789,
+              28.62863
+            ],
+            [
+              77.20946141,
+              28.62863
+            ],
+            [
+              77.20946141,
+              28.628225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-03",
+        "name": "Central Heights Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-01-0003",
+        "building_code": "BLD-01-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21033296,
+              28.628855
+            ],
+            [
+              77.21115324,
+              28.628855
+            ],
+            [
+              77.21115324,
+              28.629143
+            ],
+            [
+              77.21033296,
+              28.629143
+            ],
+            [
+              77.21033296,
+              28.628855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-04",
+        "name": "Central Heights Central Junction Railway Terminal",
+        "ulpin": "IN-01-0001",
+        "building_code": "BLD-01-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20838479,
+              28.629035
+            ],
+            [
+              77.2088462,
+              28.629035
+            ],
+            [
+              77.2088462,
+              28.629233
+            ],
+            [
+              77.20838479,
+              28.629233
+            ],
+            [
+              77.20838479,
+              28.629035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-05",
+        "name": "Central Heights Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-01-0002",
+        "building_code": "BLD-01-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20982028,
+              28.627235
+            ],
+            [
+              77.21006637,
+              28.627235
+            ],
+            [
+              77.21006637,
+              28.627433
+            ],
+            [
+              77.20982028,
+              28.627433
+            ],
+            [
+              77.20982028,
+              28.627235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-07",
+        "name": "Central Heights Sharma Commercial Plaza",
+        "ulpin": "IN-01-0018",
+        "building_code": "BLD-01-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20718513,
+              28.628045
+            ],
+            [
+              77.20741071,
+              28.628045
+            ],
+            [
+              77.20741071,
+              28.628243
+            ],
+            [
+              77.20718513,
+              28.628243
+            ],
+            [
+              77.20718513,
+              28.628045
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-08",
+        "name": "Central Heights Urban Property #8",
+        "ulpin": "IN-01-0023",
+        "building_code": "BLD-01-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 484,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20804642,
+              28.627937
+            ],
+            [
+              77.20830276,
+              28.627937
+            ],
+            [
+              77.20830276,
+              28.628099
+            ],
+            [
+              77.20804642,
+              28.628099
+            ],
+            [
+              77.20804642,
+              28.627937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-09",
+        "name": "Central Heights Urban Property #9",
+        "ulpin": "IN-01-0024",
+        "building_code": "BLD-01-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 450,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20896924,
+              28.627946
+            ],
+            [
+              77.20918456,
+              28.627946
+            ],
+            [
+              77.20918456,
+              28.628117
+            ],
+            [
+              77.20896924,
+              28.628117
+            ],
+            [
+              77.20896924,
+              28.627946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-10",
+        "name": "Central Heights Urban Property #10",
+        "ulpin": "IN-01-0025",
+        "building_code": "BLD-01-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 399,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2098818,
+              28.628027
+            ],
+            [
+              77.21010738,
+              28.628027
+            ],
+            [
+              77.21010738,
+              28.628207
+            ],
+            [
+              77.2098818,
+              28.628207
+            ],
+            [
+              77.2098818,
+              28.628027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-11",
+        "name": "Central Heights Urban Property #11",
+        "ulpin": "IN-01-0026",
+        "building_code": "BLD-01-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 440,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2071031,
+              28.628738
+            ],
+            [
+              77.20740045,
+              28.628738
+            ],
+            [
+              77.20740045,
+              28.6289
+            ],
+            [
+              77.2071031,
+              28.6289
+            ],
+            [
+              77.2071031,
+              28.628738
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-12",
+        "name": "Central Heights Urban Property #12",
+        "ulpin": "IN-01-0027",
+        "building_code": "BLD-01-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 522,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20816947,
+              28.628693
+            ],
+            [
+              77.20845656,
+              28.628693
+            ],
+            [
+              77.20845656,
+              28.628927
+            ],
+            [
+              77.20816947,
+              28.628927
+            ],
+            [
+              77.20816947,
+              28.628693
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-13",
+        "name": "Central Heights Urban Property #13",
+        "ulpin": "IN-01-0028",
+        "building_code": "BLD-01-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 728,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20907177,
+              28.628639
+            ],
+            [
+              77.20932811,
+              28.628639
+            ],
+            [
+              77.20932811,
+              28.628819
+            ],
+            [
+              77.20907177,
+              28.628819
+            ],
+            [
+              77.20907177,
+              28.628639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-14",
+        "name": "Central Heights Urban Property #14",
+        "ulpin": "IN-01-0029",
+        "building_code": "BLD-01-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 500,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20995358,
+              28.62863
+            ],
+            [
+              77.21015865,
+              28.62863
+            ],
+            [
+              77.21015865,
+              28.62881
+            ],
+            [
+              77.20995358,
+              28.62881
+            ],
+            [
+              77.20995358,
+              28.62863
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-15",
+        "name": "Central Heights Urban Property #15",
+        "ulpin": "IN-01-0030",
+        "building_code": "BLD-01-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 400,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20708259,
+              28.62944
+            ],
+            [
+              77.20740045,
+              28.62944
+            ],
+            [
+              77.20740045,
+              28.629629
+            ],
+            [
+              77.20708259,
+              28.629629
+            ],
+            [
+              77.20708259,
+              28.62944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-16",
+        "name": "Central Heights Urban Property #16",
+        "ulpin": "IN-01-0031",
+        "building_code": "BLD-01-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 651,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20810794,
+              28.629485
+            ],
+            [
+              77.20843606,
+              28.629485
+            ],
+            [
+              77.20843606,
+              28.629683
+            ],
+            [
+              77.20810794,
+              28.629683
+            ],
+            [
+              77.20810794,
+              28.629485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-17",
+        "name": "Central Heights Urban Property #17",
+        "ulpin": "IN-01-0032",
+        "building_code": "BLD-01-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 704,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20903076,
+              28.629476
+            ],
+            [
+              77.20929735,
+              28.629476
+            ],
+            [
+              77.20929735,
+              28.629701
+            ],
+            [
+              77.20903076,
+              28.629701
+            ],
+            [
+              77.20903076,
+              28.629476
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-18",
+        "name": "Central Heights Urban Property #18",
+        "ulpin": "IN-01-0033",
+        "building_code": "BLD-01-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 650,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20983053,
+              28.629386
+            ],
+            [
+              77.21009713,
+              28.629386
+            ],
+            [
+              77.21009713,
+              28.629602
+            ],
+            [
+              77.20983053,
+              28.629602
+            ],
+            [
+              77.20983053,
+              28.629386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-19",
+        "name": "Central Heights Urban Property #19",
+        "ulpin": "IN-01-0034",
+        "building_code": "BLD-01-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 624,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

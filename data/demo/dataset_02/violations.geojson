@@ -1,0 +1,58 @@
+[
+  {
+    "id": "VLT-02-001",
+    "violation_code": "VLT-001",
+    "building_id": "BLD-02-07",
+    "name": "Metro District Sharma Commercial Plaza",
+    "violation_type": "UNAUTHORIZED_EXTRA_FLOORS",
+    "severity": "CRITICAL",
+    "sanctioned_value": "G + 4 (14.0m)",
+    "observed_value": "G + 6 (21.2m)",
+    "excess": "2 Unauthorized Upper Floors (7.2m vertical excess)",
+    "rule_reference": "Unified Building Bye-Laws (UBBL 2016) Cl. 4.2",
+    "penalty_amount": 84000,
+    "status": "OPEN_NOTICE_ISSUED"
+  },
+  {
+    "id": "VLT-02-002",
+    "violation_code": "VLT-002",
+    "building_id": "BLD-02-07",
+    "name": "Metro District Sharma Commercial Plaza",
+    "violation_type": "FRONT_SETBACK_BREACH",
+    "severity": "HIGH",
+    "sanctioned_value": "6.0 meters required",
+    "observed_value": "3.8 meters observed",
+    "excess": "2.2 meters front setback breach into ROW buffer",
+    "rule_reference": "Master Plan Zonal Regulations Cl. 7",
+    "penalty_amount": 25000,
+    "status": "OPEN_NOTICE_ISSUED"
+  },
+  {
+    "id": "VLT-02-003",
+    "violation_code": "VLT-003",
+    "building_id": "BLD-02-08",
+    "name": "Metro District Retail Complex Sidewalk Encroachment",
+    "violation_type": "FOOTPATH_ENCROACHMENT",
+    "severity": "MEDIUM",
+    "sanctioned_value": "0.0 m\u00b2 public ROW",
+    "observed_value": "18.6 m\u00b2 occupied",
+    "excess": "18.6 m\u00b2 public sidewalk encroachment",
+    "rule_reference": "Municipal Road Encroachment Act Sec. 32",
+    "penalty_amount": 15000,
+    "status": "UNDER_REVIEW"
+  },
+  {
+    "id": "VLT-02-004",
+    "violation_code": "VLT-004",
+    "building_id": "BLD-02-01",
+    "name": "Metro District Aarav Heights Rooftop Structure",
+    "violation_type": "ILLEGAL_ROOFTOP_STRUCTURE",
+    "severity": "LOW",
+    "sanctioned_value": "Open Terrace Only",
+    "observed_value": "42 m\u00b2 tin shed coverage",
+    "excess": "42 m\u00b2 unapproved terrace coverage",
+    "rule_reference": "Fire Safety Bye-Laws Sec. 9",
+    "penalty_amount": 10000,
+    "status": "COMPOUNDABLE"
+  }
+]

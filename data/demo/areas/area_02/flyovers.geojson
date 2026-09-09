@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21615426,
+              28.633955
+            ],
+            [
+              77.21964066,
+              28.633955
+            ],
+            [
+              77.21964066,
+              28.634081
+            ],
+            [
+              77.21615426,
+              28.634081
+            ],
+            [
+              77.21615426,
+              28.633955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-02-01",
+        "name": "Metro District Elevated Bypass Flyover (Deck: +8.5m)",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 340,
+        "width_meters": 14.0,
+        "operator": "PWD Delhi / NHAI",
+        "status": "OPERATIONAL",
+        "associated_road": "RD-02-01"
+      }
+    }
+  ]
+}

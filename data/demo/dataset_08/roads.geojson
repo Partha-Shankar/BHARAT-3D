@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.2029233,
+            28.65
+          ],
+          [
+            77.2090767,
+            28.65
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-08-01",
+        "name": "Integrated Urban Zone Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.206,
+            28.64775
+          ],
+          [
+            77.206,
+            28.65225
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-08-02",
+        "name": "Integrated Urban Zone Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.2029233,
+            28.65108
+          ],
+          [
+            77.2090767,
+            28.65108
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-08-03",
+        "name": "Integrated Urban Zone North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

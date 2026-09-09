@@ -1,0 +1,1645 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20350787,
+              28.648911
+            ],
+            [
+              77.20404117,
+              28.648911
+            ],
+            [
+              77.20404117,
+              28.649289
+            ],
+            [
+              77.20350787,
+              28.649289
+            ],
+            [
+              77.20350787,
+              28.648911
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-001",
+        "ulpin": "IN-08-0001",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-801",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20418475,
+              28.648866
+            ],
+            [
+              77.20471804,
+              28.648866
+            ],
+            [
+              77.20471804,
+              28.649244
+            ],
+            [
+              77.20418475,
+              28.649244
+            ],
+            [
+              77.20418475,
+              28.648866
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-002",
+        "ulpin": "IN-08-0002",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-802",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20477958,
+              28.648902
+            ],
+            [
+              77.20531287,
+              28.648902
+            ],
+            [
+              77.20531287,
+              28.64928
+            ],
+            [
+              77.20477958,
+              28.64928
+            ],
+            [
+              77.20477958,
+              28.648902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-003",
+        "ulpin": "IN-08-0003",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-803",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20538466,
+              28.648857
+            ],
+            [
+              77.20591795,
+              28.648857
+            ],
+            [
+              77.20591795,
+              28.649235
+            ],
+            [
+              77.20538466,
+              28.649235
+            ],
+            [
+              77.20538466,
+              28.648857
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-004",
+        "ulpin": "IN-08-0004",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-804",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20596923,
+              28.648902
+            ],
+            [
+              77.20650253,
+              28.648902
+            ],
+            [
+              77.20650253,
+              28.64928
+            ],
+            [
+              77.20596923,
+              28.64928
+            ],
+            [
+              77.20596923,
+              28.648902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-005",
+        "ulpin": "IN-08-0005",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-805",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20660508,
+              28.648911
+            ],
+            [
+              77.20713838,
+              28.648911
+            ],
+            [
+              77.20713838,
+              28.649289
+            ],
+            [
+              77.20660508,
+              28.649289
+            ],
+            [
+              77.20660508,
+              28.648911
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-006",
+        "ulpin": "IN-08-0006",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-806",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20722042,
+              28.648875
+            ],
+            [
+              77.20775372,
+              28.648875
+            ],
+            [
+              77.20775372,
+              28.649253
+            ],
+            [
+              77.20722042,
+              28.649253
+            ],
+            [
+              77.20722042,
+              28.648875
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-007",
+        "ulpin": "IN-08-0007",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-807",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20787679,
+              28.648866
+            ],
+            [
+              77.20841008,
+              28.648866
+            ],
+            [
+              77.20841008,
+              28.649244
+            ],
+            [
+              77.20787679,
+              28.649244
+            ],
+            [
+              77.20787679,
+              28.648866
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-008",
+        "ulpin": "IN-08-0008",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-808",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20351813,
+              28.649361
+            ],
+            [
+              77.20405142,
+              28.649361
+            ],
+            [
+              77.20405142,
+              28.649739
+            ],
+            [
+              77.20351813,
+              28.649739
+            ],
+            [
+              77.20351813,
+              28.649361
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-009",
+        "ulpin": "IN-08-0009",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-809",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.204195,
+              28.649343
+            ],
+            [
+              77.2047283,
+              28.649343
+            ],
+            [
+              77.2047283,
+              28.649721
+            ],
+            [
+              77.204195,
+              28.649721
+            ],
+            [
+              77.204195,
+              28.649343
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-010",
+        "ulpin": "IN-08-0010",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-810",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20480009,
+              28.649298
+            ],
+            [
+              77.20533338,
+              28.649298
+            ],
+            [
+              77.20533338,
+              28.649676
+            ],
+            [
+              77.20480009,
+              28.649676
+            ],
+            [
+              77.20480009,
+              28.649298
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-011",
+        "ulpin": "IN-08-0011",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-811",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20535389,
+              28.649307
+            ],
+            [
+              77.20588719,
+              28.649307
+            ],
+            [
+              77.20588719,
+              28.649685
+            ],
+            [
+              77.20535389,
+              28.649685
+            ],
+            [
+              77.20535389,
+              28.649307
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-012",
+        "ulpin": "IN-08-0012",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-812",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20596923,
+              28.649325
+            ],
+            [
+              77.20650253,
+              28.649325
+            ],
+            [
+              77.20650253,
+              28.649703
+            ],
+            [
+              77.20596923,
+              28.649703
+            ],
+            [
+              77.20596923,
+              28.649325
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-013",
+        "ulpin": "IN-08-0013",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-813",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20661534,
+              28.649343
+            ],
+            [
+              77.20714863,
+              28.649343
+            ],
+            [
+              77.20714863,
+              28.649721
+            ],
+            [
+              77.20661534,
+              28.649721
+            ],
+            [
+              77.20661534,
+              28.649343
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-014",
+        "ulpin": "IN-08-0014",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-814",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20719991,
+              28.649289
+            ],
+            [
+              77.20773321,
+              28.649289
+            ],
+            [
+              77.20773321,
+              28.649667
+            ],
+            [
+              77.20719991,
+              28.649667
+            ],
+            [
+              77.20719991,
+              28.649289
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-015",
+        "ulpin": "IN-08-0015",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-815",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20788704,
+              28.649343
+            ],
+            [
+              77.20842034,
+              28.649343
+            ],
+            [
+              77.20842034,
+              28.649721
+            ],
+            [
+              77.20788704,
+              28.649721
+            ],
+            [
+              77.20788704,
+              28.649343
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-016",
+        "ulpin": "IN-08-0016",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-816",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20357966,
+              28.649775
+            ],
+            [
+              77.20411296,
+              28.649775
+            ],
+            [
+              77.20411296,
+              28.650153
+            ],
+            [
+              77.20357966,
+              28.650153
+            ],
+            [
+              77.20357966,
+              28.649775
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-017",
+        "ulpin": "IN-08-0017",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-817",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20416424,
+              28.649748
+            ],
+            [
+              77.20469753,
+              28.649748
+            ],
+            [
+              77.20469753,
+              28.650126
+            ],
+            [
+              77.20416424,
+              28.650126
+            ],
+            [
+              77.20416424,
+              28.649748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-018",
+        "ulpin": "IN-08-0018",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-818",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2047283,
+              28.649757
+            ],
+            [
+              77.20526159,
+              28.649757
+            ],
+            [
+              77.20526159,
+              28.650135
+            ],
+            [
+              77.2047283,
+              28.650135
+            ],
+            [
+              77.2047283,
+              28.649757
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-019",
+        "ulpin": "IN-08-0019",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-819",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2053744,
+              28.649748
+            ],
+            [
+              77.2059077,
+              28.649748
+            ],
+            [
+              77.2059077,
+              28.650126
+            ],
+            [
+              77.2053744,
+              28.650126
+            ],
+            [
+              77.2053744,
+              28.649748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-020",
+        "ulpin": "IN-08-0020",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-820",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20603077,
+              28.649811
+            ],
+            [
+              77.20656406,
+              28.649811
+            ],
+            [
+              77.20656406,
+              28.650189
+            ],
+            [
+              77.20603077,
+              28.650189
+            ],
+            [
+              77.20603077,
+              28.649811
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-021",
+        "ulpin": "IN-08-0021",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-821",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2066256,
+              28.649811
+            ],
+            [
+              77.20715889,
+              28.649811
+            ],
+            [
+              77.20715889,
+              28.650189
+            ],
+            [
+              77.2066256,
+              28.650189
+            ],
+            [
+              77.2066256,
+              28.649811
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-022",
+        "ulpin": "IN-08-0022",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-822",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20721017,
+              28.649766
+            ],
+            [
+              77.20774346,
+              28.649766
+            ],
+            [
+              77.20774346,
+              28.650144
+            ],
+            [
+              77.20721017,
+              28.650144
+            ],
+            [
+              77.20721017,
+              28.649766
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-023",
+        "ulpin": "IN-08-0023",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-823",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20785627,
+              28.649811
+            ],
+            [
+              77.20838957,
+              28.649811
+            ],
+            [
+              77.20838957,
+              28.650189
+            ],
+            [
+              77.20785627,
+              28.650189
+            ],
+            [
+              77.20785627,
+              28.649811
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-024",
+        "ulpin": "IN-08-0024",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-824",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20349762,
+              28.650225
+            ],
+            [
+              77.20403091,
+              28.650225
+            ],
+            [
+              77.20403091,
+              28.650603
+            ],
+            [
+              77.20349762,
+              28.650603
+            ],
+            [
+              77.20349762,
+              28.650225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-025",
+        "ulpin": "IN-08-0025",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-825",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20413347,
+              28.650243
+            ],
+            [
+              77.20466676,
+              28.650243
+            ],
+            [
+              77.20466676,
+              28.650621
+            ],
+            [
+              77.20413347,
+              28.650621
+            ],
+            [
+              77.20413347,
+              28.650243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-026",
+        "ulpin": "IN-08-0026",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-826",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20474881,
+              28.650261
+            ],
+            [
+              77.2052821,
+              28.650261
+            ],
+            [
+              77.2052821,
+              28.650639
+            ],
+            [
+              77.20474881,
+              28.650639
+            ],
+            [
+              77.20474881,
+              28.650261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-027",
+        "ulpin": "IN-08-0027",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-827",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20540517,
+              28.650225
+            ],
+            [
+              77.20593847,
+              28.650225
+            ],
+            [
+              77.20593847,
+              28.650603
+            ],
+            [
+              77.20540517,
+              28.650603
+            ],
+            [
+              77.20540517,
+              28.650225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-028",
+        "ulpin": "IN-08-0028",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-828",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20598974,
+              28.650243
+            ],
+            [
+              77.20652304,
+              28.650243
+            ],
+            [
+              77.20652304,
+              28.650621
+            ],
+            [
+              77.20598974,
+              28.650621
+            ],
+            [
+              77.20598974,
+              28.650243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-029",
+        "ulpin": "IN-08-0029",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-829",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20661534,
+              28.650243
+            ],
+            [
+              77.20714863,
+              28.650243
+            ],
+            [
+              77.20714863,
+              28.650621
+            ],
+            [
+              77.20661534,
+              28.650621
+            ],
+            [
+              77.20661534,
+              28.650243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-030",
+        "ulpin": "IN-08-0030",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-830",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20718966,
+              28.650234
+            ],
+            [
+              77.20772295,
+              28.650234
+            ],
+            [
+              77.20772295,
+              28.650612
+            ],
+            [
+              77.20718966,
+              28.650612
+            ],
+            [
+              77.20718966,
+              28.650234
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-031",
+        "ulpin": "IN-08-0031",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-831",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20784602,
+              28.650261
+            ],
+            [
+              77.20837931,
+              28.650261
+            ],
+            [
+              77.20837931,
+              28.650639
+            ],
+            [
+              77.20784602,
+              28.650639
+            ],
+            [
+              77.20784602,
+              28.650261
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-032",
+        "ulpin": "IN-08-0032",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-832",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20355915,
+              28.650702
+            ],
+            [
+              77.20409245,
+              28.650702
+            ],
+            [
+              77.20409245,
+              28.65108
+            ],
+            [
+              77.20355915,
+              28.65108
+            ],
+            [
+              77.20355915,
+              28.650702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-033",
+        "ulpin": "IN-08-0033",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-833",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20415398,
+              28.650693
+            ],
+            [
+              77.20468728,
+              28.650693
+            ],
+            [
+              77.20468728,
+              28.651071
+            ],
+            [
+              77.20415398,
+              28.651071
+            ],
+            [
+              77.20415398,
+              28.650693
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-034",
+        "ulpin": "IN-08-0034",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-834",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20473855,
+              28.650702
+            ],
+            [
+              77.20527185,
+              28.650702
+            ],
+            [
+              77.20527185,
+              28.65108
+            ],
+            [
+              77.20473855,
+              28.65108
+            ],
+            [
+              77.20473855,
+              28.650702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-035",
+        "ulpin": "IN-08-0035",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-835",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20538466,
+              28.650702
+            ],
+            [
+              77.20591795,
+              28.650702
+            ],
+            [
+              77.20591795,
+              28.65108
+            ],
+            [
+              77.20538466,
+              28.65108
+            ],
+            [
+              77.20538466,
+              28.650702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-036",
+        "ulpin": "IN-08-0036",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-836",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20602051,
+              28.650711
+            ],
+            [
+              77.20655381,
+              28.650711
+            ],
+            [
+              77.20655381,
+              28.651089
+            ],
+            [
+              77.20602051,
+              28.651089
+            ],
+            [
+              77.20602051,
+              28.650711
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-037",
+        "ulpin": "IN-08-0037",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-837",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20661534,
+              28.650657
+            ],
+            [
+              77.20714863,
+              28.650657
+            ],
+            [
+              77.20714863,
+              28.651035
+            ],
+            [
+              77.20661534,
+              28.651035
+            ],
+            [
+              77.20661534,
+              28.650657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-038",
+        "ulpin": "IN-08-0038",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-838",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2072717,
+              28.650693
+            ],
+            [
+              77.207805,
+              28.650693
+            ],
+            [
+              77.207805,
+              28.651071
+            ],
+            [
+              77.2072717,
+              28.651071
+            ],
+            [
+              77.2072717,
+              28.650693
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-039",
+        "ulpin": "IN-08-0039",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-839",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.207805,
+              28.650657
+            ],
+            [
+              77.20833829,
+              28.650657
+            ],
+            [
+              77.20833829,
+              28.651035
+            ],
+            [
+              77.207805,
+              28.651035
+            ],
+            [
+              77.207805,
+              28.650657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-08-040",
+        "ulpin": "IN-08-0040",
+        "ward_id": "Ward 27",
+        "area_name": "Integrated Urban Zone",
+        "survey_number": "SY-840",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Integrated Urban Zone"
+      }
+    }
+  ]
+}

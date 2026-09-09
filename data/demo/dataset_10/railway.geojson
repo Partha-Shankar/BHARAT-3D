@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21133301,
+              28.632855
+            ],
+            [
+              77.21215332,
+              28.632855
+            ],
+            [
+              77.21215332,
+              28.633143
+            ],
+            [
+              77.21133301,
+              28.633143
+            ],
+            [
+              77.21133301,
+              28.632855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-04",
+        "name": "Central Urban Core Central Junction Railway Terminal",
+        "ulpin": "IN-10-0001",
+        "building_code": "BLD-10-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20143599,
+              28.641315
+            ],
+            [
+              77.20182567,
+              28.641315
+            ],
+            [
+              77.20182567,
+              28.641531
+            ],
+            [
+              77.20143599,
+              28.641531
+            ],
+            [
+              77.20143599,
+              28.641315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-01",
+        "name": "Transit Quarter Aarav Heights Tower",
+        "ulpin": "IN-04-0008",
+        "building_code": "BLD-04-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20076943,
+              28.64046
+            ],
+            [
+              77.20107707,
+              28.64046
+            ],
+            [
+              77.20107707,
+              28.64064
+            ],
+            [
+              77.20076943,
+              28.64064
+            ],
+            [
+              77.20076943,
+              28.64046
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-02",
+        "name": "Transit Quarter Residency Block B",
+        "ulpin": "IN-04-0014",
+        "building_code": "BLD-04-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20246147,
+              28.641225
+            ],
+            [
+              77.20312803,
+              28.641225
+            ],
+            [
+              77.20312803,
+              28.64163
+            ],
+            [
+              77.20246147,
+              28.64163
+            ],
+            [
+              77.20246147,
+              28.641225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-03",
+        "name": "Transit Quarter Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-04-0003",
+        "building_code": "BLD-04-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20333312,
+              28.641855
+            ],
+            [
+              77.2041535,
+              28.641855
+            ],
+            [
+              77.2041535,
+              28.642143
+            ],
+            [
+              77.20333312,
+              28.642143
+            ],
+            [
+              77.20333312,
+              28.641855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-04",
+        "name": "Transit Quarter Central Junction Railway Terminal",
+        "ulpin": "IN-04-0001",
+        "building_code": "BLD-04-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20138471,
+              28.642035
+            ],
+            [
+              77.20184618,
+              28.642035
+            ],
+            [
+              77.20184618,
+              28.642233
+            ],
+            [
+              77.20138471,
+              28.642233
+            ],
+            [
+              77.20138471,
+              28.642035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-05",
+        "name": "Transit Quarter Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-04-0002",
+        "building_code": "BLD-04-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20282038,
+              28.640235
+            ],
+            [
+              77.2030665,
+              28.640235
+            ],
+            [
+              77.2030665,
+              28.640433
+            ],
+            [
+              77.20282038,
+              28.640433
+            ],
+            [
+              77.20282038,
+              28.640235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-07",
+        "name": "Transit Quarter Sharma Commercial Plaza",
+        "ulpin": "IN-04-0018",
+        "building_code": "BLD-04-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20025669,
+              28.640937
+            ],
+            [
+              77.20055408,
+              28.640937
+            ],
+            [
+              77.20055408,
+              28.641171
+            ],
+            [
+              77.20025669,
+              28.641171
+            ],
+            [
+              77.20025669,
+              28.640937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-08",
+        "name": "Transit Quarter Urban Property #8",
+        "ulpin": "IN-04-0023",
+        "building_code": "BLD-04-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 754,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20099503,
+              28.641
+            ],
+            [
+              77.20123089,
+              28.641
+            ],
+            [
+              77.20123089,
+              28.641225
+            ],
+            [
+              77.20099503,
+              28.641225
+            ],
+            [
+              77.20099503,
+              28.641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-09",
+        "name": "Transit Quarter Urban Property #9",
+        "ulpin": "IN-04-0024",
+        "building_code": "BLD-04-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20202051,
+              28.640946
+            ],
+            [
+              77.20230764,
+              28.640946
+            ],
+            [
+              77.20230764,
+              28.641162
+            ],
+            [
+              77.20202051,
+              28.641162
+            ],
+            [
+              77.20202051,
+              28.640946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-10",
+        "name": "Transit Quarter Urban Property #10",
+        "ulpin": "IN-04-0025",
+        "building_code": "BLD-04-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 672,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20287166,
+              28.640928
+            ],
+            [
+              77.20309726,
+              28.640928
+            ],
+            [
+              77.20309726,
+              28.641144
+            ],
+            [
+              77.20287166,
+              28.641144
+            ],
+            [
+              77.20287166,
+              28.640928
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-11",
+        "name": "Transit Quarter Urban Property #11",
+        "ulpin": "IN-04-0026",
+        "building_code": "BLD-04-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 528,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20017465,
+              28.641729
+            ],
+            [
+              77.20044127,
+              28.641729
+            ],
+            [
+              77.20044127,
+              28.641909
+            ],
+            [
+              77.20017465,
+              28.641909
+            ],
+            [
+              77.20017465,
+              28.641729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-12",
+        "name": "Transit Quarter Urban Property #12",
+        "ulpin": "IN-04-0027",
+        "building_code": "BLD-04-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 520,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20107707,
+              28.641738
+            ],
+            [
+              77.20130267,
+              28.641738
+            ],
+            [
+              77.20130267,
+              28.641927
+            ],
+            [
+              77.20107707,
+              28.641927
+            ],
+            [
+              77.20107707,
+              28.641738
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-13",
+        "name": "Transit Quarter Urban Property #13",
+        "ulpin": "IN-04-0028",
+        "building_code": "BLD-04-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 462,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20205127,
+              28.641756
+            ],
+            [
+              77.20235892,
+              28.641756
+            ],
+            [
+              77.20235892,
+              28.641945
+            ],
+            [
+              77.20205127,
+              28.641945
+            ],
+            [
+              77.20205127,
+              28.641756
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-14",
+        "name": "Transit Quarter Urban Property #14",
+        "ulpin": "IN-04-0029",
+        "building_code": "BLD-04-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 630,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20298446,
+              28.641792
+            ],
+            [
+              77.20319981,
+              28.641792
+            ],
+            [
+              77.20319981,
+              28.642026
+            ],
+            [
+              77.20298446,
+              28.642026
+            ],
+            [
+              77.20298446,
+              28.641792
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-15",
+        "name": "Transit Quarter Urban Property #15",
+        "ulpin": "IN-04-0030",
+        "building_code": "BLD-04-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 546,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20017465,
+              28.642413
+            ],
+            [
+              77.20042076,
+              28.642413
+            ],
+            [
+              77.20042076,
+              28.642629
+            ],
+            [
+              77.20017465,
+              28.642629
+            ],
+            [
+              77.20017465,
+              28.642413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-16",
+        "name": "Transit Quarter Urban Property #16",
+        "ulpin": "IN-04-0031",
+        "building_code": "BLD-04-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 576,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20098478,
+              28.642404
+            ],
+            [
+              77.20126166,
+              28.642404
+            ],
+            [
+              77.20126166,
+              28.642566
+            ],
+            [
+              77.20098478,
+              28.642566
+            ],
+            [
+              77.20098478,
+              28.642404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-17",
+        "name": "Transit Quarter Urban Property #17",
+        "ulpin": "IN-04-0032",
+        "building_code": "BLD-04-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 486,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20193847,
+              28.642512
+            ],
+            [
+              77.20224611,
+              28.642512
+            ],
+            [
+              77.20224611,
+              28.64271
+            ],
+            [
+              77.20193847,
+              28.64271
+            ],
+            [
+              77.20193847,
+              28.642512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-18",
+        "name": "Transit Quarter Urban Property #18",
+        "ulpin": "IN-04-0033",
+        "building_code": "BLD-04-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 660,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20284089,
+              28.642404
+            ],
+            [
+              77.20313828,
+              28.642404
+            ],
+            [
+              77.20313828,
+              28.642566
+            ],
+            [
+              77.20284089,
+              28.642566
+            ],
+            [
+              77.20284089,
+              28.642404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-19",
+        "name": "Transit Quarter Urban Property #19",
+        "ulpin": "IN-04-0034",
+        "building_code": "BLD-04-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 522,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

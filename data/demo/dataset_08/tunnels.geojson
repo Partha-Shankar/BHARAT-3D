@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2052821,
+              28.649802
+            ],
+            [
+              77.20815369,
+              28.649802
+            ],
+            [
+              77.20815369,
+              28.64991
+            ],
+            [
+              77.2052821,
+              28.64991
+            ],
+            [
+              77.2052821,
+              28.649802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-08-01",
+        "name": "Integrated Urban Zone Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 280,
+        "width_meters": 12.0,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-08-012 to PRC-08-024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20476932,
+              28.651125
+            ],
+            [
+              77.20866647,
+              28.651125
+            ],
+            [
+              77.20866647,
+              28.651215
+            ],
+            [
+              77.20476932,
+              28.651215
+            ],
+            [
+              77.20476932,
+              28.651125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-08-02",
+        "name": "Integrated Urban Zone Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 380,
+        "width_meters": 10.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-08-001 to PRC-08-008"
+      }
+    }
+  ]
+}

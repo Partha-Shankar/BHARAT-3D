@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22192412,
+            28.622
+          ],
+          [
+            77.22807588,
+            28.622
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-03-01",
+        "name": "Civic Square Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.225,
+            28.61975
+          ],
+          [
+            77.225,
+            28.62425
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-03-02",
+        "name": "Civic Square Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22192412,
+            28.62308
+          ],
+          [
+            77.22807588,
+            28.62308
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-03-03",
+        "name": "Civic Square North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

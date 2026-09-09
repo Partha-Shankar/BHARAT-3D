@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20015414,
+              28.640955
+            ],
+            [
+              77.20364077,
+              28.640955
+            ],
+            [
+              77.20364077,
+              28.641081
+            ],
+            [
+              77.20015414,
+              28.641081
+            ],
+            [
+              77.20015414,
+              28.640955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-04-01",
+        "name": "Transit Quarter Elevated Bypass Flyover (Deck: +8.5m)",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 340,
+        "width_meters": 14.0,
+        "operator": "PWD Delhi / NHAI",
+        "status": "OPERATIONAL",
+        "associated_road": "RD-04-01"
+      }
+    }
+  ]
+}

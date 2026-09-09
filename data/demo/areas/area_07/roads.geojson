@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19192403,
+            28.625
+          ],
+          [
+            77.19807597,
+            28.625
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-07-01",
+        "name": "Civic Transit Zone Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.195,
+            28.62275
+          ],
+          [
+            77.195,
+            28.62725
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-07-02",
+        "name": "Civic Transit Zone Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19192403,
+            28.62608
+          ],
+          [
+            77.19807597,
+            28.62608
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-07-03",
+        "name": "Civic Transit Zone North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

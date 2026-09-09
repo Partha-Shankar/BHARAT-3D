@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20928223,
+              28.631802
+            ],
+            [
+              77.21215332,
+              28.631802
+            ],
+            [
+              77.21215332,
+              28.63191
+            ],
+            [
+              77.20928223,
+              28.63191
+            ],
+            [
+              77.20928223,
+              28.631802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-10-01",
+        "name": "Central Urban Core Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 280,
+        "width_meters": 12.0,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-10-012 to PRC-10-024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20876953,
+              28.633125
+            ],
+            [
+              77.21266601,
+              28.633125
+            ],
+            [
+              77.21266601,
+              28.633215
+            ],
+            [
+              77.20876953,
+              28.633215
+            ],
+            [
+              77.20876953,
+              28.633125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-10-02",
+        "name": "Central Urban Core Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 380,
+        "width_meters": 10.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-10-001 to PRC-10-008"
+      }
+    }
+  ]
+}

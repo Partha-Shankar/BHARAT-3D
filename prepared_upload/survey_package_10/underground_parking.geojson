@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21048193,
+              28.632243
+            ],
+            [
+              77.21110742,
+              28.632243
+            ],
+            [
+              77.21110742,
+              28.632612
+            ],
+            [
+              77.21048193,
+              28.632612
+            ],
+            [
+              77.21048193,
+              28.632243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-10-01",
+        "name": "Central Urban Core Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Central Urban Core Mall Ltd",
+        "parent_building": "BLD-10-03"
+      }
+    }
+  ]
+}

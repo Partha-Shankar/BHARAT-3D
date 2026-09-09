@@ -1,0 +1,107 @@
+[
+  {
+    "id": "VLT-001",
+    "building_id": "BLD-007",
+    "type": "UNAUTHORIZED_FLOOR",
+    "description": "G+6 vs permitted G+4",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-002",
+    "building_id": "BLD-007",
+    "type": "SETBACK_VIOLATION",
+    "description": "Front setback: 3.8m vs 6.0m required",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-003",
+    "building_id": "BLD-008",
+    "type": "ENCROACHMENT",
+    "description": "Footpath encroachment: 18.6 sqm",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-004",
+    "building_id": "BLD-012",
+    "type": "SETBACK_VIOLATION",
+    "description": "Side setback violation",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-005",
+    "building_id": "BLD-001",
+    "type": "UNAUTHORIZED_STRUCTURE",
+    "description": "Illegal rooftop structure",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-006",
+    "building_id": "BLD-015",
+    "type": "SETBACK_VIOLATION",
+    "description": "Rear setback violation",
+    "status": "RESOLVED"
+  },
+  {
+    "id": "VLT-007",
+    "building_id": "BLD-020",
+    "type": "EXCESS_COVERAGE",
+    "description": "Excess building coverage",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-008",
+    "building_id": "BLD-025",
+    "type": "UNAUTHORIZED_USE",
+    "description": "Parking space converted to commercial use",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-009",
+    "building_id": "BLD-030",
+    "type": "UNAUTHORIZED_STRUCTURE",
+    "description": "Unauthorized construction in setback zone",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-010",
+    "building_id": "BLD-040",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 10",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-011",
+    "building_id": "BLD-041",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 11",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-012",
+    "building_id": "BLD-042",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 12",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-013",
+    "building_id": "BLD-043",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 13",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-014",
+    "building_id": "BLD-044",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 14",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "VLT-015",
+    "building_id": "BLD-045",
+    "type": "OTHER",
+    "description": "Miscellaneous violation 15",
+    "status": "ACTIVE"
+  }
+]

@@ -1,0 +1,1768 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22257006,
+              28.620659
+            ],
+            [
+              77.22310321,
+              28.620659
+            ],
+            [
+              77.22310321,
+              28.621037
+            ],
+            [
+              77.22257006,
+              28.621037
+            ],
+            [
+              77.22257006,
+              28.620659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-001",
+        "ulpin": "IN-03-0001",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-301",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22312371,
+              28.620623
+            ],
+            [
+              77.22365687,
+              28.620623
+            ],
+            [
+              77.22365687,
+              28.621001
+            ],
+            [
+              77.22312371,
+              28.621001
+            ],
+            [
+              77.22312371,
+              28.620623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-002",
+        "ulpin": "IN-03-0002",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-302",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2237799,
+              28.620632
+            ],
+            [
+              77.22431305,
+              28.620632
+            ],
+            [
+              77.22431305,
+              28.62101
+            ],
+            [
+              77.2237799,
+              28.62101
+            ],
+            [
+              77.2237799,
+              28.620632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-003",
+        "ulpin": "IN-03-0003",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-303",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22436432,
+              28.620668
+            ],
+            [
+              77.22489747,
+              28.620668
+            ],
+            [
+              77.22489747,
+              28.621046
+            ],
+            [
+              77.22436432,
+              28.621046
+            ],
+            [
+              77.22436432,
+              28.620668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-004",
+        "ulpin": "IN-03-0004",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-304",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22496924,
+              28.620632
+            ],
+            [
+              77.22550239,
+              28.620632
+            ],
+            [
+              77.22550239,
+              28.62101
+            ],
+            [
+              77.22496924,
+              28.62101
+            ],
+            [
+              77.22496924,
+              28.620632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-005",
+        "ulpin": "IN-03-0005",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-305",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22557416,
+              28.620686
+            ],
+            [
+              77.22610732,
+              28.620686
+            ],
+            [
+              77.22610732,
+              28.621064
+            ],
+            [
+              77.22557416,
+              28.621064
+            ],
+            [
+              77.22557416,
+              28.620686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-006",
+        "ulpin": "IN-03-0006",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-306",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22619959,
+              28.620659
+            ],
+            [
+              77.22673274,
+              28.620659
+            ],
+            [
+              77.22673274,
+              28.621037
+            ],
+            [
+              77.22619959,
+              28.621037
+            ],
+            [
+              77.22619959,
+              28.620659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-007",
+        "ulpin": "IN-03-0007",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-307",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22686603,
+              28.620623
+            ],
+            [
+              77.22739918,
+              28.620623
+            ],
+            [
+              77.22739918,
+              28.621001
+            ],
+            [
+              77.22686603,
+              28.621001
+            ],
+            [
+              77.22686603,
+              28.620623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-008",
+        "ulpin": "IN-03-0008",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-308",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22250854,
+              28.621091
+            ],
+            [
+              77.22304169,
+              28.621091
+            ],
+            [
+              77.22304169,
+              28.621469
+            ],
+            [
+              77.22250854,
+              28.621469
+            ],
+            [
+              77.22250854,
+              28.621091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-009",
+        "ulpin": "IN-03-0009",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-309",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22314422,
+              28.621127
+            ],
+            [
+              77.22367737,
+              28.621127
+            ],
+            [
+              77.22367737,
+              28.621505
+            ],
+            [
+              77.22314422,
+              28.621505
+            ],
+            [
+              77.22314422,
+              28.621127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-010",
+        "ulpin": "IN-03-0010",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-310",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22374914,
+              28.6211
+            ],
+            [
+              77.2242823,
+              28.6211
+            ],
+            [
+              77.2242823,
+              28.621478
+            ],
+            [
+              77.22374914,
+              28.621478
+            ],
+            [
+              77.22374914,
+              28.6211
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-011",
+        "ulpin": "IN-03-0011",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-311",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22438482,
+              28.621109
+            ],
+            [
+              77.22491798,
+              28.621109
+            ],
+            [
+              77.22491798,
+              28.621487
+            ],
+            [
+              77.22438482,
+              28.621487
+            ],
+            [
+              77.22438482,
+              28.621109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-012",
+        "ulpin": "IN-03-0012",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-312",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22498975,
+              28.621127
+            ],
+            [
+              77.2255229,
+              28.621127
+            ],
+            [
+              77.2255229,
+              28.621505
+            ],
+            [
+              77.22498975,
+              28.621505
+            ],
+            [
+              77.22498975,
+              28.621127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-013",
+        "ulpin": "IN-03-0013",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-313",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22558442,
+              28.621073
+            ],
+            [
+              77.22611757,
+              28.621073
+            ],
+            [
+              77.22611757,
+              28.621451
+            ],
+            [
+              77.22558442,
+              28.621451
+            ],
+            [
+              77.22558442,
+              28.621073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-014",
+        "ulpin": "IN-03-0014",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-314",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22618934,
+              28.621082
+            ],
+            [
+              77.22672249,
+              28.621082
+            ],
+            [
+              77.22672249,
+              28.62146
+            ],
+            [
+              77.22618934,
+              28.62146
+            ],
+            [
+              77.22618934,
+              28.621082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-015",
+        "ulpin": "IN-03-0015",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-315",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22681477,
+              28.621073
+            ],
+            [
+              77.22734792,
+              28.621073
+            ],
+            [
+              77.22734792,
+              28.621451
+            ],
+            [
+              77.22681477,
+              28.621451
+            ],
+            [
+              77.22681477,
+              28.621073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-016",
+        "ulpin": "IN-03-0016",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-316",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22250854,
+              28.62155
+            ],
+            [
+              77.22304169,
+              28.62155
+            ],
+            [
+              77.22304169,
+              28.621928
+            ],
+            [
+              77.22250854,
+              28.621928
+            ],
+            [
+              77.22250854,
+              28.62155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-017",
+        "ulpin": "IN-03-0017",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-317",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22311346,
+              28.621541
+            ],
+            [
+              77.22364661,
+              28.621541
+            ],
+            [
+              77.22364661,
+              28.621919
+            ],
+            [
+              77.22311346,
+              28.621919
+            ],
+            [
+              77.22311346,
+              28.621541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-018",
+        "ulpin": "IN-03-0018",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-318",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2237594,
+              28.621568
+            ],
+            [
+              77.22429255,
+              28.621568
+            ],
+            [
+              77.22429255,
+              28.621946
+            ],
+            [
+              77.2237594,
+              28.621946
+            ],
+            [
+              77.2237594,
+              28.621568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-019",
+        "ulpin": "IN-03-0019",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-319",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22436432,
+              28.621559
+            ],
+            [
+              77.22489747,
+              28.621559
+            ],
+            [
+              77.22489747,
+              28.621937
+            ],
+            [
+              77.22436432,
+              28.621937
+            ],
+            [
+              77.22436432,
+              28.621559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-020",
+        "ulpin": "IN-03-0020",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-320",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22503076,
+              28.621523
+            ],
+            [
+              77.22556391,
+              28.621523
+            ],
+            [
+              77.22556391,
+              28.621901
+            ],
+            [
+              77.22503076,
+              28.621901
+            ],
+            [
+              77.22503076,
+              28.621523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-021",
+        "ulpin": "IN-03-0021",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-321",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22564593,
+              28.621568
+            ],
+            [
+              77.22617909,
+              28.621568
+            ],
+            [
+              77.22617909,
+              28.621946
+            ],
+            [
+              77.22564593,
+              28.621946
+            ],
+            [
+              77.22564593,
+              28.621568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-022",
+        "ulpin": "IN-03-0022",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-322",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22620985,
+              28.621586
+            ],
+            [
+              77.226743,
+              28.621586
+            ],
+            [
+              77.226743,
+              28.621964
+            ],
+            [
+              77.22620985,
+              28.621964
+            ],
+            [
+              77.22620985,
+              28.621586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-023",
+        "ulpin": "IN-03-0023",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-323",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22682502,
+              28.621586
+            ],
+            [
+              77.22735817,
+              28.621586
+            ],
+            [
+              77.22735817,
+              28.621964
+            ],
+            [
+              77.22682502,
+              28.621964
+            ],
+            [
+              77.22682502,
+              28.621586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-024",
+        "ulpin": "IN-03-0024",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-324",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22250854,
+              28.622
+            ],
+            [
+              77.22304169,
+              28.622
+            ],
+            [
+              77.22304169,
+              28.622378
+            ],
+            [
+              77.22250854,
+              28.622378
+            ],
+            [
+              77.22250854,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-025",
+        "ulpin": "IN-03-0025",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-325",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22316473,
+              28.621973
+            ],
+            [
+              77.22369788,
+              28.621973
+            ],
+            [
+              77.22369788,
+              28.622351
+            ],
+            [
+              77.22316473,
+              28.622351
+            ],
+            [
+              77.22316473,
+              28.621973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-026",
+        "ulpin": "IN-03-0026",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-326",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22381066,
+              28.621964
+            ],
+            [
+              77.22434381,
+              28.621964
+            ],
+            [
+              77.22434381,
+              28.622342
+            ],
+            [
+              77.22381066,
+              28.622342
+            ],
+            [
+              77.22381066,
+              28.621964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-027",
+        "ulpin": "IN-03-0027",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-327",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22438482,
+              28.622036
+            ],
+            [
+              77.22491798,
+              28.622036
+            ],
+            [
+              77.22491798,
+              28.622414
+            ],
+            [
+              77.22438482,
+              28.622414
+            ],
+            [
+              77.22438482,
+              28.622036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-028",
+        "ulpin": "IN-03-0028",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-328",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22495899,
+              28.622018
+            ],
+            [
+              77.22549214,
+              28.622018
+            ],
+            [
+              77.22549214,
+              28.622396
+            ],
+            [
+              77.22495899,
+              28.622396
+            ],
+            [
+              77.22495899,
+              28.622018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-029",
+        "ulpin": "IN-03-0029",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-329",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22565619,
+              28.621964
+            ],
+            [
+              77.22618934,
+              28.621964
+            ],
+            [
+              77.22618934,
+              28.622342
+            ],
+            [
+              77.22565619,
+              28.622342
+            ],
+            [
+              77.22565619,
+              28.621964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-030",
+        "ulpin": "IN-03-0030",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-330",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22618934,
+              28.622027
+            ],
+            [
+              77.22672249,
+              28.622027
+            ],
+            [
+              77.22672249,
+              28.622405
+            ],
+            [
+              77.22618934,
+              28.622405
+            ],
+            [
+              77.22618934,
+              28.622027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-031",
+        "ulpin": "IN-03-0031",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-331",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22680451,
+              28.621964
+            ],
+            [
+              77.22733767,
+              28.621964
+            ],
+            [
+              77.22733767,
+              28.622342
+            ],
+            [
+              77.22680451,
+              28.622342
+            ],
+            [
+              77.22680451,
+              28.621964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-032",
+        "ulpin": "IN-03-0032",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-332",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22258031,
+              28.622468
+            ],
+            [
+              77.22311346,
+              28.622468
+            ],
+            [
+              77.22311346,
+              28.622846
+            ],
+            [
+              77.22258031,
+              28.622846
+            ],
+            [
+              77.22258031,
+              28.622468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-033",
+        "ulpin": "IN-03-0033",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-333",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22313397,
+              28.622486
+            ],
+            [
+              77.22366712,
+              28.622486
+            ],
+            [
+              77.22366712,
+              28.622864
+            ],
+            [
+              77.22313397,
+              28.622864
+            ],
+            [
+              77.22313397,
+              28.622486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-034",
+        "ulpin": "IN-03-0034",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-334",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22376965,
+              28.622486
+            ],
+            [
+              77.2243028,
+              28.622486
+            ],
+            [
+              77.2243028,
+              28.622864
+            ],
+            [
+              77.22376965,
+              28.622864
+            ],
+            [
+              77.22376965,
+              28.622486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-035",
+        "ulpin": "IN-03-0035",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-335",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22436432,
+              28.62245
+            ],
+            [
+              77.22489747,
+              28.62245
+            ],
+            [
+              77.22489747,
+              28.622828
+            ],
+            [
+              77.22436432,
+              28.622828
+            ],
+            [
+              77.22436432,
+              28.62245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-036",
+        "ulpin": "IN-03-0036",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-336",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22498975,
+              28.622414
+            ],
+            [
+              77.2255229,
+              28.622414
+            ],
+            [
+              77.2255229,
+              28.622792
+            ],
+            [
+              77.22498975,
+              28.622792
+            ],
+            [
+              77.22498975,
+              28.622414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-037",
+        "ulpin": "IN-03-0037",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-337",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22562543,
+              28.622414
+            ],
+            [
+              77.22615858,
+              28.622414
+            ],
+            [
+              77.22615858,
+              28.622792
+            ],
+            [
+              77.22562543,
+              28.622792
+            ],
+            [
+              77.22562543,
+              28.622414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-038",
+        "ulpin": "IN-03-0038",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-338",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22620985,
+              28.622423
+            ],
+            [
+              77.226743,
+              28.622423
+            ],
+            [
+              77.226743,
+              28.622801
+            ],
+            [
+              77.22620985,
+              28.622801
+            ],
+            [
+              77.22620985,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-039",
+        "ulpin": "IN-03-0039",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-339",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22685578,
+              28.622441
+            ],
+            [
+              77.22738893,
+              28.622441
+            ],
+            [
+              77.22738893,
+              28.622819
+            ],
+            [
+              77.22685578,
+              28.622819
+            ],
+            [
+              77.22685578,
+              28.622441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-040",
+        "ulpin": "IN-03-0040",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-340",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22257006,
+              28.622864
+            ],
+            [
+              77.22310321,
+              28.622864
+            ],
+            [
+              77.22310321,
+              28.623242
+            ],
+            [
+              77.22257006,
+              28.623242
+            ],
+            [
+              77.22257006,
+              28.622864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-041",
+        "ulpin": "IN-03-0041",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-341",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22319549,
+              28.622909
+            ],
+            [
+              77.22372864,
+              28.622909
+            ],
+            [
+              77.22372864,
+              28.623287
+            ],
+            [
+              77.22319549,
+              28.623287
+            ],
+            [
+              77.22319549,
+              28.622909
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-042",
+        "ulpin": "IN-03-0042",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-342",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22376965,
+              28.622882
+            ],
+            [
+              77.2243028,
+              28.622882
+            ],
+            [
+              77.2243028,
+              28.62326
+            ],
+            [
+              77.22376965,
+              28.62326
+            ],
+            [
+              77.22376965,
+              28.622882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-03-043",
+        "ulpin": "IN-03-0043",
+        "ward_id": "Ward 08",
+        "area_name": "Civic Square",
+        "survey_number": "SY-343",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Civic Square"
+      }
+    }
+  ]
+}

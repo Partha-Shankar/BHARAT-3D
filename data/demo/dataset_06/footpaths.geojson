@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22802642,
+            28.630117
+          ],
+          [
+            77.23397358,
+            28.630117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-06-01",
+        "name": "Central Market Zone North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22802642,
+            28.629883
+          ],
+          [
+            77.23397358,
+            28.629883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-06-02",
+        "name": "Central Market Zone South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

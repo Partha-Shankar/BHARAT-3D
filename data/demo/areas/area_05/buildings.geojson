@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21343611,
+              28.618315
+            ],
+            [
+              77.21382571,
+              28.618315
+            ],
+            [
+              77.21382571,
+              28.618531
+            ],
+            [
+              77.21343611,
+              28.618531
+            ],
+            [
+              77.21343611,
+              28.618315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-01",
+        "name": "Urban Heights Aarav Heights Tower",
+        "ulpin": "IN-05-0008",
+        "building_code": "BLD-05-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2127697,
+              28.61746
+            ],
+            [
+              77.21307727,
+              28.61746
+            ],
+            [
+              77.21307727,
+              28.61764
+            ],
+            [
+              77.2127697,
+              28.61764
+            ],
+            [
+              77.2127697,
+              28.61746
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-02",
+        "name": "Urban Heights Residency Block B",
+        "ulpin": "IN-05-0014",
+        "building_code": "BLD-05-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21446136,
+              28.618225
+            ],
+            [
+              77.21512778,
+              28.618225
+            ],
+            [
+              77.21512778,
+              28.61863
+            ],
+            [
+              77.21446136,
+              28.61863
+            ],
+            [
+              77.21446136,
+              28.618225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-03",
+        "name": "Urban Heights Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-05-0003",
+        "building_code": "BLD-05-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21533283,
+              28.618855
+            ],
+            [
+              77.21615303,
+              28.618855
+            ],
+            [
+              77.21615303,
+              28.619143
+            ],
+            [
+              77.21533283,
+              28.619143
+            ],
+            [
+              77.21533283,
+              28.618855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-04",
+        "name": "Urban Heights Central Junction Railway Terminal",
+        "ulpin": "IN-05-0001",
+        "building_code": "BLD-05-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21338485,
+              28.619035
+            ],
+            [
+              77.21384621,
+              28.619035
+            ],
+            [
+              77.21384621,
+              28.619233
+            ],
+            [
+              77.21338485,
+              28.619233
+            ],
+            [
+              77.21338485,
+              28.619035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-05",
+        "name": "Urban Heights Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-05-0002",
+        "building_code": "BLD-05-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2148202,
+              28.617235
+            ],
+            [
+              77.21506626,
+              28.617235
+            ],
+            [
+              77.21506626,
+              28.617433
+            ],
+            [
+              77.2148202,
+              28.617433
+            ],
+            [
+              77.2148202,
+              28.617235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-07",
+        "name": "Urban Heights Sharma Commercial Plaza",
+        "ulpin": "IN-05-0018",
+        "building_code": "BLD-05-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21212379,
+              28.617973
+            ],
+            [
+              77.21235959,
+              28.617973
+            ],
+            [
+              77.21235959,
+              28.618135
+            ],
+            [
+              77.21212379,
+              28.618135
+            ],
+            [
+              77.21212379,
+              28.617973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-08",
+        "name": "Urban Heights Urban Property #8",
+        "ulpin": "IN-05-0023",
+        "building_code": "BLD-05-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 414,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21297475,
+              28.617928
+            ],
+            [
+              77.21327207,
+              28.617928
+            ],
+            [
+              77.21327207,
+              28.618144
+            ],
+            [
+              77.21297475,
+              28.618144
+            ],
+            [
+              77.21297475,
+              28.617928
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-09",
+        "name": "Urban Heights Urban Property #9",
+        "ulpin": "IN-05-0024",
+        "building_code": "BLD-05-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 696,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21407177,
+              28.617964
+            ],
+            [
+              77.21431783,
+              28.617964
+            ],
+            [
+              77.21431783,
+              28.61818
+            ],
+            [
+              77.21407177,
+              28.61818
+            ],
+            [
+              77.21407177,
+              28.617964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-10",
+        "name": "Urban Heights Urban Property #10",
+        "ulpin": "IN-05-0025",
+        "building_code": "BLD-05-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 576,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21488172,
+              28.61809
+            ],
+            [
+              77.21513803,
+              28.61809
+            ],
+            [
+              77.21513803,
+              28.618297
+            ],
+            [
+              77.21488172,
+              28.618297
+            ],
+            [
+              77.21488172,
+              28.61809
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-11",
+        "name": "Urban Heights Urban Property #11",
+        "ulpin": "IN-05-0026",
+        "building_code": "BLD-05-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21207252,
+              28.618702
+            ],
+            [
+              77.21234934,
+              28.618702
+            ],
+            [
+              77.21234934,
+              28.618936
+            ],
+            [
+              77.21207252,
+              28.618936
+            ],
+            [
+              77.21207252,
+              28.618702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-12",
+        "name": "Urban Heights Urban Property #12",
+        "ulpin": "IN-05-0027",
+        "building_code": "BLD-05-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 702,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21302601,
+              28.618639
+            ],
+            [
+              77.21334384,
+              28.618639
+            ],
+            [
+              77.21334384,
+              28.618819
+            ],
+            [
+              77.21302601,
+              28.618819
+            ],
+            [
+              77.21302601,
+              28.618639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-13",
+        "name": "Urban Heights Urban Property #13",
+        "ulpin": "IN-05-0028",
+        "building_code": "BLD-05-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 620,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21390773,
+              28.618648
+            ],
+            [
+              77.2141948,
+              28.618648
+            ],
+            [
+              77.2141948,
+              28.61881
+            ],
+            [
+              77.21390773,
+              28.61881
+            ],
+            [
+              77.21390773,
+              28.618648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-14",
+        "name": "Urban Heights Urban Property #14",
+        "ulpin": "IN-05-0029",
+        "building_code": "BLD-05-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21493298,
+              28.618702
+            ],
+            [
+              77.21515854,
+              28.618702
+            ],
+            [
+              77.21515854,
+              28.618882
+            ],
+            [
+              77.21493298,
+              28.618882
+            ],
+            [
+              77.21493298,
+              28.618702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-15",
+        "name": "Urban Heights Urban Property #15",
+        "ulpin": "IN-05-0030",
+        "building_code": "BLD-05-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 440,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21212379,
+              28.61944
+            ],
+            [
+              77.21242111,
+              28.61944
+            ],
+            [
+              77.21242111,
+              28.619647
+            ],
+            [
+              77.21212379,
+              28.619647
+            ],
+            [
+              77.21212379,
+              28.61944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-16",
+        "name": "Urban Heights Urban Property #16",
+        "ulpin": "IN-05-0031",
+        "building_code": "BLD-05-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 667,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21304651,
+              28.619377
+            ],
+            [
+              77.21333359,
+              28.619377
+            ],
+            [
+              77.21333359,
+              28.619539
+            ],
+            [
+              77.21304651,
+              28.619539
+            ],
+            [
+              77.21304651,
+              28.619377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-17",
+        "name": "Urban Heights Urban Property #17",
+        "ulpin": "IN-05-0032",
+        "building_code": "BLD-05-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21407177,
+              28.619368
+            ],
+            [
+              77.21428707,
+              28.619368
+            ],
+            [
+              77.21428707,
+              28.61953
+            ],
+            [
+              77.21407177,
+              28.61953
+            ],
+            [
+              77.21407177,
+              28.619368
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-18",
+        "name": "Urban Heights Urban Property #18",
+        "ulpin": "IN-05-0033",
+        "building_code": "BLD-05-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 378,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21492273,
+              28.619359
+            ],
+            [
+              77.21524056,
+              28.619359
+            ],
+            [
+              77.21524056,
+              28.619539
+            ],
+            [
+              77.21492273,
+              28.619539
+            ],
+            [
+              77.21492273,
+              28.619359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-19",
+        "name": "Urban Heights Urban Property #19",
+        "ulpin": "IN-05-0034",
+        "building_code": "BLD-05-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 620,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

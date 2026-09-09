@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20248197,
+              28.641243
+            ],
+            [
+              77.20310752,
+              28.641243
+            ],
+            [
+              77.20310752,
+              28.641612
+            ],
+            [
+              77.20248197,
+              28.641612
+            ],
+            [
+              77.20248197,
+              28.641243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-04-01",
+        "name": "Transit Quarter Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Transit Quarter Mall Ltd",
+        "parent_building": "BLD-04-03"
+      }
+    }
+  ]
+}

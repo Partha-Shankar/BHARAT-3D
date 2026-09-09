@@ -1,0 +1,18 @@
+{
+  "area_id": "area_04",
+  "area_name": "Transit Quarter",
+  "ward": "Ward 31",
+  "parcels_count": 44,
+  "buildings_detected": 18,
+  "floors_inferred": 72,
+  "vertical_units": 174,
+  "infrastructure_assets": 7,
+  "violations_detected": 4,
+  "analysis_confidence": 0.98,
+  "topology_score": 0.989,
+  "crs_normalized": "EPSG:4326 / UTM 43N",
+  "center": [
+    77.202,
+    28.641
+  ]
+}

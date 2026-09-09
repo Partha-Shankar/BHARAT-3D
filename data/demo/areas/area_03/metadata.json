@@ -1,0 +1,20 @@
+{
+  "area_id": "area_03",
+  "area_name": "Civic Square",
+  "ward_number": "Ward 08",
+  "theme": "Metro Hub, Civic Apartment Enclave & Underground Multi-level Parking",
+  "version": "v3.0",
+  "center": [
+    77.225,
+    28.622
+  ],
+  "bounding_box": [
+    77.22,
+    28.617,
+    77.22999999999999,
+    28.627
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-02T19:20:19.992213",
+  "files_count": 24
+}

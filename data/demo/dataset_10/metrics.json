@@ -1,0 +1,18 @@
+{
+  "area_id": "area_10",
+  "area_name": "Central Urban Core",
+  "ward": "Ward 01",
+  "parcels_count": 42,
+  "buildings_detected": 18,
+  "floors_inferred": 72,
+  "vertical_units": 182,
+  "infrastructure_assets": 7,
+  "violations_detected": 4,
+  "analysis_confidence": 0.94,
+  "topology_score": 0.989,
+  "crs_normalized": "EPSG:4326 / UTM 43N",
+  "center": [
+    77.21,
+    28.632
+  ]
+}

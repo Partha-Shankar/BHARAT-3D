@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20543594,
+              28.650315
+            ],
+            [
+              77.20582565,
+              28.650315
+            ],
+            [
+              77.20582565,
+              28.650531
+            ],
+            [
+              77.20543594,
+              28.650531
+            ],
+            [
+              77.20543594,
+              28.650315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-01",
+        "name": "Integrated Urban Zone Aarav Heights Tower",
+        "ulpin": "IN-08-0008",
+        "building_code": "BLD-08-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20476932,
+              28.64946
+            ],
+            [
+              77.20507699,
+              28.64946
+            ],
+            [
+              77.20507699,
+              28.64964
+            ],
+            [
+              77.20476932,
+              28.64964
+            ],
+            [
+              77.20476932,
+              28.64946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-02",
+        "name": "Integrated Urban Zone Residency Block B",
+        "ulpin": "IN-08-0014",
+        "building_code": "BLD-08-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2064615,
+              28.650225
+            ],
+            [
+              77.20712812,
+              28.650225
+            ],
+            [
+              77.20712812,
+              28.65063
+            ],
+            [
+              77.2064615,
+              28.65063
+            ],
+            [
+              77.2064615,
+              28.650225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-03",
+        "name": "Integrated Urban Zone Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-08-0003",
+        "building_code": "BLD-08-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20733324,
+              28.650855
+            ],
+            [
+              77.20815369,
+              28.650855
+            ],
+            [
+              77.20815369,
+              28.651143
+            ],
+            [
+              77.20733324,
+              28.651143
+            ],
+            [
+              77.20733324,
+              28.650855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-04",
+        "name": "Integrated Urban Zone Central Junction Railway Terminal",
+        "ulpin": "IN-08-0001",
+        "building_code": "BLD-08-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20538466,
+              28.651035
+            ],
+            [
+              77.20584617,
+              28.651035
+            ],
+            [
+              77.20584617,
+              28.651233
+            ],
+            [
+              77.20538466,
+              28.651233
+            ],
+            [
+              77.20538466,
+              28.651035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-05",
+        "name": "Integrated Urban Zone Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-08-0002",
+        "building_code": "BLD-08-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20682045,
+              28.649235
+            ],
+            [
+              77.20706659,
+              28.649235
+            ],
+            [
+              77.20706659,
+              28.649433
+            ],
+            [
+              77.20682045,
+              28.649433
+            ],
+            [
+              77.20682045,
+              28.649235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-07",
+        "name": "Integrated Urban Zone Sharma Commercial Plaza",
+        "ulpin": "IN-08-0018",
+        "building_code": "BLD-08-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20415398,
+              28.649937
+            ],
+            [
+              77.20447191,
+              28.649937
+            ],
+            [
+              77.20447191,
+              28.650162
+            ],
+            [
+              77.20415398,
+              28.650162
+            ],
+            [
+              77.20415398,
+              28.649937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-08",
+        "name": "Integrated Urban Zone Urban Property #8",
+        "ulpin": "IN-08-0023",
+        "building_code": "BLD-08-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 775,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2050975,
+              28.649973
+            ],
+            [
+              77.20542568,
+              28.649973
+            ],
+            [
+              77.20542568,
+              28.650198
+            ],
+            [
+              77.2050975,
+              28.650198
+            ],
+            [
+              77.2050975,
+              28.649973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-09",
+        "name": "Integrated Urban Zone Urban Property #9",
+        "ulpin": "IN-08-0024",
+        "building_code": "BLD-08-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 800,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20593847,
+              28.649982
+            ],
+            [
+              77.20617435,
+              28.649982
+            ],
+            [
+              77.20617435,
+              28.650216
+            ],
+            [
+              77.20593847,
+              28.650216
+            ],
+            [
+              77.20593847,
+              28.649982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-10",
+        "name": "Integrated Urban Zone Urban Property #10",
+        "ulpin": "IN-08-0025",
+        "building_code": "BLD-08-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 598,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20700505,
+              28.650081
+            ],
+            [
+              77.20725119,
+              28.650081
+            ],
+            [
+              77.20725119,
+              28.650252
+            ],
+            [
+              77.20700505,
+              28.650252
+            ],
+            [
+              77.20700505,
+              28.650081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-11",
+        "name": "Integrated Urban Zone Urban Property #11",
+        "ulpin": "IN-08-0026",
+        "building_code": "BLD-08-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 456,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20412321,
+              28.650666
+            ],
+            [
+              77.20436935,
+              28.650666
+            ],
+            [
+              77.20436935,
+              28.650864
+            ],
+            [
+              77.20412321,
+              28.650864
+            ],
+            [
+              77.20412321,
+              28.650666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-12",
+        "name": "Integrated Urban Zone Urban Property #12",
+        "ulpin": "IN-08-0027",
+        "building_code": "BLD-08-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 528,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20513852,
+              28.650729
+            ],
+            [
+              77.20544619,
+              28.650729
+            ],
+            [
+              77.20544619,
+              28.650909
+            ],
+            [
+              77.20513852,
+              28.650909
+            ],
+            [
+              77.20513852,
+              28.650729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-13",
+        "name": "Integrated Urban Zone Urban Property #13",
+        "ulpin": "IN-08-0028",
+        "building_code": "BLD-08-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20594872,
+              28.65081
+            ],
+            [
+              77.20619486,
+              28.65081
+            ],
+            [
+              77.20619486,
+              28.651035
+            ],
+            [
+              77.20594872,
+              28.651035
+            ],
+            [
+              77.20594872,
+              28.65081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-14",
+        "name": "Integrated Urban Zone Urban Property #14",
+        "ulpin": "IN-08-0029",
+        "building_code": "BLD-08-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20693327,
+              28.650648
+            ],
+            [
+              77.20713838,
+              28.650648
+            ],
+            [
+              77.20713838,
+              28.650828
+            ],
+            [
+              77.20693327,
+              28.650828
+            ],
+            [
+              77.20693327,
+              28.650648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-15",
+        "name": "Integrated Urban Zone Urban Property #15",
+        "ulpin": "IN-08-0030",
+        "building_code": "BLD-08-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 400,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20409245,
+              28.651476
+            ],
+            [
+              77.20437961,
+              28.651476
+            ],
+            [
+              77.20437961,
+              28.651656
+            ],
+            [
+              77.20409245,
+              28.651656
+            ],
+            [
+              77.20409245,
+              28.651476
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-16",
+        "name": "Integrated Urban Zone Urban Property #16",
+        "ulpin": "IN-08-0031",
+        "building_code": "BLD-08-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 560,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20506673,
+              28.651395
+            ],
+            [
+              77.20535389,
+              28.651395
+            ],
+            [
+              77.20535389,
+              28.65162
+            ],
+            [
+              77.20506673,
+              28.65162
+            ],
+            [
+              77.20506673,
+              28.651395
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-17",
+        "name": "Integrated Urban Zone Urban Property #17",
+        "ulpin": "IN-08-0032",
+        "building_code": "BLD-08-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 700,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20593847,
+              28.651377
+            ],
+            [
+              77.20617435,
+              28.651377
+            ],
+            [
+              77.20617435,
+              28.651539
+            ],
+            [
+              77.20593847,
+              28.651539
+            ],
+            [
+              77.20593847,
+              28.651377
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-18",
+        "name": "Integrated Urban Zone Urban Property #18",
+        "ulpin": "IN-08-0033",
+        "building_code": "BLD-08-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 414,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20700505,
+              28.651458
+            ],
+            [
+              77.20732298,
+              28.651458
+            ],
+            [
+              77.20732298,
+              28.65162
+            ],
+            [
+              77.20700505,
+              28.65162
+            ],
+            [
+              77.20700505,
+              28.651458
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-08-19",
+        "name": "Integrated Urban Zone Urban Property #19",
+        "ulpin": "IN-08-0034",
+        "building_code": "BLD-08-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 558,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

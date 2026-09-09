@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21892345,
+            28.645
+          ],
+          [
+            77.22507655,
+            28.645
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-09-01",
+        "name": "Vertical City District Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.222,
+            28.64275
+          ],
+          [
+            77.222,
+            28.64725
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-09-02",
+        "name": "Vertical City District Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21892345,
+            28.64608
+          ],
+          [
+            77.22507655,
+            28.64608
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-09-03",
+        "name": "Vertical City District North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

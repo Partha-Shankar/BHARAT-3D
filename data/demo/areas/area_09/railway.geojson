@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22333317,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.645855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-04",
+        "name": "Vertical City District Central Junction Railway Terminal",
+        "ulpin": "IN-09-0001",
+        "building_code": "BLD-09-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

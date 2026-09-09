@@ -1,0 +1,18 @@
+{
+  "area_id": "area_07",
+  "area_name": "Civic Transit Zone",
+  "ward": "Ward 05",
+  "parcels_count": 47,
+  "buildings_detected": 18,
+  "floors_inferred": 72,
+  "vertical_units": 198,
+  "infrastructure_assets": 7,
+  "violations_detected": 4,
+  "analysis_confidence": 0.96,
+  "topology_score": 0.989,
+  "crs_normalized": "EPSG:4326 / UTM 43N",
+  "center": [
+    77.195,
+    28.625
+  ]
+}

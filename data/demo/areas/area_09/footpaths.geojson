@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.219026,
+            28.645117
+          ],
+          [
+            77.224974,
+            28.645117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-09-01",
+        "name": "Vertical City District North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.219026,
+            28.644883
+          ],
+          [
+            77.224974,
+            28.644883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-09-02",
+        "name": "Vertical City District South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

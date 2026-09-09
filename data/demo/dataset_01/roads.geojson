@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20592395,
+            28.628
+          ],
+          [
+            77.21207605,
+            28.628
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-01-01",
+        "name": "Central Heights Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.209,
+            28.62575
+          ],
+          [
+            77.209,
+            28.63025
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-01-02",
+        "name": "Central Heights Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20592395,
+            28.62908
+          ],
+          [
+            77.21207605,
+            28.62908
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-01-03",
+        "name": "Central Heights North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

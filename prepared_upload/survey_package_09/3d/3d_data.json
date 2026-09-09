@@ -1,0 +1,3391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-01",
+        "name": "Vertical City District Aarav Heights Tower",
+        "entity_type": "building",
+        "height": 39.0,
+        "base_height": 0.0,
+        "color": "#2563EB",
+        "floors": 12,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F01-U01",
+        "vprid": "VPR-BLD0901-F01-U01",
+        "name": "Vertical City District \u2022 Flat 101",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F01-U02",
+        "vprid": "VPR-BLD0901-F01-U02",
+        "name": "Vertical City District \u2022 Flat 102",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F01-U03",
+        "vprid": "VPR-BLD0901-F01-U03",
+        "name": "Vertical City District \u2022 Flat 103",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F01-U04",
+        "vprid": "VPR-BLD0901-F01-U04",
+        "name": "Vertical City District \u2022 Flat 104",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F02-U01",
+        "vprid": "VPR-BLD0901-F02-U01",
+        "name": "Vertical City District \u2022 Flat 201",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F02-U02",
+        "vprid": "VPR-BLD0901-F02-U02",
+        "name": "Vertical City District \u2022 Flat 202",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F02-U03",
+        "vprid": "VPR-BLD0901-F02-U03",
+        "name": "Vertical City District \u2022 Flat 203",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F02-U04",
+        "vprid": "VPR-BLD0901-F02-U04",
+        "name": "Vertical City District \u2022 Flat 204",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F03-U01",
+        "vprid": "VPR-BLD0901-F03-U01",
+        "name": "Vertical City District \u2022 Flat 301",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F03-U02",
+        "vprid": "VPR-BLD0901-F03-U02",
+        "name": "Vertical City District \u2022 Flat 302",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F03-U03",
+        "vprid": "VPR-BLD0901-F03-U03",
+        "name": "Vertical City District \u2022 Flat 303",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F03-U04",
+        "vprid": "VPR-BLD0901-F03-U04",
+        "name": "Vertical City District \u2022 Flat 304",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F04-U01",
+        "vprid": "VPR-BLD0901-F04-U01",
+        "name": "Vertical City District \u2022 Flat 401",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F04-U02",
+        "vprid": "VPR-BLD0901-F04-U02",
+        "name": "Vertical City District \u2022 Flat 402",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F04-U03",
+        "vprid": "VPR-BLD0901-F04-U03",
+        "name": "Vertical City District \u2022 Flat 403",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F04-U04",
+        "vprid": "VPR-BLD0901-F04-U04",
+        "name": "Vertical City District \u2022 Flat 404",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F05-U01",
+        "vprid": "VPR-BLD0901-F05-U01",
+        "name": "Vertical City District \u2022 Flat 501",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F05-U02",
+        "vprid": "VPR-BLD0901-F05-U02",
+        "name": "Vertical City District \u2022 Flat 502",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F05-U03",
+        "vprid": "VPR-BLD0901-F05-U03",
+        "name": "Vertical City District \u2022 Flat 503",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F05-U04",
+        "vprid": "VPR-BLD0901-F05-U04",
+        "name": "Vertical City District \u2022 Flat 504",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F06-U01",
+        "vprid": "VPR-BLD0901-F06-U01",
+        "name": "Vertical City District \u2022 Flat 601",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F06-U02",
+        "vprid": "VPR-BLD0901-F06-U02",
+        "name": "Vertical City District \u2022 Flat 602",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F06-U03",
+        "vprid": "VPR-BLD0901-F06-U03",
+        "name": "Vertical City District \u2022 Flat 603",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F06-U04",
+        "vprid": "VPR-BLD0901-F06-U04",
+        "name": "Vertical City District \u2022 Flat 604",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F07-U01",
+        "vprid": "VPR-BLD0901-F07-U01",
+        "name": "Vertical City District \u2022 Flat 701",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F07-U02",
+        "vprid": "VPR-BLD0901-F07-U02",
+        "name": "Vertical City District \u2022 Flat 702",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F07-U03",
+        "vprid": "VPR-BLD0901-F07-U03",
+        "name": "Vertical City District \u2022 Flat 703",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F07-U04",
+        "vprid": "VPR-BLD0901-F07-U04",
+        "name": "Vertical City District \u2022 Flat 704",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F08-U01",
+        "vprid": "VPR-BLD0901-F08-U01",
+        "name": "Vertical City District \u2022 Flat 801",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F08-U02",
+        "vprid": "VPR-BLD0901-F08-U02",
+        "name": "Vertical City District \u2022 Flat 802",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F08-U03",
+        "vprid": "VPR-BLD0901-F08-U03",
+        "name": "Vertical City District \u2022 Flat 803",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F08-U04",
+        "vprid": "VPR-BLD0901-F08-U04",
+        "name": "Vertical City District \u2022 Flat 804",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#F59E0B",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 18400,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F09-U01",
+        "vprid": "VPR-BLD0901-F09-U01",
+        "name": "Vertical City District \u2022 Flat 901",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F09-U02",
+        "vprid": "VPR-BLD0901-F09-U02",
+        "name": "Vertical City District \u2022 Flat 902",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F09-U03",
+        "vprid": "VPR-BLD0901-F09-U03",
+        "name": "Vertical City District \u2022 Flat 903",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F09-U04",
+        "vprid": "VPR-BLD0901-F09-U04",
+        "name": "Vertical City District \u2022 Flat 904",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F10-U01",
+        "vprid": "VPR-BLD0901-F10-U01",
+        "name": "Vertical City District \u2022 Flat 1001",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F10-U02",
+        "vprid": "VPR-BLD0901-F10-U02",
+        "name": "Vertical City District \u2022 Flat 1002",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F10-U03",
+        "vprid": "VPR-BLD0901-F10-U03",
+        "name": "Vertical City District \u2022 Flat 1003",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F10-U04",
+        "vprid": "VPR-BLD0901-F10-U04",
+        "name": "Vertical City District \u2022 Flat 1004",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F11-U01",
+        "vprid": "VPR-BLD0901-F11-U01",
+        "name": "Vertical City District \u2022 Flat 1101",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F11-U02",
+        "vprid": "VPR-BLD0901-F11-U02",
+        "name": "Vertical City District \u2022 Flat 1102",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F11-U03",
+        "vprid": "VPR-BLD0901-F11-U03",
+        "name": "Vertical City District \u2022 Flat 1103",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F11-U04",
+        "vprid": "VPR-BLD0901-F11-U04",
+        "name": "Vertical City District \u2022 Flat 1104",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F12-U01",
+        "vprid": "VPR-BLD0901-F12-U01",
+        "name": "Vertical City District \u2022 Flat 1201",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F12-U02",
+        "vprid": "VPR-BLD0901-F12-U02",
+        "name": "Vertical City District \u2022 Flat 1202",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F12-U03",
+        "vprid": "VPR-BLD0901-F12-U03",
+        "name": "Vertical City District \u2022 Flat 1203",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22163081,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645423
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645531
+            ],
+            [
+              77.22163081,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0901-F12-U04",
+        "vprid": "VPR-BLD0901-F12-U04",
+        "name": "Vertical City District \u2022 Flat 1204",
+        "entity_type": "unit",
+        "building_id": "BLD-09-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22076938,
+              28.64446
+            ],
+            [
+              77.22107703,
+              28.64446
+            ],
+            [
+              77.22107703,
+              28.64464
+            ],
+            [
+              77.22076938,
+              28.64464
+            ],
+            [
+              77.22076938,
+              28.64446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-02",
+        "name": "Vertical City District Residency Block B",
+        "entity_type": "building",
+        "height": 15.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22246148,
+              28.645225
+            ],
+            [
+              77.22312807,
+              28.645225
+            ],
+            [
+              77.22312807,
+              28.64563
+            ],
+            [
+              77.22246148,
+              28.64563
+            ],
+            [
+              77.22246148,
+              28.645225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-03",
+        "name": "Vertical City District Civic Grand Mall & Retail Hub",
+        "entity_type": "mall",
+        "height": 18.5,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22333317,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.645855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-04",
+        "name": "Vertical City District Central Junction Railway Terminal",
+        "entity_type": "building",
+        "height": 12.0,
+        "base_height": 0.0,
+        "color": "#0D9488",
+        "floors": 2,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22138469,
+              28.646035
+            ],
+            [
+              77.22184617,
+              28.646035
+            ],
+            [
+              77.22184617,
+              28.646233
+            ],
+            [
+              77.22138469,
+              28.646233
+            ],
+            [
+              77.22138469,
+              28.646035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-05",
+        "name": "Vertical City District Metro Interchange Station (Elevated +6m)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 6.0,
+        "color": "#7C3AED",
+        "floors": 2,
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22015407,
+              28.644955
+            ],
+            [
+              77.22364083,
+              28.644955
+            ],
+            [
+              77.22364083,
+              28.645081
+            ],
+            [
+              77.22015407,
+              28.645081
+            ],
+            [
+              77.22015407,
+              28.644955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-09-01",
+        "name": "Vertical City District Elevated Bypass Flyover (Deck: +8.5m)",
+        "entity_type": "flyover",
+        "height": 10.7,
+        "base_height": 8.5,
+        "color": "#EA580C",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22033866,
+              28.645
+            ],
+            [
+              77.22037968,
+              28.645
+            ],
+            [
+              77.22037968,
+              28.645036
+            ],
+            [
+              77.22033866,
+              28.645036
+            ],
+            [
+              77.22033866,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-01",
+        "name": "Vertical City District Flyover Concrete Pier P-1",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22095397,
+              28.645
+            ],
+            [
+              77.22099499,
+              28.645
+            ],
+            [
+              77.22099499,
+              28.645036
+            ],
+            [
+              77.22095397,
+              28.645036
+            ],
+            [
+              77.22095397,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-02",
+        "name": "Vertical City District Flyover Concrete Pier P-2",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22156928,
+              28.645
+            ],
+            [
+              77.2216103,
+              28.645
+            ],
+            [
+              77.2216103,
+              28.645036
+            ],
+            [
+              77.22156928,
+              28.645036
+            ],
+            [
+              77.22156928,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-03",
+        "name": "Vertical City District Flyover Concrete Pier P-3",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22218459,
+              28.645
+            ],
+            [
+              77.22222561,
+              28.645
+            ],
+            [
+              77.22222561,
+              28.645036
+            ],
+            [
+              77.22218459,
+              28.645036
+            ],
+            [
+              77.22218459,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-04",
+        "name": "Vertical City District Flyover Concrete Pier P-4",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2227999,
+              28.645
+            ],
+            [
+              77.22284092,
+              28.645
+            ],
+            [
+              77.22284092,
+              28.645036
+            ],
+            [
+              77.2227999,
+              28.645036
+            ],
+            [
+              77.2227999,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-05",
+        "name": "Vertical City District Flyover Concrete Pier P-5",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22341521,
+              28.645
+            ],
+            [
+              77.22345623,
+              28.645
+            ],
+            [
+              77.22345623,
+              28.645036
+            ],
+            [
+              77.22341521,
+              28.645036
+            ],
+            [
+              77.22341521,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-09-06",
+        "name": "Vertical City District Flyover Concrete Pier P-6",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22128214,
+              28.644802
+            ],
+            [
+              77.22415359,
+              28.644802
+            ],
+            [
+              77.22415359,
+              28.64491
+            ],
+            [
+              77.22128214,
+              28.64491
+            ],
+            [
+              77.22128214,
+              28.644802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-09-01",
+        "name": "Vertical City District Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "entity_type": "tunnel",
+        "height": 4.8,
+        "base_height": 0.2,
+        "depth_meters": 8.5,
+        "color": "#0891B2",
+        "usage": "SUBTERRANEAN_ROAD",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22076938,
+              28.646125
+            ],
+            [
+              77.22466634,
+              28.646125
+            ],
+            [
+              77.22466634,
+              28.646215
+            ],
+            [
+              77.22076938,
+              28.646215
+            ],
+            [
+              77.22076938,
+              28.646125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-09-02",
+        "name": "Vertical City District Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "entity_type": "tunnel",
+        "height": 5.6,
+        "base_height": 0.2,
+        "depth_meters": 14.2,
+        "color": "#06B6D4",
+        "usage": "SUBTERRANEAN_METRO",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22248199,
+              28.645243
+            ],
+            [
+              77.22310756,
+              28.645243
+            ],
+            [
+              77.22310756,
+              28.645612
+            ],
+            [
+              77.22248199,
+              28.645612
+            ],
+            [
+              77.22248199,
+              28.645243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-09-01",
+        "name": "Vertical City District Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "entity_type": "tunnel",
+        "height": 3.8,
+        "base_height": 0.2,
+        "depth_meters": 6.0,
+        "color": "#0284C7",
+        "usage": "SUBTERRANEAN_PARKING",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22282041,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-07",
+        "name": "Vertical City District Sharma Plaza (Sanctioned G+4)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 0.0,
+        "color": "#64748B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22282041,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-07-ILLEGAL-FLOORS",
+        "name": "Vertical City District Sharma Plaza (UNAUTHORIZED Floors 5 & 6)",
+        "entity_type": "violation",
+        "height": 21.2,
+        "base_height": 14.0,
+        "color": "#DC2626",
+        "floors": 2,
+        "usage": "VIOLATION",
+        "violation_code": "VLT-001",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22210255,
+              28.64509
+            ],
+            [
+              77.22218459,
+              28.64509
+            ],
+            [
+              77.22218459,
+              28.645135
+            ],
+            [
+              77.22210255,
+              28.645135
+            ],
+            [
+              77.22210255,
+              28.64509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "VLT-09-ENC-01",
+        "name": "Vertical City District Commercial Footpath Encroachment (18.6 m\u00b2)",
+        "entity_type": "violation",
+        "height": 3.5,
+        "base_height": 0.0,
+        "color": "#EF4444",
+        "usage": "VIOLATION",
+        "violation_code": "VLT-003",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22007203,
+              28.645081
+            ],
+            [
+              77.22032841,
+              28.645081
+            ],
+            [
+              77.22032841,
+              28.645306
+            ],
+            [
+              77.22007203,
+              28.645306
+            ],
+            [
+              77.22007203,
+              28.645081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-08",
+        "name": "Vertical City District Urban Property #8",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22115908,
+              28.64509
+            ],
+            [
+              77.2214052,
+              28.64509
+            ],
+            [
+              77.2214052,
+              28.645288
+            ],
+            [
+              77.22115908,
+              28.645288
+            ],
+            [
+              77.22115908,
+              28.64509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-09",
+        "name": "Vertical City District Urban Property #9",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22201026,
+              28.644919
+            ],
+            [
+              77.22232817,
+              28.644919
+            ],
+            [
+              77.22232817,
+              28.645144
+            ],
+            [
+              77.22201026,
+              28.645144
+            ],
+            [
+              77.22201026,
+              28.644919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-10",
+        "name": "Vertical City District Urban Property #10",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22291271,
+              28.645036
+            ],
+            [
+              77.22319986,
+              28.645036
+            ],
+            [
+              77.22319986,
+              28.645243
+            ],
+            [
+              77.22291271,
+              28.645243
+            ],
+            [
+              77.22291271,
+              28.645036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-11",
+        "name": "Vertical City District Urban Property #11",
+        "entity_type": "building",
+        "height": 12.8,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 4,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2201233,
+              28.64563
+            ],
+            [
+              77.22036943,
+              28.64563
+            ],
+            [
+              77.22036943,
+              28.645801
+            ],
+            [
+              77.2201233,
+              28.645801
+            ],
+            [
+              77.2201233,
+              28.64563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-12",
+        "name": "Vertical City District Urban Property #12",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 3,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22108729,
+              28.645657
+            ],
+            [
+              77.22135392,
+              28.645657
+            ],
+            [
+              77.22135392,
+              28.645882
+            ],
+            [
+              77.22108729,
+              28.645882
+            ],
+            [
+              77.22108729,
+              28.645657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-13",
+        "name": "Vertical City District Urban Property #13",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22210255,
+              28.64563
+            ],
+            [
+              77.22232817,
+              28.64563
+            ],
+            [
+              77.22232817,
+              28.645801
+            ],
+            [
+              77.22210255,
+              28.645801
+            ],
+            [
+              77.22210255,
+              28.64563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-14",
+        "name": "Vertical City District Urban Property #14",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22292297,
+              28.64572
+            ],
+            [
+              77.2231896,
+              28.64572
+            ],
+            [
+              77.2231896,
+              28.6459
+            ],
+            [
+              77.22292297,
+              28.6459
+            ],
+            [
+              77.22292297,
+              28.64572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-15",
+        "name": "Vertical City District Urban Property #15",
+        "entity_type": "building",
+        "height": 12.8,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22014381,
+              28.64653
+            ],
+            [
+              77.22045147,
+              28.64653
+            ],
+            [
+              77.22045147,
+              28.64671
+            ],
+            [
+              77.22014381,
+              28.64671
+            ],
+            [
+              77.22014381,
+              28.64653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-16",
+        "name": "Vertical City District Urban Property #16",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22103601,
+              28.64653
+            ],
+            [
+              77.22130265,
+              28.64653
+            ],
+            [
+              77.22130265,
+              28.646764
+            ],
+            [
+              77.22103601,
+              28.646764
+            ],
+            [
+              77.22103601,
+              28.64653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-17",
+        "name": "Vertical City District Urban Property #17",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22189745,
+              28.646413
+            ],
+            [
+              77.22213332,
+              28.646413
+            ],
+            [
+              77.22213332,
+              28.646647
+            ],
+            [
+              77.22189745,
+              28.646647
+            ],
+            [
+              77.22189745,
+              28.646413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-18",
+        "name": "Vertical City District Urban Property #18",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22285118,
+              28.646521
+            ],
+            [
+              77.22317934,
+              28.646521
+            ],
+            [
+              77.22317934,
+              28.646683
+            ],
+            [
+              77.22285118,
+              28.646683
+            ],
+            [
+              77.22285118,
+              28.646521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-19",
+        "name": "Vertical City District Urban Property #19",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

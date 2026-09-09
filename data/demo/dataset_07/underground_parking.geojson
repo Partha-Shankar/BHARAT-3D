@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1954819,
+              28.625243
+            ],
+            [
+              77.19610735,
+              28.625243
+            ],
+            [
+              77.19610735,
+              28.625612
+            ],
+            [
+              77.1954819,
+              28.625612
+            ],
+            [
+              77.1954819,
+              28.625243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-07-01",
+        "name": "Civic Transit Zone Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Civic Transit Zone Mall Ltd",
+        "parent_building": "BLD-07-03"
+      }
+    }
+  ]
+}

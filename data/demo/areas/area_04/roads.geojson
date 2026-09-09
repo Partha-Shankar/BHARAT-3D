@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19892357,
+            28.641
+          ],
+          [
+            77.20507643,
+            28.641
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-04-01",
+        "name": "Transit Quarter Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.202,
+            28.63875
+          ],
+          [
+            77.202,
+            28.64325
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-04-02",
+        "name": "Transit Quarter Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19892357,
+            28.64208
+          ],
+          [
+            77.20507643,
+            28.64208
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-04-03",
+        "name": "Transit Quarter North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

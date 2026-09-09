@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21338485,
+              28.619035
+            ],
+            [
+              77.21384621,
+              28.619035
+            ],
+            [
+              77.21384621,
+              28.619233
+            ],
+            [
+              77.21338485,
+              28.619233
+            ],
+            [
+              77.21338485,
+              28.619035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-05",
+        "name": "Urban Heights Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-05-0002",
+        "building_code": "BLD-05-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

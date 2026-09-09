@@ -1,0 +1,20 @@
+{
+  "area_id": "area_04",
+  "area_name": "Transit Quarter",
+  "ward_number": "Ward 31",
+  "theme": "Commercial-heavy Zone with Integrated Rail Concourse & Subterranean Utilities",
+  "version": "v3.0",
+  "center": [
+    77.202,
+    28.641
+  ],
+  "bounding_box": [
+    77.197,
+    28.636,
+    77.207,
+    28.645999999999997
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-03T19:20:20.159331",
+  "files_count": 24
+}

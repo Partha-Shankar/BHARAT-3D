@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20648202,
+              28.650243
+            ],
+            [
+              77.20710761,
+              28.650243
+            ],
+            [
+              77.20710761,
+              28.650612
+            ],
+            [
+              77.20648202,
+              28.650612
+            ],
+            [
+              77.20648202,
+              28.650243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-08-01",
+        "name": "Integrated Urban Zone Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Integrated Urban Zone Mall Ltd",
+        "parent_building": "BLD-08-03"
+      }
+    }
+  ]
+}

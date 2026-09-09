@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23038478,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-05",
+        "name": "Central Market Zone Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-06-0002",
+        "building_code": "BLD-06-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

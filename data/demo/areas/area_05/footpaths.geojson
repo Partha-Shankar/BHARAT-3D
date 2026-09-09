@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21102676,
+            28.618117
+          ],
+          [
+            77.21697324,
+            28.618117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-05-01",
+        "name": "Urban Heights North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21102676,
+            28.617883
+          ],
+          [
+            77.21697324,
+            28.617883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-05-02",
+        "name": "Urban Heights South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

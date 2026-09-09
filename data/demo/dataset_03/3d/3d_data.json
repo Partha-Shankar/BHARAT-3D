@@ -1,0 +1,3391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-01",
+        "name": "Civic Square Aarav Heights Tower",
+        "entity_type": "building",
+        "height": 39.0,
+        "base_height": 0.0,
+        "color": "#2563EB",
+        "floors": 12,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F01-U01",
+        "vprid": "VPR-BLD0301-F01-U01",
+        "name": "Civic Square \u2022 Flat 101",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F01-U02",
+        "vprid": "VPR-BLD0301-F01-U02",
+        "name": "Civic Square \u2022 Flat 102",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F01-U03",
+        "vprid": "VPR-BLD0301-F01-U03",
+        "name": "Civic Square \u2022 Flat 103",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F01-U04",
+        "vprid": "VPR-BLD0301-F01-U04",
+        "name": "Civic Square \u2022 Flat 104",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F02-U01",
+        "vprid": "VPR-BLD0301-F02-U01",
+        "name": "Civic Square \u2022 Flat 201",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F02-U02",
+        "vprid": "VPR-BLD0301-F02-U02",
+        "name": "Civic Square \u2022 Flat 202",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F02-U03",
+        "vprid": "VPR-BLD0301-F02-U03",
+        "name": "Civic Square \u2022 Flat 203",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F02-U04",
+        "vprid": "VPR-BLD0301-F02-U04",
+        "name": "Civic Square \u2022 Flat 204",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F03-U01",
+        "vprid": "VPR-BLD0301-F03-U01",
+        "name": "Civic Square \u2022 Flat 301",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F03-U02",
+        "vprid": "VPR-BLD0301-F03-U02",
+        "name": "Civic Square \u2022 Flat 302",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F03-U03",
+        "vprid": "VPR-BLD0301-F03-U03",
+        "name": "Civic Square \u2022 Flat 303",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F03-U04",
+        "vprid": "VPR-BLD0301-F03-U04",
+        "name": "Civic Square \u2022 Flat 304",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F04-U01",
+        "vprid": "VPR-BLD0301-F04-U01",
+        "name": "Civic Square \u2022 Flat 401",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F04-U02",
+        "vprid": "VPR-BLD0301-F04-U02",
+        "name": "Civic Square \u2022 Flat 402",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F04-U03",
+        "vprid": "VPR-BLD0301-F04-U03",
+        "name": "Civic Square \u2022 Flat 403",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F04-U04",
+        "vprid": "VPR-BLD0301-F04-U04",
+        "name": "Civic Square \u2022 Flat 404",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F05-U01",
+        "vprid": "VPR-BLD0301-F05-U01",
+        "name": "Civic Square \u2022 Flat 501",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F05-U02",
+        "vprid": "VPR-BLD0301-F05-U02",
+        "name": "Civic Square \u2022 Flat 502",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F05-U03",
+        "vprid": "VPR-BLD0301-F05-U03",
+        "name": "Civic Square \u2022 Flat 503",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F05-U04",
+        "vprid": "VPR-BLD0301-F05-U04",
+        "name": "Civic Square \u2022 Flat 504",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F06-U01",
+        "vprid": "VPR-BLD0301-F06-U01",
+        "name": "Civic Square \u2022 Flat 601",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F06-U02",
+        "vprid": "VPR-BLD0301-F06-U02",
+        "name": "Civic Square \u2022 Flat 602",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F06-U03",
+        "vprid": "VPR-BLD0301-F06-U03",
+        "name": "Civic Square \u2022 Flat 603",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F06-U04",
+        "vprid": "VPR-BLD0301-F06-U04",
+        "name": "Civic Square \u2022 Flat 604",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F07-U01",
+        "vprid": "VPR-BLD0301-F07-U01",
+        "name": "Civic Square \u2022 Flat 701",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F07-U02",
+        "vprid": "VPR-BLD0301-F07-U02",
+        "name": "Civic Square \u2022 Flat 702",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F07-U03",
+        "vprid": "VPR-BLD0301-F07-U03",
+        "name": "Civic Square \u2022 Flat 703",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F07-U04",
+        "vprid": "VPR-BLD0301-F07-U04",
+        "name": "Civic Square \u2022 Flat 704",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F08-U01",
+        "vprid": "VPR-BLD0301-F08-U01",
+        "name": "Civic Square \u2022 Flat 801",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F08-U02",
+        "vprid": "VPR-BLD0301-F08-U02",
+        "name": "Civic Square \u2022 Flat 802",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F08-U03",
+        "vprid": "VPR-BLD0301-F08-U03",
+        "name": "Civic Square \u2022 Flat 803",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F08-U04",
+        "vprid": "VPR-BLD0301-F08-U04",
+        "name": "Civic Square \u2022 Flat 804",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#F59E0B",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 18400,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F09-U01",
+        "vprid": "VPR-BLD0301-F09-U01",
+        "name": "Civic Square \u2022 Flat 901",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F09-U02",
+        "vprid": "VPR-BLD0301-F09-U02",
+        "name": "Civic Square \u2022 Flat 902",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F09-U03",
+        "vprid": "VPR-BLD0301-F09-U03",
+        "name": "Civic Square \u2022 Flat 903",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F09-U04",
+        "vprid": "VPR-BLD0301-F09-U04",
+        "name": "Civic Square \u2022 Flat 904",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F10-U01",
+        "vprid": "VPR-BLD0301-F10-U01",
+        "name": "Civic Square \u2022 Flat 1001",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F10-U02",
+        "vprid": "VPR-BLD0301-F10-U02",
+        "name": "Civic Square \u2022 Flat 1002",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F10-U03",
+        "vprid": "VPR-BLD0301-F10-U03",
+        "name": "Civic Square \u2022 Flat 1003",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F10-U04",
+        "vprid": "VPR-BLD0301-F10-U04",
+        "name": "Civic Square \u2022 Flat 1004",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F11-U01",
+        "vprid": "VPR-BLD0301-F11-U01",
+        "name": "Civic Square \u2022 Flat 1101",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F11-U02",
+        "vprid": "VPR-BLD0301-F11-U02",
+        "name": "Civic Square \u2022 Flat 1102",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F11-U03",
+        "vprid": "VPR-BLD0301-F11-U03",
+        "name": "Civic Square \u2022 Flat 1103",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F11-U04",
+        "vprid": "VPR-BLD0301-F11-U04",
+        "name": "Civic Square \u2022 Flat 1104",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F12-U01",
+        "vprid": "VPR-BLD0301-F12-U01",
+        "name": "Civic Square \u2022 Flat 1201",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F12-U02",
+        "vprid": "VPR-BLD0301-F12-U02",
+        "name": "Civic Square \u2022 Flat 1202",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F12-U03",
+        "vprid": "VPR-BLD0301-F12-U03",
+        "name": "Civic Square \u2022 Flat 1203",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22463089,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622423
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622531
+            ],
+            [
+              77.22463089,
+              28.622423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0301-F12-U04",
+        "vprid": "VPR-BLD0301-F12-U04",
+        "name": "Civic Square \u2022 Flat 1204",
+        "entity_type": "unit",
+        "building_id": "BLD-03-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22376965,
+              28.62146
+            ],
+            [
+              77.22407724,
+              28.62146
+            ],
+            [
+              77.22407724,
+              28.62164
+            ],
+            [
+              77.22376965,
+              28.62164
+            ],
+            [
+              77.22376965,
+              28.62146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-02",
+        "name": "Civic Square Residency Block B",
+        "entity_type": "building",
+        "height": 15.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22546138,
+              28.622225
+            ],
+            [
+              77.22612782,
+              28.622225
+            ],
+            [
+              77.22612782,
+              28.62263
+            ],
+            [
+              77.22546138,
+              28.62263
+            ],
+            [
+              77.22546138,
+              28.622225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-03",
+        "name": "Civic Square Civic Grand Mall & Retail Hub",
+        "entity_type": "mall",
+        "height": 18.5,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22633288,
+              28.622855
+            ],
+            [
+              77.22715311,
+              28.622855
+            ],
+            [
+              77.22715311,
+              28.623143
+            ],
+            [
+              77.22633288,
+              28.623143
+            ],
+            [
+              77.22633288,
+              28.622855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-04",
+        "name": "Civic Square Central Junction Railway Terminal",
+        "entity_type": "building",
+        "height": 12.0,
+        "base_height": 0.0,
+        "color": "#0D9488",
+        "floors": 2,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22438482,
+              28.623035
+            ],
+            [
+              77.22484621,
+              28.623035
+            ],
+            [
+              77.22484621,
+              28.623233
+            ],
+            [
+              77.22438482,
+              28.623233
+            ],
+            [
+              77.22438482,
+              28.623035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-05",
+        "name": "Civic Square Metro Interchange Station (Elevated +6m)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 6.0,
+        "color": "#7C3AED",
+        "floors": 2,
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22315447,
+              28.621955
+            ],
+            [
+              77.22664047,
+              28.621955
+            ],
+            [
+              77.22664047,
+              28.622081
+            ],
+            [
+              77.22315447,
+              28.622081
+            ],
+            [
+              77.22315447,
+              28.621955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-03-01",
+        "name": "Civic Square Elevated Bypass Flyover (Deck: +8.5m)",
+        "entity_type": "flyover",
+        "height": 10.7,
+        "base_height": 8.5,
+        "color": "#EA580C",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22333903,
+              28.622
+            ],
+            [
+              77.22338004,
+              28.622
+            ],
+            [
+              77.22338004,
+              28.622036
+            ],
+            [
+              77.22333903,
+              28.622036
+            ],
+            [
+              77.22333903,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-01",
+        "name": "Civic Square Flyover Concrete Pier P-1",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2239542,
+              28.622
+            ],
+            [
+              77.22399521,
+              28.622
+            ],
+            [
+              77.22399521,
+              28.622036
+            ],
+            [
+              77.2239542,
+              28.622036
+            ],
+            [
+              77.2239542,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-02",
+        "name": "Civic Square Flyover Concrete Pier P-2",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22456938,
+              28.622
+            ],
+            [
+              77.22461039,
+              28.622
+            ],
+            [
+              77.22461039,
+              28.622036
+            ],
+            [
+              77.22456938,
+              28.622036
+            ],
+            [
+              77.22456938,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-03",
+        "name": "Civic Square Flyover Concrete Pier P-3",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22518455,
+              28.622
+            ],
+            [
+              77.22522556,
+              28.622
+            ],
+            [
+              77.22522556,
+              28.622036
+            ],
+            [
+              77.22518455,
+              28.622036
+            ],
+            [
+              77.22518455,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-04",
+        "name": "Civic Square Flyover Concrete Pier P-4",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22579973,
+              28.622
+            ],
+            [
+              77.22584074,
+              28.622
+            ],
+            [
+              77.22584074,
+              28.622036
+            ],
+            [
+              77.22579973,
+              28.622036
+            ],
+            [
+              77.22579973,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-05",
+        "name": "Civic Square Flyover Concrete Pier P-5",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2264149,
+              28.622
+            ],
+            [
+              77.22645592,
+              28.622
+            ],
+            [
+              77.22645592,
+              28.622036
+            ],
+            [
+              77.2264149,
+              28.622036
+            ],
+            [
+              77.2264149,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-03-06",
+        "name": "Civic Square Flyover Concrete Pier P-6",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2242823,
+              28.621802
+            ],
+            [
+              77.22715311,
+              28.621802
+            ],
+            [
+              77.22715311,
+              28.62191
+            ],
+            [
+              77.2242823,
+              28.62191
+            ],
+            [
+              77.2242823,
+              28.621802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-03-01",
+        "name": "Civic Square Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "entity_type": "tunnel",
+        "height": 4.8,
+        "base_height": 0.2,
+        "depth_meters": 8.5,
+        "color": "#0891B2",
+        "usage": "SUBTERRANEAN_ROAD",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22376965,
+              28.623125
+            ],
+            [
+              77.22766576,
+              28.623125
+            ],
+            [
+              77.22766576,
+              28.623215
+            ],
+            [
+              77.22376965,
+              28.623215
+            ],
+            [
+              77.22376965,
+              28.623125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-03-02",
+        "name": "Civic Square Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "entity_type": "tunnel",
+        "height": 5.6,
+        "base_height": 0.2,
+        "depth_meters": 14.2,
+        "color": "#06B6D4",
+        "usage": "SUBTERRANEAN_METRO",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22548189,
+              28.622243
+            ],
+            [
+              77.22610732,
+              28.622243
+            ],
+            [
+              77.22610732,
+              28.622612
+            ],
+            [
+              77.22548189,
+              28.622612
+            ],
+            [
+              77.22548189,
+              28.622243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-03-01",
+        "name": "Civic Square Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "entity_type": "tunnel",
+        "height": 3.8,
+        "base_height": 0.2,
+        "depth_meters": 6.0,
+        "color": "#0284C7",
+        "usage": "SUBTERRANEAN_PARKING",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22582023,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-07",
+        "name": "Civic Square Sharma Plaza (Sanctioned G+4)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 0.0,
+        "color": "#64748B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22582023,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-07-ILLEGAL-FLOORS",
+        "name": "Civic Square Sharma Plaza (UNAUTHORIZED Floors 5 & 6)",
+        "entity_type": "violation",
+        "height": 21.2,
+        "base_height": 14.0,
+        "color": "#DC2626",
+        "floors": 2,
+        "usage": "VIOLATION",
+        "violation_code": "VLT-001",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22510253,
+              28.62209
+            ],
+            [
+              77.22518455,
+              28.62209
+            ],
+            [
+              77.22518455,
+              28.622135
+            ],
+            [
+              77.22510253,
+              28.622135
+            ],
+            [
+              77.22510253,
+              28.62209
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "VLT-03-ENC-01",
+        "name": "Civic Square Commercial Footpath Encroachment (18.6 m\u00b2)",
+        "entity_type": "violation",
+        "height": 3.5,
+        "base_height": 0.0,
+        "color": "#EF4444",
+        "usage": "VIOLATION",
+        "violation_code": "VLT-003",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22318523,
+              28.622
+            ],
+            [
+              77.22348257,
+              28.622
+            ],
+            [
+              77.22348257,
+              28.622234
+            ],
+            [
+              77.22318523,
+              28.622234
+            ],
+            [
+              77.22318523,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-08",
+        "name": "Civic Square Urban Property #8",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22400547,
+              28.621946
+            ],
+            [
+              77.22432331,
+              28.621946
+            ],
+            [
+              77.22432331,
+              28.622171
+            ],
+            [
+              77.22400547,
+              28.622171
+            ],
+            [
+              77.22400547,
+              28.621946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-09",
+        "name": "Civic Square Urban Property #9",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22492823,
+              28.621919
+            ],
+            [
+              77.22514354,
+              28.621919
+            ],
+            [
+              77.22514354,
+              28.622108
+            ],
+            [
+              77.22492823,
+              28.622108
+            ],
+            [
+              77.22492823,
+              28.621919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-10",
+        "name": "Civic Square Urban Property #10",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22602529,
+              28.621991
+            ],
+            [
+              77.22623035,
+              28.621991
+            ],
+            [
+              77.22623035,
+              28.622198
+            ],
+            [
+              77.22602529,
+              28.622198
+            ],
+            [
+              77.22602529,
+              28.621991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-11",
+        "name": "Civic Square Urban Property #11",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2232365,
+              28.622648
+            ],
+            [
+              77.22346206,
+              28.622648
+            ],
+            [
+              77.22346206,
+              28.622837
+            ],
+            [
+              77.2232365,
+              28.622837
+            ],
+            [
+              77.2232365,
+              28.622648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-12",
+        "name": "Civic Square Urban Property #12",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 6,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22402597,
+              28.62263
+            ],
+            [
+              77.22426179,
+              28.62263
+            ],
+            [
+              77.22426179,
+              28.622837
+            ],
+            [
+              77.22402597,
+              28.622837
+            ],
+            [
+              77.22402597,
+              28.62263
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-13",
+        "name": "Civic Square Urban Property #13",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22510253,
+              28.622684
+            ],
+            [
+              77.22543062,
+              28.622684
+            ],
+            [
+              77.22543062,
+              28.622882
+            ],
+            [
+              77.22510253,
+              28.622882
+            ],
+            [
+              77.22510253,
+              28.622684
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-14",
+        "name": "Civic Square Urban Property #14",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22593302,
+              28.62281
+            ],
+            [
+              77.22619959,
+              28.62281
+            ],
+            [
+              77.22619959,
+              28.623035
+            ],
+            [
+              77.22593302,
+              28.623035
+            ],
+            [
+              77.22593302,
+              28.62281
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-15",
+        "name": "Civic Square Urban Property #15",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22314422,
+              28.623404
+            ],
+            [
+              77.22340054,
+              28.623404
+            ],
+            [
+              77.22340054,
+              28.623593
+            ],
+            [
+              77.22314422,
+              28.623593
+            ],
+            [
+              77.22314422,
+              28.623404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-16",
+        "name": "Civic Square Urban Property #16",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22401572,
+              28.623476
+            ],
+            [
+              77.22432331,
+              28.623476
+            ],
+            [
+              77.22432331,
+              28.623647
+            ],
+            [
+              77.22401572,
+              28.623647
+            ],
+            [
+              77.22401572,
+              28.623476
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-17",
+        "name": "Civic Square Urban Property #17",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22495899,
+              28.623359
+            ],
+            [
+              77.22527683,
+              28.623359
+            ],
+            [
+              77.22527683,
+              28.623521
+            ],
+            [
+              77.22495899,
+              28.623521
+            ],
+            [
+              77.22495899,
+              28.623359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-18",
+        "name": "Civic Square Urban Property #18",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22588175,
+              28.623386
+            ],
+            [
+              77.22609706,
+              28.623386
+            ],
+            [
+              77.22609706,
+              28.623611
+            ],
+            [
+              77.22588175,
+              28.623611
+            ],
+            [
+              77.22588175,
+              28.623386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-19",
+        "name": "Civic Square Urban Property #19",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

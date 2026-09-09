@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22202665,
+            28.622117
+          ],
+          [
+            77.22797335,
+            28.622117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-03-01",
+        "name": "Civic Square North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22202665,
+            28.621883
+          ],
+          [
+            77.22797335,
+            28.621883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-03-02",
+        "name": "Civic Square South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

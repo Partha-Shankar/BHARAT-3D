@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21502631,
+            28.634117
+          ],
+          [
+            77.22097369,
+            28.634117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-02-01",
+        "name": "Metro District North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21502631,
+            28.633883
+          ],
+          [
+            77.22097369,
+            28.633883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-02-02",
+        "name": "Metro District South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

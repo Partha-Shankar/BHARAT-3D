@@ -1,0 +1,168 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20848732,
+              28.62782
+            ],
+            [
+              77.21201453,
+              28.62782
+            ],
+            [
+              77.21201453,
+              28.627928
+            ],
+            [
+              77.20848732,
+              28.627928
+            ],
+            [
+              77.20848732,
+              28.62782
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-001",
+        "name": "Central Urban Road Tunnel",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 344,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20797465,
+              28.62917
+            ],
+            [
+              77.21258873,
+              28.62917
+            ],
+            [
+              77.21258873,
+              28.62926
+            ],
+            [
+              77.20797465,
+              28.62926
+            ],
+            [
+              77.20797465,
+              28.62917
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-002",
+        "name": "Yellow Line Metro Rail Transit Tunnel",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 450,
+        "operator": "DMRC",
+        "status": "OPERATIONAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20746197,
+              28.627955
+            ],
+            [
+              77.21033296,
+              28.627955
+            ],
+            [
+              77.21033296,
+              28.628081
+            ],
+            [
+              77.20746197,
+              28.628081
+            ],
+            [
+              77.20746197,
+              28.627955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-001",
+        "name": "Central Urban Elevated Flyover",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 280,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20592395,
+            28.62791
+          ],
+          [
+            77.21207605,
+            28.62791
+          ]
+        ]
+      },
+      "properties": {
+        "id": "INF-UTL-TEL-001",
+        "name": "BSNL 96-Core Optical Fiber Backbone",
+        "asset_type": "TELECOM",
+        "depth_meters": 1.4,
+        "operator": "BSNL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20592395,
+            28.62809
+          ],
+          [
+            77.21207605,
+            28.62809
+          ]
+        ]
+      },
+      "properties": {
+        "id": "INF-UTL-WTR-001",
+        "name": "Municipal Potable Water Trunk Main (400mm)",
+        "asset_type": "WATER",
+        "depth_meters": 1.8,
+        "operator": "DJB"
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21328232,
+              28.617802
+            ],
+            [
+              77.21615303,
+              28.617802
+            ],
+            [
+              77.21615303,
+              28.61791
+            ],
+            [
+              77.21328232,
+              28.61791
+            ],
+            [
+              77.21328232,
+              28.617802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-05-01",
+        "name": "Urban Heights Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 280,
+        "width_meters": 12.0,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-05-012 to PRC-05-024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2127697,
+              28.619125
+            ],
+            [
+              77.21666566,
+              28.619125
+            ],
+            [
+              77.21666566,
+              28.619215
+            ],
+            [
+              77.2127697,
+              28.619215
+            ],
+            [
+              77.2127697,
+              28.619125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-05-02",
+        "name": "Urban Heights Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 380,
+        "width_meters": 10.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-05-001 to PRC-05-008"
+      }
+    }
+  ]
+}

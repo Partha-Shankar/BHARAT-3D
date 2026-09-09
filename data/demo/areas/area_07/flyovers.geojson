@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19315442,
+              28.624955
+            ],
+            [
+              77.19664051,
+              28.624955
+            ],
+            [
+              77.19664051,
+              28.625081
+            ],
+            [
+              77.19315442,
+              28.625081
+            ],
+            [
+              77.19315442,
+              28.624955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-07-01",
+        "name": "Civic Transit Zone Elevated Bypass Flyover (Deck: +8.5m)",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 340,
+        "width_meters": 14.0,
+        "operator": "PWD Delhi / NHAI",
+        "status": "OPERATIONAL",
+        "associated_road": "RD-07-01"
+      }
+    }
+  ]
+}

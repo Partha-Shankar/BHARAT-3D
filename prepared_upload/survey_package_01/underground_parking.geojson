@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20948192,
+              28.628243
+            ],
+            [
+              77.21010738,
+              28.628243
+            ],
+            [
+              77.21010738,
+              28.628612
+            ],
+            [
+              77.20948192,
+              28.628612
+            ],
+            [
+              77.20948192,
+              28.628243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-01-01",
+        "name": "Central Heights Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Central Heights Mall Ltd",
+        "parent_building": "BLD-01-03"
+      }
+    }
+  ]
+}

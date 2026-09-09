@@ -1,0 +1,1727 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21554927,
+              28.632677
+            ],
+            [
+              77.21608248,
+              28.632677
+            ],
+            [
+              77.21608248,
+              28.633055
+            ],
+            [
+              77.21554927,
+              28.633055
+            ],
+            [
+              77.21554927,
+              28.632677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-001",
+        "ulpin": "IN-02-0001",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-201",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21617477,
+              28.632641
+            ],
+            [
+              77.21670798,
+              28.632641
+            ],
+            [
+              77.21670798,
+              28.633019
+            ],
+            [
+              77.21617477,
+              28.633019
+            ],
+            [
+              77.21617477,
+              28.632641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-002",
+        "ulpin": "IN-02-0002",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-202",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21676951,
+              28.632614
+            ],
+            [
+              77.21730272,
+              28.632614
+            ],
+            [
+              77.21730272,
+              28.632992
+            ],
+            [
+              77.21676951,
+              28.632992
+            ],
+            [
+              77.21676951,
+              28.632614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-003",
+        "ulpin": "IN-02-0003",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-203",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21740526,
+              28.632641
+            ],
+            [
+              77.21793848,
+              28.632641
+            ],
+            [
+              77.21793848,
+              28.633019
+            ],
+            [
+              77.21740526,
+              28.633019
+            ],
+            [
+              77.21740526,
+              28.632641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-004",
+        "ulpin": "IN-02-0004",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-204",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.218,
+              28.63265
+            ],
+            [
+              77.21853321,
+              28.63265
+            ],
+            [
+              77.21853321,
+              28.633028
+            ],
+            [
+              77.218,
+              28.633028
+            ],
+            [
+              77.218,
+              28.63265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-005",
+        "ulpin": "IN-02-0005",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-205",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21864601,
+              28.632677
+            ],
+            [
+              77.21917922,
+              28.632677
+            ],
+            [
+              77.21917922,
+              28.633055
+            ],
+            [
+              77.21864601,
+              28.633055
+            ],
+            [
+              77.21864601,
+              28.632677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-006",
+        "ulpin": "IN-02-0006",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-206",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21922024,
+              28.632623
+            ],
+            [
+              77.21975345,
+              28.632623
+            ],
+            [
+              77.21975345,
+              28.633001
+            ],
+            [
+              77.21922024,
+              28.633001
+            ],
+            [
+              77.21922024,
+              28.632623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-007",
+        "ulpin": "IN-02-0007",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-207",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21985599,
+              28.63265
+            ],
+            [
+              77.2203892,
+              28.63265
+            ],
+            [
+              77.2203892,
+              28.633028
+            ],
+            [
+              77.21985599,
+              28.633028
+            ],
+            [
+              77.21985599,
+              28.63265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-008",
+        "ulpin": "IN-02-0008",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-208",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21552876,
+              28.633109
+            ],
+            [
+              77.21606198,
+              28.633109
+            ],
+            [
+              77.21606198,
+              28.633487
+            ],
+            [
+              77.21552876,
+              28.633487
+            ],
+            [
+              77.21552876,
+              28.633109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-009",
+        "ulpin": "IN-02-0009",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-209",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21619528,
+              28.633064
+            ],
+            [
+              77.21672849,
+              28.633064
+            ],
+            [
+              77.21672849,
+              28.633442
+            ],
+            [
+              77.21619528,
+              28.633442
+            ],
+            [
+              77.21619528,
+              28.633064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-010",
+        "ulpin": "IN-02-0010",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-210",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21672849,
+              28.633118
+            ],
+            [
+              77.2172617,
+              28.633118
+            ],
+            [
+              77.2172617,
+              28.633496
+            ],
+            [
+              77.21672849,
+              28.633496
+            ],
+            [
+              77.21672849,
+              28.633118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-011",
+        "ulpin": "IN-02-0011",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-211",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21740526,
+              28.633091
+            ],
+            [
+              77.21793848,
+              28.633091
+            ],
+            [
+              77.21793848,
+              28.633469
+            ],
+            [
+              77.21740526,
+              28.633469
+            ],
+            [
+              77.21740526,
+              28.633091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-012",
+        "ulpin": "IN-02-0012",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-212",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21801025,
+              28.633136
+            ],
+            [
+              77.21854347,
+              28.633136
+            ],
+            [
+              77.21854347,
+              28.633514
+            ],
+            [
+              77.21801025,
+              28.633514
+            ],
+            [
+              77.21801025,
+              28.633136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-013",
+        "ulpin": "IN-02-0013",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-213",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21864601,
+              28.633064
+            ],
+            [
+              77.21917922,
+              28.633064
+            ],
+            [
+              77.21917922,
+              28.633442
+            ],
+            [
+              77.21864601,
+              28.633442
+            ],
+            [
+              77.21864601,
+              28.633064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-014",
+        "ulpin": "IN-02-0014",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-214",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21919973,
+              28.633118
+            ],
+            [
+              77.21973294,
+              28.633118
+            ],
+            [
+              77.21973294,
+              28.633496
+            ],
+            [
+              77.21919973,
+              28.633496
+            ],
+            [
+              77.21919973,
+              28.633118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-015",
+        "ulpin": "IN-02-0015",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-215",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21982523,
+              28.633073
+            ],
+            [
+              77.22035844,
+              28.633073
+            ],
+            [
+              77.22035844,
+              28.633451
+            ],
+            [
+              77.21982523,
+              28.633451
+            ],
+            [
+              77.21982523,
+              28.633073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-016",
+        "ulpin": "IN-02-0016",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-216",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21552876,
+              28.633523
+            ],
+            [
+              77.21606198,
+              28.633523
+            ],
+            [
+              77.21606198,
+              28.633901
+            ],
+            [
+              77.21552876,
+              28.633901
+            ],
+            [
+              77.21552876,
+              28.633523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-017",
+        "ulpin": "IN-02-0017",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-217",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21615426,
+              28.633523
+            ],
+            [
+              77.21668748,
+              28.633523
+            ],
+            [
+              77.21668748,
+              28.633901
+            ],
+            [
+              77.21615426,
+              28.633901
+            ],
+            [
+              77.21615426,
+              28.633523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-018",
+        "ulpin": "IN-02-0018",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-218",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21681052,
+              28.633523
+            ],
+            [
+              77.21734374,
+              28.633523
+            ],
+            [
+              77.21734374,
+              28.633901
+            ],
+            [
+              77.21681052,
+              28.633901
+            ],
+            [
+              77.21681052,
+              28.633523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-019",
+        "ulpin": "IN-02-0019",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-219",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21734374,
+              28.633514
+            ],
+            [
+              77.21787695,
+              28.633514
+            ],
+            [
+              77.21787695,
+              28.633892
+            ],
+            [
+              77.21734374,
+              28.633892
+            ],
+            [
+              77.21734374,
+              28.633514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-020",
+        "ulpin": "IN-02-0020",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-220",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21798975,
+              28.633577
+            ],
+            [
+              77.21852296,
+              28.633577
+            ],
+            [
+              77.21852296,
+              28.633955
+            ],
+            [
+              77.21798975,
+              28.633955
+            ],
+            [
+              77.21798975,
+              28.633577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-021",
+        "ulpin": "IN-02-0021",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-221",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21864601,
+              28.633532
+            ],
+            [
+              77.21917922,
+              28.633532
+            ],
+            [
+              77.21917922,
+              28.63391
+            ],
+            [
+              77.21864601,
+              28.63391
+            ],
+            [
+              77.21864601,
+              28.633532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-022",
+        "ulpin": "IN-02-0022",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-222",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.219251,
+              28.633577
+            ],
+            [
+              77.21978421,
+              28.633577
+            ],
+            [
+              77.21978421,
+              28.633955
+            ],
+            [
+              77.219251,
+              28.633955
+            ],
+            [
+              77.219251,
+              28.633577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-023",
+        "ulpin": "IN-02-0023",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-223",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21988675,
+              28.633568
+            ],
+            [
+              77.22041997,
+              28.633568
+            ],
+            [
+              77.22041997,
+              28.633946
+            ],
+            [
+              77.21988675,
+              28.633946
+            ],
+            [
+              77.21988675,
+              28.633568
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-024",
+        "ulpin": "IN-02-0024",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-224",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21551851,
+              28.633964
+            ],
+            [
+              77.21605172,
+              28.633964
+            ],
+            [
+              77.21605172,
+              28.634342
+            ],
+            [
+              77.21551851,
+              28.634342
+            ],
+            [
+              77.21551851,
+              28.633964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-025",
+        "ulpin": "IN-02-0025",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-225",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21618502,
+              28.634018
+            ],
+            [
+              77.21671824,
+              28.634018
+            ],
+            [
+              77.21671824,
+              28.634396
+            ],
+            [
+              77.21618502,
+              28.634396
+            ],
+            [
+              77.21618502,
+              28.634018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-026",
+        "ulpin": "IN-02-0026",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-226",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21675925,
+              28.634027
+            ],
+            [
+              77.21729247,
+              28.634027
+            ],
+            [
+              77.21729247,
+              28.634405
+            ],
+            [
+              77.21675925,
+              28.634405
+            ],
+            [
+              77.21675925,
+              28.634027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-027",
+        "ulpin": "IN-02-0027",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-227",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21739501,
+              28.634018
+            ],
+            [
+              77.21792822,
+              28.634018
+            ],
+            [
+              77.21792822,
+              28.634396
+            ],
+            [
+              77.21739501,
+              28.634396
+            ],
+            [
+              77.21739501,
+              28.634018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-028",
+        "ulpin": "IN-02-0028",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-228",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21797949,
+              28.634036
+            ],
+            [
+              77.2185127,
+              28.634036
+            ],
+            [
+              77.2185127,
+              28.634414
+            ],
+            [
+              77.21797949,
+              28.634414
+            ],
+            [
+              77.21797949,
+              28.634036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-029",
+        "ulpin": "IN-02-0029",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-229",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21859474,
+              28.633964
+            ],
+            [
+              77.21912795,
+              28.633964
+            ],
+            [
+              77.21912795,
+              28.634342
+            ],
+            [
+              77.21859474,
+              28.634342
+            ],
+            [
+              77.21859474,
+              28.633964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-030",
+        "ulpin": "IN-02-0030",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-230",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21920998,
+              28.634036
+            ],
+            [
+              77.2197432,
+              28.634036
+            ],
+            [
+              77.2197432,
+              28.634414
+            ],
+            [
+              77.21920998,
+              28.634414
+            ],
+            [
+              77.21920998,
+              28.634036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-031",
+        "ulpin": "IN-02-0031",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-231",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21981498,
+              28.633964
+            ],
+            [
+              77.22034819,
+              28.633964
+            ],
+            [
+              77.22034819,
+              28.634342
+            ],
+            [
+              77.21981498,
+              28.634342
+            ],
+            [
+              77.21981498,
+              28.633964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-032",
+        "ulpin": "IN-02-0032",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-232",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21551851,
+              28.634423
+            ],
+            [
+              77.21605172,
+              28.634423
+            ],
+            [
+              77.21605172,
+              28.634801
+            ],
+            [
+              77.21551851,
+              28.634801
+            ],
+            [
+              77.21551851,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-033",
+        "ulpin": "IN-02-0033",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-233",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21619528,
+              28.634486
+            ],
+            [
+              77.21672849,
+              28.634486
+            ],
+            [
+              77.21672849,
+              28.634864
+            ],
+            [
+              77.21619528,
+              28.634864
+            ],
+            [
+              77.21619528,
+              28.634486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-034",
+        "ulpin": "IN-02-0034",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-234",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21679002,
+              28.634468
+            ],
+            [
+              77.21732323,
+              28.634468
+            ],
+            [
+              77.21732323,
+              28.634846
+            ],
+            [
+              77.21679002,
+              28.634846
+            ],
+            [
+              77.21679002,
+              28.634468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-035",
+        "ulpin": "IN-02-0035",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-235",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21740526,
+              28.634423
+            ],
+            [
+              77.21793848,
+              28.634423
+            ],
+            [
+              77.21793848,
+              28.634801
+            ],
+            [
+              77.21740526,
+              28.634801
+            ],
+            [
+              77.21740526,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-036",
+        "ulpin": "IN-02-0036",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-236",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21797949,
+              28.634414
+            ],
+            [
+              77.2185127,
+              28.634414
+            ],
+            [
+              77.2185127,
+              28.634792
+            ],
+            [
+              77.21797949,
+              28.634792
+            ],
+            [
+              77.21797949,
+              28.634414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-037",
+        "ulpin": "IN-02-0037",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-237",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21865626,
+              28.634414
+            ],
+            [
+              77.21918948,
+              28.634414
+            ],
+            [
+              77.21918948,
+              28.634792
+            ],
+            [
+              77.21865626,
+              28.634792
+            ],
+            [
+              77.21865626,
+              28.634414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-038",
+        "ulpin": "IN-02-0038",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-238",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21926125,
+              28.634423
+            ],
+            [
+              77.21979447,
+              28.634423
+            ],
+            [
+              77.21979447,
+              28.634801
+            ],
+            [
+              77.21926125,
+              28.634801
+            ],
+            [
+              77.21926125,
+              28.634423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-039",
+        "ulpin": "IN-02-0039",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-239",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21983548,
+              28.634414
+            ],
+            [
+              77.2203687,
+              28.634414
+            ],
+            [
+              77.2203687,
+              28.634792
+            ],
+            [
+              77.21983548,
+              28.634792
+            ],
+            [
+              77.21983548,
+              28.634414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-040",
+        "ulpin": "IN-02-0040",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-240",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21553902,
+              28.634927
+            ],
+            [
+              77.21607223,
+              28.634927
+            ],
+            [
+              77.21607223,
+              28.635305
+            ],
+            [
+              77.21553902,
+              28.635305
+            ],
+            [
+              77.21553902,
+              28.634927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-041",
+        "ulpin": "IN-02-0041",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-241",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2161235,
+              28.634936
+            ],
+            [
+              77.21665671,
+              28.634936
+            ],
+            [
+              77.21665671,
+              28.635314
+            ],
+            [
+              77.2161235,
+              28.635314
+            ],
+            [
+              77.2161235,
+              28.634936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-02-042",
+        "ulpin": "IN-02-0042",
+        "ward_id": "Ward 22",
+        "area_name": "Metro District",
+        "survey_number": "SY-242",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Metro District"
+      }
+    }
+  ]
+}

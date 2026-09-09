@@ -1,0 +1,20 @@
+{
+  "area_id": "area_01",
+  "area_name": "Central Heights",
+  "ward_number": "Ward 16",
+  "theme": "Apartment Tower & Mall Hub with Central Subsurface Road Tunnel",
+  "version": "v3.0",
+  "center": [
+    77.209,
+    28.628
+  ],
+  "bounding_box": [
+    77.20400000000001,
+    28.623,
+    77.214,
+    28.633
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-08-31T19:20:19.682348",
+  "files_count": 24
+}

@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20302586,
+            28.650117
+          ],
+          [
+            77.20897414,
+            28.650117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-08-01",
+        "name": "Integrated Urban Zone North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20302586,
+            28.649883
+          ],
+          [
+            77.20897414,
+            28.649883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-08-02",
+        "name": "Integrated Urban Zone South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

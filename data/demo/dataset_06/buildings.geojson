@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-01",
+        "name": "Central Market Zone Aarav Heights Tower",
+        "ulpin": "IN-06-0008",
+        "building_code": "BLD-06-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22976956,
+              28.62946
+            ],
+            [
+              77.23007717,
+              28.62946
+            ],
+            [
+              77.23007717,
+              28.62964
+            ],
+            [
+              77.22976956,
+              28.62964
+            ],
+            [
+              77.22976956,
+              28.62946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-02",
+        "name": "Central Market Zone Residency Block B",
+        "ulpin": "IN-06-0014",
+        "building_code": "BLD-06-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23146142,
+              28.630225
+            ],
+            [
+              77.23212791,
+              28.630225
+            ],
+            [
+              77.23212791,
+              28.63063
+            ],
+            [
+              77.23146142,
+              28.63063
+            ],
+            [
+              77.23146142,
+              28.630225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-03",
+        "name": "Central Market Zone Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-06-0003",
+        "building_code": "BLD-06-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23233298,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.630855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-04",
+        "name": "Central Market Zone Central Junction Railway Terminal",
+        "ulpin": "IN-06-0001",
+        "building_code": "BLD-06-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23038478,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-05",
+        "name": "Central Market Zone Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-06-0002",
+        "building_code": "BLD-06-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2318203,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-07",
+        "name": "Central Market Zone Sharma Commercial Plaza",
+        "ulpin": "IN-06-0018",
+        "building_code": "BLD-06-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22924662,
+              28.63
+            ],
+            [
+              77.22954397,
+              28.63
+            ],
+            [
+              77.22954397,
+              28.630225
+            ],
+            [
+              77.22924662,
+              28.630225
+            ],
+            [
+              77.22924662,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-08",
+        "name": "Central Market Zone Urban Property #8",
+        "ulpin": "IN-06-0023",
+        "building_code": "BLD-06-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 725,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23013869,
+              28.630018
+            ],
+            [
+              77.23039503,
+              28.630018
+            ],
+            [
+              77.23039503,
+              28.630225
+            ],
+            [
+              77.23013869,
+              28.630225
+            ],
+            [
+              77.23013869,
+              28.630018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-09",
+        "name": "Central Market Zone Urban Property #9",
+        "ulpin": "IN-06-0024",
+        "building_code": "BLD-06-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23103076,
+              28.629937
+            ],
+            [
+              77.2312666,
+              28.629937
+            ],
+            [
+              77.2312666,
+              28.630117
+            ],
+            [
+              77.23103076,
+              28.630117
+            ],
+            [
+              77.23103076,
+              28.629937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-10",
+        "name": "Central Market Zone Urban Property #10",
+        "ulpin": "IN-06-0025",
+        "building_code": "BLD-06-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 460,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2318408,
+              28.629919
+            ],
+            [
+              77.23209715,
+              28.629919
+            ],
+            [
+              77.23209715,
+              28.630099
+            ],
+            [
+              77.2318408,
+              28.630099
+            ],
+            [
+              77.2318408,
+              28.629919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-11",
+        "name": "Central Market Zone Urban Property #11",
+        "ulpin": "IN-06-0026",
+        "building_code": "BLD-06-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 500,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22912357,
+              28.630792
+            ],
+            [
+              77.22932865,
+              28.630792
+            ],
+            [
+              77.22932865,
+              28.630954
+            ],
+            [
+              77.22912357,
+              28.630954
+            ],
+            [
+              77.22912357,
+              28.630792
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-12",
+        "name": "Central Market Zone Urban Property #12",
+        "ulpin": "IN-06-0027",
+        "building_code": "BLD-06-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 360,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23011818,
+              28.630783
+            ],
+            [
+              77.23043605,
+              28.630783
+            ],
+            [
+              77.23043605,
+              28.631008
+            ],
+            [
+              77.23011818,
+              28.631008
+            ],
+            [
+              77.23011818,
+              28.630783
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-13",
+        "name": "Central Market Zone Urban Property #13",
+        "ulpin": "IN-06-0028",
+        "building_code": "BLD-06-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 775,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23090772,
+              28.630747
+            ],
+            [
+              77.23122558,
+              28.630747
+            ],
+            [
+              77.23122558,
+              28.630918
+            ],
+            [
+              77.23090772,
+              28.630918
+            ],
+            [
+              77.23090772,
+              28.630747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-14",
+        "name": "Central Market Zone Urban Property #14",
+        "ulpin": "IN-06-0029",
+        "building_code": "BLD-06-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 589,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23198436,
+              28.630747
+            ],
+            [
+              77.23231247,
+              28.630747
+            ],
+            [
+              77.23231247,
+              28.630954
+            ],
+            [
+              77.23198436,
+              28.630954
+            ],
+            [
+              77.23198436,
+              28.630747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-15",
+        "name": "Central Market Zone Urban Property #15",
+        "ulpin": "IN-06-0030",
+        "building_code": "BLD-06-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 736,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22923636,
+              28.631359
+            ],
+            [
+              77.2294722,
+              28.631359
+            ],
+            [
+              77.2294722,
+              28.631593
+            ],
+            [
+              77.22923636,
+              28.631593
+            ],
+            [
+              77.22923636,
+              28.631359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-16",
+        "name": "Central Market Zone Urban Property #16",
+        "ulpin": "IN-06-0031",
+        "building_code": "BLD-06-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 598,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22997463,
+              28.631386
+            ],
+            [
+              77.23025148,
+              28.631386
+            ],
+            [
+              77.23025148,
+              28.631557
+            ],
+            [
+              77.22997463,
+              28.631557
+            ],
+            [
+              77.22997463,
+              28.631386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-17",
+        "name": "Central Market Zone Urban Property #17",
+        "ulpin": "IN-06-0032",
+        "building_code": "BLD-06-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 513,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23097949,
+              28.631521
+            ],
+            [
+              77.23121533,
+              28.631521
+            ],
+            [
+              77.23121533,
+              28.631746
+            ],
+            [
+              77.23097949,
+              28.631746
+            ],
+            [
+              77.23097949,
+              28.631521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-18",
+        "name": "Central Market Zone Urban Property #18",
+        "ulpin": "IN-06-0033",
+        "building_code": "BLD-06-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2319741,
+              28.631359
+            ],
+            [
+              77.23219968,
+              28.631359
+            ],
+            [
+              77.23219968,
+              28.63153
+            ],
+            [
+              77.2319741,
+              28.63153
+            ],
+            [
+              77.2319741,
+              28.631359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-19",
+        "name": "Central Market Zone Urban Property #19",
+        "ulpin": "IN-06-0034",
+        "building_code": "BLD-06-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 418,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

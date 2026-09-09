@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20128217,
+              28.640802
+            ],
+            [
+              77.2041535,
+              28.640802
+            ],
+            [
+              77.2041535,
+              28.64091
+            ],
+            [
+              77.20128217,
+              28.64091
+            ],
+            [
+              77.20128217,
+              28.640802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-04-01",
+        "name": "Transit Quarter Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 280,
+        "width_meters": 12.0,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-04-012 to PRC-04-024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20076943,
+              28.642125
+            ],
+            [
+              77.20466624,
+              28.642125
+            ],
+            [
+              77.20466624,
+              28.642215
+            ],
+            [
+              77.20076943,
+              28.642215
+            ],
+            [
+              77.20076943,
+              28.642125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-04-02",
+        "name": "Transit Quarter Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 380,
+        "width_meters": 10.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-04-001 to PRC-04-008"
+      }
+    }
+  ]
+}

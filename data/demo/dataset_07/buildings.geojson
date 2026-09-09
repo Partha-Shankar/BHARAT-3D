@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-01",
+        "name": "Civic Transit Zone Aarav Heights Tower",
+        "ulpin": "IN-07-0008",
+        "building_code": "BLD-07-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19376961,
+              28.62446
+            ],
+            [
+              77.19407721,
+              28.62446
+            ],
+            [
+              77.19407721,
+              28.62464
+            ],
+            [
+              77.19376961,
+              28.62464
+            ],
+            [
+              77.19376961,
+              28.62446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-02",
+        "name": "Civic Transit Zone Residency Block B",
+        "ulpin": "IN-07-0014",
+        "building_code": "BLD-07-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19546139,
+              28.625225
+            ],
+            [
+              77.19612785,
+              28.625225
+            ],
+            [
+              77.19612785,
+              28.62563
+            ],
+            [
+              77.19546139,
+              28.62563
+            ],
+            [
+              77.19546139,
+              28.625225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-03",
+        "name": "Civic Transit Zone Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-07-0003",
+        "building_code": "BLD-07-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19633292,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.625855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-04",
+        "name": "Civic Transit Zone Central Junction Railway Terminal",
+        "ulpin": "IN-07-0001",
+        "building_code": "BLD-07-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19438481,
+              28.626035
+            ],
+            [
+              77.1948462,
+              28.626035
+            ],
+            [
+              77.1948462,
+              28.626233
+            ],
+            [
+              77.19438481,
+              28.626233
+            ],
+            [
+              77.19438481,
+              28.626035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-05",
+        "name": "Civic Transit Zone Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-07-0002",
+        "building_code": "BLD-07-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19582026,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-07",
+        "name": "Civic Transit Zone Sharma Commercial Plaza",
+        "ulpin": "IN-07-0018",
+        "building_code": "BLD-07-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1930929,
+              28.625072
+            ],
+            [
+              77.19331847,
+              28.625072
+            ],
+            [
+              77.19331847,
+              28.625279
+            ],
+            [
+              77.1930929,
+              28.625279
+            ],
+            [
+              77.1930929,
+              28.625072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-08",
+        "name": "Civic Transit Zone Urban Property #8",
+        "ulpin": "IN-07-0023",
+        "building_code": "BLD-07-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 506,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19398493,
+              28.625
+            ],
+            [
+              77.19428227,
+              28.625
+            ],
+            [
+              77.19428227,
+              28.625198
+            ],
+            [
+              77.19398493,
+              28.625198
+            ],
+            [
+              77.19398493,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-09",
+        "name": "Civic Transit Zone Urban Property #9",
+        "ulpin": "IN-07-0024",
+        "building_code": "BLD-07-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 638,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19497949,
+              28.625072
+            ],
+            [
+              77.19520506,
+              28.625072
+            ],
+            [
+              77.19520506,
+              28.625297
+            ],
+            [
+              77.19497949,
+              28.625297
+            ],
+            [
+              77.19497949,
+              28.625072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-10",
+        "name": "Civic Transit Zone Urban Property #10",
+        "ulpin": "IN-07-0025",
+        "building_code": "BLD-07-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 550,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19585102,
+              28.624937
+            ],
+            [
+              77.19613811,
+              28.624937
+            ],
+            [
+              77.19613811,
+              28.625117
+            ],
+            [
+              77.19585102,
+              28.625117
+            ],
+            [
+              77.19585102,
+              28.624937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-11",
+        "name": "Civic Transit Zone Urban Property #11",
+        "ulpin": "IN-07-0026",
+        "building_code": "BLD-07-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 560,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19307239,
+              28.625648
+            ],
+            [
+              77.19335949,
+              28.625648
+            ],
+            [
+              77.19335949,
+              28.62581
+            ],
+            [
+              77.19307239,
+              28.62581
+            ],
+            [
+              77.19307239,
+              28.625648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-12",
+        "name": "Civic Transit Zone Urban Property #12",
+        "ulpin": "IN-07-0027",
+        "building_code": "BLD-07-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19401569,
+              28.625801
+            ],
+            [
+              77.19422076,
+              28.625801
+            ],
+            [
+              77.19422076,
+              28.626008
+            ],
+            [
+              77.19401569,
+              28.626008
+            ],
+            [
+              77.19401569,
+              28.625801
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-13",
+        "name": "Civic Transit Zone Urban Property #13",
+        "ulpin": "IN-07-0028",
+        "building_code": "BLD-07-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 460,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19494873,
+              28.62563
+            ],
+            [
+              77.19526658,
+              28.62563
+            ],
+            [
+              77.19526658,
+              28.625819
+            ],
+            [
+              77.19494873,
+              28.625819
+            ],
+            [
+              77.19494873,
+              28.62563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-14",
+        "name": "Civic Transit Zone Urban Property #14",
+        "ulpin": "IN-07-0029",
+        "building_code": "BLD-07-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 651,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19601507,
+              28.625702
+            ],
+            [
+              77.19634317,
+              28.625702
+            ],
+            [
+              77.19634317,
+              28.625918
+            ],
+            [
+              77.19601507,
+              28.625918
+            ],
+            [
+              77.19601507,
+              28.625702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-15",
+        "name": "Civic Transit Zone Urban Property #15",
+        "ulpin": "IN-07-0030",
+        "building_code": "BLD-07-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 768,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19313391,
+              28.626413
+            ],
+            [
+              77.19345176,
+              28.626413
+            ],
+            [
+              77.19345176,
+              28.626575
+            ],
+            [
+              77.19313391,
+              28.626575
+            ],
+            [
+              77.19313391,
+              28.626413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-16",
+        "name": "Civic Transit Zone Urban Property #16",
+        "ulpin": "IN-07-0031",
+        "building_code": "BLD-07-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 558,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19404645,
+              28.626431
+            ],
+            [
+              77.19435405,
+              28.626431
+            ],
+            [
+              77.19435405,
+              28.626656
+            ],
+            [
+              77.19404645,
+              28.626656
+            ],
+            [
+              77.19404645,
+              28.626431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-17",
+        "name": "Civic Transit Zone Urban Property #17",
+        "ulpin": "IN-07-0032",
+        "building_code": "BLD-07-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 750,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19502051,
+              28.626512
+            ],
+            [
+              77.19531785,
+              28.626512
+            ],
+            [
+              77.19531785,
+              28.626737
+            ],
+            [
+              77.19502051,
+              28.626737
+            ],
+            [
+              77.19502051,
+              28.626512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-18",
+        "name": "Civic Transit Zone Urban Property #18",
+        "ulpin": "IN-07-0033",
+        "building_code": "BLD-07-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 725,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19582026,
+              28.626431
+            ],
+            [
+              77.19610735,
+              28.626431
+            ],
+            [
+              77.19610735,
+              28.626629
+            ],
+            [
+              77.19582026,
+              28.626629
+            ],
+            [
+              77.19582026,
+              28.626431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-19",
+        "name": "Civic Transit Zone Urban Property #19",
+        "ulpin": "IN-07-0034",
+        "building_code": "BLD-07-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 616,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21446136,
+              28.618225
+            ],
+            [
+              77.21512778,
+              28.618225
+            ],
+            [
+              77.21512778,
+              28.61863
+            ],
+            [
+              77.21446136,
+              28.61863
+            ],
+            [
+              77.21446136,
+              28.618225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-03",
+        "name": "Urban Heights Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-05-0003",
+        "building_code": "BLD-05-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19912866,
+            28.64091
+          ],
+          [
+            77.20487134,
+            28.64091
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UTL-04-TEL-01",
+        "name": "BSNL 96-Core High-Speed Optical Fiber Trunk",
+        "asset_type": "TELECOM",
+        "depth_meters": 1.4,
+        "operator": "BSNL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19912866,
+            28.64109
+          ],
+          [
+            77.20487134,
+            28.64109
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UTL-04-WTR-01",
+        "name": "Municipal 400mm Ductile Iron Water Trunk Main",
+        "asset_type": "WATER",
+        "depth_meters": 1.8,
+        "operator": "DJB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.202,
+            28.63902
+          ],
+          [
+            77.202,
+            28.64298
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UTL-04-PWR-01",
+        "name": "BSES Rajdhani 11kV Underground Power Feeder",
+        "asset_type": "ELECTRICITY",
+        "depth_meters": 2.2,
+        "operator": "BSES"
+      }
+    }
+  ]
+}

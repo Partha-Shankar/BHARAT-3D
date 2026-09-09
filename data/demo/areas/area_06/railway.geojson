@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23233298,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.630855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-04",
+        "name": "Central Market Zone Central Junction Railway Terminal",
+        "ulpin": "IN-06-0001",
+        "building_code": "BLD-06-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

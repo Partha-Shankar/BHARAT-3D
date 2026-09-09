@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20138471,
+              28.642035
+            ],
+            [
+              77.20184618,
+              28.642035
+            ],
+            [
+              77.20184618,
+              28.642233
+            ],
+            [
+              77.20138471,
+              28.642233
+            ],
+            [
+              77.20138471,
+              28.642035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-05",
+        "name": "Transit Quarter Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-04-0002",
+        "building_code": "BLD-04-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

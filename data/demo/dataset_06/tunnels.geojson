@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23028224,
+              28.629802
+            ],
+            [
+              77.23315328,
+              28.629802
+            ],
+            [
+              77.23315328,
+              28.62991
+            ],
+            [
+              77.23028224,
+              28.62991
+            ],
+            [
+              77.23028224,
+              28.629802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-06-01",
+        "name": "Central Market Zone Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 8.5,
+        "length_meters": 280,
+        "width_meters": 12.0,
+        "operator": "PWD Delhi",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-06-012 to PRC-06-024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22976956,
+              28.631125
+            ],
+            [
+              77.23366596,
+              28.631125
+            ],
+            [
+              77.23366596,
+              28.631215
+            ],
+            [
+              77.22976956,
+              28.631215
+            ],
+            [
+              77.22976956,
+              28.631125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-06-02",
+        "name": "Central Market Zone Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "asset_type": "TUNNEL",
+        "depth_meters": 14.2,
+        "length_meters": 380,
+        "width_meters": 10.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "associated_parcels": "PRC-06-001 to PRC-06-008"
+      }
+    }
+  ]
+}

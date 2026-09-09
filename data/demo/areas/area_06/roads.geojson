@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22792389,
+            28.63
+          ],
+          [
+            77.23407611,
+            28.63
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-06-01",
+        "name": "Central Market Zone Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.231,
+            28.62775
+          ],
+          [
+            77.231,
+            28.63225
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-06-02",
+        "name": "Central Market Zone Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.22792389,
+            28.63108
+          ],
+          [
+            77.23407611,
+            28.63108
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-06-03",
+        "name": "Central Market Zone North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

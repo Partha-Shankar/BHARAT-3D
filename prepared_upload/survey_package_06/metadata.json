@@ -1,0 +1,20 @@
+{
+  "area_id": "area_06",
+  "area_name": "Central Market Zone",
+  "ward_number": "Ward 19",
+  "theme": "Dense Commercial Market Corridor, Retail Plaza & Rail Siding",
+  "version": "v3.0",
+  "center": [
+    77.231,
+    28.63
+  ],
+  "bounding_box": [
+    77.226,
+    28.625,
+    77.23599999999999,
+    28.634999999999998
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-05T19:20:20.482802",
+  "files_count": 24
+}

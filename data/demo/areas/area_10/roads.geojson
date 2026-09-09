@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20692383,
+            28.632
+          ],
+          [
+            77.21307617,
+            28.632
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-10-01",
+        "name": "Central Urban Core Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21,
+            28.62975
+          ],
+          [
+            77.21,
+            28.63425
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-10-02",
+        "name": "Central Urban Core Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20692383,
+            28.63308
+          ],
+          [
+            77.21307617,
+            28.63308
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-10-03",
+        "name": "Central Urban Core North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

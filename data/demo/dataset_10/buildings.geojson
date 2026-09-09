@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20943604,
+              28.632315
+            ],
+            [
+              77.20982568,
+              28.632315
+            ],
+            [
+              77.20982568,
+              28.632531
+            ],
+            [
+              77.20943604,
+              28.632531
+            ],
+            [
+              77.20943604,
+              28.632315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-01",
+        "name": "Central Urban Core Aarav Heights Tower",
+        "ulpin": "IN-10-0008",
+        "building_code": "BLD-10-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20876953,
+              28.63146
+            ],
+            [
+              77.20907715,
+              28.63146
+            ],
+            [
+              77.20907715,
+              28.63164
+            ],
+            [
+              77.20876953,
+              28.63164
+            ],
+            [
+              77.20876953,
+              28.63146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-02",
+        "name": "Central Urban Core Residency Block B",
+        "ulpin": "IN-10-0014",
+        "building_code": "BLD-10-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21046143,
+              28.632225
+            ],
+            [
+              77.21112793,
+              28.632225
+            ],
+            [
+              77.21112793,
+              28.63263
+            ],
+            [
+              77.21046143,
+              28.63263
+            ],
+            [
+              77.21046143,
+              28.632225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-03",
+        "name": "Central Urban Core Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-10-0003",
+        "building_code": "BLD-10-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21133301,
+              28.632855
+            ],
+            [
+              77.21215332,
+              28.632855
+            ],
+            [
+              77.21215332,
+              28.633143
+            ],
+            [
+              77.21133301,
+              28.633143
+            ],
+            [
+              77.21133301,
+              28.632855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-04",
+        "name": "Central Urban Core Central Junction Railway Terminal",
+        "ulpin": "IN-10-0001",
+        "building_code": "BLD-10-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20938477,
+              28.633035
+            ],
+            [
+              77.20984619,
+              28.633035
+            ],
+            [
+              77.20984619,
+              28.633233
+            ],
+            [
+              77.20938477,
+              28.633233
+            ],
+            [
+              77.20938477,
+              28.633035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-05",
+        "name": "Central Urban Core Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-10-0002",
+        "building_code": "BLD-10-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21082031,
+              28.631235
+            ],
+            [
+              77.21106641,
+              28.631235
+            ],
+            [
+              77.21106641,
+              28.631433
+            ],
+            [
+              77.21082031,
+              28.631433
+            ],
+            [
+              77.21082031,
+              28.631235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-07",
+        "name": "Central Urban Core Sharma Commercial Plaza",
+        "ulpin": "IN-10-0018",
+        "building_code": "BLD-10-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20808252,
+              28.631991
+            ],
+            [
+              77.20833887,
+              28.631991
+            ],
+            [
+              77.20833887,
+              28.632207
+            ],
+            [
+              77.20808252,
+              28.632207
+            ],
+            [
+              77.20808252,
+              28.631991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-08",
+        "name": "Central Urban Core Urban Property #8",
+        "ulpin": "IN-10-0023",
+        "building_code": "BLD-10-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20902588,
+              28.632072
+            ],
+            [
+              77.20934375,
+              28.632072
+            ],
+            [
+              77.20934375,
+              28.632261
+            ],
+            [
+              77.20902588,
+              28.632261
+            ],
+            [
+              77.20902588,
+              28.632072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-09",
+        "name": "Central Urban Core Urban Property #9",
+        "ulpin": "IN-10-0024",
+        "building_code": "BLD-10-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 651,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21010254,
+              28.631919
+            ],
+            [
+              77.21038965,
+              28.631919
+            ],
+            [
+              77.21038965,
+              28.632099
+            ],
+            [
+              77.21010254,
+              28.632099
+            ],
+            [
+              77.21010254,
+              28.631919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-10",
+        "name": "Central Urban Core Urban Property #10",
+        "ulpin": "IN-10-0025",
+        "building_code": "BLD-10-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 560,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21086133,
+              28.631982
+            ],
+            [
+              77.21118945,
+              28.631982
+            ],
+            [
+              77.21118945,
+              28.632153
+            ],
+            [
+              77.21086133,
+              28.632153
+            ],
+            [
+              77.21086133,
+              28.631982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-11",
+        "name": "Central Urban Core Urban Property #11",
+        "ulpin": "IN-10-0026",
+        "building_code": "BLD-10-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 608,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20810303,
+              28.632702
+            ],
+            [
+              77.20839014,
+              28.632702
+            ],
+            [
+              77.20839014,
+              28.632909
+            ],
+            [
+              77.20810303,
+              28.632909
+            ],
+            [
+              77.20810303,
+              28.632702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-12",
+        "name": "Central Urban Core Urban Property #12",
+        "ulpin": "IN-10-0027",
+        "building_code": "BLD-10-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 644,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20898486,
+              28.632666
+            ],
+            [
+              77.20930273,
+              28.632666
+            ],
+            [
+              77.20930273,
+              28.632855
+            ],
+            [
+              77.20898486,
+              28.632855
+            ],
+            [
+              77.20898486,
+              28.632666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-13",
+        "name": "Central Urban Core Urban Property #13",
+        "ulpin": "IN-10-0028",
+        "building_code": "BLD-10-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 651,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21001025,
+              28.632765
+            ],
+            [
+              77.21023584,
+              28.632765
+            ],
+            [
+              77.21023584,
+              28.632936
+            ],
+            [
+              77.21001025,
+              28.632936
+            ],
+            [
+              77.21001025,
+              28.632765
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-14",
+        "name": "Central Urban Core Urban Property #14",
+        "ulpin": "IN-10-0029",
+        "building_code": "BLD-10-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 418,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21101514,
+              28.63263
+            ],
+            [
+              77.21128174,
+              28.63263
+            ],
+            [
+              77.21128174,
+              28.632828
+            ],
+            [
+              77.21101514,
+              28.632828
+            ],
+            [
+              77.21101514,
+              28.63263
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-15",
+        "name": "Central Urban Core Urban Property #15",
+        "ulpin": "IN-10-0030",
+        "building_code": "BLD-10-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 572,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20824658,
+              28.63335
+            ],
+            [
+              77.20849268,
+              28.63335
+            ],
+            [
+              77.20849268,
+              28.633539
+            ],
+            [
+              77.20824658,
+              28.633539
+            ],
+            [
+              77.20824658,
+              28.63335
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-16",
+        "name": "Central Urban Core Urban Property #16",
+        "ulpin": "IN-10-0031",
+        "building_code": "BLD-10-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20897461,
+              28.633368
+            ],
+            [
+              77.20925147,
+              28.633368
+            ],
+            [
+              77.20925147,
+              28.633575
+            ],
+            [
+              77.20897461,
+              28.633575
+            ],
+            [
+              77.20897461,
+              28.633368
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-17",
+        "name": "Central Urban Core Urban Property #17",
+        "ulpin": "IN-10-0032",
+        "building_code": "BLD-10-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 621,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21009229,
+              28.633467
+            ],
+            [
+              77.2103999,
+              28.633467
+            ],
+            [
+              77.2103999,
+              28.633656
+            ],
+            [
+              77.21009229,
+              28.633656
+            ],
+            [
+              77.21009229,
+              28.633467
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-18",
+        "name": "Central Urban Core Urban Property #18",
+        "ulpin": "IN-10-0033",
+        "building_code": "BLD-10-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 630,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21086133,
+              28.633368
+            ],
+            [
+              77.21116894,
+              28.633368
+            ],
+            [
+              77.21116894,
+              28.633593
+            ],
+            [
+              77.21086133,
+              28.633593
+            ],
+            [
+              77.21086133,
+              28.633368
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-19",
+        "name": "Central Urban Core Urban Property #19",
+        "ulpin": "IN-10-0034",
+        "building_code": "BLD-10-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 750,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

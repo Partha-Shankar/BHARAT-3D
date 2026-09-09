@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21933303,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.634855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-04",
+        "name": "Metro District Central Junction Railway Terminal",
+        "ulpin": "IN-02-0001",
+        "building_code": "BLD-02-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

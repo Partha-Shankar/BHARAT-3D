@@ -1,0 +1,1727 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20755957,
+              28.630614
+            ],
+            [
+              77.20809277,
+              28.630614
+            ],
+            [
+              77.20809277,
+              28.630992
+            ],
+            [
+              77.20755957,
+              28.630992
+            ],
+            [
+              77.20755957,
+              28.630614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-001",
+        "ulpin": "IN-10-0001",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1001",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20811328,
+              28.63065
+            ],
+            [
+              77.20864648,
+              28.63065
+            ],
+            [
+              77.20864648,
+              28.631028
+            ],
+            [
+              77.20811328,
+              28.631028
+            ],
+            [
+              77.20811328,
+              28.63065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-002",
+        "ulpin": "IN-10-0002",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1002",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20881055,
+              28.630632
+            ],
+            [
+              77.20934375,
+              28.630632
+            ],
+            [
+              77.20934375,
+              28.63101
+            ],
+            [
+              77.20881055,
+              28.63101
+            ],
+            [
+              77.20881055,
+              28.630632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-003",
+        "ulpin": "IN-10-0003",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1003",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20936426,
+              28.630614
+            ],
+            [
+              77.20989746,
+              28.630614
+            ],
+            [
+              77.20989746,
+              28.630992
+            ],
+            [
+              77.20936426,
+              28.630992
+            ],
+            [
+              77.20936426,
+              28.630614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-004",
+        "ulpin": "IN-10-0004",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1004",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21,
+              28.630632
+            ],
+            [
+              77.2105332,
+              28.630632
+            ],
+            [
+              77.2105332,
+              28.63101
+            ],
+            [
+              77.21,
+              28.63101
+            ],
+            [
+              77.21,
+              28.630632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-005",
+        "ulpin": "IN-10-0005",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1005",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21065625,
+              28.630659
+            ],
+            [
+              77.21118945,
+              28.630659
+            ],
+            [
+              77.21118945,
+              28.631037
+            ],
+            [
+              77.21065625,
+              28.631037
+            ],
+            [
+              77.21065625,
+              28.630659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-006",
+        "ulpin": "IN-10-0006",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1006",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21120996,
+              28.630623
+            ],
+            [
+              77.21174316,
+              28.630623
+            ],
+            [
+              77.21174316,
+              28.631001
+            ],
+            [
+              77.21120996,
+              28.631001
+            ],
+            [
+              77.21120996,
+              28.630623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-007",
+        "ulpin": "IN-10-0007",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1007",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21186621,
+              28.63065
+            ],
+            [
+              77.21239941,
+              28.63065
+            ],
+            [
+              77.21239941,
+              28.631028
+            ],
+            [
+              77.21186621,
+              28.631028
+            ],
+            [
+              77.21186621,
+              28.63065
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-008",
+        "ulpin": "IN-10-0008",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1008",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20755957,
+              28.631073
+            ],
+            [
+              77.20809277,
+              28.631073
+            ],
+            [
+              77.20809277,
+              28.631451
+            ],
+            [
+              77.20755957,
+              28.631451
+            ],
+            [
+              77.20755957,
+              28.631073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-009",
+        "ulpin": "IN-10-0009",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1009",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2081543,
+              28.631064
+            ],
+            [
+              77.2086875,
+              28.631064
+            ],
+            [
+              77.2086875,
+              28.631442
+            ],
+            [
+              77.2081543,
+              28.631442
+            ],
+            [
+              77.2081543,
+              28.631064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-010",
+        "ulpin": "IN-10-0010",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1010",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20874902,
+              28.631064
+            ],
+            [
+              77.20928223,
+              28.631064
+            ],
+            [
+              77.20928223,
+              28.631442
+            ],
+            [
+              77.20874902,
+              28.631442
+            ],
+            [
+              77.20874902,
+              28.631064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-011",
+        "ulpin": "IN-10-0011",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1011",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20941553,
+              28.6311
+            ],
+            [
+              77.20994873,
+              28.6311
+            ],
+            [
+              77.20994873,
+              28.631478
+            ],
+            [
+              77.20941553,
+              28.631478
+            ],
+            [
+              77.20941553,
+              28.6311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-012",
+        "ulpin": "IN-10-0012",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1012",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20995898,
+              28.6311
+            ],
+            [
+              77.21049219,
+              28.6311
+            ],
+            [
+              77.21049219,
+              28.631478
+            ],
+            [
+              77.20995898,
+              28.631478
+            ],
+            [
+              77.20995898,
+              28.6311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-013",
+        "ulpin": "IN-10-0013",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1013",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21060498,
+              28.631109
+            ],
+            [
+              77.21113818,
+              28.631109
+            ],
+            [
+              77.21113818,
+              28.631487
+            ],
+            [
+              77.21060498,
+              28.631487
+            ],
+            [
+              77.21060498,
+              28.631109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-014",
+        "ulpin": "IN-10-0014",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1014",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21124072,
+              28.631136
+            ],
+            [
+              77.21177393,
+              28.631136
+            ],
+            [
+              77.21177393,
+              28.631514
+            ],
+            [
+              77.21124072,
+              28.631514
+            ],
+            [
+              77.21124072,
+              28.631136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-015",
+        "ulpin": "IN-10-0015",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1015",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21187646,
+              28.6311
+            ],
+            [
+              77.21240967,
+              28.6311
+            ],
+            [
+              77.21240967,
+              28.631478
+            ],
+            [
+              77.21187646,
+              28.631478
+            ],
+            [
+              77.21187646,
+              28.6311
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-016",
+        "ulpin": "IN-10-0016",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1016",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20749805,
+              28.631586
+            ],
+            [
+              77.20803125,
+              28.631586
+            ],
+            [
+              77.20803125,
+              28.631964
+            ],
+            [
+              77.20749805,
+              28.631964
+            ],
+            [
+              77.20749805,
+              28.631586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-017",
+        "ulpin": "IN-10-0017",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1017",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20819531,
+              28.631532
+            ],
+            [
+              77.20872852,
+              28.631532
+            ],
+            [
+              77.20872852,
+              28.63191
+            ],
+            [
+              77.20819531,
+              28.63191
+            ],
+            [
+              77.20819531,
+              28.631532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-018",
+        "ulpin": "IN-10-0018",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1018",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20876953,
+              28.631586
+            ],
+            [
+              77.20930273,
+              28.631586
+            ],
+            [
+              77.20930273,
+              28.631964
+            ],
+            [
+              77.20876953,
+              28.631964
+            ],
+            [
+              77.20876953,
+              28.631586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-019",
+        "ulpin": "IN-10-0019",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1019",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20934375,
+              28.631523
+            ],
+            [
+              77.20987695,
+              28.631523
+            ],
+            [
+              77.20987695,
+              28.631901
+            ],
+            [
+              77.20934375,
+              28.631901
+            ],
+            [
+              77.20934375,
+              28.631523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-020",
+        "ulpin": "IN-10-0020",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1020",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20998975,
+              28.631586
+            ],
+            [
+              77.21052295,
+              28.631586
+            ],
+            [
+              77.21052295,
+              28.631964
+            ],
+            [
+              77.20998975,
+              28.631964
+            ],
+            [
+              77.20998975,
+              28.631586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-021",
+        "ulpin": "IN-10-0021",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1021",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21057422,
+              28.631514
+            ],
+            [
+              77.21110742,
+              28.631514
+            ],
+            [
+              77.21110742,
+              28.631892
+            ],
+            [
+              77.21057422,
+              28.631892
+            ],
+            [
+              77.21057422,
+              28.631514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-022",
+        "ulpin": "IN-10-0022",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1022",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21119971,
+              28.63155
+            ],
+            [
+              77.21173291,
+              28.63155
+            ],
+            [
+              77.21173291,
+              28.631928
+            ],
+            [
+              77.21119971,
+              28.631928
+            ],
+            [
+              77.21119971,
+              28.63155
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-023",
+        "ulpin": "IN-10-0023",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1023",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21183545,
+              28.631577
+            ],
+            [
+              77.21236865,
+              28.631577
+            ],
+            [
+              77.21236865,
+              28.631955
+            ],
+            [
+              77.21183545,
+              28.631955
+            ],
+            [
+              77.21183545,
+              28.631577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-024",
+        "ulpin": "IN-10-0024",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1024",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20752881,
+              28.632009
+            ],
+            [
+              77.20806201,
+              28.632009
+            ],
+            [
+              77.20806201,
+              28.632387
+            ],
+            [
+              77.20752881,
+              28.632387
+            ],
+            [
+              77.20752881,
+              28.632009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-025",
+        "ulpin": "IN-10-0025",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1025",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20814404,
+              28.632
+            ],
+            [
+              77.20867725,
+              28.632
+            ],
+            [
+              77.20867725,
+              28.632378
+            ],
+            [
+              77.20814404,
+              28.632378
+            ],
+            [
+              77.20814404,
+              28.632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-026",
+        "ulpin": "IN-10-0026",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1026",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20875928,
+              28.632
+            ],
+            [
+              77.20929248,
+              28.632
+            ],
+            [
+              77.20929248,
+              28.632378
+            ],
+            [
+              77.20875928,
+              28.632378
+            ],
+            [
+              77.20875928,
+              28.632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-027",
+        "ulpin": "IN-10-0027",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1027",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20937451,
+              28.631973
+            ],
+            [
+              77.20990771,
+              28.631973
+            ],
+            [
+              77.20990771,
+              28.632351
+            ],
+            [
+              77.20937451,
+              28.632351
+            ],
+            [
+              77.20937451,
+              28.631973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-028",
+        "ulpin": "IN-10-0028",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1028",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21004102,
+              28.632
+            ],
+            [
+              77.21057422,
+              28.632
+            ],
+            [
+              77.21057422,
+              28.632378
+            ],
+            [
+              77.21004102,
+              28.632378
+            ],
+            [
+              77.21004102,
+              28.632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-029",
+        "ulpin": "IN-10-0029",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1029",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21061523,
+              28.631982
+            ],
+            [
+              77.21114844,
+              28.631982
+            ],
+            [
+              77.21114844,
+              28.63236
+            ],
+            [
+              77.21061523,
+              28.63236
+            ],
+            [
+              77.21061523,
+              28.631982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-030",
+        "ulpin": "IN-10-0030",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1030",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21122021,
+              28.631964
+            ],
+            [
+              77.21175342,
+              28.631964
+            ],
+            [
+              77.21175342,
+              28.632342
+            ],
+            [
+              77.21122021,
+              28.632342
+            ],
+            [
+              77.21122021,
+              28.631964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-031",
+        "ulpin": "IN-10-0031",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1031",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21180469,
+              28.631991
+            ],
+            [
+              77.21233789,
+              28.631991
+            ],
+            [
+              77.21233789,
+              28.632369
+            ],
+            [
+              77.21180469,
+              28.632369
+            ],
+            [
+              77.21180469,
+              28.631991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-032",
+        "ulpin": "IN-10-0032",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1032",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20754932,
+              28.63245
+            ],
+            [
+              77.20808252,
+              28.63245
+            ],
+            [
+              77.20808252,
+              28.632828
+            ],
+            [
+              77.20754932,
+              28.632828
+            ],
+            [
+              77.20754932,
+              28.63245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-033",
+        "ulpin": "IN-10-0033",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1033",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20813379,
+              28.632414
+            ],
+            [
+              77.20866699,
+              28.632414
+            ],
+            [
+              77.20866699,
+              28.632792
+            ],
+            [
+              77.20813379,
+              28.632792
+            ],
+            [
+              77.20813379,
+              28.632414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-034",
+        "ulpin": "IN-10-0034",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1034",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20874902,
+              28.63245
+            ],
+            [
+              77.20928223,
+              28.63245
+            ],
+            [
+              77.20928223,
+              28.632828
+            ],
+            [
+              77.20874902,
+              28.632828
+            ],
+            [
+              77.20874902,
+              28.63245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-035",
+        "ulpin": "IN-10-0035",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1035",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20941553,
+              28.632477
+            ],
+            [
+              77.20994873,
+              28.632477
+            ],
+            [
+              77.20994873,
+              28.632855
+            ],
+            [
+              77.20941553,
+              28.632855
+            ],
+            [
+              77.20941553,
+              28.632477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-036",
+        "ulpin": "IN-10-0036",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1036",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21002051,
+              28.632423
+            ],
+            [
+              77.21055371,
+              28.632423
+            ],
+            [
+              77.21055371,
+              28.632801
+            ],
+            [
+              77.21002051,
+              28.632801
+            ],
+            [
+              77.21002051,
+              28.632423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-037",
+        "ulpin": "IN-10-0037",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1037",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21065625,
+              28.632468
+            ],
+            [
+              77.21118945,
+              28.632468
+            ],
+            [
+              77.21118945,
+              28.632846
+            ],
+            [
+              77.21065625,
+              28.632846
+            ],
+            [
+              77.21065625,
+              28.632468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-038",
+        "ulpin": "IN-10-0038",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1038",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21118945,
+              28.632423
+            ],
+            [
+              77.21172266,
+              28.632423
+            ],
+            [
+              77.21172266,
+              28.632801
+            ],
+            [
+              77.21118945,
+              28.632801
+            ],
+            [
+              77.21118945,
+              28.632423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-039",
+        "ulpin": "IN-10-0039",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1039",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21182519,
+              28.632468
+            ],
+            [
+              77.2123584,
+              28.632468
+            ],
+            [
+              77.2123584,
+              28.632846
+            ],
+            [
+              77.21182519,
+              28.632846
+            ],
+            [
+              77.21182519,
+              28.632468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-040",
+        "ulpin": "IN-10-0040",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1040",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20752881,
+              28.632909
+            ],
+            [
+              77.20806201,
+              28.632909
+            ],
+            [
+              77.20806201,
+              28.633287
+            ],
+            [
+              77.20752881,
+              28.633287
+            ],
+            [
+              77.20752881,
+              28.632909
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-041",
+        "ulpin": "IN-10-0041",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1041",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20812354,
+              28.632936
+            ],
+            [
+              77.20865674,
+              28.632936
+            ],
+            [
+              77.20865674,
+              28.633314
+            ],
+            [
+              77.20812354,
+              28.633314
+            ],
+            [
+              77.20812354,
+              28.632936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-10-042",
+        "ulpin": "IN-10-0042",
+        "ward_id": "Ward 01",
+        "area_name": "Central Urban Core",
+        "survey_number": "SY-1042",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Urban Core"
+      }
+    }
+  ]
+}

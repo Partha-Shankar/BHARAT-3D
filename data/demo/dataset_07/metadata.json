@@ -1,0 +1,20 @@
+{
+  "area_id": "area_07",
+  "area_name": "Civic Transit Zone",
+  "ward_number": "Ward 05",
+  "theme": "Underground-infrastructure-heavy Zone with Dual Metro & Road Tunnels",
+  "version": "v3.0",
+  "center": [
+    77.195,
+    28.625
+  ],
+  "bounding_box": [
+    77.19,
+    28.62,
+    77.19999999999999,
+    28.63
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-06T19:20:20.647096",
+  "files_count": 24
+}

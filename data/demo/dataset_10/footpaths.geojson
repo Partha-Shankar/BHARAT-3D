@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20702637,
+            28.632117
+          ],
+          [
+            77.21297363,
+            28.632117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-10-01",
+        "name": "Central Urban Core North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20702637,
+            28.631883
+          ],
+          [
+            77.21297363,
+            28.631883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-10-02",
+        "name": "Central Urban Core South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

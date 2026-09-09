@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21033296,
+              28.628855
+            ],
+            [
+              77.21115324,
+              28.628855
+            ],
+            [
+              77.21115324,
+              28.629143
+            ],
+            [
+              77.21033296,
+              28.629143
+            ],
+            [
+              77.21033296,
+              28.628855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-01-04",
+        "name": "Central Heights Central Junction Railway Terminal",
+        "ulpin": "IN-01-0001",
+        "building_code": "BLD-01-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

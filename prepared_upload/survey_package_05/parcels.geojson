@@ -1,0 +1,1850 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21149838,
+              28.616623
+            ],
+            [
+              77.21203151,
+              28.616623
+            ],
+            [
+              77.21203151,
+              28.617001
+            ],
+            [
+              77.21149838,
+              28.617001
+            ],
+            [
+              77.21149838,
+              28.616623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-001",
+        "ulpin": "IN-05-0001",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-501",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21211353,
+              28.616614
+            ],
+            [
+              77.21264667,
+              28.616614
+            ],
+            [
+              77.21264667,
+              28.616992
+            ],
+            [
+              77.21211353,
+              28.616992
+            ],
+            [
+              77.21211353,
+              28.616614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-002",
+        "ulpin": "IN-05-0002",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-502",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2127697,
+              28.616641
+            ],
+            [
+              77.21330283,
+              28.616641
+            ],
+            [
+              77.21330283,
+              28.617019
+            ],
+            [
+              77.2127697,
+              28.617019
+            ],
+            [
+              77.2127697,
+              28.616641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-003",
+        "ulpin": "IN-05-0003",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-503",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21340535,
+              28.616641
+            ],
+            [
+              77.21393848,
+              28.616641
+            ],
+            [
+              77.21393848,
+              28.617019
+            ],
+            [
+              77.21340535,
+              28.617019
+            ],
+            [
+              77.21340535,
+              28.616641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-004",
+        "ulpin": "IN-05-0004",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-504",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.214,
+              28.61665
+            ],
+            [
+              77.21453313,
+              28.61665
+            ],
+            [
+              77.21453313,
+              28.617028
+            ],
+            [
+              77.214,
+              28.617028
+            ],
+            [
+              77.214,
+              28.61665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-005",
+        "ulpin": "IN-05-0005",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-505",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21463566,
+              28.616614
+            ],
+            [
+              77.21516879,
+              28.616614
+            ],
+            [
+              77.21516879,
+              28.616992
+            ],
+            [
+              77.21463566,
+              28.616992
+            ],
+            [
+              77.21463566,
+              28.616614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-006",
+        "ulpin": "IN-05-0006",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-506",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21524056,
+              28.61665
+            ],
+            [
+              77.21577369,
+              28.61665
+            ],
+            [
+              77.21577369,
+              28.617028
+            ],
+            [
+              77.21524056,
+              28.617028
+            ],
+            [
+              77.21524056,
+              28.61665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-007",
+        "ulpin": "IN-05-0007",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-507",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21588647,
+              28.616623
+            ],
+            [
+              77.2164196,
+              28.616623
+            ],
+            [
+              77.2164196,
+              28.617001
+            ],
+            [
+              77.21588647,
+              28.617001
+            ],
+            [
+              77.21588647,
+              28.616623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-008",
+        "ulpin": "IN-05-0008",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-508",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2115599,
+              28.617073
+            ],
+            [
+              77.21209303,
+              28.617073
+            ],
+            [
+              77.21209303,
+              28.617451
+            ],
+            [
+              77.2115599,
+              28.617451
+            ],
+            [
+              77.2115599,
+              28.617073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-009",
+        "ulpin": "IN-05-0009",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-509",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21212379,
+              28.617109
+            ],
+            [
+              77.21265692,
+              28.617109
+            ],
+            [
+              77.21265692,
+              28.617487
+            ],
+            [
+              77.21212379,
+              28.617487
+            ],
+            [
+              77.21212379,
+              28.617109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-010",
+        "ulpin": "IN-05-0010",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-510",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21277995,
+              28.617064
+            ],
+            [
+              77.21331308,
+              28.617064
+            ],
+            [
+              77.21331308,
+              28.617442
+            ],
+            [
+              77.21277995,
+              28.617442
+            ],
+            [
+              77.21277995,
+              28.617064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-011",
+        "ulpin": "IN-05-0011",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-511",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21341561,
+              28.617082
+            ],
+            [
+              77.21394874,
+              28.617082
+            ],
+            [
+              77.21394874,
+              28.61746
+            ],
+            [
+              77.21341561,
+              28.61746
+            ],
+            [
+              77.21341561,
+              28.617082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-012",
+        "ulpin": "IN-05-0012",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-512",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21401025,
+              28.617118
+            ],
+            [
+              77.21454338,
+              28.617118
+            ],
+            [
+              77.21454338,
+              28.617496
+            ],
+            [
+              77.21401025,
+              28.617496
+            ],
+            [
+              77.21401025,
+              28.617118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-013",
+        "ulpin": "IN-05-0013",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-513",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21461515,
+              28.617073
+            ],
+            [
+              77.21514828,
+              28.617073
+            ],
+            [
+              77.21514828,
+              28.617451
+            ],
+            [
+              77.21461515,
+              28.617451
+            ],
+            [
+              77.21461515,
+              28.617073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-014",
+        "ulpin": "IN-05-0014",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-514",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21527131,
+              28.617073
+            ],
+            [
+              77.21580445,
+              28.617073
+            ],
+            [
+              77.21580445,
+              28.617451
+            ],
+            [
+              77.21527131,
+              28.617451
+            ],
+            [
+              77.21527131,
+              28.617073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-015",
+        "ulpin": "IN-05-0015",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-515",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21584546,
+              28.617073
+            ],
+            [
+              77.21637859,
+              28.617073
+            ],
+            [
+              77.21637859,
+              28.617451
+            ],
+            [
+              77.21584546,
+              28.617451
+            ],
+            [
+              77.21584546,
+              28.617073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-016",
+        "ulpin": "IN-05-0016",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-516",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21153939,
+              28.617559
+            ],
+            [
+              77.21207252,
+              28.617559
+            ],
+            [
+              77.21207252,
+              28.617937
+            ],
+            [
+              77.21153939,
+              28.617937
+            ],
+            [
+              77.21153939,
+              28.617559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-017",
+        "ulpin": "IN-05-0017",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-517",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21219555,
+              28.617514
+            ],
+            [
+              77.21272869,
+              28.617514
+            ],
+            [
+              77.21272869,
+              28.617892
+            ],
+            [
+              77.21219555,
+              28.617892
+            ],
+            [
+              77.21219555,
+              28.617514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-018",
+        "ulpin": "IN-05-0018",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-518",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2127697,
+              28.617541
+            ],
+            [
+              77.21330283,
+              28.617541
+            ],
+            [
+              77.21330283,
+              28.617919
+            ],
+            [
+              77.2127697,
+              28.617919
+            ],
+            [
+              77.2127697,
+              28.617541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-019",
+        "ulpin": "IN-05-0019",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-519",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21340535,
+              28.61755
+            ],
+            [
+              77.21393848,
+              28.61755
+            ],
+            [
+              77.21393848,
+              28.617928
+            ],
+            [
+              77.21340535,
+              28.617928
+            ],
+            [
+              77.21340535,
+              28.61755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-020",
+        "ulpin": "IN-05-0020",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-520",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21402051,
+              28.617541
+            ],
+            [
+              77.21455364,
+              28.617541
+            ],
+            [
+              77.21455364,
+              28.617919
+            ],
+            [
+              77.21402051,
+              28.617919
+            ],
+            [
+              77.21402051,
+              28.617541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-021",
+        "ulpin": "IN-05-0021",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-521",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21457414,
+              28.61755
+            ],
+            [
+              77.21510727,
+              28.61755
+            ],
+            [
+              77.21510727,
+              28.617928
+            ],
+            [
+              77.21457414,
+              28.617928
+            ],
+            [
+              77.21457414,
+              28.61755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-022",
+        "ulpin": "IN-05-0022",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-522",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2152098,
+              28.617541
+            ],
+            [
+              77.21574293,
+              28.617541
+            ],
+            [
+              77.21574293,
+              28.617919
+            ],
+            [
+              77.2152098,
+              28.617919
+            ],
+            [
+              77.2152098,
+              28.617541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-023",
+        "ulpin": "IN-05-0023",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-523",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2158352,
+              28.617577
+            ],
+            [
+              77.21636834,
+              28.617577
+            ],
+            [
+              77.21636834,
+              28.617955
+            ],
+            [
+              77.2158352,
+              28.617955
+            ],
+            [
+              77.2158352,
+              28.617577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-024",
+        "ulpin": "IN-05-0024",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-524",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21152914,
+              28.618018
+            ],
+            [
+              77.21206227,
+              28.618018
+            ],
+            [
+              77.21206227,
+              28.618396
+            ],
+            [
+              77.21152914,
+              28.618396
+            ],
+            [
+              77.21152914,
+              28.618018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-025",
+        "ulpin": "IN-05-0025",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-525",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21213404,
+              28.617973
+            ],
+            [
+              77.21266717,
+              28.617973
+            ],
+            [
+              77.21266717,
+              28.618351
+            ],
+            [
+              77.21213404,
+              28.618351
+            ],
+            [
+              77.21213404,
+              28.617973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-026",
+        "ulpin": "IN-05-0026",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-526",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21280045,
+              28.618036
+            ],
+            [
+              77.21333359,
+              28.618036
+            ],
+            [
+              77.21333359,
+              28.618414
+            ],
+            [
+              77.21280045,
+              28.618414
+            ],
+            [
+              77.21280045,
+              28.618036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-027",
+        "ulpin": "IN-05-0027",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-527",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2133746,
+              28.617973
+            ],
+            [
+              77.21390773,
+              28.617973
+            ],
+            [
+              77.21390773,
+              28.618351
+            ],
+            [
+              77.2133746,
+              28.618351
+            ],
+            [
+              77.2133746,
+              28.617973
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-028",
+        "ulpin": "IN-05-0028",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-528",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.214,
+              28.617991
+            ],
+            [
+              77.21453313,
+              28.617991
+            ],
+            [
+              77.21453313,
+              28.618369
+            ],
+            [
+              77.214,
+              28.618369
+            ],
+            [
+              77.214,
+              28.617991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-029",
+        "ulpin": "IN-05-0029",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-529",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21463566,
+              28.618018
+            ],
+            [
+              77.21516879,
+              28.618018
+            ],
+            [
+              77.21516879,
+              28.618396
+            ],
+            [
+              77.21463566,
+              28.618396
+            ],
+            [
+              77.21463566,
+              28.618018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-030",
+        "ulpin": "IN-05-0030",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-530",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21519955,
+              28.618036
+            ],
+            [
+              77.21573268,
+              28.618036
+            ],
+            [
+              77.21573268,
+              28.618414
+            ],
+            [
+              77.21519955,
+              28.618414
+            ],
+            [
+              77.21519955,
+              28.618036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-031",
+        "ulpin": "IN-05-0031",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-531",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21586596,
+              28.617964
+            ],
+            [
+              77.21639909,
+              28.617964
+            ],
+            [
+              77.21639909,
+              28.618342
+            ],
+            [
+              77.21586596,
+              28.618342
+            ],
+            [
+              77.21586596,
+              28.617964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-032",
+        "ulpin": "IN-05-0032",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-532",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21157015,
+              28.618423
+            ],
+            [
+              77.21210328,
+              28.618423
+            ],
+            [
+              77.21210328,
+              28.618801
+            ],
+            [
+              77.21157015,
+              28.618801
+            ],
+            [
+              77.21157015,
+              28.618423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-033",
+        "ulpin": "IN-05-0033",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-533",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21214429,
+              28.618423
+            ],
+            [
+              77.21267742,
+              28.618423
+            ],
+            [
+              77.21267742,
+              28.618801
+            ],
+            [
+              77.21214429,
+              28.618801
+            ],
+            [
+              77.21214429,
+              28.618423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-034",
+        "ulpin": "IN-05-0034",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-534",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21281071,
+              28.618468
+            ],
+            [
+              77.21334384,
+              28.618468
+            ],
+            [
+              77.21334384,
+              28.618846
+            ],
+            [
+              77.21281071,
+              28.618846
+            ],
+            [
+              77.21281071,
+              28.618468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-035",
+        "ulpin": "IN-05-0035",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-535",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21338485,
+              28.618441
+            ],
+            [
+              77.21391798,
+              28.618441
+            ],
+            [
+              77.21391798,
+              28.618819
+            ],
+            [
+              77.21338485,
+              28.618819
+            ],
+            [
+              77.21338485,
+              28.618441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-036",
+        "ulpin": "IN-05-0036",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-536",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21398975,
+              28.618423
+            ],
+            [
+              77.21452288,
+              28.618423
+            ],
+            [
+              77.21452288,
+              28.618801
+            ],
+            [
+              77.21398975,
+              28.618801
+            ],
+            [
+              77.21398975,
+              28.618423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-037",
+        "ulpin": "IN-05-0037",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-537",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21463566,
+              28.618432
+            ],
+            [
+              77.21516879,
+              28.618432
+            ],
+            [
+              77.21516879,
+              28.61881
+            ],
+            [
+              77.21463566,
+              28.61881
+            ],
+            [
+              77.21463566,
+              28.618432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-038",
+        "ulpin": "IN-05-0038",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-538",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2152098,
+              28.61845
+            ],
+            [
+              77.21574293,
+              28.61845
+            ],
+            [
+              77.21574293,
+              28.618828
+            ],
+            [
+              77.2152098,
+              28.618828
+            ],
+            [
+              77.2152098,
+              28.61845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-039",
+        "ulpin": "IN-05-0039",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-539",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21586596,
+              28.61845
+            ],
+            [
+              77.21639909,
+              28.61845
+            ],
+            [
+              77.21639909,
+              28.618828
+            ],
+            [
+              77.21586596,
+              28.618828
+            ],
+            [
+              77.21586596,
+              28.61845
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-040",
+        "ulpin": "IN-05-0040",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-540",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21153939,
+              28.6189
+            ],
+            [
+              77.21207252,
+              28.6189
+            ],
+            [
+              77.21207252,
+              28.619278
+            ],
+            [
+              77.21153939,
+              28.619278
+            ],
+            [
+              77.21153939,
+              28.6189
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-041",
+        "ulpin": "IN-05-0041",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-541",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2121648,
+              28.618918
+            ],
+            [
+              77.21269793,
+              28.618918
+            ],
+            [
+              77.21269793,
+              28.619296
+            ],
+            [
+              77.2121648,
+              28.619296
+            ],
+            [
+              77.2121648,
+              28.618918
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-042",
+        "ulpin": "IN-05-0042",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-542",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21281071,
+              28.618927
+            ],
+            [
+              77.21334384,
+              28.618927
+            ],
+            [
+              77.21334384,
+              28.619305
+            ],
+            [
+              77.21281071,
+              28.619305
+            ],
+            [
+              77.21281071,
+              28.618927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-043",
+        "ulpin": "IN-05-0043",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-543",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21334384,
+              28.618882
+            ],
+            [
+              77.21387697,
+              28.618882
+            ],
+            [
+              77.21387697,
+              28.61926
+            ],
+            [
+              77.21334384,
+              28.61926
+            ],
+            [
+              77.21334384,
+              28.618882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-044",
+        "ulpin": "IN-05-0044",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-544",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21395899,
+              28.618936
+            ],
+            [
+              77.21449212,
+              28.618936
+            ],
+            [
+              77.21449212,
+              28.619314
+            ],
+            [
+              77.21395899,
+              28.619314
+            ],
+            [
+              77.21395899,
+              28.618936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-05-045",
+        "ulpin": "IN-05-0045",
+        "ward_id": "Ward 14",
+        "area_name": "Urban Heights",
+        "survey_number": "SY-545",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Urban Heights"
+      }
+    }
+  ]
+}

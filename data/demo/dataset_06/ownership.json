@@ -1,0 +1,3728 @@
+[
+  {
+    "unit_id": "VPR-BLD001-B02-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2016-12-11"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-02-21"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-11-09"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-02-03"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2013-06-25"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-07-01"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-01-28"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2017-04-01"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-27"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-10-09"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U04",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-07-19"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2016-06-14"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-06-13"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-24"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2010-05-10"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2020-08-15"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2015-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2017-11-10"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-14"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-02-25"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-01-18"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2020-08-20"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-28"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-15"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-03-08"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2024-07-02"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2010-10-13"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2023-09-24"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-22"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-18"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-02-21"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2011-05-13"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-18"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2011-01-08"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2014-08-22"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-03-20"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-05-19"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2016-02-19"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2021-02-17"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-02-14"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-17"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2018-06-28"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2024-10-20"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2021-05-11"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2016-02-08"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2025-11-23"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-22"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-12-18"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2019-05-08"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-04-07"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-27"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-01-23"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-12-05"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2015-01-09"
+  },
+  {
+    "unit_id": "VPR-BLD002-F01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-08"
+  },
+  {
+    "unit_id": "VPR-BLD002-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2017-09-13"
+  },
+  {
+    "unit_id": "VPR-BLD002-F02-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-20"
+  },
+  {
+    "unit_id": "VPR-BLD002-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-04-06"
+  },
+  {
+    "unit_id": "VPR-BLD002-F03-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-05-02"
+  },
+  {
+    "unit_id": "VPR-BLD002-F03-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2024-02-22"
+  },
+  {
+    "unit_id": "VPR-BLD002-F04-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-04"
+  },
+  {
+    "unit_id": "VPR-BLD002-F04-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-24"
+  },
+  {
+    "unit_id": "VPR-BLD002-F05-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-12-13"
+  },
+  {
+    "unit_id": "VPR-BLD002-F05-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-07-24"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2018-10-02"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2015-10-14"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-04"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-27"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-25"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-15"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2015-05-18"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-04"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2025-08-08"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2014-02-09"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-19"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2020-09-25"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2017-10-13"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-07-22"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-04"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2025-05-11"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2013-11-23"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2011-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2017-09-14"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-19"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2018-11-01"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-10"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-08-04"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2019-01-27"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2025-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2018-11-25"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2021-12-05"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2016-03-26"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2015-05-27"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2012-03-25"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-01-09"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-12"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2017-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2011-05-16"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-22"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-20"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2024-08-08"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2022-05-07"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2010-01-26"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2016-10-07"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2014-03-18"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2010-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2011-03-24"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-17"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-21"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-23"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-20"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2023-02-26"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U01",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2023-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U02",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2023-06-22"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U03",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2012-02-03"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U04",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2011-10-18"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U05",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2011-05-20"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U06",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2025-04-28"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U07",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2018-10-08"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U08",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2015-05-23"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U09",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-22"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U10",
+    "owner_name": "Civic Grand Mall Ltd",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-14"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U01",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2011-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U02",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-25"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U03",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-22"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U04",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2016-05-07"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U05",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2025-12-14"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U01",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2021-02-13"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U02",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2020-10-14"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U03",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2020-03-26"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U04",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2023-10-13"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U05",
+    "owner_name": "Indian Railways",
+    "share_percentage": 100,
+    "acquired_date": "2020-03-03"
+  },
+  {
+    "unit_id": "VPR-BLD005-F01-U01",
+    "owner_name": "Delhi Metro Rail Corporation",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-06"
+  },
+  {
+    "unit_id": "VPR-BLD005-F01-U02",
+    "owner_name": "Delhi Metro Rail Corporation",
+    "share_percentage": 100,
+    "acquired_date": "2012-03-25"
+  },
+  {
+    "unit_id": "VPR-BLD005-F02-U01",
+    "owner_name": "Delhi Metro Rail Corporation",
+    "share_percentage": 100,
+    "acquired_date": "2024-10-25"
+  },
+  {
+    "unit_id": "VPR-BLD005-F02-U02",
+    "owner_name": "Delhi Metro Rail Corporation",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-11"
+  },
+  {
+    "unit_id": "VPR-BLD006-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2012-05-15"
+  },
+  {
+    "unit_id": "VPR-BLD006-F01-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-21"
+  },
+  {
+    "unit_id": "VPR-BLD006-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-08-26"
+  },
+  {
+    "unit_id": "VPR-BLD006-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-15"
+  },
+  {
+    "unit_id": "VPR-BLD006-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-01-08"
+  },
+  {
+    "unit_id": "VPR-BLD006-F03-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2015-06-12"
+  },
+  {
+    "unit_id": "VPR-BLD006-F04-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-11-21"
+  },
+  {
+    "unit_id": "VPR-BLD006-F04-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-06-03"
+  },
+  {
+    "unit_id": "VPR-BLD007-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2020-03-22"
+  },
+  {
+    "unit_id": "VPR-BLD007-F01-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2021-01-12"
+  },
+  {
+    "unit_id": "VPR-BLD007-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2025-04-08"
+  },
+  {
+    "unit_id": "VPR-BLD007-F02-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2013-09-25"
+  },
+  {
+    "unit_id": "VPR-BLD007-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-13"
+  },
+  {
+    "unit_id": "VPR-BLD007-F03-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-15"
+  },
+  {
+    "unit_id": "VPR-BLD007-F04-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2024-04-18"
+  },
+  {
+    "unit_id": "VPR-BLD007-F04-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2016-06-22"
+  },
+  {
+    "unit_id": "VPR-BLD007-F05-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2015-04-26"
+  },
+  {
+    "unit_id": "VPR-BLD007-F05-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-06-18"
+  },
+  {
+    "unit_id": "VPR-BLD007-F06-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-03"
+  },
+  {
+    "unit_id": "VPR-BLD007-F06-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-12"
+  },
+  {
+    "unit_id": "VPR-BLD008-F01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2012-06-08"
+  },
+  {
+    "unit_id": "VPR-BLD008-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2020-03-05"
+  },
+  {
+    "unit_id": "VPR-BLD009-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-09-24"
+  },
+  {
+    "unit_id": "VPR-BLD009-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-02"
+  },
+  {
+    "unit_id": "VPR-BLD009-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-02-27"
+  },
+  {
+    "unit_id": "VPR-BLD009-F02-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2023-01-20"
+  },
+  {
+    "unit_id": "VPR-BLD009-F03-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-12"
+  },
+  {
+    "unit_id": "VPR-BLD009-F03-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-09"
+  },
+  {
+    "unit_id": "VPR-BLD009-F04-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-10-24"
+  },
+  {
+    "unit_id": "VPR-BLD009-F04-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-06"
+  },
+  {
+    "unit_id": "VPR-BLD010-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2016-01-11"
+  },
+  {
+    "unit_id": "VPR-BLD010-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2018-01-25"
+  },
+  {
+    "unit_id": "VPR-BLD010-F03-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2020-05-04"
+  },
+  {
+    "unit_id": "VPR-BLD010-F04-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD010-F05-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-04"
+  },
+  {
+    "unit_id": "VPR-BLD010-F06-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-15"
+  },
+  {
+    "unit_id": "VPR-BLD010-F07-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-17"
+  },
+  {
+    "unit_id": "VPR-BLD011-B01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2021-07-19"
+  },
+  {
+    "unit_id": "VPR-BLD011-B01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2012-10-05"
+  },
+  {
+    "unit_id": "VPR-BLD011-F01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-04"
+  },
+  {
+    "unit_id": "VPR-BLD011-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-15"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-06-17"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2021-09-19"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2012-02-10"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2014-06-21"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-03-27"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-02-17"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-06-17"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-21"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2020-10-02"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2018-11-07"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U04",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-11-13"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2024-04-11"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2021-07-05"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2018-08-08"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-14"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-01"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2017-04-19"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-05-18"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-12"
+  },
+  {
+    "unit_id": "VPR-BLD015-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2012-07-17"
+  },
+  {
+    "unit_id": "VPR-BLD015-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2013-03-04"
+  },
+  {
+    "unit_id": "VPR-BLD015-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD015-F02-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-15"
+  },
+  {
+    "unit_id": "VPR-BLD015-F03-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-24"
+  },
+  {
+    "unit_id": "VPR-BLD015-F03-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2025-12-19"
+  },
+  {
+    "unit_id": "VPR-BLD015-F04-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-04"
+  },
+  {
+    "unit_id": "VPR-BLD015-F04-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-10-16"
+  },
+  {
+    "unit_id": "VPR-BLD015-F05-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2025-03-17"
+  },
+  {
+    "unit_id": "VPR-BLD015-F05-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2011-10-23"
+  },
+  {
+    "unit_id": "VPR-BLD015-F06-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-17"
+  },
+  {
+    "unit_id": "VPR-BLD015-F06-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2011-12-05"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-11-25"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-04-10"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-05-04"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-02"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-16"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-04-02"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2020-12-16"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-11-16"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-11-19"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-01-27"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-01-01"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-03-28"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2013-06-06"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2020-05-19"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-09-11"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2017-01-09"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-24"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-13"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-20"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-12-20"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-15"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2016-10-18"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2013-11-07"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2023-08-19"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2010-07-09"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-03-25"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-07-03"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-05"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-22"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-05"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2023-10-25"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-04-24"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2016-01-05"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2020-10-20"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-09-19"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-11-22"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-13"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-09-17"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-01-09"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2016-08-07"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-12-04"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-08"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-05-09"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2025-06-07"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2017-12-05"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-05-05"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-03-05"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-02-27"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-09-15"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-01-01"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-03-04"
+  },
+  {
+    "unit_id": "VPR-BLD019-B01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-02-12"
+  },
+  {
+    "unit_id": "VPR-BLD019-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-22"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-16"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-04-07"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-03-28"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-02-10"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2020-07-25"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2012-06-20"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2024-08-08"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-02-25"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-13"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2012-01-10"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2014-02-06"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-02-01"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2020-07-01"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2017-10-17"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-02-06"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-06-09"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2024-02-05"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-15"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-11"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-10-26"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-04"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2024-12-07"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-22"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-10-16"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-12-26"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2021-03-21"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2023-02-01"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U04",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-12"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2012-02-27"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2016-09-16"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-03"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-04"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2024-04-26"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2023-07-01"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-07"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2012-10-04"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-21"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-06-12"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-19"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-06"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2015-08-21"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-06"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-01-16"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-07-22"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-19"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-08-19"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2024-09-07"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-28"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2021-12-20"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2011-10-12"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2020-12-10"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-04-05"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-07-15"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-12"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2012-12-15"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-04-14"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-18"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2020-11-25"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-08-15"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-28"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-01-13"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-07-21"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2012-03-19"
+  },
+  {
+    "unit_id": "VPR-BLD024-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-04-13"
+  },
+  {
+    "unit_id": "VPR-BLD024-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-13"
+  },
+  {
+    "unit_id": "VPR-BLD024-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-19"
+  },
+  {
+    "unit_id": "VPR-BLD024-F04-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-07-20"
+  },
+  {
+    "unit_id": "VPR-BLD024-F05-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2013-03-25"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2017-09-20"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2016-09-20"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-21"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-14"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2010-05-07"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-11-23"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2014-05-03"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2012-05-23"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-02-15"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-01"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-12"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2010-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-15"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2013-10-22"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2011-01-08"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-03-28"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2023-12-11"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2011-03-08"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2024-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2010-06-07"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-19"
+  },
+  {
+    "unit_id": "VPR-BLD026-B01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2021-11-27"
+  },
+  {
+    "unit_id": "VPR-BLD026-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-12-24"
+  },
+  {
+    "unit_id": "VPR-BLD026-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-07-16"
+  },
+  {
+    "unit_id": "VPR-BLD026-F03-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2011-04-28"
+  },
+  {
+    "unit_id": "VPR-BLD027-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-11-05"
+  },
+  {
+    "unit_id": "VPR-BLD027-F01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-12-27"
+  },
+  {
+    "unit_id": "VPR-BLD027-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2013-03-04"
+  },
+  {
+    "unit_id": "VPR-BLD027-F02-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-08-10"
+  },
+  {
+    "unit_id": "VPR-BLD027-F03-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2015-11-10"
+  },
+  {
+    "unit_id": "VPR-BLD027-F03-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2012-12-08"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-04"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-22"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2012-04-21"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2020-02-02"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2023-03-12"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-20"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-07-07"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2010-07-26"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2020-07-09"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2018-01-26"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-18"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-23"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-16"
+  },
+  {
+    "unit_id": "VPR-BLD030-B01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2014-06-23"
+  },
+  {
+    "unit_id": "VPR-BLD030-B01-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-02-28"
+  },
+  {
+    "unit_id": "VPR-BLD030-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-04"
+  },
+  {
+    "unit_id": "VPR-BLD030-F01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-14"
+  },
+  {
+    "unit_id": "VPR-BLD030-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2021-04-22"
+  },
+  {
+    "unit_id": "VPR-BLD030-F02-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-06"
+  },
+  {
+    "unit_id": "VPR-BLD030-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2011-03-20"
+  },
+  {
+    "unit_id": "VPR-BLD030-F03-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-04-12"
+  },
+  {
+    "unit_id": "VPR-BLD030-F04-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2012-12-22"
+  },
+  {
+    "unit_id": "VPR-BLD030-F04-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2016-04-23"
+  },
+  {
+    "unit_id": "VPR-BLD030-F05-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-01-13"
+  },
+  {
+    "unit_id": "VPR-BLD030-F05-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-02-27"
+  },
+  {
+    "unit_id": "VPR-BLD030-F06-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-01-11"
+  },
+  {
+    "unit_id": "VPR-BLD030-F06-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-03"
+  },
+  {
+    "unit_id": "VPR-BLD030-F07-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-10-14"
+  },
+  {
+    "unit_id": "VPR-BLD030-F07-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-23"
+  },
+  {
+    "unit_id": "VPR-BLD030-F08-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-02-02"
+  },
+  {
+    "unit_id": "VPR-BLD030-F08-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-07-03"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-28"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-11-09"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-06"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-27"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2013-02-22"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-14"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-13"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-03-07"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-09"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-11"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-20"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-19"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-28"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2025-10-20"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-20"
+  },
+  {
+    "unit_id": "VPR-BLD032-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2018-06-01"
+  },
+  {
+    "unit_id": "VPR-BLD032-F01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-12-22"
+  },
+  {
+    "unit_id": "VPR-BLD032-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-09"
+  },
+  {
+    "unit_id": "VPR-BLD032-F02-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2023-12-16"
+  },
+  {
+    "unit_id": "VPR-BLD032-F03-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-10"
+  },
+  {
+    "unit_id": "VPR-BLD032-F03-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-03-07"
+  },
+  {
+    "unit_id": "VPR-BLD032-F04-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2016-05-12"
+  },
+  {
+    "unit_id": "VPR-BLD032-F04-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-03-28"
+  },
+  {
+    "unit_id": "VPR-BLD032-F05-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-27"
+  },
+  {
+    "unit_id": "VPR-BLD032-F05-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2015-10-25"
+  },
+  {
+    "unit_id": "VPR-BLD032-F06-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2016-05-21"
+  },
+  {
+    "unit_id": "VPR-BLD032-F06-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2010-08-05"
+  },
+  {
+    "unit_id": "VPR-BLD032-F07-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-07-13"
+  },
+  {
+    "unit_id": "VPR-BLD032-F07-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-04"
+  },
+  {
+    "unit_id": "VPR-BLD032-F08-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-05-22"
+  },
+  {
+    "unit_id": "VPR-BLD032-F08-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2018-11-11"
+  },
+  {
+    "unit_id": "VPR-BLD033-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-11"
+  },
+  {
+    "unit_id": "VPR-BLD033-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-10-23"
+  },
+  {
+    "unit_id": "VPR-BLD033-F02-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-11-12"
+  },
+  {
+    "unit_id": "VPR-BLD033-F02-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-26"
+  },
+  {
+    "unit_id": "VPR-BLD033-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-04-12"
+  },
+  {
+    "unit_id": "VPR-BLD033-F03-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-28"
+  },
+  {
+    "unit_id": "VPR-BLD033-F04-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-07"
+  },
+  {
+    "unit_id": "VPR-BLD033-F04-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-04-11"
+  },
+  {
+    "unit_id": "VPR-BLD034-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-08-09"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2023-08-13"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-01-11"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2017-04-23"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-19"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-24"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2022-01-08"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-06-23"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-10-02"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2013-09-09"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-05-14"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-07-27"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-02-26"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-04-23"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-03-03"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U04",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-10"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-01-28"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2012-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2024-05-27"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-05"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2023-10-16"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-01"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2023-08-02"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-12"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2011-01-21"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2017-06-09"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-08-26"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2020-02-16"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2010-02-26"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2020-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2025-12-22"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2017-01-11"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-01-06"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2023-02-09"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-02-25"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-10-16"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-09-13"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2020-05-15"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-12-18"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-11-12"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2020-12-04"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-11-24"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U04",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2013-01-13"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-10"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-04-25"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2017-12-21"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-12-22"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-20"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-18"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-12-17"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-06"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-05"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-26"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U03",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2015-07-18"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U04",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2016-11-11"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-27"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-11-20"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-07-09"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2016-06-17"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-11-03"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-11-27"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2011-03-26"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-07-15"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2010-11-24"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-26"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2010-08-06"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U04",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2019-11-05"
+  },
+  {
+    "unit_id": "VPR-BLD039-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-18"
+  },
+  {
+    "unit_id": "VPR-BLD039-F02-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2021-04-14"
+  },
+  {
+    "unit_id": "VPR-BLD039-F03-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-04"
+  },
+  {
+    "unit_id": "VPR-BLD039-F04-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-11-18"
+  },
+  {
+    "unit_id": "VPR-BLD039-F05-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2020-06-05"
+  },
+  {
+    "unit_id": "VPR-BLD039-F06-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-06-20"
+  },
+  {
+    "unit_id": "VPR-BLD039-F07-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2021-06-14"
+  },
+  {
+    "unit_id": "VPR-BLD039-F08-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2017-12-24"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-08-18"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-18"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U03",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2012-01-28"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-11-25"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-03-15"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2010-11-08"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2014-12-24"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-04-03"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2016-09-26"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-11-11"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-21"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U04",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-09-21"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2021-10-23"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2013-08-22"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U04",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-19"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-06"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-24"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U03",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2017-07-20"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U04",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-24"
+  },
+  {
+    "unit_id": "VPR-BLD041-B01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2023-03-20"
+  },
+  {
+    "unit_id": "VPR-BLD041-F01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2011-09-17"
+  },
+  {
+    "unit_id": "VPR-BLD041-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2023-09-14"
+  },
+  {
+    "unit_id": "VPR-BLD041-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-08-26"
+  },
+  {
+    "unit_id": "VPR-BLD042-B01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2012-05-20"
+  },
+  {
+    "unit_id": "VPR-BLD042-B01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2010-10-17"
+  },
+  {
+    "unit_id": "VPR-BLD042-F01-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-07-12"
+  },
+  {
+    "unit_id": "VPR-BLD042-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2018-05-28"
+  },
+  {
+    "unit_id": "VPR-BLD042-F02-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2022-04-14"
+  },
+  {
+    "unit_id": "VPR-BLD042-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-05-10"
+  },
+  {
+    "unit_id": "VPR-BLD042-F03-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-12-08"
+  },
+  {
+    "unit_id": "VPR-BLD042-F03-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-06-26"
+  },
+  {
+    "unit_id": "VPR-BLD042-F04-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-03-16"
+  },
+  {
+    "unit_id": "VPR-BLD042-F04-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2011-12-13"
+  },
+  {
+    "unit_id": "VPR-BLD042-F05-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2015-11-16"
+  },
+  {
+    "unit_id": "VPR-BLD042-F05-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-10-06"
+  },
+  {
+    "unit_id": "VPR-BLD042-F06-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-09"
+  },
+  {
+    "unit_id": "VPR-BLD042-F06-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2016-09-01"
+  },
+  {
+    "unit_id": "VPR-BLD042-F07-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-06-27"
+  },
+  {
+    "unit_id": "VPR-BLD042-F07-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-01"
+  },
+  {
+    "unit_id": "VPR-BLD042-F08-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-04"
+  },
+  {
+    "unit_id": "VPR-BLD042-F08-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-12-15"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-26"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2021-09-18"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-11-24"
+  },
+  {
+    "unit_id": "VPR-BLD044-F01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-03-24"
+  },
+  {
+    "unit_id": "VPR-BLD044-F02-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2017-05-07"
+  },
+  {
+    "unit_id": "VPR-BLD044-F03-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2021-03-25"
+  },
+  {
+    "unit_id": "VPR-BLD045-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2020-08-19"
+  },
+  {
+    "unit_id": "VPR-BLD045-F01-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-17"
+  },
+  {
+    "unit_id": "VPR-BLD045-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2021-07-28"
+  },
+  {
+    "unit_id": "VPR-BLD045-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-11-07"
+  },
+  {
+    "unit_id": "VPR-BLD046-B01-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2018-08-20"
+  },
+  {
+    "unit_id": "VPR-BLD046-B01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2016-07-23"
+  },
+  {
+    "unit_id": "VPR-BLD046-F01-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-03-19"
+  },
+  {
+    "unit_id": "VPR-BLD046-F01-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2018-04-18"
+  },
+  {
+    "unit_id": "VPR-BLD046-F02-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2014-08-26"
+  },
+  {
+    "unit_id": "VPR-BLD046-F02-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2020-08-10"
+  },
+  {
+    "unit_id": "VPR-BLD046-F03-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2015-01-07"
+  },
+  {
+    "unit_id": "VPR-BLD046-F03-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2024-12-11"
+  },
+  {
+    "unit_id": "VPR-BLD046-F04-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-06-01"
+  },
+  {
+    "unit_id": "VPR-BLD046-F04-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2016-10-19"
+  },
+  {
+    "unit_id": "VPR-BLD046-F05-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2022-10-10"
+  },
+  {
+    "unit_id": "VPR-BLD046-F05-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2022-02-03"
+  },
+  {
+    "unit_id": "VPR-BLD046-F06-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2019-12-09"
+  },
+  {
+    "unit_id": "VPR-BLD046-F06-U02",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2024-07-06"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-05-20"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2014-03-17"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2018-09-15"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2023-09-21"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U03",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2012-08-10"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-01-17"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2010-12-16"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2019-10-08"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2017-03-23"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2023-11-08"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U03",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2018-07-07"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2024-10-15"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2014-01-18"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U03",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2014-12-15"
+  },
+  {
+    "unit_id": "VPR-BLD048-B01-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2025-06-15"
+  },
+  {
+    "unit_id": "VPR-BLD048-B01-U02",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2011-05-25"
+  },
+  {
+    "unit_id": "VPR-BLD048-F01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-01-04"
+  },
+  {
+    "unit_id": "VPR-BLD048-F01-U02",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2013-09-22"
+  },
+  {
+    "unit_id": "VPR-BLD048-F02-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2019-06-06"
+  },
+  {
+    "unit_id": "VPR-BLD048-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2019-04-12"
+  },
+  {
+    "unit_id": "VPR-BLD049-B01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2013-07-26"
+  },
+  {
+    "unit_id": "VPR-BLD049-B01-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-08-03"
+  },
+  {
+    "unit_id": "VPR-BLD049-F01-U01",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-03-16"
+  },
+  {
+    "unit_id": "VPR-BLD049-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2021-08-24"
+  },
+  {
+    "unit_id": "VPR-BLD049-F02-U01",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2024-09-10"
+  },
+  {
+    "unit_id": "VPR-BLD049-F02-U02",
+    "owner_name": "Anil & Sunita Verma",
+    "share_percentage": 100,
+    "acquired_date": "2015-02-17"
+  },
+  {
+    "unit_id": "VPR-BLD049-F03-U01",
+    "owner_name": "Kavita Krishnamurthy",
+    "share_percentage": 100,
+    "acquired_date": "2022-12-06"
+  },
+  {
+    "unit_id": "VPR-BLD049-F03-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2020-12-03"
+  },
+  {
+    "unit_id": "VPR-BLD049-F04-U01",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2014-10-10"
+  },
+  {
+    "unit_id": "VPR-BLD049-F04-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2013-09-22"
+  },
+  {
+    "unit_id": "VPR-BLD049-F05-U01",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2011-04-04"
+  },
+  {
+    "unit_id": "VPR-BLD049-F05-U02",
+    "owner_name": "Suresh Reddy",
+    "share_percentage": 100,
+    "acquired_date": "2018-01-12"
+  },
+  {
+    "unit_id": "VPR-BLD049-F06-U01",
+    "owner_name": "Rajesh Kumar Sharma",
+    "share_percentage": 100,
+    "acquired_date": "2025-02-15"
+  },
+  {
+    "unit_id": "VPR-BLD049-F06-U02",
+    "owner_name": "Ananya Singh",
+    "share_percentage": 100,
+    "acquired_date": "2018-09-02"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U01",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2017-10-21"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U02",
+    "owner_name": "Mohammed Irfan Khan",
+    "share_percentage": 100,
+    "acquired_date": "2013-11-19"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U03",
+    "owner_name": "Priya Mehta",
+    "share_percentage": 100,
+    "acquired_date": "2022-09-11"
+  }
+]

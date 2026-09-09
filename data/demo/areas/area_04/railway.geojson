@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20333312,
+              28.641855
+            ],
+            [
+              77.2041535,
+              28.641855
+            ],
+            [
+              77.2041535,
+              28.642143
+            ],
+            [
+              77.20333312,
+              28.642143
+            ],
+            [
+              77.20333312,
+              28.641855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-04-04",
+        "name": "Transit Quarter Central Junction Railway Terminal",
+        "ulpin": "IN-04-0001",
+        "building_code": "BLD-04-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

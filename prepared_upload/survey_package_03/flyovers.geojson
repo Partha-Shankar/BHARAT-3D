@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22315447,
+              28.621955
+            ],
+            [
+              77.22664047,
+              28.621955
+            ],
+            [
+              77.22664047,
+              28.622081
+            ],
+            [
+              77.22315447,
+              28.622081
+            ],
+            [
+              77.22315447,
+              28.621955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-03-01",
+        "name": "Civic Square Elevated Bypass Flyover (Deck: +8.5m)",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 340,
+        "width_meters": 14.0,
+        "operator": "PWD Delhi / NHAI",
+        "status": "OPERATIONAL",
+        "associated_road": "RD-03-01"
+      }
+    }
+  ]
+}

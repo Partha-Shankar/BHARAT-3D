@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22143597,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645315
+            ],
+            [
+              77.22182566,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645531
+            ],
+            [
+              77.22143597,
+              28.645315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-01",
+        "name": "Vertical City District Aarav Heights Tower",
+        "ulpin": "IN-09-0008",
+        "building_code": "BLD-09-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22076938,
+              28.64446
+            ],
+            [
+              77.22107703,
+              28.64446
+            ],
+            [
+              77.22107703,
+              28.64464
+            ],
+            [
+              77.22076938,
+              28.64464
+            ],
+            [
+              77.22076938,
+              28.64446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-02",
+        "name": "Vertical City District Residency Block B",
+        "ulpin": "IN-09-0014",
+        "building_code": "BLD-09-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22246148,
+              28.645225
+            ],
+            [
+              77.22312807,
+              28.645225
+            ],
+            [
+              77.22312807,
+              28.64563
+            ],
+            [
+              77.22246148,
+              28.64563
+            ],
+            [
+              77.22246148,
+              28.645225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-03",
+        "name": "Vertical City District Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-09-0003",
+        "building_code": "BLD-09-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22333317,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.645855
+            ],
+            [
+              77.22415359,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.646143
+            ],
+            [
+              77.22333317,
+              28.645855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-04",
+        "name": "Vertical City District Central Junction Railway Terminal",
+        "ulpin": "IN-09-0001",
+        "building_code": "BLD-09-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22138469,
+              28.646035
+            ],
+            [
+              77.22184617,
+              28.646035
+            ],
+            [
+              77.22184617,
+              28.646233
+            ],
+            [
+              77.22138469,
+              28.646233
+            ],
+            [
+              77.22138469,
+              28.646035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-05",
+        "name": "Vertical City District Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-09-0002",
+        "building_code": "BLD-09-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22282041,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644235
+            ],
+            [
+              77.22306654,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644433
+            ],
+            [
+              77.22282041,
+              28.644235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-07",
+        "name": "Vertical City District Sharma Commercial Plaza",
+        "ulpin": "IN-09-0018",
+        "building_code": "BLD-09-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22007203,
+              28.645081
+            ],
+            [
+              77.22032841,
+              28.645081
+            ],
+            [
+              77.22032841,
+              28.645306
+            ],
+            [
+              77.22007203,
+              28.645306
+            ],
+            [
+              77.22007203,
+              28.645081
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-08",
+        "name": "Vertical City District Urban Property #8",
+        "ulpin": "IN-09-0023",
+        "building_code": "BLD-09-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 625,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22115908,
+              28.64509
+            ],
+            [
+              77.2214052,
+              28.64509
+            ],
+            [
+              77.2214052,
+              28.645288
+            ],
+            [
+              77.22115908,
+              28.645288
+            ],
+            [
+              77.22115908,
+              28.64509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-09",
+        "name": "Vertical City District Urban Property #9",
+        "ulpin": "IN-09-0024",
+        "building_code": "BLD-09-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 528,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22201026,
+              28.644919
+            ],
+            [
+              77.22232817,
+              28.644919
+            ],
+            [
+              77.22232817,
+              28.645144
+            ],
+            [
+              77.22201026,
+              28.645144
+            ],
+            [
+              77.22201026,
+              28.644919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-10",
+        "name": "Vertical City District Urban Property #10",
+        "ulpin": "IN-09-0025",
+        "building_code": "BLD-09-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 775,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22291271,
+              28.645036
+            ],
+            [
+              77.22319986,
+              28.645036
+            ],
+            [
+              77.22319986,
+              28.645243
+            ],
+            [
+              77.22291271,
+              28.645243
+            ],
+            [
+              77.22291271,
+              28.645036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-11",
+        "name": "Vertical City District Urban Property #11",
+        "ulpin": "IN-09-0026",
+        "building_code": "BLD-09-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 644,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2201233,
+              28.64563
+            ],
+            [
+              77.22036943,
+              28.64563
+            ],
+            [
+              77.22036943,
+              28.645801
+            ],
+            [
+              77.2201233,
+              28.645801
+            ],
+            [
+              77.2201233,
+              28.64563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-12",
+        "name": "Vertical City District Urban Property #12",
+        "ulpin": "IN-09-0027",
+        "building_code": "BLD-09-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 456,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22108729,
+              28.645657
+            ],
+            [
+              77.22135392,
+              28.645657
+            ],
+            [
+              77.22135392,
+              28.645882
+            ],
+            [
+              77.22108729,
+              28.645882
+            ],
+            [
+              77.22108729,
+              28.645657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-13",
+        "name": "Vertical City District Urban Property #13",
+        "ulpin": "IN-09-0028",
+        "building_code": "BLD-09-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 650,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22210255,
+              28.64563
+            ],
+            [
+              77.22232817,
+              28.64563
+            ],
+            [
+              77.22232817,
+              28.645801
+            ],
+            [
+              77.22210255,
+              28.645801
+            ],
+            [
+              77.22210255,
+              28.64563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-14",
+        "name": "Vertical City District Urban Property #14",
+        "ulpin": "IN-09-0029",
+        "building_code": "BLD-09-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 418,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22292297,
+              28.64572
+            ],
+            [
+              77.2231896,
+              28.64572
+            ],
+            [
+              77.2231896,
+              28.6459
+            ],
+            [
+              77.22292297,
+              28.6459
+            ],
+            [
+              77.22292297,
+              28.64572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-15",
+        "name": "Vertical City District Urban Property #15",
+        "ulpin": "IN-09-0030",
+        "building_code": "BLD-09-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 520,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22014381,
+              28.64653
+            ],
+            [
+              77.22045147,
+              28.64653
+            ],
+            [
+              77.22045147,
+              28.64671
+            ],
+            [
+              77.22014381,
+              28.64671
+            ],
+            [
+              77.22014381,
+              28.64653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-16",
+        "name": "Vertical City District Urban Property #16",
+        "ulpin": "IN-09-0031",
+        "building_code": "BLD-09-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22103601,
+              28.64653
+            ],
+            [
+              77.22130265,
+              28.64653
+            ],
+            [
+              77.22130265,
+              28.646764
+            ],
+            [
+              77.22103601,
+              28.646764
+            ],
+            [
+              77.22103601,
+              28.64653
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-17",
+        "name": "Vertical City District Urban Property #17",
+        "ulpin": "IN-09-0032",
+        "building_code": "BLD-09-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 676,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22189745,
+              28.646413
+            ],
+            [
+              77.22213332,
+              28.646413
+            ],
+            [
+              77.22213332,
+              28.646647
+            ],
+            [
+              77.22189745,
+              28.646647
+            ],
+            [
+              77.22189745,
+              28.646413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-18",
+        "name": "Vertical City District Urban Property #18",
+        "ulpin": "IN-09-0033",
+        "building_code": "BLD-09-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 598,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22285118,
+              28.646521
+            ],
+            [
+              77.22317934,
+              28.646521
+            ],
+            [
+              77.22317934,
+              28.646683
+            ],
+            [
+              77.22285118,
+              28.646683
+            ],
+            [
+              77.22285118,
+              28.646521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-09-19",
+        "name": "Vertical City District Urban Property #19",
+        "ulpin": "IN-09-0034",
+        "building_code": "BLD-09-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 576,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

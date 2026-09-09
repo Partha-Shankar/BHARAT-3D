@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22248199,
+              28.645243
+            ],
+            [
+              77.22310756,
+              28.645243
+            ],
+            [
+              77.22310756,
+              28.645612
+            ],
+            [
+              77.22248199,
+              28.645612
+            ],
+            [
+              77.22248199,
+              28.645243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-09-01",
+        "name": "Vertical City District Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Vertical City District Mall Ltd",
+        "parent_building": "BLD-09-03"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21448187,
+              28.618243
+            ],
+            [
+              77.21510727,
+              28.618243
+            ],
+            [
+              77.21510727,
+              28.618612
+            ],
+            [
+              77.21448187,
+              28.618612
+            ],
+            [
+              77.21448187,
+              28.618243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-05-01",
+        "name": "Urban Heights Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Urban Heights Mall Ltd",
+        "parent_building": "BLD-05-03"
+      }
+    }
+  ]
+}

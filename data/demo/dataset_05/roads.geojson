@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21092424,
+            28.618
+          ],
+          [
+            77.21707576,
+            28.618
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-05-01",
+        "name": "Urban Heights Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.214,
+            28.61575
+          ],
+          [
+            77.214,
+            28.62025
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-05-02",
+        "name": "Urban Heights Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21092424,
+            28.61908
+          ],
+          [
+            77.21707576,
+            28.61908
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-05-03",
+        "name": "Urban Heights North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

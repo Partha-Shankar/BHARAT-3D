@@ -1,0 +1,1809 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19955936,
+              28.639641
+            ],
+            [
+              77.20009261,
+              28.639641
+            ],
+            [
+              77.20009261,
+              28.640019
+            ],
+            [
+              77.19955936,
+              28.640019
+            ],
+            [
+              77.19955936,
+              28.639641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-001",
+        "ulpin": "IN-04-0001",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-401",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20017465,
+              28.639677
+            ],
+            [
+              77.2007079,
+              28.639677
+            ],
+            [
+              77.2007079,
+              28.640055
+            ],
+            [
+              77.20017465,
+              28.640055
+            ],
+            [
+              77.20017465,
+              28.639677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-002",
+        "ulpin": "IN-04-0002",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-402",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20076943,
+              28.639686
+            ],
+            [
+              77.20130267,
+              28.639686
+            ],
+            [
+              77.20130267,
+              28.640064
+            ],
+            [
+              77.20076943,
+              28.640064
+            ],
+            [
+              77.20076943,
+              28.639686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-003",
+        "ulpin": "IN-04-0003",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-403",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20135395,
+              28.639686
+            ],
+            [
+              77.2018872,
+              28.639686
+            ],
+            [
+              77.2018872,
+              28.640064
+            ],
+            [
+              77.20135395,
+              28.640064
+            ],
+            [
+              77.20135395,
+              28.639686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-004",
+        "ulpin": "IN-04-0004",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-404",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20202051,
+              28.639686
+            ],
+            [
+              77.20255376,
+              28.639686
+            ],
+            [
+              77.20255376,
+              28.640064
+            ],
+            [
+              77.20202051,
+              28.640064
+            ],
+            [
+              77.20202051,
+              28.639686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-005",
+        "ulpin": "IN-04-0005",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-405",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20262554,
+              28.639614
+            ],
+            [
+              77.20315879,
+              28.639614
+            ],
+            [
+              77.20315879,
+              28.639992
+            ],
+            [
+              77.20262554,
+              28.639992
+            ],
+            [
+              77.20262554,
+              28.639614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-006",
+        "ulpin": "IN-04-0006",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-406",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20319981,
+              28.639686
+            ],
+            [
+              77.20373306,
+              28.639686
+            ],
+            [
+              77.20373306,
+              28.640064
+            ],
+            [
+              77.20319981,
+              28.640064
+            ],
+            [
+              77.20319981,
+              28.639686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-007",
+        "ulpin": "IN-04-0007",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-407",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2038151,
+              28.639632
+            ],
+            [
+              77.20434835,
+              28.639632
+            ],
+            [
+              77.20434835,
+              28.64001
+            ],
+            [
+              77.2038151,
+              28.64001
+            ],
+            [
+              77.2038151,
+              28.639632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-008",
+        "ulpin": "IN-04-0008",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-408",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19956962,
+              28.640064
+            ],
+            [
+              77.20010287,
+              28.640064
+            ],
+            [
+              77.20010287,
+              28.640442
+            ],
+            [
+              77.19956962,
+              28.640442
+            ],
+            [
+              77.19956962,
+              28.640064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-009",
+        "ulpin": "IN-04-0009",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-409",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20019516,
+              28.640118
+            ],
+            [
+              77.20072841,
+              28.640118
+            ],
+            [
+              77.20072841,
+              28.640496
+            ],
+            [
+              77.20019516,
+              28.640496
+            ],
+            [
+              77.20019516,
+              28.640118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-010",
+        "ulpin": "IN-04-0010",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-410",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20075917,
+              28.6401
+            ],
+            [
+              77.20129242,
+              28.6401
+            ],
+            [
+              77.20129242,
+              28.640478
+            ],
+            [
+              77.20075917,
+              28.640478
+            ],
+            [
+              77.20075917,
+              28.6401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-011",
+        "ulpin": "IN-04-0011",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-411",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20138471,
+              28.640109
+            ],
+            [
+              77.20191796,
+              28.640109
+            ],
+            [
+              77.20191796,
+              28.640487
+            ],
+            [
+              77.20138471,
+              28.640487
+            ],
+            [
+              77.20138471,
+              28.640109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-012",
+        "ulpin": "IN-04-0012",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-412",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20201025,
+              28.640136
+            ],
+            [
+              77.2025435,
+              28.640136
+            ],
+            [
+              77.2025435,
+              28.640514
+            ],
+            [
+              77.20201025,
+              28.640514
+            ],
+            [
+              77.20201025,
+              28.640136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-013",
+        "ulpin": "IN-04-0013",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-413",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20258452,
+              28.640118
+            ],
+            [
+              77.20311777,
+              28.640118
+            ],
+            [
+              77.20311777,
+              28.640496
+            ],
+            [
+              77.20258452,
+              28.640496
+            ],
+            [
+              77.20258452,
+              28.640118
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-014",
+        "ulpin": "IN-04-0014",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-414",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20327159,
+              28.640127
+            ],
+            [
+              77.20380484,
+              28.640127
+            ],
+            [
+              77.20380484,
+              28.640505
+            ],
+            [
+              77.20327159,
+              28.640505
+            ],
+            [
+              77.20327159,
+              28.640127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-015",
+        "ulpin": "IN-04-0015",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-415",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20384586,
+              28.640082
+            ],
+            [
+              77.20437911,
+              28.640082
+            ],
+            [
+              77.20437911,
+              28.64046
+            ],
+            [
+              77.20384586,
+              28.64046
+            ],
+            [
+              77.20384586,
+              28.640082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-016",
+        "ulpin": "IN-04-0016",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-416",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1995286,
+              28.64055
+            ],
+            [
+              77.20006185,
+              28.64055
+            ],
+            [
+              77.20006185,
+              28.640928
+            ],
+            [
+              77.1995286,
+              28.640928
+            ],
+            [
+              77.1995286,
+              28.64055
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-017",
+        "ulpin": "IN-04-0017",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-417",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20017465,
+              28.640577
+            ],
+            [
+              77.2007079,
+              28.640577
+            ],
+            [
+              77.2007079,
+              28.640955
+            ],
+            [
+              77.20017465,
+              28.640955
+            ],
+            [
+              77.20017465,
+              28.640577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-018",
+        "ulpin": "IN-04-0018",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-418",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20075917,
+              28.640532
+            ],
+            [
+              77.20129242,
+              28.640532
+            ],
+            [
+              77.20129242,
+              28.64091
+            ],
+            [
+              77.20075917,
+              28.64091
+            ],
+            [
+              77.20075917,
+              28.640532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-019",
+        "ulpin": "IN-04-0019",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-419",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20141548,
+              28.640541
+            ],
+            [
+              77.20194873,
+              28.640541
+            ],
+            [
+              77.20194873,
+              28.640919
+            ],
+            [
+              77.20141548,
+              28.640919
+            ],
+            [
+              77.20141548,
+              28.640541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-020",
+        "ulpin": "IN-04-0020",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-420",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20196924,
+              28.640577
+            ],
+            [
+              77.20250248,
+              28.640577
+            ],
+            [
+              77.20250248,
+              28.640955
+            ],
+            [
+              77.20196924,
+              28.640955
+            ],
+            [
+              77.20196924,
+              28.640577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-021",
+        "ulpin": "IN-04-0021",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-421",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20262554,
+              28.640559
+            ],
+            [
+              77.20315879,
+              28.640559
+            ],
+            [
+              77.20315879,
+              28.640937
+            ],
+            [
+              77.20262554,
+              28.640937
+            ],
+            [
+              77.20262554,
+              28.640559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-022",
+        "ulpin": "IN-04-0022",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-422",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20322032,
+              28.640532
+            ],
+            [
+              77.20375357,
+              28.640532
+            ],
+            [
+              77.20375357,
+              28.64091
+            ],
+            [
+              77.20322032,
+              28.64091
+            ],
+            [
+              77.20322032,
+              28.640532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-023",
+        "ulpin": "IN-04-0023",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-423",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20384586,
+              28.640532
+            ],
+            [
+              77.20437911,
+              28.640532
+            ],
+            [
+              77.20437911,
+              28.64091
+            ],
+            [
+              77.20384586,
+              28.64091
+            ],
+            [
+              77.20384586,
+              28.640532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-024",
+        "ulpin": "IN-04-0024",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-424",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1995286,
+              28.641
+            ],
+            [
+              77.20006185,
+              28.641
+            ],
+            [
+              77.20006185,
+              28.641378
+            ],
+            [
+              77.1995286,
+              28.641378
+            ],
+            [
+              77.1995286,
+              28.641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-025",
+        "ulpin": "IN-04-0025",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-425",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20013363,
+              28.640964
+            ],
+            [
+              77.20066688,
+              28.640964
+            ],
+            [
+              77.20066688,
+              28.641342
+            ],
+            [
+              77.20013363,
+              28.641342
+            ],
+            [
+              77.20013363,
+              28.640964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-026",
+        "ulpin": "IN-04-0026",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-426",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20076943,
+              28.640982
+            ],
+            [
+              77.20130267,
+              28.640982
+            ],
+            [
+              77.20130267,
+              28.64136
+            ],
+            [
+              77.20076943,
+              28.64136
+            ],
+            [
+              77.20076943,
+              28.640982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-027",
+        "ulpin": "IN-04-0027",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-427",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20134369,
+              28.641027
+            ],
+            [
+              77.20187694,
+              28.641027
+            ],
+            [
+              77.20187694,
+              28.641405
+            ],
+            [
+              77.20134369,
+              28.641405
+            ],
+            [
+              77.20134369,
+              28.641027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-028",
+        "ulpin": "IN-04-0028",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-428",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20202051,
+              28.640991
+            ],
+            [
+              77.20255376,
+              28.640991
+            ],
+            [
+              77.20255376,
+              28.641369
+            ],
+            [
+              77.20202051,
+              28.641369
+            ],
+            [
+              77.20202051,
+              28.640991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-029",
+        "ulpin": "IN-04-0029",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-429",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20260503,
+              28.641027
+            ],
+            [
+              77.20313828,
+              28.641027
+            ],
+            [
+              77.20313828,
+              28.641405
+            ],
+            [
+              77.20260503,
+              28.641405
+            ],
+            [
+              77.20260503,
+              28.641027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-030",
+        "ulpin": "IN-04-0030",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-430",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20327159,
+              28.641027
+            ],
+            [
+              77.20380484,
+              28.641027
+            ],
+            [
+              77.20380484,
+              28.641405
+            ],
+            [
+              77.20327159,
+              28.641405
+            ],
+            [
+              77.20327159,
+              28.641027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-031",
+        "ulpin": "IN-04-0031",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-431",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20385612,
+              28.641036
+            ],
+            [
+              77.20438936,
+              28.641036
+            ],
+            [
+              77.20438936,
+              28.641414
+            ],
+            [
+              77.20385612,
+              28.641414
+            ],
+            [
+              77.20385612,
+              28.641036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-032",
+        "ulpin": "IN-04-0032",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-432",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19957987,
+              28.641459
+            ],
+            [
+              77.20011312,
+              28.641459
+            ],
+            [
+              77.20011312,
+              28.641837
+            ],
+            [
+              77.19957987,
+              28.641837
+            ],
+            [
+              77.19957987,
+              28.641459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-033",
+        "ulpin": "IN-04-0033",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-433",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20011312,
+              28.64145
+            ],
+            [
+              77.20064637,
+              28.64145
+            ],
+            [
+              77.20064637,
+              28.641828
+            ],
+            [
+              77.20011312,
+              28.641828
+            ],
+            [
+              77.20011312,
+              28.64145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-034",
+        "ulpin": "IN-04-0034",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-434",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20078994,
+              28.641468
+            ],
+            [
+              77.20132318,
+              28.641468
+            ],
+            [
+              77.20132318,
+              28.641846
+            ],
+            [
+              77.20078994,
+              28.641846
+            ],
+            [
+              77.20078994,
+              28.641468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-035",
+        "ulpin": "IN-04-0035",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-435",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20142573,
+              28.641414
+            ],
+            [
+              77.20195898,
+              28.641414
+            ],
+            [
+              77.20195898,
+              28.641792
+            ],
+            [
+              77.20142573,
+              28.641792
+            ],
+            [
+              77.20142573,
+              28.641414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-036",
+        "ulpin": "IN-04-0036",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-436",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20201025,
+              28.641468
+            ],
+            [
+              77.2025435,
+              28.641468
+            ],
+            [
+              77.2025435,
+              28.641846
+            ],
+            [
+              77.20201025,
+              28.641846
+            ],
+            [
+              77.20201025,
+              28.641468
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-037",
+        "ulpin": "IN-04-0037",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-437",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20258452,
+              28.641423
+            ],
+            [
+              77.20311777,
+              28.641423
+            ],
+            [
+              77.20311777,
+              28.641801
+            ],
+            [
+              77.20258452,
+              28.641801
+            ],
+            [
+              77.20258452,
+              28.641423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-038",
+        "ulpin": "IN-04-0038",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-438",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20319981,
+              28.641477
+            ],
+            [
+              77.20373306,
+              28.641477
+            ],
+            [
+              77.20373306,
+              28.641855
+            ],
+            [
+              77.20319981,
+              28.641855
+            ],
+            [
+              77.20319981,
+              28.641477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-039",
+        "ulpin": "IN-04-0039",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-439",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20388688,
+              28.641432
+            ],
+            [
+              77.20442013,
+              28.641432
+            ],
+            [
+              77.20442013,
+              28.64181
+            ],
+            [
+              77.20388688,
+              28.64181
+            ],
+            [
+              77.20388688,
+              28.641432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-040",
+        "ulpin": "IN-04-0040",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-440",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19951834,
+              28.641936
+            ],
+            [
+              77.20005159,
+              28.641936
+            ],
+            [
+              77.20005159,
+              28.642314
+            ],
+            [
+              77.19951834,
+              28.642314
+            ],
+            [
+              77.19951834,
+              28.641936
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-041",
+        "ulpin": "IN-04-0041",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-441",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20012337,
+              28.641864
+            ],
+            [
+              77.20065662,
+              28.641864
+            ],
+            [
+              77.20065662,
+              28.642242
+            ],
+            [
+              77.20012337,
+              28.642242
+            ],
+            [
+              77.20012337,
+              28.641864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-042",
+        "ulpin": "IN-04-0042",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-442",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20072841,
+              28.641882
+            ],
+            [
+              77.20126166,
+              28.641882
+            ],
+            [
+              77.20126166,
+              28.64226
+            ],
+            [
+              77.20072841,
+              28.64226
+            ],
+            [
+              77.20072841,
+              28.641882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-043",
+        "ulpin": "IN-04-0043",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-443",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2013642,
+              28.641882
+            ],
+            [
+              77.20189745,
+              28.641882
+            ],
+            [
+              77.20189745,
+              28.64226
+            ],
+            [
+              77.2013642,
+              28.64226
+            ],
+            [
+              77.2013642,
+              28.641882
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-04-044",
+        "ulpin": "IN-04-0044",
+        "ward_id": "Ward 31",
+        "area_name": "Transit Quarter",
+        "survey_number": "SY-444",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Transit Quarter"
+      }
+    }
+  ]
+}

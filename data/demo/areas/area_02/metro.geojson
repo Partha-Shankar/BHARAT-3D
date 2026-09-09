@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21738475,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-05",
+        "name": "Metro District Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-02-0002",
+        "building_code": "BLD-02-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

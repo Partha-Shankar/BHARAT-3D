@@ -1,0 +1,1686 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21955927,
+              28.643614
+            ],
+            [
+              77.22009254,
+              28.643614
+            ],
+            [
+              77.22009254,
+              28.643992
+            ],
+            [
+              77.21955927,
+              28.643992
+            ],
+            [
+              77.21955927,
+              28.643614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-001",
+        "ulpin": "IN-09-0001",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-901",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22014381,
+              28.643641
+            ],
+            [
+              77.22067708,
+              28.643641
+            ],
+            [
+              77.22067708,
+              28.644019
+            ],
+            [
+              77.22014381,
+              28.644019
+            ],
+            [
+              77.22014381,
+              28.643641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-002",
+        "ulpin": "IN-09-0002",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-902",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22078989,
+              28.643623
+            ],
+            [
+              77.22132316,
+              28.643623
+            ],
+            [
+              77.22132316,
+              28.644001
+            ],
+            [
+              77.22078989,
+              28.644001
+            ],
+            [
+              77.22078989,
+              28.643623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-003",
+        "ulpin": "IN-09-0003",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-903",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22138469,
+              28.643641
+            ],
+            [
+              77.22191796,
+              28.643641
+            ],
+            [
+              77.22191796,
+              28.644019
+            ],
+            [
+              77.22138469,
+              28.644019
+            ],
+            [
+              77.22138469,
+              28.643641
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-004",
+        "ulpin": "IN-09-0004",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-904",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22201026,
+              28.643659
+            ],
+            [
+              77.22254352,
+              28.643659
+            ],
+            [
+              77.22254352,
+              28.644037
+            ],
+            [
+              77.22201026,
+              28.644037
+            ],
+            [
+              77.22201026,
+              28.643659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-005",
+        "ulpin": "IN-09-0005",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-905",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22260506,
+              28.643623
+            ],
+            [
+              77.22313832,
+              28.643623
+            ],
+            [
+              77.22313832,
+              28.644001
+            ],
+            [
+              77.22260506,
+              28.644001
+            ],
+            [
+              77.22260506,
+              28.643623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-006",
+        "ulpin": "IN-09-0006",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-906",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22327164,
+              28.643686
+            ],
+            [
+              77.22380491,
+              28.643686
+            ],
+            [
+              77.22380491,
+              28.644064
+            ],
+            [
+              77.22327164,
+              28.644064
+            ],
+            [
+              77.22327164,
+              28.643686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-007",
+        "ulpin": "IN-09-0007",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-907",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22386644,
+              28.643632
+            ],
+            [
+              77.22439971,
+              28.643632
+            ],
+            [
+              77.22439971,
+              28.64401
+            ],
+            [
+              77.22386644,
+              28.64401
+            ],
+            [
+              77.22386644,
+              28.643632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-008",
+        "ulpin": "IN-09-0008",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-908",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21950799,
+              28.644091
+            ],
+            [
+              77.22004126,
+              28.644091
+            ],
+            [
+              77.22004126,
+              28.644469
+            ],
+            [
+              77.21950799,
+              28.644469
+            ],
+            [
+              77.21950799,
+              28.644091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-009",
+        "ulpin": "IN-09-0009",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-909",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2201233,
+              28.644073
+            ],
+            [
+              77.22065657,
+              28.644073
+            ],
+            [
+              77.22065657,
+              28.644451
+            ],
+            [
+              77.2201233,
+              28.644451
+            ],
+            [
+              77.2201233,
+              28.644073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-010",
+        "ulpin": "IN-09-0010",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-910",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2208104,
+              28.644064
+            ],
+            [
+              77.22134367,
+              28.644064
+            ],
+            [
+              77.22134367,
+              28.644442
+            ],
+            [
+              77.2208104,
+              28.644442
+            ],
+            [
+              77.2208104,
+              28.644064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-011",
+        "ulpin": "IN-09-0011",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-911",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22134367,
+              28.644082
+            ],
+            [
+              77.22187694,
+              28.644082
+            ],
+            [
+              77.22187694,
+              28.64446
+            ],
+            [
+              77.22134367,
+              28.64446
+            ],
+            [
+              77.22134367,
+              28.644082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-012",
+        "ulpin": "IN-09-0012",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-912",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22204102,
+              28.644082
+            ],
+            [
+              77.22257429,
+              28.644082
+            ],
+            [
+              77.22257429,
+              28.64446
+            ],
+            [
+              77.22204102,
+              28.64446
+            ],
+            [
+              77.22204102,
+              28.644082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-013",
+        "ulpin": "IN-09-0013",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-913",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2225948,
+              28.644109
+            ],
+            [
+              77.22312807,
+              28.644109
+            ],
+            [
+              77.22312807,
+              28.644487
+            ],
+            [
+              77.2225948,
+              28.644487
+            ],
+            [
+              77.2225948,
+              28.644109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-014",
+        "ulpin": "IN-09-0014",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-914",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22327164,
+              28.644064
+            ],
+            [
+              77.22380491,
+              28.644064
+            ],
+            [
+              77.22380491,
+              28.644442
+            ],
+            [
+              77.22327164,
+              28.644442
+            ],
+            [
+              77.22327164,
+              28.644064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-015",
+        "ulpin": "IN-09-0015",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-915",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22386644,
+              28.644136
+            ],
+            [
+              77.22439971,
+              28.644136
+            ],
+            [
+              77.22439971,
+              28.644514
+            ],
+            [
+              77.22386644,
+              28.644514
+            ],
+            [
+              77.22386644,
+              28.644136
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-016",
+        "ulpin": "IN-09-0016",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-916",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21953876,
+              28.644523
+            ],
+            [
+              77.22007203,
+              28.644523
+            ],
+            [
+              77.22007203,
+              28.644901
+            ],
+            [
+              77.21953876,
+              28.644901
+            ],
+            [
+              77.21953876,
+              28.644523
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-017",
+        "ulpin": "IN-09-0017",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-917",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22016432,
+              28.644541
+            ],
+            [
+              77.22069759,
+              28.644541
+            ],
+            [
+              77.22069759,
+              28.644919
+            ],
+            [
+              77.22016432,
+              28.644919
+            ],
+            [
+              77.22016432,
+              28.644541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-018",
+        "ulpin": "IN-09-0018",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-918",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22078989,
+              28.644541
+            ],
+            [
+              77.22132316,
+              28.644541
+            ],
+            [
+              77.22132316,
+              28.644919
+            ],
+            [
+              77.22078989,
+              28.644919
+            ],
+            [
+              77.22078989,
+              28.644541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-019",
+        "ulpin": "IN-09-0019",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-919",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22142571,
+              28.644577
+            ],
+            [
+              77.22195898,
+              28.644577
+            ],
+            [
+              77.22195898,
+              28.644955
+            ],
+            [
+              77.22142571,
+              28.644955
+            ],
+            [
+              77.22142571,
+              28.644577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-020",
+        "ulpin": "IN-09-0020",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-920",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22198974,
+              28.644541
+            ],
+            [
+              77.22252301,
+              28.644541
+            ],
+            [
+              77.22252301,
+              28.644919
+            ],
+            [
+              77.22198974,
+              28.644919
+            ],
+            [
+              77.22198974,
+              28.644541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-021",
+        "ulpin": "IN-09-0021",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-921",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22261531,
+              28.644514
+            ],
+            [
+              77.22314858,
+              28.644514
+            ],
+            [
+              77.22314858,
+              28.644892
+            ],
+            [
+              77.22261531,
+              28.644892
+            ],
+            [
+              77.22261531,
+              28.644514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-022",
+        "ulpin": "IN-09-0022",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-922",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22321011,
+              28.64455
+            ],
+            [
+              77.22374338,
+              28.64455
+            ],
+            [
+              77.22374338,
+              28.644928
+            ],
+            [
+              77.22321011,
+              28.644928
+            ],
+            [
+              77.22321011,
+              28.64455
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-023",
+        "ulpin": "IN-09-0023",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-923",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2238767,
+              28.644541
+            ],
+            [
+              77.22440997,
+              28.644541
+            ],
+            [
+              77.22440997,
+              28.644919
+            ],
+            [
+              77.2238767,
+              28.644919
+            ],
+            [
+              77.2238767,
+              28.644541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-024",
+        "ulpin": "IN-09-0024",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-924",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21953876,
+              28.644964
+            ],
+            [
+              77.22007203,
+              28.644964
+            ],
+            [
+              77.22007203,
+              28.645342
+            ],
+            [
+              77.21953876,
+              28.645342
+            ],
+            [
+              77.21953876,
+              28.644964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-025",
+        "ulpin": "IN-09-0025",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-925",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22018483,
+              28.644964
+            ],
+            [
+              77.2207181,
+              28.644964
+            ],
+            [
+              77.2207181,
+              28.645342
+            ],
+            [
+              77.22018483,
+              28.645342
+            ],
+            [
+              77.22018483,
+              28.644964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-026",
+        "ulpin": "IN-09-0026",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-926",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22072836,
+              28.644982
+            ],
+            [
+              77.22126163,
+              28.644982
+            ],
+            [
+              77.22126163,
+              28.64536
+            ],
+            [
+              77.22072836,
+              28.64536
+            ],
+            [
+              77.22072836,
+              28.644982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-027",
+        "ulpin": "IN-09-0027",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-927",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22135392,
+              28.644964
+            ],
+            [
+              77.22188719,
+              28.644964
+            ],
+            [
+              77.22188719,
+              28.645342
+            ],
+            [
+              77.22135392,
+              28.645342
+            ],
+            [
+              77.22135392,
+              28.644964
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-028",
+        "ulpin": "IN-09-0028",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-928",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22196923,
+              28.645036
+            ],
+            [
+              77.2225025,
+              28.645036
+            ],
+            [
+              77.2225025,
+              28.645414
+            ],
+            [
+              77.22196923,
+              28.645414
+            ],
+            [
+              77.22196923,
+              28.645036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-029",
+        "ulpin": "IN-09-0029",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-929",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22262557,
+              28.645
+            ],
+            [
+              77.22315883,
+              28.645
+            ],
+            [
+              77.22315883,
+              28.645378
+            ],
+            [
+              77.22262557,
+              28.645378
+            ],
+            [
+              77.22262557,
+              28.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-030",
+        "ulpin": "IN-09-0030",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-930",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22324088,
+              28.645009
+            ],
+            [
+              77.22377414,
+              28.645009
+            ],
+            [
+              77.22377414,
+              28.645387
+            ],
+            [
+              77.22324088,
+              28.645387
+            ],
+            [
+              77.22324088,
+              28.645009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-031",
+        "ulpin": "IN-09-0031",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-931",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22388695,
+              28.645018
+            ],
+            [
+              77.22442022,
+              28.645018
+            ],
+            [
+              77.22442022,
+              28.645396
+            ],
+            [
+              77.22388695,
+              28.645396
+            ],
+            [
+              77.22388695,
+              28.645018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-032",
+        "ulpin": "IN-09-0032",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-932",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21956952,
+              28.645441
+            ],
+            [
+              77.22010279,
+              28.645441
+            ],
+            [
+              77.22010279,
+              28.645819
+            ],
+            [
+              77.21956952,
+              28.645819
+            ],
+            [
+              77.21956952,
+              28.645441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-033",
+        "ulpin": "IN-09-0033",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-933",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22011305,
+              28.645432
+            ],
+            [
+              77.22064632,
+              28.645432
+            ],
+            [
+              77.22064632,
+              28.64581
+            ],
+            [
+              77.22011305,
+              28.64581
+            ],
+            [
+              77.22011305,
+              28.645432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-034",
+        "ulpin": "IN-09-0034",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-934",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22080014,
+              28.645486
+            ],
+            [
+              77.22133341,
+              28.645486
+            ],
+            [
+              77.22133341,
+              28.645864
+            ],
+            [
+              77.22080014,
+              28.645864
+            ],
+            [
+              77.22080014,
+              28.645486
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-035",
+        "ulpin": "IN-09-0035",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-935",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22137443,
+              28.645423
+            ],
+            [
+              77.2219077,
+              28.645423
+            ],
+            [
+              77.2219077,
+              28.645801
+            ],
+            [
+              77.22137443,
+              28.645801
+            ],
+            [
+              77.22137443,
+              28.645423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-036",
+        "ulpin": "IN-09-0036",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-936",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22202051,
+              28.645414
+            ],
+            [
+              77.22255378,
+              28.645414
+            ],
+            [
+              77.22255378,
+              28.645792
+            ],
+            [
+              77.22202051,
+              28.645792
+            ],
+            [
+              77.22202051,
+              28.645414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-037",
+        "ulpin": "IN-09-0037",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-937",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22263582,
+              28.645459
+            ],
+            [
+              77.22316909,
+              28.645459
+            ],
+            [
+              77.22316909,
+              28.645837
+            ],
+            [
+              77.22263582,
+              28.645837
+            ],
+            [
+              77.22263582,
+              28.645459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-038",
+        "ulpin": "IN-09-0038",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-938",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22321011,
+              28.645459
+            ],
+            [
+              77.22374338,
+              28.645459
+            ],
+            [
+              77.22374338,
+              28.645837
+            ],
+            [
+              77.22321011,
+              28.645837
+            ],
+            [
+              77.22321011,
+              28.645459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-039",
+        "ulpin": "IN-09-0039",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-939",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22384593,
+              28.645459
+            ],
+            [
+              77.2243792,
+              28.645459
+            ],
+            [
+              77.2243792,
+              28.645837
+            ],
+            [
+              77.22384593,
+              28.645837
+            ],
+            [
+              77.22384593,
+              28.645459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-040",
+        "ulpin": "IN-09-0040",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-940",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21957978,
+              28.645891
+            ],
+            [
+              77.22011305,
+              28.645891
+            ],
+            [
+              77.22011305,
+              28.646269
+            ],
+            [
+              77.21957978,
+              28.646269
+            ],
+            [
+              77.21957978,
+              28.645891
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-09-041",
+        "ulpin": "IN-09-0041",
+        "ward_id": "Ward 11",
+        "area_name": "Vertical City District",
+        "survey_number": "SY-941",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Vertical City District"
+      }
+    }
+  ]
+}

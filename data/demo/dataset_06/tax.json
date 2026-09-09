@@ -1,0 +1,3728 @@
+[
+  {
+    "unit_id": "VPR-BLD001-B02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14671,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U02",
+    "tax_year": "2025",
+    "annual_tax": 21879,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U03",
+    "tax_year": "2025",
+    "annual_tax": 13294,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-B02-U04",
+    "tax_year": "2025",
+    "annual_tax": 20098,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 9307,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 21316,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 16131,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 23083,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 17129,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 18851,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 22239,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 22288,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 12083,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 17688,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 13702,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 14887,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 22488,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 17299,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 8800,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 21095,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 21931,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 12369,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 24540,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 16101,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 16903,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 10104,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 14777,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F05-U04",
+    "tax_year": "2025",
+    "annual_tax": 17784,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 16943,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 21248,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U03",
+    "tax_year": "2025",
+    "annual_tax": 8883,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F06-U04",
+    "tax_year": "2025",
+    "annual_tax": 22044,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 18726,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U02",
+    "tax_year": "2025",
+    "annual_tax": 21813,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U03",
+    "tax_year": "2025",
+    "annual_tax": 9706,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F07-U04",
+    "tax_year": "2025",
+    "annual_tax": 14532,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 11748,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U02",
+    "tax_year": "2025",
+    "annual_tax": 11753,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U03",
+    "tax_year": "2025",
+    "annual_tax": 20298,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F08-U04",
+    "tax_year": "2025",
+    "annual_tax": 11966,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U01",
+    "tax_year": "2025",
+    "annual_tax": 19181,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U02",
+    "tax_year": "2025",
+    "annual_tax": 19868,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U03",
+    "tax_year": "2025",
+    "annual_tax": 16850,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F09-U04",
+    "tax_year": "2025",
+    "annual_tax": 16044,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U01",
+    "tax_year": "2025",
+    "annual_tax": 24197,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U02",
+    "tax_year": "2025",
+    "annual_tax": 17163,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U03",
+    "tax_year": "2025",
+    "annual_tax": 21317,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F10-U04",
+    "tax_year": "2025",
+    "annual_tax": 11049,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U01",
+    "tax_year": "2025",
+    "annual_tax": 20092,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U02",
+    "tax_year": "2025",
+    "annual_tax": 18839,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U03",
+    "tax_year": "2025",
+    "annual_tax": 11953,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F11-U04",
+    "tax_year": "2025",
+    "annual_tax": 23866,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U01",
+    "tax_year": "2025",
+    "annual_tax": 14360,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U02",
+    "tax_year": "2025",
+    "annual_tax": 12147,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U03",
+    "tax_year": "2025",
+    "annual_tax": 17317,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD001-F12-U04",
+    "tax_year": "2025",
+    "annual_tax": 23654,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 11881,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD002-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 22762,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD002-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14808,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 10459,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 15585,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 15648,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 12660,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD002-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 17457,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD002-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 16920,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD002-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 18561,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U01",
+    "tax_year": "2025",
+    "annual_tax": 57697,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U02",
+    "tax_year": "2025",
+    "annual_tax": 37803,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U03",
+    "tax_year": "2025",
+    "annual_tax": 60460,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U04",
+    "tax_year": "2025",
+    "annual_tax": 31541,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U05",
+    "tax_year": "2025",
+    "annual_tax": 42082,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U06",
+    "tax_year": "2025",
+    "annual_tax": 28340,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U07",
+    "tax_year": "2025",
+    "annual_tax": 78776,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U08",
+    "tax_year": "2025",
+    "annual_tax": 21108,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U09",
+    "tax_year": "2025",
+    "annual_tax": 48349,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B02-U10",
+    "tax_year": "2025",
+    "annual_tax": 40138,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 32509,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 50296,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 71990,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 35852,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U05",
+    "tax_year": "2025",
+    "annual_tax": 23273,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U06",
+    "tax_year": "2025",
+    "annual_tax": 41868,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U07",
+    "tax_year": "2025",
+    "annual_tax": 70859,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U08",
+    "tax_year": "2025",
+    "annual_tax": 29908,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U09",
+    "tax_year": "2025",
+    "annual_tax": 60482,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-B01-U10",
+    "tax_year": "2025",
+    "annual_tax": 39565,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 20175,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 56805,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 25353,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 70397,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U05",
+    "tax_year": "2025",
+    "annual_tax": 38524,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U06",
+    "tax_year": "2025",
+    "annual_tax": 52088,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U07",
+    "tax_year": "2025",
+    "annual_tax": 29352,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U08",
+    "tax_year": "2025",
+    "annual_tax": 35246,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U09",
+    "tax_year": "2025",
+    "annual_tax": 63986,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F01-U10",
+    "tax_year": "2025",
+    "annual_tax": 74866,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 67706,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 38971,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 59094,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 16640,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U05",
+    "tax_year": "2025",
+    "annual_tax": 22646,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U06",
+    "tax_year": "2025",
+    "annual_tax": 73147,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U07",
+    "tax_year": "2025",
+    "annual_tax": 73026,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U08",
+    "tax_year": "2025",
+    "annual_tax": 60238,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U09",
+    "tax_year": "2025",
+    "annual_tax": 50682,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F02-U10",
+    "tax_year": "2025",
+    "annual_tax": 58435,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 66575,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 66684,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 58323,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 16034,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U05",
+    "tax_year": "2025",
+    "annual_tax": 63867,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U06",
+    "tax_year": "2025",
+    "annual_tax": 29519,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U07",
+    "tax_year": "2025",
+    "annual_tax": 70528,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U08",
+    "tax_year": "2025",
+    "annual_tax": 36109,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U09",
+    "tax_year": "2025",
+    "annual_tax": 49770,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F03-U10",
+    "tax_year": "2025",
+    "annual_tax": 43185,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 62815,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 60011,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 68200,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 38173,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U05",
+    "tax_year": "2025",
+    "annual_tax": 52874,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U06",
+    "tax_year": "2025",
+    "annual_tax": 39088,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U07",
+    "tax_year": "2025",
+    "annual_tax": 16720,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U08",
+    "tax_year": "2025",
+    "annual_tax": 15400,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U09",
+    "tax_year": "2025",
+    "annual_tax": 63560,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD003-F04-U10",
+    "tax_year": "2025",
+    "annual_tax": 39251,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 46828,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 22267,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 40903,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 36503,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F01-U05",
+    "tax_year": "2025",
+    "annual_tax": 49903,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 45130,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 22548,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 43620,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 63877,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD004-F02-U05",
+    "tax_year": "2025",
+    "annual_tax": 27707,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD005-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 54478,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD005-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 56153,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD005-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 52976,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD005-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 24893,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD006-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 22808,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD006-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 10958,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD006-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14168,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD006-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 11391,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD006-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 22344,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD006-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 17269,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD006-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 11096,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD006-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 12634,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 61060,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 35241,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 24015,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 50374,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 25109,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 59326,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 30674,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 65995,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD007-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 54627,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 76229,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 74330,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD007-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 75979,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD008-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 16847,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD008-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 60617,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 21869,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 15813,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD009-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 8538,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 19561,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 10217,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 19298,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 18895,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD009-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 23224,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD010-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 18160,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD010-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14262,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD010-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 22409,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD010-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 10586,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD010-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 18043,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD010-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 16996,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD010-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 13242,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD011-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 59503,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD011-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 49698,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD011-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 16698,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD011-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 32058,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 10127,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 12550,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 20088,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD012-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 21460,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 10430,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 13962,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 13014,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD012-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 17307,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 13525,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 8929,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 24319,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 9963,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 12707,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 11479,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 12616,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD013-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 16135,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 20901,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 38127,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 15535,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD014-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 65060,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD015-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 44514,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 51558,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 17969,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 24160,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 70220,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 34647,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD015-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 79218,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD015-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 32401,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 56223,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD015-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 43903,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD015-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 65788,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD015-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 58399,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 16662,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 18388,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 20441,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 17425,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 16884,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 15394,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 11294,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 18524,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 15609,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 21008,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 11516,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 24522,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 23037,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 14329,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 14054,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 20568,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 15743,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 24466,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 15236,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD016-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 20242,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 11676,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 12910,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 22597,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 9891,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 10393,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 10261,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 21774,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 12357,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 15297,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 21897,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 17032,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 10204,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 9449,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 24511,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 12694,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 13738,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 20489,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD017-F06-U03",
+    "tax_year": "2025",
+    "annual_tax": 14025,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 12393,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 22738,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 20359,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 18910,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 23693,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 18538,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 19784,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD018-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 20147,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 8531,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 20446,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 24011,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD018-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 24001,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 12505,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 23986,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 17002,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD018-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 11156,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD019-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 21304,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD019-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 10641,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 22218,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 10436,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 18305,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 13323,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 19333,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 20999,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 19659,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 17678,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 13055,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 22573,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 22122,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 10936,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 17563,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 12549,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 22243,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 16080,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 17983,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 18968,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 13820,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 15943,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 14547,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 21406,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 13050,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F05-U04",
+    "tax_year": "2025",
+    "annual_tax": 21133,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 10784,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 9451,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U03",
+    "tax_year": "2025",
+    "annual_tax": 11231,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD020-F06-U04",
+    "tax_year": "2025",
+    "annual_tax": 20816,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 12642,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 19413,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD021-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 17839,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 13716,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 21272,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 14465,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14743,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 14457,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD021-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 18269,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 23003,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 10777,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD021-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 20232,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 50217,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 35616,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 23947,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 47225,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 17142,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 63661,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 50593,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 34510,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 22693,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 66435,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 49883,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD022-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 33961,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 47077,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 19949,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 44798,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD023-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 56604,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 69057,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 52875,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 56037,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD023-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 15044,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 31409,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 55999,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 20976,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD023-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 29823,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD024-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 20854,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD024-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 65689,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD024-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 43842,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD024-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 59994,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD024-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 23071,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 17336,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 9788,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 10326,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 23434,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 9305,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 24418,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14658,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 22335,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 9803,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 24266,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 12159,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 10092,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 13468,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 11779,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 9506,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 9158,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 16888,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 24900,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 18180,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 17554,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD025-F06-U03",
+    "tax_year": "2025",
+    "annual_tax": 24166,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD026-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 60446,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD026-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 35153,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD026-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 77992,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD026-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 78868,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD027-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 15758,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD027-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 16911,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD027-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 18290,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD027-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 23182,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD027-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 9321,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD027-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 9604,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 10020,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 10753,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD028-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 22530,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 22193,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 15035,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD028-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 16053,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 57116,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 66212,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 54132,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 65255,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 68496,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 53831,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 24312,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD029-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 30245,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 26630,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 49491,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 37056,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 66894,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD030-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 53597,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 62764,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 56919,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 79381,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 56884,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 19442,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 72969,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD030-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 25659,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD030-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 37400,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 37147,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD030-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 25295,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F07-U02",
+    "tax_year": "2025",
+    "annual_tax": 51314,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD030-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 40749,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD030-F08-U02",
+    "tax_year": "2025",
+    "annual_tax": 34303,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 22569,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 20972,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD031-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 44214,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 32600,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 78616,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 78283,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 74012,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 42746,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 35955,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 71139,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 53507,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD031-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 53186,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 50103,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 46001,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD031-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 59617,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD032-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 19071,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 11218,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 21656,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 24924,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 24606,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD032-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 9083,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD032-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 12059,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 23551,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 10961,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 15022,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 21418,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 15332,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 15150,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD032-F07-U02",
+    "tax_year": "2025",
+    "annual_tax": 8240,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD032-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 11542,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD032-F08-U02",
+    "tax_year": "2025",
+    "annual_tax": 17072,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 34372,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 52489,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 26870,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 51636,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 66648,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD033-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 22718,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD033-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 34553,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD033-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 24386,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD034-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 14861,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 15305,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 64600,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 72474,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 35061,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 37461,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 63108,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 57633,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 60203,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 46090,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 58362,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 73892,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD035-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 54911,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 76153,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 74433,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 66087,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 21541,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 59352,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 38430,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 37460,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 40278,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 60624,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 67577,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 71529,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD036-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 15810,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 20611,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 24247,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 20407,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD037-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 22683,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 8582,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 17981,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 9778,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 19904,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 19637,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 24135,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 20874,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD037-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 12037,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 12206,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 21718,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 12370,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 18286,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 12347,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 19542,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 17369,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 12762,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 16210,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 9058,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 20743,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 21650,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 22518,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 22706,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 11910,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 16356,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 18571,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 15207,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 21219,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F05-U04",
+    "tax_year": "2025",
+    "annual_tax": 18848,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 8288,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 15989,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U03",
+    "tax_year": "2025",
+    "annual_tax": 20286,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F06-U04",
+    "tax_year": "2025",
+    "annual_tax": 10698,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 11405,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U02",
+    "tax_year": "2025",
+    "annual_tax": 23047,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U03",
+    "tax_year": "2025",
+    "annual_tax": 16254,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F07-U04",
+    "tax_year": "2025",
+    "annual_tax": 8553,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 10072,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U02",
+    "tax_year": "2025",
+    "annual_tax": 17224,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U03",
+    "tax_year": "2025",
+    "annual_tax": 15204,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD038-F08-U04",
+    "tax_year": "2025",
+    "annual_tax": 17766,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 77061,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 74351,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 26885,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 31429,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 55600,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 58215,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 26051,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD039-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 56997,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 11566,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 14436,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U03",
+    "tax_year": "2025",
+    "annual_tax": 21275,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-B01-U04",
+    "tax_year": "2025",
+    "annual_tax": 12870,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 24420,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 13434,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 23843,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F01-U04",
+    "tax_year": "2025",
+    "annual_tax": 16662,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 19837,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 16628,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 10550,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F02-U04",
+    "tax_year": "2025",
+    "annual_tax": 8216,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 17201,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 11877,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 13283,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD040-F03-U04",
+    "tax_year": "2025",
+    "annual_tax": 13279,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 16462,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 22719,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 12676,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD040-F04-U04",
+    "tax_year": "2025",
+    "annual_tax": 19228,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD041-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 11155,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD041-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 12270,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD041-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 20136,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD041-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 20492,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 21390,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 11861,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 11492,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 21879,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 23809,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 19283,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD042-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 22634,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 9705,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 16620,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 21128,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 24978,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 9181,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 21088,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 10248,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F07-U01",
+    "tax_year": "2025",
+    "annual_tax": 17060,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F07-U02",
+    "tax_year": "2025",
+    "annual_tax": 24588,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F08-U01",
+    "tax_year": "2025",
+    "annual_tax": 24819,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD042-F08-U02",
+    "tax_year": "2025",
+    "annual_tax": 15971,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 29442,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 15637,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD043-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 68809,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD044-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 14231,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD044-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 15510,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD044-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 11495,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD045-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 79513,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD045-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 67380,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD045-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 60760,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD045-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 39866,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 19242,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 20199,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 12297,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 22162,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD046-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 8319,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 16223,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 16332,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD046-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 16512,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 21492,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 18652,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD046-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 19055,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD046-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 13308,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 20958,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD046-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 15688,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 8863,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 18137,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 19692,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 12427,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 18146,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F02-U03",
+    "tax_year": "2025",
+    "annual_tax": 19985,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 12466,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 23632,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F03-U03",
+    "tax_year": "2025",
+    "annual_tax": 14179,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 20770,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 24928,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F04-U03",
+    "tax_year": "2025",
+    "annual_tax": 10243,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 16917,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 8725,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD047-F05-U03",
+    "tax_year": "2025",
+    "annual_tax": 8268,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD048-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 9039,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD048-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 23405,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD048-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 16099,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD048-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 14830,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD048-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 9382,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD048-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 9706,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-B01-U01",
+    "tax_year": "2025",
+    "annual_tax": 23573,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-B01-U02",
+    "tax_year": "2025",
+    "annual_tax": 19649,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 15624,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 19736,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F02-U01",
+    "tax_year": "2025",
+    "annual_tax": 14115,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F02-U02",
+    "tax_year": "2025",
+    "annual_tax": 16629,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F03-U01",
+    "tax_year": "2025",
+    "annual_tax": 8613,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F03-U02",
+    "tax_year": "2025",
+    "annual_tax": 20697,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F04-U01",
+    "tax_year": "2025",
+    "annual_tax": 18570,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD049-F04-U02",
+    "tax_year": "2025",
+    "annual_tax": 10184,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F05-U01",
+    "tax_year": "2025",
+    "annual_tax": 9042,
+    "status": "PENDING"
+  },
+  {
+    "unit_id": "VPR-BLD049-F05-U02",
+    "tax_year": "2025",
+    "annual_tax": 15232,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F06-U01",
+    "tax_year": "2025",
+    "annual_tax": 21629,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD049-F06-U02",
+    "tax_year": "2025",
+    "annual_tax": 15074,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U01",
+    "tax_year": "2025",
+    "annual_tax": 77095,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U02",
+    "tax_year": "2025",
+    "annual_tax": 72856,
+    "status": "PAID"
+  },
+  {
+    "unit_id": "VPR-BLD050-F01-U03",
+    "tax_year": "2025",
+    "annual_tax": 44033,
+    "status": "PAID"
+  }
+]

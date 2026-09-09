@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20602648,
+            28.628117
+          ],
+          [
+            77.21197352,
+            28.628117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-01-01",
+        "name": "Central Heights North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.20602648,
+            28.627883
+          ],
+          [
+            77.21197352,
+            28.627883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-01-02",
+        "name": "Central Heights South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19633292,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.625855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-04",
+        "name": "Civic Transit Zone Central Junction Railway Terminal",
+        "ulpin": "IN-07-0001",
+        "building_code": "BLD-07-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

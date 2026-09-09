@@ -1,0 +1,1549 @@
+[
+  {
+    "id": "BLD-001-B02",
+    "building_id": "BLD-001",
+    "floor_number": -2,
+    "name": "Basement 2",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-B01",
+    "building_id": "BLD-001",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F01",
+    "building_id": "BLD-001",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F02",
+    "building_id": "BLD-001",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F03",
+    "building_id": "BLD-001",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F04",
+    "building_id": "BLD-001",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F05",
+    "building_id": "BLD-001",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F06",
+    "building_id": "BLD-001",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F07",
+    "building_id": "BLD-001",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F08",
+    "building_id": "BLD-001",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F09",
+    "building_id": "BLD-001",
+    "floor_number": 9,
+    "name": "Floor 9",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F10",
+    "building_id": "BLD-001",
+    "floor_number": 10,
+    "name": "Floor 10",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F11",
+    "building_id": "BLD-001",
+    "floor_number": 11,
+    "name": "Floor 11",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-001-F12",
+    "building_id": "BLD-001",
+    "floor_number": 12,
+    "name": "Floor 12",
+    "area_sqm": 600
+  },
+  {
+    "id": "BLD-002-F01",
+    "building_id": "BLD-002",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 300
+  },
+  {
+    "id": "BLD-002-F02",
+    "building_id": "BLD-002",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 300
+  },
+  {
+    "id": "BLD-002-F03",
+    "building_id": "BLD-002",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 300
+  },
+  {
+    "id": "BLD-002-F04",
+    "building_id": "BLD-002",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 300
+  },
+  {
+    "id": "BLD-002-F05",
+    "building_id": "BLD-002",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 300
+  },
+  {
+    "id": "BLD-003-B02",
+    "building_id": "BLD-003",
+    "floor_number": -2,
+    "name": "Basement 2",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-003-B01",
+    "building_id": "BLD-003",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-003-F01",
+    "building_id": "BLD-003",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-003-F02",
+    "building_id": "BLD-003",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-003-F03",
+    "building_id": "BLD-003",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-003-F04",
+    "building_id": "BLD-003",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-004-F01",
+    "building_id": "BLD-004",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-004-F02",
+    "building_id": "BLD-004",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 2400
+  },
+  {
+    "id": "BLD-005-F01",
+    "building_id": "BLD-005",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 800
+  },
+  {
+    "id": "BLD-005-F02",
+    "building_id": "BLD-005",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 800
+  },
+  {
+    "id": "BLD-006-F01",
+    "building_id": "BLD-006",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 375
+  },
+  {
+    "id": "BLD-006-F02",
+    "building_id": "BLD-006",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 375
+  },
+  {
+    "id": "BLD-006-F03",
+    "building_id": "BLD-006",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 375
+  },
+  {
+    "id": "BLD-006-F04",
+    "building_id": "BLD-006",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 375
+  },
+  {
+    "id": "BLD-007-F01",
+    "building_id": "BLD-007",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-007-F02",
+    "building_id": "BLD-007",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-007-F03",
+    "building_id": "BLD-007",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-007-F04",
+    "building_id": "BLD-007",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-007-F05",
+    "building_id": "BLD-007",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-007-F06",
+    "building_id": "BLD-007",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 400
+  },
+  {
+    "id": "BLD-008-F01",
+    "building_id": "BLD-008",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 225
+  },
+  {
+    "id": "BLD-008-F02",
+    "building_id": "BLD-008",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 225
+  },
+  {
+    "id": "BLD-009-F01",
+    "building_id": "BLD-009",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-009-F02",
+    "building_id": "BLD-009",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-009-F03",
+    "building_id": "BLD-009",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-009-F04",
+    "building_id": "BLD-009",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-010-F01",
+    "building_id": "BLD-010",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F02",
+    "building_id": "BLD-010",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F03",
+    "building_id": "BLD-010",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F04",
+    "building_id": "BLD-010",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F05",
+    "building_id": "BLD-010",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F06",
+    "building_id": "BLD-010",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-010-F07",
+    "building_id": "BLD-010",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-011-B01",
+    "building_id": "BLD-011",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 754
+  },
+  {
+    "id": "BLD-011-F01",
+    "building_id": "BLD-011",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 754
+  },
+  {
+    "id": "BLD-012-B01",
+    "building_id": "BLD-012",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 504
+  },
+  {
+    "id": "BLD-012-F01",
+    "building_id": "BLD-012",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 504
+  },
+  {
+    "id": "BLD-013-F01",
+    "building_id": "BLD-013",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 320
+  },
+  {
+    "id": "BLD-013-F02",
+    "building_id": "BLD-013",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 320
+  },
+  {
+    "id": "BLD-014-F01",
+    "building_id": "BLD-014",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 522
+  },
+  {
+    "id": "BLD-015-F01",
+    "building_id": "BLD-015",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-015-F02",
+    "building_id": "BLD-015",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-015-F03",
+    "building_id": "BLD-015",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-015-F04",
+    "building_id": "BLD-015",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-015-F05",
+    "building_id": "BLD-015",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-015-F06",
+    "building_id": "BLD-015",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 513
+  },
+  {
+    "id": "BLD-016-B01",
+    "building_id": "BLD-016",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 228
+  },
+  {
+    "id": "BLD-016-F01",
+    "building_id": "BLD-016",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 228
+  },
+  {
+    "id": "BLD-016-F02",
+    "building_id": "BLD-016",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 228
+  },
+  {
+    "id": "BLD-016-F03",
+    "building_id": "BLD-016",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 228
+  },
+  {
+    "id": "BLD-016-F04",
+    "building_id": "BLD-016",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 228
+  },
+  {
+    "id": "BLD-017-F01",
+    "building_id": "BLD-017",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-017-F02",
+    "building_id": "BLD-017",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-017-F03",
+    "building_id": "BLD-017",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-017-F04",
+    "building_id": "BLD-017",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-017-F05",
+    "building_id": "BLD-017",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-017-F06",
+    "building_id": "BLD-017",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 315
+  },
+  {
+    "id": "BLD-018-B01",
+    "building_id": "BLD-018",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 459
+  },
+  {
+    "id": "BLD-018-F01",
+    "building_id": "BLD-018",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 459
+  },
+  {
+    "id": "BLD-018-F02",
+    "building_id": "BLD-018",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 459
+  },
+  {
+    "id": "BLD-018-F03",
+    "building_id": "BLD-018",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 459
+  },
+  {
+    "id": "BLD-019-B01",
+    "building_id": "BLD-019",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 340
+  },
+  {
+    "id": "BLD-019-F01",
+    "building_id": "BLD-019",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 340
+  },
+  {
+    "id": "BLD-020-B01",
+    "building_id": "BLD-020",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F01",
+    "building_id": "BLD-020",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F02",
+    "building_id": "BLD-020",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F03",
+    "building_id": "BLD-020",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F04",
+    "building_id": "BLD-020",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F05",
+    "building_id": "BLD-020",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-020-F06",
+    "building_id": "BLD-020",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 192
+  },
+  {
+    "id": "BLD-021-B01",
+    "building_id": "BLD-021",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 252
+  },
+  {
+    "id": "BLD-021-F01",
+    "building_id": "BLD-021",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 252
+  },
+  {
+    "id": "BLD-021-F02",
+    "building_id": "BLD-021",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 252
+  },
+  {
+    "id": "BLD-021-F03",
+    "building_id": "BLD-021",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 252
+  },
+  {
+    "id": "BLD-022-F01",
+    "building_id": "BLD-022",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 357
+  },
+  {
+    "id": "BLD-022-F02",
+    "building_id": "BLD-022",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 357
+  },
+  {
+    "id": "BLD-022-F03",
+    "building_id": "BLD-022",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 357
+  },
+  {
+    "id": "BLD-023-F01",
+    "building_id": "BLD-023",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 182
+  },
+  {
+    "id": "BLD-023-F02",
+    "building_id": "BLD-023",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 182
+  },
+  {
+    "id": "BLD-023-F03",
+    "building_id": "BLD-023",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 182
+  },
+  {
+    "id": "BLD-024-F01",
+    "building_id": "BLD-024",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 696
+  },
+  {
+    "id": "BLD-024-F02",
+    "building_id": "BLD-024",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 696
+  },
+  {
+    "id": "BLD-024-F03",
+    "building_id": "BLD-024",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 696
+  },
+  {
+    "id": "BLD-024-F04",
+    "building_id": "BLD-024",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 696
+  },
+  {
+    "id": "BLD-024-F05",
+    "building_id": "BLD-024",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 696
+  },
+  {
+    "id": "BLD-025-B01",
+    "building_id": "BLD-025",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F01",
+    "building_id": "BLD-025",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F02",
+    "building_id": "BLD-025",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F03",
+    "building_id": "BLD-025",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F04",
+    "building_id": "BLD-025",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F05",
+    "building_id": "BLD-025",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-025-F06",
+    "building_id": "BLD-025",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 540
+  },
+  {
+    "id": "BLD-026-B01",
+    "building_id": "BLD-026",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-026-F01",
+    "building_id": "BLD-026",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-026-F02",
+    "building_id": "BLD-026",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-026-F03",
+    "building_id": "BLD-026",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 180
+  },
+  {
+    "id": "BLD-027-F01",
+    "building_id": "BLD-027",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 464
+  },
+  {
+    "id": "BLD-027-F02",
+    "building_id": "BLD-027",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 464
+  },
+  {
+    "id": "BLD-027-F03",
+    "building_id": "BLD-027",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 464
+  },
+  {
+    "id": "BLD-028-F01",
+    "building_id": "BLD-028",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 250
+  },
+  {
+    "id": "BLD-028-F02",
+    "building_id": "BLD-028",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 250
+  },
+  {
+    "id": "BLD-029-F01",
+    "building_id": "BLD-029",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-029-F02",
+    "building_id": "BLD-029",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 336
+  },
+  {
+    "id": "BLD-030-B01",
+    "building_id": "BLD-030",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F01",
+    "building_id": "BLD-030",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F02",
+    "building_id": "BLD-030",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F03",
+    "building_id": "BLD-030",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F04",
+    "building_id": "BLD-030",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F05",
+    "building_id": "BLD-030",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F06",
+    "building_id": "BLD-030",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F07",
+    "building_id": "BLD-030",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-030-F08",
+    "building_id": "BLD-030",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 196
+  },
+  {
+    "id": "BLD-031-B01",
+    "building_id": "BLD-031",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-031-F01",
+    "building_id": "BLD-031",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-031-F02",
+    "building_id": "BLD-031",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-031-F03",
+    "building_id": "BLD-031",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-031-F04",
+    "building_id": "BLD-031",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-032-F01",
+    "building_id": "BLD-032",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F02",
+    "building_id": "BLD-032",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F03",
+    "building_id": "BLD-032",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F04",
+    "building_id": "BLD-032",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F05",
+    "building_id": "BLD-032",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F06",
+    "building_id": "BLD-032",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F07",
+    "building_id": "BLD-032",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-032-F08",
+    "building_id": "BLD-032",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 624
+  },
+  {
+    "id": "BLD-033-F01",
+    "building_id": "BLD-033",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 280
+  },
+  {
+    "id": "BLD-033-F02",
+    "building_id": "BLD-033",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 280
+  },
+  {
+    "id": "BLD-033-F03",
+    "building_id": "BLD-033",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 280
+  },
+  {
+    "id": "BLD-033-F04",
+    "building_id": "BLD-033",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 280
+  },
+  {
+    "id": "BLD-034-F01",
+    "building_id": "BLD-034",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-035-F01",
+    "building_id": "BLD-035",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-035-F02",
+    "building_id": "BLD-035",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-035-F03",
+    "building_id": "BLD-035",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 432
+  },
+  {
+    "id": "BLD-036-B01",
+    "building_id": "BLD-036",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 208
+  },
+  {
+    "id": "BLD-036-F01",
+    "building_id": "BLD-036",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 208
+  },
+  {
+    "id": "BLD-036-F02",
+    "building_id": "BLD-036",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 208
+  },
+  {
+    "id": "BLD-037-B01",
+    "building_id": "BLD-037",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 264
+  },
+  {
+    "id": "BLD-037-F01",
+    "building_id": "BLD-037",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 264
+  },
+  {
+    "id": "BLD-037-F02",
+    "building_id": "BLD-037",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 264
+  },
+  {
+    "id": "BLD-038-F01",
+    "building_id": "BLD-038",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F02",
+    "building_id": "BLD-038",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F03",
+    "building_id": "BLD-038",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F04",
+    "building_id": "BLD-038",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F05",
+    "building_id": "BLD-038",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F06",
+    "building_id": "BLD-038",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F07",
+    "building_id": "BLD-038",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-038-F08",
+    "building_id": "BLD-038",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 256
+  },
+  {
+    "id": "BLD-039-F01",
+    "building_id": "BLD-039",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F02",
+    "building_id": "BLD-039",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F03",
+    "building_id": "BLD-039",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F04",
+    "building_id": "BLD-039",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F05",
+    "building_id": "BLD-039",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F06",
+    "building_id": "BLD-039",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F07",
+    "building_id": "BLD-039",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-039-F08",
+    "building_id": "BLD-039",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-040-B01",
+    "building_id": "BLD-040",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 120
+  },
+  {
+    "id": "BLD-040-F01",
+    "building_id": "BLD-040",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 120
+  },
+  {
+    "id": "BLD-040-F02",
+    "building_id": "BLD-040",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 120
+  },
+  {
+    "id": "BLD-040-F03",
+    "building_id": "BLD-040",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 120
+  },
+  {
+    "id": "BLD-040-F04",
+    "building_id": "BLD-040",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 120
+  },
+  {
+    "id": "BLD-041-B01",
+    "building_id": "BLD-041",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 242
+  },
+  {
+    "id": "BLD-041-F01",
+    "building_id": "BLD-041",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 242
+  },
+  {
+    "id": "BLD-041-F02",
+    "building_id": "BLD-041",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 242
+  },
+  {
+    "id": "BLD-041-F03",
+    "building_id": "BLD-041",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 242
+  },
+  {
+    "id": "BLD-042-B01",
+    "building_id": "BLD-042",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F01",
+    "building_id": "BLD-042",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F02",
+    "building_id": "BLD-042",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F03",
+    "building_id": "BLD-042",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F04",
+    "building_id": "BLD-042",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F05",
+    "building_id": "BLD-042",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F06",
+    "building_id": "BLD-042",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F07",
+    "building_id": "BLD-042",
+    "floor_number": 7,
+    "name": "Floor 7",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-042-F08",
+    "building_id": "BLD-042",
+    "floor_number": 8,
+    "name": "Floor 8",
+    "area_sqm": 437
+  },
+  {
+    "id": "BLD-043-F01",
+    "building_id": "BLD-043",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 756
+  },
+  {
+    "id": "BLD-044-F01",
+    "building_id": "BLD-044",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 650
+  },
+  {
+    "id": "BLD-044-F02",
+    "building_id": "BLD-044",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 650
+  },
+  {
+    "id": "BLD-044-F03",
+    "building_id": "BLD-044",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 650
+  },
+  {
+    "id": "BLD-045-F01",
+    "building_id": "BLD-045",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 374
+  },
+  {
+    "id": "BLD-045-F02",
+    "building_id": "BLD-045",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 374
+  },
+  {
+    "id": "BLD-046-B01",
+    "building_id": "BLD-046",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F01",
+    "building_id": "BLD-046",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F02",
+    "building_id": "BLD-046",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F03",
+    "building_id": "BLD-046",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F04",
+    "building_id": "BLD-046",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F05",
+    "building_id": "BLD-046",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-046-F06",
+    "building_id": "BLD-046",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 644
+  },
+  {
+    "id": "BLD-047-F01",
+    "building_id": "BLD-047",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 308
+  },
+  {
+    "id": "BLD-047-F02",
+    "building_id": "BLD-047",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 308
+  },
+  {
+    "id": "BLD-047-F03",
+    "building_id": "BLD-047",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 308
+  },
+  {
+    "id": "BLD-047-F04",
+    "building_id": "BLD-047",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 308
+  },
+  {
+    "id": "BLD-047-F05",
+    "building_id": "BLD-047",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 308
+  },
+  {
+    "id": "BLD-048-B01",
+    "building_id": "BLD-048",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 812
+  },
+  {
+    "id": "BLD-048-F01",
+    "building_id": "BLD-048",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 812
+  },
+  {
+    "id": "BLD-048-F02",
+    "building_id": "BLD-048",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 812
+  },
+  {
+    "id": "BLD-049-B01",
+    "building_id": "BLD-049",
+    "floor_number": -1,
+    "name": "Basement 1",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F01",
+    "building_id": "BLD-049",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F02",
+    "building_id": "BLD-049",
+    "floor_number": 2,
+    "name": "Floor 2",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F03",
+    "building_id": "BLD-049",
+    "floor_number": 3,
+    "name": "Floor 3",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F04",
+    "building_id": "BLD-049",
+    "floor_number": 4,
+    "name": "Floor 4",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F05",
+    "building_id": "BLD-049",
+    "floor_number": 5,
+    "name": "Floor 5",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-049-F06",
+    "building_id": "BLD-049",
+    "floor_number": 6,
+    "name": "Floor 6",
+    "area_sqm": 204
+  },
+  {
+    "id": "BLD-050-F01",
+    "building_id": "BLD-050",
+    "floor_number": 1,
+    "name": "Ground Floor",
+    "area_sqm": 870
+  }
+]

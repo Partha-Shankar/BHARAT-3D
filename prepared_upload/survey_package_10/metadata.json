@@ -1,0 +1,20 @@
+{
+  "area_id": "area_10",
+  "area_name": "Central Urban Core",
+  "ward_number": "Ward 01",
+  "theme": "Flagship Integrated 3D Cadastral Digital Twin Zone",
+  "version": "v3.0",
+  "center": [
+    77.21,
+    28.632
+  ],
+  "bounding_box": [
+    77.205,
+    28.627000000000002,
+    77.21499999999999,
+    28.637
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-09T19:20:21.267197",
+  "files_count": 24
+}

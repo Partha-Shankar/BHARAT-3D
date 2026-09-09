@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21533283,
+              28.618855
+            ],
+            [
+              77.21615303,
+              28.618855
+            ],
+            [
+              77.21615303,
+              28.619143
+            ],
+            [
+              77.21533283,
+              28.619143
+            ],
+            [
+              77.21533283,
+              28.618855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-05-04",
+        "name": "Urban Heights Central Junction Railway Terminal",
+        "ulpin": "IN-05-0001",
+        "building_code": "BLD-05-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "area_id": "area_05",
+  "area_name": "Urban Heights",
+  "ward_number": "Ward 14",
+  "theme": "Residential-heavy High-Rise Condominium Sector & Arterial Flyover",
+  "version": "v3.0",
+  "center": [
+    77.214,
+    28.618
+  ],
+  "bounding_box": [
+    77.209,
+    28.613,
+    77.219,
+    28.622999999999998
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-04T19:20:20.324108",
+  "files_count": 24
+}

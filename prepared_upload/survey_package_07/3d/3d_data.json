@@ -1,0 +1,3391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-01",
+        "name": "Civic Transit Zone Aarav Heights Tower",
+        "entity_type": "building",
+        "height": 39.0,
+        "base_height": 0.0,
+        "color": "#2563EB",
+        "floors": 12,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F01-U01",
+        "vprid": "VPR-BLD0701-F01-U01",
+        "name": "Civic Transit Zone \u2022 Flat 101",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F01-U02",
+        "vprid": "VPR-BLD0701-F01-U02",
+        "name": "Civic Transit Zone \u2022 Flat 102",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F01-U03",
+        "vprid": "VPR-BLD0701-F01-U03",
+        "name": "Civic Transit Zone \u2022 Flat 103",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F01-U04",
+        "vprid": "VPR-BLD0701-F01-U04",
+        "name": "Civic Transit Zone \u2022 Flat 104",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F02-U01",
+        "vprid": "VPR-BLD0701-F02-U01",
+        "name": "Civic Transit Zone \u2022 Flat 201",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F02-U02",
+        "vprid": "VPR-BLD0701-F02-U02",
+        "name": "Civic Transit Zone \u2022 Flat 202",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F02-U03",
+        "vprid": "VPR-BLD0701-F02-U03",
+        "name": "Civic Transit Zone \u2022 Flat 203",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F02-U04",
+        "vprid": "VPR-BLD0701-F02-U04",
+        "name": "Civic Transit Zone \u2022 Flat 204",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F03-U01",
+        "vprid": "VPR-BLD0701-F03-U01",
+        "name": "Civic Transit Zone \u2022 Flat 301",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F03-U02",
+        "vprid": "VPR-BLD0701-F03-U02",
+        "name": "Civic Transit Zone \u2022 Flat 302",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F03-U03",
+        "vprid": "VPR-BLD0701-F03-U03",
+        "name": "Civic Transit Zone \u2022 Flat 303",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F03-U04",
+        "vprid": "VPR-BLD0701-F03-U04",
+        "name": "Civic Transit Zone \u2022 Flat 304",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F04-U01",
+        "vprid": "VPR-BLD0701-F04-U01",
+        "name": "Civic Transit Zone \u2022 Flat 401",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F04-U02",
+        "vprid": "VPR-BLD0701-F04-U02",
+        "name": "Civic Transit Zone \u2022 Flat 402",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F04-U03",
+        "vprid": "VPR-BLD0701-F04-U03",
+        "name": "Civic Transit Zone \u2022 Flat 403",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F04-U04",
+        "vprid": "VPR-BLD0701-F04-U04",
+        "name": "Civic Transit Zone \u2022 Flat 404",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F05-U01",
+        "vprid": "VPR-BLD0701-F05-U01",
+        "name": "Civic Transit Zone \u2022 Flat 501",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F05-U02",
+        "vprid": "VPR-BLD0701-F05-U02",
+        "name": "Civic Transit Zone \u2022 Flat 502",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F05-U03",
+        "vprid": "VPR-BLD0701-F05-U03",
+        "name": "Civic Transit Zone \u2022 Flat 503",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F05-U04",
+        "vprid": "VPR-BLD0701-F05-U04",
+        "name": "Civic Transit Zone \u2022 Flat 504",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F06-U01",
+        "vprid": "VPR-BLD0701-F06-U01",
+        "name": "Civic Transit Zone \u2022 Flat 601",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F06-U02",
+        "vprid": "VPR-BLD0701-F06-U02",
+        "name": "Civic Transit Zone \u2022 Flat 602",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F06-U03",
+        "vprid": "VPR-BLD0701-F06-U03",
+        "name": "Civic Transit Zone \u2022 Flat 603",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F06-U04",
+        "vprid": "VPR-BLD0701-F06-U04",
+        "name": "Civic Transit Zone \u2022 Flat 604",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F07-U01",
+        "vprid": "VPR-BLD0701-F07-U01",
+        "name": "Civic Transit Zone \u2022 Flat 701",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F07-U02",
+        "vprid": "VPR-BLD0701-F07-U02",
+        "name": "Civic Transit Zone \u2022 Flat 702",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F07-U03",
+        "vprid": "VPR-BLD0701-F07-U03",
+        "name": "Civic Transit Zone \u2022 Flat 703",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F07-U04",
+        "vprid": "VPR-BLD0701-F07-U04",
+        "name": "Civic Transit Zone \u2022 Flat 704",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F08-U01",
+        "vprid": "VPR-BLD0701-F08-U01",
+        "name": "Civic Transit Zone \u2022 Flat 801",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F08-U02",
+        "vprid": "VPR-BLD0701-F08-U02",
+        "name": "Civic Transit Zone \u2022 Flat 802",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F08-U03",
+        "vprid": "VPR-BLD0701-F08-U03",
+        "name": "Civic Transit Zone \u2022 Flat 803",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F08-U04",
+        "vprid": "VPR-BLD0701-F08-U04",
+        "name": "Civic Transit Zone \u2022 Flat 804",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#F59E0B",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 18400,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F09-U01",
+        "vprid": "VPR-BLD0701-F09-U01",
+        "name": "Civic Transit Zone \u2022 Flat 901",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F09-U02",
+        "vprid": "VPR-BLD0701-F09-U02",
+        "name": "Civic Transit Zone \u2022 Flat 902",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F09-U03",
+        "vprid": "VPR-BLD0701-F09-U03",
+        "name": "Civic Transit Zone \u2022 Flat 903",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F09-U04",
+        "vprid": "VPR-BLD0701-F09-U04",
+        "name": "Civic Transit Zone \u2022 Flat 904",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F10-U01",
+        "vprid": "VPR-BLD0701-F10-U01",
+        "name": "Civic Transit Zone \u2022 Flat 1001",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F10-U02",
+        "vprid": "VPR-BLD0701-F10-U02",
+        "name": "Civic Transit Zone \u2022 Flat 1002",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F10-U03",
+        "vprid": "VPR-BLD0701-F10-U03",
+        "name": "Civic Transit Zone \u2022 Flat 1003",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F10-U04",
+        "vprid": "VPR-BLD0701-F10-U04",
+        "name": "Civic Transit Zone \u2022 Flat 1004",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F11-U01",
+        "vprid": "VPR-BLD0701-F11-U01",
+        "name": "Civic Transit Zone \u2022 Flat 1101",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F11-U02",
+        "vprid": "VPR-BLD0701-F11-U02",
+        "name": "Civic Transit Zone \u2022 Flat 1102",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F11-U03",
+        "vprid": "VPR-BLD0701-F11-U03",
+        "name": "Civic Transit Zone \u2022 Flat 1103",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F11-U04",
+        "vprid": "VPR-BLD0701-F11-U04",
+        "name": "Civic Transit Zone \u2022 Flat 1104",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19443607,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F12-U01",
+        "vprid": "VPR-BLD0701-F12-U01",
+        "name": "Civic Transit Zone \u2022 Flat 1201",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625315
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F12-U02",
+        "vprid": "VPR-BLD0701-F12-U02",
+        "name": "Civic Transit Zone \u2022 Flat 1202",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19443607,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625531
+            ],
+            [
+              77.19443607,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F12-U03",
+        "vprid": "VPR-BLD0701-F12-U03",
+        "name": "Civic Transit Zone \u2022 Flat 1203",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19463088,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625423
+            ],
+            [
+              77.1948257,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625531
+            ],
+            [
+              77.19463088,
+              28.625423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0701-F12-U04",
+        "vprid": "VPR-BLD0701-F12-U04",
+        "name": "Civic Transit Zone \u2022 Flat 1204",
+        "entity_type": "unit",
+        "building_id": "BLD-07-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19376961,
+              28.62446
+            ],
+            [
+              77.19407721,
+              28.62446
+            ],
+            [
+              77.19407721,
+              28.62464
+            ],
+            [
+              77.19376961,
+              28.62464
+            ],
+            [
+              77.19376961,
+              28.62446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-02",
+        "name": "Civic Transit Zone Residency Block B",
+        "entity_type": "building",
+        "height": 15.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19546139,
+              28.625225
+            ],
+            [
+              77.19612785,
+              28.625225
+            ],
+            [
+              77.19612785,
+              28.62563
+            ],
+            [
+              77.19546139,
+              28.62563
+            ],
+            [
+              77.19546139,
+              28.625225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-03",
+        "name": "Civic Transit Zone Civic Grand Mall & Retail Hub",
+        "entity_type": "mall",
+        "height": 18.5,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19633292,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.625855
+            ],
+            [
+              77.19715318,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.626143
+            ],
+            [
+              77.19633292,
+              28.625855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-04",
+        "name": "Civic Transit Zone Central Junction Railway Terminal",
+        "entity_type": "building",
+        "height": 12.0,
+        "base_height": 0.0,
+        "color": "#0D9488",
+        "floors": 2,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19438481,
+              28.626035
+            ],
+            [
+              77.1948462,
+              28.626035
+            ],
+            [
+              77.1948462,
+              28.626233
+            ],
+            [
+              77.19438481,
+              28.626233
+            ],
+            [
+              77.19438481,
+              28.626035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-05",
+        "name": "Civic Transit Zone Metro Interchange Station (Elevated +6m)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 6.0,
+        "color": "#7C3AED",
+        "floors": 2,
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19315442,
+              28.624955
+            ],
+            [
+              77.19664051,
+              28.624955
+            ],
+            [
+              77.19664051,
+              28.625081
+            ],
+            [
+              77.19315442,
+              28.625081
+            ],
+            [
+              77.19315442,
+              28.624955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-07-01",
+        "name": "Civic Transit Zone Elevated Bypass Flyover (Deck: +8.5m)",
+        "entity_type": "flyover",
+        "height": 10.7,
+        "base_height": 8.5,
+        "color": "#EA580C",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19333898,
+              28.625
+            ],
+            [
+              77.19337999,
+              28.625
+            ],
+            [
+              77.19337999,
+              28.625036
+            ],
+            [
+              77.19333898,
+              28.625036
+            ],
+            [
+              77.19333898,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-01",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-1",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19395417,
+              28.625
+            ],
+            [
+              77.19399518,
+              28.625
+            ],
+            [
+              77.19399518,
+              28.625036
+            ],
+            [
+              77.19395417,
+              28.625036
+            ],
+            [
+              77.19395417,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-02",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-2",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19456936,
+              28.625
+            ],
+            [
+              77.19461038,
+              28.625
+            ],
+            [
+              77.19461038,
+              28.625036
+            ],
+            [
+              77.19456936,
+              28.625036
+            ],
+            [
+              77.19456936,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-03",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-3",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19518456,
+              28.625
+            ],
+            [
+              77.19522557,
+              28.625
+            ],
+            [
+              77.19522557,
+              28.625036
+            ],
+            [
+              77.19518456,
+              28.625036
+            ],
+            [
+              77.19518456,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-04",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-4",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19579975,
+              28.625
+            ],
+            [
+              77.19584076,
+              28.625
+            ],
+            [
+              77.19584076,
+              28.625036
+            ],
+            [
+              77.19579975,
+              28.625036
+            ],
+            [
+              77.19579975,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-05",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-5",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19641494,
+              28.625
+            ],
+            [
+              77.19645596,
+              28.625
+            ],
+            [
+              77.19645596,
+              28.625036
+            ],
+            [
+              77.19641494,
+              28.625036
+            ],
+            [
+              77.19641494,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-07-06",
+        "name": "Civic Transit Zone Flyover Concrete Pier P-6",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19428227,
+              28.624802
+            ],
+            [
+              77.19715318,
+              28.624802
+            ],
+            [
+              77.19715318,
+              28.62491
+            ],
+            [
+              77.19428227,
+              28.62491
+            ],
+            [
+              77.19428227,
+              28.624802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-07-01",
+        "name": "Civic Transit Zone Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "entity_type": "tunnel",
+        "height": 4.8,
+        "base_height": 0.2,
+        "depth_meters": 8.5,
+        "color": "#0891B2",
+        "usage": "SUBTERRANEAN_ROAD",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19376961,
+              28.626125
+            ],
+            [
+              77.19766584,
+              28.626125
+            ],
+            [
+              77.19766584,
+              28.626215
+            ],
+            [
+              77.19376961,
+              28.626215
+            ],
+            [
+              77.19376961,
+              28.626125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-07-02",
+        "name": "Civic Transit Zone Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "entity_type": "tunnel",
+        "height": 5.6,
+        "base_height": 0.2,
+        "depth_meters": 14.2,
+        "color": "#06B6D4",
+        "usage": "SUBTERRANEAN_METRO",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1954819,
+              28.625243
+            ],
+            [
+              77.19610735,
+              28.625243
+            ],
+            [
+              77.19610735,
+              28.625612
+            ],
+            [
+              77.1954819,
+              28.625612
+            ],
+            [
+              77.1954819,
+              28.625243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-07-01",
+        "name": "Civic Transit Zone Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "entity_type": "tunnel",
+        "height": 3.8,
+        "base_height": 0.2,
+        "depth_meters": 6.0,
+        "color": "#0284C7",
+        "usage": "SUBTERRANEAN_PARKING",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19582026,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-07",
+        "name": "Civic Transit Zone Sharma Plaza (Sanctioned G+4)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 0.0,
+        "color": "#64748B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19582026,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624235
+            ],
+            [
+              77.19606633,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624433
+            ],
+            [
+              77.19582026,
+              28.624235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-07-ILLEGAL-FLOORS",
+        "name": "Civic Transit Zone Sharma Plaza (UNAUTHORIZED Floors 5 & 6)",
+        "entity_type": "violation",
+        "height": 21.2,
+        "base_height": 14.0,
+        "color": "#DC2626",
+        "floors": 2,
+        "usage": "VIOLATION",
+        "violation_code": "VLT-001",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19510253,
+              28.62509
+            ],
+            [
+              77.19518456,
+              28.62509
+            ],
+            [
+              77.19518456,
+              28.625135
+            ],
+            [
+              77.19510253,
+              28.625135
+            ],
+            [
+              77.19510253,
+              28.62509
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "VLT-07-ENC-01",
+        "name": "Civic Transit Zone Commercial Footpath Encroachment (18.6 m\u00b2)",
+        "entity_type": "violation",
+        "height": 3.5,
+        "base_height": 0.0,
+        "color": "#EF4444",
+        "usage": "VIOLATION",
+        "violation_code": "VLT-003",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.1930929,
+              28.625072
+            ],
+            [
+              77.19331847,
+              28.625072
+            ],
+            [
+              77.19331847,
+              28.625279
+            ],
+            [
+              77.1930929,
+              28.625279
+            ],
+            [
+              77.1930929,
+              28.625072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-08",
+        "name": "Civic Transit Zone Urban Property #8",
+        "entity_type": "building",
+        "height": 12.8,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 4,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19398493,
+              28.625
+            ],
+            [
+              77.19428227,
+              28.625
+            ],
+            [
+              77.19428227,
+              28.625198
+            ],
+            [
+              77.19398493,
+              28.625198
+            ],
+            [
+              77.19398493,
+              28.625
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-09",
+        "name": "Civic Transit Zone Urban Property #9",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 6,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19497949,
+              28.625072
+            ],
+            [
+              77.19520506,
+              28.625072
+            ],
+            [
+              77.19520506,
+              28.625297
+            ],
+            [
+              77.19497949,
+              28.625297
+            ],
+            [
+              77.19497949,
+              28.625072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-10",
+        "name": "Civic Transit Zone Urban Property #10",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19585102,
+              28.624937
+            ],
+            [
+              77.19613811,
+              28.624937
+            ],
+            [
+              77.19613811,
+              28.625117
+            ],
+            [
+              77.19585102,
+              28.625117
+            ],
+            [
+              77.19585102,
+              28.624937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-11",
+        "name": "Civic Transit Zone Urban Property #11",
+        "entity_type": "building",
+        "height": 12.8,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 4,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19307239,
+              28.625648
+            ],
+            [
+              77.19335949,
+              28.625648
+            ],
+            [
+              77.19335949,
+              28.62581
+            ],
+            [
+              77.19307239,
+              28.62581
+            ],
+            [
+              77.19307239,
+              28.625648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-12",
+        "name": "Civic Transit Zone Urban Property #12",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19401569,
+              28.625801
+            ],
+            [
+              77.19422076,
+              28.625801
+            ],
+            [
+              77.19422076,
+              28.626008
+            ],
+            [
+              77.19401569,
+              28.626008
+            ],
+            [
+              77.19401569,
+              28.625801
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-13",
+        "name": "Civic Transit Zone Urban Property #13",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19494873,
+              28.62563
+            ],
+            [
+              77.19526658,
+              28.62563
+            ],
+            [
+              77.19526658,
+              28.625819
+            ],
+            [
+              77.19494873,
+              28.625819
+            ],
+            [
+              77.19494873,
+              28.62563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-14",
+        "name": "Civic Transit Zone Urban Property #14",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19601507,
+              28.625702
+            ],
+            [
+              77.19634317,
+              28.625702
+            ],
+            [
+              77.19634317,
+              28.625918
+            ],
+            [
+              77.19601507,
+              28.625918
+            ],
+            [
+              77.19601507,
+              28.625702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-15",
+        "name": "Civic Transit Zone Urban Property #15",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 5,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19313391,
+              28.626413
+            ],
+            [
+              77.19345176,
+              28.626413
+            ],
+            [
+              77.19345176,
+              28.626575
+            ],
+            [
+              77.19313391,
+              28.626575
+            ],
+            [
+              77.19313391,
+              28.626413
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-16",
+        "name": "Civic Transit Zone Urban Property #16",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19404645,
+              28.626431
+            ],
+            [
+              77.19435405,
+              28.626431
+            ],
+            [
+              77.19435405,
+              28.626656
+            ],
+            [
+              77.19404645,
+              28.626656
+            ],
+            [
+              77.19404645,
+              28.626431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-17",
+        "name": "Civic Transit Zone Urban Property #17",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19502051,
+              28.626512
+            ],
+            [
+              77.19531785,
+              28.626512
+            ],
+            [
+              77.19531785,
+              28.626737
+            ],
+            [
+              77.19502051,
+              28.626737
+            ],
+            [
+              77.19502051,
+              28.626512
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-18",
+        "name": "Civic Transit Zone Urban Property #18",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19582026,
+              28.626431
+            ],
+            [
+              77.19610735,
+              28.626431
+            ],
+            [
+              77.19610735,
+              28.626629
+            ],
+            [
+              77.19582026,
+              28.626629
+            ],
+            [
+              77.19582026,
+              28.626431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-07-19",
+        "name": "Civic Transit Zone Urban Property #19",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

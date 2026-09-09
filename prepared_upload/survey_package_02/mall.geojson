@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21846143,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.634225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-03",
+        "name": "Metro District Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-02-0003",
+        "building_code": "BLD-02-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    }
+  ]
+}

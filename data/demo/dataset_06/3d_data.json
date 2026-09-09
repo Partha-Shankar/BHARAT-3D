@@ -1,0 +1,3391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-01",
+        "name": "Central Market Zone Aarav Heights Tower",
+        "entity_type": "building",
+        "height": 39.0,
+        "base_height": 0.0,
+        "color": "#2563EB",
+        "floors": 12,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F01-U01",
+        "vprid": "VPR-BLD0601-F01-U01",
+        "name": "Central Market Zone \u2022 Flat 101",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F01-U02",
+        "vprid": "VPR-BLD0601-F01-U02",
+        "name": "Central Market Zone \u2022 Flat 102",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F01-U03",
+        "vprid": "VPR-BLD0601-F01-U03",
+        "name": "Central Market Zone \u2022 Flat 103",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F01-U04",
+        "vprid": "VPR-BLD0601-F01-U04",
+        "name": "Central Market Zone \u2022 Flat 104",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 1,
+        "base_height": 0.0,
+        "height": 3.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F02-U01",
+        "vprid": "VPR-BLD0601-F02-U01",
+        "name": "Central Market Zone \u2022 Flat 201",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F02-U02",
+        "vprid": "VPR-BLD0601-F02-U02",
+        "name": "Central Market Zone \u2022 Flat 202",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F02-U03",
+        "vprid": "VPR-BLD0601-F02-U03",
+        "name": "Central Market Zone \u2022 Flat 203",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F02-U04",
+        "vprid": "VPR-BLD0601-F02-U04",
+        "name": "Central Market Zone \u2022 Flat 204",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 2,
+        "base_height": 3.25,
+        "height": 6.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F03-U01",
+        "vprid": "VPR-BLD0601-F03-U01",
+        "name": "Central Market Zone \u2022 Flat 301",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F03-U02",
+        "vprid": "VPR-BLD0601-F03-U02",
+        "name": "Central Market Zone \u2022 Flat 302",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F03-U03",
+        "vprid": "VPR-BLD0601-F03-U03",
+        "name": "Central Market Zone \u2022 Flat 303",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F03-U04",
+        "vprid": "VPR-BLD0601-F03-U04",
+        "name": "Central Market Zone \u2022 Flat 304",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 3,
+        "base_height": 6.5,
+        "height": 9.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F04-U01",
+        "vprid": "VPR-BLD0601-F04-U01",
+        "name": "Central Market Zone \u2022 Flat 401",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Zomato Kitchens",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F04-U02",
+        "vprid": "VPR-BLD0601-F04-U02",
+        "name": "Central Market Zone \u2022 Flat 402",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F04-U03",
+        "vprid": "VPR-BLD0601-F04-U03",
+        "name": "Central Market Zone \u2022 Flat 403",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F04-U04",
+        "vprid": "VPR-BLD0601-F04-U04",
+        "name": "Central Market Zone \u2022 Flat 404",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 4,
+        "base_height": 9.75,
+        "height": 13.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F05-U01",
+        "vprid": "VPR-BLD0601-F05-U01",
+        "name": "Central Market Zone \u2022 Flat 501",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "Croma Digital Hub",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F05-U02",
+        "vprid": "VPR-BLD0601-F05-U02",
+        "name": "Central Market Zone \u2022 Flat 502",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Deepak Chopra",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F05-U03",
+        "vprid": "VPR-BLD0601-F05-U03",
+        "name": "Central Market Zone \u2022 Flat 503",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F05-U04",
+        "vprid": "VPR-BLD0601-F05-U04",
+        "name": "Central Market Zone \u2022 Flat 504",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 5,
+        "base_height": 13.0,
+        "height": 16.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F06-U01",
+        "vprid": "VPR-BLD0601-F06-U01",
+        "name": "Central Market Zone \u2022 Flat 601",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "FabIndia Living",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F06-U02",
+        "vprid": "VPR-BLD0601-F06-U02",
+        "name": "Central Market Zone \u2022 Flat 602",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F06-U03",
+        "vprid": "VPR-BLD0601-F06-U03",
+        "name": "Central Market Zone \u2022 Flat 603",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F06-U04",
+        "vprid": "VPR-BLD0601-F06-U04",
+        "name": "Central Market Zone \u2022 Flat 604",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 6,
+        "base_height": 16.25,
+        "height": 19.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F07-U01",
+        "vprid": "VPR-BLD0601-F07-U01",
+        "name": "Central Market Zone \u2022 Flat 701",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Reliance Smart Bazaar",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F07-U02",
+        "vprid": "VPR-BLD0601-F07-U02",
+        "name": "Central Market Zone \u2022 Flat 702",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F07-U03",
+        "vprid": "VPR-BLD0601-F07-U03",
+        "name": "Central Market Zone \u2022 Flat 703",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F07-U04",
+        "vprid": "VPR-BLD0601-F07-U04",
+        "name": "Central Market Zone \u2022 Flat 704",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 7,
+        "base_height": 19.5,
+        "height": 22.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F08-U01",
+        "vprid": "VPR-BLD0601-F08-U01",
+        "name": "Central Market Zone \u2022 Flat 801",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Starbucks Coffee",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F08-U02",
+        "vprid": "VPR-BLD0601-F08-U02",
+        "name": "Central Market Zone \u2022 Flat 802",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F08-U03",
+        "vprid": "VPR-BLD0601-F08-U03",
+        "name": "Central Market Zone \u2022 Flat 803",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#3B82F6",
+        "owner_name": "Rohan Gupta",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F08-U04",
+        "vprid": "VPR-BLD0601-F08-U04",
+        "name": "Central Market Zone \u2022 Flat 804",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 8,
+        "base_height": 22.75,
+        "height": 26.0,
+        "color": "#F59E0B",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 18400,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F09-U01",
+        "vprid": "VPR-BLD0601-F09-U01",
+        "name": "Central Market Zone \u2022 Flat 901",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "HDFC Bank Branch",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F09-U02",
+        "vprid": "VPR-BLD0601-F09-U02",
+        "name": "Central Market Zone \u2022 Flat 902",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F09-U03",
+        "vprid": "VPR-BLD0601-F09-U03",
+        "name": "Central Market Zone \u2022 Flat 903",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Pooja Hegde",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F09-U04",
+        "vprid": "VPR-BLD0601-F09-U04",
+        "name": "Central Market Zone \u2022 Flat 904",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 9,
+        "base_height": 26.0,
+        "height": 29.25,
+        "color": "#2563EB",
+        "owner_name": "Siddharth Malhotra",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F10-U01",
+        "vprid": "VPR-BLD0601-F10-U01",
+        "name": "Central Market Zone \u2022 Flat 1001",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Neha Kapoor",
+        "tenant_name": "N/A",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F10-U02",
+        "vprid": "VPR-BLD0601-F10-U02",
+        "name": "Central Market Zone \u2022 Flat 1002",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Priya Mehta",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F10-U03",
+        "vprid": "VPR-BLD0601-F10-U03",
+        "name": "Central Market Zone \u2022 Flat 1003",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Rajesh Kumar Sharma",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F10-U04",
+        "vprid": "VPR-BLD0601-F10-U04",
+        "name": "Central Market Zone \u2022 Flat 1004",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 10,
+        "base_height": 29.25,
+        "height": 32.5,
+        "color": "#3B82F6",
+        "owner_name": "Anil & Sunita Verma",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F11-U01",
+        "vprid": "VPR-BLD0601-F11-U01",
+        "name": "Central Market Zone \u2022 Flat 1101",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "Rohan Gupta",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F11-U02",
+        "vprid": "VPR-BLD0601-F11-U02",
+        "name": "Central Market Zone \u2022 Flat 1102",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Mohammed Irfan Khan",
+        "tenant_name": "Vikramaditya Rao",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F11-U03",
+        "vprid": "VPR-BLD0601-F11-U03",
+        "name": "Central Market Zone \u2022 Flat 1103",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Suresh Reddy",
+        "tenant_name": "Sneha Patel",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F11-U04",
+        "vprid": "VPR-BLD0601-F11-U04",
+        "name": "Central Market Zone \u2022 Flat 1104",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 11,
+        "base_height": 32.5,
+        "height": 35.75,
+        "color": "#2563EB",
+        "owner_name": "Ananya Singh",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23043605,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F12-U01",
+        "vprid": "VPR-BLD0601-F12-U01",
+        "name": "Central Market Zone \u2022 Flat 1201",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630315
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F12-U02",
+        "vprid": "VPR-BLD0601-F12-U02",
+        "name": "Central Market Zone \u2022 Flat 1202",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Kavita Krishnamurthy",
+        "tenant_name": "N/A",
+        "annual_tax": 32000,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23043605,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630531
+            ],
+            [
+              77.23043605,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F12-U03",
+        "vprid": "VPR-BLD0601-F12-U03",
+        "name": "Central Market Zone \u2022 Flat 1203",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Meenakshi Sundaram",
+        "tenant_name": "Aditya Birla Retail",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23063087,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630423
+            ],
+            [
+              77.23082569,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630531
+            ],
+            [
+              77.23063087,
+              28.630423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "UNT-VPR-BLD0601-F12-U04",
+        "vprid": "VPR-BLD0601-F12-U04",
+        "name": "Central Market Zone \u2022 Flat 1204",
+        "entity_type": "unit",
+        "building_id": "BLD-06-01",
+        "floor_number": 12,
+        "base_height": 35.75,
+        "height": 39.0,
+        "color": "#3B82F6",
+        "owner_name": "Amitabh Banerjee",
+        "tenant_name": "Apex Healthcare",
+        "annual_tax": 36480,
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22976956,
+              28.62946
+            ],
+            [
+              77.23007717,
+              28.62946
+            ],
+            [
+              77.23007717,
+              28.62964
+            ],
+            [
+              77.22976956,
+              28.62964
+            ],
+            [
+              77.22976956,
+              28.62946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-02",
+        "name": "Central Market Zone Residency Block B",
+        "entity_type": "building",
+        "height": 15.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23146142,
+              28.630225
+            ],
+            [
+              77.23212791,
+              28.630225
+            ],
+            [
+              77.23212791,
+              28.63063
+            ],
+            [
+              77.23146142,
+              28.63063
+            ],
+            [
+              77.23146142,
+              28.630225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-03",
+        "name": "Central Market Zone Civic Grand Mall & Retail Hub",
+        "entity_type": "mall",
+        "height": 18.5,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23233298,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.630855
+            ],
+            [
+              77.23315328,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.631143
+            ],
+            [
+              77.23233298,
+              28.630855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-04",
+        "name": "Central Market Zone Central Junction Railway Terminal",
+        "entity_type": "building",
+        "height": 12.0,
+        "base_height": 0.0,
+        "color": "#0D9488",
+        "floors": 2,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23038478,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631035
+            ],
+            [
+              77.23084619,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631233
+            ],
+            [
+              77.23038478,
+              28.631035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-05",
+        "name": "Central Market Zone Metro Interchange Station (Elevated +6m)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 6.0,
+        "color": "#7C3AED",
+        "floors": 2,
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22915433,
+              28.629955
+            ],
+            [
+              77.23264059,
+              28.629955
+            ],
+            [
+              77.23264059,
+              28.630081
+            ],
+            [
+              77.22915433,
+              28.630081
+            ],
+            [
+              77.22915433,
+              28.629955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-06-01",
+        "name": "Central Market Zone Elevated Bypass Flyover (Deck: +8.5m)",
+        "entity_type": "flyover",
+        "height": 10.7,
+        "base_height": 8.5,
+        "color": "#EA580C",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2293389,
+              28.63
+            ],
+            [
+              77.22937991,
+              28.63
+            ],
+            [
+              77.22937991,
+              28.630036
+            ],
+            [
+              77.2293389,
+              28.630036
+            ],
+            [
+              77.2293389,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-01",
+        "name": "Central Market Zone Flyover Concrete Pier P-1",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22995412,
+              28.63
+            ],
+            [
+              77.22999514,
+              28.63
+            ],
+            [
+              77.22999514,
+              28.630036
+            ],
+            [
+              77.22995412,
+              28.630036
+            ],
+            [
+              77.22995412,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-02",
+        "name": "Central Market Zone Flyover Concrete Pier P-2",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23056934,
+              28.63
+            ],
+            [
+              77.23061036,
+              28.63
+            ],
+            [
+              77.23061036,
+              28.630036
+            ],
+            [
+              77.23056934,
+              28.630036
+            ],
+            [
+              77.23056934,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-03",
+        "name": "Central Market Zone Flyover Concrete Pier P-3",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23118457,
+              28.63
+            ],
+            [
+              77.23122558,
+              28.63
+            ],
+            [
+              77.23122558,
+              28.630036
+            ],
+            [
+              77.23118457,
+              28.630036
+            ],
+            [
+              77.23118457,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-04",
+        "name": "Central Market Zone Flyover Concrete Pier P-4",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23179979,
+              28.63
+            ],
+            [
+              77.2318408,
+              28.63
+            ],
+            [
+              77.2318408,
+              28.630036
+            ],
+            [
+              77.23179979,
+              28.630036
+            ],
+            [
+              77.23179979,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-05",
+        "name": "Central Market Zone Flyover Concrete Pier P-5",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23241501,
+              28.63
+            ],
+            [
+              77.23245603,
+              28.63
+            ],
+            [
+              77.23245603,
+              28.630036
+            ],
+            [
+              77.23241501,
+              28.630036
+            ],
+            [
+              77.23241501,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-PIER-06-06",
+        "name": "Central Market Zone Flyover Concrete Pier P-6",
+        "entity_type": "infrastructure",
+        "height": 8.5,
+        "base_height": 0.0,
+        "color": "#78350F",
+        "usage": "INFRASTRUCTURE",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23028224,
+              28.629802
+            ],
+            [
+              77.23315328,
+              28.629802
+            ],
+            [
+              77.23315328,
+              28.62991
+            ],
+            [
+              77.23028224,
+              28.62991
+            ],
+            [
+              77.23028224,
+              28.629802
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-06-01",
+        "name": "Central Market Zone Subsurface Vehicular Tunnel (Depth: -8.5m)",
+        "entity_type": "tunnel",
+        "height": 4.8,
+        "base_height": 0.2,
+        "depth_meters": 8.5,
+        "color": "#0891B2",
+        "usage": "SUBTERRANEAN_ROAD",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22976956,
+              28.631125
+            ],
+            [
+              77.23366596,
+              28.631125
+            ],
+            [
+              77.23366596,
+              28.631215
+            ],
+            [
+              77.22976956,
+              28.631215
+            ],
+            [
+              77.22976956,
+              28.631125
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "TNL-06-02",
+        "name": "Central Market Zone Yellow Line Metro Rail Tunnel (Depth: -14.2m)",
+        "entity_type": "tunnel",
+        "height": 5.6,
+        "base_height": 0.2,
+        "depth_meters": 14.2,
+        "color": "#06B6D4",
+        "usage": "SUBTERRANEAN_METRO",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23148192,
+              28.630243
+            ],
+            [
+              77.2321074,
+              28.630243
+            ],
+            [
+              77.2321074,
+              28.630612
+            ],
+            [
+              77.23148192,
+              28.630612
+            ],
+            [
+              77.23148192,
+              28.630243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-06-01",
+        "name": "Central Market Zone Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "entity_type": "tunnel",
+        "height": 3.8,
+        "base_height": 0.2,
+        "depth_meters": 6.0,
+        "color": "#0284C7",
+        "usage": "SUBTERRANEAN_PARKING",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2318203,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-07",
+        "name": "Central Market Zone Sharma Plaza (Sanctioned G+4)",
+        "entity_type": "building",
+        "height": 14.0,
+        "base_height": 0.0,
+        "color": "#64748B",
+        "floors": 4,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2318203,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629235
+            ],
+            [
+              77.23206639,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629433
+            ],
+            [
+              77.2318203,
+              28.629235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-07-ILLEGAL-FLOORS",
+        "name": "Central Market Zone Sharma Plaza (UNAUTHORIZED Floors 5 & 6)",
+        "entity_type": "violation",
+        "height": 21.2,
+        "base_height": 14.0,
+        "color": "#DC2626",
+        "floors": 2,
+        "usage": "VIOLATION",
+        "violation_code": "VLT-001",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23110254,
+              28.63009
+            ],
+            [
+              77.23118457,
+              28.63009
+            ],
+            [
+              77.23118457,
+              28.630135
+            ],
+            [
+              77.23110254,
+              28.630135
+            ],
+            [
+              77.23110254,
+              28.63009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "VLT-06-ENC-01",
+        "name": "Central Market Zone Commercial Footpath Encroachment (18.6 m\u00b2)",
+        "entity_type": "violation",
+        "height": 3.5,
+        "base_height": 0.0,
+        "color": "#EF4444",
+        "usage": "VIOLATION",
+        "violation_code": "VLT-003",
+        "status": "OPEN_NOTICE_ISSUED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22924662,
+              28.63
+            ],
+            [
+              77.22954397,
+              28.63
+            ],
+            [
+              77.22954397,
+              28.630225
+            ],
+            [
+              77.22924662,
+              28.630225
+            ],
+            [
+              77.22924662,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-08",
+        "name": "Central Market Zone Urban Property #8",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23013869,
+              28.630018
+            ],
+            [
+              77.23039503,
+              28.630018
+            ],
+            [
+              77.23039503,
+              28.630225
+            ],
+            [
+              77.23013869,
+              28.630225
+            ],
+            [
+              77.23013869,
+              28.630018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-09",
+        "name": "Central Market Zone Urban Property #9",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23103076,
+              28.629937
+            ],
+            [
+              77.2312666,
+              28.629937
+            ],
+            [
+              77.2312666,
+              28.630117
+            ],
+            [
+              77.23103076,
+              28.630117
+            ],
+            [
+              77.23103076,
+              28.629937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-10",
+        "name": "Central Market Zone Urban Property #10",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2318408,
+              28.629919
+            ],
+            [
+              77.23209715,
+              28.629919
+            ],
+            [
+              77.23209715,
+              28.630099
+            ],
+            [
+              77.2318408,
+              28.630099
+            ],
+            [
+              77.2318408,
+              28.629919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-11",
+        "name": "Central Market Zone Urban Property #11",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22912357,
+              28.630792
+            ],
+            [
+              77.22932865,
+              28.630792
+            ],
+            [
+              77.22932865,
+              28.630954
+            ],
+            [
+              77.22912357,
+              28.630954
+            ],
+            [
+              77.22912357,
+              28.630792
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-12",
+        "name": "Central Market Zone Urban Property #12",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 6,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23011818,
+              28.630783
+            ],
+            [
+              77.23043605,
+              28.630783
+            ],
+            [
+              77.23043605,
+              28.631008
+            ],
+            [
+              77.23011818,
+              28.631008
+            ],
+            [
+              77.23011818,
+              28.630783
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-13",
+        "name": "Central Market Zone Urban Property #13",
+        "entity_type": "building",
+        "height": 9.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 3,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23090772,
+              28.630747
+            ],
+            [
+              77.23122558,
+              28.630747
+            ],
+            [
+              77.23122558,
+              28.630918
+            ],
+            [
+              77.23090772,
+              28.630918
+            ],
+            [
+              77.23090772,
+              28.630747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-14",
+        "name": "Central Market Zone Urban Property #14",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23198436,
+              28.630747
+            ],
+            [
+              77.23231247,
+              28.630747
+            ],
+            [
+              77.23231247,
+              28.630954
+            ],
+            [
+              77.23198436,
+              28.630954
+            ],
+            [
+              77.23198436,
+              28.630747
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-15",
+        "name": "Central Market Zone Urban Property #15",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22923636,
+              28.631359
+            ],
+            [
+              77.2294722,
+              28.631359
+            ],
+            [
+              77.2294722,
+              28.631593
+            ],
+            [
+              77.22923636,
+              28.631593
+            ],
+            [
+              77.22923636,
+              28.631359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-16",
+        "name": "Central Market Zone Urban Property #16",
+        "entity_type": "building",
+        "height": 19.2,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 6,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22997463,
+              28.631386
+            ],
+            [
+              77.23025148,
+              28.631386
+            ],
+            [
+              77.23025148,
+              28.631557
+            ],
+            [
+              77.22997463,
+              28.631557
+            ],
+            [
+              77.22997463,
+              28.631386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-17",
+        "name": "Central Market Zone Urban Property #17",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 8,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23097949,
+              28.631521
+            ],
+            [
+              77.23121533,
+              28.631521
+            ],
+            [
+              77.23121533,
+              28.631746
+            ],
+            [
+              77.23097949,
+              28.631746
+            ],
+            [
+              77.23097949,
+              28.631521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-18",
+        "name": "Central Market Zone Urban Property #18",
+        "entity_type": "building",
+        "height": 25.6,
+        "base_height": 0.0,
+        "color": "#F59E0B",
+        "floors": 8,
+        "usage": "COMMERCIAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2319741,
+              28.631359
+            ],
+            [
+              77.23219968,
+              28.631359
+            ],
+            [
+              77.23219968,
+              28.63153
+            ],
+            [
+              77.2319741,
+              28.63153
+            ],
+            [
+              77.2319741,
+              28.631359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-06-19",
+        "name": "Central Market Zone Urban Property #19",
+        "entity_type": "building",
+        "height": 16.0,
+        "base_height": 0.0,
+        "color": "#3B82F6",
+        "floors": 5,
+        "usage": "RESIDENTIAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

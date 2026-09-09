@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21743602,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634315
+            ],
+            [
+              77.21782568,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634531
+            ],
+            [
+              77.21743602,
+              28.634315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-01",
+        "name": "Metro District Aarav Heights Tower",
+        "ulpin": "IN-02-0008",
+        "building_code": "BLD-02-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21676951,
+              28.63346
+            ],
+            [
+              77.21707713,
+              28.63346
+            ],
+            [
+              77.21707713,
+              28.63364
+            ],
+            [
+              77.21676951,
+              28.63364
+            ],
+            [
+              77.21676951,
+              28.63346
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-02",
+        "name": "Metro District Residency Block B",
+        "ulpin": "IN-02-0014",
+        "building_code": "BLD-02-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21846143,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.634225
+            ],
+            [
+              77.21912795,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.63463
+            ],
+            [
+              77.21846143,
+              28.634225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-03",
+        "name": "Metro District Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-02-0003",
+        "building_code": "BLD-02-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21933303,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.634855
+            ],
+            [
+              77.22015336,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.635143
+            ],
+            [
+              77.21933303,
+              28.634855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-04",
+        "name": "Metro District Central Junction Railway Terminal",
+        "ulpin": "IN-02-0001",
+        "building_code": "BLD-02-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21738475,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635035
+            ],
+            [
+              77.21784619,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635233
+            ],
+            [
+              77.21738475,
+              28.635035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-05",
+        "name": "Metro District Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-02-0002",
+        "building_code": "BLD-02-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21882033,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633235
+            ],
+            [
+              77.21906643,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633433
+            ],
+            [
+              77.21882033,
+              28.633235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-07",
+        "name": "Metro District Sharma Commercial Plaza",
+        "ulpin": "IN-02-0018",
+        "building_code": "BLD-02-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21607223,
+              28.633919
+            ],
+            [
+              77.21632858,
+              28.633919
+            ],
+            [
+              77.21632858,
+              28.634126
+            ],
+            [
+              77.21607223,
+              28.634126
+            ],
+            [
+              77.21607223,
+              28.633919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-08",
+        "name": "Metro District Urban Property #8",
+        "ulpin": "IN-02-0023",
+        "building_code": "BLD-02-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21706688,
+              28.634018
+            ],
+            [
+              77.2173745,
+              28.634018
+            ],
+            [
+              77.2173745,
+              28.634252
+            ],
+            [
+              77.21706688,
+              28.634252
+            ],
+            [
+              77.21706688,
+              28.634018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-09",
+        "name": "Metro District Urban Property #9",
+        "ulpin": "IN-02-0024",
+        "building_code": "BLD-02-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 780,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21798975,
+              28.634036
+            ],
+            [
+              77.21827686,
+              28.634036
+            ],
+            [
+              77.21827686,
+              28.634198
+            ],
+            [
+              77.21798975,
+              28.634198
+            ],
+            [
+              77.21798975,
+              28.634036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-10",
+        "name": "Metro District Urban Property #10",
+        "ulpin": "IN-02-0025",
+        "building_code": "BLD-02-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 4,
+        "height_meters": 12.8,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21888185,
+              28.634054
+            ],
+            [
+              77.21916897,
+              28.634054
+            ],
+            [
+              77.21916897,
+              28.634279
+            ],
+            [
+              77.21888185,
+              28.634279
+            ],
+            [
+              77.21888185,
+              28.634054
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-11",
+        "name": "Metro District Urban Property #11",
+        "ulpin": "IN-02-0026",
+        "building_code": "BLD-02-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 700,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21617477,
+              28.634648
+            ],
+            [
+              77.21642087,
+              28.634648
+            ],
+            [
+              77.21642087,
+              28.634837
+            ],
+            [
+              77.21617477,
+              28.634837
+            ],
+            [
+              77.21617477,
+              28.634648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-12",
+        "name": "Metro District Urban Property #12",
+        "ulpin": "IN-02-0027",
+        "building_code": "BLD-02-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 504,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21701561,
+              28.634666
+            ],
+            [
+              77.21729247,
+              28.634666
+            ],
+            [
+              77.21729247,
+              28.634891
+            ],
+            [
+              77.21701561,
+              28.634891
+            ],
+            [
+              77.21701561,
+              28.634666
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-13",
+        "name": "Metro District Urban Property #13",
+        "ulpin": "IN-02-0028",
+        "building_code": "BLD-02-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 675,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21803076,
+              28.634729
+            ],
+            [
+              77.21828711,
+              28.634729
+            ],
+            [
+              77.21828711,
+              28.634927
+            ],
+            [
+              77.21803076,
+              28.634927
+            ],
+            [
+              77.21803076,
+              28.634729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-14",
+        "name": "Metro District Urban Property #14",
+        "ulpin": "IN-02-0029",
+        "building_code": "BLD-02-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 550,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21892287,
+              28.634639
+            ],
+            [
+              77.21917922,
+              28.634639
+            ],
+            [
+              77.21917922,
+              28.634846
+            ],
+            [
+              77.21892287,
+              28.634846
+            ],
+            [
+              77.21892287,
+              28.634639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-15",
+        "name": "Metro District Urban Property #15",
+        "ulpin": "IN-02-0030",
+        "building_code": "BLD-02-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 575,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21607223,
+              28.635521
+            ],
+            [
+              77.21633884,
+              28.635521
+            ],
+            [
+              77.21633884,
+              28.635737
+            ],
+            [
+              77.21607223,
+              28.635737
+            ],
+            [
+              77.21607223,
+              28.635521
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-16",
+        "name": "Metro District Urban Property #16",
+        "ulpin": "IN-02-0031",
+        "building_code": "BLD-02-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 624,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21715916,
+              28.635485
+            ],
+            [
+              77.21745653,
+              28.635485
+            ],
+            [
+              77.21745653,
+              28.635701
+            ],
+            [
+              77.21715916,
+              28.635701
+            ],
+            [
+              77.21715916,
+              28.635485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-17",
+        "name": "Metro District Urban Property #17",
+        "ulpin": "IN-02-0032",
+        "building_code": "BLD-02-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 696,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21790771,
+              28.635503
+            ],
+            [
+              77.2181128,
+              28.635503
+            ],
+            [
+              77.2181128,
+              28.635728
+            ],
+            [
+              77.21790771,
+              28.635728
+            ],
+            [
+              77.21790771,
+              28.635503
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-18",
+        "name": "Metro District Urban Property #18",
+        "ulpin": "IN-02-0033",
+        "building_code": "BLD-02-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 500,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21901516,
+              28.635422
+            ],
+            [
+              77.21927151,
+              28.635422
+            ],
+            [
+              77.21927151,
+              28.635656
+            ],
+            [
+              77.21901516,
+              28.635656
+            ],
+            [
+              77.21901516,
+              28.635422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-02-19",
+        "name": "Metro District Urban Property #19",
+        "ulpin": "IN-02-0034",
+        "building_code": "BLD-02-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 650,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

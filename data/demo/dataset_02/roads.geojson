@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21492377,
+            28.634
+          ],
+          [
+            77.22107623,
+            28.634
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-02-01",
+        "name": "Metro District Main Spine Road (R-01)",
+        "width": 24.0,
+        "lanes": 6,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.218,
+            28.63175
+          ],
+          [
+            77.218,
+            28.63625
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-02-02",
+        "name": "Metro District Cross Link Boulevard (R-02)",
+        "width": 18.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.21492377,
+            28.63508
+          ],
+          [
+            77.22107623,
+            28.63508
+          ]
+        ]
+      },
+      "properties": {
+        "id": "RD-02-03",
+        "name": "Metro District North Arterial (R-03)",
+        "width": 16.0,
+        "lanes": 4,
+        "surface": "ASPHALT"
+      }
+    }
+  ]
+}

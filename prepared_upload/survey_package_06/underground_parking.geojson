@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.23148192,
+              28.630243
+            ],
+            [
+              77.2321074,
+              28.630243
+            ],
+            [
+              77.2321074,
+              28.630612
+            ],
+            [
+              77.23148192,
+              28.630612
+            ],
+            [
+              77.23148192,
+              28.630243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-06-01",
+        "name": "Central Market Zone Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Central Market Zone Mall Ltd",
+        "parent_building": "BLD-06-03"
+      }
+    }
+  ]
+}

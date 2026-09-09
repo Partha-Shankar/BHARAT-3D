@@ -1,0 +1,12 @@
+{
+  "buildings_detected": 64,
+  "floors_inferred": 312,
+  "vertical_units": 884,
+  "infrastructure_assets": 52,
+  "violations_detected": 18,
+  "building_confidence": 0.967,
+  "floor_confidence": 0.924,
+  "height_confidence": 0.951,
+  "topology_score": 0.989,
+  "crs_normalized": "EPSG:4326 / UTM 43N"
+}

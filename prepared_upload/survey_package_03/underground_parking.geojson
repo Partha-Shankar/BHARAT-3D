@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22548189,
+              28.622243
+            ],
+            [
+              77.22610732,
+              28.622243
+            ],
+            [
+              77.22610732,
+              28.622612
+            ],
+            [
+              77.22548189,
+              28.622612
+            ],
+            [
+              77.22548189,
+              28.622243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PKG-03-01",
+        "name": "Civic Square Mall 2-Level Basement Parking (Depth: -6.0m)",
+        "asset_type": "UNDERGROUND_PARKING",
+        "depth_meters": 6.0,
+        "levels": 2,
+        "capacity_bays": 350,
+        "operator": "Civic Square Mall Ltd",
+        "parent_building": "BLD-03-03"
+      }
+    }
+  ]
+}

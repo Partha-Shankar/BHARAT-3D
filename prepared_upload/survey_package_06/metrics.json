@@ -1,0 +1,18 @@
+{
+  "area_id": "area_06",
+  "area_name": "Central Market Zone",
+  "ward": "Ward 19",
+  "parcels_count": 46,
+  "buildings_detected": 18,
+  "floors_inferred": 72,
+  "vertical_units": 220,
+  "infrastructure_assets": 7,
+  "violations_detected": 4,
+  "analysis_confidence": 0.95,
+  "topology_score": 0.985,
+  "crs_normalized": "EPSG:4326 / UTM 43N",
+  "center": [
+    77.231,
+    28.63
+  ]
+}

@@ -1,0 +1,1686 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2065289,
+              28.626623
+            ],
+            [
+              77.20706209,
+              28.626623
+            ],
+            [
+              77.20706209,
+              28.627001
+            ],
+            [
+              77.2065289,
+              28.627001
+            ],
+            [
+              77.2065289,
+              28.626623
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-001",
+        "ulpin": "IN-01-0001",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-101",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20718513,
+              28.626614
+            ],
+            [
+              77.20771831,
+              28.626614
+            ],
+            [
+              77.20771831,
+              28.626992
+            ],
+            [
+              77.20718513,
+              28.626992
+            ],
+            [
+              77.20718513,
+              28.626614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-002",
+        "ulpin": "IN-01-0002",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-102",
+        "land_use": "INFRASTRUCTURE",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20774907,
+              28.62665
+            ],
+            [
+              77.20828225,
+              28.62665
+            ],
+            [
+              77.20828225,
+              28.627028
+            ],
+            [
+              77.20774907,
+              28.627028
+            ],
+            [
+              77.20774907,
+              28.62665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-003",
+        "ulpin": "IN-01-0003",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-103",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20834378,
+              28.626614
+            ],
+            [
+              77.20887696,
+              28.626614
+            ],
+            [
+              77.20887696,
+              28.626992
+            ],
+            [
+              77.20834378,
+              28.626992
+            ],
+            [
+              77.20834378,
+              28.626614
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-004",
+        "ulpin": "IN-01-0004",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-104",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20903076,
+              28.626668
+            ],
+            [
+              77.20956394,
+              28.626668
+            ],
+            [
+              77.20956394,
+              28.627046
+            ],
+            [
+              77.20903076,
+              28.627046
+            ],
+            [
+              77.20903076,
+              28.626668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-005",
+        "ulpin": "IN-01-0005",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-105",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20964597,
+              28.626686
+            ],
+            [
+              77.21017915,
+              28.626686
+            ],
+            [
+              77.21017915,
+              28.627064
+            ],
+            [
+              77.20964597,
+              28.627064
+            ],
+            [
+              77.20964597,
+              28.626686
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-006",
+        "ulpin": "IN-01-0006",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-106",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21023042,
+              28.626632
+            ],
+            [
+              77.2107636,
+              28.626632
+            ],
+            [
+              77.2107636,
+              28.62701
+            ],
+            [
+              77.21023042,
+              28.62701
+            ],
+            [
+              77.21023042,
+              28.626632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-007",
+        "ulpin": "IN-01-0007",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-107",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21085589,
+              28.626632
+            ],
+            [
+              77.21138907,
+              28.626632
+            ],
+            [
+              77.21138907,
+              28.62701
+            ],
+            [
+              77.21085589,
+              28.62701
+            ],
+            [
+              77.21085589,
+              28.626632
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-008",
+        "ulpin": "IN-01-0008",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-108",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20658017,
+              28.627073
+            ],
+            [
+              77.20711335,
+              28.627073
+            ],
+            [
+              77.20711335,
+              28.627451
+            ],
+            [
+              77.20658017,
+              28.627451
+            ],
+            [
+              77.20658017,
+              28.627073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-009",
+        "ulpin": "IN-01-0009",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-109",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20712361,
+              28.627109
+            ],
+            [
+              77.20765679,
+              28.627109
+            ],
+            [
+              77.20765679,
+              28.627487
+            ],
+            [
+              77.20712361,
+              28.627487
+            ],
+            [
+              77.20712361,
+              28.627109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-010",
+        "ulpin": "IN-01-0010",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-110",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20772856,
+              28.627109
+            ],
+            [
+              77.20826175,
+              28.627109
+            ],
+            [
+              77.20826175,
+              28.627487
+            ],
+            [
+              77.20772856,
+              28.627487
+            ],
+            [
+              77.20772856,
+              28.627109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-011",
+        "ulpin": "IN-01-0011",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-111",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20838479,
+              28.627073
+            ],
+            [
+              77.20891797,
+              28.627073
+            ],
+            [
+              77.20891797,
+              28.627451
+            ],
+            [
+              77.20838479,
+              28.627451
+            ],
+            [
+              77.20838479,
+              28.627073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-012",
+        "ulpin": "IN-01-0012",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-112",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20895899,
+              28.627091
+            ],
+            [
+              77.20949217,
+              28.627091
+            ],
+            [
+              77.20949217,
+              28.627469
+            ],
+            [
+              77.20895899,
+              28.627469
+            ],
+            [
+              77.20895899,
+              28.627091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-013",
+        "ulpin": "IN-01-0013",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-113",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20958445,
+              28.627073
+            ],
+            [
+              77.21011763,
+              28.627073
+            ],
+            [
+              77.21011763,
+              28.627451
+            ],
+            [
+              77.20958445,
+              28.627451
+            ],
+            [
+              77.20958445,
+              28.627073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-014",
+        "ulpin": "IN-01-0014",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-114",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21023042,
+              28.6271
+            ],
+            [
+              77.2107636,
+              28.6271
+            ],
+            [
+              77.2107636,
+              28.627478
+            ],
+            [
+              77.21023042,
+              28.627478
+            ],
+            [
+              77.21023042,
+              28.6271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-015",
+        "ulpin": "IN-01-0015",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-115",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21081487,
+              28.627073
+            ],
+            [
+              77.21134805,
+              28.627073
+            ],
+            [
+              77.21134805,
+              28.627451
+            ],
+            [
+              77.21081487,
+              28.627451
+            ],
+            [
+              77.21081487,
+              28.627073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-016",
+        "ulpin": "IN-01-0016",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-116",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20654941,
+              28.627532
+            ],
+            [
+              77.20708259,
+              28.627532
+            ],
+            [
+              77.20708259,
+              28.62791
+            ],
+            [
+              77.20654941,
+              28.62791
+            ],
+            [
+              77.20654941,
+              28.627532
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-017",
+        "ulpin": "IN-01-0017",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-117",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20717487,
+              28.627514
+            ],
+            [
+              77.20770806,
+              28.627514
+            ],
+            [
+              77.20770806,
+              28.627892
+            ],
+            [
+              77.20717487,
+              28.627892
+            ],
+            [
+              77.20717487,
+              28.627514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-018",
+        "ulpin": "IN-01-0018",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-118",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": true,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20773882,
+              28.627577
+            ],
+            [
+              77.208272,
+              28.627577
+            ],
+            [
+              77.208272,
+              28.627955
+            ],
+            [
+              77.20773882,
+              28.627955
+            ],
+            [
+              77.20773882,
+              28.627577
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-019",
+        "ulpin": "IN-01-0019",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-119",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20838479,
+              28.627586
+            ],
+            [
+              77.20891797,
+              28.627586
+            ],
+            [
+              77.20891797,
+              28.627964
+            ],
+            [
+              77.20838479,
+              28.627964
+            ],
+            [
+              77.20838479,
+              28.627586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-020",
+        "ulpin": "IN-01-0020",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-120",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20904101,
+              28.627541
+            ],
+            [
+              77.2095742,
+              28.627541
+            ],
+            [
+              77.2095742,
+              28.627919
+            ],
+            [
+              77.20904101,
+              28.627919
+            ],
+            [
+              77.20904101,
+              28.627541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-021",
+        "ulpin": "IN-01-0021",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-121",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20962546,
+              28.627586
+            ],
+            [
+              77.21015865,
+              28.627586
+            ],
+            [
+              77.21015865,
+              28.627964
+            ],
+            [
+              77.20962546,
+              28.627964
+            ],
+            [
+              77.20962546,
+              28.627586
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-022",
+        "ulpin": "IN-01-0022",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-122",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21025093,
+              28.62755
+            ],
+            [
+              77.21078411,
+              28.62755
+            ],
+            [
+              77.21078411,
+              28.627928
+            ],
+            [
+              77.21025093,
+              28.627928
+            ],
+            [
+              77.21025093,
+              28.62755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-023",
+        "ulpin": "IN-01-0023",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-123",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21082513,
+              28.627514
+            ],
+            [
+              77.21135831,
+              28.627514
+            ],
+            [
+              77.21135831,
+              28.627892
+            ],
+            [
+              77.21082513,
+              28.627892
+            ],
+            [
+              77.21082513,
+              28.627514
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-024",
+        "ulpin": "IN-01-0024",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-124",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20655966,
+              28.628027
+            ],
+            [
+              77.20709285,
+              28.628027
+            ],
+            [
+              77.20709285,
+              28.628405
+            ],
+            [
+              77.20655966,
+              28.628405
+            ],
+            [
+              77.20655966,
+              28.628027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-025",
+        "ulpin": "IN-01-0025",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-125",
+        "land_use": "COMMERCIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20719538,
+              28.628009
+            ],
+            [
+              77.20772856,
+              28.628009
+            ],
+            [
+              77.20772856,
+              28.628387
+            ],
+            [
+              77.20719538,
+              28.628387
+            ],
+            [
+              77.20719538,
+              28.628009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-026",
+        "ulpin": "IN-01-0026",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-126",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20776958,
+              28.628009
+            ],
+            [
+              77.20830276,
+              28.628009
+            ],
+            [
+              77.20830276,
+              28.628387
+            ],
+            [
+              77.20776958,
+              28.628387
+            ],
+            [
+              77.20776958,
+              28.628009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-027",
+        "ulpin": "IN-01-0027",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-127",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20836428,
+              28.628036
+            ],
+            [
+              77.20889746,
+              28.628036
+            ],
+            [
+              77.20889746,
+              28.628414
+            ],
+            [
+              77.20836428,
+              28.628414
+            ],
+            [
+              77.20836428,
+              28.628036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-028",
+        "ulpin": "IN-01-0028",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-128",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20897949,
+              28.628027
+            ],
+            [
+              77.20951268,
+              28.628027
+            ],
+            [
+              77.20951268,
+              28.628405
+            ],
+            [
+              77.20897949,
+              28.628405
+            ],
+            [
+              77.20897949,
+              28.628027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-029",
+        "ulpin": "IN-01-0029",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-129",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20965622,
+              28.627991
+            ],
+            [
+              77.21018941,
+              28.627991
+            ],
+            [
+              77.21018941,
+              28.628369
+            ],
+            [
+              77.20965622,
+              28.628369
+            ],
+            [
+              77.20965622,
+              28.627991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-030",
+        "ulpin": "IN-01-0030",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-130",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21022017,
+              28.628027
+            ],
+            [
+              77.21075335,
+              28.628027
+            ],
+            [
+              77.21075335,
+              28.628405
+            ],
+            [
+              77.21022017,
+              28.628405
+            ],
+            [
+              77.21022017,
+              28.628027
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-031",
+        "ulpin": "IN-01-0031",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-131",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21083538,
+              28.628036
+            ],
+            [
+              77.21136856,
+              28.628036
+            ],
+            [
+              77.21136856,
+              28.628414
+            ],
+            [
+              77.21083538,
+              28.628414
+            ],
+            [
+              77.21083538,
+              28.628036
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-032",
+        "ulpin": "IN-01-0032",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-132",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20655966,
+              28.628441
+            ],
+            [
+              77.20709285,
+              28.628441
+            ],
+            [
+              77.20709285,
+              28.628819
+            ],
+            [
+              77.20655966,
+              28.628819
+            ],
+            [
+              77.20655966,
+              28.628441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-033",
+        "ulpin": "IN-01-0033",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-133",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20719538,
+              28.628459
+            ],
+            [
+              77.20772856,
+              28.628459
+            ],
+            [
+              77.20772856,
+              28.628837
+            ],
+            [
+              77.20719538,
+              28.628837
+            ],
+            [
+              77.20719538,
+              28.628459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-034",
+        "ulpin": "IN-01-0034",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-134",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20781059,
+              28.628414
+            ],
+            [
+              77.20834378,
+              28.628414
+            ],
+            [
+              77.20834378,
+              28.628792
+            ],
+            [
+              77.20781059,
+              28.628792
+            ],
+            [
+              77.20781059,
+              28.628414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-035",
+        "ulpin": "IN-01-0035",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-135",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20839504,
+              28.628414
+            ],
+            [
+              77.20892823,
+              28.628414
+            ],
+            [
+              77.20892823,
+              28.628792
+            ],
+            [
+              77.20839504,
+              28.628792
+            ],
+            [
+              77.20839504,
+              28.628414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-036",
+        "ulpin": "IN-01-0036",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-136",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20901025,
+              28.628459
+            ],
+            [
+              77.20954344,
+              28.628459
+            ],
+            [
+              77.20954344,
+              28.628837
+            ],
+            [
+              77.20901025,
+              28.628837
+            ],
+            [
+              77.20901025,
+              28.628459
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-037",
+        "ulpin": "IN-01-0037",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-137",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20963572,
+              28.628423
+            ],
+            [
+              77.2101689,
+              28.628423
+            ],
+            [
+              77.2101689,
+              28.628801
+            ],
+            [
+              77.20963572,
+              28.628801
+            ],
+            [
+              77.20963572,
+              28.628423
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-038",
+        "ulpin": "IN-01-0038",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-138",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21018941,
+              28.628477
+            ],
+            [
+              77.21072259,
+              28.628477
+            ],
+            [
+              77.21072259,
+              28.628855
+            ],
+            [
+              77.21018941,
+              28.628855
+            ],
+            [
+              77.21018941,
+              28.628477
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-039",
+        "ulpin": "IN-01-0039",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-139",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.21081487,
+              28.628441
+            ],
+            [
+              77.21134805,
+              28.628441
+            ],
+            [
+              77.21134805,
+              28.628819
+            ],
+            [
+              77.21081487,
+              28.628819
+            ],
+            [
+              77.21081487,
+              28.628441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-040",
+        "ulpin": "IN-01-0040",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-140",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20655966,
+              28.628864
+            ],
+            [
+              77.20709285,
+              28.628864
+            ],
+            [
+              77.20709285,
+              28.629242
+            ],
+            [
+              77.20655966,
+              28.629242
+            ],
+            [
+              77.20655966,
+              28.628864
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "PRC-01-041",
+        "ulpin": "IN-01-0041",
+        "ward_id": "Ward 16",
+        "area_name": "Central Heights",
+        "survey_number": "SY-141",
+        "land_use": "RESIDENTIAL",
+        "area_sqm": 2184.0,
+        "has_3d_property": false,
+        "zone": "Central Heights"
+      }
+    }
+  ]
+}

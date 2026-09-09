@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19902611,
+            28.641117
+          ],
+          [
+            77.20497389,
+            28.641117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-04-01",
+        "name": "Transit Quarter North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19902611,
+            28.640883
+          ],
+          [
+            77.20497389,
+            28.640883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-04-02",
+        "name": "Transit Quarter South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

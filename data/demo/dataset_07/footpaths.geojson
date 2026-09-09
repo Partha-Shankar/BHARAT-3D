@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19202657,
+            28.625117
+          ],
+          [
+            77.19797343,
+            28.625117
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-07-01",
+        "name": "Civic Transit Zone North Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19202657,
+            28.624883
+          ],
+          [
+            77.19797343,
+            28.624883
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FP-07-02",
+        "name": "Civic Transit Zone South Pedestrian Sidewalk",
+        "width": 3.0,
+        "pavement": "PAVER_BLOCKS"
+      }
+    }
+  ]
+}

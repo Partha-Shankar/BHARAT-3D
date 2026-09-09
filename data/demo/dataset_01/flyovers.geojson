@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20715437,
+              28.627955
+            ],
+            [
+              77.21064056,
+              28.627955
+            ],
+            [
+              77.21064056,
+              28.628081
+            ],
+            [
+              77.20715437,
+              28.628081
+            ],
+            [
+              77.20715437,
+              28.627955
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "FLY-01-01",
+        "name": "Central Heights Elevated Bypass Flyover (Deck: +8.5m)",
+        "asset_type": "FLYOVER",
+        "elevation_meters": 8.5,
+        "length_meters": 340,
+        "width_meters": 14.0,
+        "operator": "PWD Delhi / NHAI",
+        "status": "OPERATIONAL",
+        "associated_road": "RD-01-01"
+      }
+    }
+  ]
+}

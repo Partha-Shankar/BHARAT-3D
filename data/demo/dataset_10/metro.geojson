@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.20938477,
+              28.633035
+            ],
+            [
+              77.20984619,
+              28.633035
+            ],
+            [
+              77.20984619,
+              28.633233
+            ],
+            [
+              77.20938477,
+              28.633233
+            ],
+            [
+              77.20938477,
+              28.633035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-10-05",
+        "name": "Central Urban Core Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-10-0002",
+        "building_code": "BLD-10-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    }
+  ]
+}

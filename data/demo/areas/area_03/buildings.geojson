@@ -1,0 +1,781 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22443609,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622315
+            ],
+            [
+              77.2248257,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622531
+            ],
+            [
+              77.22443609,
+              28.622315
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-01",
+        "name": "Civic Square Aarav Heights Tower",
+        "ulpin": "IN-03-0008",
+        "building_code": "BLD-03-01",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 12,
+        "basement_floors": 2,
+        "height_meters": 39.0,
+        "footprint_area_sqm": 912,
+        "ground_elevation": 215.0,
+        "color": "#2563EB",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22376965,
+              28.62146
+            ],
+            [
+              77.22407724,
+              28.62146
+            ],
+            [
+              77.22407724,
+              28.62164
+            ],
+            [
+              77.22376965,
+              28.62164
+            ],
+            [
+              77.22376965,
+              28.62146
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-02",
+        "name": "Civic Square Residency Block B",
+        "ulpin": "IN-03-0014",
+        "building_code": "BLD-03-02",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "basement_floors": 0,
+        "height_meters": 15.0,
+        "footprint_area_sqm": 600,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22546138,
+              28.622225
+            ],
+            [
+              77.22612782,
+              28.622225
+            ],
+            [
+              77.22612782,
+              28.62263
+            ],
+            [
+              77.22546138,
+              28.62263
+            ],
+            [
+              77.22546138,
+              28.622225
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-03",
+        "name": "Civic Square Civic Grand Mall & Retail Hub",
+        "ulpin": "IN-03-0003",
+        "building_code": "BLD-03-03",
+        "building_type": "COMMERCIAL",
+        "total_floors": 4,
+        "basement_floors": 2,
+        "height_meters": 18.5,
+        "footprint_area_sqm": 2925,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22633288,
+              28.622855
+            ],
+            [
+              77.22715311,
+              28.622855
+            ],
+            [
+              77.22715311,
+              28.623143
+            ],
+            [
+              77.22633288,
+              28.623143
+            ],
+            [
+              77.22633288,
+              28.622855
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-04",
+        "name": "Civic Square Central Junction Railway Terminal",
+        "ulpin": "IN-03-0001",
+        "building_code": "BLD-03-04",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 12.0,
+        "operator": "Northern Railways",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22438482,
+              28.623035
+            ],
+            [
+              77.22484621,
+              28.623035
+            ],
+            [
+              77.22484621,
+              28.623233
+            ],
+            [
+              77.22438482,
+              28.623233
+            ],
+            [
+              77.22438482,
+              28.623035
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-05",
+        "name": "Civic Square Metro Interchange Station (Elevated +6m)",
+        "ulpin": "IN-03-0002",
+        "building_code": "BLD-03-05",
+        "building_type": "INFRASTRUCTURE",
+        "total_floors": 2,
+        "height_meters": 14.0,
+        "base_height": 6.0,
+        "operator": "DMRC",
+        "status": "OPERATIONAL",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22582023,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621235
+            ],
+            [
+              77.2260663,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621433
+            ],
+            [
+              77.22582023,
+              28.621235
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-07",
+        "name": "Civic Square Sharma Commercial Plaza",
+        "ulpin": "IN-03-0018",
+        "building_code": "BLD-03-07",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "sanctioned_floors": 4,
+        "height_meters": 21.2,
+        "color": "#DC2626",
+        "status": "VIOLATION_FLAGGED",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22318523,
+              28.622
+            ],
+            [
+              77.22348257,
+              28.622
+            ],
+            [
+              77.22348257,
+              28.622234
+            ],
+            [
+              77.22318523,
+              28.622234
+            ],
+            [
+              77.22318523,
+              28.622
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-08",
+        "name": "Civic Square Urban Property #8",
+        "ulpin": "IN-03-0023",
+        "building_code": "BLD-03-08",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 754,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22400547,
+              28.621946
+            ],
+            [
+              77.22432331,
+              28.621946
+            ],
+            [
+              77.22432331,
+              28.622171
+            ],
+            [
+              77.22400547,
+              28.622171
+            ],
+            [
+              77.22400547,
+              28.621946
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-09",
+        "name": "Civic Square Urban Property #9",
+        "ulpin": "IN-03-0024",
+        "building_code": "BLD-03-09",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 775,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22492823,
+              28.621919
+            ],
+            [
+              77.22514354,
+              28.621919
+            ],
+            [
+              77.22514354,
+              28.622108
+            ],
+            [
+              77.22492823,
+              28.622108
+            ],
+            [
+              77.22492823,
+              28.621919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-10",
+        "name": "Civic Square Urban Property #10",
+        "ulpin": "IN-03-0025",
+        "building_code": "BLD-03-10",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 441,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22602529,
+              28.621991
+            ],
+            [
+              77.22623035,
+              28.621991
+            ],
+            [
+              77.22623035,
+              28.622198
+            ],
+            [
+              77.22602529,
+              28.622198
+            ],
+            [
+              77.22602529,
+              28.621991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-11",
+        "name": "Civic Square Urban Property #11",
+        "ulpin": "IN-03-0026",
+        "building_code": "BLD-03-11",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 460,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.2232365,
+              28.622648
+            ],
+            [
+              77.22346206,
+              28.622648
+            ],
+            [
+              77.22346206,
+              28.622837
+            ],
+            [
+              77.2232365,
+              28.622837
+            ],
+            [
+              77.2232365,
+              28.622648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-12",
+        "name": "Civic Square Urban Property #12",
+        "ulpin": "IN-03-0027",
+        "building_code": "BLD-03-12",
+        "building_type": "COMMERCIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 462,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22402597,
+              28.62263
+            ],
+            [
+              77.22426179,
+              28.62263
+            ],
+            [
+              77.22426179,
+              28.622837
+            ],
+            [
+              77.22402597,
+              28.622837
+            ],
+            [
+              77.22402597,
+              28.62263
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-13",
+        "name": "Civic Square Urban Property #13",
+        "ulpin": "IN-03-0028",
+        "building_code": "BLD-03-13",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 529,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22510253,
+              28.622684
+            ],
+            [
+              77.22543062,
+              28.622684
+            ],
+            [
+              77.22543062,
+              28.622882
+            ],
+            [
+              77.22510253,
+              28.622882
+            ],
+            [
+              77.22510253,
+              28.622684
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-14",
+        "name": "Civic Square Urban Property #14",
+        "ulpin": "IN-03-0029",
+        "building_code": "BLD-03-14",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 704,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22593302,
+              28.62281
+            ],
+            [
+              77.22619959,
+              28.62281
+            ],
+            [
+              77.22619959,
+              28.623035
+            ],
+            [
+              77.22593302,
+              28.623035
+            ],
+            [
+              77.22593302,
+              28.62281
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-15",
+        "name": "Civic Square Urban Property #15",
+        "ulpin": "IN-03-0030",
+        "building_code": "BLD-03-15",
+        "building_type": "COMMERCIAL",
+        "total_floors": 8,
+        "height_meters": 25.6,
+        "footprint_area_sqm": 650,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22314422,
+              28.623404
+            ],
+            [
+              77.22340054,
+              28.623404
+            ],
+            [
+              77.22340054,
+              28.623593
+            ],
+            [
+              77.22314422,
+              28.623593
+            ],
+            [
+              77.22314422,
+              28.623404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-16",
+        "name": "Civic Square Urban Property #16",
+        "ulpin": "IN-03-0031",
+        "building_code": "BLD-03-16",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 6,
+        "height_meters": 19.2,
+        "footprint_area_sqm": 525,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22401572,
+              28.623476
+            ],
+            [
+              77.22432331,
+              28.623476
+            ],
+            [
+              77.22432331,
+              28.623647
+            ],
+            [
+              77.22401572,
+              28.623647
+            ],
+            [
+              77.22401572,
+              28.623476
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-17",
+        "name": "Civic Square Urban Property #17",
+        "ulpin": "IN-03-0032",
+        "building_code": "BLD-03-17",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 3,
+        "height_meters": 9.6,
+        "footprint_area_sqm": 570,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22495899,
+              28.623359
+            ],
+            [
+              77.22527683,
+              28.623359
+            ],
+            [
+              77.22527683,
+              28.623521
+            ],
+            [
+              77.22495899,
+              28.623521
+            ],
+            [
+              77.22495899,
+              28.623359
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-18",
+        "name": "Civic Square Urban Property #18",
+        "ulpin": "IN-03-0033",
+        "building_code": "BLD-03-18",
+        "building_type": "COMMERCIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 558,
+        "ground_elevation": 215.0,
+        "color": "#F59E0B",
+        "has_3d": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.22588175,
+              28.623386
+            ],
+            [
+              77.22609706,
+              28.623386
+            ],
+            [
+              77.22609706,
+              28.623611
+            ],
+            [
+              77.22588175,
+              28.623611
+            ],
+            [
+              77.22588175,
+              28.623386
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "BLD-03-19",
+        "name": "Civic Square Urban Property #19",
+        "ulpin": "IN-03-0034",
+        "building_code": "BLD-03-19",
+        "building_type": "RESIDENTIAL",
+        "total_floors": 5,
+        "height_meters": 16.0,
+        "footprint_area_sqm": 525,
+        "ground_elevation": 215.0,
+        "color": "#3B82F6",
+        "has_3d": true
+      }
+    }
+  ]
+}

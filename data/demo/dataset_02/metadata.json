@@ -1,0 +1,20 @@
+{
+  "area_id": "area_02",
+  "area_name": "Metro District",
+  "ward_number": "Ward 22",
+  "theme": "Transit Terminal, Elevated Flyover & High-Density Commercial Core",
+  "version": "v3.0",
+  "center": [
+    77.218,
+    28.634
+  ],
+  "bounding_box": [
+    77.21300000000001,
+    28.629,
+    77.223,
+    28.639
+  ],
+  "crs": "EPSG:4326",
+  "created_at": "2026-09-01T19:20:19.833615",
+  "files_count": 24
+}
