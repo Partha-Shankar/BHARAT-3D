@@ -42,3 +42,8 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Chat context & status archives
+PROJECT_FULL_STATUS_AND_CHAT_CONTEXT.md
+*CHAT_CONTEXT*.md
+*PROJECT_CONTEXT*.md
