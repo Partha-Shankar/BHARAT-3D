@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getToken, removeToken, removeUser } from './auth';
+import { getToken } from './auth';
 
 const apiBaseUrl = import.meta.env.VITE_API_URL 
   ? `${import.meta.env.VITE_API_URL.replace(/\/$/, '')}/api`
@@ -10,8 +10,8 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 10000,
 });
-
 
 api.interceptors.request.use(
   (config) => {
@@ -27,11 +27,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status === 401) {
-      removeToken();
-      removeUser();
-      window.location.href = '/login';
-    }
+    // Graceful error propagation to React Query / Zustand without full-page reloads
     return Promise.reject(error);
   }
 );

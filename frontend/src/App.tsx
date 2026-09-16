@@ -11,6 +11,8 @@ import CitizenLayout from './components/layout/CitizenLayout';
 // Pages
 import { LandingPage } from './pages/LandingPage';
 import { LoginPage } from './pages/LoginPage';
+import { PrivacyPolicyPage } from './pages/legal/PrivacyPolicyPage';
+import { TermsOfServicePage } from './pages/legal/TermsOfServicePage';
 
 import { DashboardPage as SurveyorDashboard } from './pages/surveyor/DashboardPage';
 import { ProjectsPage } from './pages/surveyor/ProjectsPage';
@@ -97,6 +99,8 @@ export const App: React.FC = () => {
         </Route>
       </Route>
 
+      <Route path="/privacy" element={<PrivacyPolicyPage />} />
+      <Route path="/terms" element={<TermsOfServicePage />} />
       <Route path="/" element={<LandingPage />} />
       <Route path="/welcome" element={<LandingPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />

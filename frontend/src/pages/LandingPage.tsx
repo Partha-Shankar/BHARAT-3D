@@ -63,10 +63,6 @@ export const LandingPage: React.FC = () => {
       {/* Hero Section */}
       <section id="overview" className="py-20 px-6 border-b border-slate-100 bg-gradient-to-b from-slate-50/50 to-white">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium">
-            <span>Sovereign 3D Cadastre & Digital Twin Platform</span>
-          </div>
-
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
             2D-to-3D Spatial Property & Infrastructure Registry
           </h1>
@@ -272,11 +268,13 @@ export const LandingPage: React.FC = () => {
             </div>
             <span>BHARAT 3D</span>
           </div>
-          <div className="flex items-center space-x-6 text-slate-500">
+          <div className="flex items-center space-x-5 text-slate-500">
             <a href="#overview" className="hover:text-slate-900">Overview</a>
             <a href="#portals" className="hover:text-slate-900">Workspaces</a>
             <a href="#features" className="hover:text-slate-900">Capabilities</a>
-            <button onClick={() => navigate('/login')} className="hover:text-slate-900">Sign In</button>
+            <button onClick={() => navigate('/privacy')} className="hover:text-slate-900">Privacy Policy</button>
+            <button onClick={() => navigate('/terms')} className="hover:text-slate-900">Terms</button>
+            <button onClick={() => navigate('/login')} className="hover:text-slate-900 font-medium text-slate-900">Sign In</button>
           </div>
           <div>
             © 2026 BHARAT 3D. National Spatial Property & Infrastructure Registry.

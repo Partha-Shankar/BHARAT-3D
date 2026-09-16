@@ -207,9 +207,9 @@ export const LoginPage: React.FC = () => {
       <div className="w-full max-w-4xl flex items-center justify-between text-[11px] text-slate-400 z-10">
         <div>BHARAT 3D Geospatial Intelligence</div>
         <div className="flex items-center space-x-4">
-          <span className="hover:text-slate-600 cursor-pointer">Privacy Policy</span>
+          <button onClick={() => navigate('/privacy')} className="hover:text-slate-600 transition-colors">Privacy Policy</button>
           <span>•</span>
-          <span className="hover:text-slate-600 cursor-pointer">Terms of Service</span>
+          <button onClick={() => navigate('/terms')} className="hover:text-slate-600 transition-colors">Terms of Service</button>
         </div>
       </div>
     </div>

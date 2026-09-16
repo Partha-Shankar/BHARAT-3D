@@ -5,6 +5,7 @@ from pydantic import BaseModel, ConfigDict, EmailStr
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str
+    user: Optional['UserResponse'] = None
 
 class LoginRequest(BaseModel):
     email: EmailStr
