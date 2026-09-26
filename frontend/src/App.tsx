@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute';
+import { PublicPageShell } from './components/layout/PageTransition';
 
 // Layouts
 import SurveyorLayout from './components/layout/SurveyorLayout';
@@ -21,7 +22,6 @@ import { DataUploadPage } from './pages/surveyor/DataUploadPage';
 import { ProcessingPage } from './pages/surveyor/ProcessingPage';
 import { MapPage } from './pages/surveyor/MapPage';
 import { EditorPage } from './pages/surveyor/EditorPage';
-import { Viewer3DPage } from './pages/surveyor/Viewer3DPage';
 import { Full3DWorldPage } from './pages/surveyor/Full3DWorldPage';
 import { RegistryPage } from './pages/surveyor/RegistryPage';
 import { ViolationsPage } from './pages/shared/ViolationsPage';
@@ -34,7 +34,13 @@ import { CitizenDashboard } from './pages/citizen/CitizenDashboard';
 export const App: React.FC = () => {
   return (
     <Routes>
-      <Route path="/login" element={<LoginPage />} />
+      <Route element={<PublicPageShell />}>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsOfServicePage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/welcome" element={<LandingPage />} />
+      </Route>
 
       <Route element={<ProtectedRoute />}>
         {/* Full-screen 3D Mini-City Digital Twin routes (No layout chrome/sidebars) */}
@@ -99,13 +105,8 @@ export const App: React.FC = () => {
         </Route>
       </Route>
 
-      <Route path="/privacy" element={<PrivacyPolicyPage />} />
-      <Route path="/terms" element={<TermsOfServicePage />} />
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/welcome" element={<LandingPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
-
   );
 };
 

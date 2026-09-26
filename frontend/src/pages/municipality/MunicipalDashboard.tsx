@@ -20,17 +20,17 @@ export const MunicipalDashboard: React.FC = () => {
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8">
       {/* Header */}
-      <div className="bg-gradient-to-r from-navy-950 to-navy-900 p-6 rounded-xl text-white shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-[#1e4d6b] p-6 rounded-sm text-white shadow-sm border border-[#173e56] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <div className="inline-flex items-center space-x-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
+          <div className="inline-flex items-center space-x-2 text-[#8fd0c8] text-xs font-semibold uppercase tracking-wider mb-1">
             <Scale className="w-3.5 h-3.5" />
-            <span>Urban Local Body • Governance & Compliance</span>
+            <span>Municipality workspace</span>
           </div>
-          <h1 className="text-xl font-bold tracking-tight text-white">
-            Municipal Corporation 3D Cadastre Dashboard
+          <h1 className="text-xl font-bold tracking-tight text-[#f3efe6]">
+            Municipal compliance dashboard
           </h1>
-          <p className="text-xs text-slate-300 mt-1 max-w-xl">
-            Audit building permission compliance, discover unassessed vertical expansions ($G+N$), prevent property tax leakage, and enforce public sidewalk rights-of-way.
+          <p className="text-xs text-[#d5e3ea] mt-1 max-w-xl">
+            Audit height, setbacks, and footpath lines against the 3D registry—catch unassessed floors and encroachments before they become disputes.
           </p>
         </div>
 
@@ -38,7 +38,6 @@ export const MunicipalDashboard: React.FC = () => {
           variant="accent"
           size="md"
           onClick={() => navigate('/municipality/violations')}
-          className="shadow-md"
         >
           <AlertOctagon className="w-4 h-4 mr-2" />
           <span>Audit Active Violations</span>

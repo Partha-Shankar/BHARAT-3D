@@ -15,12 +15,12 @@ export const Card: React.FC<CardProps> = ({
   ...props
 }) => {
   return (
-    <div className={`bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden ${className}`} {...props}>
+    <div className={`bg-white rounded-sm border border-[#e4dccf] shadow-sm overflow-hidden ${className}`} {...props}>
       {(title || subtitle || actions) && (
-        <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+        <div className="px-5 py-4 border-b border-[#e4dccf] flex items-center justify-between">
           <div>
-            {title && <h3 className="text-base font-semibold text-slate-900">{title}</h3>}
-            {subtitle && <p className="text-xs text-slate-500 mt-0.5">{subtitle}</p>}
+            {title && <h3 className="text-base font-semibold text-[#16324a]">{title}</h3>}
+            {subtitle && <p className="text-xs text-[#5c6e7c] mt-0.5">{subtitle}</p>}
           </div>
           {actions && <div className="flex items-center space-x-2">{actions}</div>}
         </div>
@@ -31,13 +31,13 @@ export const Card: React.FC<CardProps> = ({
 };
 
 export const CardHeader: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({ children, className = '', ...props }) => (
-  <div className={`px-5 py-4 border-b border-slate-100 ${className}`} {...props}>
+  <div className={`px-5 py-4 border-b border-[#e4dccf] ${className}`} {...props}>
     {children}
   </div>
 );
 
 export const CardTitle: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({ children, className = '', ...props }) => (
-  <h3 className={`text-base font-semibold text-slate-900 ${className}`} {...props}>
+  <h3 className={`text-base font-semibold text-[#16324a] ${className}`} {...props}>
     {children}
   </h3>
 );

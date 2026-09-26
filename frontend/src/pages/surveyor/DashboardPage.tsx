@@ -24,17 +24,17 @@ export const DashboardPage: React.FC = () => {
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8">
       {/* Header Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-800 p-6 rounded-xl text-white shadow-md">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[#1e4d6b] p-6 rounded-sm text-white shadow-sm border border-[#173e56]">
         <div>
-          <div className="inline-flex items-center space-x-2 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-1">
+          <div className="inline-flex items-center space-x-2 text-[#8fd0c8] text-xs font-semibold uppercase tracking-wider mb-1">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>National 3D Cadastral Mapping</span>
+            <span>Surveyor workspace</span>
           </div>
-          <h1 className="text-xl font-bold tracking-tight text-white">
-            Surveyor Cadastral Workspace
+          <h1 className="text-xl font-bold tracking-tight text-[#f3efe6]">
+            Surveyor cadastre studio
           </h1>
-          <p className="text-xs text-slate-300 mt-1 max-w-xl">
-            Create multi-sensor 3D survey projects, extract volumetric boundaries, and assign 3D ULPIN / VPRID identifiers to vertical urban properties.
+          <p className="text-xs text-[#d5e3ea] mt-1 max-w-xl">
+            Register child 3D identities on top of the ground ULPIN: model volumes, confirm geometry, and save to the registry.
           </p>
         </div>
         <div className="flex items-center space-x-3">
@@ -42,7 +42,6 @@ export const DashboardPage: React.FC = () => {
             variant="accent"
             size="md"
             onClick={() => navigate('/surveyor/projects')}
-            className="shadow-md"
           >
             <FolderPlus className="w-4 h-4 mr-2" />
             <span>New Survey Project</span>

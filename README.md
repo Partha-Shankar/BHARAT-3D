@@ -1,5 +1,7 @@
 <p align="center">
 
+<img src="frontend/public/bharat3d-logo.png" alt="BHARAT 3D" width="112" />
+
 # BHARAT 3D
 
 **2D-to-3D Spatial Property and Infrastructure Registry**

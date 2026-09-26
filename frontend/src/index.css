@@ -3,7 +3,59 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
-    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    @apply bg-[#f3efe6] text-[#1b3344] font-sans antialiased;
+  }
+}
+
+.public-shell {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  background: #f3efe6;
+  color: #1b3344;
+}
+
+.public-shell h1,
+.public-shell h2,
+.public-shell h3 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.workspace-shell {
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  color: #1b3344;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-enter {
+    animation: page-enter 0.22s ease-out both;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter {
+    animation: none;
   }
 }

@@ -15,15 +15,15 @@ export const Badge: React.FC<BadgeProps> = ({
   ...props
 }) => {
   const variantStyles: Record<string, string> = {
-    primary: 'bg-navy-900 text-white border-navy-800',
-    success: 'bg-green-50 text-green-700 border-green-200',
-    warning: 'bg-amber-50 text-amber-700 border-amber-200',
+    primary: 'bg-[#1e4d6b] text-white border-[#173e56]',
+    success: 'bg-[#eef6f5] text-[#18655e] border-[#b7cfcb]',
+    warning: 'bg-[#faf4ea] text-[#8a6b3a] border-[#e4dccf]',
     danger: 'bg-red-50 text-red-700 border-red-200',
     error: 'bg-red-50 text-red-700 border-red-200',
-    info: 'bg-blue-50 text-blue-700 border-blue-200',
-    neutral: 'bg-slate-100 text-slate-700 border-slate-200',
-    default: 'bg-slate-100 text-slate-700 border-slate-200',
-    accent: 'bg-orange-50 text-orange-700 border-orange-200',
+    info: 'bg-[#eef4f8] text-[#1e4d6b] border-[#c5d4de]',
+    neutral: 'bg-[#f7f4ee] text-[#3d5363] border-[#e4dccf]',
+    default: 'bg-[#f7f4ee] text-[#3d5363] border-[#e4dccf]',
+    accent: 'bg-[#eef6f5] text-[#1f7a72] border-[#b7cfcb]',
   };
 
   const sizeStyles: Record<string, string> = {
