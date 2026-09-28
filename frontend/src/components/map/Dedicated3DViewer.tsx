@@ -97,11 +97,12 @@ export const Dedicated3DViewer: React.FC<Dedicated3DViewerProps> = ({
     camera.position.set(28, 22, 34);
     camera.lookAt(0, 6, 0);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
     rendererRef.current = renderer;
     renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
     mountRef.current.innerHTML = '';
     mountRef.current.appendChild(renderer.domElement);
 
@@ -112,8 +113,8 @@ export const Dedicated3DViewer: React.FC<Dedicated3DViewerProps> = ({
     const mainSunLight = new THREE.DirectionalLight(0xffffff, 1.3);
     mainSunLight.position.set(30, 50, 25);
     mainSunLight.castShadow = true;
-    mainSunLight.shadow.mapSize.width = 2048;
-    mainSunLight.shadow.mapSize.height = 2048;
+    mainSunLight.shadow.mapSize.width = 1024;
+    mainSunLight.shadow.mapSize.height = 1024;
     scene.add(mainSunLight);
 
     const rimLight = new THREE.DirectionalLight(0x38bdf8, 0.6);

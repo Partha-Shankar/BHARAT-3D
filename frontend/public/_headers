@@ -1,0 +1,90 @@
+# Global fallbacks: HTML is revalidated to ensure latest SPA index.html is loaded
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Static build assets (Vite hashed bundles JS, CSS) - cache forever (1 year)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+# 3D Geometries, Digital Twins & Point Cloud Formats
+/*.geojson
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+  CDN-Cache-Control: max-age=2592000
+  Cloudflare-CDN-Cache-Control: max-age=2592000
+
+/*.gltf
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.glb
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.bin
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.obj
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.las
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.laz
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.tif
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.tiff
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+/*.pbf
+  Cache-Control: public, max-age=31536000, immutable
+  CDN-Cache-Control: max-age=31536000
+  Cloudflare-CDN-Cache-Control: max-age=31536000
+
+# Images and branding assets
+/bharat3d-logo.png
+  Cache-Control: public, max-age=2592000
+  CDN-Cache-Control: max-age=2592000
+  Cloudflare-CDN-Cache-Control: max-age=2592000
+
+/*.png
+  Cache-Control: public, max-age=2592000
+  CDN-Cache-Control: max-age=2592000
+
+/*.jpg
+  Cache-Control: public, max-age=2592000
+  CDN-Cache-Control: max-age=2592000
+
+/*.svg
+  Cache-Control: public, max-age=2592000
+  CDN-Cache-Control: max-age=2592000
+
+/*.ico
+  Cache-Control: public, max-age=2592000
+  CDN-Cache-Control: max-age=2592000
+
+# JSON data files
+/*.json
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  CDN-Cache-Control: max-age=604800

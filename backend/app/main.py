@@ -2,6 +2,7 @@ import logging
 from fastapi import FastAPI
 from fastapi.responses import ORJSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from app.core.database import create_tables
 from app.api import auth, projects, jobs, buildings, units, violations, infrastructure, excavation, citizen, audit, maps
 from app.core.config import get_settings
@@ -24,6 +25,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 app.include_router(auth.router, prefix="/api")
 app.include_router(projects.router, prefix="/api")
