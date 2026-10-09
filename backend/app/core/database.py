@@ -82,7 +82,7 @@ async def create_tables():
             existing_proj = proj_result.scalars().first()
             if not existing_proj:
                 p1 = Project(
-                    id="proj-001",
+                    id=1,
                     name="Central Urban Zone - Ward 16 Survey",
                     description="High-density urban cadastre survey with residential towers, commercial mall, and metro tunnel infrastructure.",
                     ward_number="Ward 16",
@@ -91,7 +91,7 @@ async def create_tables():
                     dataset_version=3
                 )
                 p2 = Project(
-                    id="proj-002",
+                    id=2,
                     name="North Suburbs Expansion",
                     description="New residential mapping",
                     ward_number="Ward 4",

@@ -21,7 +21,7 @@ from app.services.spatial_service import (
     archive_3d_registry_snapshot,
     finalize_project
 )
-from app.demo.area_selector import DemoAreaSelector
+from app.realgen.geo import polygon_from_geojson, polygon_key
 
 router = APIRouter(prefix="/projects", tags=["projects"])
 settings = get_settings()
@@ -79,23 +79,25 @@ async def set_project_area(id: str, req: AreaRequest, db: AsyncSession = Depends
 
     polygon_str = json.dumps(req.polygon_geojson) if isinstance(req.polygon_geojson, dict) else str(req.polygon_geojson)
     proj.survey_polygon = polygon_str
-    
-    # Resolve polygon to one of 10 prepared areas
-    resolved_area = DemoAreaSelector.select_area_for_job("job_init", pid, polygon_str)
-    proj.selected_area_id = resolved_area
-    proj.dataset_version = f"v{resolved_area.replace('area_', '')}.0"
+
+    # The drawn polygon itself is the survey area; the 3D scene is generated from it by /api/realgen/generate.
+    try:
+        poly = polygon_from_geojson(req.polygon_geojson)
+    except Exception as exc:
+        raise HTTPException(422, f"Invalid polygon: {exc}")
+    key = polygon_key(poly)
+    proj.selected_area_id = f"gen:{key}"
 
     await db.commit()
     await db.refresh(proj)
-    
-    metadata = DemoAreaSelector.get_area_metadata(resolved_area)
+
+    c = poly.centroid
     return {
         "status": "SUCCESS",
         "project_id": pid,
-        "selected_area_id": resolved_area,
-        "area_name": metadata.get("area_name", "Central Urban Zone"),
-        "ward": metadata.get("ward_number", "Ward 16"),
-        "center": metadata.get("center", [77.2090, 28.6280])
+        "selected_area_id": proj.selected_area_id,
+        "scene_key": key,
+        "center": [round(c.x, 6), round(c.y, 6)],
     }
 
 @router.get("/{id}/datasets", response_model=List[DatasetResponse])

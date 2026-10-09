@@ -1,11 +1,16 @@
+# Render Blueprint — BHARAT 3D API (FastAPI)
+# New → Blueprint → select this repository. Secrets marked `sync: false` are entered in the dashboard.
 services:
   - type: web
     name: bharat-3d-backend
     runtime: python
     plan: free
+    region: singapore
     rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    healthCheckPath: /health
+    autoDeploy: false
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
@@ -14,4 +19,19 @@ services:
       - key: ENVIRONMENT
         value: production
       - key: DEMO_MODE
+        value: "true"
+      # Allowed browser origins (comma-separated). Add custom domains here.
+      - key: CORS_ORIGINS
+        value: https://bharat-3d.pages.dev,http://localhost:5173,http://localhost:5180
+      # Where generated areas (imagery, OSM snapshot, scene, registry) are stored.
+      - key: REALGEN_CACHE_DIR
+        value: /tmp/bharat3d-generated
+      # Groq LLM for building names and area summaries — paste the key in the dashboard.
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      # The free instance has 512 MB RAM; height estimation then uses the typology model.
+      # On a Standard instance, install requirements-ml.txt and set this to "false" to enable Depth Anything V2.
+      - key: REALGEN_DISABLE_ML
         value: "true"

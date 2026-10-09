@@ -1,507 +1,264 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { Button } from '../../components/ui/Button';
-import { useStartProcessing } from '../../hooks/useProcessing';
-import { useAppStore } from '../../stores/appStore';
 import {
-  UploadCloud,
-  CheckCircle2,
-  Sparkles,
-  ArrowRight,
-  FolderOpen,
-  Check,
-  RefreshCw,
-  Loader2,
-  FileCheck2,
-  CloudUpload
+  ArrowRight, CheckCircle2, FolderUp, Loader2, MapPinned, PackageCheck, Plus, RefreshCw, ShieldCheck, Sparkles, Trash2, Upload, AlertTriangle,
 } from 'lucide-react';
+import { startGeneration } from '../../world/api';
+import { useSurveyDraft, readyCount, type SlotState } from '../../survey/draft';
+import { DATASET_SLOTS, acceptsFile, fmtBytes, manifest, sampleFile, simulateUpload, type DatasetSlot } from '../../survey/datasets';
+import { SurveySteps } from '../../survey/Steps';
+import { PolygonPreview } from '../../survey/PolygonPreview';
+import { EmptyState, Page, ProgressRing, Tick } from '../../survey/ui';
+import { CountUp } from '../../world/ui';
 
-interface ModalityCard {
-  id: string;
-  title: string;
-  extensions: string;
-  acceptTypes: string;
-  defaultFileName: string;
-  defaultFileSize: string;
-  uploadedFileName?: string;
-  uploadedFileSize?: string;
-  status: 'idle' | 'uploading' | 'completed';
-  progress: number;
-}
+const IDLE: SlotState = { status: 'idle', progress: 0, checks: [] };
 
-const PACKAGE_NAMES: Record<string, string> = {
-  area_01: 'Central Heights Survey Zone (Ward 16)',
-  area_02: 'Metro District Transit Corridor (Ward 22)',
-  area_03: 'Civic Square Urban Center (Ward 08)',
-  area_04: 'Transit Quarter Multi-Modal Sector (Ward 31)',
-  area_05: 'Urban Heights High-Rise Zone (Ward 14)',
-  area_06: 'Central Market Commercial Hub (Ward 19)',
-  area_07: 'Civic Transit Infrastructure Zone (Ward 05)',
-  area_08: 'Integrated Eco-District Sector (Ward 27)',
-  area_09: 'Vertical City Skyscraper District (Ward 11)',
-  area_10: 'Central Urban Core (Ward 01)',
+const SlotCard: React.FC<{
+  slot: DatasetSlot; state: SlotState; onFile: (f: File) => void; onSample: () => void; onRemove: () => void; index: number;
+}> = ({ slot, state, onFile, onSample, onRemove, index }) => {
+  const input = useRef<HTMLInputElement>(null);
+  const [over, setOver] = useState(false);
+  const [rate, setRate] = useState<number | null>(null);
+  const last = useRef<{ p: number; t: number } | null>(null);
+  const Icon = slot.icon;
+
+  // transfer rate for the uploading state
+  useEffect(() => {
+    if (state.status !== 'uploading' || !state.file) {
+      last.current = null;
+      setRate(null);
+      return;
+    }
+    const now = performance.now();
+    if (last.current && now - last.current.t > 250) {
+      const bytes = ((state.progress - last.current.p) / 100) * state.file.size;
+      setRate(bytes / ((now - last.current.t) / 1000));
+      last.current = { p: state.progress, t: now };
+    } else if (!last.current) last.current = { p: state.progress, t: now };
+  }, [state.progress, state.status, state.file]);
+
+  const ready = state.status === 'ready';
+  return (
+    <div className={`b3-card p-4 flex flex-col gap-3 b3-rise ${ready ? '!border-[#1f7a72]/35' : ''}`} style={{ animationDelay: `${0.08 + index * 0.05}s` }}>
+      <div className="flex items-start gap-3">
+        <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-colors duration-500 ${ready ? 'bg-[#1f7a72] text-white' : 'bg-[#1e4d6b]/8 text-[#1e4d6b]'}`}>
+          {ready ? <Tick className="w-5 h-5" /> : <Icon className="w-[18px] h-[18px]" />}
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="font-semibold text-[13.5px] text-[#1b3344] truncate">{slot.title}</h3>
+            {ready && <span className="b3-chip b3-chip-real b3-pop">Validated</span>}
+          </div>
+          <p className="text-[11.5px] text-[#5c6e7c] leading-snug">{slot.feeds}</p>
+        </div>
+      </div>
+
+      {state.status === 'idle' || state.status === 'error' ? (
+        <div
+          className={`b3-drop flex-1 min-h-[112px] flex flex-col items-center justify-center gap-1.5 text-center px-3 py-4 cursor-pointer ${over ? 'is-over' : ''}`}
+          onClick={() => input.current?.click()}
+          onDragOver={(e) => { e.preventDefault(); setOver(true); }}
+          onDragLeave={() => setOver(false)}
+          onDrop={(e) => { e.preventDefault(); setOver(false); const f = e.dataTransfer.files?.[0]; if (f) onFile(f); }}
+        >
+          <Upload className={`w-5 h-5 transition-transform duration-500 ${over ? '-translate-y-1 text-[#1f7a72]' : 'text-[#7d8c97]'}`} />
+          <div className="text-[12.5px] text-[#33495a]"><b>Drop a file</b> or click to browse</div>
+          <div className="flex flex-wrap justify-center gap-1">
+            {slot.formats.map((f) => <span key={f} className="font-mono text-[10px] text-[#7d8c97] bg-white/70 border border-[#e4dccf] rounded px-1">{f}</span>)}
+          </div>
+          <button type="button" className="text-[11.5px] text-[#1f7a72] font-semibold hover:underline underline-offset-2 mt-0.5"
+            onClick={(e) => { e.stopPropagation(); onSample(); }}>
+            Use the sample file
+          </button>
+          {state.status === 'error' && <div className="text-[11px] text-[#c0392b] flex items-center gap-1 b3-pop"><AlertTriangle className="w-3.5 h-3.5" /> {state.error}</div>}
+          <input ref={input} type="file" hidden accept={slot.formats.join(',')}
+            onChange={(e) => { const f = e.target.files?.[0]; if (f) onFile(f); e.target.value = ''; }} />
+        </div>
+      ) : (
+        <div className="b3-well p-3 flex-1 min-h-[112px] space-y-2 b3-fade">
+          <div className="flex items-center justify-between gap-2 text-[12px]">
+            <span className="font-mono truncate text-[#1b3344]" title={state.file?.name}>{state.file?.name}</span>
+            <span className="text-[#7d8c97] shrink-0">{state.file ? fmtBytes(state.file.size) : ''}</span>
+          </div>
+          {state.status === 'uploading' && (
+            <>
+              <div className="b3-bar"><span className="b3-shimmer" style={{ width: `${state.progress}%` }} /></div>
+              <div className="flex justify-between text-[11px] text-[#5c6e7c] b3-num">
+                <span>Uploading · {state.progress}%</span>
+                <span>{rate ? `${fmtBytes(rate)}/s` : ''}</span>
+              </div>
+            </>
+          )}
+          {state.status === 'validating' && (
+            <div className="text-[11.5px] text-[#1e4d6b] flex items-center gap-2 b3-breathe">
+              <Loader2 className="w-3.5 h-3.5 animate-spin" /> Validating coordinate system, schema and coverage…
+            </div>
+          )}
+          {ready && (
+            <ul className="space-y-1 b3-stagger">
+              {state.checks.map((c) => (
+                <li key={c} className="text-[11.5px] text-[#33495a] flex items-start gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#1f7a72] mt-[1px] shrink-0" /> <span>{c}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          {ready && (
+            <div className="flex gap-1.5 pt-1">
+              <button type="button" className="b3-btn b3-btn-ghost !px-2 !py-1 !text-[11px]" onClick={() => input.current?.click()}><RefreshCw className="w-3 h-3" /> Replace</button>
+              <button type="button" className="b3-btn b3-btn-ghost !px-2 !py-1 !text-[11px] hover:!text-[#c0392b]" onClick={onRemove}><Trash2 className="w-3 h-3" /> Remove</button>
+              {state.file?.sample && <span className="ml-auto b3-chip b3-chip-plain">Sample</span>}
+              <input ref={input} type="file" hidden accept={slot.formats.join(',')}
+                onChange={(e) => { const f = e.target.files?.[0]; if (f) onFile(f); e.target.value = ''; }} />
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export const DataUploadPage: React.FC = () => {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
-  const projectId = searchParams.get('project_id') || 'proj-001';
-  const paramAreaId = searchParams.get('area_id');
-  const startProcessing = useStartProcessing(projectId);
-  const { selectedAreaId } = useAppStore();
+  const [params] = useSearchParams();
+  const projectId = params.get('project_id') || 'proj-001';
+  const { draft, setSlot, resetSlots, clear } = useSurveyDraft();
+  const cancels = useRef<Record<string, () => void>>({});
+  const [starting, setStarting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const currentAreaKey = paramAreaId || selectedAreaId || 'area_01';
-  const pkgNum = parseInt(currentAreaKey.replace('area_', ''), 10) || 1;
-  const packageName = PACKAGE_NAMES[currentAreaKey] || PACKAGE_NAMES['area_01'];
+  useEffect(() => () => Object.values(cancels.current).forEach((c) => c()), []);
 
-  const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
-  const [dragOverId, setDragOverId] = useState<string | null>(null);
-  const [isBulkUploading, setIsBulkUploading] = useState<boolean>(false);
-
-  // 6 Clean Primary Modality Cards
-  const [cards, setCards] = useState<ModalityCard[]>([
-    {
-      id: 'drone',
-      title: 'Drone Imagery',
-      extensions: '(.tif, .jpg, .png)',
-      acceptTypes: '.tif,.tiff,.jp2,.jpg,.jpeg,.png',
-      defaultFileName: `drone_orthomosaic_pkg${pkgNum < 10 ? '0' + pkgNum : pkgNum}.tif`,
-      defaultFileSize: '842 MB',
-      status: 'idle',
-      progress: 0,
-    },
-    {
-      id: 'lidar',
-      title: 'LiDAR Point Cloud',
-      extensions: '(.las, .laz)',
-      acceptTypes: '.las,.laz',
-      defaultFileName: `lidar_classified_pkg${pkgNum < 10 ? '0' + pkgNum : pkgNum}.las`,
-      defaultFileSize: '418 MB',
-      status: 'idle',
-      progress: 0,
-    },
-    {
-      id: 'floorplans',
-      title: 'Floor Plans & BIM',
-      extensions: '(.dxf, .dwg, .ifc, .pdf)',
-      acceptTypes: '.dxf,.dwg,.ifc,.pdf',
-      defaultFileName: 'floor_plans_bim.dxf',
-      defaultFileSize: '18.4 MB',
-      status: 'idle',
-      progress: 0,
-    },
-    {
-      id: 'cadastre',
-      title: 'Cadastral 2D Boundaries',
-      extensions: '(.geojson, .shp)',
-      acceptTypes: '.geojson,.shp,.gpkg,.zip,.json',
-      defaultFileName: 'parcels_2d.geojson',
-      defaultFileSize: '3.2 MB',
-      status: 'idle',
-      progress: 0,
-    },
-    {
-      id: 'elevation',
-      title: 'Elevation Model (DEM / DSM)',
-      extensions: '(.tif, .dem)',
-      acceptTypes: '.tif,.tiff,.dem',
-      defaultFileName: 'elevation_dsm.tif',
-      defaultFileSize: '124 MB',
-      status: 'idle',
-      progress: 0,
-    },
-    {
-      id: 'deeds',
-      title: 'Title Deeds & Tax Data',
-      extensions: '(.csv, .xlsx)',
-      acceptTypes: '.csv,.xlsx,.json',
-      defaultFileName: 'ownership_and_tax.csv',
-      defaultFileSize: '1.4 MB',
-      status: 'idle',
-      progress: 0,
-    },
-  ]);
-
-  const allCompleted = cards.every((c) => c.status === 'completed');
-  const uploadedCount = cards.filter((c) => c.status === 'completed').length;
-
-  const formatBytes = (bytes: number): string => {
-    if (bytes === 0) return '0 Bytes';
-    const k = 1024;
-    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-    const i = Math.floor(Math.log(bytes) / Math.log(k));
-    return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
-  };
-
-  const simulateUpload = (cardId: string, customFile?: File) => {
-    const fileName = customFile ? customFile.name : undefined;
-    const fileSize = customFile ? formatBytes(customFile.size) : undefined;
-
-    setCards((prev) =>
-      prev.map((c) =>
-        c.id === cardId
-          ? {
-              ...c,
-              uploadedFileName: fileName || c.defaultFileName,
-              uploadedFileSize: fileSize || c.defaultFileSize,
-              status: 'uploading',
-              progress: 15,
-            }
-          : c
-      )
+  if (!draft) {
+    return (
+      <Page>
+        <div className="b3-head">
+          <div>
+            <div className="b3-eyebrow b3-rise">Survey package</div>
+            <h1 className="b3-title mt-1.5 b3-rise b3-d1">Data ingestion</h1>
+            <SurveySteps current={2} className="mt-3 b3-rise b3-d2" />
+          </div>
+        </div>
+        <EmptyState icon={<MapPinned className="w-6 h-6" />} title="Select a survey area first"
+          action={<button className="b3-btn b3-btn-teal" onClick={() => navigate('/surveyor/area')}><Plus className="w-4 h-4" /> Select an area</button>}>
+          Survey data is attached to an area. Draw it on the map, or click a spot to drop a survey square, then come back here to attach the drone,
+          LiDAR, cadastral, sanction, floor-plan and utility datasets.
+        </EmptyState>
+      </Page>
     );
+  }
 
-    let p = 15;
-    const timer = setInterval(() => {
-      p += 25;
-      if (p >= 100) {
-        clearInterval(timer);
-        setCards((prev) =>
-          prev.map((c) =>
-            c.id === cardId ? { ...c, status: 'completed', progress: 100 } : c
-          )
-        );
-      } else {
-        setCards((prev) =>
-          prev.map((c) => (c.id === cardId ? { ...c, progress: p } : c))
-        );
-      }
-    }, 150);
+  const total = DATASET_SLOTS.length;
+  const done = readyCount(draft, total);
+  const busy = DATASET_SLOTS.some((s) => ['uploading', 'validating'].includes(draft.slots[s.id]?.status ?? ''));
+  const bytes = DATASET_SLOTS.reduce((a, s) => a + (draft.slots[s.id]?.status === 'ready' ? draft.slots[s.id]?.file?.size ?? 0 : 0), 0);
+
+  const run = (slot: DatasetSlot, file: { name: string; size: number; sample: boolean }, delay = 0) => {
+    cancels.current[slot.id]?.();
+    cancels.current[slot.id] = simulateUpload(slot, draft, file, (s) => setSlot(slot.id, s), delay);
   };
-
-  const handleBlockClick = (cardId: string) => {
-    if (fileInputRefs.current[cardId]) {
-      fileInputRefs.current[cardId]?.click();
-    } else {
-      simulateUpload(cardId);
-    }
-  };
-
-  const handleFileInputChange = (cardId: string, e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files && files.length > 0) {
-      simulateUpload(cardId, files[0]);
-    } else {
-      simulateUpload(cardId);
-    }
-  };
-
-  const handleDragOver = (cardId: string, e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragOverId(cardId);
-  };
-
-  const handleDragLeave = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragOverId(null);
-  };
-
-  const handleDrop = (cardId: string, e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragOverId(null);
-    const droppedFiles = e.dataTransfer.files;
-    if (droppedFiles && droppedFiles.length > 0) {
-      simulateUpload(cardId, droppedFiles[0]);
-    } else {
-      simulateUpload(cardId);
-    }
-  };
-
-  const handleUploadAll = () => {
-    setIsBulkUploading(true);
-
-    setCards((prev) =>
-      prev.map((c) => ({
-        ...c,
-        uploadedFileName: c.uploadedFileName || c.defaultFileName,
-        uploadedFileSize: c.uploadedFileSize || c.defaultFileSize,
-        status: 'uploading',
-        progress: 15,
-      }))
-    );
-
-    let step = 0;
-    const interval = setInterval(() => {
-      step += 1;
-      setCards((prev) =>
-        prev.map((c, idx) => {
-          const p = Math.min(100, step * 25 + idx * 5);
-          if (p >= 100) return { ...c, progress: 100, status: 'completed' };
-          return { ...c, progress: p };
-        })
-      );
-
-      if (step >= 5) {
-        clearInterval(interval);
-        setTimeout(() => {
-          setCards((prev) =>
-            prev.map((c) => ({ ...c, progress: 100, status: 'completed' }))
-          );
-          setIsBulkUploading(false);
-        }, 250);
-      }
-    }, 200);
-  };
-
-  const handleReset = () => {
-    setIsBulkUploading(false);
-    setCards((prev) =>
-      prev.map((c) => ({
-        ...c,
-        uploadedFileName: undefined,
-        uploadedFileSize: undefined,
-        status: 'idle',
-        progress: 0,
-      }))
-    );
-  };
-
-  const handleStartProcessing = async () => {
-    if (!allCompleted) {
-      handleUploadAll();
+  const onFile = (slot: DatasetSlot, f: File) => {
+    if (!acceptsFile(slot, f.name)) {
+      setSlot(slot.id, { ...IDLE, status: 'error', error: `${f.name.split('.').pop()?.toUpperCase()} is not a ${slot.title.toLowerCase()} format` });
       return;
     }
+    run(slot, { name: f.name, size: f.size, sample: false });
+  };
+  const attachAll = () => {
+    let i = 0;
+    DATASET_SLOTS.forEach((slot) => {
+      const st = draft.slots[slot.id]?.status;
+      if (st === 'ready' || st === 'uploading' || st === 'validating') return;
+      run(slot, sampleFile(slot, draft), i++ * 380);
+    });
+  };
+  const remove = (slot: DatasetSlot) => {
+    cancels.current[slot.id]?.();
+    setSlot(slot.id, IDLE);
+  };
+
+  const start = async () => {
+    setStarting(true);
+    setError(null);
     try {
-      const response = await startProcessing.mutateAsync();
-      navigate(`/surveyor/processing?job_id=${response.job_id}&project_id=${projectId}&area_id=${currentAreaKey}&pkg=${pkgNum}`);
-    } catch (error) {
-      navigate(`/surveyor/processing?job_id=job-74291&project_id=${projectId}&area_id=${currentAreaKey}&pkg=${pkgNum}`);
+      const pkg = manifest(draft);
+      const job = await startGeneration(draft.polygon, projectId, false, pkg);
+      try {
+        sessionStorage.setItem('bharat3d_last_package', JSON.stringify({ key: job.key, place: draft.place, datasets: pkg }));
+      } catch { /* display only */ }
+      clear();
+      navigate(`/surveyor/generate?job=${job.job_id}&key=${job.key}&project_id=${projectId}`);
+    } catch (e: any) {
+      setError(e?.response?.data?.detail || 'Could not start the reconstruction. Is the API running?');
+      setStarting(false);
     }
   };
 
   return (
-    <div className="p-8 max-w-6xl mx-auto space-y-6 font-sans">
-      {/* Clean Minimal Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-5">
-        <div>
-          <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold text-slate-900 tracking-tight">
-              Upload Survey Data
-            </h1>
-            <span className="text-[11px] bg-blue-100 text-blue-900 font-semibold px-2 py-0.5 rounded">
-              Step 2 of 4
-            </span>
-          </div>
-          <p className="text-xs text-slate-500 mt-1">
-            Upload drone, LiDAR, and cadastral datasets to reconstruct the 3D model.
+    <Page wide>
+      <div className="b3-head">
+        <div className="min-w-0">
+          <div className="b3-eyebrow b3-rise">Survey package</div>
+          <h1 className="b3-title mt-1.5 b3-rise b3-d1">Data ingestion</h1>
+          <p className="text-sm text-[#5c6e7c] mt-2 max-w-2xl leading-relaxed b3-rise b3-d2">
+            Attach the field survey for <b className="text-[#1b3344]">{draft.place || 'the selected area'}</b>. Each dataset feeds one part of the
+            3D record. Once all six are validated, the area is reconstructed in 3D.
           </p>
         </div>
-
-        {/* Primary CTA Button */}
-        <Button
-          variant={allCompleted ? 'accent' : 'primary'}
-          size="md"
-          onClick={handleStartProcessing}
-          isLoading={startProcessing.isPending || isBulkUploading}
-          disabled={isBulkUploading}
-          className={`font-bold px-6 py-2.5 shadow-md transition-all ${
-            allCompleted
-              ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 ring-2 ring-amber-300'
-              : 'bg-blue-600 hover:bg-blue-700 text-white'
-          }`}
-        >
-          <Sparkles className="w-4 h-4 mr-2" />
-          <span>{allCompleted ? 'START 3D ANALYSIS' : 'UPLOAD ALL DATA'}</span>
-          <ArrowRight className="w-4 h-4 ml-2" />
-        </Button>
+        <SurveySteps current={2} className="b3-rise b3-d3" />
       </div>
 
-      {/* Clean Package Banner */}
-      <div className="bg-slate-900 text-white rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-lg">
-        <div className="flex items-center space-x-3.5">
-          <div className="p-2.5 bg-blue-600 text-white rounded-xl">
-            <FolderOpen className="w-5 h-5" />
-          </div>
-          <div>
-            <div className="text-sm font-bold text-slate-100">{packageName}</div>
-            <div className="text-xs text-slate-400 mt-0.5">
-              {allCompleted ? '✓ All datasets uploaded and verified' : `${uploadedCount} of 6 datasets uploaded`}
-            </div>
-          </div>
+      <div className="grid gap-5 lg:grid-cols-[1fr_340px] items-start">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {DATASET_SLOTS.map((slot, i) => (
+            <SlotCard key={slot.id} index={i} slot={slot} state={draft.slots[slot.id] ?? IDLE}
+              onFile={(f) => onFile(slot, f)} onSample={() => run(slot, sampleFile(slot, draft))} onRemove={() => remove(slot)} />
+          ))}
         </div>
 
-        <div className="flex items-center space-x-3">
-          {allCompleted ? (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleReset}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-700 text-xs font-medium"
-            >
-              <RefreshCw className="w-3.5 h-3.5 mr-1.5" />
-              <span>Reset</span>
-            </Button>
-          ) : (
-            <Button
-              variant="accent"
-              size="sm"
-              onClick={handleUploadAll}
-              disabled={isBulkUploading}
-              className="font-bold text-xs shadow"
-            >
-              {isBulkUploading ? (
-                <>
-                  <Loader2 className="w-3.5 h-3.5 mr-1.5 animate-spin" />
-                  <span>Uploading...</span>
-                </>
-              ) : (
-                <>
-                  <CloudUpload className="w-3.5 h-3.5 mr-1.5" />
-                  <span>Upload All Files</span>
-                </>
-              )}
-            </Button>
-          )}
-        </div>
-      </div>
-
-      {/* 6 Minimalist Modality Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {cards.map((card) => {
-          const isDragging = dragOverId === card.id;
-          const displayFileName = card.uploadedFileName || card.defaultFileName;
-          const displayFileSize = card.uploadedFileSize || card.defaultFileSize;
-
-          return (
-            <div
-              key={card.id}
-              onDragOver={(e) => handleDragOver(card.id, e)}
-              onDragLeave={handleDragLeave}
-              onDrop={(e) => handleDrop(card.id, e)}
-              className={`bg-white rounded-2xl border transition-all p-5 shadow-sm flex flex-col justify-between ${
-                isDragging
-                  ? 'border-blue-500 bg-blue-50/40 ring-4 ring-blue-100'
-                  : card.status === 'completed'
-                  ? 'border-emerald-200 bg-emerald-50/10'
-                  : card.status === 'uploading'
-                  ? 'border-blue-300 bg-blue-50/20'
-                  : 'border-slate-200 hover:border-slate-300'
-              }`}
-            >
-              <input
-                type="file"
-                ref={(el) => (fileInputRefs.current[card.id] = el)}
-                accept={card.acceptTypes}
-                className="hidden"
-                onChange={(e) => handleFileInputChange(card.id, e)}
-              />
-
-              <div>
-                {/* Clean Card Header */}
-                <div className="flex items-center justify-between mb-3.5">
-                  <span className="text-xs font-bold text-slate-900">{card.title}</span>
-                  <span className="text-[11px] text-slate-400 font-mono">
-                    {card.extensions}
-                  </span>
-                </div>
-
-                {/* State 1: Idle Dropzone */}
-                {card.status === 'idle' && (
-                  <div
-                    onClick={() => handleBlockClick(card.id)}
-                    className="p-5 border-2 border-dashed border-slate-200 hover:border-blue-400 rounded-xl bg-slate-50/60 hover:bg-blue-50/30 cursor-pointer transition-all flex flex-col items-center justify-center text-center space-y-2 group min-h-[100px]"
-                  >
-                    <div className="p-2 bg-white group-hover:bg-blue-600 group-hover:text-white text-slate-400 rounded-lg shadow-sm border border-slate-200 transition-colors">
-                      <CloudUpload className="w-4 h-4" />
-                    </div>
-                    <div className="text-xs font-semibold text-slate-600 group-hover:text-blue-700">
-                      {isDragging ? 'Drop file to upload' : 'Click or drag file here'}
-                    </div>
-                  </div>
-                )}
-
-                {/* State 2: Uploading */}
-                {card.status === 'uploading' && (
-                  <div className="p-4 border border-blue-200 rounded-xl bg-blue-50/50 space-y-3 min-h-[100px] flex flex-col justify-center">
-                    <div className="flex items-center space-x-2.5">
-                      <Loader2 className="w-4 h-4 text-blue-600 animate-spin shrink-0" />
-                      <div className="truncate">
-                        <div className="text-xs font-bold text-blue-950 truncate font-mono">
-                          {displayFileName}
-                        </div>
-                        <div className="text-[10px] text-blue-600 mt-0.5">
-                          Uploading... {card.progress}%
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-full bg-blue-200 rounded-full h-1.5 overflow-hidden">
-                      <div
-                        className="bg-blue-600 h-1.5 rounded-full transition-all duration-200"
-                        style={{ width: `${card.progress}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-
-                {/* State 3: Uploaded */}
-                {card.status === 'completed' && (
-                  <div className="p-4 border border-emerald-200 rounded-xl bg-emerald-50/60 flex items-center justify-between min-h-[100px]">
-                    <div className="flex items-center space-x-3 overflow-hidden">
-                      <div className="p-2 bg-emerald-100 text-emerald-700 rounded-lg shrink-0">
-                        <FileCheck2 className="w-4 h-4" />
-                      </div>
-                      <div className="truncate">
-                        <div className="text-xs font-bold text-emerald-950 font-mono truncate">
-                          {displayFileName}
-                        </div>
-                        <div className="text-[10px] text-emerald-700 mt-0.5">
-                          {displayFileSize}
-                        </div>
-                      </div>
-                    </div>
-                    <span className="text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-md flex items-center shrink-0">
-                      <Check className="w-3.5 h-3.5 mr-1 text-emerald-600" />
-                      <span>Uploaded</span>
-                    </span>
-                  </div>
-                )}
+        <aside className="b3-card overflow-hidden lg:sticky lg:top-6 b3-slide-r b3-d2">
+          <PolygonPreview polygon={draft.polygon} className="h-40 w-full" />
+          <div className="p-4 space-y-4">
+            <div>
+              <div className="b3-serif text-lg leading-tight text-[#1b3344]">{draft.place || <span className="b3-skel inline-block h-5 w-40 align-middle" />}</div>
+              <div className="text-[11px] text-[#7d8c97] font-mono mt-0.5">
+                {draft.centre[1].toFixed(5)}°N {draft.centre[0].toFixed(5)}°E · {(draft.areaM2 / 1e6).toFixed(3)} km²
               </div>
             </div>
-          );
-        })}
-      </div>
-
-      {/* Bottom Minimal CTA Bar */}
-      <div className="bg-white border border-slate-200 p-4 rounded-2xl shadow-md flex items-center justify-between">
-        <div className="flex items-center space-x-3">
-          <div className={`p-2 rounded-lg ${allCompleted ? 'bg-emerald-100 text-emerald-700' : 'bg-blue-100 text-blue-700'}`}>
-            {allCompleted ? <CheckCircle2 className="w-5 h-5" /> : <UploadCloud className="w-5 h-5" />}
-          </div>
-          <div>
-            <div className="text-xs font-bold text-slate-900">
-              {allCompleted
-                ? 'All survey data ready for 3D reconstruction'
-                : `Progress: ${uploadedCount} of 6 files uploaded`}
+            <div className="flex items-center gap-4">
+              <ProgressRing value={done / total} size={68}>
+                <div className="text-center leading-none">
+                  <CountUp value={done} className="b3-serif text-xl text-[#1b3344]" /><span className="text-[11px] text-[#7d8c97]">/{total}</span>
+                </div>
+              </ProgressRing>
+              <div className="text-[12px] text-[#33495a] space-y-0.5">
+                <div className="font-semibold">{done === total ? 'Survey package complete' : busy ? 'Receiving datasets…' : `${total - done} dataset(s) to attach`}</div>
+                <div className="text-[#7d8c97] b3-num">{fmtBytes(bytes || 1)} validated</div>
+              </div>
             </div>
-            <div className="text-[11px] text-slate-500">
-              {allCompleted
-                ? 'Click "Start 3D Analysis" to begin the AI reconstruction pipeline.'
-                : 'Upload all datasets above or click "Upload All Data" to proceed.'}
+
+            <button className="w-full b3-btn !py-2" onClick={attachAll} disabled={done === total || busy}>
+              <FolderUp className="w-4 h-4" /> Attach the sample survey package
+            </button>
+            <button className="w-full b3-btn b3-btn-teal !py-2.5 !text-[13px]" onClick={start} disabled={done < total || busy || starting}>
+              {starting ? <><Loader2 className="w-4 h-4 animate-spin" /> Starting reconstruction…</>
+                : done === total ? <><Sparkles className="w-4 h-4" /> Start 3D reconstruction <ArrowRight className="w-4 h-4" /></>
+                  : <><PackageCheck className="w-4 h-4" /> Attach all six to continue</>}
+            </button>
+            {error && <div className="text-[11.5px] text-[#c0392b] bg-[#c0392b]/5 border border-[#c0392b]/25 rounded-lg p-2 b3-pop">{error}</div>}
+
+            <div className="flex justify-between text-[11.5px]">
+              <button className="text-[#1e4d6b] hover:underline underline-offset-2" onClick={() => navigate('/surveyor/area')}>Change area</button>
+              {done > 0 && <button className="text-[#5c6e7c] hover:text-[#c0392b]" onClick={() => { Object.values(cancels.current).forEach((c) => c()); resetSlots(); }}>Clear all files</button>}
+            </div>
+            <div className="text-[11px] text-[#7d8c97] leading-relaxed border-t border-[#e4dccf] pt-3 flex gap-2">
+              <ShieldCheck className="w-4 h-4 text-[#1f7a72] shrink-0" />
+              <span>Prototype ingestion: files are checked in this browser and listed in the survey record. The 3D model itself is reconstructed from open geodata for this polygon.</span>
             </div>
           </div>
-        </div>
-
-        <Button
-          variant={allCompleted ? 'accent' : 'primary'}
-          size="md"
-          onClick={handleStartProcessing}
-          isLoading={startProcessing.isPending || isBulkUploading}
-          disabled={isBulkUploading}
-          className={`font-bold px-6 py-2.5 shadow transition-all ${
-            allCompleted
-              ? 'bg-amber-500 hover:bg-amber-400 text-slate-950 ring-2 ring-amber-300'
-              : 'bg-blue-600 hover:bg-blue-700 text-white'
-          }`}
-        >
-          <Sparkles className="w-4 h-4 mr-2" />
-          <span>{allCompleted ? 'START 3D ANALYSIS' : 'UPLOAD ALL & START'}</span>
-          <ArrowRight className="w-4 h-4 ml-2" />
-        </Button>
+        </aside>
       </div>
-    </div>
+    </Page>
   );
 };
 

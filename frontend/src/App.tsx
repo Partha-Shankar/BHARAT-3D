@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute';
 import { PublicPageShell } from './components/layout/PageTransition';
+import { useRoleBase } from './survey/ui';
 
 // Layouts
 import SurveyorLayout from './components/layout/SurveyorLayout';
@@ -15,21 +16,22 @@ import { LoginPage } from './pages/LoginPage';
 import { PrivacyPolicyPage } from './pages/legal/PrivacyPolicyPage';
 import { TermsOfServicePage } from './pages/legal/TermsOfServicePage';
 
-import { DashboardPage as SurveyorDashboard } from './pages/surveyor/DashboardPage';
-import { ProjectsPage } from './pages/surveyor/ProjectsPage';
+import { DashboardPage } from './pages/surveyor/DashboardPage';
 import { AreaSelectionPage } from './pages/surveyor/AreaSelectionPage';
+import { GenerationPage } from './pages/surveyor/GenerationPage';
+import { ScenesPage } from './pages/surveyor/ScenesPage';
+import { WorldPage } from './pages/world/WorldPage';
 import { DataUploadPage } from './pages/surveyor/DataUploadPage';
-import { ProcessingPage } from './pages/surveyor/ProcessingPage';
 import { MapPage } from './pages/surveyor/MapPage';
 import { EditorPage } from './pages/surveyor/EditorPage';
-import { Full3DWorldPage } from './pages/surveyor/Full3DWorldPage';
 import { RegistryPage } from './pages/surveyor/RegistryPage';
 import { ViolationsPage } from './pages/shared/ViolationsPage';
 import { AuditPage } from './pages/shared/AuditPage';
+import { DigSafePage } from './pages/utility/DigSafePage';
+import { CitizenPortal } from './pages/citizen/CitizenPortal';
 
-import { MunicipalDashboard } from './pages/municipality/MunicipalDashboard';
-import { ExcavationPage } from './pages/utility/ExcavationPage';
-import { CitizenDashboard } from './pages/citizen/CitizenDashboard';
+/** Old links (the prepared demo ward, the simulated processing page) land on the role's survey atlas. */
+const ToRoleAtlas: React.FC = () => <Navigate to={`${useRoleBase()}/map`} replace />;
 
 export const App: React.FC = () => {
   return (
@@ -43,65 +45,69 @@ export const App: React.FC = () => {
       </Route>
 
       <Route element={<ProtectedRoute />}>
-        {/* Full-screen 3D Mini-City Digital Twin routes (No layout chrome/sidebars) */}
-        <Route path="/3d-space/:areaId" element={<Full3DWorldPage />} />
-        <Route path="/3d-space" element={<Full3DWorldPage />} />
+        {/* Full-screen 3D world generated from a surveyed polygon, and its editor */}
+        <Route path="/3d-world/:key" element={<WorldPage />} />
+        <Route path="/3d-editor/:key" element={<WorldPage editor />} />
+        <Route path="/3d-space/*" element={<ToRoleAtlas />} />
+        <Route path="/3d-viewer" element={<ToRoleAtlas />} />
 
-        {/* Surveyor & Admin Routes */}
+        {/* Surveyor & Admin */}
         <Route path="/surveyor" element={<SurveyorLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path="dashboard" element={<SurveyorDashboard />} />
-          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="map" element={<MapPage />} />
           <Route path="area" element={<AreaSelectionPage />} />
           <Route path="upload" element={<DataUploadPage />} />
-          <Route path="processing" element={<ProcessingPage />} />
-          <Route path="map" element={<MapPage />} />
-          <Route path="3d-viewer" element={<Full3DWorldPage />} />
-          <Route path="3d-space/:areaId" element={<Full3DWorldPage />} />
-          <Route path="3d-space" element={<Full3DWorldPage />} />
+          <Route path="generate" element={<GenerationPage />} />
+          <Route path="projects" element={<ScenesPage />} />
+          <Route path="scenes" element={<ScenesPage />} />
           <Route path="editor" element={<EditorPage />} />
           <Route path="registry" element={<RegistryPage />} />
           <Route path="violations" element={<ViolationsPage />} />
           <Route path="audit" element={<AuditPage />} />
+          <Route path="processing" element={<Navigate to="/surveyor/upload" replace />} />
+          <Route path="3d-viewer" element={<Navigate to="/surveyor/map" replace />} />
+          <Route path="3d-space/*" element={<Navigate to="/surveyor/map" replace />} />
         </Route>
 
-        {/* Global 3D Viewer Route */}
-        <Route path="/3d-viewer" element={<Full3DWorldPage />} />
-
-        {/* Municipality Routes */}
+        {/* Municipality */}
         <Route path="/municipality" element={<MunicipalityLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path="dashboard" element={<MunicipalDashboard />} />
+          <Route path="dashboard" element={<DashboardPage />} />
           <Route path="map" element={<MapPage />} />
-          <Route path="3d-viewer" element={<Full3DWorldPage />} />
-          <Route path="3d-space" element={<Full3DWorldPage />} />
-          <Route path="properties" element={<RegistryPage />} />
           <Route path="violations" element={<ViolationsPage />} />
           <Route path="compliance" element={<ViolationsPage />} />
-          <Route path="tax" element={<MunicipalDashboard />} />
-          <Route path="infrastructure" element={<MapPage />} />
+          <Route path="registry" element={<RegistryPage />} />
+          <Route path="properties" element={<RegistryPage />} />
+          <Route path="projects" element={<ScenesPage />} />
           <Route path="audit" element={<AuditPage />} />
+          <Route path="*" element={<Navigate to="/municipality/dashboard" replace />} />
         </Route>
 
-        {/* Utility Operator Routes */}
+        {/* Utility operator */}
         <Route path="/utility" element={<UtilityLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path="dashboard" element={<ExcavationPage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
           <Route path="map" element={<MapPage />} />
-          <Route path="3d-viewer" element={<Full3DWorldPage />} />
-          <Route path="3d-space" element={<Full3DWorldPage />} />
-          <Route path="excavation" element={<ExcavationPage />} />
           <Route path="assets" element={<MapPage />} />
+          <Route path="excavation" element={<DigSafePage />} />
+          <Route path="projects" element={<ScenesPage />} />
+          <Route path="registry" element={<RegistryPage />} />
+          <Route path="violations" element={<ViolationsPage />} />
+          <Route path="*" element={<Navigate to="/utility/dashboard" replace />} />
         </Route>
 
-        {/* Citizen Portal Routes */}
+        {/* Citizen */}
         <Route path="/citizen" element={<CitizenLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
-          <Route path="dashboard" element={<CitizenDashboard />} />
-          <Route path="3d-viewer" element={<Full3DWorldPage />} />
-          <Route path="3d-space" element={<Full3DWorldPage />} />
-          <Route path="tax" element={<CitizenDashboard />} />
-          <Route path="documents" element={<CitizenDashboard />} />
+          <Route path="dashboard" element={<CitizenPortal />} />
+          <Route path="tax" element={<CitizenPortal />} />
+          <Route path="documents" element={<CitizenPortal />} />
+          <Route path="map" element={<MapPage />} />
+          <Route path="projects" element={<ScenesPage />} />
+          <Route path="registry" element={<RegistryPage />} />
+          <Route path="violations" element={<ViolationsPage />} />
+          <Route path="*" element={<Navigate to="/citizen/dashboard" replace />} />
         </Route>
       </Route>
 

@@ -1,11 +1,11 @@
-import { LayoutDashboard, Map as MapIcon, HardHat, Network } from 'lucide-react';
+import { LayoutDashboard, Map as MapIcon, Pickaxe, FolderKanban } from 'lucide-react';
 import { WorkspaceShell } from './WorkspaceShell';
 
 const navItems = [
-  { to: '/utility/dashboard', icon: LayoutDashboard, label: 'Utility Dashboard' },
-  { to: '/utility/excavation', icon: HardHat, label: 'Excavation Risk Safety' },
-  { to: '/utility/map', icon: MapIcon, label: 'Underground Infrastructure' },
-  { to: '/utility/assets', icon: Network, label: 'Subsurface Assets' },
+  { group: 'Overview', to: '/utility/dashboard', icon: LayoutDashboard, label: 'Overview' },
+  { group: 'Overview', to: '/utility/map', icon: MapIcon, label: 'Survey atlas', also: ['/utility/assets'] },
+  { group: 'Works', to: '/utility/excavation', icon: Pickaxe, label: 'Dig-safe planning' },
+  { group: 'Works', to: '/utility/projects', icon: FolderKanban, label: 'Surveyed areas' },
 ];
 
 export default function UtilityLayout() {

@@ -1,10 +1,9 @@
-import { Home, Receipt, FileText } from 'lucide-react';
+import { Home, Map as MapIcon } from 'lucide-react';
 import { WorkspaceShell } from './WorkspaceShell';
 
 const navItems = [
-  { to: '/citizen/dashboard', icon: Home, label: 'My Registered Property' },
-  { to: '/citizen/tax', icon: Receipt, label: 'Property Tax & Dues' },
-  { to: '/citizen/documents', icon: FileText, label: 'Title Deeds & Records' },
+  { to: '/citizen/dashboard', icon: Home, label: 'My property in 3D', also: ['/citizen/tax', '/citizen/documents'] },
+  { to: '/citizen/map', icon: MapIcon, label: 'Survey atlas' },
 ];
 
 export default function CitizenLayout() {

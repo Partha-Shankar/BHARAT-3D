@@ -11,6 +11,9 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "../data/uploads"
     APP_NAME: str = "BHARAT 3D"
     VERSION: str = "1.0.0"
+    CORS_ORIGINS: str = "*"  # comma-separated, e.g. https://bharat-3d.pages.dev,http://localhost:5173
+    GROQ_API_KEY: str = ""
+    GROQ_MODEL: str = "llama-3.3-70b-versatile"
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 

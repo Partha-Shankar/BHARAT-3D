@@ -1,444 +1,388 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { Card } from '../../components/ui/Card';
-import { Button } from '../../components/ui/Button';
-import { useUpdateProjectArea, useProject } from '../../hooks/useProjects';
+import { useUpdateProjectArea } from '../../hooks/useProjects';
 import { useAppStore } from '../../stores/appStore';
+import { ringAreaM2, MAX_AREA_M2, MIN_AREA_M2, INDIA_BOUNDS, DRAW_MIN_ZOOM, DRAW_MAX_ZOOM, isInIndia } from '../../world/api';
 import {
-  Navigation,
-  CheckCircle2,
-  Trash2,
-  ArrowRight,
-  MousePointerClick,
-  Layers,
-  Square,
-  Sparkles
+  ArrowRight, Box, Hexagon, Loader2, Map as MapIcon, MousePointerClick, Satellite, Search, Square, Trash2, AlertTriangle, ZoomIn, FolderOpen, X,
 } from 'lucide-react';
+import { SATELLITE_STYLE, setBaseLayer, squareAround, areasGeoJSON } from '../../survey/mapStyle';
+import { useSurveyDraft, reversePlace } from '../../survey/draft';
+import { SurveySteps } from '../../survey/Steps';
+import { useScenes, placeOf } from '../../survey/ui';
+import { Segmented } from '../../world/ui';
 
-const AREA_CENTERS: Record<string, [number, number]> = {
-  area_01: [77.2090, 28.6280],
-  area_02: [77.2180, 28.6340],
-  area_03: [77.2250, 28.6220],
-  area_04: [77.2020, 28.6410],
-  area_05: [77.2140, 28.6180],
-  area_06: [77.2310, 28.6300],
-  area_07: [77.1950, 28.6250],
-  area_08: [77.2060, 28.6500],
-  area_09: [77.2220, 28.6450],
-  area_10: [77.2100, 28.6320],
-};
+type Mode = 'click' | 'box' | 'polygon';
+type LngLat = [number, number];
+
+const SIZES = [
+  { m: 220, label: 'S · 220 m' },
+  { m: 340, label: 'M · 340 m' },
+  { m: 480, label: 'L · 480 m' },
+];
+
+const closeRing = (pts: LngLat[]): LngLat[] =>
+  pts.length && (pts[0][0] !== pts[pts.length - 1][0] || pts[0][1] !== pts[pts.length - 1][1]) ? [...pts, pts[0]] : pts;
 
 export const AreaSelectionPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const projectId = searchParams.get('project_id') || 'proj-001';
-  const { data: project } = useProject(projectId);
   const updateArea = useUpdateProjectArea(projectId);
-  const { setSelectedAreaId, setCustomSurveyPolygon } = useAppStore();
+  const { setCustomSurveyPolygon } = useAppStore();
+  const startDraft = useSurveyDraft((s) => s.start);
+  const setDraftPlace = useSurveyDraft((s) => s.setPlace);
+  const { data: scenes } = useScenes();
 
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maplibregl.Map | null>(null);
+  const modeRef = useRef<Mode>('click');
+  const sizeRef = useRef(340);
+  const draftRef = useRef<LngLat[]>([]);
+  const doneRef = useRef(false);
+  const boxStartRef = useRef<LngLat | null>(null);
+  const ignoreHitsRef = useRef(false); // set by "Draw anyway"
 
-  // State for Box/Polygon drawing
-  const [isDrawing, setIsDrawing] = useState<boolean>(false);
-  const [dragStartPoint, setDragStartPoint] = useState<[number, number] | null>(null);
-  const [drawnBoxCoords, setDrawnBoxCoords] = useState<[number, number][] | null>(null);
-  const [polygonAreaSqm, setPolygonAreaSqm] = useState<number | null>(null);
-  const [boxCentroid, setBoxCentroid] = useState<[number, number] | null>(null);
+  const [mode, setMode] = useState<Mode>('click');
+  const [size, setSize] = useState(340);
+  const [ring, setRing] = useState<LngLat[] | null>(null);
+  const [areaM2, setAreaM2] = useState<number | null>(null);
+  const [place, setPlace] = useState<string | null>(null);
+  const [baseLayer, setBase] = useState<'sat' | 'osm'>('sat');
+  const [query, setQuery] = useState('');
+  const [searching, setSearching] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [zoom, setZoom] = useState(4.6);
+  const [hitArea, setHitArea] = useState<string | null>(null);
+  const [mapReady, setMapReady] = useState(false);
+  const zoomOk = zoom >= DRAW_MIN_ZOOM && zoom <= DRAW_MAX_ZOOM;
+  const zoomOkRef = useRef(false);
+  zoomOkRef.current = zoomOk;
 
-  // Geodesic Shoelace calculation for box area in m²
-  const calculateAreaSqm = (coords: [number, number][]): number => {
-    if (coords.length < 3) return 420000;
-    let area = 0.0;
-    const n = coords.length;
-    for (let i = 0; i < n; i++) {
-      const j = (i + 1) % n;
-      const x1 = coords[i][0] * 111111 * Math.cos((coords[i][1] * Math.PI) / 180);
-      const y1 = coords[i][1] * 111111;
-      const x2 = coords[j][0] * 111111 * Math.cos((coords[j][1] * Math.PI) / 180);
-      const y2 = coords[j][1] * 111111;
-      area += x1 * y2 - x2 * y1;
+  const lat = searchParams.get('lat');
+  const lon = searchParams.get('lon');
+
+  const render = (pts: LngLat[], closed: boolean) => {
+    const m = map.current;
+    if (!m || !m.getSource('draw')) return;
+    const features: GeoJSON.Feature[] = [];
+    if (pts.length >= 3 && closed) {
+      features.push({ type: 'Feature', geometry: { type: 'Polygon', coordinates: [closeRing(pts)] }, properties: {} });
+    } else if (pts.length >= 2) {
+      features.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: pts }, properties: {} });
     }
-    const computed = Math.abs(area) / 2.0;
-    return Math.round(computed > 1000 ? computed : 420000);
+    pts.forEach((p) => features.push({ type: 'Feature', geometry: { type: 'Point', coordinates: p }, properties: {} }));
+    (m.getSource('draw') as maplibregl.GeoJSONSource).setData({ type: 'FeatureCollection', features });
   };
 
-  const updateMapLayer = (coords: [number, number][] | null) => {
-    if (!map.current || !map.current.getSource('survey-box-source')) return;
+  const finish = (pts: LngLat[]) => {
+    if (pts.length < 3) return;
+    doneRef.current = true;
+    const closed = closeRing(pts);
+    setRing(closed);
+    const a = ringAreaM2(closed.slice(0, -1));
+    setAreaM2(a);
+    setError(a > MAX_AREA_M2 ? `Area is ${(a / 1e6).toFixed(2)} km² — keep it under ${(MAX_AREA_M2 / 1e6).toFixed(1)} km² so the 3D model builds quickly.`
+      : a < MIN_AREA_M2 ? `Area is ${Math.round(a)} m² — draw at least ${MIN_AREA_M2.toLocaleString()} m².` : null);
+    render(pts, true);
+    const c = closed.slice(0, -1);
+    setPlace(null);
+    reversePlace(c.reduce((s, p) => s + p[0], 0) / c.length, c.reduce((s, p) => s + p[1], 0) / c.length).then((p) => setPlace(p ?? ''));
+    const bounds = c.reduce((b, p) => b.extend(p as any), new maplibregl.LngLatBounds(c[0] as any, c[0] as any));
+    map.current?.fitBounds(bounds, { padding: { top: 120, bottom: 120, left: 380, right: 120 }, duration: 900, maxZoom: Math.max(map.current.getZoom(), 16) });
+  };
 
-    if (!coords || coords.length === 0) {
-      (map.current.getSource('survey-box-source') as maplibregl.GeoJSONSource).setData({
-        type: 'FeatureCollection',
-        features: []
-      });
-      if (map.current.getSource('survey-box-vertices')) {
-        (map.current.getSource('survey-box-vertices') as maplibregl.GeoJSONSource).setData({
-          type: 'FeatureCollection',
-          features: []
-        });
-      }
-      return;
-    }
-
-    const closed = coords[0][0] === coords[coords.length - 1][0] && coords[0][1] === coords[coords.length - 1][1]
-      ? coords
-      : [...coords, coords[0]];
-
-    (map.current.getSource('survey-box-source') as maplibregl.GeoJSONSource).setData({
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature',
-          geometry: {
-            type: 'Polygon',
-            coordinates: [closed],
-          },
-          properties: { name: 'Delineated Survey Box' },
-        },
-      ],
-    });
-
-    if (map.current.getSource('survey-box-vertices')) {
-      const vertexFeatures: any[] = coords.slice(0, 4).map((pt, idx) => ({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: pt },
-        properties: { vertexIndex: idx + 1 }
-      }));
-      (map.current.getSource('survey-box-vertices') as maplibregl.GeoJSONSource).setData({
-        type: 'FeatureCollection',
-        features: vertexFeatures
-      } as any);
-    }
+  const clear = () => {
+    draftRef.current = [];
+    boxStartRef.current = null;
+    doneRef.current = false;
+    setRing(null);
+    setAreaM2(null);
+    setPlace(null);
+    setError(null);
+    render([], false);
   };
 
   useEffect(() => {
     if (map.current || !mapContainer.current) return;
-
-    map.current = new maplibregl.Map({
+    const start = lat && lon ? { center: [+lon, +lat] as LngLat, zoom: 16.2 } : { center: [79.5, 22.5] as LngLat, zoom: 4.6 };
+    const m = new maplibregl.Map({
       container: mapContainer.current,
-      style: {
-        version: 8,
-        sources: {
-          osm: {
-            type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
-            tileSize: 256,
-            attribution: '&copy; OpenStreetMap Contributors | BHARAT 3D Cadastre',
-          },
-        },
-        layers: [
-          {
-            id: 'osm',
-            type: 'raster',
-            source: 'osm',
-          },
-        ],
-      },
-      center: [77.2090, 28.6280], // Delhi Central Ward
-      zoom: 15.6,
+      style: SATELLITE_STYLE,
+      center: start.center,
+      zoom: start.zoom,
+      minZoom: 4,
+      maxZoom: 19.5,
+      maxBounds: INDIA_BOUNDS,
       dragRotate: false,
       pitchWithRotate: false,
+      doubleClickZoom: false,
+    });
+    map.current = m;
+    setZoom(start.zoom);
+    m.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+    m.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+    m.on('zoom', () => setZoom(m.getZoom()));
+
+    m.on('load', () => {
+      m.addSource('areas', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      m.addLayer({ id: 'areas-fill', type: 'fill', source: 'areas', paint: { 'fill-color': '#c8962e', 'fill-opacity': 0.16 } });
+      m.addLayer({ id: 'areas-line', type: 'line', source: 'areas', paint: { 'line-color': '#f2c46a', 'line-width': 1.6, 'line-dasharray': [3, 2] } });
+      m.addSource('draw', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      m.addLayer({ id: 'draw-fill', type: 'fill', source: 'draw', filter: ['==', '$type', 'Polygon'],
+        paint: { 'fill-color': '#1f7a72', 'fill-opacity': 0.24 } });
+      m.addLayer({ id: 'draw-line', type: 'line', source: 'draw', filter: ['!=', '$type', 'Point'],
+        paint: { 'line-color': '#fff6df', 'line-width': 2.5 } });
+      m.addLayer({ id: 'draw-pts', type: 'circle', source: 'draw', filter: ['==', '$type', 'Point'],
+        paint: { 'circle-radius': 5, 'circle-color': '#fff6df', 'circle-stroke-width': 2, 'circle-stroke-color': '#1f7a72' } });
+      setMapReady(true);
     });
 
-    map.current.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-    map.current.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+    const ll = (e: maplibregl.MapMouseEvent): LngLat => [+e.lngLat.lng.toFixed(7), +e.lngLat.lat.toFixed(7)];
+    const boxFrom = (a: LngLat, b: LngLat): LngLat[] => [
+      [Math.min(a[0], b[0]), Math.min(a[1], b[1])], [Math.max(a[0], b[0]), Math.min(a[1], b[1])],
+      [Math.max(a[0], b[0]), Math.max(a[1], b[1])], [Math.min(a[0], b[0]), Math.max(a[1], b[1])],
+    ];
 
-    map.current.on('load', () => {
-      if (!map.current) return;
-
-      // Start with completely clean, empty source
-      map.current.addSource('survey-box-source', {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: [],
-        },
-      });
-
-      map.current.addSource('survey-box-vertices', {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: [],
-        },
-      });
-
-      // Translucent Cadastral Blue Fill
-      map.current.addLayer({
-        id: 'survey-box-fill',
-        type: 'fill',
-        source: 'survey-box-source',
-        paint: {
-          'fill-color': '#0284c7',
-          'fill-opacity': 0.30,
-        },
-      });
-
-      // Bold Highlight Boundary Line with Dashed Cadastre Style
-      map.current.addLayer({
-        id: 'survey-box-line',
-        type: 'line',
-        source: 'survey-box-source',
-        paint: {
-          'line-color': '#0284c7',
-          'line-width': 3.5,
-          'line-dasharray': [3, 1.5],
-        },
-      });
-
-      // Golden Corner Node Handles
-      map.current.addLayer({
-        id: 'survey-box-nodes',
-        type: 'circle',
-        source: 'survey-box-vertices',
-        paint: {
-          'circle-radius': 6,
-          'circle-color': '#f59e0b',
-          'circle-stroke-width': 2.5,
-          'circle-stroke-color': '#ffffff',
-        },
-      });
+    m.on('mousemove', (e) => {
+      const overArea = m.getLayer('areas-fill') && m.queryRenderedFeatures(e.point, { layers: ['areas-fill'] }).length > 0;
+      if (doneRef.current) {
+        m.getCanvas().style.cursor = overArea ? 'pointer' : '';
+        return;
+      }
+      m.getCanvas().style.cursor = 'crosshair';
+      if (modeRef.current === 'click' && zoomOkRef.current) {
+        render(squareAround(ll(e), sizeRef.current).slice(0, -1), true); // preview follows the cursor
+      } else if (modeRef.current === 'box' && boxStartRef.current) {
+        render(boxFrom(boxStartRef.current, ll(e)), true);
+      } else if (modeRef.current === 'polygon' && draftRef.current.length) {
+        render([...draftRef.current, ll(e)], false);
+      }
     });
-
-    // Box Drag & Click Handlers
-    let startLngLat: [number, number] | null = null;
-    let isMouseDown = false;
-
-    const handleMouseDown = (e: maplibregl.MapMouseEvent) => {
-      // Start drawing box
-      isMouseDown = true;
-      startLngLat = [parseFloat(e.lngLat.lng.toFixed(6)), parseFloat(e.lngLat.lat.toFixed(6))];
-      setDragStartPoint(startLngLat);
-      setIsDrawing(true);
-      if (map.current) {
-        map.current.dragPan.disable();
+    m.on('mouseout', () => {
+      if (!doneRef.current && modeRef.current === 'click') render([], false);
+    });
+    m.on('click', (e) => {
+      const idle = !boxStartRef.current && !draftRef.current.length;
+      if (idle && (doneRef.current || !ignoreHitsRef.current) && m.getLayer('areas-fill')) {
+        const hit = m.queryRenderedFeatures(e.point, { layers: ['areas-fill'] })[0];
+        if (hit) {
+          setHitArea(String(hit.properties?.key));
+          return;
+        }
       }
-    };
-
-    const handleMouseMove = (e: maplibregl.MapMouseEvent) => {
-      if (!isMouseDown || !startLngLat) return;
-      const currentLngLat: [number, number] = [
-        parseFloat(e.lngLat.lng.toFixed(6)),
-        parseFloat(e.lngLat.lat.toFixed(6)),
-      ];
-
-      const minLng = Math.min(startLngLat[0], currentLngLat[0]);
-      const maxLng = Math.max(startLngLat[0], currentLngLat[0]);
-      const minLat = Math.min(startLngLat[1], currentLngLat[1]);
-      const maxLat = Math.max(startLngLat[1], currentLngLat[1]);
-
-      const box: [number, number][] = [
-        [minLng, minLat],
-        [maxLng, minLat],
-        [maxLng, maxLat],
-        [minLng, maxLat],
-        [minLng, minLat],
-      ];
-
-      updateMapLayer(box);
-    };
-
-    const handleMouseUp = (e: maplibregl.MapMouseEvent) => {
-      if (!isMouseDown || !startLngLat) return;
-      isMouseDown = false;
-      setIsDrawing(false);
-      if (map.current) {
-        map.current.dragPan.enable();
+      if (doneRef.current) return;
+      if (!zoomOkRef.current) {
+        setError(`Zoom in to level ${DRAW_MIN_ZOOM}–${DRAW_MAX_ZOOM} to draw (street level), so the survey area is small enough to model in detail.`);
+        return;
       }
-
-      let currentLngLat: [number, number] = [
-        parseFloat(e.lngLat.lng.toFixed(6)),
-        parseFloat(e.lngLat.lat.toFixed(6)),
-      ];
-
-      // If user just clicked without dragging, provide a neat standard 400m box around click
-      let minLng = Math.min(startLngLat[0], currentLngLat[0]);
-      let maxLng = Math.max(startLngLat[0], currentLngLat[0]);
-      let minLat = Math.min(startLngLat[1], currentLngLat[1]);
-      let maxLat = Math.max(startLngLat[1], currentLngLat[1]);
-
-      if (Math.abs(maxLng - minLng) < 0.0005 || Math.abs(maxLat - minLat) < 0.0005) {
-        const dLng = 0.0025;
-        const dLat = 0.0025;
-        minLng = startLngLat[0] - dLng;
-        maxLng = startLngLat[0] + dLng;
-        minLat = startLngLat[1] - dLat;
-        maxLat = startLngLat[1] + dLat;
+      setError(null);
+      setHitArea(null);
+      const p = ll(e);
+      if (modeRef.current === 'click') {
+        finish(squareAround(p, sizeRef.current).slice(0, -1));
+        return;
       }
-
-      const finalBox: [number, number][] = [
-        [minLng, minLat],
-        [maxLng, minLat],
-        [maxLng, maxLat],
-        [minLng, maxLat],
-        [minLng, minLat],
-      ];
-
-      setDrawnBoxCoords(finalBox);
-      const computedArea = calculateAreaSqm(finalBox);
-      setPolygonAreaSqm(computedArea);
-      setBoxCentroid([(minLng + maxLng) / 2, (minLat + maxLat) / 2]);
-      updateMapLayer(finalBox);
-    };
-
-    map.current.on('mousedown', handleMouseDown);
-    map.current.on('mousemove', handleMouseMove);
-    map.current.on('mouseup', handleMouseUp);
+      if (modeRef.current === 'box') {
+        if (!boxStartRef.current) {
+          boxStartRef.current = p; // first corner; dragging still pans the map
+          render([p], false);
+          return;
+        }
+        const pts = boxFrom(boxStartRef.current, p);
+        boxStartRef.current = null;
+        finish(pts);
+        return;
+      }
+      const d = draftRef.current;
+      if (d.length >= 3) {
+        const first = m.project(d[0] as any);
+        const here = m.project(p as any);
+        if (Math.hypot(first.x - here.x, first.y - here.y) < 12) {
+          finish(d);
+          return;
+        }
+      }
+      draftRef.current = [...d, p];
+      render(draftRef.current, false);
+    });
+    m.on('dblclick', (e) => {
+      if (modeRef.current !== 'polygon' || doneRef.current) return;
+      e.preventDefault();
+      finish(draftRef.current);
+    });
 
     return () => {
-      map.current?.remove();
+      m.remove();
       map.current = null;
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Clear / Delete Action (Resets to clean map)
-  const handleClearDraw = () => {
-    setDrawnBoxCoords(null);
-    setPolygonAreaSqm(null);
-    setBoxCentroid(null);
-    setIsDrawing(false);
-    updateMapLayer(null);
-  };
+  // generated areas on the map, so the surveyor sees what already exists
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !mapReady || !scenes) return;
+    const { polys } = areasGeoJSON(scenes.map((s) => ({ key: s.key, survey_polygon: s.survey_polygon, label: placeOf(s), origin: s.origin })));
+    (m.getSource('areas') as maplibregl.GeoJSONSource | undefined)?.setData(polys as any);
+  }, [scenes, mapReady]);
 
-  // Confirm Survey Boundary & Randomly Assign one of the 10 3D Maps
-  const handleConfirmArea = async () => {
-    if (!drawnBoxCoords) return;
+  useEffect(() => {
+    modeRef.current = mode;
+    clear();
+  }, [mode]); // eslint-disable-line react-hooks/exhaustive-deps
 
-    const polygonGeojson = {
-      type: 'Polygon',
-      coordinates: [drawnBoxCoords],
-    };
+  useEffect(() => {
+    sizeRef.current = size;
+  }, [size]);
 
-    // Randomly select one of the 10 diverse 3D map combinations (area_01 to area_10)
-    const randomAreaNum = Math.floor(Math.random() * 10) + 1;
-    const randomAreaId = `area_${String(randomAreaNum).padStart(2, '0')}`;
+  useEffect(() => {
+    if (map.current) setBaseLayer(map.current, baseLayer);
+  }, [baseLayer]);
 
-    // Store custom survey polygon & assigned area
-    setCustomSurveyPolygon(polygonGeojson);
-    setSelectedAreaId(randomAreaId);
-
+  const search = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!query.trim()) return;
+    setSearching(true);
     try {
-      await updateArea.mutateAsync(polygonGeojson);
-      navigate(`/surveyor/upload?project_id=${projectId}&area_id=${randomAreaId}`);
-    } catch (error) {
-      navigate(`/surveyor/upload?project_id=${projectId}&area_id=${randomAreaId}`);
+      const r = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=in&q=${encodeURIComponent(query)}`);
+      const hits = await r.json();
+      if (hits[0]) {
+        map.current?.flyTo({ center: [+hits[0].lon, +hits[0].lat], zoom: 16.5, duration: 2200, curve: 1.5, essential: true });
+        setError(null);
+      } else {
+        setError(`No place found for “${query}”.`);
+      }
+    } catch {
+      setError('Place search is unavailable right now — pan the map manually.');
+    } finally {
+      setSearching(false);
     }
   };
 
+  const confirm = async () => {
+    if (!ring || error) return;
+    const polygon: GeoJSON.Polygon = { type: 'Polygon', coordinates: [ring] };
+    setSubmitting(true);
+    setError(null);
+    const cx = ring.slice(0, -1).reduce((a, p) => a + p[0], 0) / (ring.length - 1);
+    const cy = ring.slice(0, -1).reduce((a, p) => a + p[1], 0) / (ring.length - 1);
+    if ((await isInIndia(cx, cy)) === false) {
+      setError('This area is outside India. BHARAT 3D generates only inside India.');
+      setSubmitting(false);
+      return;
+    }
+    setCustomSurveyPolygon(polygon);
+    startDraft(polygon, areaM2 ?? 0, place || undefined);
+    if (!place) reversePlace(cx, cy).then((p) => p && setDraftPlace(p));
+    updateArea.mutateAsync(polygon).catch(() => undefined); // records the polygon on the project; not needed to continue
+    navigate(`/surveyor/upload?project_id=${projectId}`);
+  };
+
+  const hit = hitArea ? scenes?.find((s) => s.key === hitArea) : null;
+  const help: Record<Mode, string> = {
+    click: 'Click anywhere on the map to drop a survey square of the chosen size. The preview follows your cursor.',
+    box: 'Click one corner, then click the opposite corner. Drag to pan, scroll to zoom.',
+    polygon: 'Click to add corners. Double-click, or click the first corner, to close the polygon.',
+  };
+
   return (
-    <div className="h-[calc(100vh-61px)] flex flex-col bg-slate-900">
-      {/* Clean Minimal Header */}
-      <div className="bg-white border-b border-slate-200 px-6 py-3.5 flex items-center justify-between z-10 shadow-sm">
-        <div>
-          <div className="flex items-center space-x-2">
-            <h1 className="text-base font-bold text-slate-900">Select Survey Area</h1>
-            <span className="text-[11px] bg-blue-100 text-blue-900 font-semibold px-2 py-0.5 rounded">
-              Step 1 of 4 • Delineation
-            </span>
+    <div className="flex-1 min-h-0 h-screen flex flex-col bg-[#f3efe6] b3-app">
+      <div className="bg-[#f7f4ed] border-b border-[#e4dccf] px-6 py-3 flex items-center justify-between gap-4 z-10 flex-wrap">
+        <div className="min-w-0 b3-rise">
+          <h1 className="b3-serif text-xl text-[#1b3344]">New survey · select the area</h1>
+          <SurveySteps current={1} className="mt-1.5" />
+        </div>
+        <form onSubmit={search} className="flex items-center gap-2 flex-1 max-w-md b3-rise b3-d1">
+          <div className="relative flex-1">
+            <Search className="w-4 h-4 text-[#7d8c97] absolute left-2.5 top-1/2 -translate-y-1/2" />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search a place (e.g. MG Road, Bengaluru)" className="b3-input !pl-8" />
           </div>
-          <p className="text-xs text-slate-500 mt-0.5">
-            Click & drag on the map to draw your survey box boundary for 3D reconstruction.
-          </p>
-        </div>
-
-        {/* Minimal Toolset: Delete Button & Confirm Button Only */}
-        <div className="flex items-center space-x-3">
-          {drawnBoxCoords && (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleClearDraw}
-              className="text-red-600 border-red-200 hover:bg-red-50 hover:border-red-300"
-              title="Delete / Redraw Box"
-            >
-              <Trash2 className="w-4 h-4 mr-1.5 text-red-500" />
-              <span>Delete / Redraw</span>
-            </Button>
-          )}
-
-          {drawnBoxCoords && (
-            <Button
-              variant="accent"
-              size="sm"
-              onClick={handleConfirmArea}
-              className="shadow-md font-bold text-xs"
-            >
-              <span>CONFIRM SURVEY BOUNDARY & UPLOAD DATA</span>
-              <ArrowRight className="w-4 h-4 ml-1.5" />
-            </Button>
-          )}
-        </div>
+          <button type="submit" className="b3-btn" disabled={searching}>
+            {searching ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Go'}
+          </button>
+          <button type="button" onClick={() => navigate('/surveyor/projects')} className="b3-btn shrink-0" title="Survey register">
+            <FolderOpen className="w-4 h-4" />
+          </button>
+        </form>
       </div>
 
-      {/* Main Interactive Clean Map Viewport */}
-      <div className="flex-1 relative overflow-hidden bg-slate-100">
-        <div ref={mapContainer} className="w-full h-full cursor-crosshair" />
+      <div className="flex-1 relative overflow-hidden">
+        <div ref={mapContainer} className="w-full h-full" />
 
-        {/* Floating Instruction Badge when Map is Empty */}
-        {!drawnBoxCoords && (
-          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-slate-900/90 backdrop-blur-md text-white px-5 py-2.5 rounded-full shadow-2xl border border-slate-700 flex items-center space-x-2.5 z-10 text-xs font-semibold pointer-events-none animate-bounce">
-            <Square className="w-4 h-4 text-amber-400" />
-            <span>Click and drag on the map to draw a survey box</span>
+        <div className="absolute top-4 left-4 z-10 b3-panel p-4 w-[340px] space-y-3 b3-slide-l b3-d2">
+          <Segmented<Mode> value={mode} onChange={setMode} className="w-full [&>button]:flex-1" options={[
+            { value: 'click', label: <><MousePointerClick className="w-3.5 h-3.5" /> Click a spot</> },
+            { value: 'box', label: <><Square className="w-3.5 h-3.5" /> Rectangle</> },
+            { value: 'polygon', label: <><Hexagon className="w-3.5 h-3.5" /> Polygon</> },
+          ]} />
+          {mode === 'click' && (
+            <div className="b3-fade">
+              <Segmented value={String(size)} onChange={(v) => setSize(+v)} className="w-full [&>button]:flex-1"
+                options={SIZES.map((s) => ({ value: String(s.m), label: s.label }))} />
+            </div>
+          )}
+          <div className={`flex items-center gap-2 text-[11px] rounded-lg px-2 py-1.5 border transition-colors duration-500 ${zoomOk ? 'bg-[#1f7a72]/8 border-[#1f7a72]/25 text-[#1d6a52]' : 'bg-[#c8962e]/10 border-[#c8962e]/35 text-[#8a5a12]'}`}>
+            <ZoomIn className="w-3.5 h-3.5 shrink-0" />
+            <span>Zoom <b className="font-mono">{zoom.toFixed(1)}</b> · drawing at {DRAW_MIN_ZOOM}–{DRAW_MAX_ZOOM}{zoomOk ? '' : ' — zoom in or search a place'}</span>
           </div>
-        )}
+          <p className="text-[11.5px] text-[#33495a] leading-relaxed" key={mode}>{help[mode]}</p>
+          <p className="text-[11px] text-[#7d8c97]">India only · {(MIN_AREA_M2).toLocaleString()} m² to {(MAX_AREA_M2 / 1e6).toFixed(1)} km² · <span className="text-[#8a5a12]">gold outlines</span> are areas already generated</p>
 
-        {/* Floating "Selected Survey Area" Card - APPEARS ONLY AFTER DRAWING */}
-        {drawnBoxCoords && polygonAreaSqm !== null && (
-          <div className="absolute top-4 left-4 max-w-sm bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-2xl border border-slate-200 z-10 space-y-3 animate-in fade-in slide-in-from-top-4 duration-300">
-            <div className="flex items-center space-x-2.5">
-              <div className="p-2 bg-blue-600 text-white rounded-lg shadow-sm">
-                <Navigation className="w-4 h-4" />
-              </div>
+          {ring && areaM2 !== null && (
+            <div className="text-xs space-y-1.5 border-t border-[#e4dccf] pt-2.5 b3-expand">
+              <div className="flex justify-between gap-2"><span className="text-[#5c6e7c]">Place</span>
+                <span className="text-right font-semibold truncate">{place === null ? <span className="b3-skel inline-block w-28 h-3.5 align-middle" /> : place || 'Unnamed locality'}</span></div>
+              <div className="flex justify-between"><span className="text-[#5c6e7c]">Area</span>
+                <strong className="b3-num text-[#1f7a72]">{(areaM2 / 1e6).toFixed(3)} km² · {Math.round(areaM2).toLocaleString()} m²</strong></div>
+              <div className="flex justify-between"><span className="text-[#5c6e7c]">Corners</span><span className="font-mono">{ring.length - 1}</span></div>
+              <div className="flex justify-between"><span className="text-[#5c6e7c]">CRS</span><span className="font-mono">EPSG:4326</span></div>
+            </div>
+          )}
+
+          {error && (
+            <div className="flex gap-2 text-[11px] text-[#c0392b] bg-[#c0392b]/5 border border-[#c0392b]/25 rounded-lg p-2 b3-pop">
+              <AlertTriangle className="w-4 h-4 shrink-0" /> <span>{error}</span>
+            </div>
+          )}
+
+          <div className="flex gap-2">
+            {ring && (
+              <button onClick={clear} className="b3-btn b3-btn-danger b3-pop" title="Clear and redraw">
+                <Trash2 className="w-4 h-4" />
+              </button>
+            )}
+            <button className="flex-1 b3-btn b3-btn-teal !py-2" disabled={!ring || !!error || submitting} onClick={confirm}>
+              {submitting ? <><Loader2 className="w-4 h-4 animate-spin" /> Checking the area…</> : <>Continue to data ingestion <ArrowRight className="w-4 h-4" /></>}
+            </button>
+          </div>
+        </div>
+
+        {hit && (
+          <div className="absolute top-4 right-14 z-10 b3-panel p-4 w-72 b3-pop">
+            <div className="flex items-start justify-between gap-2">
               <div>
-                <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                  Delineated Survey Box
-                </h4>
-                <p className="text-[11px] text-slate-600 font-semibold">
-                  Custom Georeferenced Cadastral Boundary
-                </p>
+                <div className="b3-eyebrow">Already surveyed</div>
+                <div className="b3-serif text-lg leading-tight mt-0.5">{placeOf(hit)}</div>
               </div>
+              <button onClick={() => setHitArea(null)} className="p-0.5 text-[#5c6e7c] hover:text-[#1b3344]"><X className="w-4 h-4" /></button>
             </div>
-
-            <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 text-xs space-y-2">
-              <div className="flex justify-between items-center">
-                <span className="text-slate-500">Area Extent:</span>
-                <strong className="text-blue-700 font-mono text-sm">
-                  {(polygonAreaSqm / 1000000).toFixed(2)} km² ({polygonAreaSqm.toLocaleString()} m²)
-                </strong>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-slate-500">Coordinate Reference:</span>
-                <span className="font-mono text-[11px] text-slate-700">EPSG:4326 (WGS84 / UTM 43N)</span>
-              </div>
-              {boxCentroid && (
-                <div className="flex justify-between items-center">
-                  <span className="text-slate-500">Center Coordinates:</span>
-                  <span className="font-mono text-[10px] text-slate-600">
-                    {boxCentroid[0].toFixed(4)}° E, {boxCentroid[1].toFixed(4)}° N
-                  </span>
-                </div>
-              )}
-              <div className="flex justify-between items-center pt-1 border-t border-slate-200">
-                <span className="text-slate-500">Status:</span>
-                <span className="text-emerald-700 font-bold flex items-center">
-                  <CheckCircle2 className="w-3.5 h-3.5 mr-1" /> Georeferenced
-                </span>
-              </div>
+            <p className="text-[11.5px] text-[#5c6e7c] mt-1">{hit.buildings} buildings · {hit.vprids_reserved.toLocaleString('en-IN')} 3D ULPINs · {hit.violations} findings</p>
+            <div className="flex gap-2 mt-3">
+              <button className="flex-1 b3-btn b3-btn-primary" onClick={() => navigate(`/3d-world/${hit.key}`)}><Box className="w-4 h-4" /> Open 3D</button>
+              <button className="b3-btn" onClick={() => { ignoreHitsRef.current = true; setHitArea(null); }}>Draw anyway</button>
             </div>
-
-            <Button
-              variant="accent"
-              size="sm"
-              onClick={handleConfirmArea}
-              className="w-full justify-center shadow-md font-bold text-xs py-2.5"
-            >
-              <span>CONFIRM SURVEY BOUNDARY & UPLOAD DATA</span>
-              <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
-            </Button>
           </div>
         )}
+
+        <div className="absolute bottom-8 right-4 z-10 b3-panel p-1 b3-rise b3-d3">
+          <Segmented<'sat' | 'osm'> value={baseLayer} onChange={setBase} className="!bg-transparent" options={[
+            { value: 'sat', label: <><Satellite className="w-3.5 h-3.5" /> Satellite</> },
+            { value: 'osm', label: <><MapIcon className="w-3.5 h-3.5" /> Map</> },
+          ]} />
+        </div>
       </div>
     </div>
   );

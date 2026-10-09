@@ -1,0 +1,7 @@
+# Optional pretrained-model stages (Hugging Face). The generator runs without these.
+# - Depth Anything V2: heights for untagged buildings (calibrated per area)
+# - GeoAI Mask R-CNN + GroundingDINO/SAM: building footprints detected in the imagery where OSM has none
+torch>=2.5
+torchvision>=0.20
+transformers>=4.46
+opencv-python-headless>=4.9

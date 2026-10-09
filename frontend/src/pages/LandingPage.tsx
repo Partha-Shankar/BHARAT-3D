@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { PublicHeader } from '../components/layout/PublicHeader';
 
 const identities = [
-  { level: 'Parent parcel', id: '48291503726481', height: 'ground' },
-  { level: 'Flat 804', id: '48291503726481-F08-U804', height: '+24 m to +27 m' },
-  { level: 'Basement', id: '48291503726481-B02', height: '−7 m to −1 m' },
-  { level: 'Metro segment', id: '48291503726481-M01', height: '−14 m to −10 m' },
+  { level: 'Parent parcel (2D ULPIN)', id: '07K3M9P2Q7R4TZ', height: 'ground' },
+  { level: 'Flat 804', id: '07K3M9P2Q7R4TZ-BL01-L08-U804', height: '+24 m to +27 m' },
+  { level: 'Severed basement', id: '07K3M9P2Q7R4TZ-BL01-S01-UFLR', height: '−7 m to −1 m' },
+  { level: 'Metro tunnel bore', id: 'INF-TUN-DL01-0012', height: '−14 m to −10 m' },
 ];
 
 const steps = [
-  'Keep the existing 14-digit ULPIN as the parent parcel.',
+  'Keep the existing 14-character ULPIN as the parent parcel.',
   'Give every owned volume a child identity: parent, level, and unit.',
   'Store the height range of that volume in metres.',
   'A surveyor confirms the volume before the identity is saved.',
@@ -35,7 +35,7 @@ const platformFeatures = [
   {
     title: 'One ground ULPIN, child volumes where it matters',
     text:
-      "India's 14-digit ULPIN remains the parent identity on the surface. Flats, basement parking, air-rights bands, and metro segments receive child identities with metre height ranges only where ownership or infrastructure has real vertical extent.",
+      "India's 14-character ULPIN remains the parent identity on the surface. Flats, basement parking, air-rights bands, and metro segments receive child identities with metre height ranges only where ownership or infrastructure has real vertical extent.",
   },
   {
     title: 'Surveyor confirmation before the record is saved',
@@ -59,11 +59,11 @@ const workspaces = [
   },
   {
     title: 'Citizen',
-    text: 'See the flat or unit tied to you: its child identity, height range, and link to the 14-digit ground parcel.',
+    text: 'See the flat or unit tied to you: its child identity, height range, and link to the 14-character ground parcel.',
   },
 ];
 
-const PARCEL_ULPIN = '48291503726481';
+const PARCEL_ULPIN = '07K3M9P2Q7R4TZ';
 const DEPTH_MAX_M = 27;
 const DEPTH_MIN_M = -14;
 const DEPTH_SPAN_M = DEPTH_MAX_M - DEPTH_MIN_M;
@@ -206,7 +206,7 @@ const ParcelHeightSection: React.FC = () => {
                 <div className="text-[8px] sm:text-[9px] text-[#1e4d6b] font-medium leading-tight break-all">
                   {PARCEL_ULPIN}
                 </div>
-                <div className="text-[8px] text-[#5c6e7c] leading-tight">14-digit ULPIN</div>
+                <div className="text-[8px] text-[#5c6e7c] leading-tight">14-character ULPIN</div>
               </div>
             </div>
           </div>
@@ -240,7 +240,7 @@ export const LandingPage: React.FC = () => {
               One ground number is not enough
             </p>
             <p className="mt-5 text-[17px] leading-7 text-[#3d5363] max-w-xl">
-              India&apos;s 14-digit ULPIN stays the identity of the ground parcel. BHARAT 3D adds a child 3D identity only where something has height or depth—a flat, an air-rights corridor, basement parking, or a metro segment—with the height range stored in metres. A surveyor confirms each volume before it is saved to the registry.
+              India&apos;s 14-character ULPIN stays the identity of the ground parcel. BHARAT 3D adds a child 3D identity only where something has height or depth—a flat, an air-rights corridor, basement parking, or a metro segment—with the height range stored in metres. A surveyor confirms each volume before it is saved to the registry.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <button
@@ -294,7 +294,7 @@ export const LandingPage: React.FC = () => {
                   {identities.map((row, index) => (
                     <tr key={row.id} className={index % 2 === 0 ? 'bg-white' : 'bg-[#f7f4ee]'}>
                       <td className="px-4 py-3 text-[#16324a]">{row.level}</td>
-                      <td className="px-4 py-3 font-medium text-[#1e4d6b]">{row.id}</td>
+                      <td className="px-4 py-3 font-medium font-mono text-[13px] break-all text-[#1e4d6b]">{row.id}</td>
                       <td className="px-4 py-3 text-[#3d5363]">{row.height}</td>
                     </tr>
                   ))}

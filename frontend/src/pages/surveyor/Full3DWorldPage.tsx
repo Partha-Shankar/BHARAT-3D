@@ -34,7 +34,7 @@ import { Badge } from '../../components/ui/Badge';
 import { Button } from '../../components/ui/Button';
 
 // ===========================================================================
-// MoHUA B3D-STD-2026-ULPIN-01 NATIONAL STANDARD DATA TYPES
+// Proposed 3D ULPIN extension data types (illustrative, not an official standard)
 // ===========================================================================
 export type UlpinAllocationType = '3D_ULPIN' | '2D_ULPIN' | 'INFRA_3D_ULPIN' | 'VIOLATION';
 
@@ -143,12 +143,12 @@ export const Full3DWorldPage: React.FC = () => {
   const scanStages = [
     '1. 3D LiDAR Volumetric Bounding Box Acquisition (X, Y, Zmin, Zmax)',
     '2. Slicing Horizontal Slab & Dividing Wall Centerlines at 3.10m',
-    '3. Computing 2-Manifold Watertight Mesh Volume (347.2 m┬│)',
+    '3. Computing 2-Manifold Watertight Mesh Volume (347.2 m³)',
     '4. Cross-Referencing Revenue Sub-Registrar & 2D Parcel UDS (2.083%)',
     '5. Minting Sovereign 3D ULPIN (IN-DL-01-849201-B01-F08-U804-R)'
   ];
 
-  // 360┬░ Spherical Camera Orbit
+  // 360° Spherical Camera Orbit
   const isDragging = useRef<boolean>(false);
   const previousMousePosition = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const cameraSpherical = useRef<{ radius: number; theta: number; phi: number }>({
@@ -159,7 +159,7 @@ export const Full3DWorldPage: React.FC = () => {
   const cameraTarget = useRef<THREE.Vector3>(new THREE.Vector3(0, 0, 0));
 
   // =========================================================================
-  // DYNAMIC COMPUTATION OF ACTIVE 3D / 2D ULPIN DETAILS (MoHUA STANDARD)
+  // DYNAMIC COMPUTATION OF ACTIVE 3D / 2D ULPIN DETAILS (proposed extension)
   // =========================================================================
   const getActiveUlpinDetails = () => {
     if (!selectedObject) {
@@ -172,7 +172,7 @@ export const Full3DWorldPage: React.FC = () => {
       const code = `IN-DL-01-849201-B01-F${fStr}-U${uNoStr}-R`;
       const zMin = (2.5 + (selectedFloor - 1) * 3.1).toFixed(1);
       const zMax = (2.5 + selectedFloor * 3.1).toFixed(1);
-      const vols = ['282.2 m┬│', '360.0 m┬│', '294.4 m┬│', '347.2 m┬│'];
+      const vols = ['282.2 m³', '360.0 m³', '294.4 m³', '347.2 m³'];
       const carpets = ['88.2 sq.m', '112.5 sq.m', '92.0 sq.m', '108.5 sq.m'];
       const owners = ['Meera Nambiar', 'Aditya Sengupta', 'Gaurav Bhatia', 'Rajesh K. Sharma'];
 
@@ -181,9 +181,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-849201',
         type: '3D_ULPIN' as UlpinAllocationType,
         typeLabel: '3D ULPIN (VOLUMETRIC UNIT - VPRID)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 (ISO 19152 LADM) ΓÇó Section 4.1',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) (ISO 19152 LADM) • Section 4.1',
         normRationale: `Condominium Flat ${uNoStr}: Discrete watertight 3D polyhedral volume. Holds separate registered title deed, property tax ID, and 2.083% Undivided Land Share (UDS %).`,
-        volume: vols[selectedUnit - 1] || '347.2 m┬│',
+        volume: vols[selectedUnit - 1] || '347.2 m³',
         carpetArea: carpets[selectedUnit - 1] || '108.5 sq.m',
         heightRange: `Z: +${zMin}m to +${zMax}m MSL (Thickness: 3.10m)`,
         uds: '2.083% (1/48 Share of Base Parcel)',
@@ -198,9 +198,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: selectedObject.ulpin,
         type: '2D_ULPIN' as UlpinAllocationType,
         typeLabel: '2D BASE ULPIN (FREEHOLD PLOTTED PROPERTY)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.1 & Section 8',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.1 & Section 8',
         normRationale: 'Independent Plotted Villa: Retains Base 2D ULPIN. Parcel and superstructure are coterminous under unified freehold title (center of earth to sky). No separate 3D ULPIN is created unless basement or rooftop rights are legally severed.',
-        volume: '786.5 m┬│ (Accessory Superstructure)',
+        volume: '786.5 m³ (Accessory Superstructure)',
         heightRange: 'Z: 0.0m to +7.2m (Unified Plotted Column)',
         uds: '100.00% (Sole Freehold Title)',
         owner: selectedObject.owner || 'Freehold Owner',
@@ -214,9 +214,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-849205',
         type: 'VIOLATION' as UlpinAllocationType,
         typeLabel: '≡ƒÜ¿ 3D COMPLIANCE REJECTION (AIRSPACE VIOLATION)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 5 Edge Case 2 & Section 8',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 5 Edge Case 2 & Section 8',
         normRationale: 'CRITICAL AIRSPACE VIOLATION: Floors 5 & 6 (Z: +14.5m to +22.8m) exceed approved G+4 municipal sanction. 3D Spatial Compliance Engine rejects 3D ULPIN issuance and halts occupancy certificate.',
-        volume: '1,420 m┬│ (Unsanctioned Volumetric Excess)',
+        volume: '1,420 m³ (Unsanctioned Volumetric Excess)',
         heightRange: 'Z: +14.5m to +22.8m (Exceeds 14.5m Ceiling)',
         uds: 'INVALID (Breach of Sanctioned Envelope)',
         owner: 'Sharma Properties & Constructions LLP',
@@ -230,9 +230,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: selectedObject.base2dUlpin || 'IN-DL-01-849204',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INSTITUTIONAL INFRASTRUCTURE 3D ULPIN',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.4 & Section 8',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.4 & Section 8',
         normRationale: 'Public Healthcare Asset: Unified Institutional ULPIN. Clinical wards, ICUs & Operation Theatres DO NOT receive separate 3D ULPINs (Negative Invariant). Commercial pharmacies/cafes receive distinct 3D commercial ULPINs.',
-        volume: '51,120 m┬│ (Full Healthcare Envelope)',
+        volume: '51,120 m³ (Full Healthcare Envelope)',
         heightRange: 'Z: 0.0m to +24.5m (G+6 & Helipad)',
         uds: '100.0% (Public Healthcare Reservation)',
         owner: selectedObject.owner || 'Health Department / Apollo Trust',
@@ -246,9 +246,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-849203',
         type: '3D_ULPIN' as UlpinAllocationType,
         typeLabel: '3D COMMERCIAL RETAIL ULPIN (VPRID)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.2',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.2',
         normRationale: 'Commercial Retail Unit S-102: Distinct 3D ULPIN per demarcated retail bay. Commercial brand leases (LA_Party) attach dynamically to this persistent 3D spatial space.',
-        volume: '445.0 m┬│',
+        volume: '445.0 m³',
         heightRange: 'Z: 0.0m to +4.2m MSL',
         uds: '2.38% (Commercial Strata Share)',
         owner: 'Civic Infrastructure & Retail Holdings Ltd.',
@@ -262,9 +262,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-ROW-MEDIAN',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INFRASTRUCTURE 3D ULPIN (AIR RIGHTS CORRIDOR)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.3',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.3',
         normRationale: 'Elevated Arterial Flyover: Single Infrastructure ULPIN (INF-FLY) for elevated roadway deck occupying sovereign public airspace at +8.5m grade separation.',
-        volume: '18,500 m┬│ elevated polyhedral sweep',
+        volume: '18,500 m³ elevated polyhedral sweep',
         heightRange: 'Z: +6.4m to +8.5m (Clearance: +6.4m)',
         uds: 'Public Highway Air Rights RoW',
         owner: 'NHAI / Public Works Department (PWD)',
@@ -278,9 +278,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-MULTIPLE-PARCELS',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INFRASTRUCTURE 3D ULPIN (SUBTERRANEAN TUNNEL)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3 & Section 5 Edge Case 1',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3 & Section 5 Edge Case 1',
         normRationale: 'Subsurface Transit Tunnel: 3D Polyhedral cylinder with mandatory statutory 5.0m safety clearance buffer traversing subterranean parcels without surface acquisition.',
-        volume: '31,800 m┬│ Subsurface Bore',
+        volume: '31,800 m³ Subsurface Bore',
         heightRange: 'Z: -6.0m to -14.2m Depth Datum',
         uds: 'Subsurface Statutory Easement',
         owner: 'Delhi Metro Rail Corporation (DMRC)',
@@ -294,9 +294,9 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-849201',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INFRASTRUCTURE 3D ULPIN (UNDERGROUND BASEMENT)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.1',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.1',
         normRationale: 'Subterranean Parking Facility: Infrastructure basement ULPIN (INF-BSM) per structural subterranean level (B1 & B2). Independently surveyed sub-surface envelope.',
-        volume: '4,860 m┬│ per level',
+        volume: '4,860 m³ per level',
         heightRange: 'Z: -4.2m (B1) & -7.8m (B2)',
         uds: 'Society Common Utility Accessory',
         owner: 'Aarav Heights Condominium RWA / MCD',
@@ -310,7 +310,7 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-PUBLIC-ROW',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INFRASTRUCTURE 3D ULPIN (SUBSURFACE UTILITY)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.3',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.3',
         normRationale: `Subsurface Utility Conduit (${selectedObject.utilityType}): Modeled as LineStringZ spatial corridor with mandatory statutory clearance buffer (1.5m). Prevents excavation damage.`,
         volume: '600mm / 900mm Continuous Pipe Grid',
         heightRange: `Z: -${selectedObject.depthMeters}m MSL`,
@@ -326,7 +326,7 @@ export const Full3DWorldPage: React.FC = () => {
         base2d: 'IN-DL-01-STREET-ROW',
         type: 'INFRA_3D_ULPIN' as UlpinAllocationType,
         typeLabel: 'INFRASTRUCTURE 3D ULPIN (PEDESTRIAN RoW)',
-        normRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3',
+        normRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3',
         normRationale: 'Public Pedestrian Sidewalk RoW: Dedicated surface pedestrian transit envelope. Encroachments are spatial-topological intersections against this public polygon.',
         volume: '3.5m Continuous Surface Corridor',
         heightRange: 'Z: +0.0m to +0.2m (Surface Level)',
@@ -341,7 +341,7 @@ export const Full3DWorldPage: React.FC = () => {
       base2d: selectedObject.base2dUlpin || 'IN-DL-01-849200',
       type: selectedObject.ulpinType || '3D_ULPIN',
       typeLabel: '3D CADASTRAL PROPERTY',
-      normRef: selectedObject.standardNormRef || 'MoHUA Standard B3D-STD-2026-ULPIN-01',
+      normRef: selectedObject.standardNormRef || 'Proposed BHARAT 3D ULPIN extension (illustrative)',
       normRationale: selectedObject.normRationale || 'Registered 3D Cadastral Unit in Sovereign Spatial Database.',
       volume: selectedObject.volumeM3 || 'Custom Volume',
       heightRange: selectedObject.zRange || '3D Coordinates Surveyed',
@@ -514,7 +514,7 @@ export const Full3DWorldPage: React.FC = () => {
     skyFill.position.set(-60, 50, -50);
     scene.add(skyFill);
 
-    // Subterranean Dedicated Lights for Underground 360┬░ Exploration
+    // Subterranean Dedicated Lights for Underground 360° Exploration
     if (isUnderground) {
       const xrayMetro = new THREE.PointLight(0x06b6d4, 6, 120);
       xrayMetro.position.set(-22, -12, 16);
@@ -621,8 +621,8 @@ export const Full3DWorldPage: React.FC = () => {
       heightMeters: 8.5,
       builtUpArea: '1,650m curved span',
       jurisdiction: 'National Highways Authority of India (NHAI) / PWD',
-      status: 'Structural Sensors Active ΓÇó +8.5m Grade Separation',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.3',
+      status: 'Structural Sensors Active • +8.5m Grade Separation',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.3',
       normRationale: 'Elevated Flyover Corridor: Single Infrastructure ULPIN (INF-FLY) for elevated roadway deck occupying public air-rights envelope.',
       centroid: [0, 8.5, 0]
     };
@@ -683,8 +683,8 @@ export const Full3DWorldPage: React.FC = () => {
         widthMeters: 3.5,
         surfaceMaterial: 'High-Density Interlocking Paver Blocks with Tactile Guiding Strips',
         jurisdiction: 'Municipal Corporation (MCD) / PWD Pedestrian Safety Cell',
-        status: isSharmaEncroached ? 'ΓÜá∩╕Å ACTIVE ENCROACHMENT DETECTED (3.5m OVERLAP)' : 'Clear Public Corridor ΓÇó Dedicated Sub-Surface Utility RoW',
-        standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3',
+        status: isSharmaEncroached ? '⚠∩╕Å ACTIVE ENCROACHMENT DETECTED (3.5m OVERLAP)' : 'Clear Public Corridor • Dedicated Sub-Surface Utility RoW',
+        standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3',
         normRationale: 'Pedestrian Sidewalk RoW: Public pedestrian Right-of-Way corridor. Surface encroachments are verified against this spatial polygon.',
         centroid: [x, 0.2, z]
       };
@@ -739,11 +739,11 @@ export const Full3DWorldPage: React.FC = () => {
       heightMeters: 41.5,
       builtUpArea: '5,840 sq.m',
       carpetArea: '108.5 sq.m',
-      volumeM3: '347.2 m┬│',
+      volumeM3: '347.2 m³',
       udsPercentage: '2.083% (1/48 Share of Base 2D Parcel)',
       owner: 'Aarav Residents Welfare Association (RWA)',
       status: 'Approved & Certified (RERA: PRM/KA/RERA/1251/310/PR/170915)',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.1',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.1',
       normRationale: 'Multi-Story Apartment Flats: Unique 3D ULPIN per unit volume. Legally alienable unit with separate title deed, property tax, and UDS %.',
       centroid: [-42, 2.5 + selectedFloor * 3.1, -38]
     };
@@ -840,11 +840,11 @@ export const Full3DWorldPage: React.FC = () => {
       units: 32,
       heightMeters: 28.5,
       builtUpArea: '3,920 sq.m',
-      volumeM3: '312.0 m┬│',
+      volumeM3: '312.0 m³',
       udsPercentage: '3.125% (1/32 Share)',
       owner: 'Nilgiri Co-operative Housing Society',
-      status: 'Approved & Certified ΓÇó 32 Flats Registered',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.1',
+      status: 'Approved & Certified • 32 Flats Registered',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.1',
       normRationale: 'Residential High-Rise Strata Unit with registered title and undivided land share.',
       centroid: [-65, 14, -60]
     };
@@ -883,11 +883,11 @@ export const Full3DWorldPage: React.FC = () => {
       units: 40,
       heightMeters: 33.0,
       builtUpArea: '4,600 sq.m',
-      volumeM3: '335.5 m┬│',
+      volumeM3: '335.5 m³',
       udsPercentage: '2.50% (1/40 Share)',
       owner: 'Shivalik Apex Developers',
-      status: 'Occupancy Certificate Issued ΓÇó 40 Units Certified',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.1',
+      status: 'Occupancy Certificate Issued • 40 Units Certified',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.1',
       normRationale: 'High-Rise Residential Unit registered in Sovereign 3D Cadastre.',
       centroid: [-25, 16.5, -65]
     };
@@ -929,13 +929,13 @@ export const Full3DWorldPage: React.FC = () => {
         floors: 2,
         builtUpArea: '285 sq.m',
         carpetArea: '242 sq.m',
-        volumeM3: '786.5 m┬│ (Accessory Volume)',
+        volumeM3: '786.5 m³ (Accessory Volume)',
         udsPercentage: '100.00% (Sole Freehold Parcel)',
         owner,
         occupant: 'Owner Occupied',
-        propertyTax: 'Γé╣18,400 / year (Paid)',
-        status: 'Retains Base 2D ULPIN ΓÇó Plotted Freehold Title',
-        standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.1 & Section 8',
+        propertyTax: '₹18,400 / year (Paid)',
+        status: 'Retains Base 2D ULPIN • Plotted Freehold Title',
+        standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.1 & Section 8',
         normRationale: 'Independent Villa (Plotted House): Retain Base 2D ULPIN. Parcel and superstructure are coterminous under unified freehold title (center of earth to sky). No separate 3D ULPIN created unless basement or rooftop rights are severed.',
         centroid: [x, 3.6, z]
       };
@@ -991,7 +991,7 @@ export const Full3DWorldPage: React.FC = () => {
       floors: 6,
       heightMeters: 24.5,
       builtUpArea: '14,200 sq.m',
-      volumeM3: '51,120 m┬│',
+      volumeM3: '51,120 m³',
       owner: 'Department of Health & Family Welfare / Apollo Trust',
       departments: [
         'Level 0: 24/7 Emergency, Trauma Bay & Triage (Institutional)',
@@ -1002,8 +1002,8 @@ export const Full3DWorldPage: React.FC = () => {
         'Level 5: 6 Modular Operation Theatres (Negative Invariant)',
         'Level 6: Rooftop Helipad & Aeromedical Evacuation'
       ],
-      status: 'Institutional 3D Cadastre Active ΓÇó Unified Healthcare Envelope',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.4 & Section 8',
+      status: 'Institutional 3D Cadastre Active • Unified Healthcare Envelope',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.4 & Section 8',
       normRationale: 'Hospitals & Healthcare: Main hospital building holds Unified Infrastructure ULPIN. Clinical facilities (ICUs, OTs, Wards) DO NOT receive separate 3D ULPINs (Negative Invariants). Leased ground commercial pharmacy holds distinct 3D ULPIN.',
       centroid: [-48, 12.25, 45]
     };
@@ -1052,11 +1052,11 @@ export const Full3DWorldPage: React.FC = () => {
       vacantCount: 4,
       heightMeters: 18.0,
       builtUpArea: '18,600 sq.m',
-      volumeM3: '445.0 m┬│ per retail shop',
+      volumeM3: '445.0 m³ per retail shop',
       owner: 'Civic Infrastructure & Retail Holdings Ltd.',
-      propertyTax: 'Γé╣48,60,000 / year (Paid)',
-      status: 'Commercial 3D Registry Active ΓÇó 38 Active Commercial Leases Mapped',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.2',
+      propertyTax: '₹48,60,000 / year (Paid)',
+      status: 'Commercial 3D Registry Active • 38 Active Commercial Leases Mapped',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.2',
       normRationale: 'Shopping Mall Retail Shops: Unique 3D ULPIN per demarcated shop. Mall owner retains structure title; tenants register commercial leases against unit 3D ULPIN.',
       centroid: [50, 9.0, 48]
     };
@@ -1107,8 +1107,8 @@ export const Full3DWorldPage: React.FC = () => {
         {
           type: '1. Unauthorized Vertical Construction',
           description: 'Approved Sanction: G+4 (14.5m). Actual Construction: G+6 (22.8m). Floors 5 & 6 constructed with zero structural NOC.',
-          penalty: 'Demolition Notice #MCD-2024-9912 & Γé╣15,00,000 fine',
-          status: 'RED ALERT ΓÇó 3D ULPIN REJECTED'
+          penalty: 'Demolition Notice #MCD-2024-9912 & ₹15,00,000 fine',
+          status: 'RED ALERT • 3D ULPIN REJECTED'
         },
         {
           type: '2. Public Footpath Encroachment',
@@ -1119,11 +1119,11 @@ export const Full3DWorldPage: React.FC = () => {
         {
           type: '3. Setback Line Breach',
           description: 'North-East building corner violates mandatory 3.0m side setback boundary by 2.1m.',
-          penalty: 'Compoundable Fine of Γé╣4,50,000',
+          penalty: 'Compoundable Fine of ₹4,50,000',
           status: 'CADASTRAL BOUNDARY BREACH'
         }
       ],
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 5 Edge Case 2 & Section 8',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 5 Edge Case 2 & Section 8',
       normRationale: 'AIRSPACE VIOLATION: Unsanctioned vertical construction beyond approved height ceiling is mathematically flagged by 3D Cadastre Compliance Engine.',
       centroid: [24, 11.4, 18]
     };
@@ -1209,8 +1209,8 @@ export const Full3DWorldPage: React.FC = () => {
       base2dUlpin: 'IN-DL-01-METRO-ZONE',
       depthMeters: 14.2,
       owner: 'Delhi Metro Rail Corporation (DMRC)',
-      status: 'Active Underground Rapid Transit ΓÇó 4 Subsurface Levels',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3 & Section 5 Edge Case 1',
+      status: 'Active Underground Rapid Transit • 4 Subsurface Levels',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3 & Section 5 Edge Case 1',
       normRationale: 'Subsurface Transit Tunnel: 3D Polyhedral cylinder with mandatory 5.0m statutory safety clearance buffer traversing subterranean parcels.',
       centroid: [-22, -14.2, 16]
     };
@@ -1285,8 +1285,8 @@ export const Full3DWorldPage: React.FC = () => {
       parkingStalls: 180,
       evPoints: 24,
       jurisdiction: 'Municipal Corporation (MCD) / Building Ops',
-      status: 'Subterranean 3D Cadastre Active ΓÇó 180 Stalls Digitized',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.1',
+      status: 'Subterranean 3D Cadastre Active • 180 Stalls Digitized',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.1',
       normRationale: 'Subterranean Parking: Infrastructure basement ULPIN (INF-BSM) per structural subterranean level.',
       centroid: [-42, -6.0, -38]
     };
@@ -1341,8 +1341,8 @@ export const Full3DWorldPage: React.FC = () => {
       diameter: '600mm Ductile Iron',
       depthMeters: 1.8,
       jurisdiction: 'Delhi Jal Board (DJB)',
-      status: 'Active ΓÇó Pressure: 4.2 Bar ΓÇó 1.5m Safety Buffer',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.3',
+      status: 'Active • Pressure: 4.2 Bar • 1.5m Safety Buffer',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.3',
       normRationale: 'Subsurface Utility: LineStringZ corridor with mandatory 1.5m statutory clearance buffer.',
       centroid: [0, -1.8, -7.5]
     };
@@ -1371,8 +1371,8 @@ export const Full3DWorldPage: React.FC = () => {
       diameter: '900mm Reinforced Concrete',
       depthMeters: 3.2,
       jurisdiction: 'Municipal Corporation (MCD)',
-      status: 'Active Flow ΓÇó 1.5m Statutory Clearance Corridor',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.3',
+      status: 'Active Flow • 1.5m Statutory Clearance Corridor',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.3',
       normRationale: 'Subsurface Wastewater Conduit with statutory safety buffer.',
       centroid: [0, -3.2, 7.5]
     };
@@ -1391,8 +1391,8 @@ export const Full3DWorldPage: React.FC = () => {
       base2dUlpin: 'IN-DL-01-849205-RLY',
       builtUpArea: '32,400 sq.m Platform Span',
       owner: 'Indian Railways (Northern Railway Zone)',
-      status: '4 Platform Tracks ΓÇó Electrified 25kV AC Corridor Active',
-      standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3',
+      status: '4 Platform Tracks • Electrified 25kV AC Corridor Active',
+      standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3',
       normRationale: 'Railway Station Complex: Station concourse holds primary infrastructure ULPIN (INF-RLY). Leased commercial retail shops inside receive distinct commercial 3D ULPINs.',
       centroid: [50, 3.25, -75]
     };
@@ -1502,7 +1502,7 @@ export const Full3DWorldPage: React.FC = () => {
     add3DCar(40, 36, 0xf59e0b, Math.PI / 2);
 
     // =======================================================================
-    // 10. UNRESTRICTED 360┬░ RAYCASTING & TOUCH/MOUSE ORBIT
+    // 10. UNRESTRICTED 360° RAYCASTING & TOUCH/MOUSE ORBIT
     // =======================================================================
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
@@ -1684,8 +1684,8 @@ export const Full3DWorldPage: React.FC = () => {
         base2dUlpin: 'IN-DL-01-METRO-ZONE',
         depthMeters: 14.2,
         owner: 'Delhi Metro Rail Corporation (DMRC)',
-        status: 'Active Underground Rapid Transit ΓÇó 4 Subsurface Levels',
-        standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 4.3 & Section 5 Edge Case 1',
+        status: 'Active Underground Rapid Transit • 4 Subsurface Levels',
+        standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 4.3 & Section 5 Edge Case 1',
         normRationale: 'Subsurface Transit Tunnel: 3D Polyhedral cylinder with mandatory 5.0m statutory safety clearance corridor.',
         centroid: [-22, -14.2, 16]
       });
@@ -1707,8 +1707,8 @@ export const Full3DWorldPage: React.FC = () => {
         parkingStalls: 180,
         evPoints: 24,
         jurisdiction: 'Municipal Corporation (MCD) / Building Ops',
-        status: 'Subterranean 3D Cadastre Active ΓÇó 180 Stalls Digitized',
-        standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 3 & Section 4.1',
+        status: 'Subterranean 3D Cadastre Active • 180 Stalls Digitized',
+        standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 3 & Section 4.1',
         normRationale: 'Subterranean Parking: Infrastructure basement ULPIN (INF-BSM) per structural subterranean level.',
         centroid: [-42, -6.0, -38]
       });
@@ -1731,8 +1731,8 @@ export const Full3DWorldPage: React.FC = () => {
           {
             type: '1. Unauthorized Vertical Construction',
             description: 'Approved Sanction: G+4 (14.5m). Actual Construction: G+6 (22.8m). Floors 5 & 6 constructed with zero structural NOC.',
-            penalty: 'Demolition Notice #MCD-2024-9912 & Γé╣15,00,000 fine',
-            status: 'RED ALERT ΓÇó 3D ULPIN REJECTED'
+            penalty: 'Demolition Notice #MCD-2024-9912 & ₹15,00,000 fine',
+            status: 'RED ALERT • 3D ULPIN REJECTED'
           },
           {
             type: '2. Public Footpath Encroachment',
@@ -1743,11 +1743,11 @@ export const Full3DWorldPage: React.FC = () => {
           {
             type: '3. Setback Line Breach',
             description: 'North-East building corner violates mandatory 3.0m side setback boundary by 2.1m.',
-            penalty: 'Compoundable Fine of Γé╣4,50,000',
+            penalty: 'Compoundable Fine of ₹4,50,000',
             status: 'CADASTRAL BOUNDARY BREACH'
           }
         ],
-        standardNormRef: 'MoHUA Standard B3D-STD-2026-ULPIN-01 ΓÇó Section 5 Edge Case 2 & Section 8',
+        standardNormRef: 'Proposed BHARAT 3D ULPIN extension (illustrative) • Section 5 Edge Case 2 & Section 8',
         normRationale: 'AIRSPACE VIOLATION: Unsanctioned vertical construction beyond approved height ceiling is mathematically flagged by 3D Cadastre Compliance Engine.',
         centroid: [24, 11.4, 18]
       });
@@ -1816,11 +1816,11 @@ export const Full3DWorldPage: React.FC = () => {
               <div className="text-xs font-bold text-slate-100 flex items-center space-x-2">
                 <span>{areaInfo.name} ({areaInfo.ward})</span>
                 <span className="text-[10px] text-amber-400 font-mono bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/60">
-                  {activeArea.toUpperCase()} ΓÇó 360┬░ Orbit
+                  {activeArea.toUpperCase()} • 360° Orbit
                 </span>
               </div>
               <div className="text-[10px] text-slate-400">
-                {areaInfo.desc} ΓÇó Click any 3D asset to inspect
+                {areaInfo.desc} • Click any 3D asset to inspect
               </div>
 
             </div>
@@ -1895,7 +1895,7 @@ export const Full3DWorldPage: React.FC = () => {
             }`}
           >
             <Train className="w-4 h-4" />
-            <span>{isUnderground ? 'Subterranean 360┬░ ON' : 'Toggle Underground'}</span>
+            <span>{isUnderground ? 'Subterranean 360° ON' : 'Toggle Underground'}</span>
           </button>
 
           {/* Hide Surface Toggle in Underground Mode */}
@@ -1929,10 +1929,10 @@ export const Full3DWorldPage: React.FC = () => {
       </div>
 
       {/* ===================================================================== */}
-      {/* 2. 360┬░ ORBIT NAVIGATION KEYPAD (Dedicated On-Screen Controls) */}
+      {/* 2. 360° ORBIT NAVIGATION KEYPAD (Dedicated On-Screen Controls) */}
       {/* ===================================================================== */}
       <div className="absolute top-20 left-6 bg-slate-900/95 backdrop-blur-md border border-slate-700 p-3 rounded-2xl shadow-2xl z-20 flex flex-col items-center space-y-2 text-white">
-        <span className="text-[9px] font-extrabold uppercase tracking-wider text-amber-400">360┬░ Orbit Keypad</span>
+        <span className="text-[9px] font-extrabold uppercase tracking-wider text-amber-400">360° Orbit Keypad</span>
         <div className="grid grid-cols-3 gap-1 w-28">
           <div />
           <button
@@ -1947,7 +1947,7 @@ export const Full3DWorldPage: React.FC = () => {
           <button
             onClick={() => rotateCamera360(-Math.PI / 6, 0)}
             className="p-2 bg-slate-800 hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors shadow"
-            title="Rotate Left 30┬░"
+            title="Rotate Left 30°"
           >
             <ChevronLeft className="w-4 h-4 text-slate-200" />
           </button>
@@ -1956,12 +1956,12 @@ export const Full3DWorldPage: React.FC = () => {
             className="p-2 bg-slate-950 hover:bg-slate-700 rounded-xl flex items-center justify-center text-[10px] font-mono font-bold text-amber-400 shadow"
             title="Reset Angle"
           >
-            ΓùÅ
+            ●
           </button>
           <button
             onClick={() => rotateCamera360(Math.PI / 6, 0)}
             className="p-2 bg-slate-800 hover:bg-blue-600 rounded-xl flex items-center justify-center transition-colors shadow"
-            title="Rotate Right 30┬░"
+            title="Rotate Right 30°"
           >
             <ChevronRight className="w-4 h-4 text-slate-200" />
           </button>
@@ -2033,7 +2033,7 @@ export const Full3DWorldPage: React.FC = () => {
           </div>
 
           <div className="space-y-3 text-xs text-slate-300 max-h-[calc(100vh-200px)] overflow-y-auto pr-1">
-            {/* MoHUA Standard ULPIN Card (Embedded right inside sidebar) */}
+            {/* Proposed 3D ULPIN card (Embedded right inside sidebar) */}
             <div
               className={`p-3.5 rounded-xl border font-mono text-center space-y-1.5 shadow-lg ${
                 activeUlpinData.type === 'VIOLATION'
@@ -2047,10 +2047,10 @@ export const Full3DWorldPage: React.FC = () => {
             >
               <div className="flex items-center justify-between text-[10px]">
                 <span className="font-extrabold uppercase tracking-wide">
-                  {activeUlpinData.type === 'VIOLATION' && 'ΓÜá∩╕Å '}
+                  {activeUlpinData.type === 'VIOLATION' && '⚠∩╕Å '}
                   {activeUlpinData.typeLabel}
                 </span>
-                <span className="text-slate-400 text-[9px] bg-slate-950/60 px-1.5 py-0.5 rounded">MoHUA STD</span>
+                <span className="text-slate-400 text-[9px] bg-slate-950/60 px-1.5 py-0.5 rounded">PROPOSED</span>
               </div>
 
               <div className="flex items-center justify-center space-x-2 py-0.5">
@@ -2111,10 +2111,10 @@ export const Full3DWorldPage: React.FC = () => {
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     {[
-                      { u: 1, type: '2BHK (North-West)', area: '88.2 sq.m', vol: '282.2 m┬│' },
-                      { u: 2, type: '3BHK (North-East)', area: '112.5 sq.m', vol: '360.0 m┬│' },
-                      { u: 3, type: '2BHK (South-West)', area: '92.0 sq.m', vol: '294.4 m┬│' },
-                      { u: 4, type: '3BHK (South-East)', area: '108.5 sq.m', vol: '347.2 m┬│' }
+                      { u: 1, type: '2BHK (North-West)', area: '88.2 sq.m', vol: '282.2 m³' },
+                      { u: 2, type: '3BHK (North-East)', area: '112.5 sq.m', vol: '360.0 m³' },
+                      { u: 3, type: '2BHK (South-West)', area: '92.0 sq.m', vol: '294.4 m³' },
+                      { u: 4, type: '3BHK (South-East)', area: '108.5 sq.m', vol: '347.2 m³' }
                     ].map((item) => {
                       const flatNo = `${selectedFloor}0${item.u}`;
                       const isSel = selectedUnit === item.u;
@@ -2136,7 +2136,7 @@ export const Full3DWorldPage: React.FC = () => {
                           </div>
                           <div className="text-[10px] text-slate-300 mt-1">{item.type}</div>
                           <div className="text-[10px] text-emerald-300 font-mono mt-0.5">
-                            {item.area} ΓÇó {item.vol}
+                            {item.area} • {item.vol}
                           </div>
                         </button>
                       );
@@ -2172,12 +2172,12 @@ export const Full3DWorldPage: React.FC = () => {
                     <div>
                       <span className="text-slate-500 text-[10px] block">3D Enclosed Volume</span>
                       <span className="font-semibold text-emerald-400">
-                        {selectedUnit === 4 ? '347.2 m┬│' : selectedUnit === 1 ? '282.2 m┬│' : selectedUnit === 2 ? '360.0 m┬│' : '294.4 m┬│'}
+                        {selectedUnit === 4 ? '347.2 m³' : selectedUnit === 1 ? '282.2 m³' : selectedUnit === 2 ? '360.0 m³' : '294.4 m³'}
                       </span>
                     </div>
                     <div>
                       <span className="text-slate-500 text-[10px] block">Property Tax (Annual)</span>
-                      <span className="font-semibold text-slate-200">Γé╣14,200 / yr (Paid)</span>
+                      <span className="font-semibold text-slate-200">₹14,200 / yr (Paid)</span>
                     </div>
                     <div>
                       <span className="text-slate-500 text-[10px] block">Volumetric VPRID</span>
@@ -2406,7 +2406,7 @@ export const Full3DWorldPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-base font-bold">3D Volumetric ULPIN Certification Engine</h3>
-                <p className="text-xs text-slate-400">Processing Floor {selectedFloor} ΓÇó Flat {selectedFloor}0{selectedUnit}</p>
+                <p className="text-xs text-slate-400">Processing Floor {selectedFloor} • Flat {selectedFloor}0{selectedUnit}</p>
               </div>
             </div>
 
@@ -2456,7 +2456,7 @@ export const Full3DWorldPage: React.FC = () => {
                 {generatedVPRID}
               </div>
               <div className="text-[10px] text-slate-400 font-mono">
-                Bounding Volume: 347.2 m┬│ ΓÇó Height: +{(2.5 + (selectedFloor - 1) * 3.1).toFixed(1)}m to +{(2.5 + selectedFloor * 3.1).toFixed(1)}m MSL
+                Bounding Volume: 347.2 m³ • Height: +{(2.5 + (selectedFloor - 1) * 3.1).toFixed(1)}m to +{(2.5 + selectedFloor * 3.1).toFixed(1)}m MSL
               </div>
             </div>
 
@@ -2477,7 +2477,7 @@ export const Full3DWorldPage: React.FC = () => {
       {/* ===================================================================== */}
       <div className="absolute bottom-5 left-5 bg-slate-900/90 backdrop-blur-md border border-slate-700 p-3.5 rounded-2xl shadow-2xl text-white z-10 text-[10px] space-y-2 max-w-sm pointer-events-none">
         <div className="font-bold text-slate-200 text-[11px] flex items-center justify-between border-b border-slate-800 pb-1.5">
-          <span>MoHUA 3D Cadastre Standard Norms</span>
+          <span>Proposed 3D ULPIN extension (illustrative)</span>
           <span className="text-[9px] text-emerald-400 font-mono">B3D-STD-2026</span>
         </div>
         <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 pt-0.5">

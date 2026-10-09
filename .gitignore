@@ -47,3 +47,23 @@ Thumbs.db
 PROJECT_FULL_STATUS_AND_CHAT_CONTEXT.md
 *CHAT_CONTEXT*.md
 *PROJECT_CONTEXT*.md
+
+# Local databases and generated scenes
+*.db
+data/generated/
+backend/.venv/
+
+# Internal documentation and working notes (kept locally, not published)
+docs/
+BHARAT_3D_DEMO_SCRIPT.md
+logo-prompts.md
+frontend/generate_pages*.ps1
+
+# Cloudflare / tooling caches
+.wrangler/
+frontend/.wrangler/
+*.tsbuildinfo
+
+# Session hand-off notes and local dev tools (private)
+NEXT_SESSION_HANDOFF.md
+tools/

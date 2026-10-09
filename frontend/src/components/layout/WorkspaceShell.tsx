@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import type { LucideIcon } from 'lucide-react';
 import { LogOut, User } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
@@ -10,6 +10,10 @@ export type WorkspaceNavItem = {
   to: string;
   icon: LucideIcon;
   label: string;
+  group?: string;
+  badge?: React.ReactNode;
+  /** other paths that should light this item up */
+  also?: string[];
 };
 
 type WorkspaceShellProps = {
@@ -29,18 +33,42 @@ export function WorkspaceShell({
 }: WorkspaceShellProps) {
   const { user, logout } = useAuthStore();
   const navigate = useNavigate();
+  const location = useLocation();
+  const navRef = useRef<HTMLElement>(null);
+  const mainRef = useRef<HTMLElement>(null);
+  const [pill, setPill] = useState<{ top: number; height: number } | null>(null);
+  const [barKey, setBarKey] = useState(0);
 
   const handleLogout = () => {
     logout();
     navigate('/login');
   };
 
+  const isActive = (item: WorkspaceNavItem) =>
+    location.pathname === item.to || (item.also ?? []).some((p) => location.pathname.startsWith(p));
+
+  // glide the active indicator to the current item; run the route bar; scroll the new page to the top
+  useLayoutEffect(() => {
+    const el = navRef.current?.querySelector<HTMLAnchorElement>('a[data-active="true"]');
+    setPill(el ? { top: el.offsetTop, height: el.offsetHeight } : null);
+    setBarKey((k) => k + 1);
+    mainRef.current?.scrollTo({ top: 0 });
+  }, [location.pathname]);
+
   const displayRole = user?.role || defaultRoleLabel;
+  const groups: { name: string; items: WorkspaceNavItem[] }[] = [];
+  navItems.forEach((it) => {
+    const g = it.group ?? sectionLabel;
+    const found = groups.find((x) => x.name === g);
+    if (found) found.items.push(it);
+    else groups.push({ name: g, items: [it] });
+  });
 
   return (
     <div className="workspace-shell flex h-screen overflow-hidden">
+      <span key={barKey} className="b3-route-bar is-run w-full" />
       <aside className="w-64 bg-[#1e4d6b] text-[#d5e3ea] flex flex-col justify-between border-r border-[#173e56] z-20 shrink-0">
-        <div>
+        <div className="min-h-0 overflow-y-auto">
           <div className="p-4 flex items-center gap-3 border-b border-[#173e56]">
             <BrandLogo className="h-10 w-10" />
             <div className="min-w-0">
@@ -49,29 +77,35 @@ export function WorkspaceShell({
             </div>
           </div>
 
-          <nav className="py-3 px-2 space-y-0.5">
-            <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#8fb4c9]">
-              {sectionLabel}
-            </div>
-            {navItems.map((item) => {
-              const Icon = item.icon;
-              return (
-                <NavLink
-                  key={item.to}
-                  to={item.to}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-3 py-2.5 rounded-sm text-xs font-medium transition-colors ${
-                      isActive
-                        ? 'bg-[#173e56] text-[#8fd0c8] font-semibold border-l-[3px] border-[#1f7a72] pl-[9px]'
-                        : 'text-[#d5e3ea] hover:bg-[#173e56]/70 hover:text-white border-l-[3px] border-transparent pl-[9px]'
-                    }`
-                  }
-                >
-                  <Icon className="w-4 h-4 shrink-0" />
-                  <span>{item.label}</span>
-                </NavLink>
-              );
-            })}
+          <nav ref={navRef} className="b3-nav py-3 px-2">
+            {pill && <span className="b3-nav-pill" style={{ top: pill.top, height: pill.height }} />}
+            {groups.map((g, gi) => (
+              <div key={g.name} className={gi ? 'mt-3' : ''}>
+                <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-[#8fb4c9]">{g.name}</div>
+                <div className="space-y-0.5">
+                  {g.items.map((item) => {
+                    const Icon = item.icon;
+                    const active = isActive(item);
+                    return (
+                      <NavLink
+                        key={item.to}
+                        to={item.to}
+                        data-active={active}
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-sm text-xs font-medium transition-colors duration-300 border-l-[3px] border-transparent pl-[9px] ${
+                          active ? 'text-[#8fd0c8] font-semibold' : 'text-[#d5e3ea] hover:text-white hover:bg-[#173e56]/50'
+                        }`}
+                      >
+                        <Icon className="b3-nav-icon w-4 h-4 shrink-0" />
+                        <span className="truncate">{item.label}</span>
+                        {item.badge !== undefined && item.badge !== null && item.badge !== '' && (
+                          <span className="b3-nav-badge b3-pop">{item.badge}</span>
+                        )}
+                      </NavLink>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </nav>
         </div>
 
@@ -98,7 +132,7 @@ export function WorkspaceShell({
         </div>
       </aside>
 
-      <main className="flex-1 flex flex-col h-full overflow-y-auto bg-[#f3efe6] min-w-0">
+      <main ref={mainRef} className="flex-1 flex flex-col h-full overflow-y-auto overflow-x-hidden bg-[#f3efe6] min-w-0 b3-scroll">
         <WorkspacePageTransition />
       </main>
     </div>

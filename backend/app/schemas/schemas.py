@@ -30,15 +30,16 @@ class ProjectResponse(BaseModel):
     id: int
     name: str
     description: Optional[str] = None
-    ward_number: str
-    zone_name: str
+    ward_number: Optional[str] = None
+    zone_name: Optional[str] = None
     status: str
-    created_by: int
+    created_by: Optional[int] = None
     survey_polygon: Optional[str] = None
-    dataset_version: Optional[str] = None
+    selected_area_id: Optional[str] = None
+    dataset_version: Optional[str | int] = None
     active_dataset_id: Optional[int] = None
-    created_at: datetime
-    updated_at: datetime
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
     model_config = ConfigDict(from_attributes=True)
 
 class ProjectListResponse(ProjectResponse):

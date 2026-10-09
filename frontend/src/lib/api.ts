@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { getToken } from './auth';
+import { getToken, removeToken, removeUser } from './auth';
 
-const apiBaseUrl = import.meta.env.VITE_API_URL 
+const apiBaseUrl = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL.replace(/\/$/, '')}/api`
   : '/api';
 
@@ -27,7 +27,14 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Graceful error propagation to React Query / Zustand without full-page reloads
+    // An expired or invalid session sends the user back to sign in (login failures are handled by the form).
+    const status = error?.response?.status;
+    const url: string = error?.config?.url || '';
+    if (status === 401 && !url.includes('/auth/login') && window.location.pathname !== '/login') {
+      removeToken();
+      removeUser();
+      window.location.assign('/login');
+    }
     return Promise.reject(error);
   }
 );

@@ -1,87 +1,47 @@
-// Cloudflare Pages Function: High-performance Edge API Proxy & Cache
-// Caches read-only responses at Cloudflare Edge datacenters across India and worldwide
+// Cloudflare Pages Function: same-origin proxy for /api/* to the FastAPI backend.
+// Active when the frontend is built without VITE_API_URL (the app then calls /api on the Pages domain).
+// Set BACKEND_ORIGIN in the Pages project (Settings → Variables), e.g. https://bharat-3d-backend.onrender.com
+//
+// Caching policy: only anonymous GETs of immutable public assets (satellite textures) are cached at the edge.
+// Authenticated and user-specific responses always go straight to the origin.
 
-export async function onRequest(context: any) {
-  const url = new URL(context.request.url);
-  const backendOrigin = 'https://bharat-3d-backend.onrender.com';
-  const targetUrl = new URL(url.pathname + url.search, backendOrigin);
+const DEFAULT_ORIGIN = 'https://bharat-3d-backend.onrender.com';
+const CACHEABLE = /^\/api\/realgen\/scenes\/[a-f0-9]+\/(texture|context)\.jpg$/;
 
-  // For write operations (POST, PUT, DELETE, PATCH), pass through directly to Render
-  if (context.request.method !== 'GET' && context.request.method !== 'HEAD') {
-    return fetch(targetUrl.toString(), context.request);
+export async function onRequest(context: any): Promise<Response> {
+  const { request, env } = context;
+  const url = new URL(request.url);
+  const origin = String(env?.BACKEND_ORIGIN || DEFAULT_ORIGIN).replace(/\/$/, '');
+  const target = new URL(url.pathname + url.search, origin);
+  const forward = new Request(target.toString(), request);
+
+  const cacheable = request.method === 'GET' && !request.headers.has('Authorization') && CACHEABLE.test(url.pathname);
+  if (!cacheable) {
+    try {
+      return await fetch(forward);
+    } catch (err: any) {
+      return gatewayError(err);
+    }
   }
 
-  // Edge Caching for GET / HEAD requests
   const cache = (caches as any).default;
-  const cacheKey = new Request(url.toString(), {
-    headers: context.request.headers,
-    method: 'GET',
-  });
-
-  // Check Cloudflare Edge Cache first (sub-millisecond retrieval)
+  const hit = await cache.match(request);
+  if (hit) return hit;
   try {
-    const cachedResponse = await cache.match(cacheKey);
-    if (cachedResponse) {
-      const res = new Response(cachedResponse.body, cachedResponse);
-      res.headers.set('X-Edge-Cache', 'HIT');
-      return res;
-    }
-  } catch (e) {
-    // If cache match fails, continue to origin
-  }
-
-  // Fetch from Render backend with Cloudflare Edge Caching instruction
-  try {
-    const is3DData = url.pathname.includes('/map') || 
-                     url.pathname.includes('/3d') || 
-                     url.pathname.includes('/buildings') || 
-                     url.pathname.includes('/units') || 
-                     url.pathname.includes('/infrastructure');
-
-    const edgeTtl = is3DData ? 86400 : 3600; // 24 hours for 3D maps and models, 1 hour for other endpoints
-
-    const response = await fetch(targetUrl.toString(), {
-      method: context.request.method,
-      headers: context.request.headers,
-      cf: {
-        cacheEverything: true,
-        cacheTtl: edgeTtl,
-        cacheTtlByStatus: {
-          '200-299': edgeTtl,
-          '404': 60,
-          '500-599': 0,
-        },
-      },
-    } as any);
-
-    if (response.status >= 200 && response.status < 300) {
-      const edgeResponse = new Response(response.body, response);
-      edgeResponse.headers.set('Cache-Control', `public, max-age=${edgeTtl}, s-maxage=${edgeTtl}, stale-while-revalidate=604800`);
-      edgeResponse.headers.set('CDN-Cache-Control', `max-age=${edgeTtl}`);
-      edgeResponse.headers.set('Cloudflare-CDN-Cache-Control', `max-age=${edgeTtl}`);
-      edgeResponse.headers.set('X-Edge-Cache', 'MISS');
-      if (is3DData) {
-        edgeResponse.headers.set('X-3D-Spatial-Cache', 'Cloudflare-Edge-24h');
-      }
-
-      context.waitUntil(cache.put(cacheKey, edgeResponse.clone()));
-      return edgeResponse;
-    }
-
-    return response;
+    const res = await fetch(forward);
+    if (!res.ok) return res;
+    const copy = new Response(res.body, res);
+    copy.headers.set('Cache-Control', 'public, max-age=86400');
+    context.waitUntil(cache.put(request, copy.clone()));
+    return copy;
   } catch (err: any) {
-    return new Response(
-      JSON.stringify({
-        error: 'Backend gateway timeout or sleeping',
-        message: err.message,
-      }),
-      {
-        status: 504,
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
-      }
-    );
+    return gatewayError(err);
   }
+}
+
+function gatewayError(err: any): Response {
+  return new Response(
+    JSON.stringify({ detail: 'The API is waking up or unreachable. Please retry in a few seconds.', error: String(err?.message || err) }),
+    { status: 504, headers: { 'Content-Type': 'application/json' } },
+  );
 }

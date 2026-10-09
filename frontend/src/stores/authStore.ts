@@ -28,30 +28,8 @@ export const useAuthStore = create<AuthState>((set) => ({
       setUser(user);
       set({ user, token: access_token, isAuthenticated: true, isLoading: false });
     } catch (error) {
-      // Demo fallback in case backend is offline
-      let role = 'SURVEYOR';
-      let fullName = 'Rajesh Kumar (Surveyor)';
-      if (email.includes('municipality')) {
-        role = 'MUNICIPALITY';
-        fullName = 'Sanjay Verma (Municipal Officer)';
-      } else if (email.includes('utility')) {
-        role = 'UTILITY_OPERATOR';
-        fullName = 'Vikram Malhotra (Utility Contractor)';
-      } else if (email.includes('citizen')) {
-        role = 'CITIZEN';
-        fullName = 'Priya Mehta (Property Owner)';
-      }
-
-      const mockUser: User = {
-        id: 'usr-demo-01',
-        email,
-        full_name: fullName,
-        role: role as any,
-      };
-
-      setToken('mock_jwt_token_' + role);
-      setUser(mockUser);
-      set({ user: mockUser, token: 'mock_jwt_token_' + role, isAuthenticated: true, isLoading: false });
+      set({ isLoading: false });
+      throw error;
     }
   },
 

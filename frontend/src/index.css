@@ -59,3 +59,17 @@
     animation: none;
   }
 }
+
+/* 3D world labels (CSS2DRenderer) */
+.b3d-label {
+  font: 600 11px/1.2 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  padding: 3px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.b3d-label-under { background: rgba(15, 23, 42, 0.78); color: #fde68a; border: 1px solid rgba(250, 204, 21, 0.45); }
+.b3d-label-ruler { background: transparent; color: #f8fafc; font-family: ui-monospace, monospace; padding: 0; }
+.b3d-label-unit { background: rgba(15, 23, 42, 0.7); color: #fff; font-family: ui-monospace, monospace; font-size: 10px; padding: 1px 4px; }
+.b3d-label-room { background: rgba(255, 255, 255, 0.85); color: #0f172a; font-size: 10px; padding: 1px 5px; text-shadow: none; }

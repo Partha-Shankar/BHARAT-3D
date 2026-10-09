@@ -64,12 +64,8 @@ export const useUpdateProjectArea = (projectId: string) => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async (polygon: any) => {
-      try {
-        const { data } = await api.post(`/projects/${projectId}/area`, { survey_polygon: polygon });
-        return data as Project;
-      } catch (e) {
-        return MOCK_PROJECTS[0];
-      }
+      const { data } = await api.post(`/projects/${projectId}/area`, { polygon_geojson: polygon });
+      return data as { status: string; project_id: number; selected_area_id: string; scene_key: string; center: [number, number] };
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['projects', projectId] });
