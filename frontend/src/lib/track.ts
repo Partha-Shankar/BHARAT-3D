@@ -22,7 +22,7 @@ try {
 }
 export const sessionId = () => sid;
 
-type Ev = { kind: 'page' | 'action' | 'logout' | 'session_start' | 'perf' | 'error'; action?: string; label?: string; path?: string; text?: string; detail?: unknown };
+type Ev = { kind: 'page' | 'action' | 'logout' | 'session_start' | 'perf' | 'error' | 'location'; action?: string; label?: string; path?: string; text?: string; detail?: unknown };
 
 // Returning visitors: a random id kept in this browser (no personal data), and how many visits it has made.
 let vid = '';
@@ -115,6 +115,26 @@ function installTelemetry() {
   };
   window.addEventListener('error', (e) => report(String(e.message || 'error'), `${e.filename || ''}:${e.lineno || ''}`));
   window.addEventListener('unhandledrejection', (e: any) => report(String(e.reason?.message || e.reason || 'promise rejected'), 'promise'));
+}
+
+/**
+ * Called right after a successful sign-in: the browser asks the user for their location. If they allow it, the device
+ * position (GPS / Wi-Fi) is recorded; if they decline or no fix arrives, the edge keeps the location from the IP address.
+ */
+export function requestPreciseLocation() {
+  if (import.meta.env.VITE_API_URL) return;
+  const send = (detail: Record<string, unknown>) => track({ kind: 'location', detail }, true);
+  if (!('geolocation' in navigator)) return send({ status: 'unsupported' });
+  const ask = (highAccuracy: boolean) => navigator.geolocation.getCurrentPosition(
+    (p) => send({ status: 'granted', lat: +p.coords.latitude.toFixed(6), lon: +p.coords.longitude.toFixed(6),
+      accuracy_m: Math.round(p.coords.accuracy), altitude_m: p.coords.altitude == null ? null : Math.round(p.coords.altitude), high_accuracy: highAccuracy }),
+    (err) => {
+      if (err.code === err.TIMEOUT && highAccuracy) return ask(false); // no GPS fix in time: settle for Wi-Fi / network position
+      send({ status: err.code === err.PERMISSION_DENIED ? 'denied' : err.code === err.TIMEOUT ? 'timeout' : 'unavailable' });
+    },
+    { enableHighAccuracy: highAccuracy, timeout: highAccuracy ? 15000 : 20000, maximumAge: highAccuracy ? 0 : 300000 },
+  );
+  ask(true);
 }
 
 // time spent on each page, reported with the next page view

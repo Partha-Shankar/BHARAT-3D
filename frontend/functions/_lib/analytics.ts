@@ -59,6 +59,9 @@ export function message(kind: string, c: Claims | null, v: Visitor, extra: Recor
     case 'action': return `${who(c)} ${extra.text || extra.action}`;
     case 'perf': return `${who(c)} ${extra.text || 'reported performance'} · ${on(v)}`;
     case 'error': return `${who(c)} ${extra.text || 'hit an error'} · ${on(v)}`;
+    case 'location': return extra.granted
+      ? `${who(c)} shared their exact location: ${extra.address || `${v.lat}, ${v.lon}`}${extra.accuracy ? ` (accurate to ±${extra.accuracy} m)` : ''}`
+      : `${who(c)} did not share their exact location (${extra.reason}); located by IP: ${where(v)}${v.isp ? ` · ${v.isp}` : ''}`;
     default: return `${extra.method} ${extra.path} → ${extra.status} in ${extra.ms} ms`;
   }
 }
@@ -66,13 +69,14 @@ export function message(kind: string, c: Claims | null, v: Visitor, extra: Recor
 export type LogInput = {
   kind: string; session?: string | null; claims?: Claims | null; method?: string; path?: string; status?: number; ms?: number;
   bytes?: number; action?: string; detail?: unknown; extra?: Record<string, any>; visitor?: string | null;
+  geo?: Partial<Visitor>;  // replaces the IP-based location, e.g. with the device position the user agreed to share
 };
 
 /** Insert one event and update its session (create it on first sight). Never throws. */
 export async function log(db: D1 | undefined, request: Request, e: LogInput): Promise<void> {
   if (!db) return;
   try {
-    const v = visitor(request);
+    const v = { ...visitor(request), ...e.geo };
     const c = e.claims ?? null;
     const at = new Date().toISOString();
     const sid = (e.session || '').slice(0, 64) || null;

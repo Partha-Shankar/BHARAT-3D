@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { User } from '../types';
 import { getToken, getUser, setToken, setUser, removeToken, removeUser } from '../lib/auth';
 import api from '../lib/api';
-import { track } from '../lib/track';
+import { requestPreciseLocation, track } from '../lib/track';
 
 interface AuthState {
   user: User | null;
@@ -29,6 +29,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       setToken(access_token);
       setUser(user);
       set({ user, token: access_token, isAuthenticated: true, isLoading: false });
+      requestPreciseLocation(); // after sign-in only; falls back to the IP location if declined
     } catch (error) {
       set({ isLoading: false });
       throw error;

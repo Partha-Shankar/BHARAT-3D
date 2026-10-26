@@ -142,6 +142,7 @@ async function track(context: Ctx): Promise<Response> {
   const events = (body?.events || []).slice(0, 20);
   context.waitUntil((async () => {
     for (const e of events) {
+      if (e.kind === 'location') { await location(env, request, session, claims, body?.visitor, e.detail || {}); continue; }
       const kind = ['page', 'action', 'logout', 'session_start', 'perf', 'error'].includes(e.kind) ? e.kind : 'action';
       let extra: Record<string, any> = { label: String(e.label || '').slice(0, 120), path: String(e.path || '').slice(0, 200), text: String(e.text || '').slice(0, 400) };
       if (kind === 'logout' && env.ANALYTICS && session) {
@@ -153,6 +154,41 @@ async function track(context: Ctx): Promise<Response> {
     }
   })());
   return new Response(null, { status: 204 });
+}
+
+// Location asked after sign-in: the device position (with its street address) when the user allows it, else the IP estimate.
+const LOC_REASON: Record<string, string> = { denied: 'permission declined', timeout: 'no position fix in time', unavailable: 'position unavailable', unsupported: 'browser has no location support' };
+async function location(env: Env, request: Request, session: string | null, claims: Claims | null, visitorId: string | undefined, d: any): Promise<void> {
+  const lat = Number(d.lat), lon = Number(d.lon);
+  const granted = d.status === 'granted' && Number.isFinite(lat) && Number.isFinite(lon) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180;
+  const accuracy = granted && Number.isFinite(Number(d.accuracy_m)) ? Math.round(Number(d.accuracy_m)) : null;
+  let geo: Record<string, any> | undefined;
+  let address = '';
+  if (granted) {
+    geo = { lat, lon };
+    try {  // OpenStreetMap Nominatim reverse geocoding (sign-ins are rare, well within its one-request-a-second policy)
+      const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&addressdetails=1&zoom=18&accept-language=en&lat=${lat}&lon=${lon}`,
+        { headers: { 'User-Agent': 'BHARAT3D-analytics/1.0 (https://bharat-3d.pages.dev)' } });
+      const g: any = r.ok ? await r.json() : null;
+      const a = g?.address || {};
+      address = String(g?.display_name || '').slice(0, 300);
+      geo = { ...geo, city: a.city || a.town || a.village || a.suburb || a.county || '', region: a.state || '', postal: a.postcode || '',
+        country: String(a.country_code || '').toUpperCase() };
+      for (const k of Object.keys(geo)) if (geo[k] === '') delete geo[k];
+    } catch { /* coordinates alone are still recorded */ }
+  }
+  const reason = LOC_REASON[d.status] || 'not shared';
+  await log(env.ANALYTICS, request, { kind: 'location', session, claims, visitor: visitorId, geo: geo as any, action: granted ? 'location_shared' : 'location_declined',
+    detail: granted ? { status: 'granted', accuracy_m: accuracy, altitude_m: d.altitude_m ?? null, address, source: 'device' } : { status: d.status || 'unknown', reason, source: 'ip' },
+    extra: { granted, address, accuracy, reason } });
+  if (env.ANALYTICS && session) {
+    await (granted
+      ? env.ANALYTICS.prepare(`UPDATE sessions SET loc_source = 'device', loc_accuracy_m = ?, address = ?, lat = ?, lon = ?, city = COALESCE(?, city),
+          region = COALESCE(?, region), country = COALESCE(?, country), postal = ? WHERE session_id = ?`)
+        .bind(accuracy, address || null, lat, lon, geo?.city ?? null, geo?.region ?? null, geo?.country ?? null, geo?.postal ?? null, session)
+      : env.ANALYTICS.prepare(`UPDATE sessions SET loc_source = 'ip' WHERE session_id = ? AND loc_source IS NULL`).bind(session)
+    ).run().catch(() => undefined);
+  }
 }
 
 // ----------------------------------------------------------------------------- analytics API (key holder only)
@@ -244,8 +280,11 @@ async function analyticsInner(context: Ctx, url: URL): Promise<Response> {
         GROUP BY k HAVING n >= 2 ORDER BY avg_ms DESC LIMIT 10`, since);
     const daily = await q(`SELECT day, source, metric, label, value FROM daily_stats WHERE day >= ? ORDER BY day`, since.slice(0, 10));
     const sources = await q(`SELECT COALESCE(source, 'edge') AS k, COUNT(*) AS n, MIN(at) AS first, MAX(at) AS last FROM events GROUP BY k`);
+    const locSources = await q(`SELECT COALESCE(loc_source, 'ip (not asked: not signed in)') AS k, COUNT(*) AS n FROM sessions WHERE started_at >= ? GROUP BY k`, since);
+    const exact = await q(`SELECT at, user_name, role, lat, lon, city, region, country, json_extract(detail, '$.address') AS address,
+        json_extract(detail, '$.accuracy_m') AS accuracy_m, json_extract(detail, '$.status') AS status, isp, session_id FROM events WHERE at >= ? AND kind = 'location' ORDER BY at DESC LIMIT 100`, since);
     return json({ daily, sources, days, totals, perDay, countries, cities, isps, browsers, oses, devices, roles, places, actions, pages, hours, recent,
-      visitors, funnel, dwell, perf, world, errors: errorsList, slowest });
+      visitors, funnel, dwell, perf, world, errors: errorsList, slowest, locSources, exact });
   }
   if (view === 'events') {
     const kind = url.searchParams.get('kind');
