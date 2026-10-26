@@ -7,6 +7,7 @@ export const apiOrigin = (): string => {
 };
 
 export async function startGeneration(polygon: GeoJSON.Polygon, projectId?: string, force = false, datasets?: DatasetManifest[]) {
+  memo.clear(); // a regenerated area must not show its old scene
   const { data } = await api.post<{ job_id: string; key: string; status: string }>('/realgen/generate', {
     polygon,
     project_id: projectId,
@@ -21,14 +22,21 @@ export async function getJob(jobId: string) {
   return data;
 }
 
+// Session cache for the heavier per-area reads (the API is far away on free hosting). Any write to an area clears
+// that area's entries, so an edited area is always re-read.
+const memo = new Map<string, Promise<any>>();
+const cached = <T,>(k: string, load: () => Promise<T>): Promise<T> => {
+  if (!memo.has(k)) memo.set(k, load().catch((e) => { memo.delete(k); throw e; }));
+  return memo.get(k) as Promise<T>;
+};
+export const forgetArea = (key: string) => { [...memo.keys()].filter((k) => k.includes(`|${key}|`)).forEach((k) => memo.delete(k)); };
+
 export async function getScene(key: string) {
-  const { data } = await api.get<SceneSpec>(`/realgen/scenes/${key}`);
-  return data;
+  return cached(`scene|${key}|`, async () => (await api.get<SceneSpec>(`/realgen/scenes/${key}`)).data);
 }
 
 export async function getBuildingDetail(key: string, buildingId: string) {
-  const { data } = await api.get<BuildingDetail>(`/realgen/scenes/${key}/buildings/${buildingId}`);
-  return data;
+  return cached(`bld|${key}|${buildingId}`, async () => (await api.get<BuildingDetail>(`/realgen/scenes/${key}/buildings/${buildingId}`)).data);
 }
 
 export async function checkExcavation(key: string, polygonLocal: [number, number][], depth: number) {
@@ -96,21 +104,31 @@ export async function listActivity(key?: string) {
 export const areaThumbUrl = (key: string) => `${apiOrigin()}/api/realgen/scenes/${key}/texture.jpg`;
 
 export async function deleteScene(key: string) {
+  forgetArea(key);
   await api.delete(`/realgen/scenes/${key}`);
 }
 
 export async function applyEdits(key: string, ops: EditOp[]) {
+  forgetArea(key);
   const { data } = await api.post<SceneSpec>(`/realgen/scenes/${key}/edits`, { ops }, { timeout: 120000 });
+  forgetArea(key);
+  memo.set(`scene|${key}|`, Promise.resolve(data));
   return data;
 }
 
 export async function undoEdit(key: string) {
+  forgetArea(key);
   const { data } = await api.post<SceneSpec>(`/realgen/scenes/${key}/edits/undo`, {}, { timeout: 120000 });
+  forgetArea(key);
+  memo.set(`scene|${key}|`, Promise.resolve(data));
   return data;
 }
 
 export async function resetEdits(key: string) {
+  forgetArea(key);
   const { data } = await api.delete<SceneSpec>(`/realgen/scenes/${key}/edits`, { timeout: 120000 });
+  forgetArea(key);
+  memo.set(`scene|${key}|`, Promise.resolve(data));
   return data;
 }
 

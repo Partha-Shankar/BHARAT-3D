@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../stores/authStore';
 import { BrandLogo } from '../components/layout/BrandLogo';
@@ -16,6 +16,12 @@ export const LoginPage: React.FC = () => {
   const [error, setError] = useState('');
   const { login, isLoading } = useAuthStore();
   const navigate = useNavigate();
+  const [slow, setSlow] = useState(false);
+  useEffect(() => {  // after 3 s of signing in, explain the free server's cold start instead of looking frozen
+    if (!isLoading) { setSlow(false); return; }
+    const t = window.setTimeout(() => setSlow(true), 3000);
+    return () => window.clearTimeout(t);
+  }, [isLoading]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -112,8 +118,11 @@ export const LoginPage: React.FC = () => {
               disabled={isLoading}
               className="w-full bg-[#1f7a72] hover:bg-[#18655e] disabled:opacity-60 text-white font-semibold text-[15px] py-2.5 rounded-sm"
             >
-              {isLoading ? 'Signing in…' : 'Sign in'}
+              {isLoading ? (slow ? 'Waking the server…' : 'Signing in…') : 'Sign in'}
             </button>
+            {isLoading && slow && (
+              <p className="text-[13px] text-[#5c6e7c] mt-2 b3-fade">The server sleeps when nobody has used it for a while; the first sign-in can take up to a minute. Later ones are instant.</p>
+            )}
           </form>
 
           <div className="mt-8">

@@ -39,4 +39,13 @@ api.interceptors.response.use(
   }
 );
 
+/** Start waking the API as soon as any page opens (free hosting sleeps when idle); fire-and-forget, once. */
+let woken = false;
+export function wakeApi() {
+  if (woken || typeof fetch === 'undefined') return;
+  woken = true;
+  const url = import.meta.env.VITE_API_URL ? `${String(import.meta.env.VITE_API_URL).replace(/\/$/, '')}/health` : '/api/__wake';
+  fetch(url, { cache: 'no-store' }).catch(() => undefined);
+}
+
 export default api;

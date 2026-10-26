@@ -22,7 +22,8 @@ export const useAuthStore = create<AuthState>((set) => ({
   login: async (email: string, password = 'demo2026') => {
     set({ isLoading: true });
     try {
-      const response = await api.post('/auth/login', { email, password });
+      // a cold start of the free API can take ~50 s, so sign-in gets more time than ordinary calls
+      const response = await api.post('/auth/login', { email, password }, { timeout: 90000 });
       const { access_token, user } = response.data;
       setToken(access_token);
       setUser(user);

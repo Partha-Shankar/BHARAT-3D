@@ -1,3 +1,5 @@
+import hashlib
+import hmac
 from datetime import datetime, timedelta, timezone
 from passlib.context import CryptContext
 from jose import jwt
@@ -9,12 +11,33 @@ settings = get_settings()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
+# bcrypt takes ~1.5 s on a small shared CPU (Render free). After a successful check, an HMAC of (hash, password)
+# is remembered in process memory so repeat sign-ins are instant; the password itself is never stored, and a
+# wrong password always pays the full bcrypt cost.
+_verified: set = set()
+
+
+def _fingerprint(plain_password: str, hashed_password: str) -> str:
+    return hmac.new(settings.SECRET_KEY.encode(), f"{hashed_password}\0{plain_password}".encode(), hashlib.sha256).hexdigest()
+
+
+def remember_verified(plain_password: str, hashed_password: str) -> None:
+    """Register a pair whose hash was just created from this password (no need to verify it again)."""
+    _verified.add(_fingerprint(plain_password, hashed_password))
+
+
 def verify_password(plain_password: str, hashed_password: str) -> bool:
+    fp = _fingerprint(plain_password, hashed_password)
+    if fp in _verified:
+        return True
     try:
-        return pwd_context.verify(plain_password, hashed_password)
+        ok = pwd_context.verify(plain_password, hashed_password)
     except Exception as e:
         logging.error(f"Password verification failed: {e}")
         return False
+    if ok and len(_verified) < 10_000:
+        _verified.add(fp)
+    return ok
 
 def get_password_hash(password: str) -> str:
     return pwd_context.hash(password)

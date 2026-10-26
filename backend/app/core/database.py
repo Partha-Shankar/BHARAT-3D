@@ -29,7 +29,7 @@ async def get_db():
 
 async def create_tables():
     from app.models.models import User, Project
-    from app.core.security import get_password_hash
+    from app.core.security import get_password_hash, remember_verified
     
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
@@ -39,38 +39,40 @@ async def create_tables():
             result = await session.execute(select(User))
             existing_user = result.scalars().first()
             if not existing_user:
+                demo_hash = get_password_hash("demo2026")  # one bcrypt run for all demo users (slow CPUs)
+                remember_verified("demo2026", demo_hash)
                 demo_users = [
                     User(
                         email="survey@bharat3d.demo",
-                        hashed_password=get_password_hash("demo2026"),
+                        hashed_password=demo_hash,
                         full_name="Rajesh Kumar (Surveyor)",
                         role="SURVEYOR",
                         is_active=True
                     ),
                     User(
                         email="municipality@bharat3d.demo",
-                        hashed_password=get_password_hash("demo2026"),
+                        hashed_password=demo_hash,
                         full_name="Sanjay Verma (Municipal Officer)",
                         role="MUNICIPALITY",
                         is_active=True
                     ),
                     User(
                         email="utility@bharat3d.demo",
-                        hashed_password=get_password_hash("demo2026"),
+                        hashed_password=demo_hash,
                         full_name="Vikram Malhotra (Utility Contractor)",
                         role="UTILITY_OPERATOR",
                         is_active=True
                     ),
                     User(
                         email="citizen@bharat3d.demo",
-                        hashed_password=get_password_hash("demo2026"),
+                        hashed_password=demo_hash,
                         full_name="Priya Mehta (Property Owner)",
                         role="CITIZEN",
                         is_active=True
                     ),
                     User(
                         email="admin@bharat3d.demo",
-                        hashed_password=get_password_hash("demo2026"),
+                        hashed_password=demo_hash,
                         full_name="Admin Officer",
                         role="ADMIN",
                         is_active=True

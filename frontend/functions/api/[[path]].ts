@@ -24,6 +24,11 @@ export async function onRequest(context: Ctx): Promise<Response> {
   const target = new URL(url.pathname + url.search, origin).toString();
 
   try {
+    if (url.pathname === '/api/__wake') {
+      // fired by the app on page load: starts the free backend waking while the visitor reads or types
+      context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
+      return new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store', 'X-B3D-Cache': 'PASS' } });
+    }
     const tex = request.method === 'GET' ? url.pathname.match(TEXTURE) : null;
     if (tex) {
       // 1. bundled demo area: static file on Cloudflare's CDN
