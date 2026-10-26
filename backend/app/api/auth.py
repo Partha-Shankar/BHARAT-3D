@@ -15,7 +15,9 @@ async def login(req: LoginRequest, db: AsyncSession = Depends(get_db)):
     if not user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Incorrect email or password")
 
-    token = create_access_token(data={"sub": str(user.id)})
+    # name / email / role ride in the token so the edge can label analytics events without another lookup
+    role = getattr(user.role, "value", user.role)
+    token = create_access_token(data={"sub": str(user.id), "email": user.email, "name": user.full_name, "role": str(role)})
     return {"access_token": token, "token_type": "bearer", "user": user}
 
 @router.get("/me", response_model=UserResponse)

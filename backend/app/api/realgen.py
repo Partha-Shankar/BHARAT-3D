@@ -18,7 +18,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.core.deps import get_current_user
 from app.models.models import Project, User
-from app.realgen import cache, fetch_osm, norms, pipeline, scene_ops, synth
+from app.realgen import cache, fetch_osm, norms, pipeline, scene_ops, store, synth
 from app.realgen.geo import LocalFrame, polygon_from_geojson, polygon_key
 
 logger = logging.getLogger(__name__)
@@ -50,6 +50,8 @@ def _parse_project_id(pid: Any) -> Optional[int]:
 
 
 def _load_scene(key: str) -> Dict[str, Any]:
+    if key.isalnum() and not cache.exists(key, "scene.json"):
+        store.restore_area(key)  # after a restart the area may only be in R2
     scene = cache.read_json(key, "scene.json") if key.isalnum() else None
     if scene is None:
         raise HTTPException(404, "Scene not generated yet")
@@ -286,6 +288,7 @@ async def delete_scene(key: str, db: AsyncSession = Depends(get_db), user: User 
     if any(j["key"] == key and j["status"] == "RUNNING" for j in jobs.values()):
         raise HTTPException(409, "Generation for this area is still running")
     shutil.rmtree(os.path.join(cache.CACHE_ROOT, key))
+    store.delete_area(key)
     for proj in (await db.execute(select(Project).where(Project.selected_area_id == f"gen:{key}"))).scalars():
         proj.selected_area_id = None
     await db.commit()

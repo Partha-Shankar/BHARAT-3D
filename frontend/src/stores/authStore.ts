@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { User } from '../types';
 import { getToken, getUser, setToken, setUser, removeToken, removeUser } from '../lib/auth';
 import api from '../lib/api';
+import { track } from '../lib/track';
 
 interface AuthState {
   user: User | null;
@@ -35,6 +36,7 @@ export const useAuthStore = create<AuthState>((set) => ({
   },
 
   logout: () => {
+    track({ kind: 'logout' }, true); // sent with the token still present, so the edge knows who signed out
     removeToken();
     removeUser();
     set({ user: null, token: null, isAuthenticated: false, isLoading: false });

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { getToken, removeToken, removeUser } from './auth';
+import { sessionId } from './track';
 
 const apiBaseUrl = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL.replace(/\/$/, '')}/api`
@@ -19,6 +20,7 @@ api.interceptors.request.use(
     if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+    if (config.headers) config.headers['X-B3D-Session'] = sessionId(); // ties requests to the visit in analytics
     return config;
   },
   (error) => Promise.reject(error)

@@ -5,6 +5,7 @@ Generation writes `scene_base.json` once. Surveyor edits are an append-only list
 The effective `scene.json` = apply(edits, base) -> derive(). Undo/reset just replays fewer edits.
 """
 import copy
+import logging
 import math
 import time
 from typing import Any, Dict, List, Optional, Tuple
@@ -350,6 +351,11 @@ def publish(key: str, scene: Dict[str, Any], edits_count: int) -> Dict[str, Any]
     cache.write_json(key, "scene.json", scene)
     cache.write_json(key, "registry.json", out["registry"])
     write_meta(key, scene)
+    try:  # durable copy in R2 before answering, so the edge never serves an older scene
+        from app.realgen import store
+        store.push_area(key)
+    except Exception:
+        logging.getLogger(__name__).exception("Saving %s to the area store failed", key)
     return scene
 
 

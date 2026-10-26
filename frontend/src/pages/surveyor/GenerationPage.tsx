@@ -7,6 +7,7 @@ import { CountUp, StrataLoader } from '../../world/ui';
 import { SurveySteps } from '../../survey/Steps';
 import { fmtBytes } from '../../survey/datasets';
 import type { DatasetManifest } from '../../world/sceneSpec';
+import { trackAction, track } from '../../lib/track';
 
 const readPackage = (key: string): DatasetManifest[] => {
   try {
@@ -56,6 +57,12 @@ export const GenerationPage: React.FC = () => {
   }, [jobId]);
 
   useEffect(() => {
+    if (job?.status === 'COMPLETE' || job?.status === 'FAILED') {
+      const where = job.place?.locality ? `${job.place.locality}${job.place.city ? `, ${job.place.city}` : ''}` : 'a new area';
+      if (job.status === 'FAILED') track({ kind: 'error', action: 'generation_failed', text: `could not generate ${where}: ${String(job.error || '').slice(0, 160)}`, detail: { key, error: job.error } }, true);
+      else trackAction('generation_completed', `generated ${where} in ${Math.round(job.elapsed_s)} s: ${job.stats?.buildings ?? 0} buildings, ${job.stats?.vprids_reserved ?? 0} 3D ULPINs, ${job.stats?.violations ?? 0} findings`,
+        { key, seconds: job.elapsed_s, stats: job.stats ? { buildings: job.stats.buildings, vprids: job.stats.vprids_reserved, findings: job.stats.violations, ai: job.stats.ai_buildings?.added } : null });
+    }
     if (job?.status === 'COMPLETE') {
       const t = window.setTimeout(() => navigate(`/3d-world/${key}?project_id=${projectId}`), 1800);
       return () => window.clearTimeout(t);

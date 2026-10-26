@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 SEED_ROOT = os.path.abspath(os.environ.get("REALGEN_SEED_DIR", os.path.join(os.path.dirname(__file__), "..", "..", "..", "data", "seed")))
 
 
-def install_seeds() -> int:
+def install_seeds(skip: frozenset = frozenset()) -> int:
     if not os.path.isdir(SEED_ROOT):
         return 0
     os.makedirs(cache.CACHE_ROOT, exist_ok=True)
@@ -22,6 +22,8 @@ def install_seeds() -> int:
         src = os.path.join(SEED_ROOT, name)
         dst = os.path.join(cache.CACHE_ROOT, name)
         if not os.path.isdir(src):
+            continue
+        if name in skip:  # R2 holds a newer copy, or a surveyor deleted this area
             continue
         if name == "_registry":  # national INF ledger: only when this host has none yet
             os.makedirs(dst, exist_ok=True)

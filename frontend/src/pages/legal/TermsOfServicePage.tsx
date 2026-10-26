@@ -17,7 +17,7 @@ export const TermsOfServicePage: React.FC = () => {
             <span>Demonstration prototype terms</span>
           </div>
           <h1 className="text-3xl tracking-tight text-[#16324a]">Terms of Service</h1>
-          <p className="text-xs text-[#5c6e7c]">Last updated: September 2026 · Version 1.0 (proof-of-concept)</p>
+          <p className="text-xs text-[#5c6e7c]">Last updated: October 2026 · Version 1.1 (proof-of-concept)</p>
         </div>
 
         <div className="bg-white border border-[#e4dccf] rounded-sm p-8 shadow-sm space-y-6 text-sm text-[#3d5363] leading-relaxed">
@@ -63,6 +63,7 @@ export const TermsOfServicePage: React.FC = () => {
               <li>Users may explore all demo workspaces (Surveyor Studio, Municipality, Utility Dig-Safe, and Citizen Portal).</li>
               <li>You agree not to attempt to disrupt or stress test the demonstration web servers.</li>
               <li>You understand that demonstration data may be periodically reset to baseline demo states.</li>
+              <li>You acknowledge that use of the service is recorded, including sign-ins, pages visited, actions taken, session times, IP address, approximate location and device information, as described in the Privacy Policy.</li>
             </ul>
           </section>
 

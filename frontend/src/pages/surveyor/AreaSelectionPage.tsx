@@ -13,6 +13,7 @@ import { useSurveyDraft, reversePlace } from '../../survey/draft';
 import { SurveySteps } from '../../survey/Steps';
 import { useScenes, placeOf } from '../../survey/ui';
 import { Segmented } from '../../world/ui';
+import { trackAction, track } from '../../lib/track';
 
 type Mode = 'click' | 'box' | 'polygon';
 type LngLat = [number, number];
@@ -276,6 +277,8 @@ export const AreaSelectionPage: React.FC = () => {
     }
     setCustomSurveyPolygon(polygon);
     startDraft(polygon, areaM2 ?? 0, place || undefined);
+    trackAction('survey_area_selected', `selected a survey area at ${place || 'an unnamed locality'} (${((areaM2 ?? 0) / 1e6).toFixed(3)} km², drawn with the ${mode === 'click' ? 'click-a-spot' : mode} tool)`,
+      { place, area_m2: Math.round(areaM2 ?? 0), tool: mode, centre: [cx, cy] });
     if (!place) reversePlace(cx, cy).then((p) => p && setDraftPlace(p));
     updateArea.mutateAsync(polygon).catch(() => undefined); // records the polygon on the project; not needed to continue
     navigate(`/surveyor/upload?project_id=${projectId}`);

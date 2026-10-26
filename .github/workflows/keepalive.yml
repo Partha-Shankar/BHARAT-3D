@@ -1,17 +1,33 @@
 name: Keep API warm
 
-# Render's free web services sleep after 15 minutes without traffic, and the first visit then waits ~1 minute.
-# Ping the API during Indian daytime only (about 07:30-23:30 IST): the free plan's instance hours are shared by
-# every free service in the workspace, so the API is not kept awake around the clock.
+# Render's free web services sleep after 15 minutes without traffic; the first visit then waits about a minute.
+# GitHub starts scheduled workflows late (often by hours), so short runs leave long gaps. Instead, three runs a day
+# each keep one job alive for up to ~6 hours, pinging every 5 minutes, which covers 07:00-24:00 IST even when a start
+# is delayed. Outside that window the API may sleep: Render's free instance hours are shared by every free service in
+# the workspace, so it is not kept awake around the clock. Public repositories get these Actions minutes free.
 on:
   schedule:
-    - cron: "*/10 2-17 * * *"
+    - cron: "25 1 * * *"    # 06:55 IST
+    - cron: "15 7 * * *"    # 12:45 IST
+    - cron: "5 13 * * *"    # 18:35 IST
   workflow_dispatch:
+
+concurrency:
+  group: keep-api-warm
+  cancel-in-progress: false
 
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 360
     steps:
-      - name: Ping /health
-        run: curl -fsS --max-time 120 https://bharat-3d-backend.onrender.com/health || true
+      - name: Ping /health every 5 minutes until the window ends
+        run: |
+          end=$(( $(date +%s) + 350*60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            hour=$(TZ=Asia/Kolkata date +%H)
+            if [ "$hour" -lt 7 ]; then echo "outside 07:00-24:00 IST, stopping"; break; fi
+            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-backend.onrender.com/health || echo 000)
+            echo "$(TZ=Asia/Kolkata date '+%H:%M IST') health $code"
+            sleep 300
+          done

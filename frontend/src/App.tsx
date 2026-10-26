@@ -1,5 +1,6 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { trackPage } from './lib/track';
 import ProtectedRoute from './components/ProtectedRoute';
 import { PublicPageShell } from './components/layout/PageTransition';
 import { useRoleBase } from './survey/ui';
@@ -34,6 +35,8 @@ import { CitizenPortal } from './pages/citizen/CitizenPortal';
 const ToRoleAtlas: React.FC = () => <Navigate to={`${useRoleBase()}/map`} replace />;
 
 export const App: React.FC = () => {
+  const location = useLocation();
+  React.useEffect(() => { trackPage(location.pathname); }, [location.pathname]);
   return (
     <Routes>
       <Route element={<PublicPageShell />}>

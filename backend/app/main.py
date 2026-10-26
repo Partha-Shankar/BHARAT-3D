@@ -48,9 +48,16 @@ async def on_startup():
     logger.info("Initializing database...")
     await create_tables()
     logger.info("Database initialized.")
-    from app.realgen.seed import install_seeds  # bundled demo areas (ephemeral hosts lose generated ones)
+    # Areas: R2 (durable) first, then bundled demo areas that R2 does not override, then background restore.
+    import threading
 
-    install_seeds()
+    from app.realgen import store
+    from app.realgen.seed import install_seeds
+
+    remote = store.startup()
+    install_seeds(frozenset(remote["areas"]) | frozenset(remote["deleted"]))
+    if remote["areas"]:
+        threading.Thread(target=store.restore_all, args=(remote["areas"],), daemon=True).start()
 
 @app.get("/health")
 async def health_check():

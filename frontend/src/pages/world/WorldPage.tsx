@@ -15,6 +15,7 @@ import { useAuthStore } from '../../stores/authStore';
 import { CountUp, Segmented, SourceChip, StrataLoader } from '../../world/ui';
 import { useRoleBase } from '../../survey/ui';
 import { IDENTITY, USAGE_CLASS, ppmToPct, statusOf } from '../../survey/norms';
+import { trackAction, track } from '../../lib/track';
 
 const USAGE: Record<string, string> = { R: 'Residential', C: 'Commercial', M: 'Mixed use', I: 'Industrial', P: 'Public / institutional' };
 
@@ -76,6 +77,8 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
   const [rightTab, setRightTab] = useState<'edit' | 'inspect'>('edit');
   const pendingFocus = useRef<{ x: number; y: number; h: number } | null>(null);
   const deepLinked = useRef(false);
+  const mountedAt = useRef(performance.now());
+  const loadReported = useRef(false);
 
   useEffect(() => {
     getScene(key).then(setScene).catch((e) => setError(e?.response?.data?.detail || 'Could not load the generated scene.'));
@@ -108,6 +111,16 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
         setDepth(Math.round(d * 10) / 10);
       },
       onReady: () => {
+        if (!loadReported.current) {  // first load: how long the 3D world took, and how smoothly it renders here
+          loadReported.current = true;
+          const secs = (performance.now() - mountedAt.current) / 1000;
+          let frames = 0;
+          const t0 = performance.now();
+          const count = () => { frames++; if (performance.now() - t0 < 3000) requestAnimationFrame(count); else
+            track({ kind: 'perf', action: 'world_loaded', text: `loaded the 3D world of ${scene.place.locality || key} in ${secs.toFixed(1)} s, rendering at ${Math.round(frames / 3)} fps`,
+              detail: { key, seconds: +secs.toFixed(1), fps: Math.round(frames / 3), buildings: scene.buildings.length } }); };
+          requestAnimationFrame(count);
+        }
         setReady(true);
         setViewerGen((g) => g + 1);
       },
@@ -133,6 +146,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
   useEffect(() => { if (ready) viewer.current?.setSunTime(hour); }, [hour, ready, viewerGen]);
 
   const changeMode = (m: ViewMode) => {
+    if (m !== mode) trackAction('view_mode', `switched the 3D view to ${m === 'xray' ? 'X-ray' : m}`, { key, mode: m });
     setMode(m);
     viewer.current?.setMode(m);
     setGroundOpacity(m === 'surface' ? 1 : m === 'xray' ? 0.4 : 0.16);
@@ -246,6 +260,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
   useEffect(() => { if (trench) runDig(); }, [trench, digDepth]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggleDig = () => {
+    if (!digOn) trackAction('dig_check_opened', `opened the dig check in ${scene?.place.locality || key}`, { key });
     const on = !digOn;
     setDigOn(on);
     viewer.current?.setDigMode(on);

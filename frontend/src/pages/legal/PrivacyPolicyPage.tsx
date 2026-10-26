@@ -17,7 +17,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             <span>Interactive demo & transparency notice</span>
           </div>
           <h1 className="text-3xl tracking-tight text-[#16324a]">Privacy Policy</h1>
-          <p className="text-xs text-[#5c6e7c]">Last updated: September 2026 · Version 1.0 (demo prototype)</p>
+          <p className="text-xs text-[#5c6e7c]">Last updated: October 2026 · Version 1.1 (demo prototype)</p>
         </div>
 
         <div className="bg-white border border-[#e4dccf] rounded-sm p-8 shadow-sm space-y-6 text-sm text-[#3d5363] leading-relaxed">
@@ -44,6 +44,8 @@ export const PrivacyPolicyPage: React.FC = () => {
             <ul className="list-disc list-inside space-y-1.5 pl-2">
               <li><strong>Demo account credentials</strong>: Quick persona logins (Surveyor, Municipality, Utility, Citizen) use pre-seeded test accounts. No real personal passwords are saved.</li>
               <li><strong>Uploaded sample files</strong>: Files dragged into the data ingestion page (such as sample drone images or LiDAR point clouds) are processed purely within your browser memory or temporary demo sessions. We do not store or sell your files.</li>
+              <li><strong>Usage and security logs</strong>: To secure and improve the service, we record sign-ins and sign-outs, pages visited, actions taken in the application (for example generating, opening or editing an area), the time and duration of each session, your IP address, the approximate location derived from it (city, region, country, network provider), and your device and browser type, along with technical performance and error information.</li>
+              <li><strong>How these logs are kept</strong>: Logs are stored on the project's own infrastructure (Cloudflare), are accessible only to the project team, are used only for security, reliability and product analysis, and are never sold or shared with advertisers.</li>
               <li><strong>No third-party tracking</strong>: We do not use third-party tracking scripts, advertising trackers, or external profiling cookies.</li>
             </ul>
           </section>

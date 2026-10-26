@@ -10,6 +10,7 @@ import { SurveySteps } from '../../survey/Steps';
 import { PolygonPreview } from '../../survey/PolygonPreview';
 import { EmptyState, Page, ProgressRing, Tick } from '../../survey/ui';
 import { CountUp } from '../../world/ui';
+import { trackAction, track } from '../../lib/track';
 
 const IDLE: SlotState = { status: 'idle', progress: 0, checks: [] };
 
@@ -163,8 +164,10 @@ export const DataUploadPage: React.FC = () => {
       return;
     }
     run(slot, { name: f.name, size: f.size, sample: false });
+    trackAction('dataset_uploaded', `uploaded ${slot.title.toLowerCase()} "${f.name}" (${fmtBytes(f.size)}) for ${draft.place || 'the selected area'}`, { slot: slot.id, size: f.size });
   };
   const attachAll = () => {
+    trackAction('survey_package_attached', `attached the sample survey package for ${draft.place || 'the selected area'}`, { area_m2: Math.round(draft.areaM2) });
     let i = 0;
     DATASET_SLOTS.forEach((slot) => {
       const st = draft.slots[slot.id]?.status;

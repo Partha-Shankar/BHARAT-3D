@@ -12,6 +12,7 @@ import { useSurveyDraft, reversePlace } from '../../survey/draft';
 import { AreaThumb, fmtAgo, placeOf, useCanEdit, useRoleBase, useScenes } from '../../survey/ui';
 import { Segmented } from '../../world/ui';
 import { useAuthStore } from '../../stores/authStore';
+import { trackAction, track } from '../../lib/track';
 
 type LngLat = [number, number];
 const MARKER_MAX_ZOOM = 13.2;
@@ -169,6 +170,8 @@ export const MapPage: React.FC = () => {
       return;
     }
     startDraft({ type: 'Polygon', coordinates: [spotRing] }, a, spotPlace || undefined);
+    trackAction('survey_area_selected', `selected a survey area from the atlas at ${spotPlace || 'an unnamed locality'} (${(a / 1e6).toFixed(3)} km², ${spotSize} m square)`,
+      { place: spotPlace, area_m2: Math.round(a), centre: spot });
     navigate('/surveyor/upload');
   };
 

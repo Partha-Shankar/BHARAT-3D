@@ -67,3 +67,7 @@ frontend/.wrangler/
 # Session hand-off notes and local dev tools (private)
 NEXT_SESSION_HANDOFF.md
 tools/
+
+# private working context (session notes)
+WORKING_CONTEXT.md
+deploy/.secrets.local
