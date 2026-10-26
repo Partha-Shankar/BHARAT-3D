@@ -62,7 +62,7 @@ export async function onRequest(context: Ctx): Promise<Response> {
       if (claims) {
         const obj = await env.AREAS.get(`${scene[1]}/scene.json`);
         if (obj) {
-          context.waitUntil(log(env.ANALYTICS, request, { kind: 'request', session, claims, method: 'GET', path, status: 200, ms: Date.now() - started, bytes: obj.size }));
+          context.waitUntil(log(env.ANALYTICS, request, { kind: 'request', session, claims, method: 'GET', path, status: 200, ms: Date.now() - started, bytes: obj.size, detail: { cache: 'R2' } }));
           return new Response(obj.body, { headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-cache', 'X-B3D-Cache': 'R2' } });
         }
       }
@@ -74,10 +74,11 @@ export async function onRequest(context: Ctx): Promise<Response> {
       const res = await fetch(new Request(`${origin}${path}${url.search}`, request));
       const data = res.ok ? await res.clone().json().catch(() => null) as { access_token?: string } | null : null;
       const claims = data?.access_token ? peek(`Bearer ${data.access_token}`) : null;
+      const reason = res.status === 401 ? 'wrong email or password' : `error ${res.status}`;
+      const email = String(body.email || '').slice(0, 120);
       context.waitUntil(log(env.ANALYTICS, request, res.ok
         ? { kind: 'login', session, claims, method: 'POST', path, status: res.status, ms: Date.now() - started }
-        : { kind: 'login_failed', session, method: 'POST', path, status: res.status, ms: Date.now() - started,
-            extra: { email: String(body.email || '').slice(0, 120), reason: res.status === 401 ? 'wrong email or password' : `error ${res.status}` } }));
+        : { kind: 'login_failed', session, method: 'POST', path, status: res.status, ms: Date.now() - started, detail: { email, reason }, extra: { email, reason } }));
       return tag(res, 'PASS');
     }
 
@@ -85,7 +86,7 @@ export async function onRequest(context: Ctx): Promise<Response> {
     if (!QUIET.test(path)) {
       context.waitUntil(log(env.ANALYTICS, request, {
         kind: 'request', session, claims: peek(request.headers.get('Authorization')), method: request.method, path,
-        status: res.status, ms: Date.now() - started, bytes: Number(res.headers.get('content-length')) || undefined,
+        status: res.status, ms: Date.now() - started, bytes: Number(res.headers.get('content-length')) || undefined, detail: { cache: 'PASS' },
       }));
     }
     return tag(res, 'PASS');
