@@ -1,0 +1,6 @@
+# Copyright (c) 2026 Partha Shankar and the BHARAT 3D team. All rights reserved. See LICENSE.
+# Test and lint tools only. Never installed on the server (render.yaml installs requirements.txt alone).
+# Install: pip install -r requirements.txt -r requirements-dev.txt
+pytest>=8.0
+pytest-cov>=5.0
+ruff>=0.6
