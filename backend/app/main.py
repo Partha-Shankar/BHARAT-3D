@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from app.core.database import create_tables
 from app.api import auth, projects, jobs, buildings, units, violations, infrastructure, excavation, citizen, audit, maps, realgen
+from app.api import ingest
 from app.core.config import get_settings
 
 logging.basicConfig(level=logging.INFO)
@@ -42,6 +43,7 @@ app.include_router(citizen.router, prefix="/api")
 app.include_router(audit.router, prefix="/api")
 app.include_router(maps.router, prefix="/api")
 app.include_router(realgen.router, prefix="/api")
+app.include_router(ingest.router, prefix="/api")
 
 @app.on_event("startup")
 async def on_startup():

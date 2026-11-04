@@ -18,6 +18,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core import access
 from app.core.database import get_db
 from app.core.deps import get_current_user
+from app.ingest import plan_for_manifest
 from app.models.models import Project, User
 from app.realgen import cache, fetch_osm, norms, pipeline, scene_ops, store, synth
 from app.realgen.geo import LocalFrame, polygon_from_geojson, polygon_key
@@ -103,10 +104,9 @@ async def generate(req: GenerateRequest, db: AsyncSession = Depends(get_db), use
 
     if req.datasets:
         keep = ("slot", "title", "name", "size_bytes", "format", "checks", "sample")
-        cache.write_json(key, "ingest.json", {
-            "at": time.time(), "by": user.email,
-            "datasets": [{k: d.get(k) for k in keep} for d in req.datasets[:20] if isinstance(d, dict)],
-        })
+        datasets = [{k: d.get(k) for k in keep} for d in req.datasets[:20] if isinstance(d, dict)]
+        cache.write_json(key, "ingest.json", {"at": time.time(), "by": user.email, "datasets": datasets})
+        _write_ingest_plan(key, datasets)
 
     running = next((j for j in jobs.values() if j["key"] == key and j["status"] == "RUNNING"), None)
     if running and not req.force:
@@ -135,6 +135,15 @@ async def generate(req: GenerateRequest, db: AsyncSession = Depends(get_db), use
     _tasks.add(task)
     task.add_done_callback(_tasks.discard)
     return {"job_id": job_id, "key": key, "status": "RUNNING"}
+
+
+def _write_ingest_plan(key: str, datasets: List[Dict[str, Any]]) -> None:
+    """Pseudo-code processing plan for the survey package (app/ingest), next to ingest.json. Best effort:
+    generation never fails because of it."""
+    try:
+        cache.write_json(key, "ingest_plan.json", [p.to_dict() for p in plan_for_manifest(datasets)])
+    except Exception:
+        logger.exception("Could not write the ingest plan for %s; generation continues", key)
 
 
 @router.get("/jobs/{job_id}")
@@ -397,6 +406,23 @@ async def lineage(key: str, q: str = "", status: str = "", limit: int = 200, use
         by_status[u["status"]] = by_status.get(u["status"], 0) + 1
     units.sort(key=lambda u: (u.get("retired_at") or u["minted_at"]), reverse=True)
     return {"total": len(led["units"]), "by_status": by_status, "items": units[: max(1, min(limit, 1000))]}
+
+
+@router.get("/scenes/{key}/ingest-plan")
+async def ingest_plan(key: str, user: User = Depends(get_current_user)):
+    """How the survey package attached to this area would be processed (pseudo-code readers; nothing executed).
+    [] when no package was attached. Areas generated before plans existed get one derived from their stored manifest
+    on the fly (nothing is written)."""
+    _load_scene(key)
+    stored = cache.read_json(key, "ingest_plan.json")
+    if stored is not None:
+        return stored
+    ingest = cache.read_json(key, "ingest.json") or {}
+    try:
+        return [p.to_dict() for p in plan_for_manifest(ingest.get("datasets") or [])]
+    except Exception:
+        logger.exception("Could not derive the ingest plan for %s", key)
+        return []
 
 
 @router.get("/scenes/{key}/resolve/{query}")
