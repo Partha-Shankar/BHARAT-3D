@@ -1,0 +1,37 @@
+BHARAT 3D — Proprietary Licence (All Rights Reserved)
+
+Copyright (c) 2026 Partha Shankar and the BHARAT 3D team. All rights reserved.
+
+This repository and everything in it — source code, data models, the 3D ULPIN identifier
+norms (B3D-PROP-2026-ULPIN-01), algorithms, documentation, designs, images, videos and
+original datasets (together, the "Software") — is the proprietary work of the copyright
+holders.
+
+1. No licence granted. Except as stated in Section 2, no permission is granted to any person
+   or organisation to copy, reproduce, modify, adapt, translate, merge, publish, distribute,
+   sublicense, sell, host, deploy, submit to any competition or hackathon, use to train
+   machine-learning models, or create derivative works from the Software, in whole or in part,
+   by any means, without prior written permission from the copyright holders.
+
+2. Evaluation permission. Judges, mentors and organisers of the Smart India Hackathon 2026
+   (including the Ministry of Education's Innovation Cell, AICTE and the problem-statement
+   owner, the Department of Land Resources, Ministry of Rural Development, Government of India)
+   may view, download and run the Software solely to evaluate this submission. This permission
+   does not include the right to share, publish or reuse any part of the Software and ends when
+   evaluation ends.
+
+3. Public visibility. If this repository is publicly visible, that visibility does not grant
+   any right under copyright other than the limited rights the hosting platform's terms of
+   service require for viewing on that platform.
+
+4. Third-party material. Third-party libraries, map data and imagery remain under their own
+   licences and terms (for example, OpenStreetMap data © OpenStreetMap contributors under the
+   ODbL, and imagery providers' terms). This licence covers only the original work of the
+   copyright holders and does not restrict rights that those licences grant.
+
+5. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+6. Permissions. Requests for permission: open an issue at
+   https://github.com/Partha-Shankar/BHARAT-3D or contact the repository owner.
