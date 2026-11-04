@@ -8,13 +8,14 @@ import time
 import uuid
 from typing import Any, Dict, List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Response
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from shapely.geometry import Polygon
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core import access
 from app.core.database import get_db
 from app.core.deps import get_current_user
 from app.models.models import Project, User
@@ -159,11 +160,26 @@ async def get_texture(key: str, name: str):
 
 
 @router.get("/scenes/{key}/buildings/{building_id}")
-async def get_building(key: str, building_id: str, user: User = Depends(get_current_user)):
+async def get_building(key: str, building_id: str, response: Response, user: User = Depends(get_current_user)):
     detail = scene_ops.building_detail(_load_scene(key), building_id)
     if detail is None:
         raise HTTPException(404, "Building not found")
-    return detail
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_building_detail(detail, view)  # surveyor/admin: the same object, untouched
+
+
+async def _editor_labels(db: AsyncSession, emails: set) -> Dict[str, str]:
+    """E-mail -> role label for the given editors. Unknown e-mails are left out (the redactor labels them
+    generically); a failed lookup never fails the request."""
+    if not emails:
+        return {}
+    try:
+        rows = (await db.execute(select(User.email, User.role).where(User.email.in_(sorted(emails))))).all()
+    except Exception:
+        logger.exception("Editor role lookup failed; serving generic editor labels")
+        return {}
+    return {email: access.role_label(role) for email, role in rows}
 
 
 EDITOR_ROLES = {"SURVEYOR", "ADMIN"}
@@ -248,8 +264,18 @@ async def registry_all(q: str = "", limit: int = 50, status: str = "", user: Use
 
 
 @router.get("/activity")
-async def activity(key: Optional[str] = None, limit: int = 200, user: User = Depends(get_current_user)):
+async def activity(response: Response, key: Optional[str] = None, limit: int = 200,
+                   user: User = Depends(get_current_user), db: AsyncSession = Depends(get_db)):
     """Append-only history: area generation, survey packages ingested, and every surveyor edit."""
+    events = _activity_events(key, limit)
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    if view == access.FULL:
+        return events
+    return access.redact_activity(events, view, await _editor_labels(db, access.editor_emails(events)))
+
+
+def _activity_events(key: Optional[str], limit: int) -> List[Dict[str, Any]]:
     events = []
     for k in [key] if key else _area_keys():
         meta = cache.read_json(k, "meta.json")
@@ -300,9 +326,15 @@ class EditRequest(BaseModel):
 
 
 @router.get("/scenes/{key}/edits")
-async def list_edits(key: str, user: User = Depends(get_current_user)):
+async def list_edits(key: str, response: Response, user: User = Depends(get_current_user),
+                     db: AsyncSession = Depends(get_db)):
     _load_scene(key)
-    return cache.read_json(key, "edits.json") or []
+    edits = cache.read_json(key, "edits.json") or []
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    if view == access.FULL:
+        return edits
+    return access.redact_edits(edits, view, await _editor_labels(db, access.editor_emails(edits)))
 
 
 @router.post("/scenes/{key}/edits")

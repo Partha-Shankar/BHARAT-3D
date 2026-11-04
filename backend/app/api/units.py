@@ -1,16 +1,30 @@
 import os
 import json
 from typing import List, Optional, Any
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
+from app.core import access
 from app.core.database import get_db
+from app.core.deps import get_optional_user
 from app.demo.area_selector import DemoAreaSelector
+from app.models.models import User
 
 router = APIRouter(prefix="/units", tags=["units"])
 
+# Sign-in stays optional on these demo endpoints: anonymous callers get the public view, signed-in callers their
+# role's view (app/core/access.py). The records themselves are computed exactly as before.
+
+
 @router.get("/{id}")
-async def get_unit(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
+async def get_unit(id: str, response: Response, area_id: Optional[str] = Query(None),
+                   db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_legacy_unit(_find_unit(id, area_id), view)
+
+
+def _find_unit(id: str, area_id: Optional[str]) -> dict:
     area = area_id or "area_01"
     area_dir = DemoAreaSelector.get_area_dir(area)
     u_path = os.path.join(area_dir, "units.geojson")
@@ -41,9 +55,12 @@ async def get_unit(id: str, area_id: Optional[str] = Query(None), db: AsyncSessi
     }
 
 @router.get("/{id}/ownership")
-async def get_ownership(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
-    unit = await get_unit(id, area_id, db)
-    return {
+async def get_ownership(id: str, response: Response, area_id: Optional[str] = Query(None),
+                        db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+    unit = _find_unit(id, area_id)
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_ownership({
         "unit_vprid": unit.get("vprid", id),
         "owner_name": unit.get("owner_name", "Priya Mehta"),
         "masked_id": unit.get("masked_id", "ID-XXXX-8921"),
@@ -51,12 +68,15 @@ async def get_ownership(id: str, area_id: Optional[str] = Query(None), db: Async
         "share_percentage": 100.0,
         "title_deed": unit.get("title_deed", "DEED-DL-2024-0981"),
         "effective_date": "2024-04-15"
-    }
+    }, view)
 
 @router.get("/{id}/tax")
-async def get_tax(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
-    unit = await get_unit(id, area_id, db)
-    return {
+async def get_tax(id: str, response: Response, area_id: Optional[str] = Query(None),
+                  db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+    unit = _find_unit(id, area_id)
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_tax({
         "unit_vprid": unit.get("vprid", id),
         "financial_year": "2026-27",
         "usage_type": unit.get("property_type", "RESIDENTIAL"),
@@ -65,19 +85,22 @@ async def get_tax(id: str, area_id: Optional[str] = Query(None), db: AsyncSessio
         "amount_paid": unit.get("annual_tax", 18400) if unit.get("payment_status") == "PAID" else 0,
         "amount_due": 0 if unit.get("payment_status") == "PAID" else unit.get("annual_tax", 18400),
         "payment_status": unit.get("payment_status", "PAID")
-    }
+    }, view)
 
 @router.get("/{id}/lease")
-async def get_lease(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
-    unit = await get_unit(id, area_id, db)
-    return {
+async def get_lease(id: str, response: Response, area_id: Optional[str] = Query(None),
+                    db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+    unit = _find_unit(id, area_id)
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_lease({
         "unit_vprid": unit.get("vprid", id),
         "tenant_name": unit.get("tenant_name", "Rohan Gupta"),
         "lease_start": "2025-01-01",
         "lease_end": "2026-12-31",
         "monthly_rent": 38000.0,
         "status": unit.get("lease_status", "ACTIVE")
-    }
+    }, view)
 
 @router.post("/floors/{floor_id}/split")
 async def split_floor(floor_id: str, splits: int = 4, db: AsyncSession = Depends(get_db)):

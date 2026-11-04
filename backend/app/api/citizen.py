@@ -1,8 +1,11 @@
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Optional, Any
 from pydantic import BaseModel
+from app.core import access
 from app.core.database import get_db
+from app.core.deps import get_optional_user
+from app.models.models import User
 
 router = APIRouter(prefix="/citizen", tags=["citizen"])
 
@@ -12,7 +15,9 @@ class TaxPaymentRequest(BaseModel):
     payment_method: Optional[str] = "UPI_BHIM"
 
 @router.get("/my-properties")
-async def my_properties(area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
+async def my_properties(response: Response, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
+    # The caller's own records: served in full to the caller (access policy exception), so not redacted.
+    response.headers[access.VIEW_HEADER] = access.FULL
     return [
         {
             "id": "UNT-VPR-BLD0101-F08-U04",
@@ -40,8 +45,12 @@ async def my_properties(area_id: Optional[str] = Query(None), db: AsyncSession =
     ]
 
 @router.get("/property/{identifier}")
-async def get_property_by_id(identifier: str, area_id: Optional[str] = Query(None)):
-    return {
+async def get_property_by_id(identifier: str, response: Response, area_id: Optional[str] = Query(None),
+                             user: Optional[User] = Depends(get_optional_user)):
+    # Public lookup by identifier: sign-in optional; anonymous callers get the public view.
+    view = access.view_of(user)
+    response.headers[access.VIEW_HEADER] = view
+    return access.redact_citizen_property({
         "vprid": identifier,
         "unit_number": "Flat 804",
         "building_name": "Aarav Heights Condominium",
@@ -58,7 +67,7 @@ async def get_property_by_id(identifier: str, area_id: Optional[str] = Query(Non
         "compliance_status": "COMPLIANT",
         "title_deed": "DEED-DL-2024-0981",
         "ulpin": "IN-01-0008"
-    }
+    }, view)
 
 @router.post("/pay-tax")
 async def pay_tax(req: TaxPaymentRequest):
