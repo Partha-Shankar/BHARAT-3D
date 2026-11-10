@@ -27,7 +27,7 @@ jobs:
           while [ "$(date +%s)" -lt "$end" ]; do
             hour=$(TZ=Asia/Kolkata date +%H)
             if [ "$hour" -lt 7 ]; then echo "outside 07:00-24:00 IST, stopping"; break; fi
-            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-backend.onrender.com/health || echo 000)
+            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-api.onrender.com/health || echo 000)
             echo "$(TZ=Asia/Kolkata date '+%H:%M IST') health $code"
             sleep 300
           done

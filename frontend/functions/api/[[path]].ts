@@ -22,7 +22,7 @@ type Env = {
 };
 type Ctx = { request: Request; env: Env; waitUntil: (p: Promise<unknown>) => void };
 
-const DEFAULT_ORIGIN = 'https://bharat-3d-backend.onrender.com';
+const DEFAULT_ORIGIN = 'https://bharat-3d-api.onrender.com';
 const TEXTURE = /^\/api\/realgen\/scenes\/([a-f0-9]{16})\/(texture|context)\.jpg$/;
 const SCENE = /^\/api\/realgen\/scenes\/([a-f0-9]{16})$/;
 const QUIET = /^\/api\/(realgen\/jobs\/|__wake|__store|__track|__analytics)|\.jpg$/; // not logged as requests

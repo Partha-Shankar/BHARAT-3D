@@ -1,37 +1,32 @@
-# Render Blueprint — BHARAT 3D API (FastAPI)
-# New → Blueprint → select this repository. Secrets marked `sync: false` are entered in the dashboard.
+# Render Blueprint — BHARAT 3D API (FastAPI). Matches the live web service `bharat-3d-api` (https://bharat-3d-api.onrender.com).
+# New → Blueprint → select this repository. Values marked `sync: false` are entered in the dashboard.
 services:
   - type: web
-    name: bharat-3d-backend
+    name: bharat-3d-api
     runtime: python
     plan: free
     region: singapore
     rootDir: backend
-    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
-    autoDeploy: false
+    autoDeploy: true
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
-      - key: SECRET_KEY
-        generateValue: true
       - key: ENVIRONMENT
         value: production
-      - key: DEMO_MODE
-        value: "true"
-      # Allowed browser origins (comma-separated). Add custom domains here.
-      - key: CORS_ORIGINS
-        value: https://bharat-3d.pages.dev,http://localhost:5173,http://localhost:5180
-      # Where generated areas (imagery, OSM snapshot, scene, registry) are stored.
-      - key: REALGEN_CACHE_DIR
-        value: /tmp/bharat3d-generated
-      # Groq LLM for building names and area summaries — paste the key in the dashboard.
+      # Durable area store: the web app's Pages Function, backed by Cloudflare R2. Every generated area and the national
+      # INF ledger are restored from it at startup and saved to it after every change, so restarts and moves lose nothing.
+      - key: STORE_URL
+        value: https://bharat-3d.pages.dev/api/__store
+      # Must equal the Pages secret STORE_TOKEN (the store refuses any other token).
+      - key: STORE_TOKEN
+        sync: false
+      # Must equal the Pages secret JWT_SECRET, so sign-ins stay valid across backend moves and the edge can serve
+      # scenes from R2. Never generate a new value here.
+      - key: SECRET_KEY
+        sync: false
+      # Optional: Groq LLM for building names and area summaries (without it, names come from Faker).
       - key: GROQ_API_KEY
         sync: false
-      - key: GROQ_MODEL
-        value: llama-3.3-70b-versatile
-      # The free instance has 512 MB RAM; height estimation then uses the typology model.
-      # On a Standard instance, install requirements-ml.txt and set this to "false" to enable Depth Anything V2.
-      - key: REALGEN_DISABLE_ML
-        value: "true"
