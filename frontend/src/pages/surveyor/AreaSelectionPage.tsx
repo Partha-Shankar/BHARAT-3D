@@ -4,9 +4,11 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useUpdateProjectArea } from '../../hooks/useProjects';
 import { useAppStore } from '../../stores/appStore';
-import { ringAreaM2, MAX_AREA_M2, MIN_AREA_M2, INDIA_BOUNDS, DRAW_MIN_ZOOM, DRAW_MAX_ZOOM, isInIndia } from '../../world/api';
+import { ringAreaM2, MAX_AREA_M2, MIN_AREA_M2, INDIA_BOUNDS, DRAW_MIN_ZOOM, DRAW_MAX_ZOOM, isInIndia, preflightArea } from '../../world/api';
+import type { AreaCheck } from '../../world/api';
 import {
   ArrowRight, Box, Hexagon, Loader2, Map as MapIcon, MousePointerClick, Satellite, Search, Square, Trash2, AlertTriangle, ZoomIn, FolderOpen, X,
+  CheckCircle2, CloudOff, RefreshCw,
 } from 'lucide-react';
 import { SATELLITE_STYLE, setBaseLayer, squareAround, areasGeoJSON } from '../../survey/mapStyle';
 import { useSurveyDraft, reversePlace } from '../../survey/draft';
@@ -14,6 +16,8 @@ import { SurveySteps } from '../../survey/Steps';
 import { useScenes, placeOf } from '../../survey/ui';
 import { Segmented } from '../../world/ui';
 import { trackAction, track } from '../../lib/track';
+import { Thinking } from '../../survey/Thinking';
+import { CHECK_THOUGHTS, durationText } from '../../survey/generationCopy';
 
 type Mode = 'click' | 'box' | 'polygon';
 type LngLat = [number, number];
@@ -56,6 +60,7 @@ export const AreaSelectionPage: React.FC = () => {
   const [searching, setSearching] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [verdict, setVerdict] = useState<AreaCheck | null>(null); // result of the server-side area check
   const [zoom, setZoom] = useState(4.6);
   const [hitArea, setHitArea] = useState<string | null>(null);
   const [mapReady, setMapReady] = useState(false);
@@ -84,6 +89,7 @@ export const AreaSelectionPage: React.FC = () => {
     doneRef.current = true;
     const closed = closeRing(pts);
     setRing(closed);
+    setVerdict(null);
     const a = ringAreaM2(closed.slice(0, -1));
     setAreaM2(a);
     setError(a > MAX_AREA_M2 ? `Area is ${(a / 1e6).toFixed(2)} km² — keep it under ${(MAX_AREA_M2 / 1e6).toFixed(1)} km² so the 3D model builds quickly.`
@@ -104,6 +110,7 @@ export const AreaSelectionPage: React.FC = () => {
     setAreaM2(null);
     setPlace(null);
     setError(null);
+    setVerdict(null);
     render([], false);
   };
 
@@ -263,7 +270,8 @@ export const AreaSelectionPage: React.FC = () => {
     }
   };
 
-  const confirm = async () => {
+  /** Check the area on the server first; continue only when it can be generated (`accept` = continue after a warning). */
+  const confirm = async (accept = false) => {
     if (!ring || error) return;
     const polygon: GeoJSON.Polygon = { type: 'Polygon', coordinates: [ring] };
     setSubmitting(true);
@@ -274,6 +282,33 @@ export const AreaSelectionPage: React.FC = () => {
       setError('This area is outside India. BHARAT 3D generates only inside India.');
       setSubmitting(false);
       return;
+    }
+    let v: AreaCheck | null = accept ? verdict : null;
+    if (!accept) {
+      setVerdict(null);
+      try {
+        v = await preflightArea(polygon);
+      } catch {
+        v = null; // the check itself must never stop a survey: generation validates the area again
+      }
+      if (v) {
+        trackAction('survey_area_checked', `checked a survey area: ${v.level}${v.buildings != null ? ` (${v.buildings} buildings)` : ''}`,
+          { level: v.level, reason: v.reason, buildings: v.buildings, roads: v.roads, area_m2: v.area_m2 });
+      }
+      if (v && v.level !== 'ok') {
+        setVerdict(v);
+        setSubmitting(false);
+        return;
+      }
+      if (v) {
+        setVerdict(v);
+        await new Promise((r) => window.setTimeout(r, 1300)); // let the user read the result
+      }
+    }
+    if (v?.key) {
+      try {
+        sessionStorage.setItem('bharat3d_area_check', JSON.stringify({ key: v.key, buildings: v.buildings, eta_s: v.eta_s }));
+      } catch { /* display only */ }
     }
     setCustomSurveyPolygon(polygon);
     startDraft(polygon, areaM2 ?? 0, place || undefined);
@@ -351,14 +386,47 @@ export const AreaSelectionPage: React.FC = () => {
             </div>
           )}
 
+          {submitting && !verdict && (
+            <div className="b3-well px-2.5 py-2 text-[12px] b3-expand">
+              <Thinking messages={CHECK_THOUGHTS} every={2200} hold />
+            </div>
+          )}
+
+          {verdict && (
+            <div className={`text-[11.5px] rounded-lg p-2.5 border b3-pop space-y-1.5 ${
+              verdict.level === 'ok' ? 'bg-[#1f7a72]/8 border-[#1f7a72]/30 text-[#1d6a52]'
+                : verdict.level === 'block' ? 'bg-[#c0392b]/5 border-[#c0392b]/25 text-[#c0392b]'
+                  : 'bg-[#c8962e]/10 border-[#c8962e]/35 text-[#8a5a12]'}`}>
+              <div className="flex gap-2">
+                {verdict.level === 'ok' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> : verdict.level === 'busy' ? <CloudOff className="w-4 h-4 shrink-0" /> : <AlertTriangle className="w-4 h-4 shrink-0" />}
+                <span className="leading-relaxed">{verdict.message}</span>
+              </div>
+              {verdict.buildings != null && (
+                <div className="flex flex-wrap gap-1.5 pl-6">
+                  <span className="b3-chip">{verdict.buildings.toLocaleString('en-IN')} buildings</span>
+                  {verdict.roads != null && <span className="b3-chip">{verdict.roads.toLocaleString('en-IN')} road segments</span>}
+                  {verdict.eta_s != null && <span className="b3-chip">{durationText(verdict.eta_s)}</span>}
+                </div>
+              )}
+              {(verdict.level === 'warn' || verdict.level === 'block') && (
+                <button className="pl-6 underline underline-offset-2 hover:no-underline" onClick={clear}>Draw a smaller area</button>
+              )}
+            </div>
+          )}
+
           <div className="flex gap-2">
             {ring && (
               <button onClick={clear} className="b3-btn b3-btn-danger b3-pop" title="Clear and redraw">
                 <Trash2 className="w-4 h-4" />
               </button>
             )}
-            <button className="flex-1 b3-btn b3-btn-teal !py-2" disabled={!ring || !!error || submitting} onClick={confirm}>
-              {submitting ? <><Loader2 className="w-4 h-4 animate-spin" /> Checking the area…</> : <>Continue to data ingestion <ArrowRight className="w-4 h-4" /></>}
+            <button className="flex-1 b3-btn b3-btn-teal !py-2" disabled={!ring || !!error || submitting || verdict?.level === 'block'}
+              onClick={() => confirm(verdict?.level === 'warn')}>
+              {submitting ? <><Loader2 className="w-4 h-4 animate-spin" /> {verdict?.level === 'ok' ? 'Opening data ingestion…' : 'Checking the area…'}</>
+                : verdict?.level === 'block' ? <>Draw a different area</>
+                  : verdict?.level === 'busy' ? <><RefreshCw className="w-4 h-4" /> Check again</>
+                    : verdict?.level === 'warn' ? <>Continue anyway <ArrowRight className="w-4 h-4" /></>
+                      : <>Continue to data ingestion <ArrowRight className="w-4 h-4" /></>}
             </button>
           </div>
         </div>

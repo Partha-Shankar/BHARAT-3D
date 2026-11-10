@@ -268,3 +268,16 @@
 .b3-atlas-marker:hover .b3-atlas-dot { transform: scale(1.25); }
 .b3-atlas-marker:hover .b3-atlas-label { transform: translateX(2px); box-shadow: var(--shadow-lift); }
 .b3-atlas-marker:hover .b3-atlas-label em { max-height: 16px; opacity: 1; }
+
+/* "Thinking" status line (area check, generation): a soft highlight sweeps across the text; each new message rises in */
+.b3-think { color: #33495a; }
+.b3-think-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--teal); flex-shrink: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .b3-think { background-image: linear-gradient(90deg, #33495a 0%, #33495a 38%, #8fc4bd 50%, #33495a 62%, #33495a 100%);
+    background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: b3-think 2.2s linear infinite; }
+  .b3-think-in { animation: b3-think-in 0.5s var(--ease-out) both, b3-think 2.2s linear infinite; }
+  .b3-think-dot { animation: b3-pulse 1.8s var(--ease-out) infinite; }
+  .b3-log-in { animation: b3-think-in 0.45s var(--ease-out) both; }
+}
+@keyframes b3-think { from { background-position: 160% 0; } to { background-position: -60% 0; } }
+@keyframes b3-think-in { from { opacity: 0; transform: translateY(5px); filter: blur(1.5px); } to { opacity: 1; transform: none; filter: none; } }

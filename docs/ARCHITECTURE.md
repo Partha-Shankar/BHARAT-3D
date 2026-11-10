@@ -39,6 +39,23 @@ endpoints keep their existing editor check.
 expose the plans. Nothing in the engine reads them yet: this is the seam where real readers would feed measured
 evidence (heights, unit polygons, ground control) into `scene_ops`.
 
+## Map data, the area pre-check and live progress
+
+Public Overpass servers are often overloaded or unreachable, so `fetch_osm.fetch_overpass` races them on a schedule
+(two at once, more mirrors after a few seconds, then the OpenStreetMap API 0.6 `map` call converted to the same
+"out geom" shape and tag rules), over IPv4, within a 75 s deadline. A download for the same box is shared and kept in
+memory for 30 minutes. If no source answers it raises `SourceUnavailable`, and the job then retries once.
+
+`POST /api/realgen/preflight` runs when the surveyor confirms an area. It checks the size limits and that the area is
+in India, notes when the area was generated before, and starts the map download that generation will reuse. It then
+counts the buildings: `ok` below 450, `warn` from 450 (slow, the user decides), `block` above 900 (draw a smaller
+area), and `busy` when the map servers are down.
+
+`app.realgen.progress` passes live notes from the downloads (map servers tried, tiles fetched) to the running job.
+`GET /api/realgen/jobs/{id}` returns them in `log`, together with `stage_progress`, `stage_started_s`, `attempt`,
+`error_kind` (`busy` | `area` | `internal`) and `error_detail`. The generation page uses these to animate its
+progress between server updates, show what is happening, and offer a retry.
+
 ## What is real and what is synthetic
 
 | Real (open data, fetched per area) | Estimated (models) | Synthetic (deterministic from the polygon seed) |

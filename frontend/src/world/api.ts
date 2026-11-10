@@ -34,6 +34,26 @@ export async function getJob(jobId: string) {
   return data;
 }
 
+/** Result of the area pre-check: ok (go ahead), warn (large, slow), block (draw again), busy (map servers down). */
+export interface AreaCheck {
+  level: 'ok' | 'warn' | 'block' | 'busy';
+  reason: string;
+  message: string;
+  key?: string;
+  area_m2?: number;
+  buildings?: number;
+  roads?: number;
+  eta_s?: number;
+  cached?: boolean;
+  detail?: string;
+}
+
+/** Check a drawn area before the survey continues (also starts its map download on the server). */
+export async function preflightArea(polygon: GeoJSON.Polygon) {
+  const { data } = await api.post<AreaCheck>('/realgen/preflight', { polygon }, { timeout: 40000 });
+  return data;
+}
+
 // Session cache for the heavier per-area reads (the API is far away on free hosting). Any write to an area clears
 // that area's entries, so an edited area is always re-read.
 const memo = new Map<string, Promise<any>>();

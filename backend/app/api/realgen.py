@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import shutil
+import threading
 import time
 import uuid
 from typing import Any, Dict, List, Optional
@@ -11,7 +12,7 @@ from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, Depends, HTTPException, Response
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-from shapely.geometry import Polygon
+from shapely.geometry import Polygon, box
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -20,7 +21,7 @@ from app.core.database import get_db
 from app.core.deps import get_current_user
 from app.ingest import plan_for_manifest
 from app.models.models import Project, User
-from app.realgen import cache, fetch_osm, norms, pipeline, scene_ops, store, synth
+from app.realgen import cache, fetch_osm, norms, pipeline, progress, scene_ops, store, synth
 from app.realgen.geo import LocalFrame, polygon_from_geojson, polygon_key
 
 logger = logging.getLogger(__name__)
@@ -29,6 +30,17 @@ router = APIRouter(prefix="/realgen", tags=["realgen"])
 # In-process job registry (single worker). Scenes themselves persist on disk.
 jobs: Dict[str, Dict[str, Any]] = {}
 _tasks: set = set()
+_jobs_lock = threading.Lock()
+
+GEN_ATTEMPTS = 2  # a generation whose map download fails is retried once, after RETRY_PAUSE_S
+RETRY_PAUSE_S = 8
+JOB_LOG_MAX = 120
+
+# Area pre-check (POST /realgen/preflight). Building counts are OSM buildings touching the drawn polygon, which is
+# close to the number of buildings in the generated scene.
+PREFLIGHT_WAIT_S = 20.0
+DENSE_WARN_BUILDINGS = 450
+DENSE_BLOCK_BUILDINGS = 900
 
 
 class GenerateRequest(BaseModel):
@@ -36,6 +48,10 @@ class GenerateRequest(BaseModel):
     project_id: Optional[Any] = None
     force: bool = False
     datasets: Optional[List[Dict[str, Any]]] = None  # survey package manifest from the ingestion step
+
+
+class PreflightRequest(BaseModel):
+    polygon: Any
 
 
 class ExcavationRequest(BaseModel):
@@ -115,21 +131,62 @@ async def generate(req: GenerateRequest, db: AsyncSession = Depends(get_db), use
     job_id = uuid.uuid4().hex[:12]
     job = {"id": job_id, "key": key, "status": "RUNNING", "stage_index": 0, "stage": "Queued", "detail": "",
            "stages": pipeline.STAGES, "progress": 0, "area_m2": round(area_m2), "started_at": time.time(),
-           "error": None, "stats": None}
+           "error": None, "stats": None, "stage_progress": 0.0, "stage_started_s": 0.0, "attempt": 1,
+           "log": [], "error_kind": None, "error_detail": None}
     jobs[job_id] = job
+    _job_log(job, "Generation queued", "stage")
 
     def on_progress(i: int, stage: str, detail: str):
-        job.update(stage_index=i, stage=stage, detail=detail,
+        if i == job["stage_index"] and stage == job["stage"]:  # a sub-step of the running stage
+            on_note(detail, None)
+            return
+        job.update(stage_index=i, stage=stage, detail=detail, stage_progress=0.0,
+                   stage_started_s=round(time.time() - job["started_at"], 1),
                    progress=min(99, int(i / len(pipeline.STAGES) * 100)))
+        _job_log(job, f"{stage} · {detail}" if detail else stage, "stage")
+
+    def on_note(message: str, fraction: Optional[float]):
+        """Live detail from a long step (map servers, tile downloads). Counters only update the detail line."""
+        if not message:
+            return
+        job["detail"] = message
+        if fraction is not None:
+            job["stage_progress"] = round(fraction, 3)
+        else:
+            _job_log(job, message, "note")
 
     async def run():
+        token = progress.use(on_note)
         try:
-            scene = await asyncio.to_thread(pipeline.generate, req.polygon, on_progress, req.force)
+            for attempt in range(1, GEN_ATTEMPTS + 1):
+                try:
+                    scene = await asyncio.to_thread(pipeline.generate, req.polygon, on_progress, req.force)
+                    break
+                except fetch_osm.SourceUnavailable as exc:
+                    if attempt == GEN_ATTEMPTS:
+                        raise
+                    logger.warning("Map download failed for %s (attempt %s): %s", key, attempt, exc.detail)
+                    job["attempt"] = attempt + 1
+                    job["detail"] = f"Map servers are busy. Trying again in {RETRY_PAUSE_S} s…"
+                    _job_log(job, f"The map servers did not answer. Trying again in {RETRY_PAUSE_S} s "
+                                  f"(attempt {attempt + 1} of {GEN_ATTEMPTS}).", "retry")
+                    await asyncio.sleep(RETRY_PAUSE_S)
             job.update(status="COMPLETE", progress=100, stage="Complete", stats=scene["stats"],
                        place=scene["place"], summary=scene["summary"])
+            _job_log(job, "3D world ready", "done")
+        except fetch_osm.SourceUnavailable as exc:
+            logger.warning("Generation failed for %s: no map source answered: %s", key, exc.detail)
+            job.update(status="FAILED", error=str(exc), error_kind="busy", error_detail=exc.detail)
+            _job_log(job, "Stopped: the map servers did not answer", "error")
+        except pipeline.AreaError as exc:
+            job.update(status="FAILED", error=str(exc), error_kind="area")
+            _job_log(job, f"Stopped: {exc}", "error")
         except Exception as exc:
             logger.exception("Generation failed for %s", key)
-            job.update(status="FAILED", error=str(exc))
+            job.update(status="FAILED", error=str(exc), error_kind="internal")
+            _job_log(job, "Stopped by an unexpected error", "error")
+        finally:
+            progress.reset(token)
 
     task = asyncio.create_task(run())
     _tasks.add(task)
@@ -146,12 +203,109 @@ def _write_ingest_plan(key: str, datasets: List[Dict[str, Any]]) -> None:
         logger.exception("Could not write the ingest plan for %s; generation continues", key)
 
 
+def _job_log(job: Dict[str, Any], message: str, kind: str) -> None:
+    """Append to the job's live activity log (shown on the generation page); repeated lines are skipped."""
+    with _jobs_lock:
+        log = job["log"]
+        if log and log[-1]["msg"] == message:
+            return
+        log.append({"t": round(time.time() - job["started_at"], 1), "msg": message, "kind": kind})
+        if len(log) > JOB_LOG_MAX:
+            del log[1:len(log) - JOB_LOG_MAX + 1]  # keep the first line
+
+
 @router.get("/jobs/{job_id}")
 async def job_status(job_id: str, user: User = Depends(get_current_user)):
     job = jobs.get(job_id)
     if job is None:
         raise HTTPException(404, "Job not found")
-    return {**job, "elapsed_s": round(time.time() - job["started_at"], 1)}
+    with _jobs_lock:
+        snapshot = {**job, "log": list(job["log"])}
+    return {**snapshot, "elapsed_s": round(time.time() - job["started_at"], 1)}
+
+
+def _fetch_box(poly: Polygon) -> Polygon:
+    """The box the generation downloads OpenStreetMap data for (pipeline.generate: bounds +/- MARGIN_DEG), so the
+    pre-check's download is reused by the generation."""
+    m = pipeline.MARGIN_DEG
+    minx, miny, maxx, maxy = poly.bounds
+    return Polygon(box(minx - m, miny - m, maxx + m, maxy + m).exterior.coords)
+
+
+def estimate_seconds(buildings: int) -> int:
+    """Rough generation time on the free backend: fixed downloads plus per-building work."""
+    return int(45 + 0.3 * buildings)
+
+
+def _duration_text(seconds: int) -> str:
+    return "about a minute" if seconds < 90 else f"about {round(seconds / 60)} minutes"
+
+
+def _verdict(level: str, reason: str, message: str, **extra: Any) -> Dict[str, Any]:
+    return {"level": level, "reason": reason, "message": message, **extra}
+
+
+@router.post("/preflight")
+async def preflight(req: PreflightRequest, user: User = Depends(get_current_user)):
+    """Check a drawn area before the survey continues: size limits, India, already generated, and how dense it is.
+
+    ``level``: ``ok`` (go ahead), ``warn`` (large: it works but is slow; the user decides), ``block`` (cannot be
+    generated: draw again) or ``busy`` (the map servers are not answering: check again shortly). It also starts the
+    area's OpenStreetMap download, which the generation then reuses.
+    """
+    try:
+        poly = polygon_from_geojson(req.polygon)
+    except Exception as exc:
+        return _verdict("block", "invalid", f"This shape cannot be used as a survey area ({exc}).")
+    try:
+        area_m2 = pipeline.validate_area(poly)
+    except pipeline.AreaError as exc:
+        return _verdict("block", "size", str(exc))
+    key = polygon_key(poly)
+    base = {"key": key, "area_m2": round(area_m2)}
+    if cache.exists(key, "scene.json"):
+        return _verdict("ok", "exists", "This exact area has been generated before, so it will open instantly.",
+                        cached=True, **base)
+    reason = await asyncio.to_thread(fetch_osm.india_check, poly)
+    if reason:
+        return _verdict("block", "outside_india", reason, **base)
+
+    raw = cache.read_json(key, "osm_raw.json")
+    if raw is None:
+        pending = fetch_osm.start_fetch(_fetch_box(poly))
+        try:
+            raw = await asyncio.to_thread(pending.result, PREFLIGHT_WAIT_S)
+        except TimeoutError:
+            return _verdict("ok", "pending", "The map data is still downloading. It carries on in the background "
+                            "while you attach the survey package.", **base)
+        except fetch_osm.SourceUnavailable as exc:
+            return _verdict("busy", "osm_unavailable", str(exc), detail=exc.detail, **base)
+        except Exception:
+            logger.exception("Area pre-check could not read the map data for %s", key)
+            return _verdict("ok", "unchecked", "The area could not be measured in advance; generation will try "
+                            "again.", **base)
+
+    feats = await asyncio.to_thread(fetch_osm.parse_elements, raw)
+    buildings = sum(1 for b in feats["buildings"] if b["geom"].intersects(poly))
+    roads = sum(1 for r in feats["roads"] if r["geom"].intersects(poly))
+    eta = estimate_seconds(buildings)
+    counts = {"buildings": buildings, "roads": roads, "eta_s": eta, **base}
+    if buildings > DENSE_BLOCK_BUILDINGS:
+        share = max(10, int(DENSE_BLOCK_BUILDINGS * 0.8 / buildings * 100) // 5 * 5)
+        return _verdict("block", "too_dense", f"This area is too dense to generate in one go: {buildings:,} "
+                        f"buildings (the limit is {DENSE_BLOCK_BUILDINGS:,}). Draw a smaller area, about {share}% of "
+                        f"this one, or split it into parts.", **counts)
+    if buildings >= DENSE_WARN_BUILDINGS:
+        return _verdict("warn", "dense", f"This is a dense area: {buildings:,} buildings and {roads:,} road "
+                        f"segments. It can be generated, but it will take {_duration_text(eta)}. A smaller area is "
+                        f"faster.", **counts)
+    if buildings == 0:
+        message = ("No buildings are mapped here in OpenStreetMap, so the 3D model will show mostly open land "
+                   f"and roads. It should be ready in {_duration_text(eta)}.")
+    else:
+        message = (f"{buildings:,} buildings and {roads:,} road segments found. The 3D model should be ready in "
+                   f"{_duration_text(eta)}.")
+    return _verdict("ok", "measured", message, **counts)
 
 
 @router.get("/scenes/{key}")

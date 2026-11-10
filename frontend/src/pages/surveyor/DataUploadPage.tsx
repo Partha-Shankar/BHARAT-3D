@@ -187,7 +187,7 @@ export const DataUploadPage: React.FC = () => {
       const pkg = manifest(draft);
       const job = await startGeneration(draft.polygon, projectId, false, pkg);
       try {
-        sessionStorage.setItem('bharat3d_last_package', JSON.stringify({ key: job.key, place: draft.place, datasets: pkg }));
+        sessionStorage.setItem('bharat3d_last_package', JSON.stringify({ key: job.key, place: draft.place, datasets: pkg, polygon: draft.polygon }));
       } catch { /* display only */ }
       clear();
       navigate(`/surveyor/generate?job=${job.job_id}&key=${job.key}&project_id=${projectId}`);

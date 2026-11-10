@@ -2,13 +2,14 @@
 import io
 import logging
 import math
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Callable, Tuple
 
 import httpx
 import numpy as np
 from PIL import Image
 
+from app.realgen import progress
 from app.realgen.fetch_osm import USER_AGENT
 
 logger = logging.getLogger(__name__)
@@ -52,10 +53,14 @@ def mosaic(
 
     jobs = [(tx, ty) for ty in range(ty0, ty1 + 1) for tx in range(tx0, tx1 + 1)]
     with ThreadPoolExecutor(max_workers=8) as pool:
-        for tx, ty, arr in pool.map(lambda j: fetch(*j), jobs):
+        futures = [pool.submit(fetch, tx, ty) for tx, ty in jobs]
+        for done, fut in enumerate(as_completed(futures), 1):
+            tx, ty, arr = fut.result()
             if arr is not None and arr.shape[0] == TILE and arr.shape[1] == TILE:
                 r, c = ty - ty0, tx - tx0
                 canvas[r * TILE:(r + 1) * TILE, c * TILE:(c + 1) * TILE] = arr
+            if done == len(jobs) or done % 4 == 0:
+                progress.note(f"Downloaded {done} of {len(jobs)} map tiles", done / len(jobs))
 
     ox, oy = tx0 * TILE, ty0 * TILE
     return canvas[int(y0 - oy):int(math.ceil(y1 - oy)), int(x0 - ox):int(math.ceil(x1 - ox))]

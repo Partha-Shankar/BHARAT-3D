@@ -249,6 +249,16 @@ export interface GenerationJob {
   stats: Record<string, any> | null;
   place?: SceneSpec['place'];
   summary?: string;
+  /** how far the running stage has got (0..1), when the server knows (tile downloads) */
+  stage_progress?: number;
+  /** seconds after the start when the running stage began */
+  stage_started_s?: number;
+  attempt?: number;
+  /** live activity: stage changes, map-server attempts, retries */
+  log?: { t: number; msg: string; kind: 'stage' | 'note' | 'retry' | 'done' | 'error' }[];
+  /** busy = map servers did not answer (try again), area = this area cannot be generated, internal = bug */
+  error_kind?: 'busy' | 'area' | 'internal' | null;
+  error_detail?: string | null;
 }
 
 export interface SceneMeta {
