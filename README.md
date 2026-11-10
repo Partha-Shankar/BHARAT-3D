@@ -16,7 +16,7 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 [![Research paper](https://img.shields.io/badge/RESEARCH%20PAPER-Read-1d4ed8?style=for-the-badge)](https://drive.google.com/file/d/1kvqzkMEoMkUsR5eao9VdZZps2BJJOVbO/view)
 [![YouTube presentation](https://img.shields.io/badge/YOUTUBE%20PRESENTATION-Watch-b91c1c?style=for-the-badge)](https://www.youtube.com/watch?v=4fDEwOVy2ug)
 [![Blog](https://img.shields.io/badge/BLOG-Read-0f766e?style=for-the-badge)](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html)
-[![Demo video](https://img.shields.io/badge/DEMO%20VIDEO-Watch-7c3aed?style=for-the-badge)](https://www.youtube.com/watch?v=BHARAT3DDEMO)
+[![Demo video](https://img.shields.io/badge/DEMO%20VIDEO-Watch-7c3aed?style=for-the-badge)](https://youtu.be/AvUlOXhLEio)
 
 </p>
 
@@ -28,7 +28,7 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 | **Research paper** | [BHARAT 3D research paper](https://drive.google.com/file/d/1kvqzkMEoMkUsR5eao9VdZZps2BJJOVbO/view) |
 | **YouTube presentation** | [https://www.youtube.com/watch?v=4fDEwOVy2ug](https://www.youtube.com/watch?v=4fDEwOVy2ug) |
 | **Blog** | [BHARAT 3D: 3D land administration](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html) |
-| **Demo video** | [https://www.youtube.com/watch?v=BHARAT3DDEMO](https://www.youtube.com/watch?v=BHARAT3DDEMO) |
+| **Demo video** | [https://youtu.be/AvUlOXhLEio](https://youtu.be/AvUlOXhLEio) |
 
 [![React](https://img.shields.io/badge/frontend-React%2018-111827)](frontend/package.json)
 [![TypeScript](https://img.shields.io/badge/language-TypeScript-111827)](frontend/package.json)
@@ -651,6 +651,4 @@ Alignment with a standard means the model is shaped to that standard. It is not 
 
 ## License
 
-Government spatial-intelligence / proprietary cadastre framework.
-
-All rights reserved unless a separate license file is added to this repository. Do not assume an open-source license from the presence of this README.
+BHARAT 3D is proprietary software: © 2026 Partha Shankar and the BHARAT 3D team, all rights reserved. No one may copy, modify, redistribute, host, deploy, submit to any competition or hackathon, use to train machine-learning models, or build derivative works from any part of this repository without prior written permission. The one exception: judges, mentors and organisers of the Smart India Hackathon 2026 (including the Ministry of Education's Innovation Cell, AICTE and the Department of Land Resources, Ministry of Rural Development) may view, download and run it solely to evaluate this submission, for the duration of the evaluation. Third-party libraries, map data and imagery keep their own licences, and the software is provided "as is" without warranty. The full terms are in [LICENSE](LICENSE).
