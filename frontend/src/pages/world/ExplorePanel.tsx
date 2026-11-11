@@ -3,7 +3,7 @@ import { AlertTriangle, Building2, Construction, Fingerprint, Loader2, Search } 
 import { resolveId, searchRegistry } from '../../world/api';
 import { Segmented } from '../../world/ui';
 import type { RegistryEntry, SceneSpec } from '../../world/sceneSpec';
-import { statusOf } from '../../survey/norms';
+import { statusOf, canonicalQuery, issuedId } from '../../survey/norms';
 
 const TYPE_LABEL: Record<string, string> = {
   UNAUTHORIZED_EXTRA_FLOORS: 'Extra floors',
@@ -30,7 +30,7 @@ export const ExplorePanel: React.FC<Props> = ({ scene, onBuilding, onFinding, on
   const [msg, setMsg] = useState<string | null>(null);
 
   const buildings = useMemo(() => {
-    const ql = q.trim().toLowerCase();
+    const ql = canonicalQuery(q.trim()).toLowerCase();
     return [...scene.buildings]
       .filter((b) => !ql || b.name.toLowerCase().includes(ql) || b.id.toLowerCase().includes(ql) || (b.ulpin ?? '').toLowerCase().includes(ql))
       .sort((a, b) => b.height - a.height);
@@ -132,7 +132,7 @@ export const ExplorePanel: React.FC<Props> = ({ scene, onBuilding, onFinding, on
               <div className="text-[#7d8c97]">{reg.matches} match(es) of {reg.total} volumes</div>
               {reg.items.map((e, i) => (
                 <button key={i} onClick={() => onUnit(e.building_id, e.floor, e.unit_index - 1)} className="b3-list-item !py-1.5">
-                  <div className={`font-mono text-[10px] break-all ${e.vprid ? 'text-[#8a5a12]' : 'text-[#5c6e7c]'}`}>{e.vprid ?? `${statusOf(e.status).label}${e.status === 'NOT_REQUIRED_2D' ? ` · ${e.ulpin}` : ''}`}</div>
+                  <div className={`font-mono text-[10px] break-all ${e.vprid ? 'text-[#8a5a12]' : 'text-[#5c6e7c]'}`}>{issuedId(e.vprid) ?? `${statusOf(e.status).label}${e.status === 'NOT_REQUIRED_2D' ? ` · ${issuedId(e.ulpin)}` : ''}`}</div>
                   <div className="text-[#5c6e7c] truncate">{e.building_name} · {e.level ?? `floor ${e.floor}`} · {e.unit_code ?? e.unit_no} · {e.area_m2} m²</div>
                 </button>
               ))}

@@ -34,6 +34,22 @@ export async function getJob(jobId: string) {
   return data;
 }
 
+/** Download an area as CityJSON 2.0 or ISO 19152 LADM (docs/ID_SPEC.md §6); the browser saves the file. */
+export async function downloadExport(key: string, fmt: 'cityjson' | 'ladm') {
+  trackAction('area_exported', `downloaded ${nameOf(key)} as ${fmt === 'cityjson' ? 'CityJSON' : 'LADM'}`, { key, fmt });
+  const res = await api.get<Blob>(`/realgen/scenes/${key}/export/${fmt}`, { responseType: 'blob', timeout: 120000 });
+  const name = String(res.headers['content-disposition'] ?? '').match(/filename="([^"]+)"/)?.[1]
+    ?? `bharat3d-${key}.${fmt === 'cityjson' ? 'city' : 'ladm'}.json`;
+  const url = URL.createObjectURL(res.data);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 5000);
+}
+
 /** Result of the area pre-check: ok (go ahead), warn (large, slow), block (draw again), busy (map servers down). */
 export interface AreaCheck {
   level: 'ok' | 'warn' | 'block' | 'busy';

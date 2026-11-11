@@ -1,166 +1,74 @@
-import os
+# Copyright (c) 2026 Partha Shankar and the BHARAT 3D team. All rights reserved. See LICENSE.
+"""Survey projects: the record a survey area is attached to. Every route needs sign-in; changes need an editor."""
 import json
-import hashlib
-from typing import List, Any, Optional
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Query
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, update
+from typing import Annotated, Any
+
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
-import aiofiles
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
-from app.core.config import get_settings
-from app.schemas.schemas import ProjectResponse, ProjectCreate, DatasetResponse, RegistryStatsResponse
-from app.models.models import Project, Dataset
-from app.services.processing_service import start_processing_job
-from app.services.spatial_service import (
-    get_project_3d_data,
-    get_project_map_data,
-    get_registry_stats,
-    generate_3d_property_ids,
-    archive_3d_registry_snapshot,
-    finalize_project
-)
+from app.core.deps import get_current_user, require_editor
+from app.models.models import Project, User
 from app.realgen.geo import polygon_from_geojson, polygon_key
+from app.schemas.schemas import ProjectCreate, ProjectResponse
 
 router = APIRouter(prefix="/projects", tags=["projects"])
-settings = get_settings()
+Db = Annotated[AsyncSession, Depends(get_db)]
+SignedIn = Annotated[User, Depends(get_current_user)]
+Editor = Annotated[User, Depends(require_editor)]
+
 
 class AreaRequest(BaseModel):
     polygon_geojson: Any
 
+
 def parse_project_id(pid: Any) -> int:
     try:
         return int(str(pid).replace("proj-", "").replace("PROJ-", ""))
-    except Exception:
-        return 1
+    except (TypeError, ValueError):
+        raise HTTPException(404, "Project not found") from None
 
-@router.get("", response_model=List[ProjectResponse])
-async def list_projects(db: AsyncSession = Depends(get_db)):
-    res = await db.execute(select(Project))
-    return res.scalars().all()
+
+@router.get("", response_model=list[ProjectResponse])
+async def list_projects(db: Db, user: SignedIn):
+    return (await db.execute(select(Project))).scalars().all()
+
 
 @router.post("", response_model=ProjectResponse)
-async def create_project(req: ProjectCreate, db: AsyncSession = Depends(get_db)):
-    proj = Project(**req.model_dump(), created_by=1)
+async def create_project(req: ProjectCreate, db: Db, user: Editor):
+    proj = Project(**req.model_dump(), created_by=user.id)
     db.add(proj)
     await db.commit()
     await db.refresh(proj)
     return proj
 
+
 @router.get("/{id}", response_model=ProjectResponse)
-async def get_project(id: str, db: AsyncSession = Depends(get_db)):
-    pid = parse_project_id(id)
-    res = await db.execute(select(Project).where(Project.id == pid))
-    proj = res.scalar_one_or_none()
-    if not proj:
-        proj = Project(
-            id=pid,
-            name="Central Urban Zone - Ward 16 Survey",
-            ward_number="Ward 16",
-            zone_name="Central Urban Zone",
-            selected_area_id="area_01",
-            dataset_version="v3.0",
-            created_by=1
-        )
-        db.add(proj)
-        await db.commit()
-        await db.refresh(proj)
+async def get_project(id: str, db: Db, user: SignedIn):
+    proj = (await db.execute(select(Project).where(Project.id == parse_project_id(id)))).scalar_one_or_none()
+    if proj is None:
+        raise HTTPException(404, "Project not found")
     return proj
 
+
 @router.post("/{id}/area")
-async def set_project_area(id: str, req: AreaRequest, db: AsyncSession = Depends(get_db)):
-    pid = parse_project_id(id)
-    res = await db.execute(select(Project).where(Project.id == pid))
-    proj = res.scalar_one_or_none()
-    if not proj:
-        proj = Project(id=pid, name="Central Urban Zone - Ward 16 Survey", created_by=1)
-        db.add(proj)
-
-    polygon_str = json.dumps(req.polygon_geojson) if isinstance(req.polygon_geojson, dict) else str(req.polygon_geojson)
-    proj.survey_polygon = polygon_str
-
-    # The drawn polygon itself is the survey area; the 3D scene is generated from it by /api/realgen/generate.
+async def set_project_area(id: str, req: AreaRequest, db: Db, user: Editor):
+    """Record the drawn survey polygon on the project (the 3D scene itself comes from /api/realgen/generate)."""
     try:
         poly = polygon_from_geojson(req.polygon_geojson)
-    except Exception as exc:
-        raise HTTPException(422, f"Invalid polygon: {exc}")
+    except Exception as exc:  # noqa: BLE001 - any unreadable shape is the caller's error
+        raise HTTPException(422, f"Invalid polygon: {exc}") from None
+    pid = parse_project_id(id)
+    proj = (await db.execute(select(Project).where(Project.id == pid))).scalar_one_or_none()
+    if proj is None:
+        proj = Project(id=pid, name="Central Urban Zone - Ward 16 Survey", created_by=user.id)
+        db.add(proj)
+    proj.survey_polygon = json.dumps(req.polygon_geojson)
     key = polygon_key(poly)
     proj.selected_area_id = f"gen:{key}"
-
     await db.commit()
-    await db.refresh(proj)
-
     c = poly.centroid
-    return {
-        "status": "SUCCESS",
-        "project_id": pid,
-        "selected_area_id": proj.selected_area_id,
-        "scene_key": key,
-        "center": [round(c.x, 6), round(c.y, 6)],
-    }
-
-@router.get("/{id}/datasets", response_model=List[DatasetResponse])
-async def get_datasets(id: str, db: AsyncSession = Depends(get_db)):
-    pid = parse_project_id(id)
-    res = await db.execute(select(Dataset).where(Dataset.project_id == pid))
-    return res.scalars().all()
-
-@router.post("/{id}/datasets", response_model=DatasetResponse)
-async def upload_dataset(id: str, file: UploadFile = File(...), db: AsyncSession = Depends(get_db)):
-    pid = parse_project_id(id)
-    os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
-    file_path = os.path.join(settings.UPLOAD_DIR, file.filename)
-
-    sha256_hash = hashlib.sha256()
-    async with aiofiles.open(file_path, "wb") as out_file:
-        while content := await file.read(1024 * 1024):
-            await out_file.write(content)
-            sha256_hash.update(content)
-
-    dataset = Dataset(
-        project_id=pid,
-        name=file.filename,
-        version="1.0",
-        status="VALIDATED",
-        source_types='["LiDAR", "Drone", "GIS", "CAD", "GNSS", "Ownership", "Tax"]',
-        metadata_json=f'{{"hash": "{sha256_hash.hexdigest()}", "crs": "EPSG:4326"}}'
-    )
-    db.add(dataset)
-    await db.commit()
-    await db.refresh(dataset)
-    return dataset
-
-@router.post("/{id}/process")
-async def process_project(id: str, dataset_id: int = 10, db: AsyncSession = Depends(get_db)):
-    pid = parse_project_id(id)
-    res = await db.execute(select(Project).where(Project.id == pid))
-    proj = res.scalar_one_or_none()
-    poly = proj.survey_polygon if proj else None
-    
-    job_id = await start_processing_job(db, pid, dataset_id, poly)
-    return {"job_id": job_id, "status": "QUEUED"}
-
-@router.get("/{id}/map")
-async def get_map_layers(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
-    return await get_project_map_data(db, id, area_id)
-
-@router.get("/{id}/3d")
-async def get_3d(id: str, area_id: Optional[str] = Query(None), db: AsyncSession = Depends(get_db)):
-    return await get_project_3d_data(db, id, area_id)
-
-@router.get("/{id}/registry")
-async def registry_stats(id: str, db: AsyncSession = Depends(get_db)):
-    return await get_registry_stats(db, id)
-
-@router.post("/{id}/generate-3d-ids")
-async def generate_3d_ids(id: str, db: AsyncSession = Depends(get_db)):
-    return await generate_3d_property_ids(db, id)
-
-@router.post("/{id}/archive-3d-registry")
-async def archive_3d_registry(id: str, db: AsyncSession = Depends(get_db)):
-    return await archive_3d_registry_snapshot(db, id)
-
-@router.post("/{id}/finalize")
-async def finalize_proj(id: str, db: AsyncSession = Depends(get_db)):
-    return await finalize_project(db, id)
+    return {"status": "SUCCESS", "project_id": pid, "selected_area_id": proj.selected_area_id, "scene_key": key,
+            "center": [round(c.x, 6), round(c.y, 6)]}

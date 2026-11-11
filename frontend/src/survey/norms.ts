@@ -6,6 +6,47 @@
 export const UNIT_RE = /^([0-9A-Z]{14}|INF-(PUB|PRK|AIR|MAR)-[A-Z]{2}[0-9]{2}-[0-9]{4})-BL[0-9]{2,3}-(L[0-9]{2}|S[0-9]{2}|RF)-(U[0-9]{3,4}|UFLR)$/;
 export const INF_RE = /^INF-(TUN|FLY|AIR|PUB|PRK|MAR)-[A-Z]{2}[0-9]{2}-[0-9]{4}$/;
 export const UTL_RE = /^INF-UTL-(GAS|PWR|WAT|SEW|TEL)-[A-Z]{2}[0-9]{2}-[0-9]{6}$/;
+export const CSR_RE = /^CSR-([0-9A-Z]{14}|INF-(PUB|PRK|AIR|MAR)-[A-Z]{2}[0-9]{2}-[0-9]{4})-BL[0-9]{2,3}-C[0-9]{3}$/;
+export const ULPIN_RE = /^[0-9A-Z]{14}$/;
+
+// ------------------------------------------------------------------------------------------------ check character
+// Every printed identifier carries one check character after a final hyphen (the "issued form"); the registry key is
+// the canonical form without it. ISO/IEC 7064 MOD 37-36 over letters and digits, hyphens ignored (docs/ID_SPEC.md §4;
+// the server implementation is backend/app/realgen/idcheck.py).
+const ID_ALPHABET = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+export const isCanonicalId = (s: string) => [UNIT_RE, UTL_RE, INF_RE, CSR_RE, ULPIN_RE].some((re) => re.test(s));
+
+export function checkChar(id: string): string {
+  let p = 36;
+  for (const ch of id.toUpperCase().replace(/-/g, '')) {
+    const s = (p + ID_ALPHABET.indexOf(ch)) % 36 || 36;
+    p = (2 * s) % 37;
+  }
+  return ID_ALPHABET[(37 - p) % 36];
+}
+
+/** The issued form of a canonical identifier (canonical + '-' + check character); anything else is returned as is. */
+export const issuedId = <T extends string | null | undefined>(id: T): T =>
+  (id && isCanonicalId(id) ? `${id}-${checkChar(id)}` : id) as T;
+
+function splitIssued(text: string): { canonical: string; check: string } | null {
+  const v = text.trim().toUpperCase();
+  return v.length > 2 && v[v.length - 2] === '-' && isCanonicalId(v.slice(0, -2)) ? { canonical: v.slice(0, -2), check: v[v.length - 1] } : null;
+}
+
+/** Search text with a correct check character removed, so client-side filters find the registry key. */
+export function canonicalQuery(text: string): string {
+  const s = splitIssued(text);
+  return s && checkChar(s.canonical) === s.check ? s.canonical : text;
+}
+
+/** A warning when the text is an issued identifier whose check character does not match; otherwise null. */
+export function idTypo(text: string): string | null {
+  const s = splitIssued(text);
+  return s && checkChar(s.canonical) !== s.check
+    ? `The check character of ${text.trim().toUpperCase()} does not match: the ID was probably mistyped.` : null;
+}
 
 /** Status of a registry row. PROVISIONAL / CERTIFIED_AS_BUILT carry a minted ID; the others do not. */
 export const STATUS: Record<string, { label: string; cls: string; minted: boolean; hint: string }> = {
@@ -39,8 +80,24 @@ export const INF_CLASS: Record<string, string> = {
 
 export type IdSegment = { label: string; value: string; color: string; note: string };
 
-/** Split an identifier into labelled segments for the decoder. */
-export function parseId(id: string): { kind: 'unit' | 'inf' | 'utl' | 'unknown'; segments: IdSegment[] } {
+type ParsedId = { kind: 'unit' | 'inf' | 'utl' | 'unknown'; segments: IdSegment[] };
+
+/** Split an identifier (canonical or issued form) into labelled segments for the decoder. */
+export function parseId(id: string): ParsedId {
+  const split = splitIssued(id);
+  const base = parseCanonical(split ? split.canonical : id);
+  if (!split || base.kind === 'unknown') return base;
+  const ok = checkChar(split.canonical) === split.check;
+  return {
+    ...base,
+    segments: [...base.segments, {
+      label: 'Check', value: split.check, color: ok ? '#7d8c97' : '#c0392b',
+      note: ok ? 'Check character (ISO/IEC 7064): catches a mistyped ID' : 'Does not match: the ID was mistyped',
+    }],
+  };
+}
+
+function parseCanonical(id: string): ParsedId {
   const level = (v: string) => (v === 'RF' ? 'Volume above the roof slab' : v.startsWith('S') ? `Basement ${+v.slice(1)} (counted down)` : v === 'L00' ? 'Ground floor (incl. stilt)' : `Floor ${+v.slice(1)}`);
   if (UNIT_RE.test(id)) {
     const parts = id.split('-');

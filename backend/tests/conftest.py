@@ -24,7 +24,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from sqlalchemy.pool import NullPool
 
 from app.core.database import Base, get_db
-from app.core.deps import get_current_user, get_optional_user
+from app.core.deps import get_current_user
 from app.core.security import create_access_token
 from app.models.models import RoleEnum, User
 from app.realgen import cache, store
@@ -107,8 +107,8 @@ def user_db(tmp_path_factory: pytest.TempPathFactory) -> async_sessionmaker:
 class Api:
     """TestClient wrapper: ``api.get(path, role="CITIZEN")`` signs in as that fake role; ``role=None`` is anonymous.
 
-    A role overrides both ``get_current_user`` and ``get_optional_user``. Anonymous calls use the real dependencies,
-    so a request without a token gets a 401 on protected routes and the public view on optional-sign-in routes.
+    A role overrides ``get_current_user``. Anonymous calls use the real dependency, so a request without a token gets
+    a 401 on every protected route.
     """
 
     def __init__(self, app: FastAPI, client: TestClient) -> None:
@@ -117,12 +117,10 @@ class Api:
 
     def as_role(self, role: str | None) -> None:
         overrides = self.app.dependency_overrides
-        for dep in (get_current_user, get_optional_user):
-            overrides.pop(dep, None)
+        overrides.pop(get_current_user, None)
         if role is not None:
             user = FAKE_USERS[role]
             overrides[get_current_user] = lambda: user
-            overrides[get_optional_user] = lambda: user
 
     def request(self, method: str, path: str, role: str | None = None, **kw) -> Response:
         self.as_role(role)

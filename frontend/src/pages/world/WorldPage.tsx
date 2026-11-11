@@ -14,7 +14,7 @@ import { FloorPlanSvg } from './FloorPlanSvg';
 import { useAuthStore } from '../../stores/authStore';
 import { CountUp, Segmented, SourceChip, StrataLoader } from '../../world/ui';
 import { useRoleBase } from '../../survey/ui';
-import { IDENTITY, USAGE_CLASS, ppmToPct, statusOf } from '../../survey/norms';
+import { IDENTITY, USAGE_CLASS, ppmToPct, statusOf, issuedId } from '../../survey/norms';
 import { trackAction, track } from '../../lib/track';
 
 const USAGE: Record<string, string> = { R: 'Residential', C: 'Commercial', M: 'Mixed use', I: 'Industrial', P: 'Public / institutional' };
@@ -502,8 +502,8 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
                     <Row k="Usage class" v={`${building.usage_class ?? building.usage} · ${USAGE_CLASS[building.usage_class ?? ''] ?? USAGE[building.usage]} (${building.building_type})`} />
                     <Row k="Height" v={`${building.height.toFixed(1)} m · ${building.floors} floor(s) × ${building.floor_height} m`} />
                     <Row k="Footprint" v={`${building.area_m2.toLocaleString()} m²`} />
-                    <Row k="Parent 2D ULPIN" v={building.parent_parcel_ulpin ?? building.ulpin ?? '—'} mono />
-                    {building.inf_id && <Row k="Public asset ID" v={building.inf_id} mono />}
+                    <Row k="Parent 2D ULPIN" v={issuedId(building.parent_parcel_ulpin ?? building.ulpin) ?? '—'} mono />
+                    {building.inf_id && <Row k="Public asset ID" v={issuedId(building.inf_id)} mono />}
                     {building.identity_kind === 'STRATA' && <Row k="Building number" v={building.building_no ?? `BL${String(building.block_no ?? 1).padStart(2, '0')}`} mono />}
                     <Row k="Identity rule" v={<span className="text-[11.5px]">{building.identity_reason ?? '—'}</span>} />
                     <Row k="Sanction" v={building.sanction_status === 'NOT_ON_RECORD' ? <span className="text-[#c0392b]">Not on record</span> : `G+${building.sanctioned_floors - 1} · ${building.sanctioned_height} m · ${building.permit_no}`} />
@@ -552,7 +552,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
                     <div className="rounded-lg bg-white/55 border border-[#e4dccf] p-3">
                       <div className="text-[10px] uppercase tracking-wider text-[#5c6e7c] mb-1">{unitData.vprid ? '3D ULPIN' : 'Identity'}</div>
                       <div className={`font-mono text-[12px] break-all mb-1 ${unitData.vprid ? 'text-[#8a5a12]' : unitData.status === 'PENDING' ? 'text-[#c0392b]' : 'text-[#1b3344]'}`}>
-                        {unitData.vprid ?? (unitData.status === 'NOT_REQUIRED_2D' ? `2D ULPIN ${building.ulpin}` : unitData.status === 'PART_OF_INF_PUB' ? building.inf_id : 'Not minted')}
+                        {issuedId(unitData.vprid) ?? (unitData.status === 'NOT_REQUIRED_2D' ? `2D ULPIN ${issuedId(building.ulpin)}` : unitData.status === 'PART_OF_INF_PUB' ? issuedId(building.inf_id) : 'Not minted')}
                       </div>
                       <div className="flex items-center gap-1.5 mb-2">
                         <span className={`b3-chip ${statusOf(unitData.status).cls}`}>{statusOf(unitData.status).label}</span>
@@ -587,7 +587,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
                   <button onClick={() => setSel(null)}><X className="w-4 h-4" /></button>
                 </div>
                 <Badge src={asset.source} />
-                {asset.inf_id ? <Row k="3D ULPIN (INF)" v={asset.inf_id} mono /> : <Row k="Asset ID" v={asset.id} mono />}
+                {asset.inf_id ? <Row k="3D ULPIN (INF)" v={issuedId(asset.inf_id)} mono /> : <Row k="Asset ID" v={asset.id} mono />}
                 <Row k="Type" v={ASSET_STYLE[asset.kind]?.label ?? asset.kind} />
                 <Row k="Depth" v={asset.kind === 'basement' ? `${asset.depth_top_m} – ${asset.depth_m} m below ground` : `${asset.depth_m} m below ground (centre)`} />
                 {asset.radius_m !== undefined && <Row k="Radius" v={`${asset.radius_m} m`} />}
@@ -608,7 +608,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
                   <button onClick={() => setSel(null)}><X className="w-4 h-4" /></button>
                 </div>
                 <Badge src={road.source} />
-                {road.inf_id ? <Row k="3D ULPIN (INF)" v={road.inf_id} mono /> : <Row k="ID" v={road.id} mono />}
+                {road.inf_id ? <Row k="3D ULPIN (INF)" v={issuedId(road.inf_id)} mono /> : <Row k="ID" v={road.id} mono />}
                 <Row k="Class" v={road.kind} />
                 <Row k="Deck height" v={`${road.elevation_m} m above ground`} />
                 {road.width_m && <Row k="Width" v={`${road.width_m} m`} />}

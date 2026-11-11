@@ -3,8 +3,9 @@
 
 * SURVEYOR and ADMIN: byte-for-byte the unredacted output.
 * MUNICIPALITY: owner, tenancy and tax visible; editor e-mails replaced by role labels.
-* UTILITY_OPERATOR, CITIZEN and anonymous: same keys, nesting and JSON types as the surveyor response; owner
-  masked; tenancy and tax hidden; no e-mail address anywhere in activity or edits.
+* UTILITY_OPERATOR and CITIZEN: same keys, nesting and JSON types as the surveyor response; owner masked; tenancy
+  and tax hidden; no e-mail address anywhere in activity or edits.
+* Anonymous callers get 401 everywhere (the legacy demo routes included); removed demo stubs are 404/405.
 """
 import re
 from typing import Any
@@ -19,6 +20,7 @@ from tests.conftest import (
     FAKE_EDITS,
     FAKE_USERS,
     NON_EDITORS,
+    ROLES,
     SEED_KEY,
     UNKNOWN_EDITOR,
     Api,
@@ -33,6 +35,7 @@ MASKED_NAME = re.compile(r"^\S\*{4}( \S\*{4})*$")
 EXPECTED_VIEW = {"SURVEYOR": "full", "ADMIN": "full", "MUNICIPALITY": "municipal", "UTILITY_OPERATOR": "utility",
                  "CITIZEN": "public"}
 MASKING_ROLES = ("UTILITY_OPERATOR", "CITIZEN")
+ROLES_ALL = tuple(ROLES)
 
 
 def _orjson(content: Any) -> bytes:
@@ -175,7 +178,7 @@ def test_writes_require_sign_in(api: Api, method: str, path: str, body: Any) -> 
     assert r.status_code == 401
 
 
-# --------------------------------------------------------------------------- legacy demo endpoints
+# --------------------------------------------------------------------------- legacy demo endpoints (sign-in required)
 GOLDEN = {  # pre-change responses (captured from the running backend at 9906e82); editors must still get exactly these
     "/api/units/VPR-TEST-0001": b'{"id":"UNT-VPR-TEST-0001","vprid":"VPR-TEST-0001","unit_number":"Flat 804","property_type":"RESIDENTIAL","carpet_area_sqm":94.5,"built_up_area_sqm":115.2,"area_sqm":115.2,"volume_cum":345.6,"owner_name":"Priya Mehta","masked_id":"ID-XXXX-8921","tenant_name":"Rohan Gupta","lease_status":"ACTIVE","annual_tax":18400,"payment_status":"PAID","compliance_status":"COMPLIANT","title_deed":"DEED-DL-2024-0981"}',
     "/api/units/VPR-TEST-0001/ownership": b'{"unit_vprid":"VPR-TEST-0001","owner_name":"Priya Mehta","masked_id":"ID-XXXX-8921","ownership_type":"FREEHOLD","share_percentage":100.0,"title_deed":"DEED-DL-2024-0981","effective_date":"2024-04-15"}',
@@ -185,37 +188,44 @@ GOLDEN = {  # pre-change responses (captured from the running backend at 9906e82
     "/api/citizen/property/VPR-TEST-0001": b'{"vprid":"VPR-TEST-0001","unit_number":"Flat 804","building_name":"Aarav Heights Condominium","floor_number":8,"property_type":"RESIDENTIAL","carpet_area_sqm":94.5,"built_up_area_sqm":115.2,"volume_cum":345.6,"owner_name":"Priya Mehta","masked_id":"ID-XXXX-8921","tenant_name":"Rohan Gupta","annual_tax":18400,"payment_status":"PAID","compliance_status":"COMPLIANT","title_deed":"DEED-DL-2024-0981","ulpin":"IN-01-0008"}',
 }
 REDACTED_LEGACY = [p for p in GOLDEN if p != "/api/citizen/my-properties"]
+OWNER_NAME = "Priya Mehta (Property Owner)"  # the demo citizen account that owns the demo record
+
+
+@pytest.mark.parametrize("path", list(GOLDEN))
+def test_legacy_routes_need_sign_in(api: Api, path: str) -> None:
+    r = api.get(path)
+    assert r.status_code == 401 and b"Priya" not in r.content
 
 
 @pytest.mark.parametrize("role", (*EDITORS, "MUNICIPALITY"))
-@pytest.mark.parametrize("path", list(GOLDEN))
+@pytest.mark.parametrize("path", REDACTED_LEGACY)
 def test_legacy_full_and_municipal_views_are_byte_identical(api: Api, role: str, path: str) -> None:
     r = api.get(path, role)
     assert r.status_code == 200 and r.content == GOLDEN[path]
-    assert r.headers[HEADER] == ("full" if path.endswith("my-properties") else EXPECTED_VIEW[role])
+    assert r.headers[HEADER] == EXPECTED_VIEW[role]
 
 
-@pytest.mark.parametrize("role", (*MASKING_ROLES, None))
+@pytest.mark.parametrize("role", MASKING_ROLES)
 @pytest.mark.parametrize("path", REDACTED_LEGACY)
-def test_legacy_masked_views_keep_keys_and_types(api: Api, role: Any, path: str) -> None:
+def test_legacy_masked_views_keep_keys_and_types(api: Api, role: str, path: str) -> None:
     import orjson
 
     full = orjson.loads(GOLDEN[path])
     r = api.get(path, role)
     got = json_body(r)
-    assert r.headers[HEADER] == ("public" if role in (None, "CITIZEN") else "utility")
+    assert r.headers[HEADER] == ("public" if role == "CITIZEN" else "utility")
     assert _shape(got) == _shape(full)
     assert b"Priya Mehta" not in r.content and b"Rohan Gupta" not in r.content and b"18400" not in r.content
     if "owner_name" in got:
         assert got["owner_name"] == "P**** M****"
     if "title_deed" in got:
-        assert got["title_deed"] == ("*************0981" if role in (None, "CITIZEN") else "Restricted")
+        assert got["title_deed"] == ("*************0981" if role == "CITIZEN" else "Restricted")
     if "masked_id" in got:
         assert got["masked_id"] == "Restricted"
 
 
 def test_legacy_lease_and_tax_placeholders(api: Api) -> None:
-    lease = json_body(api.get("/api/units/VPR-TEST-0001/lease"))
+    lease = json_body(api.get("/api/units/VPR-TEST-0001/lease", "CITIZEN"))
     assert lease == {"unit_vprid": "VPR-TEST-0001", "tenant_name": "Restricted", "lease_start": "2025-01-01",
                      "lease_end": "2026-12-31", "monthly_rent": 0.0, "status": "NOT_DISCLOSED"}
     tax = json_body(api.get("/api/units/VPR-TEST-0001/tax", "UTILITY_OPERATOR"))
@@ -224,10 +234,23 @@ def test_legacy_lease_and_tax_placeholders(api: Api) -> None:
                    "payment_status": "NOT_DISCLOSED"}
 
 
-@pytest.mark.parametrize("role", (*MASKING_ROLES, None))
-def test_my_properties_stays_fully_visible_to_its_caller(api: Api, role: Any) -> None:
-    r = api.get("/api/citizen/my-properties", role)
+def test_my_properties_shows_the_owner_their_records_in_full(api: Api) -> None:
+    from app.core.deps import get_current_user
+    from app.models.models import RoleEnum, User
+
+    me = FAKE_USERS["CITIZEN"]  # the same account, holding the owner's name for this test
+    owner = User(id=me.id, email=me.email, full_name=OWNER_NAME, role=RoleEnum.CITIZEN, is_active=True,
+                 hashed_password="!")
+    api.as_role(None)
+    api.app.dependency_overrides[get_current_user] = lambda: owner
+    r = api.client.get("/api/citizen/my-properties")
     assert r.content == GOLDEN["/api/citizen/my-properties"] and r.headers[HEADER] == "full"
+
+
+@pytest.mark.parametrize("role", ROLES_ALL)
+def test_my_properties_is_empty_for_anyone_else(api: Api, role: str) -> None:
+    r = api.get("/api/citizen/my-properties", role)  # the fake citizen is not the owner here
+    assert r.status_code == 200 and r.json() == [] and b"Priya" not in r.content
 
 
 def test_legacy_unit_from_demo_area_file(api: Api) -> None:
@@ -241,17 +264,27 @@ def test_legacy_unit_from_demo_area_file(api: Api) -> None:
     rec = next(u for u in units if u.get("owner_name"))
     full = json_body(api.get(f"/api/units/{rec['id']}", "SURVEYOR", params={"area_id": "area_01"}))
     assert full == rec
-    pub = json_body(api.get(f"/api/units/{rec['id']}", params={"area_id": "area_01"}))
+    pub = json_body(api.get(f"/api/units/{rec['id']}", "CITIZEN", params={"area_id": "area_01"}))
     assert set(pub) == set(rec) and pub["owner_name"] != rec["owner_name"] and pub["annual_tax"] == 0
 
 
-def test_pay_tax_is_unchanged(api: Api) -> None:
-    body = {"unit_vprid": "VPR-TEST-0001", "amount": 18400}
-    got = json_body(api.post("/api/citizen/pay-tax", json=body))
-    assert got["status"] == "SUCCESS" and got["amount_paid"] == 18400 and got["payment_status"] == "PAID"
+# Demo stubs and unused routes that are gone: every one is 404/405 for every caller.
+REMOVED = [("POST", "/api/citizen/pay-tax"), ("POST", "/api/units/floors/F1/split"),
+           ("POST", "/api/projects/1/datasets"), ("POST", "/api/projects/1/process"), ("GET", "/api/projects/1/map"),
+           ("GET", "/api/projects/1/3d"), ("GET", "/api/projects/1/registry"), ("POST", "/api/projects/1/finalize"),
+           ("POST", "/api/projects/1/generate-3d-ids"), ("POST", "/api/projects/1/archive-3d-registry"),
+           ("GET", "/api/buildings"), ("GET", "/api/buildings/BLD-0001/floors"), ("GET", "/api/violations"),
+           ("GET", "/api/infrastructure"), ("PUT", "/api/infrastructure/1"), ("POST", "/api/excavation/check-clash"),
+           ("GET", "/api/audit"), ("GET", "/api/maps/area_01"), ("GET", "/api/jobs/1")]
 
 
-# --------------------------------------------------------------------------- the real optional-sign-in dependency
+@pytest.mark.parametrize("role", ("SURVEYOR", None))
+@pytest.mark.parametrize("method, path", REMOVED)
+def test_removed_demo_routes_are_gone(api: Api, role: Any, method: str, path: str) -> None:
+    assert api.request(method, path, role).status_code in (404, 405)
+
+
+# --------------------------------------------------------------------------- real tokens
 @pytest.mark.parametrize("role, view", [("SURVEYOR", "full"), ("MUNICIPALITY", "municipal"),
                                         ("UTILITY_OPERATOR", "utility"), ("CITIZEN", "public")])
 def test_real_token_selects_the_view(api: Api, role: str, view: str) -> None:
@@ -260,12 +293,12 @@ def test_real_token_selects_the_view(api: Api, role: str, view: str) -> None:
 
 
 @pytest.mark.parametrize("auth", ["Bearer not-a-jwt", "Bearer ", "Basic abc"])
-def test_bad_token_on_optional_route_is_public_not_401(api: Api, auth: str) -> None:
+def test_bad_token_is_401(api: Api, auth: str) -> None:
     r = api.get("/api/units/VPR-TEST-0001/ownership", headers={"Authorization": auth})
-    assert r.status_code == 200 and r.headers[HEADER] == "public"
+    assert r.status_code == 401
 
 
-def test_expired_unknown_and_malformed_subjects_are_public(api: Api) -> None:
+def test_expired_unknown_and_malformed_subjects_are_401(api: Api) -> None:
     from datetime import timedelta
 
     from app.core.security import create_access_token
@@ -274,11 +307,10 @@ def test_expired_unknown_and_malformed_subjects_are_public(api: Api) -> None:
               create_access_token({"sub": "999999"}), create_access_token({"sub": "not-a-number"}),
               create_access_token({"role": "SURVEYOR"})]
     for t in tokens:
-        r = api.get("/api/units/VPR-TEST-0001", headers={"Authorization": f"Bearer {t}"})
-        assert r.status_code == 200 and r.headers[HEADER] == "public"
+        assert api.get("/api/units/VPR-TEST-0001", headers={"Authorization": f"Bearer {t}"}).status_code == 401
 
 
-def test_inactive_user_is_public(api: Api, user_db: Any) -> None:
+def test_inactive_user_is_401(api: Api, user_db: Any) -> None:
     import asyncio
 
     from sqlalchemy import update
@@ -293,6 +325,6 @@ def test_inactive_user_is_public(api: Api, user_db: Any) -> None:
     asyncio.run(set_active(False))
     try:
         r = api.get("/api/units/VPR-TEST-0001", headers={"Authorization": f"Bearer {token_for('MUNICIPALITY')}"})
-        assert r.headers[HEADER] == "public"
+        assert r.status_code == 401
     finally:
         asyncio.run(set_active(True))

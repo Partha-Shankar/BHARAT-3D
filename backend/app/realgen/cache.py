@@ -1,6 +1,8 @@
 import json
 import os
-from typing import Any, Optional
+from contextlib import contextmanager
+from contextvars import ContextVar
+from typing import Any, Iterator, Optional
 
 CACHE_ROOT = os.path.abspath(
     os.environ.get(
@@ -16,12 +18,32 @@ def scene_dir(key: str) -> str:
     return path
 
 
+_snapshot: ContextVar[Optional[dict]] = ContextVar("cache_read_snapshot", default=None)
+
+
+@contextmanager
+def read_snapshot() -> Iterator[None]:
+    """Inside this block (one thread, read-only work such as an export), each file is parsed once and the same object
+    is returned to every later read_json call for it. Callers inside must not modify what they read."""
+    token = _snapshot.set({})
+    try:
+        yield
+    finally:
+        _snapshot.reset(token)
+
+
 def read_json(key: str, name: str) -> Optional[Any]:
+    memo = _snapshot.get()
+    if memo is not None and (key, name) in memo:
+        return memo[(key, name)]
     path = os.path.join(CACHE_ROOT, key, name)  # reading never creates the area folder
-    if not os.path.exists(path):
-        return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    data = None
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    if memo is not None:
+        memo[(key, name)] = data
+    return data
 
 
 def write_json(key: str, name: str, data: Any) -> str:

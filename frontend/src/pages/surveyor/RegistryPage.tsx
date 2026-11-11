@@ -3,10 +3,11 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { Box, Check, Copy, Fingerprint, GitBranch, Loader2, Search, ShieldCheck, X } from 'lucide-react';
 import { getLineage, searchAllRegistries, searchRegistry } from '../../world/api';
+import { ExportButtons } from '../../survey/ExportButtons';
 import type { RegistryHit } from '../../world/sceneSpec';
 import { AreaSelect, EmptyState, Page, PageHeader, StatTile, fmtWhen, placeOf, useScenes } from '../../survey/ui';
 import { Segmented } from '../../world/ui';
-import { parseId, ppmToPct, statusOf, USAGE_CLASS } from '../../survey/norms';
+import { idTypo, issuedId, parseId, ppmToPct, statusOf, USAGE_CLASS } from '../../survey/norms';
 
 const AXIOMS: Record<string, string> = {
   axiom1_closed_solid: 'Axiom 1 · closed solid, positive volume',
@@ -93,7 +94,7 @@ export const RegistryPage: React.FC = () => {
   });
 
   const by = data?.by_status ?? {};
-  const example = useMemo(() => sel?.vprid ?? data?.items.find((e) => e.vprid && !e.vprid.startsWith('INF-'))?.vprid ?? '07K3M9P2Q7R4TZ-BL01-L08-U804', [sel, data]);
+  const example = useMemo(() => issuedId(sel?.vprid ?? data?.items.find((e) => e.vprid && !e.vprid.startsWith('INF-'))?.vprid ?? '07K3M9P2Q7R4TZ-BL01-L08-U804'), [sel, data]);
   const openUnit = (e: RegistryHit) => navigate(`/3d-world/${e.key}?building=${encodeURIComponent(e.building_id)}&floor=${e.floor}&unit=${e.unit_index}`);
   const copy = async (v: string) => {
     try { await navigator.clipboard.writeText(v); setCopied(true); setTimeout(() => setCopied(false), 1400); } catch { /* clipboard blocked */ }
@@ -102,8 +103,11 @@ export const RegistryPage: React.FC = () => {
   return (
     <Page wide>
       <PageHeader eyebrow="3D land record · proposed norms B3D-PROP-2026-ULPIN-01 Rev 3" title="3D ULPIN registry"
-        lead={<>One legal 3D space = one 3D ULPIN, a child of the unmodified 2D ULPIN: <span className="font-mono text-[#1b3344]">ULPIN-BL01-L08-U804</span>. Single-title houses stay 2D; lifts, stairs and corridors go to the Common Space Registry; units with an open failure or unverified AI geometry are not minted; IDs are never reused.</>}
-        actions={<AreaSelect allowAll value={key} scenes={scenes} onChange={(k) => { setSel(null); setParams(k ? { key: k } : {}); }} />} />
+        lead={<>One legal 3D space = one 3D ULPIN, a child of the unmodified 2D ULPIN: <span className="font-mono text-[#1b3344]">ULPIN-BL01-L08-U804</span>. Single-title houses stay 2D; lifts, stairs and corridors go to the Common Space Registry; units with an open failure or unverified AI geometry are not minted; IDs are never reused. Every printed ID ends in a check character that catches typing errors.</>}
+        actions={<div className="flex flex-wrap items-center gap-2">
+          <AreaSelect allowAll value={key} scenes={scenes} onChange={(k) => { setSel(null); setParams(k ? { key: k } : {}); }} />
+          {key && <ExportButtons areaKey={key} />}
+        </div>} />
 
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-3 b3-stagger">
         <StatTile label="3D ULPINs minted" value={data ? (by.PROVISIONAL ?? 0) + (by.CERTIFIED_AS_BUILT ?? 0) : undefined} accent="#c8962e"
@@ -193,6 +197,7 @@ export const RegistryPage: React.FC = () => {
               { value: 'NOT_REQUIRED_2D', label: '2D suffices' }, { value: 'PROPOSAL', label: 'AI proposals' },
             ]} />
             {data && <span className="text-xs text-[#7d8c97] ml-auto b3-num">{data.matches.toLocaleString('en-IN')} of {data.total.toLocaleString('en-IN')} rows</span>}
+            {idTypo(q) && <div className="w-full text-[12px] text-[#c0392b] b3-pop">{idTypo(q)}</div>}
           </div>
 
           <div className="grid gap-5 xl:grid-cols-[1fr_380px] items-start">
@@ -214,7 +219,7 @@ export const RegistryPage: React.FC = () => {
                         return (
                           <tr key={`${e.key}-${e.building_id}-${e.floor}-${e.unit_index}`} onClick={() => setSel(e)} className={`cursor-pointer ${active ? 'is-active' : ''}`}
                             style={i < 30 ? { animation: `b3-rise 0.5s cubic-bezier(.22,1,.36,1) ${i * 0.012}s both` } : undefined}>
-                            <td className="font-mono text-[12px] font-semibold text-[#8a5a12] whitespace-nowrap">{e.vprid ?? <span className="text-[#9aa6ae] font-normal">— not minted</span>}</td>
+                            <td className="font-mono text-[12px] font-semibold text-[#8a5a12] whitespace-nowrap">{issuedId(e.vprid) ?? <span className="text-[#9aa6ae] font-normal">— not minted</span>}</td>
                             {!key && <td className="text-[#5c6e7c] whitespace-nowrap">{e.place}</td>}
                             <td><div className="font-medium truncate max-w-[220px]">{e.building_name}</div><div className="text-[10.5px] text-[#7d8c97] font-mono">{e.building_id}</div></td>
                             <td className="font-mono">{e.level ?? (e.floor === 0 ? 'L00' : `L${String(e.floor).padStart(2, '0')}`)}</td>
@@ -244,11 +249,11 @@ export const RegistryPage: React.FC = () => {
                     <div>
                       <div className="b3-eyebrow">{sel.place}</div>
                       <div className="b3-serif text-lg leading-tight mt-0.5">{sel.building_name}</div>
-                      <div className="text-[11px] text-[#7d8c97] font-mono">{sel.building_id} · parent 2D ULPIN {sel.ulpin}</div>
+                      <div className="text-[11px] text-[#7d8c97] font-mono">{sel.building_id} · parent 2D ULPIN {issuedId(sel.ulpin)}</div>
                     </div>
                     <button onClick={() => setSel(null)} className="text-[#5c6e7c] hover:text-[#1b3344]"><X className="w-4 h-4" /></button>
                   </div>
-                  {sel.vprid ? <IdAnatomy id={sel.vprid} compact /> : (
+                  {sel.vprid ? <IdAnatomy id={issuedId(sel.vprid)} compact /> : (
                     <div className="text-[12.5px] bg-[#c0392b]/5 border border-[#c0392b]/20 rounded-lg p-2.5 text-[#33495a]">
                       <b className="text-[#c0392b]">{statusOf(sel.status).label}.</b> {sel.reason ?? statusOf(sel.status).hint}
                     </div>
@@ -266,7 +271,7 @@ export const RegistryPage: React.FC = () => {
                   </div>
                   <button className="w-full b3-btn b3-btn-primary !py-2.5" onClick={() => openUnit(sel)}><Box className="w-4 h-4" /> Open in 3D</button>
                   {sel.vprid && (
-                    <button className="w-full b3-btn" onClick={() => copy(sel.vprid!)}>
+                    <button className="w-full b3-btn" onClick={() => copy(issuedId(sel.vprid)!)}>
                       {copied ? <><Check className="w-4 h-4 text-[#1f7a72] b3-pop" /> Copied</> : <><Copy className="w-4 h-4" /> Copy 3D ULPIN</>}
                     </button>
                   )}

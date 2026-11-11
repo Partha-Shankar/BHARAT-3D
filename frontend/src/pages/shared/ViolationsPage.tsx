@@ -1,3 +1,4 @@
+import { canonicalQuery, issuedId } from '../../survey/norms';
 import React, { useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Box, Building2, Gauge, Layers, Ruler, Search, ShieldAlert, ShieldCheck } from 'lucide-react';
@@ -45,7 +46,7 @@ const FindingCard: React.FC<{ f: FindingRow; showPlace: boolean; onOpen: () => v
           {f.excess && <div><b className="text-[#33495a]">Excess:</b> {f.excess}</div>}
           {f.floors_flagged?.length > 0 && <div><b className="text-[#33495a]">Floors flagged:</b> {f.floors_flagged.map((x) => (x === 0 ? 'G' : x)).join(', ')}</div>}
           <div><b className="text-[#33495a]">Basis:</b> {f.basis}</div>
-          {f.ulpin && <div><b className="text-[#33495a]">Parent ULPIN:</b> <span className="font-mono">{f.ulpin}</span></div>}
+          {f.ulpin && <div><b className="text-[#33495a]">Parent ULPIN:</b> <span className="font-mono">{issuedId(f.ulpin)}</span></div>}
         </div>
       )}
 
@@ -84,7 +85,7 @@ export const ViolationsPage: React.FC = () => {
 
   const shown = useMemo(() => (findings ?? []).filter((f) =>
     (!type || f.type === type) && (!sev || f.severity === sev)
-    && (!q || `${f.building_name} ${f.building_id} ${f.place} ${f.id} ${f.ulpin}`.toLowerCase().includes(q.toLowerCase()))), [findings, type, sev, q]);
+    && (!q || `${f.building_name} ${f.building_id} ${f.place} ${f.id} ${f.ulpin}`.toLowerCase().includes(canonicalQuery(q.trim()).toLowerCase()))), [findings, type, sev, q]);
 
   return (
     <Page wide>

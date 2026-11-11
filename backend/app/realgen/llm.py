@@ -1,6 +1,7 @@
 """Groq LLM for human-readable text only (names, ward summary). It never decides geometry or compliance."""
 import json
 import logging
+import threading
 from typing import Any, Dict, List
 
 from faker import Faker
@@ -83,7 +84,12 @@ def enrich(buildings: List[Dict[str, Any]], place: Dict[str, Any], stats: Dict[s
     return {"names": names, "summary": summary, "llm": provenance}
 
 
+_fakers = threading.local()  # one generator per thread: building one costs ~5 ms, reseeding it costs nothing
+
+
 def owner_name(seed: int) -> str:
-    fake = Faker("en_IN")
-    fake.seed_instance(seed)
+    fake = getattr(_fakers, "en_IN", None)
+    if fake is None:
+        fake = _fakers.en_IN = Faker("en_IN")
+    fake.seed_instance(seed)  # same name as a fresh Faker("en_IN") seeded the same way
     return fake.name()

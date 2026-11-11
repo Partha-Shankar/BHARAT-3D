@@ -6,7 +6,7 @@
  Browser (React app on Cloudflare Pages)
     │  same-origin /api/*  ── Pages Function proxy (frontend/functions): analytics, R2 area store, /scenes/{key} from R2
     ▼
- api/            FastAPI routers under /api: auth, realgen, ingest, and the legacy demo routers
+ api/            FastAPI routers under /api: auth, realgen, ingest, projects, and two legacy demo routers
     │            ── role-based views applied here (core/access.py), after the result is computed
     ▼
  realgen/        the 3D engine: pipeline (generation), scene_ops (edits, floor plans, building detail),
@@ -17,10 +17,13 @@
 
 | Layer | Modules | Responsibility |
 |---|---|---|
-| API | `app/api/*.py`, `app/core/deps.py` | HTTP, sign-in (`get_current_user`, `get_optional_user`), editor-only writes (`_require_editor`), role-based views |
+| API | `app/api/*.py`, `app/core/deps.py` | HTTP, sign-in on every route but login (`get_current_user`), editor-only writes (`require_editor`), role-based views |
 | Access policy | `app/core/access.py` | Pure, shape-preserving redactors; see [ACCESS_POLICY.md](ACCESS_POLICY.md) |
 | Engine | `app/realgen/` | Generation from a drawn polygon, edits, derivation (findings, INF IDs, registry, integrity) |
 | Norms | `app/realgen/norms.py` | 3D ULPIN syntax, classification, the append-only unit ledger, UDS, integrity axioms |
+| Identifiers | `app/realgen/idcheck.py` | Check character (ISO/IEC 7064 MOD 37-36) and the issued form; see [ID_SPEC.md](ID_SPEC.md) |
+| Exports | `app/realgen/export.py` | CityJSON 2.0 and ISO 19152 LADM files of an area; see [ID_SPEC.md](ID_SPEC.md) |
+| Settings | `app/core/config.py` | Refuses to start in production without a strong `SECRET_KEY`; API docs off in production |
 | Ingestion (pseudo-code) | `app/ingest/` | Format detection and processing plans for LiDAR, IFC, DXF and GNSS; see [INGESTION_PSEUDOCODE.md](INGESTION_PSEUDOCODE.md) |
 | Storage | `app/realgen/cache.py`, `app/realgen/store.py` | JSON files per area. Durable copy in R2 through the Pages Function (`STORE_URL` / `STORE_TOKEN`); off when unset. |
 | Users and projects | `app/core/database.py`, `app/models/` | SQLite (SQLAlchemy async); demo accounts created at startup |
@@ -66,8 +69,10 @@ progress between server updates, show what is happening, and offer a retry.
 | | | Owners, occupancy and tax (Faker, `en_IN`); building names and the area summary (Groq LLM or Faker) |
 
 Uploaded survey files are checked in the browser and listed in the survey record; their contents are not processed
-(see the pseudo-code readers). The legacy demo routers `/api/units` and `/api/citizen` serve demo records
-(`data/demo/areas/*/units.geojson` and literals in code); the current web app does not call them.
+(see the pseudo-code readers). The two remaining legacy demo routers, `/api/units` and `/api/citizen`, serve demo
+records (`data/demo/areas/*/units.geojson` and literals in code) to signed-in users only, through the role-based
+views; the web app does not call them. The other early demo routers were removed (see
+[ACCESS_POLICY.md](ACCESS_POLICY.md)).
 
 ## Tests
 

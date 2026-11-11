@@ -6,19 +6,19 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.core import access
 from app.core.database import get_db
-from app.core.deps import get_optional_user
+from app.core.deps import get_current_user
 from app.demo.area_selector import DemoAreaSelector
 from app.models.models import User
 
 router = APIRouter(prefix="/units", tags=["units"])
 
-# Sign-in stays optional on these demo endpoints: anonymous callers get the public view, signed-in callers their
-# role's view (app/core/access.py). The records themselves are computed exactly as before.
+# Demo unit records. Sign-in is required; each role gets its view (app/core/access.py): editors the full record,
+# the municipality and utility their fields, citizens the public (masked) view.
 
 
 @router.get("/{id}")
 async def get_unit(id: str, response: Response, area_id: Optional[str] = Query(None),
-                   db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+                   db: AsyncSession = Depends(get_db), user: User = Depends(get_current_user)):
     view = access.view_of(user)
     response.headers[access.VIEW_HEADER] = view
     return access.redact_legacy_unit(_find_unit(id, area_id), view)
@@ -56,7 +56,7 @@ def _find_unit(id: str, area_id: Optional[str]) -> dict:
 
 @router.get("/{id}/ownership")
 async def get_ownership(id: str, response: Response, area_id: Optional[str] = Query(None),
-                        db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+                        db: AsyncSession = Depends(get_db), user: User = Depends(get_current_user)):
     unit = _find_unit(id, area_id)
     view = access.view_of(user)
     response.headers[access.VIEW_HEADER] = view
@@ -72,7 +72,7 @@ async def get_ownership(id: str, response: Response, area_id: Optional[str] = Qu
 
 @router.get("/{id}/tax")
 async def get_tax(id: str, response: Response, area_id: Optional[str] = Query(None),
-                  db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+                  db: AsyncSession = Depends(get_db), user: User = Depends(get_current_user)):
     unit = _find_unit(id, area_id)
     view = access.view_of(user)
     response.headers[access.VIEW_HEADER] = view
@@ -89,7 +89,7 @@ async def get_tax(id: str, response: Response, area_id: Optional[str] = Query(No
 
 @router.get("/{id}/lease")
 async def get_lease(id: str, response: Response, area_id: Optional[str] = Query(None),
-                    db: AsyncSession = Depends(get_db), user: Optional[User] = Depends(get_optional_user)):
+                    db: AsyncSession = Depends(get_db), user: User = Depends(get_current_user)):
     unit = _find_unit(id, area_id)
     view = access.view_of(user)
     response.headers[access.VIEW_HEADER] = view
@@ -101,12 +101,3 @@ async def get_lease(id: str, response: Response, area_id: Optional[str] = Query(
         "monthly_rent": 38000.0,
         "status": unit.get("lease_status", "ACTIVE")
     }, view)
-
-@router.post("/floors/{floor_id}/split")
-async def split_floor(floor_id: str, splits: int = 4, db: AsyncSession = Depends(get_db)):
-    return [
-        {"id": f"UNT-NEW-{floor_id}-U01", "unit_number": "Unit 01", "area_sqm": 85.0},
-        {"id": f"UNT-NEW-{floor_id}-U02", "unit_number": "Unit 02", "area_sqm": 85.0},
-        {"id": f"UNT-NEW-{floor_id}-U03", "unit_number": "Unit 03", "area_sqm": 85.0},
-        {"id": f"UNT-NEW-{floor_id}-U04", "unit_number": "Unit 04", "area_sqm": 85.0},
-    ]

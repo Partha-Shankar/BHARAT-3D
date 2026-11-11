@@ -10,7 +10,7 @@ import uuid
 from typing import Any, Dict, List, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Response
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, ORJSONResponse
 from pydantic import BaseModel
 from shapely.geometry import Polygon, box
 from sqlalchemy import select
@@ -18,10 +18,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core import access
 from app.core.database import get_db
-from app.core.deps import get_current_user
+from app.core.deps import get_current_user, require_editor
 from app.ingest import plan_for_manifest
 from app.models.models import Project, User
-from app.realgen import cache, fetch_osm, norms, pipeline, progress, scene_ops, store, synth
+from app.realgen import cache, export, fetch_osm, idcheck, norms, pipeline, progress, scene_ops, store, synth
 from app.realgen.geo import LocalFrame, polygon_from_geojson, polygon_key
 
 logger = logging.getLogger(__name__)
@@ -96,7 +96,7 @@ def _upgrade_legacy(key: str, scene: Dict[str, Any]) -> Dict[str, Any]:
 
 
 @router.post("/generate")
-async def generate(req: GenerateRequest, db: AsyncSession = Depends(get_db), user: User = Depends(get_current_user)):
+async def generate(req: GenerateRequest, db: AsyncSession = Depends(get_db), user: User = Depends(require_editor)):
     try:
         poly = polygon_from_geojson(req.polygon)
         area_m2 = pipeline.validate_area(poly)
@@ -246,7 +246,7 @@ def _verdict(level: str, reason: str, message: str, **extra: Any) -> Dict[str, A
 
 
 @router.post("/preflight")
-async def preflight(req: PreflightRequest, user: User = Depends(get_current_user)):
+async def preflight(req: PreflightRequest, user: User = Depends(require_editor)):
     """Check a drawn area before the survey continues: size limits, India, already generated, and how dense it is.
 
     ``level``: ``ok`` (go ahead), ``warn`` (large: it works but is slow; the user decides), ``block`` (cannot be
@@ -413,7 +413,7 @@ async def all_findings(key: Optional[str] = None, user: User = Depends(get_curre
 @router.get("/registry")
 async def registry_all(q: str = "", limit: int = 50, status: str = "", user: User = Depends(get_current_user)):
     """Search reserved 3D ULPINs across every generated area (VPRID, ULPIN, building id or name)."""
-    ql = q.strip().lower()
+    ql = _search_text(q).lower()
     hits, total, by_status = [], 0, {}
     for k in _area_keys():
         meta = cache.read_json(k, "meta.json") or {}
@@ -530,9 +530,19 @@ async def registry(key: str, q: str = "", limit: int = 50, status: str = "", use
     """Reserved 3D ULPINs (VPRIDs). Search by VPRID, ULPIN, building id or name; optionally filter by status."""
     _load_scene(key)
     entries = cache.read_json(key, "registry.json") or []
-    hits = [e for e in entries if _registry_match(e, q.strip().lower(), status)]
+    ql = _search_text(q).lower()
+    hits = [e for e in entries if _registry_match(e, ql, status)]
     return {"total": len(entries), "matches": len(hits), "by_status": _count_status(entries),
             "items": hits[: max(1, min(limit, 500))]}
+
+
+def _search_text(q: str) -> str:
+    """Search box text; an identifier typed in its issued form (with check character) is reduced to its registry key.
+    A wrong check character is a 422 with a plain explanation (docs/ID_SPEC.md)."""
+    try:
+        return idcheck.canonical_query(q.strip())
+    except idcheck.CheckCharacterError as exc:
+        raise HTTPException(422, str(exc))
 
 
 def _registry_match(e: Dict[str, Any], ql: str, status: str) -> bool:
@@ -553,7 +563,7 @@ async def lineage(key: str, q: str = "", status: str = "", limit: int = 200, use
     """Every 3D ULPIN ever minted in this area, including retired and demolished ones, with parents (Section 6)."""
     _load_scene(key)
     led = norms.read_ledger(key)
-    ql = q.strip().upper()
+    ql = _search_text(q).upper()
     units = [u for u in led["units"] if (not ql or ql in u["id"]) and (not status or u["status"] == status)]
     by_status: Dict[str, int] = {}
     for u in led["units"]:
@@ -579,12 +589,35 @@ async def ingest_plan(key: str, user: User = Depends(get_current_user)):
         return []
 
 
+EXPORTS = {  # format -> (builder, file suffix, media type)
+    "cityjson": ("city.json", "application/city+json"),
+    "ladm": ("ladm.json", "application/json"),
+}
+
+
+@router.get("/scenes/{key}/export/{fmt}")
+async def export_area(key: str, fmt: str, user: User = Depends(get_current_user)):
+    """The area as an open-standard file: ``cityjson`` (CityJSON 2.0, no personal data) or ``ladm`` (ISO 19152
+    LADM; owners follow the caller's access-policy view). Specification: docs/ID_SPEC.md."""
+    if fmt not in EXPORTS:
+        raise HTTPException(404, f"Unknown export format {fmt!r}; use one of: {', '.join(EXPORTS)}")
+    scene = _load_scene(key)
+    view = access.view_of(user)
+    if fmt == "cityjson":
+        doc = await asyncio.to_thread(export.cityjson, key, scene)
+    else:
+        doc = await asyncio.to_thread(export.ladm, key, scene, view)
+    suffix, media = EXPORTS[fmt]
+    return ORJSONResponse(doc, media_type=media, headers={
+        "Content-Disposition": f'attachment; filename="bharat3d-{key}.{suffix}"', access.VIEW_HEADER: view})
+
+
 @router.get("/scenes/{key}/resolve/{query}")
 async def resolve(key: str, query: str, user: User = Depends(get_current_user)):
     """Find what an identifier points to: a VPRID, a ULPIN, or a building id."""
     scene = _load_scene(key)
     entries = cache.read_json(key, "registry.json") or []
-    ql = query.strip().lower()
+    ql = _search_text(query).lower()
     e = next((x for x in entries if (x["vprid"] or "").lower() == ql), None)
     if e:
         return {"kind": "unit", **e}
