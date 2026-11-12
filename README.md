@@ -13,7 +13,7 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 <p align="center">
 
 [![Live demo](https://img.shields.io/badge/LIVE%20DEMO-bharat--3d.pages.dev-0f172a?style=for-the-badge)](https://bharat-3d.pages.dev/)
-[![Research paper](https://img.shields.io/badge/RESEARCH%20PAPER-Read-1d4ed8?style=for-the-badge)](https://drive.google.com/file/d/1kvqzkMEoMkUsR5eao9VdZZps2BJJOVbO/view)
+[![Research paper](https://img.shields.io/badge/RESEARCH%20PAPER-Read-1d4ed8?style=for-the-badge)](https://drive.google.com/file/d/1ubuMoUf0hVmRjdU__KSf7TUiwUvPWi7f/view)
 [![YouTube presentation](https://img.shields.io/badge/YOUTUBE%20PRESENTATION-Watch-b91c1c?style=for-the-badge)](https://www.youtube.com/watch?v=4fDEwOVy2ug)
 [![Blog](https://img.shields.io/badge/BLOG-Read-0f766e?style=for-the-badge)](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html)
 [![Demo video](https://img.shields.io/badge/DEMO%20VIDEO-Watch-7c3aed?style=for-the-badge)](https://youtu.be/AvUlOXhLEio)
@@ -25,7 +25,7 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 | | |
 | --- | --- |
 | **Live demo** | [https://bharat-3d.pages.dev/](https://bharat-3d.pages.dev/) |
-| **Research paper** | [BHARAT 3D research paper](https://drive.google.com/file/d/1kvqzkMEoMkUsR5eao9VdZZps2BJJOVbO/view) |
+| **Research paper** | [BHARAT 3D research paper](https://drive.google.com/file/d/1ubuMoUf0hVmRjdU__KSf7TUiwUvPWi7f/view) |
 | **YouTube presentation** | [https://www.youtube.com/watch?v=4fDEwOVy2ug](https://www.youtube.com/watch?v=4fDEwOVy2ug) |
 | **Blog** | [BHARAT 3D: 3D land administration](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html) |
 | **Demo video** | [https://youtu.be/AvUlOXhLEio](https://youtu.be/AvUlOXhLEio) |
