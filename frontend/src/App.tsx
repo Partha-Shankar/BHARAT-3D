@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { trackPage } from './lib/track';
 import ProtectedRoute from './components/ProtectedRoute';
+import ServerStatusBanner from './components/ServerStatusBanner';
 import { PublicPageShell } from './components/layout/PageTransition';
 import { useRoleBase } from './survey/ui';
 
@@ -38,6 +39,8 @@ export const App: React.FC = () => {
   const location = useLocation();
   React.useEffect(() => { trackPage(location.pathname); }, [location.pathname]);
   return (
+    <>
+    <ServerStatusBanner />
     <Routes>
       <Route element={<PublicPageShell />}>
         <Route path="/login" element={<LoginPage />} />
@@ -116,6 +119,7 @@ export const App: React.FC = () => {
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    </>
   );
 };
 

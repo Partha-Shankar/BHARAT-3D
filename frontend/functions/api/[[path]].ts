@@ -40,6 +40,19 @@ export async function onRequest(context: Ctx): Promise<Response> {
       context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
       return new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store' } });
     }
+    // Is the backend awake? Answers within ~2.5 s either way. While Render's free instance is asleep, a request kept
+    // open in the background makes it start; the app polls this to show a wake-up countdown and resume the user's work.
+    if (path === '/api/__status') {
+      try {
+        const res = await fetch(`${origin}/health`, { signal: AbortSignal.timeout(2500) });
+        if (res.ok) return json({ state: 'awake', ms: Date.now() - started });
+        context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
+        return json({ state: 'waking', status: res.status, ms: Date.now() - started });
+      } catch {
+        context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
+        return json({ state: 'waking', ms: Date.now() - started });
+      }
+    }
     if (path === '/api/__store' || path.startsWith('/api/__store/')) return await store(context, path.slice('/api/__store'.length));
     if (path === '/api/__track') return await track(context);
     if (path === '/api/__analytics') return await analytics(context, url);

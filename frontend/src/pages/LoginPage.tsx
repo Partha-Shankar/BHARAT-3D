@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../stores/authStore';
 import { BrandLogo } from '../components/layout/BrandLogo';
+import { secondsLeft, useServerStatus } from '../lib/serverStatus';
 
 const personas = [
   { email: 'survey@bharat3d.demo', title: 'Surveyor', detail: 'Confirm volumes and save identities' },
@@ -17,6 +18,14 @@ export const LoginPage: React.FC = () => {
   const { login, isLoading } = useAuthStore();
   const navigate = useNavigate();
   const [slow, setSlow] = useState(false);
+  const server = useServerStatus();
+  const [, tick] = useState(0);
+  useEffect(() => {  // keep the countdown on the button moving while the server wakes
+    if (server.state !== 'waking') return;
+    const t = window.setInterval(() => tick((n) => n + 1), 500);
+    return () => window.clearInterval(t);
+  }, [server.state]);
+  const wakeLeft = server.state === 'waking' ? Math.ceil(secondsLeft(server)) : null;
   useEffect(() => {  // after 3 s of signing in, explain the free server's cold start instead of looking frozen
     if (!isLoading) { setSlow(false); return; }
     const t = window.setTimeout(() => setSlow(true), 3000);
@@ -41,7 +50,12 @@ export const LoginPage: React.FC = () => {
         navigate('/surveyor/dashboard');
       }
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Those credentials were not accepted. Choose a workspace below and try again.');
+      const status = err?.response?.status;
+      if (!err?.response || status >= 500) {  // the server did not answer: not a wrong password
+        setError('The server did not respond in time. It may still be starting — please press Sign in again in a minute.');
+      } else {
+        setError(err.response?.data?.detail || 'Those credentials were not accepted. Choose a workspace below and try again.');
+      }
     }
   };
 
@@ -118,10 +132,14 @@ export const LoginPage: React.FC = () => {
               disabled={isLoading}
               className="w-full bg-[#1f7a72] hover:bg-[#18655e] disabled:opacity-60 text-white font-semibold text-[15px] py-2.5 rounded-sm"
             >
-              {isLoading ? (slow ? 'Waking the server…' : 'Signing in…') : 'Sign in'}
+              {isLoading
+                ? (wakeLeft !== null
+                    ? (wakeLeft > 0 ? `Waking the server… about ${wakeLeft} s` : wakeLeft > -30 ? 'Almost there…' : 'Still starting…')
+                    : slow ? 'Waking the server…' : 'Signing in…')
+                : 'Sign in'}
             </button>
             {isLoading && slow && (
-              <p className="text-[13px] text-[#5c6e7c] mt-2 b3-fade">The server sleeps when nobody has used it for a while; the first sign-in can take up to a minute. Later ones are instant.</p>
+              <p className="text-[13px] text-[#5c6e7c] mt-2 b3-fade">The server sleeps when nobody has used it for a while and is starting now. You will be signed in automatically as soon as it is ready; later sign-ins are instant.</p>
             )}
           </form>
 
