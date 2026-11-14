@@ -1,7 +1,10 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { getToken, removeToken, removeUser } from './auth';
 import { sessionId } from './track';
-import { ensureAwake, noteServerOk, retryWake, useServerStatus, waitingDelta } from './serverStatus';
+import {
+  busyEstimate, checkNow, ensureAwake, isLimited, limitMessage, markLimited, nextMonthStartUtc, noteServerOk, retryWake,
+  useServerStatus, waitingDelta,
+} from './serverStatus';
 
 const apiBaseUrl = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL.replace(/\/$/, '')}/api`
@@ -23,6 +26,7 @@ const SLOW_MS = 2500; // a call this slow makes us check whether the server is a
 const MAX_RETRIES = 2;
 const ACTION_BUDGET_MS = 200_000; // one action never waits longer than this in total, however many retries
 export const SERVER_ASLEEP = 'ERR_SERVER_ASLEEP';
+export const SERVER_BUSY = 'ERR_SERVER_BUSY'; // a free-plan limit was reached; the message says when to come back
 
 /** Calls that are safe to send again when it is unclear whether the first attempt reached the server. */
 const idempotent = (c: Cfg) => (c.method || 'get').toLowerCase() === 'get'
@@ -49,12 +53,21 @@ api.interceptors.request.use(
       // While the server is starting, hold new calls instead of letting them fail; they go out when it answers.
       // If we had given up, doing something again counts as "try again". If the wait gives up, the call is not sent.
       const state = useServerStatus.getState().state;
-      if (state === 'waking' || state === 'down') {
+      if (isLimited(state)) {
+        // A limit was reached: do not send until the estimated time has passed, then check once before sending.
+        const s = useServerStatus.getState();
+        if ((s.retryAt && Date.now() < s.retryAt) || !(await checkNow())) {
+          throw new AxiosError(limitMessage(useServerStatus.getState()), SERVER_BUSY, c);
+        }
+      } else if (state === 'waking' || state === 'down') {
         c.__started = c.__started ?? Date.now();
         waitingDelta(1);
         let awake = false;
         try { awake = await (state === 'down' ? retryWake() : ensureAwake()); } finally { waitingDelta(-1); }
-        if (!awake) throw new AxiosError('The server is not responding right now. Please try again in a minute.', SERVER_ASLEEP, c);
+        if (!awake) {
+          const s = useServerStatus.getState();
+          throw new AxiosError(limitMessage(s), isLimited(s.state) ? SERVER_BUSY : SERVER_ASLEEP, c);
+        }
       }
       c.__started = c.__started ?? Date.now();
       c.__slow = window.setTimeout(() => {
@@ -89,10 +102,26 @@ api.interceptors.response.use(
     }
     // 502/503: the server was not running, so the call never reached it and can always be repeated.
     // No answer at all, a gateway timeout or our own timeout: repeat only calls that are safe to repeat.
+    // A free-plan limit: show it with the time to come back, and do not repeat the call.
+    if (c && !EDGE_ONLY.test(url) && error.code !== SERVER_BUSY) {
+      const body = typeof error.response?.data === 'string' ? error.response.data : '';
+      if (status === 429) {
+        const b = busyEstimate(error.response?.headers?.['retry-after'] as string | undefined, body);
+        markLimited('busy', b.retryAt, b.limit);
+        error.message = limitMessage(useServerStatus.getState());
+        return Promise.reject(error);
+      }
+      if (status === 503 && /suspend/i.test(body)) {
+        markLimited('suspended', nextMonthStartUtc(), 'monthly');
+        error.message = limitMessage(useServerStatus.getState());
+        return Promise.reject(error);
+      }
+    }
     // Never after the wait has already given up for this action, and never beyond the action's total budget.
     const notRunning = status === 502 || status === 503;
     const unclear = !error.response || status === 504;
-    const gaveUp = error.code === SERVER_ASLEEP || useServerStatus.getState().state === 'down';
+    const gaveUp = error.code === SERVER_ASLEEP || error.code === SERVER_BUSY
+      || useServerStatus.getState().state === 'down' || isLimited(useServerStatus.getState().state);
     const inBudget = !c?.__started || Date.now() - c.__started < ACTION_BUDGET_MS;
     if (c && !gaveUp && inBudget && !EDGE_ONLY.test(url) && (notRunning || (unclear && idempotent(c))) && (c.__wakeRetries ?? 0) < MAX_RETRIES) {
       c.__wakeRetries = (c.__wakeRetries ?? 0) + 1;

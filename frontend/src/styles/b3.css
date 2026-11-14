@@ -282,19 +282,36 @@
 @keyframes b3-think { from { background-position: 160% 0; } to { background-position: -60% 0; } }
 @keyframes b3-think-in { from { opacity: 0; transform: translateY(5px); filter: blur(1.5px); } to { opacity: 1; transform: none; filter: none; } }
 
-/* ---- the film (landing section, corner player, sidebar window) ---- */
-.b3-film-glow {
+/* ---- the overview (landing section, corner player, sidebar window) ---- */
+.b3-overview-glow {
   background:
     radial-gradient(55% 60% at 50% 55%, rgba(31, 138, 125, 0.20), transparent 70%),
     radial-gradient(35% 45% at 92% 0%, rgba(30, 77, 107, 0.45), transparent 70%),
     radial-gradient(30% 40% at 0% 100%, rgba(30, 77, 107, 0.35), transparent 70%);
 }
 @media (prefers-reduced-motion: no-preference) {
-  .b3-film-dock { animation: b3-film-dock 0.42s var(--ease-out) both; }
-  .b3-film-ring { animation: b3-film-ring 2.4s ease-out infinite; }
+  .b3-overview-dock { animation: b3-overview-dock 0.42s var(--ease-out) both; }
+  .b3-overview-ring { animation: b3-overview-ring 2.4s ease-out infinite; }
 }
-@keyframes b3-film-dock { from { opacity: 0; transform: translateY(18px) scale(0.96); } to { opacity: 1; transform: none; } }
-@keyframes b3-film-ring {
+@keyframes b3-overview-dock { from { opacity: 0; transform: translateY(18px) scale(0.96); } to { opacity: 1; transform: none; } }
+@keyframes b3-overview-ring {
   0% { box-shadow: 0 0 0 0 rgba(31, 138, 125, 0.55); }
   70%, 100% { box-shadow: 0 0 0 14px rgba(31, 138, 125, 0); }
+}
+
+/* ---- tips (coach marks): the lit-up element; its huge shadow dims everything else ---- */
+.b3-coach-spot {
+  box-shadow: 0 0 0 9999px rgba(6, 16, 31, 0.58), 0 0 0 2px rgba(95, 196, 182, 0.95);
+  transition: top 0.25s var(--ease-out), left 0.25s var(--ease-out), width 0.25s var(--ease-out), height 0.25s var(--ease-out);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .b3-coach-spot { animation: b3-coach-in 0.35s var(--ease-out) both, b3-coach-pulse 2.2s ease-in-out 0.5s infinite; }
+}
+@keyframes b3-coach-in {
+  from { box-shadow: 0 0 0 9999px rgba(6, 16, 31, 0), 0 0 0 2px rgba(95, 196, 182, 0); }
+  to { box-shadow: 0 0 0 9999px rgba(6, 16, 31, 0.58), 0 0 0 2px rgba(95, 196, 182, 0.95); }
+}
+@keyframes b3-coach-pulse {
+  0%, 100% { box-shadow: 0 0 0 9999px rgba(6, 16, 31, 0.58), 0 0 0 2px rgba(95, 196, 182, 0.95), 0 0 0 0 rgba(95, 196, 182, 0.5); }
+  50% { box-shadow: 0 0 0 9999px rgba(6, 16, 31, 0.58), 0 0 0 2px rgba(95, 196, 182, 0.95), 0 0 0 9px rgba(95, 196, 182, 0); }
 }

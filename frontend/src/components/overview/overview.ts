@@ -1,21 +1,21 @@
 /**
- * The BHARAT 3D film (YouTube). Shared by the landing-page section, the corner player and the workspace sidebar.
+ * The BHARAT 3D overview (YouTube). Shared by the landing-page section, the corner player and the workspace sidebar.
  *
  * The player is controlled with YouTube's postMessage protocol (the same one its iframe API uses), so no YouTube
- * script is loaded into the page, and nothing from YouTube loads until a visitor reaches the film or asks for it.
+ * script is loaded into the page, and nothing from YouTube loads until a visitor reaches the overview or asks for it.
  */
 import { useCallback, useEffect, useState, type RefObject } from 'react';
 import { create } from 'zustand';
 import { trackAction } from '../../lib/track';
 
-export const FILM_ID = 'EFDw-kX0smo';
-export const FILM_WATCH_URL = `https://youtu.be/${FILM_ID}`;
-export const FILM_POSTER = '/media/bharat3d-film-poster.webp';
-export const FILM_THUMB = '/media/bharat3d-film-thumb.webp';
-export const FILM_PLAY_EVENT = 'b3:film-play'; // "play with sound" request from elsewhere on the landing page
+export const OVERVIEW_ID = 'EFDw-kX0smo';
+export const OVERVIEW_WATCH_URL = `https://youtu.be/${OVERVIEW_ID}`;
+export const OVERVIEW_POSTER = '/media/bharat3d-overview-poster.webp';
+export const OVERVIEW_THUMB = '/media/bharat3d-overview-thumb.webp';
+export const OVERVIEW_PLAY_EVENT = 'b3:overview-play'; // "play with sound" request from elsewhere on the landing page
 const YT = 'https://www.youtube-nocookie.com';
 
-export function filmSrc(opts: { autoplay: boolean; muted: boolean }): string {
+export function overviewSrc(opts: { autoplay: boolean; muted: boolean }): string {
   const p = new URLSearchParams({
     autoplay: opts.autoplay ? '1' : '0',
     mute: opts.muted ? '1' : '0',
@@ -27,7 +27,7 @@ export function filmSrc(opts: { autoplay: boolean; muted: boolean }): string {
     enablejsapi: '1',
     origin: window.location.origin,
   });
-  return `${YT}/embed/${FILM_ID}?${p.toString()}`;
+  return `${YT}/embed/${OVERVIEW_ID}?${p.toString()}`;
 }
 
 /** Visitors who asked for less motion or less data are never auto-played; they get the poster and a play button. */
@@ -41,8 +41,8 @@ export function autoplayAllowed(): boolean {
 }
 
 let warmed = false;
-/** Open the connections early, while the visitor is still scrolling towards the film. */
-export function warmUpFilm() {
+/** Open the connections early, while the visitor is still scrolling towards the overview. */
+export function warmUpOverview() {
   if (warmed) return;
   warmed = true;
   for (const href of [YT, 'https://i.ytimg.com']) {
@@ -59,8 +59,8 @@ export const YT_PLAYING = 1;
 export const YT_PAUSED = 2;
 export const YT_BUFFERING = 3;
 
-export type FilmInfo = { state: number | null; time: number; duration: number; muted: boolean | null };
-const EMPTY: FilmInfo = { state: null, time: 0, duration: 0, muted: null };
+export type OverviewInfo = { state: number | null; time: number; duration: number; muted: boolean | null };
+const EMPTY: OverviewInfo = { state: null, time: 0, duration: 0, muted: null };
 
 /**
  * Two-way link to the player in `frame`. Call `onLoad` from the iframe's load event; after that `info` follows the
@@ -68,7 +68,7 @@ const EMPTY: FilmInfo = { state: null, time: 0, duration: 0, muted: null };
  */
 export function useYouTubePlayer(frame: RefObject<HTMLIFrameElement>) {
   const [loaded, setLoaded] = useState(false);
-  const [info, setInfo] = useState<FilmInfo>(EMPTY);
+  const [info, setInfo] = useState<OverviewInfo>(EMPTY);
 
   useEffect(() => {
     if (!loaded) return;
@@ -118,13 +118,13 @@ export function useYouTubePlayer(frame: RefObject<HTMLIFrameElement>) {
   return { info, send, onLoad, loaded, reset };
 }
 
-/** The film window (opened from the workspace sidebar). */
-type FilmModalState = { open: boolean; openFilm: (source: string) => void; close: () => void };
-export const useFilmModal = create<FilmModalState>((set) => ({
+/** The overview window (opened from the workspace sidebar). */
+type OverviewModalState = { open: boolean; openOverview: (source: string) => void; close: () => void };
+export const useOverviewModal = create<OverviewModalState>((set) => ({
   open: false,
-  openFilm: (source) => {
+  openOverview: (source) => {
     set({ open: true });
-    trackAction('film_open', 'Opened the BHARAT 3D film', { source });
+    trackAction('overview_open', 'Opened the BHARAT 3D overview', { source });
   },
   close: () => set({ open: false }),
 }));

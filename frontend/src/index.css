@@ -40,7 +40,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .page-enter {
     /* "backwards", not "both": a held end state keeps an identity transform, which traps fixed elements
-       (the film's corner player) inside the page instead of the screen */
+       (the overview's corner player) inside the page instead of the screen */
     animation: page-enter 0.22s ease-out backwards;
   }
 }

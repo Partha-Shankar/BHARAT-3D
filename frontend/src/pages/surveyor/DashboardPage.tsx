@@ -4,6 +4,7 @@ import {
   ArrowRight, Box, Building2, Fingerprint, FolderUp, Layers3, Map as MapIcon, MapPinned, Plus, ShieldAlert, Network, Pencil, PackageCheck,
 } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
+import { CoachMark } from '../../components/coach/CoachMark';
 import { useSurveyDraft, readyCount } from '../../survey/draft';
 import { DATASET_SLOTS } from '../../survey/datasets';
 import {
@@ -48,6 +49,10 @@ export const DashboardPage: React.FC = () => {
 
   return (
     <Page wide>
+      <CoachMark id="new-survey" target='aside a[href="/surveyor/area"]' title="Start here: New survey" placement="right" delayMs={900}>
+        Pick any place in India on the map and mark the area. BHARAT 3D then builds its 3D land record: buildings,
+        floors, flats and their 3D ULPINs, with compliance checks.
+      </CoachMark>
       {/* hero */}
       <section className="relative overflow-hidden rounded-2xl bg-[#1e4d6b] text-[#f3efe6] px-7 py-7 b3-rise">
         <div aria-hidden className="absolute -right-10 -top-16 w-80 h-80 rounded-full bg-[#1f7a72]/30 blur-3xl b3-breathe" />

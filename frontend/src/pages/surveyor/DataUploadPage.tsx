@@ -11,6 +11,7 @@ import { PolygonPreview } from '../../survey/PolygonPreview';
 import { EmptyState, Page, ProgressRing, Tick } from '../../survey/ui';
 import { CountUp } from '../../world/ui';
 import { trackAction, track } from '../../lib/track';
+import { CoachMark } from '../../components/coach/CoachMark';
 
 const IDLE: SlotState = { status: 'idle', progress: 0, checks: [] };
 
@@ -199,6 +200,15 @@ export const DataUploadPage: React.FC = () => {
 
   return (
     <Page wide>
+      <CoachMark id="attach-samples" target='[data-tour="attach-samples"]' when={done === 0 && !busy} delayMs={1000} placement="left"
+        title="No survey data? Use the sample package">
+        If you have your own drone, LiDAR or plan files, drop them on the cards. To see the demo without real data, press
+        <b> Attach the sample survey package</b>: it fills all six datasets for this area in a few seconds.
+      </CoachMark>
+      <CoachMark id="start-reconstruction" target='[data-tour="start-reconstruction"]' when={done === total && !busy} delayMs={500} placement="left"
+        title="All six datasets are attached">
+        Press <b>Start 3D reconstruction</b> to build this area in 3D. It usually takes about a minute.
+      </CoachMark>
       <div className="b3-head">
         <div className="min-w-0">
           <div className="b3-eyebrow b3-rise">Survey package</div>
@@ -240,10 +250,10 @@ export const DataUploadPage: React.FC = () => {
               </div>
             </div>
 
-            <button className="w-full b3-btn !py-2" onClick={attachAll} disabled={done === total || busy}>
+            <button data-tour="attach-samples" className="w-full b3-btn !py-2" onClick={attachAll} disabled={done === total || busy}>
               <FolderUp className="w-4 h-4" /> Attach the sample survey package
             </button>
-            <button className="w-full b3-btn b3-btn-teal !py-2.5 !text-[13px]" onClick={start} disabled={done < total || busy || starting}>
+            <button data-tour="start-reconstruction" className="w-full b3-btn b3-btn-teal !py-2.5 !text-[13px]" onClick={start} disabled={done < total || busy || starting}>
               {starting ? <><Loader2 className="w-4 h-4 animate-spin" /> Starting reconstruction…</>
                 : done === total ? <><Sparkles className="w-4 h-4" /> Start 3D reconstruction <ArrowRight className="w-4 h-4" /></>
                   : <><PackageCheck className="w-4 h-4" /> Attach all six to continue</>}

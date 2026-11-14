@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../stores/authStore';
 import { BrandLogo } from '../components/layout/BrandLogo';
-import { secondsLeft, useServerStatus } from '../lib/serverStatus';
+import { isLimited, limitMessage, secondsLeft, useServerStatus } from '../lib/serverStatus';
+import { SERVER_ASLEEP, SERVER_BUSY } from '../lib/api';
+import { resetTips } from '../components/coach/CoachMark';
 
 const personas = [
   { email: 'survey@bharat3d.demo', title: 'Surveyor', detail: 'Confirm volumes and save identities' },
@@ -37,6 +39,7 @@ export const LoginPage: React.FC = () => {
     setError('');
     try {
       await login(email, password);
+      resetTips(); // a new sign-in shows the tips again
       const currentUser = useAuthStore.getState().user;
       if (currentUser?.role === 'SURVEYOR' || currentUser?.role === 'ADMIN') {
         navigate('/surveyor/dashboard');
@@ -51,7 +54,10 @@ export const LoginPage: React.FC = () => {
       }
     } catch (err: any) {
       const status = err?.response?.status;
-      if (!err?.response || status >= 500) {  // the server did not answer: not a wrong password
+      const st = useServerStatus.getState();
+      if (err?.code === SERVER_BUSY || err?.code === SERVER_ASLEEP || status === 429 || isLimited(st.state)) {
+        setError(limitMessage(st)); // a limit or outage: say when to come back
+      } else if (!err?.response || status >= 500) {  // the server did not answer: not a wrong password
         setError('The server did not respond in time. It may still be starting — please press Sign in again in a minute.');
       } else {
         setError(err.response?.data?.detail || 'Those credentials were not accepted. Choose a workspace below and try again.');

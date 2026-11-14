@@ -1,14 +1,21 @@
 /**
- * Is the API server awake?
+ * Is the API server awake, and if not, when should the visitor come back?
  *
  * The API runs on a free Render instance that sleeps after 15 minutes without traffic and needs about half a minute
  * to start again. Every API call goes through lib/api.ts, which asks this module to check the server whenever a call
  * is slow or fails with a "server not running" answer. While the server starts, the app shows a countdown
  * (components/ServerStatusBanner.tsx), new calls wait instead of failing, and failed calls are retried by themselves.
+ *
+ * Free plans also have limits. When one is reached the banner says so and gives an estimated time to come back:
+ *  - "busy": too many requests (HTTP 429). Cloudflare's free daily allowance resets at 00:00 UTC; otherwise the
+ *    host's Retry-After, or 15 minutes;
+ *  - "suspended": the host paused the service (Render's free monthly hours or bandwidth): back on the 1st;
+ *  - "down": the server did not start within 3 minutes. Outages like this lasted 7-13 minutes, so about 15 minutes.
  */
 import { create } from 'zustand';
 
-export type ServerState = 'unknown' | 'awake' | 'waking' | 'down';
+export type ServerState = 'unknown' | 'awake' | 'waking' | 'down' | 'busy' | 'suspended';
+export type Limit = 'traffic' | 'daily' | 'monthly';
 
 interface ServerStatus {
   state: ServerState;
@@ -22,12 +29,18 @@ interface ServerStatus {
   readyAt: number | null;
   /** it came back after we had given up, so the visitor has to repeat the last action */
   readyAfterDown: boolean;
+  /** busy, suspended or down: estimated time the visitor can come back (ms since epoch) */
+  retryAt: number | null;
+  /** which limit was reached (busy / suspended) */
+  limit: Limit | null;
 }
 
 const LEARN_KEY = 'b3d_wake_seconds';
 const DEFAULT_WAKE_S = 35; // measured on the live server: 30-35 s from the first request
 const MAX_WAIT_MS = 180_000; // after this the banner says the server cannot be reached
 const POLL_MS = 2000;
+const DOWN_RETRY_MS = 15 * 60_000; // free-plan outages where the server would not start lasted 7-13 minutes
+const BUSY_DEFAULT_MS = 15 * 60_000; // "too many requests" without the host's own estimate
 
 function learned(): number {
   try {
@@ -46,30 +59,83 @@ function learn(seconds: number) {
 }
 
 export const useServerStatus = create<ServerStatus>(() => ({
-  state: 'unknown', since: null, estimateS: learned(), waiting: 0, readyAt: null, readyAfterDown: false,
+  state: 'unknown', since: null, estimateS: learned(), waiting: 0, readyAt: null, readyAfterDown: false, retryAt: null, limit: null,
 }));
 
+export const isLimited = (s: ServerState) => s === 'busy' || s === 'suspended';
+
+// ------------------------------------------------------------------------------------------------- limit estimates
+export function nextUtcMidnight(now = Date.now()): number {
+  const d = new Date(now);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() + 1);
+}
+
+export function nextMonthStartUtc(now = Date.now()): number {
+  const d = new Date(now);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 1);
+}
+
+/** When a "too many requests" answer says the visitor can come back, and which limit it was. */
+export function busyEstimate(retryAfter: string | null | undefined, body: string, now = Date.now()): { retryAt: number; limit: Limit } {
+  if (/\b1027\b|has been temporarily rate limited/i.test(body)) return { retryAt: nextUtcMidnight(now), limit: 'daily' }; // Cloudflare's free daily allowance
+  if (retryAfter) {
+    const s = Number(retryAfter);
+    if (Number.isFinite(s) && s > 0) return { retryAt: now + s * 1000, limit: 'traffic' };
+    const t = Date.parse(retryAfter);
+    if (!Number.isNaN(t) && t > now) return { retryAt: t, limit: 'traffic' };
+  }
+  return { retryAt: now + BUSY_DEFAULT_MS, limit: 'traffic' };
+}
+
+/** "in about 12 minutes (around 21:45)", "after 05:30 (in about 7 h 10 min)" or "on 1 December (in about 17 days)". */
+export function comeBack(retryAt: number, now = Date.now()): string {
+  const ms = Math.max(0, retryAt - now);
+  const at = new Date(retryAt);
+  const clock = at.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const min = Math.ceil(ms / 60_000);
+  if (ms >= 36 * 3_600_000) {
+    return `on ${at.toLocaleDateString([], { day: 'numeric', month: 'long' })} (in about ${Math.ceil(ms / 86_400_000)} days)`;
+  }
+  if (min >= 90) {
+    const h = Math.floor(min / 60);
+    const m = min % 60;
+    return `after ${clock} (in about ${h} h${m ? ` ${m} min` : ''})`;
+  }
+  if (min <= 1) return 'in a minute';
+  return `in about ${min} minutes (around ${clock})`;
+}
+
+// ------------------------------------------------------------------------------------------------------- checking
 const DIRECT = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '';
 
-/** One quick check. True when the server answers (or when this deployment cannot tell, so nothing is blocked). */
-async function probe(): Promise<boolean> {
+type Probe = { ok: boolean; busy?: { retryAt: number; limit: Limit }; suspended?: boolean };
+
+/** One quick check. ok when the server answers (or when this deployment cannot tell, so nothing is blocked). */
+async function probe(): Promise<Probe> {
   try {
     const res = await fetch(DIRECT ? `${DIRECT}/health` : '/api/__status', { cache: 'no-store', signal: AbortSignal.timeout(4000) });
-    if (DIRECT) return res.ok;
-    if (res.status === 404) return true; // no status endpoint here (local development behind the Vite proxy)
-    const body = await res.json().catch(() => null) as { state?: string } | null;
-    return res.ok && body?.state === 'awake';
+    if (res.status === 429) { // the edge itself is over a limit (for example Cloudflare's daily allowance)
+      const text = await res.text().catch(() => '');
+      return { ok: false, busy: busyEstimate(res.headers.get('retry-after'), text) };
+    }
+    if (DIRECT) return { ok: res.ok };
+    if (res.status === 404) return { ok: true }; // no status endpoint here (local development behind the Vite proxy)
+    const body = await res.json().catch(() => null) as { state?: string; retry_after_s?: number | null } | null;
+    if (body?.state === 'busy') return { ok: false, busy: busyEstimate(body.retry_after_s ? String(body.retry_after_s) : null, '') };
+    if (body?.state === 'suspended') return { ok: false, suspended: true };
+    return { ok: res.ok && body?.state === 'awake' };
   } catch {
-    return false;
+    return { ok: false };
   }
 }
 
 function markAwake() {
   const s = useServerStatus.getState();
-  if (s.state === 'waking' || s.state === 'down') {
+  if (s.state === 'waking' || s.state === 'down' || isLimited(s.state)) {
     if (s.state === 'waking' && s.since) learn((Date.now() - s.since) / 1000); // an outage is not a normal start-up
     window.clearTimeout(recheck);
-    useServerStatus.setState({ state: 'awake', since: null, readyAt: Date.now(), readyAfterDown: s.state === 'down', estimateS: learned() });
+    useServerStatus.setState({ state: 'awake', since: null, readyAt: Date.now(), readyAfterDown: s.state !== 'waking',
+      estimateS: learned(), retryAt: null, limit: null });
   } else if (s.state !== 'awake') {
     useServerStatus.setState({ state: 'awake' });
   }
@@ -78,12 +144,28 @@ function markAwake() {
 /** A call just succeeded: the server is up. */
 export const noteServerOk = markAwake;
 
+/** A limit was reached: show it with the estimated time, and keep checking quietly. */
+export function markLimited(kind: 'busy' | 'suspended', retryAt: number, limit: Limit) {
+  useServerStatus.setState({ state: kind, retryAt, limit, since: null, readyAt: null });
+  scheduleRecheck(kind === 'suspended' ? 5 * 60_000 : 60_000);
+}
+
+function applyProbe(r: Probe): boolean {
+  if (r.ok) {
+    markAwake();
+    return true;
+  }
+  if (r.suspended) markLimited('suspended', nextMonthStartUtc(), 'monthly');
+  else if (r.busy) markLimited('busy', r.busy.retryAt, r.busy.limit);
+  return false;
+}
+
 let current: Promise<boolean> | null = null;
 
 /**
- * Resolves true once the server answers, or false after MAX_WAIT_MS. Every caller shares one check, so a burst of
- * slow calls makes one wake-up and one banner. `startedAt` is when the first affected call began, which makes the
- * countdown honest.
+ * Resolves true once the server answers, or false after MAX_WAIT_MS (or at once when a limit was reached). Every
+ * caller shares one check, so a burst of slow calls makes one wake-up and one banner. `startedAt` is when the first
+ * affected call began, which makes the countdown honest.
  */
 export function ensureAwake(startedAt?: number): Promise<boolean> {
   if (current) return current;
@@ -91,10 +173,9 @@ export function ensureAwake(startedAt?: number): Promise<boolean> {
     const t0 = Date.now();
     let shown = false;
     while (Date.now() - t0 < MAX_WAIT_MS) {
-      if (await probe()) {
-        markAwake();
-        return true;
-      }
+      const r = await probe();
+      if (applyProbe(r)) return true;
+      if (r.busy || r.suspended) return false;
       if (!shown) {
         shown = true;
         const s = useServerStatus.getState();
@@ -102,32 +183,52 @@ export function ensureAwake(startedAt?: number): Promise<boolean> {
           useServerStatus.setState({ state: 'waking', since: Math.min(startedAt ?? t0, t0), estimateS: learned(), readyAt: null });
         }
       }
-      await new Promise((r) => window.setTimeout(r, POLL_MS));
+      await new Promise((r2) => window.setTimeout(r2, POLL_MS));
     }
-    useServerStatus.setState({ state: 'down' });
+    useServerStatus.setState({ state: 'down', retryAt: Date.now() + DOWN_RETRY_MS, limit: null });
     scheduleRecheck(10_000);
     return false;
   })().finally(() => { current = null; });
   return current;
 }
 
-/** After giving up, keep checking quietly (every 10 s, slowing to once a minute) so the page notices when it is back. */
+/** While down, busy or suspended, keep checking quietly so the page notices when the server is back. */
 let recheck: number | undefined;
 function scheduleRecheck(delay: number) {
   window.clearTimeout(recheck);
   recheck = window.setTimeout(async () => {
-    if (useServerStatus.getState().state !== 'down' || current) return;
-    if (await probe()) markAwake();
-    else if (useServerStatus.getState().state === 'down') scheduleRecheck(Math.min(60_000, delay * 1.5));
+    const st = useServerStatus.getState().state;
+    if (!(st === 'down' || isLimited(st)) || current) return;
+    const r = await probe();
+    if (applyProbe(r)) return;
+    const now = useServerStatus.getState().state;
+    if (now === 'down') scheduleRecheck(Math.min(60_000, delay * 1.5));
+    else if (isLimited(now)) scheduleRecheck(now === 'suspended' ? 5 * 60_000 : 60_000);
   }, delay);
 }
 
 /** Start a fresh attempt after giving up (the "Try again" button, or the visitor doing something again). */
 export function retryWake(): Promise<boolean> {
-  if (useServerStatus.getState().state === 'down') {
-    useServerStatus.setState({ state: 'waking', since: Date.now(), estimateS: learned(), readyAt: null });
+  const st = useServerStatus.getState().state;
+  if (st === 'down' || isLimited(st)) {
+    useServerStatus.setState({ state: 'waking', since: Date.now(), estimateS: learned(), readyAt: null, retryAt: null, limit: null });
   }
   return ensureAwake();
+}
+
+/** One check now (the "Check now" button while a limit is shown): no countdown unless the server is simply asleep. */
+export async function checkNow(): Promise<boolean> {
+  const r = await probe();
+  if (!r.ok && !r.busy && !r.suspended) return retryWake();
+  return applyProbe(r);
+}
+
+/** One sentence for the visitor about the current limit or outage, with the estimated time to come back. */
+export function limitMessage(s: Pick<ServerStatus, 'state' | 'retryAt' | 'limit'>, now = Date.now()): string {
+  const when = s.retryAt ? comeBack(s.retryAt, now) : 'in a few minutes';
+  if (s.state === 'suspended') return `BHARAT 3D's free server has reached its monthly limit. Please come back ${when}.`;
+  if (s.state === 'busy') return `BHARAT 3D is getting too much traffic right now. Please come back ${when}.`;
+  return `The free server is overloaded right now and did not start. Please come back ${when}.`;
 }
 
 /** Track a user action that is waiting for the server (shows the full card instead of the small pill). */

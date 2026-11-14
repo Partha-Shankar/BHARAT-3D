@@ -16,6 +16,7 @@ import { CountUp, Segmented, SourceChip, StrataLoader } from '../../world/ui';
 import { useRoleBase } from '../../survey/ui';
 import { IDENTITY, USAGE_CLASS, ppmToPct, statusOf, issuedId } from '../../survey/norms';
 import { trackAction, track } from '../../lib/track';
+import { CoachMark } from '../../components/coach/CoachMark';
 
 const USAGE: Record<string, string> = { R: 'Residential', C: 'Commercial', M: 'Mixed use', I: 'Industrial', P: 'Public / institutional' };
 
@@ -310,6 +311,18 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
     <div className="h-screen w-screen overflow-hidden bg-[#f3efe6] text-[#1b3344] b3-app relative select-none">
       <div ref={host} className="absolute inset-0" />
 
+      {/* Two tips while exploring: illegal-construction findings after 30 s, the dig check after 45 s. */}
+      <CoachMark id="world-findings" target='button[data-value="findings"]' when={!!scene && ready && !editor} delayMs={30_000}
+        placement="right" title="Spot illegal construction">
+        BHARAT 3D checks every building against its sanctioned plan: extra floors, footpath and road encroachment,
+        setback shortfalls. Open <b>Findings</b> to see each one highlighted in 3D.
+      </CoachMark>
+      <CoachMark id="world-dig" target='[data-tour="dig-check"]' when={!!scene && ready && !editor && !digOn} delayMs={45_000}
+        placement="bottom" title="Check before you dig">
+        Press <b>Dig check</b>, draw a trench on the ground and set its depth. BHARAT 3D shows every metro tunnel, pipe
+        and cable it would hit, with the risk for each.
+      </CoachMark>
+
       {(!scene || !ready) && (
         <div className={`absolute inset-0 flex items-center justify-center z-30 ${scene ? 'bg-[#f3efe6]/70 backdrop-blur-sm' : 'bg-[#f3efe6]'} b3-fade`}>
           <StrataLoader title={scene ? 'Rebuilding the 3D world' : 'Assembling the survey area'}
@@ -347,7 +360,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
         </div>
 
         {!editor && (
-          <button onClick={toggleDig}
+          <button onClick={toggleDig} data-tour="dig-check"
             className={`pointer-events-auto b3-btn !rounded-xl !py-2 b3-rise b3-d3 ${digOn ? '!bg-[#c0392b] !border-[#c0392b] !text-white' : '!bg-[#f7f4ed]/90'}`}>
             <Pickaxe className="w-3.5 h-3.5" /> Dig check
           </button>

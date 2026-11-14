@@ -46,6 +46,16 @@ export async function onRequest(context: Ctx): Promise<Response> {
       try {
         const res = await fetch(`${origin}/health`, { signal: AbortSignal.timeout(2500) });
         if (res.ok) return json({ state: 'awake', ms: Date.now() - started });
+        // Limits: too many requests (with the host's own wait, if it gives one), or the host suspended the service
+        // (Render's free plan does this when the month's free hours or bandwidth are used up).
+        if (res.status === 429) {
+          const ra = Number(res.headers.get('retry-after'));
+          return json({ state: 'busy', retry_after_s: Number.isFinite(ra) && ra > 0 ? ra : null, ms: Date.now() - started });
+        }
+        const text = res.status >= 500 ? (await res.text().catch(() => '')).slice(0, 4000) : '';
+        if (/suspend/i.test(text) || /suspend/i.test(res.headers.get('x-render-routing') || '')) {
+          return json({ state: 'suspended', ms: Date.now() - started });
+        }
         context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
         return json({ state: 'waking', status: res.status, ms: Date.now() - started });
       } catch {

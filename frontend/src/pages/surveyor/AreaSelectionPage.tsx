@@ -408,7 +408,7 @@ export const AreaSelectionPage: React.FC = () => {
                   {verdict.eta_s != null && <span className="b3-chip">{durationText(verdict.eta_s)}</span>}
                 </div>
               )}
-              {(verdict.level === 'warn' || verdict.level === 'block') && (
+              {(verdict.level === 'warn' || verdict.level === 'block') && ['too_dense', 'dense', 'size'].includes(verdict.reason) && (
                 <button className="pl-6 underline underline-offset-2 hover:no-underline" onClick={clear}>Draw a smaller area</button>
               )}
             </div>
@@ -420,8 +420,8 @@ export const AreaSelectionPage: React.FC = () => {
                 <Trash2 className="w-4 h-4" />
               </button>
             )}
-            <button className="flex-1 b3-btn b3-btn-teal !py-2" disabled={!ring || !!error || submitting || verdict?.level === 'block'}
-              onClick={() => confirm(verdict?.level === 'warn')}>
+            <button className="flex-1 b3-btn b3-btn-teal !py-2" disabled={!ring || !!error || submitting}
+              onClick={() => (verdict?.level === 'block' ? clear() : confirm(verdict?.level === 'warn'))}>
               {submitting ? <><Loader2 className="w-4 h-4 animate-spin" /> {verdict?.level === 'ok' ? 'Opening data ingestion…' : 'Checking the area…'}</>
                 : verdict?.level === 'block' ? <>Draw a different area</>
                   : verdict?.level === 'busy' ? <><RefreshCw className="w-4 h-4" /> Check again</>

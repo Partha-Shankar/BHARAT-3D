@@ -3,7 +3,7 @@ import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { trackPage } from './lib/track';
 import ProtectedRoute from './components/ProtectedRoute';
 import ServerStatusBanner from './components/ServerStatusBanner';
-import FilmModal from './components/film/FilmModal';
+import OverviewModal from './components/overview/OverviewModal';
 import { PublicPageShell } from './components/layout/PageTransition';
 import { useRoleBase } from './survey/ui';
 
@@ -42,7 +42,7 @@ export const App: React.FC = () => {
   return (
     <>
     <ServerStatusBanner />
-    <FilmModal />
+    <OverviewModal />
     <Routes>
       <Route element={<PublicPageShell />}>
         <Route path="/login" element={<LoginPage />} />

@@ -10,16 +10,19 @@ Public Overpass servers are shared by everyone and are often overloaded (HTTP 42
   the result stays in memory for a while, so the generation reuses the pre-check's download;
 * reports every attempt through :mod:`app.realgen.progress`, so the user can see what is happening.
 """
+import json
 import logging
 import threading
 import time
 from collections import OrderedDict
 from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
+from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import httpx
-from shapely.geometry import LineString, Point, Polygon
+from shapely.geometry import LineString, Point, Polygon, shape
 from shapely.ops import polygonize, unary_union
+from shapely.prepared import prep
 
 from app.realgen import progress
 
@@ -374,14 +377,82 @@ def fetch_overpass(poly: Polygon) -> Dict[str, Any]:
             f.unlisten(reporter)
 
 
+PHOTON_URL = "https://photon.komoot.io/reverse"
+
+# ISO 3166-2:IN state / union territory codes, for the fallback geocoder (Nominatim supplies them itself).
+INDIA_STATE_CODES = {
+    "andhra pradesh": "AP", "arunachal pradesh": "AR", "assam": "AS", "bihar": "BR", "chhattisgarh": "CT",
+    "goa": "GA", "gujarat": "GJ", "haryana": "HR", "himachal pradesh": "HP", "jharkhand": "JH", "karnataka": "KA",
+    "kerala": "KL", "madhya pradesh": "MP", "maharashtra": "MH", "manipur": "MN", "meghalaya": "ML", "mizoram": "MZ",
+    "nagaland": "NL", "odisha": "OR", "punjab": "PB", "rajasthan": "RJ", "sikkim": "SK", "tamil nadu": "TN",
+    "telangana": "TG", "tripura": "TR", "uttar pradesh": "UP", "uttarakhand": "UT", "west bengal": "WB",
+    "andaman and nicobar islands": "AN", "chandigarh": "CH", "dadra and nagar haveli and daman and diu": "DH",
+    "delhi": "DL", "national capital territory of delhi": "DL", "jammu and kashmir": "JK", "ladakh": "LA",
+    "lakshadweep": "LD", "puducherry": "PY",
+}
+
+_place_cache: "OrderedDict[Tuple[float, float], Dict[str, Any]]" = OrderedDict()
+_place_lock = threading.Lock()
+
+
+def _photon_place(lon: float, lat: float) -> Dict[str, Any] | None:
+    """Second geocoder (Photon, also built on OpenStreetMap), used only when Nominatim refuses or fails."""
+    try:
+        with _client(httpx.Timeout(12.0, connect=6.0)) as client:
+            resp = client.get(PHOTON_URL, params={"lon": lon, "lat": lat, "lang": "en", "limit": 1})
+        if resp.status_code != 200:
+            logger.warning("Photon reverse geocode answered %s", resp.status_code)
+            return None
+        feats = resp.json().get("features") or []
+        if not feats:
+            return None
+        p = feats[0].get("properties") or {}
+        state = p.get("state") or ""
+        city = p.get("city") or p.get("county") or ""
+        locality = p.get("district") or p.get("locality") or p.get("name") or "Survey area"
+        return {
+            "locality": locality,
+            "city": city,
+            "state": state,
+            "state_code": INDIA_STATE_CODES.get(state.lower(), "XX"),
+            "display_name": ", ".join(x for x in (locality, city, state, p.get("country")) if x),
+            "country_code": (p.get("countrycode") or "").lower(),
+        }
+    except Exception as exc:
+        logger.warning("Photon reverse geocode failed: %s", exc)
+        return None
+
+
 def reverse_geocode(lon: float, lat: float) -> Dict[str, Any]:
-    """Locality name for the survey centroid (best effort)."""
+    """Locality name for the survey centroid (best effort).
+
+    Nominatim first, exactly as before (so areas keep the names and state codes they were generated with). Public
+    Nominatim limits each internet address to about one request a second and often answers 429 to shared cloud
+    servers, so a refused or failed request falls back to Photon. Answers are remembered for the process lifetime.
+    """
+    ck = (round(lon, 4), round(lat, 4))
+    with _place_lock:
+        if ck in _place_cache:
+            return dict(_place_cache[ck])
+    found = _nominatim_place(lon, lat) or _photon_place(lon, lat)
+    if found is None:
+        return {"locality": "Survey area", "city": "", "state": "", "state_code": "XX", "display_name": "", "country_code": ""}
+    with _place_lock:
+        _place_cache[ck] = found
+        while len(_place_cache) > 256:
+            _place_cache.popitem(last=False)
+    return dict(found)
+
+
+def _nominatim_place(lon: float, lat: float) -> Dict[str, Any] | None:
     try:
         with _client(httpx.Timeout(20.0, connect=8.0)) as client:
             resp = client.get(
                 NOMINATIM_URL,
                 params={"lat": lat, "lon": lon, "format": "jsonv2", "zoom": 16, "addressdetails": 1},
             )
+        if resp.status_code != 200:
+            logger.warning("Nominatim reverse geocode answered %s; trying the fallback geocoder", resp.status_code)
         if resp.status_code == 200:
             data = resp.json()
             addr = data.get("address", {})
@@ -403,25 +474,41 @@ def reverse_geocode(lon: float, lat: float) -> Dict[str, Any]:
                 "country_code": (addr.get("country_code") or "").lower(),
             }
     except Exception as exc:
-        logger.warning("Reverse geocode failed: %s", exc)
-    return {"locality": "Survey area", "city": "", "state": "", "state_code": "XX", "display_name": "", "country_code": ""}
+        logger.warning("Nominatim reverse geocode failed: %s; trying the fallback geocoder", exc)
+    return None
 
 
 INDIA_BBOX = (68.0, 6.4, 97.5, 37.2)  # lon/lat envelope used as a fast pre-check
+INDIA_FILE = Path(__file__).with_name("data") / "india.geojson"
+INDIA_TOLERANCE_DEG = 0.02  # about 2 km, so areas on the coast or along a border river still count
+OUTSIDE_INDIA = "This area is outside India. BHARAT 3D works only inside India: draw the survey area on Indian land."
+_india_shape = None
+_india_lock = threading.Lock()
+
+
+def _india():
+    """India's boundary as India shows it (Natural Earth 10m admin-0, India's point of view, public domain; simplified
+    to about 400 m and widened by INDIA_TOLERANCE_DEG). Loaded once."""
+    global _india_shape
+    if _india_shape is None:
+        with _india_lock:
+            if _india_shape is None:
+                geom = shape(json.loads(INDIA_FILE.read_text(encoding="utf-8"))["geometry"])
+                _india_shape = prep(geom.buffer(INDIA_TOLERANCE_DEG))
+    return _india_shape
 
 
 def india_check(poly) -> str | None:
-    """None if the polygon is in India, else a user-facing reason. Uses Nominatim for the authoritative check."""
+    """None if the area is in India, else a user-facing reason.
+
+    Checked on this server against India's boundary, with no geocoder involved: the check is instant and cannot fail
+    when a public geocoder limits or refuses requests (Nominatim answers 429 to shared cloud servers, which used to
+    block areas in the middle of Bengaluru with "could not confirm this area is in India").
+    """
     minx, miny, maxx, maxy = poly.bounds
     if minx < INDIA_BBOX[0] or maxx > INDIA_BBOX[2] or miny < INDIA_BBOX[1] or maxy > INDIA_BBOX[3]:
-        return "BHARAT 3D works only inside India. Draw the survey area within India."
-    c = poly.centroid
-    place = reverse_geocode(c.x, c.y)
-    if place.get("country_code") == "in":
-        return None
-    if place.get("country_code"):
-        return f"This area is outside India ({place.get('display_name', '').split(',')[-1].strip() or place['country_code'].upper()}). BHARAT 3D works only inside India."
-    return "Could not confirm this area is in India (it may be over the sea, or the geocoder is unavailable). Try again or move the area onto land."
+        return OUTSIDE_INDIA
+    return None if _india().intersects(poly) else OUTSIDE_INDIA
 
 
 def _way_line(el: Dict[str, Any]) -> LineString | None:

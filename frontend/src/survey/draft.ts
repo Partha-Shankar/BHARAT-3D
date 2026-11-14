@@ -100,7 +100,8 @@ export const readyCount = (d: SurveyDraft | null, total: number) =>
 /** Place name for a lon/lat (OSM Nominatim). */
 export async function reversePlace(lon: number, lat: number): Promise<string | undefined> {
   try {
-    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&lat=${lat}&lon=${lon}`);
+    // accept-language=en: English names (without it, Nominatim answers in the local script, e.g. Kannada in Bengaluru)
+    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=en&lat=${lat}&lon=${lon}`);
     const d = await r.json();
     const a = d?.address ?? {};
     const local = a.neighbourhood || a.suburb || a.quarter || a.village || a.town || a.road;

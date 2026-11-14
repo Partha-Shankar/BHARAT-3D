@@ -21,8 +21,8 @@ export function PublicHeader({ showSectionNav = false }: PublicHeaderProps) {
             <a href="/#solution" className="hover:text-[#1e4d6b]">
               Solution
             </a>
-            <a href="/#film" className="hover:text-[#1e4d6b]">
-              Film
+            <a href="/#overview" className="hover:text-[#1e4d6b]">
+              Overview
             </a>
             <a href="/#extension" className="hover:text-[#1e4d6b]">
               3D ULPIN
