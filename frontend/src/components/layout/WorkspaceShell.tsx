@@ -5,6 +5,7 @@ import { LogOut, User } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
 import { WorkspacePageTransition } from './PageTransition';
 import { BrandLogo } from './BrandLogo';
+import { SidebarFilmCard } from '../film/SidebarFilmCard';
 
 export type WorkspaceNavItem = {
   to: string;
@@ -110,6 +111,9 @@ export function WorkspaceShell({
         </div>
 
         <div className="p-3 bg-[#173e56] border-t border-[#2d6484]">
+          <div className="-mx-1.5 -mt-1.5 mb-2.5 pb-2.5 border-b border-[#2d6484]">
+            <SidebarFilmCard />
+          </div>
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-center gap-2 min-w-0">
               <div className="w-7 h-7 rounded-sm bg-[#1e4d6b] flex items-center justify-center text-[#d5e3ea] shrink-0">

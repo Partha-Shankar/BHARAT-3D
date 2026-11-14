@@ -1,6 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Play } from 'lucide-react';
 import { PublicHeader } from '../components/layout/PublicHeader';
+import { FilmSection } from '../components/film/FilmSection';
+import { FILM_PLAY_EVENT } from '../components/film/film';
+
+/** Scroll to the film and start it with sound (the click lets the browser play sound). */
+const watchFilm = () => {
+  window.dispatchEvent(new Event(FILM_PLAY_EVENT));
+  document.getElementById('film')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 const identities = [
   { level: 'Parent parcel (2D ULPIN)', id: '07K3M9P2Q7R4TZ', height: 'ground' },
@@ -249,6 +258,12 @@ export const LandingPage: React.FC = () => {
               >
                 Open a workspace
               </button>
+              <button onClick={watchFilm} className="group inline-flex items-center gap-2.5 text-[15px] font-semibold text-[#1e4d6b] hover:text-[#173e56]">
+                <span className="w-9 h-9 rounded-full bg-[#1f8a7d] group-hover:bg-[#1a776c] text-white flex items-center justify-center b3-film-ring transition-colors">
+                  <Play className="w-4 h-4 fill-current ml-0.5" />
+                </span>
+                Watch the film <span className="font-normal text-[#5c6e7c]">· 1 min</span>
+              </button>
               <a href="#extension" className="text-[15px] font-semibold text-[#1f7a72] hover:text-[#18655e]">
                 See the identity extension
               </a>
@@ -263,7 +278,9 @@ export const LandingPage: React.FC = () => {
           </figure>
         </section>
 
-        <section id="extension" className="bg-white border-y border-[#e4dccf]">
+        <FilmSection />
+
+        <section id="extension" className="bg-white border-b border-[#e4dccf]">
           <div className="max-w-6xl mx-auto px-5 py-16">
             <h2 className="text-3xl text-[#16324a]">How the 3D extension works</h2>
             <p className="mt-3 max-w-2xl text-[17px] leading-7 text-[#3d5363]">

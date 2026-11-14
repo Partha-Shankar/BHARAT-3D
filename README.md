@@ -13,6 +13,7 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 <p align="center">
 
 [![Live demo](https://img.shields.io/badge/LIVE%20DEMO-bharat--3d.pages.dev-0f172a?style=for-the-badge)](https://bharat-3d.pages.dev/)
+[![Film](https://img.shields.io/badge/FILM-1%20MINUTE-1f8a7d?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/EFDw-kX0smo)
 [![Research paper](https://img.shields.io/badge/RESEARCH%20PAPER-Read-1d4ed8?style=for-the-badge)](https://drive.google.com/file/d/1ubuMoUf0hVmRjdU__KSf7TUiwUvPWi7f/view)
 [![YouTube presentation](https://img.shields.io/badge/YOUTUBE%20PRESENTATION-Watch-b91c1c?style=for-the-badge)](https://www.youtube.com/watch?v=4fDEwOVy2ug)
 [![Blog](https://img.shields.io/badge/BLOG-Read-0f766e?style=for-the-badge)](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html)
@@ -20,11 +21,20 @@ A geospatial land-administration platform that keeps India's two-dimensional par
 
 </p>
 
+<p align="center">
+  <a href="https://youtu.be/EFDw-kX0smo" title="Watch the BHARAT 3D film on YouTube">
+    <img src="frontend/public/media/bharat3d-film-readme.jpg" alt="BHARAT 3D — Every space, on record. Watch the film (1 minute)" width="760" />
+  </a>
+  <br />
+  <sub><b>Every space, on record.</b> &nbsp;·&nbsp; BHARAT 3D in one minute &nbsp;·&nbsp; <a href="https://youtu.be/EFDw-kX0smo">watch on YouTube</a></sub>
+</p>
+
 ## Project links
 
 | | |
 | --- | --- |
 | **Live demo** | [https://bharat-3d.pages.dev/](https://bharat-3d.pages.dev/) |
+| **Film (1 minute)** | [https://youtu.be/EFDw-kX0smo](https://youtu.be/EFDw-kX0smo) |
 | **Research paper** | [BHARAT 3D research paper](https://drive.google.com/file/d/1ubuMoUf0hVmRjdU__KSf7TUiwUvPWi7f/view) |
 | **YouTube presentation** | [https://www.youtube.com/watch?v=4fDEwOVy2ug](https://www.youtube.com/watch?v=4fDEwOVy2ug) |
 | **Blog** | [BHARAT 3D: 3D land administration](https://paladuguganesh.blogspot.com/2026/09/bharat-3d-3d-land-administration.html) |
