@@ -40,27 +40,30 @@ export async function onRequest(context: Ctx): Promise<Response> {
       context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
       return new Response(null, { status: 204, headers: { 'Cache-Control': 'no-store' } });
     }
-    // Is the backend awake? Answers within ~2.5 s either way. While Render's free instance is asleep, a request kept
-    // open in the background makes it start; the app polls this to show a wake-up countdown and resume the user's work.
+    // Is the backend awake (through this proxy, the way the app's calls travel)? Answers within ~2.5 s either way.
+    // `wake` is the backend's own address: while Render's free instance sleeps it answers requests from this proxy
+    // with an instant 502 and often does not start (seen 2026-11-15: 25+ minutes), but a request sent straight from
+    // the visitor's browser starts it in about half a minute, so the app sends one there.
     if (path === '/api/__status') {
+      const wake = `${origin}/health`;
       try {
         const res = await fetch(`${origin}/health`, { signal: AbortSignal.timeout(2500) });
-        if (res.ok) return json({ state: 'awake', ms: Date.now() - started });
+        if (res.ok) return json({ state: 'awake', wake, ms: Date.now() - started });
         // Limits: too many requests (with the host's own wait, if it gives one), or the host suspended the service
         // (Render's free plan does this when the month's free hours or bandwidth are used up).
         if (res.status === 429) {
           const ra = Number(res.headers.get('retry-after'));
-          return json({ state: 'busy', retry_after_s: Number.isFinite(ra) && ra > 0 ? ra : null, ms: Date.now() - started });
+          return json({ state: 'busy', wake, retry_after_s: Number.isFinite(ra) && ra > 0 ? ra : null, ms: Date.now() - started });
         }
         const text = res.status >= 500 ? (await res.text().catch(() => '')).slice(0, 4000) : '';
         if (/suspend/i.test(text) || /suspend/i.test(res.headers.get('x-render-routing') || '')) {
-          return json({ state: 'suspended', ms: Date.now() - started });
+          return json({ state: 'suspended', wake, ms: Date.now() - started });
         }
         context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
-        return json({ state: 'waking', status: res.status, ms: Date.now() - started });
+        return json({ state: 'waking', wake, status: res.status, ms: Date.now() - started });
       } catch {
         context.waitUntil(fetch(`${origin}/health`).catch(() => undefined));
-        return json({ state: 'waking', ms: Date.now() - started });
+        return json({ state: 'waking', wake, ms: Date.now() - started });
       }
     }
     if (path === '/api/__store' || path.startsWith('/api/__store/')) return await store(context, path.slice('/api/__store'.length));

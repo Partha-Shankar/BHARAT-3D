@@ -59,6 +59,11 @@ async def on_startup():
     if remote["areas"]:
         threading.Thread(target=store.restore_all, args=(remote["areas"],), daemon=True).start()
 
+    # Stay awake on Render's free plan (see app/core/keepawake.py for why waking up through the website fails).
+    from app.core import keepawake
+
+    keepawake.start()
+
 @app.get("/health")
 async def health_check():
     return {"status": "ok", "service": "Bharat 3D Backend"}

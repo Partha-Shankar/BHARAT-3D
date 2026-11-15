@@ -1,5 +1,5 @@
 import {
-  LayoutDashboard, Map as MapIcon, MapPinned, FolderUp, FolderKanban, PencilRuler, Fingerprint, ShieldAlert, History,
+  LayoutDashboard, Map as MapIcon, MapPinned, FolderUp, FolderKanban, PencilRuler, Fingerprint, ShieldAlert,
 } from 'lucide-react';
 import { WorkspaceShell } from './WorkspaceShell';
 import { useSurveyDraft, readyCount } from '../../survey/draft';
@@ -19,9 +19,7 @@ export default function SurveyorLayout() {
     { group: 'Survey', to: '/surveyor/projects', icon: FolderKanban, label: 'Surveyed areas', also: ['/surveyor/scenes'], badge: scenes?.length },
     { group: 'Survey', to: '/surveyor/editor', icon: PencilRuler, label: '3D editor' },
     { group: 'Land record', to: '/surveyor/registry', icon: Fingerprint, label: '3D ULPIN registry' },
-    { group: 'Land record', to: '/surveyor/violations', icon: ShieldAlert, label: 'Findings', badge: findings || undefined },
-    { group: 'Land record', to: '/surveyor/audit', icon: History, label: 'Activity log' },
-  ];
+    { group: 'Land record', to: '/surveyor/violations', icon: ShieldAlert, label: 'Findings', badge: findings || undefined },  ];
   return (
     <WorkspaceShell
       portalSubtitle="Surveyor cadastre studio"

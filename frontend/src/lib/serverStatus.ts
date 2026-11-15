@@ -35,10 +35,13 @@ interface ServerStatus {
   limit: Limit | null;
 }
 
-const LEARN_KEY = 'b3d_wake_seconds';
-const DEFAULT_WAKE_S = 35; // measured on the live server: 30-35 s from the first request
+const LEARN_KEY = 'b3d_wake_seconds_v2'; // v2: estimates learned before the direct wake-up (often 90 s) are dropped
+const DEFAULT_WAKE_S = 35; // measured on the live server: a direct request starts it in ~25 s, then ~10 s to be ready
 const MAX_WAIT_MS = 180_000; // after this the banner says the server cannot be reached
 const POLL_MS = 2000;
+const WAKE_KEY = 'b3d_wake_url';
+const DIRECT_SPACING_MS = 5000; // at most one direct wake-up request every 5 s
+const DIRECT_TIMEOUT_MS = 90_000; // Render holds a direct request while the instance starts (~25 s, sometimes more)
 const DOWN_RETRY_MS = 15 * 60_000; // free-plan outages where the server would not start lasted 7-13 minutes
 const BUSY_DEFAULT_MS = 15 * 60_000; // "too many requests" without the host's own estimate
 
@@ -108,19 +111,76 @@ export function comeBack(retryAt: number, now = Date.now()): string {
 // ------------------------------------------------------------------------------------------------------- checking
 const DIRECT = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '';
 
+/*
+ * Waking the server. App calls travel through the website's Cloudflare proxy, and while Render's free instance
+ * sleeps it answers those with an instant 502 and often does not start (seen for 25+ minutes). A request sent
+ * straight from the visitor's browser to the backend's own address starts it in about half a minute. The status
+ * check tells us that address (`wake`); it is remembered for the next visit so the first request goes out at once.
+ */
+/** A signal that aborts after `ms`; AbortSignal.timeout is missing before Safari 16, so fall back to a timer. */
+function timeoutSignal(ms: number): AbortSignal | undefined {
+  try {
+    if (typeof AbortSignal !== 'undefined' && typeof (AbortSignal as { timeout?: unknown }).timeout === 'function') return AbortSignal.timeout(ms);
+    if (typeof AbortController !== 'undefined') {
+      const c = new AbortController();
+      window.setTimeout(() => c.abort(), ms);
+      return c.signal;
+    }
+  } catch { /* very old browser: no timeout, the request just takes as long as it takes */ }
+  return undefined;
+}
+
+const WAKE_RE = /^https:\/\/[^/\s?#]+\/health$/;
+let wakeUrl: string | null = (() => {
+  try {
+    const v = localStorage.getItem(WAKE_KEY);
+    return v && WAKE_RE.test(v) ? v : null;
+  } catch {
+    return null;
+  }
+})();
+
+function rememberWake(u: unknown) {
+  if (typeof u !== 'string' || !WAKE_RE.test(u) || u === wakeUrl) return;
+  wakeUrl = u;
+  try { localStorage.setItem(WAKE_KEY, u); } catch { /* storage unavailable */ }
+}
+
+let direct: Promise<boolean> | null = null;
+let lastDirect = 0;
+
+/**
+ * One request straight to the backend (not through the proxy), at most every DIRECT_SPACING_MS and one at a time.
+ * Resolves true when the backend answered OK. Never rejects: a blocked network or a refused request is just false.
+ */
+export function wakeDirect(): Promise<boolean> {
+  if (!wakeUrl || DIRECT || typeof fetch === 'undefined') return Promise.resolve(false);
+  if (direct) return direct;
+  if (Date.now() - lastDirect < DIRECT_SPACING_MS) return Promise.resolve(false);
+  lastDirect = Date.now();
+  const url = wakeUrl;
+  direct = Promise.resolve()
+    .then(() => fetch(url, { mode: 'cors', cache: 'no-store', credentials: 'omit', referrerPolicy: 'no-referrer', signal: timeoutSignal(DIRECT_TIMEOUT_MS) }))
+    .then((r) => r.ok)
+    .catch(() => false)
+    .finally(() => { direct = null; });
+  return direct;
+}
+
 type Probe = { ok: boolean; busy?: { retryAt: number; limit: Limit }; suspended?: boolean };
 
 /** One quick check. ok when the server answers (or when this deployment cannot tell, so nothing is blocked). */
 async function probe(): Promise<Probe> {
   try {
-    const res = await fetch(DIRECT ? `${DIRECT}/health` : '/api/__status', { cache: 'no-store', signal: AbortSignal.timeout(4000) });
+    const res = await fetch(DIRECT ? `${DIRECT}/health` : '/api/__status', { cache: 'no-store', signal: timeoutSignal(4000) });
     if (res.status === 429) { // the edge itself is over a limit (for example Cloudflare's daily allowance)
       const text = await res.text().catch(() => '');
       return { ok: false, busy: busyEstimate(res.headers.get('retry-after'), text) };
     }
     if (DIRECT) return { ok: res.ok };
     if (res.status === 404) return { ok: true }; // no status endpoint here (local development behind the Vite proxy)
-    const body = await res.json().catch(() => null) as { state?: string; retry_after_s?: number | null } | null;
+    const body = await res.json().catch(() => null) as { state?: string; retry_after_s?: number | null; wake?: string } | null;
+    rememberWake(body?.wake);
     if (body?.state === 'busy') return { ok: false, busy: busyEstimate(body.retry_after_s ? String(body.retry_after_s) : null, '') };
     if (body?.state === 'suspended') return { ok: false, suspended: true };
     return { ok: res.ok && body?.state === 'awake' };
@@ -176,6 +236,8 @@ export function ensureAwake(startedAt?: number): Promise<boolean> {
       const r = await probe();
       if (applyProbe(r)) return true;
       if (r.busy || r.suspended) return false;
+      // Asleep: make sure a direct request is on its way, since that is what starts the instance.
+      const d = wakeDirect();
       if (!shown) {
         shown = true;
         const s = useServerStatus.getState();
@@ -183,7 +245,11 @@ export function ensureAwake(startedAt?: number): Promise<boolean> {
           useServerStatus.setState({ state: 'waking', since: Math.min(startedAt ?? t0, t0), estimateS: learned(), readyAt: null });
         }
       }
-      await new Promise((r2) => window.setTimeout(r2, POLL_MS));
+      // Next check after POLL_MS, or at once when the direct request reports that the backend is up.
+      await Promise.race([
+        new Promise((r2) => window.setTimeout(r2, POLL_MS)),
+        d.then((ok) => (ok ? undefined : new Promise(() => undefined))),
+      ]);
     }
     useServerStatus.setState({ state: 'down', retryAt: Date.now() + DOWN_RETRY_MS, limit: null });
     scheduleRecheck(10_000);
@@ -201,6 +267,7 @@ function scheduleRecheck(delay: number) {
     if (!(st === 'down' || isLimited(st)) || current) return;
     const r = await probe();
     if (applyProbe(r)) return;
+    if (!r.busy && !r.suspended) wakeDirect(); // still asleep: keep nudging it awake
     const now = useServerStatus.getState().state;
     if (now === 'down') scheduleRecheck(Math.min(60_000, delay * 1.5));
     else if (isLimited(now)) scheduleRecheck(now === 'suspended' ? 5 * 60_000 : 60_000);

@@ -1,4 +1,4 @@
-import { LayoutDashboard, Map as MapIcon, ShieldAlert, Fingerprint, FolderKanban, History } from 'lucide-react';
+import { LayoutDashboard, Map as MapIcon, ShieldAlert, Fingerprint, FolderKanban } from 'lucide-react';
 import { WorkspaceShell } from './WorkspaceShell';
 import { useScenes } from '../../survey/ui';
 
@@ -11,7 +11,6 @@ export default function MunicipalityLayout() {
     { group: 'Enforcement', to: '/municipality/violations', icon: ShieldAlert, label: 'Findings', also: ['/municipality/compliance'], badge: findings || undefined },
     { group: 'Enforcement', to: '/municipality/registry', icon: Fingerprint, label: '3D ULPIN registry', also: ['/municipality/properties'] },
     { group: 'Enforcement', to: '/municipality/projects', icon: FolderKanban, label: 'Surveyed areas' },
-    { group: 'Governance', to: '/municipality/audit', icon: History, label: 'Activity log' },
   ];
   return (
     <WorkspaceShell

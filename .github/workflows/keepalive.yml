@@ -1,15 +1,18 @@
 name: Keep API warm
 
-# Render's free web services sleep after 15 minutes without traffic; the first visit then waits about a minute.
-# GitHub starts scheduled workflows late (often by hours), so short runs leave long gaps. Instead, three runs a day
-# each keep one job alive for up to ~6 hours, pinging every 5 minutes, which covers 07:00-24:00 IST even when a start
-# is delayed. Outside that window the API may sleep: Render's free instance hours are shared by every free service in
-# the workspace, so it is not kept awake around the clock. Public repositories get these Actions minutes free.
+# Backup only. The API keeps itself awake (backend/app/core/keepawake.py requests its own address every 10 minutes),
+# and the website wakes it with a direct request from the visitor's browser. If the instance ever does fall asleep,
+# these direct pings start it again: requests that arrive through the website's Cloudflare proxy get an instant 502
+# from a sleeping Render instance and often do not start it, while a direct request does.
+# GitHub starts scheduled workflows late (often by hours), so four runs a day each keep one job alive for up to
+# ~6 hours, pinging every 5 minutes. The account has one free web service, so running all month uses at most 744 of
+# its 750 free instance hours. Public repositories get these Actions minutes free.
 on:
   schedule:
     - cron: "25 1 * * *"    # 06:55 IST
     - cron: "15 7 * * *"    # 12:45 IST
     - cron: "5 13 * * *"    # 18:35 IST
+    - cron: "55 18 * * *"   # 00:25 IST
   workflow_dispatch:
 
 concurrency:
@@ -21,12 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
-      - name: Ping /health every 5 minutes until the window ends
+      - name: Ping /health every 5 minutes for up to ~6 hours
         run: |
           end=$(( $(date +%s) + 350*60 ))
           while [ "$(date +%s)" -lt "$end" ]; do
-            hour=$(TZ=Asia/Kolkata date +%H)
-            if [ "$hour" -lt 7 ]; then echo "outside 07:00-24:00 IST, stopping"; break; fi
             code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-api.onrender.com/health || echo 000)
             echo "$(TZ=Asia/Kolkata date '+%H:%M IST') health $code"
             sleep 300
