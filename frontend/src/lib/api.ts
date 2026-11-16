@@ -2,7 +2,7 @@ import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { getToken } from './auth';
 import { sessionId } from './track';
 import {
-  busyEstimate, checkNow, ensureAwake, isLimited, limitMessage, markLimited, nextMonthStartUtc, noteServerOk, retryWake,
+  busyEstimate, checkNow, ensureAwake, isLimited, limitMessage, markLimited, nextMonthStartUtc, noteServerOk,
   useServerStatus, waitingDelta,
 } from './serverStatus';
 
@@ -23,9 +23,9 @@ const api = axios.create({
 type Cfg = InternalAxiosRequestConfig & { __started?: number; __slow?: number; __waitingSlow?: boolean; __wakeRetries?: number };
 const EDGE_ONLY = /\/__(track|wake|status|store|analytics)\b/; // answered by the edge, never by the sleeping server
 const SLOW_MS = 2500; // a call this slow makes us check whether the server is asleep
-const MAX_RETRIES = 2;
-const ACTION_BUDGET_MS = 200_000; // one action never waits longer than this in total, however many retries
-export const SERVER_ASLEEP = 'ERR_SERVER_ASLEEP';
+// Each repeat first waits until the server answers (however long its start-up takes), so this only stops a call that
+// keeps failing after the server is up.
+const MAX_RETRIES = 4;
 export const SERVER_BUSY = 'ERR_SERVER_BUSY'; // a free-plan limit was reached; the message says when to come back
 export const OFFLINE = 'ERR_OFFLINE'; // this device has no internet connection: nothing to do with the server
 export const OFFLINE_MESSAGE = 'You are offline. Check your internet connection, then try again.';
@@ -61,7 +61,6 @@ api.interceptors.request.use(
     }
     if (!EDGE_ONLY.test(c.url || '')) {
       // While the server is starting, hold new calls instead of letting them fail; they go out when it answers.
-      // If we had given up, doing something again counts as "try again". If the wait gives up, the call is not sent.
       const state = useServerStatus.getState().state;
       if (isLimited(state)) {
         // A limit was reached: do not send until the estimated time has passed, then check once before sending.
@@ -69,15 +68,12 @@ api.interceptors.request.use(
         if ((s.retryAt && Date.now() < s.retryAt) || !(await checkNow())) {
           throw new AxiosError(limitMessage(useServerStatus.getState()), SERVER_BUSY, c);
         }
-      } else if (state === 'waking' || state === 'down') {
+      } else if (state === 'waking') {
         c.__started = c.__started ?? Date.now();
         waitingDelta(1);
         let awake = false;
-        try { awake = await (state === 'down' ? retryWake() : ensureAwake()); } finally { waitingDelta(-1); }
-        if (!awake) {
-          const s = useServerStatus.getState();
-          throw new AxiosError(limitMessage(s), isLimited(s.state) ? SERVER_BUSY : SERVER_ASLEEP, c);
-        }
+        try { awake = await ensureAwake(); } finally { waitingDelta(-1); }
+        if (!awake) throw new AxiosError(limitMessage(useServerStatus.getState()), SERVER_BUSY, c); // only a limit stops the wait
       }
       c.__started = c.__started ?? Date.now();
       c.__slow = window.setTimeout(() => {
@@ -138,13 +134,11 @@ api.interceptors.response.use(
         return Promise.reject(error);
       }
     }
-    // Never after the wait has already given up for this action, and never beyond the action's total budget.
+    // Wait for the server and send again: never while a limit is shown (it would only be refused again).
     const notRunning = status === 502 || status === 503;
     const unclear = !error.response || status === 504;
-    const gaveUp = error.code === SERVER_ASLEEP || error.code === SERVER_BUSY
-      || useServerStatus.getState().state === 'down' || isLimited(useServerStatus.getState().state);
-    const inBudget = !c?.__started || Date.now() - c.__started < ACTION_BUDGET_MS;
-    if (c && !gaveUp && inBudget && !EDGE_ONLY.test(url) && (notRunning || (unclear && idempotent(c))) && (c.__wakeRetries ?? 0) < MAX_RETRIES) {
+    const limited = error.code === SERVER_BUSY || isLimited(useServerStatus.getState().state);
+    if (c && !limited && !EDGE_ONLY.test(url) && (notRunning || (unclear && idempotent(c))) && (c.__wakeRetries ?? 0) < MAX_RETRIES) {
       c.__wakeRetries = (c.__wakeRetries ?? 0) + 1;
       waitingDelta(1);
       let awake = false;

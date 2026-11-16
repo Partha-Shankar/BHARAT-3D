@@ -3,8 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, CalendarClock, CheckCircle2, CloudOff, Info, Loader2, RefreshCw, WifiOff } from 'lucide-react';
 import { useAuthStore } from '../stores/authStore';
 import { BrandLogo } from '../components/layout/BrandLogo';
-import { checkNow, comeBack, isLimited, limitMessage, limitTitle, retryWake, secondsLeft, useServerStatus } from '../lib/serverStatus';
-import { OFFLINE, OFFLINE_MESSAGE, SERVER_ASLEEP, SERVER_BUSY } from '../lib/api';
+import { checkNow, comeBack, ensureAwake, isLimited, limitMessage, limitTitle, useServerStatus, wakeClock, wakeCopy } from '../lib/serverStatus';
+import { OFFLINE, OFFLINE_MESSAGE, SERVER_BUSY } from '../lib/api';
 import { ROLE_LABEL, allowedPath, homeFor, safeNext } from '../lib/roles';
 import type { LoginState } from '../components/ProtectedRoute';
 import { resetTips } from '../components/coach/CoachMark';
@@ -19,20 +19,16 @@ const personas = [
   { email: 'citizen@bharat3d.demo', title: 'Citizen', detail: 'Your unit and its parent parcel' },
 ];
 
-const WAKE_STEPS = [
-  'Starting the server…',
-  'Loading the 3D engine…',
-  'Restoring surveyed areas from storage…',
-  'Opening the property registry…',
-  'Almost ready…',
-];
+/** A sign-in that failed only because the server was not reachable yet is sent again by itself, up to this often. */
+const MAX_AUTO_CONTINUE = 5;
+const OFFLINE_SIGN_IN = 'You are offline. You will be signed in automatically as soon as your internet connection is back.';
 
 /** A plain-English message for a failed sign-in. */
 function signInError(err: any): string {
   const status = err?.response?.status;
   const st = useServerStatus.getState();
   if (err?.code === OFFLINE) return OFFLINE_MESSAGE;
-  if (err?.code === SERVER_BUSY || err?.code === SERVER_ASLEEP || status === 429 || isLimited(st.state)) return limitMessage(st);
+  if (err?.code === SERVER_BUSY || status === 429 || isLimited(st.state)) return limitMessage(st);
   if (status === 401) return 'That email and password do not match. Choose a workspace below: every demo account uses the same password.';
   if (status === 422) return 'Enter a full email address, for example survey@bharat3d.demo.';
   if (!err?.response || status >= 500) return 'The server did not answer. Please press Sign in again in a moment.';
@@ -53,16 +49,24 @@ export const LoginPage: React.FC = () => {
   const [, tick] = useState(0);
   const passwordRef = useRef<HTMLInputElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  // A sign-in stopped by an outage or a limit continues by itself when the server is back.
+  // A sign-in stopped by a free-plan limit continues by itself when the limit is over.
   const resumeRef = useRef(false);
   const [resumePending, setResumePending] = useState(false);
   const [backNote, setBackNote] = useState<string | null>(null);
+  // A sign-in that failed only because the server or the connection was not there yet goes again by itself.
+  const autoTries = useRef(0);
+  const [continuing, setContinuing] = useState(false);
+  const [offlineWait, setOfflineWait] = useState(false);
+  const [online, setOnline] = useState(() => typeof navigator === 'undefined' || navigator.onLine !== false);
+  const mounted = useRef(true);
+  useEffect(() => () => { mounted.current = false; }, []);
 
   // Where to go after signing in: the page the visitor opened (route guard), or a ?next= link.
   const from = safeNext((location.state as LoginState | null)?.from) ?? safeNext(new URLSearchParams(location.search).get('next'));
 
   const waking = server.state === 'waking';
-  const stopped = server.state === 'down' || isLimited(server.state);
+  const stopped = isLimited(server.state);
+  const busy = isLoading || continuing;
   useEffect(() => { // keep the countdown moving while the server wakes
     if (!waking) return;
     const t = window.setInterval(() => tick((n) => n + 1), 500);
@@ -74,7 +78,18 @@ export const LoginPage: React.FC = () => {
     return () => window.clearTimeout(t);
   }, [isLoading]);
 
-  useEffect(() => { // the server answers again: continue a sign-in an outage stopped, or say it is back
+  useEffect(() => { // offline: sign in by itself as soon as the connection is back
+    if (!offlineWait) return;
+    const back = () => {
+      setOfflineWait(false);
+      setError('');
+      formRef.current?.requestSubmit();
+    };
+    window.addEventListener('online', back);
+    return () => window.removeEventListener('online', back);
+  }, [offlineWait]);
+
+  useEffect(() => { // the server answers again: continue a sign-in a limit stopped, or say it is back
     if (!server.readyAt) return;
     if (resumeRef.current) { // also after "Check now", which goes through a normal wake-up first
       resumeRef.current = false;
@@ -82,7 +97,7 @@ export const LoginPage: React.FC = () => {
       setError('');
       setBackNote('The server is back. Signing you in…');
       formRef.current?.requestSubmit();
-    } else if (server.readyAfterDown) {
+    } else if (server.readyAfterLimit) {
       setError('');
       setBackNote('The server is back. You can sign in now.');
     } else {
@@ -92,36 +107,80 @@ export const LoginPage: React.FC = () => {
     return () => window.clearTimeout(t);
   }, [server.readyAt]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const left = waking ? secondsLeft(server) : 0;
-  const elapsed = waking && server.since ? (Date.now() - server.since) / 1000 : 0;
-  const pct = waking ? Math.min(96, (elapsed / Math.max(server.estimateS, 1)) * 100) : 0;
+  useEffect(() => { // the panel says "offline" while the device has no connection, not "the server is slow"
+    const on = () => setOnline(true);
+    const off = () => setOnline(false);
+    window.addEventListener('online', on);
+    window.addEventListener('offline', off);
+    return () => { window.removeEventListener('online', on); window.removeEventListener('offline', off); };
+  }, []);
+
+  const clock = wakeClock(server);
+  const copy = wakeCopy(clock.round, clock.elapsed, true);
+  // Before the visitor presses Sign in nothing is waiting yet, so the words say what will happen when they do.
+  const note = !online ? 'Your device is offline. The wait continues as soon as your internet connection is back.'
+    : busy ? copy.note
+      : clock.round === 0
+        ? 'The free server is starting (it sleeps when nobody is using it, and starting takes about a minute). You can press Sign in now: it continues by itself.'
+        : 'The free server is still starting, a little slower than usual. You can press Sign in now: it continues by itself.';
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (isLoading) return;
+    if (isLoading || continuing) return;
     setError('');
+    setOfflineWait(false);
     try {
       const signedIn = await login(email, password);
+      autoTries.current = 0;
       resetTips(); // a new sign-in shows the tips again
       navigate(from ? allowedPath(signedIn.role, from) : homeFor(signedIn.role), { replace: true });
     } catch (err: any) {
+      if (!mounted.current) return;
       const st = useServerStatus.getState().state;
-      if (err?.code !== OFFLINE && (st === 'down' || isLimited(st))) {
-        // The orange card below explains the outage and when to come back; the sign-in resumes when it is over.
+      if (err?.code === OFFLINE) { // no connection on this device: wait for it, then sign in by itself
+        setError(OFFLINE_SIGN_IN);
+        setOfflineWait(true);
+        return;
+      }
+      if (isLimited(st)) {
+        // The orange card below explains the limit and when to come back; the sign-in resumes when it is over.
         resumeRef.current = true;
         setResumePending(true);
         return;
       }
+      const status = err?.response?.status;
+      const notReached = !err?.response || status === 502 || status === 503 || status === 504;
+      if (notReached && autoTries.current < MAX_AUTO_CONTINUE) {
+        // The server was not reachable yet: wait for it (the countdown shows), then sign in again by itself.
+        autoTries.current += 1;
+        setContinuing(true);
+        let awake = false;
+        try {
+          awake = await ensureAwake(Date.now());
+          // a short, growing pause, so a server that answers its health check but fails sign-ins is not flooded
+          if (awake) await new Promise((r) => window.setTimeout(r, 1500 * autoTries.current));
+        } finally { if (mounted.current) setContinuing(false); }
+        if (!mounted.current) return;
+        if (awake) {
+          formRef.current?.requestSubmit();
+          return;
+        }
+        resumeRef.current = true; // a limit was reached meanwhile: its card explains, and the sign-in resumes after it
+        setResumePending(true);
+        return;
+      }
+      autoTries.current = 0;
       setError(signInError(err));
-      if (err?.response?.status === 401) {
+      if (status === 401) {
         window.setTimeout(() => passwordRef.current?.select(), 0);
       }
     }
   };
 
-  const buttonText = !isLoading ? 'Sign in'
-    : waking ? (left > 0 ? `Waking the server… about ${Math.ceil(left)} s` : left > -30 ? 'Almost there…' : 'Still starting…')
-      : slow ? 'Still signing in…' : 'Signing in…';
+  const buttonText = !busy ? 'Sign in'
+    : !online ? 'Waiting for your connection…'
+    : waking ? `${copy.button} ${clock.left} s`
+      : continuing ? 'Signing in again…' : slow ? 'Still signing in…' : 'Signing in…';
 
   return (
     <div className="public-shell min-h-screen lg:grid lg:grid-cols-[0.9fr_1.1fr]">
@@ -202,7 +261,7 @@ export const LoginPage: React.FC = () => {
           <div aria-live="assertive">
             {error && (
               <div role="alert" className="mt-5 px-3 py-2.5 bg-[#fde8e6] border border-[#e7b2ab] text-[#8a2e26] text-sm rounded-sm flex gap-2">
-                {error === OFFLINE_MESSAGE && <WifiOff className="w-4 h-4 mt-0.5 shrink-0" />}
+                {(error === OFFLINE_MESSAGE || error === OFFLINE_SIGN_IN) && <WifiOff className="w-4 h-4 mt-0.5 shrink-0" />}
                 <span>{error}</span>
               </div>
             )}
@@ -235,15 +294,15 @@ export const LoginPage: React.FC = () => {
             </label>
             <button
               type="submit"
-              disabled={isLoading}
-              aria-busy={isLoading}
+              disabled={busy}
+              aria-busy={busy}
               className="w-full inline-flex items-center justify-center gap-2 bg-[#1f7a72] hover:bg-[#18655e] active:bg-[#155a54] disabled:opacity-80 disabled:cursor-wait text-white font-semibold text-[15px] py-2.5 rounded-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f7a72]/40 focus-visible:ring-offset-2"
             >
-              {isLoading && <Loader2 className="w-4 h-4 animate-spin" aria-hidden />}
+              {busy && <Loader2 className="w-4 h-4 animate-spin" aria-hidden />}
               {buttonText}
             </button>
 
-            {/* Server status, inline so it never covers the form: waking up, not available for a while, or back. */}
+            {/* Server status, inline so it never covers the form: waking up, a free-plan limit, or back. */}
             <div role="status">
               {backNote && !waking && !stopped && (
                 <div className="rounded-sm border border-[#b7cfcb] bg-[#eef6f5] px-3.5 py-2.5 text-[13px] text-[#18655e] flex items-center gap-2 b3-fade">
@@ -251,22 +310,21 @@ export const LoginPage: React.FC = () => {
                 </div>
               )}
               {waking && (
-                <div className="rounded-sm border border-[#d6e4e2] bg-white/70 px-3.5 py-3 b3-fade">
+                <div className="rounded-sm border border-[#d6e4e2] bg-white/70 px-3.5 py-3 b3-fade" data-wake-round={clock.round}>
                   <div className="flex items-baseline justify-between gap-3">
-                    <Thinking messages={left > 0 ? WAKE_STEPS : ['Taking a little longer than usual…', 'Still starting, hang on…']} every={3200} className="text-[13px]" />
-                    <span className="font-mono text-[12.5px] font-semibold text-[#16324a] shrink-0">
-                      {left > 0 ? `${Math.ceil(left)} s` : `+${Math.floor(-left)} s`}
-                    </span>
+                    <p className="text-[13px] font-semibold text-[#16324a]">{online ? copy.title : 'Waiting for your connection'}</p>
+                    {online && (
+                      <span className="font-mono text-[12.5px] font-semibold text-[#16324a] shrink-0" aria-label={`about ${clock.left} seconds`}>
+                        {clock.left} s
+                      </span>
+                    )}
                   </div>
                   <div className="h-1.5 rounded-full bg-[#e4dccf] mt-2 overflow-hidden">
-                    <div className={`h-full rounded-full transition-[width] duration-300 ease-linear ${left > 0 ? 'bg-gradient-to-r from-[#1e4d6b] to-[#1f7a72]' : 'bg-[#c8962e] b3-shimmer'}`}
-                      style={{ width: `${left > 0 ? pct : 100}%` }} />
+                    <div className="h-full rounded-full transition-[width] duration-500 ease-linear bg-gradient-to-r from-[#1e4d6b] to-[#1f7a72]"
+                      style={{ width: `${clock.pct}%` }} />
                   </div>
-                  <p className="text-[12.5px] text-[#5c6e7c] mt-2 leading-relaxed">
-                    {isLoading
-                      ? <>BHARAT 3D runs on a free server that sleeps when nobody is using it. It is starting now, and <b>you will be signed in automatically</b>, no need to click again.</>
-                      : <>The free server is starting (it sleeps when nobody is using it). You can sign in now: it continues by itself.</>}
-                  </p>
+                  {online && <Thinking messages={copy.steps} every={3200} className="text-[12.5px] mt-2" />}
+                  <p className="text-[12.5px] text-[#5c6e7c] mt-1.5 leading-relaxed">{note}</p>
                 </div>
               )}
               {stopped && (
@@ -282,7 +340,7 @@ export const LoginPage: React.FC = () => {
                           : 'This page keeps checking and tells you when the server is ready.'}
                       </p>
                       <button type="button" disabled={checking}
-                        onClick={async () => { setChecking(true); try { await (server.state === 'down' ? retryWake() : checkNow()); } finally { setChecking(false); } }}
+                        onClick={async () => { setChecking(true); try { await checkNow(); } finally { setChecking(false); } }}
                         className="mt-2 inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-[#9A3412] border border-[#FDBA74] bg-white rounded-sm px-2.5 py-1 hover:bg-[#FFEDD5] disabled:opacity-60">
                         <RefreshCw className={`w-3.5 h-3.5 ${checking ? 'animate-spin' : ''}`} /> {checking ? 'Checking…' : 'Check now'}
                       </button>
