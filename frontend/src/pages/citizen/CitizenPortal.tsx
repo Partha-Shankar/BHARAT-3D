@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { ArrowRight, Box, Building2, Fingerprint, Home, Loader2, Search } from 'lucide-react';
@@ -6,12 +6,7 @@ import { getBuildingDetail, searchAllRegistries } from '../../world/api';
 import type { RegistryHit } from '../../world/sceneSpec';
 import { EmptyState, Page, PageHeader } from '../../survey/ui';
 import { ppmToPct, idTypo, issuedId } from '../../survey/norms';
-
-const useDebounced = <T,>(v: T, ms = 300) => {
-  const [d, setD] = useState(v);
-  useEffect(() => { const t = setTimeout(() => setD(v), ms); return () => clearTimeout(t); }, [v, ms]);
-  return d;
-};
+import { useDebounced } from '../../hooks/useDebounced';
 
 const UnitCard: React.FC<{ hit: RegistryHit }> = ({ hit }) => {
   const navigate = useNavigate();
@@ -46,7 +41,7 @@ const UnitCard: React.FC<{ hit: RegistryHit }> = ({ hit }) => {
 /** Citizen portal: find your unit by its 3D ULPIN, the parcel ULPIN or the building name. */
 export const CitizenPortal: React.FC = () => {
   const [q, setQ] = useState('');
-  const dq = useDebounced(q.trim());
+  const dq = useDebounced(q.trim(), 300);
   const [sel, setSel] = useState<RegistryHit | null>(null);
   const { data, isFetching } = useQuery({
     queryKey: ['citizen-search', dq],

@@ -155,7 +155,11 @@ export interface SceneSpec {
   railways: Railway[];
   water: { id: string; kind: string; polygon?: XY[]; path?: XY[] }[];
   green: { id: string; kind: string; polygon?: XY[] }[];
-  trees: { x: number; y: number }[];
+  trees: { x: number; y: number; source?: string }[];
+  /** spots where a surveyor removed trees (also hides trees detected in the satellite image there) */
+  trees_removed?: { x: number; y: number; r: number }[];
+  /** footpaths a surveyor drew (they also appear in `footpaths`) */
+  footpaths_added?: { id: string; path: XY[]; width_m: number; name?: string }[];
   stations: { name: string; kind: string; x: number; y: number }[];
   subsurface: SubsurfaceAsset[];
   violations: Violation[];
@@ -305,14 +309,19 @@ export interface RegistryEntry {
 
 export type EditOp =
   | { op: 'building.update'; id: string; set: Partial<Building> & { unit_overrides?: Record<string, number> } }
-  | { op: 'building.add'; building: { footprint: XY[]; floors: number; usage: string; name?: string; floor_height?: number } }
+  | { op: 'building.add'; building: { footprint: XY[]; floors: number; usage: string; name?: string; floor_height?: number; min_height?: number } }
   | { op: 'building.delete'; id: string }
   | { op: 'asset.update'; id: string; set: Partial<SubsurfaceAsset> }
-  | { op: 'asset.add'; asset: Partial<SubsurfaceAsset> & { kind: string; path: XY[] } }
+  | { op: 'asset.add'; asset: Partial<SubsurfaceAsset> & { kind: string } & ({ path: XY[] } | { footprint: XY[] }) }
   | { op: 'asset.delete'; id: string }
   | { op: 'road.update'; id: string; set: Partial<Road> }
   | { op: 'road.add'; road: Partial<Road> & { path: XY[] } }
-  | { op: 'road.delete'; id: string };
+  | { op: 'road.delete'; id: string }
+  | { op: 'tree.add'; points: XY[] }
+  | { op: 'tree.remove'; at: XY; radius_m?: number }
+  | { op: 'footpath.add'; footpath: { path: XY[]; width_m: number; name?: string } }
+  | { op: 'footpath.remove'; at: XY }
+  | { op: 'footpath.delete'; id: string };
 
 /** A compliance finding listed across areas (GET /realgen/findings). */
 export interface FindingRow {
@@ -339,15 +348,6 @@ export interface RegistryHit extends RegistryEntry {
   place: string;
 }
 
-export interface ActivityEvent {
-  key: string;
-  place: string;
-  at: number | null;
-  kind: 'generated' | 'ingested' | 'edit' | 'lifecycle';
-  by: string | null;
-  seq?: number;
-  detail: any;
-}
 
 /** One dataset in a survey package (ingestion step). */
 export interface DatasetManifest {
@@ -360,12 +360,33 @@ export interface DatasetManifest {
   sample: boolean;
 }
 
+/** What the server read from the start of an attached file (POST /api/ingest/inspect, backend app/ingest/inspect.py). */
+export interface FileInspection {
+  name: string;
+  format: string;
+  kind: string;
+  recognised: boolean;
+  /** facts read from the file */
+  facts: string[];
+  /** problems a surveyor should fix */
+  warnings: string[];
+  extent_lonlat: [number, number, number, number] | null;
+  epsg: number | null;
+  /** the survey reader for this format and its processing steps, by name */
+  reader: string | null;
+  steps: string[];
+  sampled_bytes: number;
+  size_bytes: number | null;
+}
+
 /** A footpath surface (mapped OSM sidewalk, or an assumed band beside a major road). */
 export interface Footpath {
   id: string;
-  road_id: string;
+  /** the road the footpath runs beside; null for a footpath a surveyor drew */
+  road_id: string | null;
   road_name: string;
-  source: 'mapped' | 'assumed';
+  /** mapped in OpenStreetMap, assumed beside a major road, or drawn by a surveyor */
+  source: 'mapped' | 'assumed' | 'surveyor';
   area_m2: number;
   rings: XY[][];
 }

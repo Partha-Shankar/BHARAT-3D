@@ -11,6 +11,7 @@ import { createPortal } from 'react-dom';
 import { create } from 'zustand';
 import { Lightbulb } from 'lucide-react';
 import { trackAction } from '../../lib/track';
+import { useServerBannerShowing } from '../ServerStatusBanner';
 
 const shown = new Set<string>();
 const useActiveTip = create<{ active: string | null }>(() => ({ active: null }));
@@ -73,6 +74,8 @@ export const CoachMark: React.FC<CoachMarkProps> = ({ id, target, title, childre
   const cardRef = useRef<HTMLDivElement>(null);
   const okRef = useRef<HTMLButtonElement>(null);
   const active = useActiveTip((s) => s.active);
+  // Never on top of the server status banner: a due tip waits for it, an open one steps aside until it is gone.
+  const bannerShowing = useServerBannerShowing((s) => s.showing);
 
   // Becomes due after the delay, once per page load.
   useEffect(() => {
@@ -86,7 +89,7 @@ export const CoachMark: React.FC<CoachMarkProps> = ({ id, target, title, childre
 
   // Take the stage when it is free and the element is on the page.
   useEffect(() => {
-    if (!due || shown.has(id) || (active && active !== id)) return;
+    if (!due || shown.has(id) || (active && active !== id) || bannerShowing) return;
     let tries = 0;
     const t = window.setInterval(() => {
       const el = document.querySelector<HTMLElement>(target);
@@ -104,9 +107,9 @@ export const CoachMark: React.FC<CoachMarkProps> = ({ id, target, title, childre
       }
     }, 150);
     return () => window.clearInterval(t);
-  }, [due, active, id, target, title]);
+  }, [due, active, id, target, title, bannerShowing]);
 
-  const open = active === id;
+  const open = active === id && !bannerShowing;
 
   // Follow the element while the tip is open (resize, scroll, layout changes).
   useLayoutEffect(() => {
@@ -148,8 +151,16 @@ export const CoachMark: React.FC<CoachMarkProps> = ({ id, target, title, childre
     : p.side === 'left' ? { right: -7, top: p.arrow - 7 }
       : p.side === 'bottom' ? { top: -7, left: p.arrow - 7 } : { bottom: -7, left: p.arrow - 7 };
 
+  // A modal tip: keyboard focus stays on its only control, OK.
+  const keepFocus = (e: React.KeyboardEvent) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      okRef.current?.focus();
+    }
+  };
+
   return createPortal(
-    <div className="fixed inset-0 z-[980]" role="dialog" aria-modal="true" aria-labelledby={`tip-${id}-t`} aria-describedby={`tip-${id}-d`}>
+    <div className="fixed inset-0 z-[980]" role="dialog" aria-modal="true" aria-labelledby={`tip-${id}-t`} aria-describedby={`tip-${id}-d`} onKeyDown={keepFocus}>
       {/* blocks the page; only OK closes the tip */}
       <div className="absolute inset-0" />
       {/* the lit-up element: everything else is dimmed by its huge shadow */}

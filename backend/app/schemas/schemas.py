@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Optional, Any, Dict
+from typing import Optional
 from pydantic import BaseModel, ConfigDict, EmailStr
 
 class TokenResponse(BaseModel):

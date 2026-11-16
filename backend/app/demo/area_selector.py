@@ -1,6 +1,5 @@
 import os
 import json
-import hashlib
 from typing import Dict, Any, Optional
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../data/demo/areas"))
@@ -26,7 +25,6 @@ class DemoAreaSelector:
     @staticmethod
     def select_area_for_job(job_id: Any, project_id: Any = 1, polygon_geojson: Optional[str] = None) -> str:
         import random
-        import time
         # Select randomly across the 10 distinct 3D map combinations
         area_num = random.randint(1, 10)
         return f"area_{area_num:02d}"

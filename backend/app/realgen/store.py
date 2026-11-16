@@ -1,6 +1,6 @@
 """Durable storage for generated areas in Cloudflare R2, through the web app's Pages Function.
 
-Free hosts (Render, Hugging Face Spaces) wipe their disk on restart. After every change to an area (generation,
+Free hosts such as Render wipe their disk on restart. After every change to an area (generation,
 edit, undo, reset, re-derivation) its files are copied to R2; deletion removes them. On startup, and whenever an
 unknown area is requested, missing areas are restored from R2. Uploads go through `STORE_URL` (the Pages Function
 `/api/__store`, which holds the R2 binding) with a shared `STORE_TOKEN`; no R2 credentials live on the server.

@@ -327,7 +327,7 @@ export const AreaSelectionPage: React.FC = () => {
   };
 
   return (
-    <div className="flex-1 min-h-0 h-screen flex flex-col bg-[#f3efe6] b3-app">
+    <div className="flex-1 min-h-0 h-full md:h-screen flex flex-col bg-[#f3efe6] b3-app">
       <div className="bg-[#f7f4ed] border-b border-[#e4dccf] px-6 py-3 flex items-center justify-between gap-4 z-10 flex-wrap">
         <div className="min-w-0 b3-rise">
           <h1 className="b3-serif text-xl text-[#1b3344]">New survey · select the area</h1>

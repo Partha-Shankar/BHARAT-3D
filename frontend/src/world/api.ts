@@ -9,7 +9,34 @@ const remember = (key: string, place?: { locality?: string; city?: string }) => 
   if (n) names.set(key, n);
 };
 const describeOps = (ops: EditOp[]) => ops.map((o: any) => `${o.op}${o.id ? ` ${o.id}` : ''}${o.set ? ` (${Object.keys(o.set).join(', ')})` : ''}`).join('; ');
-import type { SceneSpec, BuildingDetail, ExcavationResult, GenerationJob, SceneMeta, RegistryEntry, EditOp, FindingRow, RegistryHit, ActivityEvent, DatasetManifest } from './sceneSpec';
+import type {
+  SceneSpec, BuildingDetail, ExcavationResult, GenerationJob, SceneMeta, RegistryEntry, EditOp, FindingRow, RegistryHit, DatasetManifest,
+  FileInspection,
+} from './sceneSpec';
+
+/** The most of a file sent for inspection: every header the server reads fits in it (backend SAMPLE_BYTES). */
+export const INSPECT_SAMPLE_BYTES = 256 * 1024;
+
+function toBase64(buf: ArrayBuffer): string {
+  const bytes = new Uint8Array(buf);
+  let s = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  return btoa(s);
+}
+
+/**
+ * Have the server read an attached file: only its first 256 KB are sent (slicing does not read the rest, so even a
+ * multi-gigabyte point cloud is instant). Returns the facts found in its header and any problems to fix.
+ */
+export async function inspectFile(file: File, slot: string, areaBbox?: [number, number, number, number]): Promise<FileInspection> {
+  const sample = await file.slice(0, INSPECT_SAMPLE_BYTES).arrayBuffer();
+  const { data } = await api.post<FileInspection>('/ingest/inspect', {
+    name: file.name, size_bytes: file.size, slot, sample_b64: toBase64(sample), area_bbox: areaBbox,
+  }, { timeout: 60000 });
+  trackAction('dataset_inspected', `checked ${file.name} (${data.format}): ${data.facts.length} fact(s), ${data.warnings.length} warning(s)`,
+    { slot, format: data.format, recognised: data.recognised, warnings: data.warnings.length });
+  return data;
+}
 
 export const apiOrigin = (): string => {
   const base = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '';
@@ -149,11 +176,6 @@ export interface LedgerUnit {
 
 export async function getLineage(key: string, q = '', status = '', limit = 200) {
   const { data } = await api.get<{ total: number; by_status: Record<string, number>; items: LedgerUnit[] }>(`/realgen/scenes/${key}/lineage`, { params: { q, status, limit } });
-  return data;
-}
-
-export async function listActivity(key?: string) {
-  const { data } = await api.get<ActivityEvent[]>('/realgen/activity', { params: key ? { key } : {} });
   return data;
 }
 

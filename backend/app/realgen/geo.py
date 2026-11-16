@@ -1,11 +1,10 @@
 import hashlib
 import json
-import math
 from dataclasses import dataclass
-from typing import Any, Iterable, List, Sequence, Tuple
+from typing import Any, List, Tuple
 
 from pyproj import Transformer
-from shapely.geometry import Polygon, shape, mapping
+from shapely.geometry import Polygon, shape
 from shapely.ops import transform
 
 MAX_AREA_M2 = 500_000.0

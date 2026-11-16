@@ -153,7 +153,7 @@ const PAGES: [RegExp, string][] = [
   [/\/dashboard$/, 'the dashboard'], [/\/map$/, 'the survey atlas'], [/\/area$/, 'New survey (select area)'],
   [/\/upload$/, 'Data ingestion'], [/\/generate$/, 'the generation progress page'], [/\/(projects|scenes)$/, 'Surveyed areas'],
   [/\/editor$/, 'the 3D editor hub'], [/\/registry$/, 'the 3D ULPIN registry'], [/\/violations$/, 'Findings'],
-  [/\/audit$/, 'the activity log'], [/\/excavation$/, 'Dig-safe planning'], [/^\/citizen\/dashboard/, 'My property in 3D'],
+  [/\/excavation$/, 'Dig-safe planning'], [/^\/citizen\/dashboard/, 'My property in 3D'],
   [/^\/privacy/, 'the privacy policy'], [/^\/terms/, 'the terms of service'],
 ];
 export const pageLabel = (path: string) => PAGES.find(([re]) => re.test(path))?.[1] ?? path;

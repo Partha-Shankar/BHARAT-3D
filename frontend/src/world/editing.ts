@@ -61,3 +61,74 @@ export function footprintSize(fp: XY[]): [number, number] {
 export function rectAround([x, y]: XY, length = 16, width = 12): XY[] {
   return [[x - length / 2, y - width / 2], [x + length / 2, y - width / 2], [x + length / 2, y + width / 2], [x - length / 2, y + width / 2]];
 }
+
+const round2 = (v: number) => Math.round(v * 100) / 100;
+
+/** A `length` × `width` rectangle centred on a point, its long side at `angle` radians from east. */
+export function rectAt([x, y]: XY, length: number, width: number, angle = 0): XY[] {
+  const c = Math.cos(angle), s = Math.sin(angle);
+  return ([[-length / 2, -width / 2], [length / 2, -width / 2], [length / 2, width / 2], [-length / 2, width / 2]] as XY[])
+    .map(([u, w]) => [round2(x + u * c - w * s), round2(y + u * s + w * c)]);
+}
+
+/** Direction (radians from east) of the road segment nearest to a point within `maxDist` metres, or null. */
+export function nearestRoadAngle(roads: { path: XY[]; kind?: string }[], [x, y]: XY, maxDist = 60): number | null {
+  let best = maxDist;
+  let angle: number | null = null;
+  for (const r of roads) {
+    if (r.kind === 'footway') continue;
+    for (let i = 1; i < r.path.length; i++) {
+      const [ax, ay] = r.path[i - 1];
+      const [bx, by] = r.path[i];
+      const dx = bx - ax, dy = by - ay;
+      const t = Math.max(0, Math.min(1, ((x - ax) * dx + (y - ay) * dy) / (dx * dx + dy * dy || 1)));
+      const d = Math.hypot(ax + dx * t - x, ay + dy * t - y);
+      if (d < best) {
+        best = d;
+        angle = Math.atan2(dy, dx);
+      }
+    }
+  }
+  return angle;
+}
+
+/** Degrees to turn a footprint so its walls run parallel to a street at `roadAngle` (the smallest turn, ±45°). */
+export function alignRotation(fp: XY[], roadAngle: number): number {
+  let deg = ((roadAngle - mainAxis(fp)) * 180) / Math.PI;
+  deg = ((deg % 90) + 90) % 90; // walls are square, so any multiple of 90° lines up
+  if (deg > 45) deg -= 90;
+  return Math.round(deg * 10) / 10;
+}
+
+export const pathLength = (path: XY[]): number =>
+  path.reduce((a, p, i) => (i ? a + Math.hypot(p[0] - path[i - 1][0], p[1] - path[i - 1][1]) : 0), 0);
+
+/** Points every `spacing` metres along a polyline, starting at its first point (for rows of trees). */
+export function pointsAlong(path: XY[], spacing: number): XY[] {
+  const out: XY[] = [];
+  if (!path.length || spacing <= 0) return out;
+  let carry = 0;
+  out.push([round2(path[0][0]), round2(path[0][1])]);
+  for (let i = 1; i < path.length; i++) {
+    const [ax, ay] = path[i - 1];
+    const [bx, by] = path[i];
+    const len = Math.hypot(bx - ax, by - ay);
+    let d = spacing - carry;
+    while (d <= len) {
+      out.push([round2(ax + ((bx - ax) * d) / len), round2(ay + ((by - ay) * d) / len)]);
+      d += spacing;
+    }
+    carry = len - (d - spacing);
+  }
+  return out;
+}
+
+/** Even-odd point-in-polygon test for a ring of scene-local points. */
+export function pointInRing([x, y]: XY, ring: XY[]): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}

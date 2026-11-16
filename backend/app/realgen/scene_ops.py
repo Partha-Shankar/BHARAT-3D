@@ -10,7 +10,7 @@ import math
 import time
 from typing import Any, Dict, List, Optional, Tuple
 
-from shapely.geometry import LineString, Polygon, box
+from shapely.geometry import LineString, Point, Polygon, box
 
 from app.realgen import cache, floorplan, norms, synth, terrain
 from app.realgen.fuse import FLOOR_HEIGHT_M
@@ -19,7 +19,11 @@ from app.realgen.geo import ring_coords, stable_int
 PLAN_VERSION = 5  # bump when floor-plan / identity rules change; stored scenes re-derive on load
 
 EDITABLE_BUILDING = {"name", "usage", "floors", "floor_height", "min_height", "height", "footprint",
-                     "sanctioned_floors", "unit_overrides", "building_type", "tenure", "verified", "certified"}
+                     "sanctioned_floors", "unit_overrides", "building_type", "tenure", "verified", "certified",
+                     "basement_levels"}
+MAX_TREES_PER_EDIT = 500
+TREE_REMOVE_RADIUS_M = 6.0  # a click removes the trees within this distance
+FOOTPATH_WIDTH_M = (1.0, 8.0)  # allowed width of a footpath a surveyor draws
 EDITABLE_ASSET = {"name", "path", "footprint", "depth_m", "radius_m", "buffer_m", "operator", "kind"}
 EDITABLE_ROAD = {"name", "path", "width_m", "elevation_m", "is_bridge", "kind"}
 
@@ -323,22 +327,37 @@ def _uds_check(registry: List[Dict[str, Any]]) -> Dict[str, Any]:
     return {"checked": len(sums), "failures": [u for u, v in sums.items() if v != 1_000_000]}
 
 
+def _polygon_parts(g: Any) -> List[Polygon]:
+    return [g] if g.geom_type == "Polygon" else [x for x in getattr(g, "geoms", []) if x.geom_type == "Polygon"]
+
+
+def _rings(part: Polygon) -> List[List[List[float]]]:
+    return ([[[round(x, 2), round(y, 2)] for x, y in part.exterior.coords]]
+            + [[[round(x, 2), round(y, 2)] for x, y in hole.coords] for hole in part.interiors])
+
+
 def footpaths(scene: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """Footpath surfaces for the 3D view: the same bands the encroachment check measures against."""
+    """Footpath surfaces for the 3D view: the bands the encroachment check measures against, without the ones a
+    surveyor removed (by location, since these ids are renumbered when roads change), plus the ones a surveyor drew."""
     clip = box(*scene["extent"]) if scene.get("extent") else None
+    removed = [Point(p) for p in scene.get("footpaths_removed", [])]
     out: List[Dict[str, Any]] = []
     for road, band, how in synth.footpath_bands(scene["roads"]):
         g = (band.intersection(clip) if clip is not None else band).simplify(0.15, preserve_topology=True)
-        parts = [g] if g.geom_type == "Polygon" else [x for x in getattr(g, "geoms", []) if x.geom_type == "Polygon"]
-        for part in parts:
-            if part.area < 2:
+        for part in _polygon_parts(g):
+            if part.area < 2 or any(part.buffer(0.5).contains(p) for p in removed):
                 continue
             out.append({
                 "id": f"FP-{len(out) + 1:04d}", "road_id": road["id"], "road_name": road.get("name") or "",
-                "source": how, "area_m2": round(part.area, 1),
-                "rings": [[[round(x, 2), round(y, 2)] for x, y in part.exterior.coords]]
-                + [[[round(x, 2), round(y, 2)] for x, y in hole.coords] for hole in part.interiors],
+                "source": how, "area_m2": round(part.area, 1), "rings": _rings(part),
             })
+    for fp in scene.get("footpaths_added", []):
+        band = LineString(fp["path"]).buffer(fp["width_m"] / 2, cap_style=2, join_style=2)
+        g = band.intersection(clip) if clip is not None else band
+        for part in _polygon_parts(g):
+            if part.area >= 0.5:
+                out.append({"id": fp["id"], "road_id": None, "road_name": fp.get("name") or "", "source": "surveyor",
+                            "area_m2": round(part.area, 1), "rings": _rings(part)})
     return out
 
 
@@ -408,6 +427,8 @@ def apply_op(scene: Dict[str, Any], op: Dict[str, Any]) -> Optional[str]:
         elif {"floors", "floor_height", "min_height"} & set(s) and "height" not in s:
             b["height"] = round(b["min_height"] + int(b["floors"]) * fh + 0.6, 2)
         b["floors"] = int(b["floors"])
+        if "basement_levels" in s:
+            b["basement_levels"] = max(0, min(6, int(s["basement_levels"] or 0)))
         if "sanctioned_floors" in s:
             b["sanctioned_floors"] = int(s["sanctioned_floors"])
             b["sanctioned_height"] = round(b["min_height"] + b["sanctioned_floors"] * fh + 0.6, 2)
@@ -495,7 +516,62 @@ def apply_op(scene: Dict[str, Any], op: Dict[str, Any]) -> Optional[str]:
         before = len(scene[coll_key])
         scene[coll_key] = [x for x in scene[coll_key] if x["id"] != op.get("id")]
         return None if len(scene[coll_key]) < before else f"{op.get('id')} not found"
+    if kind in ("tree.add", "tree.remove", "footpath.add", "footpath.remove", "footpath.delete"):
+        return _apply_green_op(scene, kind, op)
     return f"unknown op {kind}"
+
+
+def _point(v: Any) -> Optional[Tuple[float, float]]:
+    """A finite (x, y) pair from an edit, or None."""
+    try:
+        x, y = float(v[0]), float(v[1])
+    except (TypeError, ValueError, IndexError):
+        return None
+    return (x, y) if math.isfinite(x) and math.isfinite(y) else None
+
+
+def _apply_green_op(scene: Dict[str, Any], kind: str, op: Dict[str, Any]) -> Optional[str]:
+    """Trees and footpaths. Trees a surveyor plants join `trees`; removing trees also records the spot, so trees the
+    viewer detects in the satellite image disappear there too. Footpaths: drawn ones live in `footpaths_added`;
+    derived ones are hidden by location in `footpaths_removed` (see `footpaths`)."""
+    if kind == "tree.add":
+        pts = [p for p in (_point(v) for v in (op.get("points") or [])[:MAX_TREES_PER_EDIT]) if p]
+        if not pts:
+            return "planting trees needs at least one point"
+        scene.setdefault("trees", []).extend({"x": round(x, 2), "y": round(y, 2), "source": "edited"} for x, y in pts)
+        return None
+    if kind == "tree.remove":
+        at = _point(op.get("at"))
+        if at is None:
+            return "removing trees needs a point"
+        r = min(max(float(op.get("radius_m") or TREE_REMOVE_RADIUS_M), 1.0), 50.0)
+        scene["trees"] = [t for t in scene.get("trees", []) if math.hypot(t["x"] - at[0], t["y"] - at[1]) > r]
+        scene.setdefault("trees_removed", []).append({"x": round(at[0], 2), "y": round(at[1], 2), "r": r})
+        return None
+    if kind == "footpath.add":
+        src = op.get("footpath") or {}
+        path = [p for p in (_point(v) for v in (src.get("path") or [])) if p]
+        if len(path) < 2 or LineString(path).length < 1:
+            return "a footpath needs at least two points"
+        width = min(max(float(src.get("width_m") or 2.0), FOOTPATH_WIDTH_M[0]), FOOTPATH_WIDTH_M[1])
+        added = scene.setdefault("footpaths_added", [])
+        fid = _next_id(added, "FPE-")
+        added.append({"id": fid, "path": [[round(x, 2), round(y, 2)] for x, y in path], "width_m": width,
+                      "name": src.get("name") or ""})
+        op.setdefault("result_id", fid)
+        return None
+    if kind == "footpath.delete":
+        added = scene.get("footpaths_added", [])
+        keep = [f for f in added if f["id"] != op.get("id")]
+        if len(keep) == len(added):
+            return f"footpath {op.get('id')} not found"
+        scene["footpaths_added"] = keep
+        return None
+    at = _point(op.get("at"))  # footpath.remove: hide the derived footpath at this spot
+    if at is None:
+        return "removing a footpath needs a point"
+    scene.setdefault("footpaths_removed", []).append([round(at[0], 2), round(at[1], 2)])
+    return None
 
 
 def rebuild(key: str) -> Dict[str, Any]:

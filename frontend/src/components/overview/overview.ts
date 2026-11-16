@@ -11,7 +11,10 @@ import { trackAction } from '../../lib/track';
 export const OVERVIEW_ID = 'EFDw-kX0smo';
 export const OVERVIEW_WATCH_URL = `https://youtu.be/${OVERVIEW_ID}`;
 export const OVERVIEW_POSTER = '/media/bharat3d-overview-poster.webp';
-export const OVERVIEW_THUMB = '/media/bharat3d-overview-thumb.webp';
+/** 16:6 band of the poster (logo and tagline) for the workspace sidebar. */
+export const OVERVIEW_SIDEBAR_THUMB = '/media/bharat3d-overview-sidebar.webp';
+/** Length of the overview, shown on its thumbnails. */
+export const OVERVIEW_DURATION = '1:00';
 export const OVERVIEW_PLAY_EVENT = 'b3:overview-play'; // "play with sound" request from elsewhere on the landing page
 const YT = 'https://www.youtube-nocookie.com';
 

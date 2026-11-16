@@ -1,0 +1,10 @@
+# Lint rules for the backend. Run from this folder: ruff check .
+# GitHub Actions runs the same check on every push (.github/workflows/ci.yml).
+target-version = "py311"  # the version the API runs on (render.yaml)
+line-length = 130
+extend-exclude = [".venv", "venv"]
+
+[lint]
+# Errors that break code or hide bugs: syntax and statement errors (E4, E7, E9), pyflakes (F: unused or undefined
+# names, shadowing), and bugbear checks for mutable defaults and swallowed loop variables.
+select = ["E4", "E7", "E9", "F", "B006", "B023"]

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { trackPage } from './lib/track';
+import { SESSION_ENDED_EVENT } from './lib/api';
+import { useAuthStore } from './stores/authStore';
 import ProtectedRoute from './components/ProtectedRoute';
 import ServerStatusBanner from './components/ServerStatusBanner';
 import OverviewModal from './components/overview/OverviewModal';
@@ -29,7 +31,6 @@ import { MapPage } from './pages/surveyor/MapPage';
 import { EditorPage } from './pages/surveyor/EditorPage';
 import { RegistryPage } from './pages/surveyor/RegistryPage';
 import { ViolationsPage } from './pages/shared/ViolationsPage';
-import { AuditPage } from './pages/shared/AuditPage';
 import { DigSafePage } from './pages/utility/DigSafePage';
 import { CitizenPortal } from './pages/citizen/CitizenPortal';
 
@@ -39,6 +40,13 @@ const ToRoleAtlas: React.FC = () => <Navigate to={`${useRoleBase()}/map`} replac
 export const App: React.FC = () => {
   const location = useLocation();
   React.useEffect(() => { trackPage(location.pathname); }, [location.pathname]);
+  // The server rejected the current session (it expired): forget it; the route guard then opens the sign-in page and
+  // remembers where the visitor was, so they come straight back after signing in.
+  React.useEffect(() => {
+    const ended = () => useAuthStore.getState().endSession('expired');
+    window.addEventListener(SESSION_ENDED_EVENT, ended);
+    return () => window.removeEventListener(SESSION_ENDED_EVENT, ended);
+  }, []);
   return (
     <>
     <ServerStatusBanner />
@@ -72,10 +80,11 @@ export const App: React.FC = () => {
           <Route path="editor" element={<EditorPage />} />
           <Route path="registry" element={<RegistryPage />} />
           <Route path="violations" element={<ViolationsPage />} />
-          <Route path="audit" element={<AuditPage />} />
+          <Route path="audit" element={<Navigate to="/surveyor/dashboard" replace />} />
           <Route path="processing" element={<Navigate to="/surveyor/upload" replace />} />
           <Route path="3d-viewer" element={<Navigate to="/surveyor/map" replace />} />
           <Route path="3d-space/*" element={<Navigate to="/surveyor/map" replace />} />
+          <Route path="*" element={<Navigate to="/surveyor/dashboard" replace />} />
         </Route>
 
         {/* Municipality */}
@@ -88,7 +97,6 @@ export const App: React.FC = () => {
           <Route path="registry" element={<RegistryPage />} />
           <Route path="properties" element={<RegistryPage />} />
           <Route path="projects" element={<ScenesPage />} />
-          <Route path="audit" element={<AuditPage />} />
           <Route path="*" element={<Navigate to="/municipality/dashboard" replace />} />
         </Route>
 

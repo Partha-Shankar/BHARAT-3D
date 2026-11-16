@@ -3,8 +3,10 @@ import json
 import sqlite3
 import bcrypt
 
-DB_PATH = "d:/Bharat 3d/backend/bharat3d.db"
-DATA_DIR = "d:/Bharat 3d/data/demo/areas/area_01"
+# Paths relative to this repository, so the script works on any machine.
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(REPO_ROOT, "backend", "bharat3d.db")
+DATA_DIR = os.path.join(REPO_ROOT, "data", "demo", "areas", "area_01")
 
 def create_tables(conn):
     c = conn.cursor()

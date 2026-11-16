@@ -101,8 +101,9 @@ export const fmtBytes = (b: number) =>
   b >= 1024 ** 3 ? `${(b / 1024 ** 3).toFixed(2)} GB` : b >= 1024 ** 2 ? `${(b / 1024 ** 2).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1024))} KB`;
 
 /**
- * Simulated transfer: progress follows an eased curve whose duration grows with file size, then a short validation
- * pass. Returns a cancel function.
+ * Transfer progress: an eased curve whose duration grows with file size, then the validation pass. For the visitor's
+ * own file, `validate` is the server's real inspection of it (its result becomes the card's checks); sample files get
+ * the sample package's description. Returns a cancel function.
  */
 export function simulateUpload(
   slot: DatasetSlot,
@@ -110,14 +111,16 @@ export function simulateUpload(
   file: { name: string; size: number; sample: boolean },
   update: (s: Partial<SlotState>) => void,
   delayMs = 0,
+  validate?: () => Promise<Partial<SlotState>>,
 ): () => void {
   let raf = 0;
   let t1 = 0;
   let t0 = 0;
+  let cancelled = false;
   const mb = file.size / 1024 / 1024;
   const duration = Math.min(5200, 1100 + Math.sqrt(mb) * 260);
   const start = window.setTimeout(() => {
-    update({ status: 'uploading', progress: 0, file, checks: [], error: undefined });
+    update({ status: 'uploading', progress: 0, file, checks: [], error: undefined, inspection: undefined });
     const begin = performance.now();
     const tick = (t: number) => {
       const k = Math.min((t - begin) / duration, 1);
@@ -127,17 +130,31 @@ export function simulateUpload(
       if (k < 1) raf = requestAnimationFrame(tick);
       else {
         update({ status: 'validating', progress: 100 });
-        t1 = window.setTimeout(() => update({ status: 'ready', checks: slot.checks(draft, file.sample) }), 900 + Math.random() * 500);
+        if (validate) {
+          const shown = new Promise((r) => { t1 = window.setTimeout(r, 700); }); // long enough to read "Validating…"
+          Promise.all([validate(), shown]).then(([result]) => { if (!cancelled) update({ status: 'ready', ...result }); });
+        } else {
+          t1 = window.setTimeout(() => update({ status: 'ready', checks: slot.checks(draft, file.sample) }), 900 + Math.random() * 500);
+        }
       }
     };
     raf = requestAnimationFrame(tick);
   }, delayMs);
   t0 = start;
   return () => {
+    cancelled = true;
     window.clearTimeout(t0);
     window.clearTimeout(t1);
     cancelAnimationFrame(raf);
   };
+}
+
+/** The survey area's bounding box [west, south, east, north], to compare a file's extent with it. */
+export function draftBbox(d: SurveyDraft): [number, number, number, number] {
+  const ring = d.polygon.coordinates[0];
+  const xs = ring.map((p) => p[0]);
+  const ys = ring.map((p) => p[1]);
+  return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)];
 }
 
 export function manifest(d: SurveyDraft): DatasetManifest[] {

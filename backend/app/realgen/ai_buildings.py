@@ -13,7 +13,7 @@ the 3D ULPIN norms no ULPIN is minted from AI output until a surveyor verifies t
 import logging
 import os
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
 
 import numpy as np
 from shapely.geometry import Polygon

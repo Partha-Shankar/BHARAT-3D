@@ -231,17 +231,25 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
       const addedAsset = ops.find((o) => o.op === 'asset.add') && next.subsurface[next.subsurface.length - 1];
       if (addedAsset) setSel({ kind: 'subsurface', id: addedAsset.id });
     } catch (e: any) {
-      setError(e?.response?.data?.detail || 'Edit failed');
+      const detail = e?.response?.data?.detail;
+      setError(typeof detail === 'string' && detail ? detail : 'The edit could not be saved. Please try again.');
     } finally {
       setEditBusy(false);
     }
   };
-  const runUndo = async () => { setEditBusy(true); try { setScene(await undoEdit(key)); } finally { setEditBusy(false); } };
-  const runReset = async () => {
-    if (!window.confirm('Discard every edit made to this area?')) return;
+  // Undo and reset (the editor panel asks for a second click before a reset).
+  const runHistory = async (action: () => Promise<SceneSpec>, failure: string) => {
     setEditBusy(true);
-    try { setScene(await resetEdits(key)); } finally { setEditBusy(false); }
+    try {
+      setScene(await action());
+    } catch (e: any) {
+      setError(typeof e?.response?.data?.detail === 'string' ? e.response.data.detail : failure);
+    } finally {
+      setEditBusy(false);
+    }
   };
+  const runUndo = () => runHistory(() => undoEdit(key), 'The last edit could not be undone. Please try again.');
+  const runReset = () => runHistory(() => resetEdits(key), 'The edits could not be reset. Please try again.');
   useEffect(() => {
     if (editor && mode === 'surface' && sel?.kind === 'subsurface') changeMode('xray');
   }, [sel, editor]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -447,7 +455,7 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
 
       {/* right panel */}
       {showRight && scene && (
-        <div key={editor ? 'editor' : `${sel?.kind}-${sel?.id}-${digOn}`} className="absolute right-3 top-24 bottom-16 z-20 w-[380px] b3-panel flex flex-col overflow-hidden b3-slide-r">
+        <div key={editor ? 'editor' : `${sel?.kind}-${sel?.id}-${digOn}`} className="absolute right-3 top-24 z-20 w-[min(380px,calc(100vw-1.5rem))] max-h-[calc(100%-10rem)] b3-panel flex flex-col overflow-hidden b3-slide-r">
           {editor && (
             <div className="p-2 border-b border-[#e4dccf]">
               <Segmented value={rightTab} onChange={(v) => setRightTab(v as "edit" | "inspect")} className="w-full [&>button]:flex-1" options={[
@@ -456,11 +464,12 @@ export const WorldPage: React.FC<{ editor?: boolean }> = ({ editor = false }) =>
               ]} />
             </div>
           )}
-          <div className="overflow-y-auto flex-1 b3-scroll">
+          <div className="overflow-y-auto flex-1 min-h-0 b3-scroll">
             {editor && rightTab === 'edit' ? (
               <div className="p-4">
-                <EditorPanel scene={scene} viewer={viewer.current} sel={sel} floor={floor} busy={editBusy}
-                  onOps={runOps} onUndo={runUndo} onReset={runReset} onClearSel={() => setSel(null)} />
+                <EditorPanel scene={scene} viewer={viewer.current} sel={sel} floor={floor} detail={detail} busy={editBusy}
+                  onOps={runOps} onUndo={runUndo} onReset={runReset} onClearSel={() => setSel(null)}
+                  onFloor={(f) => { setFloor(f); setUnit(null); }} />
               </div>
             ) : digOn ? (
               <div className="p-4 space-y-3">

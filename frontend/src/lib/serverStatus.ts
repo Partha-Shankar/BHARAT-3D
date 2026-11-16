@@ -222,17 +222,34 @@ function applyProbe(r: Probe): boolean {
 
 let current: Promise<boolean> | null = null;
 
+const offline = () => typeof navigator !== 'undefined' && navigator.onLine === false;
+
+/** Resolves when this device is back online (or after `ms`, to look again). */
+function onlineAgain(ms = 30_000): Promise<void> {
+  return new Promise((resolve) => {
+    const done = () => { window.removeEventListener('online', done); window.clearTimeout(t); resolve(); };
+    const t = window.setTimeout(done, ms);
+    window.addEventListener('online', done);
+  });
+}
+
 /**
  * Resolves true once the server answers, or false after MAX_WAIT_MS (or at once when a limit was reached). Every
  * caller shares one check, so a burst of slow calls makes one wake-up and one banner. `startedAt` is when the first
- * affected call began, which makes the countdown honest.
+ * affected call began, which makes the countdown honest. While the device itself is offline the wait pauses: a
+ * missing connection is not a sleeping server.
  */
 export function ensureAwake(startedAt?: number): Promise<boolean> {
   if (current) return current;
   current = (async () => {
-    const t0 = Date.now();
+    let t0 = Date.now();
     let shown = false;
     while (Date.now() - t0 < MAX_WAIT_MS) {
+      if (offline()) {
+        await onlineAgain();
+        t0 = Date.now();
+        continue;
+      }
       const r = await probe();
       if (applyProbe(r)) return true;
       if (r.busy || r.suspended) return false;

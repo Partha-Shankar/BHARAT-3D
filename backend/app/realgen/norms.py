@@ -370,7 +370,6 @@ def integrity(scene: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str, List[str
 
     # Axiom 3: INF envelopes vs building volumes (basements below, decks above)
     bad3 = []
-    by_id = {b["id"]: (b, g) for b, g in zip(blds, geoms)}
     for a in scene["subsurface"]:
         if a["kind"] not in TUNNEL_KINDS and a["kind"] not in UTL_TYPE or "path" not in a:
             continue

@@ -3,9 +3,10 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import {
   ArrowRight, CheckCircle2, FolderUp, Loader2, MapPinned, PackageCheck, Plus, RefreshCw, ShieldCheck, Sparkles, Trash2, Upload, AlertTriangle,
 } from 'lucide-react';
-import { startGeneration } from '../../world/api';
+import { inspectFile, startGeneration } from '../../world/api';
+import type { FileInspection } from '../../world/sceneSpec';
 import { useSurveyDraft, readyCount, type SlotState } from '../../survey/draft';
-import { DATASET_SLOTS, acceptsFile, fmtBytes, manifest, sampleFile, simulateUpload, type DatasetSlot } from '../../survey/datasets';
+import { DATASET_SLOTS, acceptsFile, draftBbox, fmtBytes, manifest, sampleFile, simulateUpload, type DatasetSlot } from '../../survey/datasets';
 import { SurveySteps } from '../../survey/Steps';
 import { PolygonPreview } from '../../survey/PolygonPreview';
 import { EmptyState, Page, ProgressRing, Tick } from '../../survey/ui';
@@ -13,7 +14,14 @@ import { CountUp } from '../../world/ui';
 import { trackAction, track } from '../../lib/track';
 import { CoachMark } from '../../components/coach/CoachMark';
 
-const IDLE: SlotState = { status: 'idle', progress: 0, checks: [] };
+const IDLE: SlotState = { status: 'idle', progress: 0, checks: [], inspection: undefined };
+
+/** When the server cannot answer (offline, or a limit), the file is still attached and listed, just not checked. */
+const unchecked = (f: File): FileInspection => ({
+  name: f.name, format: f.name.split('.').pop()?.toUpperCase() ?? 'FILE', kind: 'unknown', recognised: false,
+  facts: [`Received ${fmtBytes(f.size)}`], extent_lonlat: null, epsg: null, reader: null, steps: [], sampled_bytes: 0, size_bytes: f.size,
+  warnings: ['The file could not be checked just now; it is still listed in the survey record.'],
+});
 
 const SlotCard: React.FC<{
   slot: DatasetSlot; state: SlotState; onFile: (f: File) => void; onSample: () => void; onRemove: () => void; index: number;
@@ -40,6 +48,8 @@ const SlotCard: React.FC<{
   }, [state.progress, state.status, state.file]);
 
   const ready = state.status === 'ready';
+  const inspection = state.inspection;
+  const warnings = inspection?.warnings ?? [];
   return (
     <div className={`b3-card p-4 flex flex-col gap-3 b3-rise ${ready ? '!border-[#1f7a72]/35' : ''}`} style={{ animationDelay: `${0.08 + index * 0.05}s` }}>
       <div className="flex items-start gap-3">
@@ -49,7 +59,9 @@ const SlotCard: React.FC<{
         <div className="min-w-0 flex-1">
           <div className="flex items-center justify-between gap-2">
             <h3 className="font-semibold text-[13.5px] text-[#1b3344] truncate">{slot.title}</h3>
-            {ready && <span className="b3-chip b3-chip-real b3-pop">Validated</span>}
+            {ready && (inspection
+              ? <span className={`b3-chip b3-pop ${warnings.length ? 'b3-chip-est' : 'b3-chip-real'}`}>{warnings.length ? 'Checked · see notes' : 'Checked'}</span>
+              : <span className="b3-chip b3-chip-real b3-pop">Validated</span>)}
           </div>
           <p className="text-[11.5px] text-[#5c6e7c] leading-snug">{slot.feeds}</p>
         </div>
@@ -93,7 +105,8 @@ const SlotCard: React.FC<{
           )}
           {state.status === 'validating' && (
             <div className="text-[11.5px] text-[#1e4d6b] flex items-center gap-2 b3-breathe">
-              <Loader2 className="w-3.5 h-3.5 animate-spin" /> Validating coordinate system, schema and coverage…
+              <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              {state.file?.sample ? 'Validating coordinate system, schema and coverage…' : 'Reading the file header and checking it…'}
             </div>
           )}
           {ready && (
@@ -103,7 +116,20 @@ const SlotCard: React.FC<{
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#1f7a72] mt-[1px] shrink-0" /> <span>{c}</span>
                 </li>
               ))}
+              {warnings.map((w) => (
+                <li key={w} className="text-[11.5px] text-[#8a5a12] flex items-start gap-1.5">
+                  <AlertTriangle className="w-3.5 h-3.5 mt-[1px] shrink-0" /> <span>{w}</span>
+                </li>
+              ))}
             </ul>
+          )}
+          {ready && inspection && inspection.steps.length > 0 && (
+            <details className="text-[11px] text-[#5c6e7c]">
+              <summary className="cursor-pointer select-none hover:text-[#1b3344]">Survey processing steps for {inspection.format} ({inspection.steps.length})</summary>
+              <ol className="mt-1 pl-4 list-decimal space-y-0.5">
+                {inspection.steps.map((s) => <li key={s}>{s}</li>)}
+              </ol>
+            </details>
           )}
           {ready && (
             <div className="flex gap-1.5 pt-1">
@@ -155,16 +181,21 @@ export const DataUploadPage: React.FC = () => {
   const busy = DATASET_SLOTS.some((s) => ['uploading', 'validating'].includes(draft.slots[s.id]?.status ?? ''));
   const bytes = DATASET_SLOTS.reduce((a, s) => a + (draft.slots[s.id]?.status === 'ready' ? draft.slots[s.id]?.file?.size ?? 0 : 0), 0);
 
-  const run = (slot: DatasetSlot, file: { name: string; size: number; sample: boolean }, delay = 0) => {
+  const run = (slot: DatasetSlot, file: { name: string; size: number; sample: boolean }, delay = 0,
+    validate?: () => Promise<Partial<SlotState>>) => {
     cancels.current[slot.id]?.();
-    cancels.current[slot.id] = simulateUpload(slot, draft, file, (s) => setSlot(slot.id, s), delay);
+    cancels.current[slot.id] = simulateUpload(slot, draft, file, (s) => setSlot(slot.id, s), delay, validate);
   };
   const onFile = (slot: DatasetSlot, f: File) => {
     if (!acceptsFile(slot, f.name)) {
       setSlot(slot.id, { ...IDLE, status: 'error', error: `${f.name.split('.').pop()?.toUpperCase()} is not a ${slot.title.toLowerCase()} format` });
       return;
     }
-    run(slot, { name: f.name, size: f.size, sample: false });
+    // The server reads the file's header while the transfer bar runs; its findings become this card's checks. The
+    // promise never rejects: without an answer the file is still attached and listed, marked as not checked.
+    const checked = inspectFile(f, slot.id, draftBbox(draft)).catch(() => unchecked(f));
+    run(slot, { name: f.name, size: f.size, sample: false }, 0,
+      () => checked.then((inspection) => ({ checks: inspection.facts, inspection })));
     trackAction('dataset_uploaded', `uploaded ${slot.title.toLowerCase()} "${f.name}" (${fmtBytes(f.size)}) for ${draft.place || 'the selected area'}`, { slot: slot.id, size: f.size });
   };
   const attachAll = () => {
@@ -266,7 +297,7 @@ export const DataUploadPage: React.FC = () => {
             </div>
             <div className="text-[11px] text-[#7d8c97] leading-relaxed border-t border-[#e4dccf] pt-3 flex gap-2">
               <ShieldCheck className="w-4 h-4 text-[#1f7a72] shrink-0" />
-              <span>Prototype ingestion: files are checked in this browser and listed in the survey record. The 3D model itself is reconstructed from open geodata for this polygon.</span>
+              <span>Your own files are read and checked on the server (format, header, extent) and listed in the survey record. The 3D model is built from the open map data, imagery and terrain BHARAT 3D uses for every area.</span>
             </div>
           </div>
         </aside>

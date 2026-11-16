@@ -160,7 +160,7 @@ export const GenerationPage: React.FC = () => {
   if (job) shown.current = Math.max(shown.current, pct); // never moves backwards
   const bar = Math.max(shown.current, 2);
 
-  // when each stage started, from the server's activity log
+  // when each stage started, from the job's live log
   const log = job?.log ?? [];
   const startedAt = useMemo(() => {
     const out: (number | null)[] = stages.map(() => null);
@@ -193,7 +193,7 @@ export const GenerationPage: React.FC = () => {
   const kind = job?.error_kind ?? (failed ? 'internal' : null);
 
   return (
-    <div className="flex-1 min-h-screen bg-[#f3efe6] b3-app flex flex-col items-center justify-center p-6 gap-5">
+    <div className="flex-1 min-h-full md:min-h-screen bg-[#f3efe6] b3-app flex flex-col items-center justify-center p-4 sm:p-6 gap-5">
       <SurveySteps current={job?.status === 'COMPLETE' ? 4 : 3} className="b3-rise" />
       <div className="w-full max-w-3xl b3-card p-8 space-y-6 b3-rise b3-d1">
         <div className="flex items-start justify-between gap-6">

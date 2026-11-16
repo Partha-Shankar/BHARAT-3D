@@ -189,7 +189,7 @@ export const MapPage: React.FC = () => {
   };
 
   return (
-    <div className="flex-1 min-h-0 h-screen relative b3-app">
+    <div className="flex-1 min-h-0 h-full md:h-screen relative b3-app">
       <div ref={host} className="absolute inset-0" />
 
       {/* left: atlas panel */}

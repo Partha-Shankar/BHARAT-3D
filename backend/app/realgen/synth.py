@@ -5,10 +5,10 @@ Geometry here is computed from the real OSM footprints and roads. Values that op
 polygon seed and carry source="synthetic".
 """
 import math
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
 
 import shapely
-from shapely.geometry import LineString, MultiPoint, Polygon, box
+from shapely.geometry import LineString, MultiPoint, Polygon
 from shapely.ops import unary_union
 
 from app.realgen.fuse import FLOOR_HEIGHT_M, parse_int, parse_metres

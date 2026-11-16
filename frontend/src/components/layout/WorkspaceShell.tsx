@@ -1,8 +1,9 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import type { LucideIcon } from 'lucide-react';
-import { LogOut, User } from 'lucide-react';
+import { LogOut, Menu, User, X } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
+import { ROLE_LABEL } from '../../lib/roles';
 import { WorkspacePageTransition } from './PageTransition';
 import { BrandLogo } from './BrandLogo';
 import { SidebarOverviewCard } from '../overview/SidebarOverviewCard';
@@ -25,6 +26,11 @@ type WorkspaceShellProps = {
   defaultRoleLabel: string;
 };
 
+/**
+ * The signed-in workspace: sidebar navigation (groups, a gliding active indicator, the overview video, the user and
+ * Sign out) beside the page. On screens narrower than 768 px the sidebar becomes a menu that slides in from the left,
+ * opened from a slim top bar, so the page keeps the full width of the phone.
+ */
 export function WorkspaceShell({
   portalSubtitle,
   sectionLabel,
@@ -37,12 +43,15 @@ export function WorkspaceShell({
   const location = useLocation();
   const navRef = useRef<HTMLElement>(null);
   const mainRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const [pill, setPill] = useState<{ top: number; height: number } | null>(null);
   const [barKey, setBarKey] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/login', { replace: true });
   };
 
   const isActive = (item: WorkspaceNavItem) =>
@@ -56,7 +65,21 @@ export function WorkspaceShell({
     mainRef.current?.scrollTo({ top: 0 });
   }, [location.pathname]);
 
-  const displayRole = user?.role || defaultRoleLabel;
+  // the phone menu closes when a page is chosen, and on Escape; focus moves into it and back out again
+  useEffect(() => { setMenuOpen(false); }, [location.pathname]);
+  useEffect(() => {
+    if (!menuOpen) return;
+    closeButtonRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMenuOpen(false); };
+    window.addEventListener('keydown', onKey);
+    const menuButton = menuButtonRef.current;
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      menuButton?.focus({ preventScroll: true });
+    };
+  }, [menuOpen]);
+
+  const displayRole = ROLE_LABEL[String(user?.role)] ?? (user?.role || defaultRoleLabel);
   const groups: { name: string; items: WorkspaceNavItem[] }[] = [];
   navItems.forEach((it) => {
     const g = it.group ?? sectionLabel;
@@ -68,14 +91,34 @@ export function WorkspaceShell({
   return (
     <div className="workspace-shell flex h-screen overflow-hidden">
       <span key={barKey} className="b3-route-bar is-run w-full" />
-      <aside className="w-64 bg-[#1e4d6b] text-[#d5e3ea] flex flex-col justify-between border-r border-[#173e56] z-20 shrink-0">
-        <div className="min-h-0 overflow-y-auto">
+
+      {menuOpen && (
+        <div className="fixed inset-0 z-30 bg-[#06101F]/55 md:hidden b3-fade" onClick={() => setMenuOpen(false)} aria-hidden />
+      )}
+
+      <aside
+        id="workspace-menu"
+        className={`fixed inset-y-0 left-0 z-40 w-72 max-w-[85vw] md:static md:z-20 md:w-64 md:max-w-none md:translate-x-0 bg-[#1e4d6b] text-[#d5e3ea] flex flex-col justify-between border-r border-[#173e56] shrink-0 motion-safe:transition-transform motion-safe:duration-300 ${
+          menuOpen ? 'translate-x-0 shadow-2xl' : '-translate-x-full'
+        }`}
+        aria-label={`${sectionLabel} navigation`}
+      >
+        <div className="min-h-0 overflow-y-auto b3-scroll">
           <div className="p-4 flex items-center gap-3 border-b border-[#173e56]">
             <BrandLogo className="h-10 w-10" />
-            <div className="min-w-0">
-              <h1 className="text-base font-semibold text-[#f3efe6] tracking-tight truncate">BHARAT 3D</h1>
+            <div className="min-w-0 flex-1">
+              <div className="text-base font-semibold text-[#f3efe6] tracking-tight truncate">BHARAT 3D</div>
               <p className="text-[10px] text-[#8fb4c9] font-medium leading-snug truncate">{portalSubtitle}</p>
             </div>
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={() => setMenuOpen(false)}
+              className="md:hidden p-1.5 rounded-sm text-[#8fb4c9] hover:text-white hover:bg-[#173e56]"
+              aria-label="Close the menu"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
 
           <nav ref={navRef} className="b3-nav py-3 px-2">
@@ -92,7 +135,8 @@ export function WorkspaceShell({
                         key={item.to}
                         to={item.to}
                         data-active={active}
-                        className={`flex items-center gap-3 px-3 py-2.5 rounded-sm text-xs font-medium transition-colors duration-300 border-l-[3px] border-transparent pl-[9px] ${
+                        aria-current={active ? 'page' : undefined}
+                        className={`flex items-center gap-3 px-3 py-2.5 rounded-sm text-xs font-medium transition-colors duration-300 border-l-[3px] border-transparent pl-[9px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8fd0c8]/70 ${
                           active ? 'text-[#8fd0c8] font-semibold' : 'text-[#d5e3ea] hover:text-white hover:bg-[#173e56]/50'
                         }`}
                       >
@@ -111,7 +155,7 @@ export function WorkspaceShell({
         </div>
 
         <div className="p-3 bg-[#173e56] border-t border-[#2d6484]">
-          <div className="-mx-1.5 -mt-1.5 mb-2.5 pb-2.5 border-b border-[#2d6484]">
+          <div className="mb-2.5 pb-2.5 border-b border-[#2d6484]">
             <SidebarOverviewCard />
           </div>
           <div className="flex items-center justify-between gap-2">
@@ -126,8 +170,9 @@ export function WorkspaceShell({
             </div>
             <button
               onClick={handleLogout}
-              className="p-1.5 rounded-sm text-[#8fb4c9] hover:text-[#fde8e6] hover:bg-[#1e4d6b] transition-colors shrink-0"
-              title="Logout"
+              className="p-1.5 rounded-sm text-[#8fb4c9] hover:text-[#fde8e6] hover:bg-[#1e4d6b] transition-colors shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8fd0c8]/70"
+              title="Sign out"
+              aria-label="Sign out"
               type="button"
             >
               <LogOut className="w-4 h-4" />
@@ -136,9 +181,31 @@ export function WorkspaceShell({
         </div>
       </aside>
 
-      <main ref={mainRef} className="flex-1 flex flex-col h-full overflow-y-auto overflow-x-hidden bg-[#f3efe6] min-w-0 b3-scroll">
-        <WorkspacePageTransition />
-      </main>
+      <div className="flex-1 flex flex-col min-w-0">
+        {/* phones and small tablets: a slim bar with the menu button instead of the sidebar */}
+        <header className="md:hidden h-14 shrink-0 bg-[#1e4d6b] text-[#f3efe6] flex items-center gap-3 px-3 border-b border-[#173e56]">
+          <button
+            ref={menuButtonRef}
+            type="button"
+            onClick={() => setMenuOpen(true)}
+            className="p-2 -ml-1 rounded-sm text-[#d5e3ea] hover:text-white hover:bg-[#173e56]"
+            aria-label="Open the menu"
+            aria-expanded={menuOpen}
+            aria-controls="workspace-menu"
+          >
+            <Menu className="w-5 h-5" />
+          </button>
+          <BrandLogo className="h-8 w-8" />
+          <div className="min-w-0">
+            <div className="text-sm font-semibold leading-tight truncate">BHARAT 3D</div>
+            <div className="text-[10px] text-[#8fb4c9] leading-tight truncate">{portalSubtitle}</div>
+          </div>
+        </header>
+
+        <main ref={mainRef} className="flex-1 flex flex-col min-h-0 overflow-y-auto overflow-x-hidden bg-[#f3efe6] min-w-0 b3-scroll">
+          <WorkspacePageTransition />
+        </main>
+      </div>
     </div>
   );
 }

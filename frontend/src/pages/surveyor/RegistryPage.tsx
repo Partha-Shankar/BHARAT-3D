@@ -8,6 +8,7 @@ import type { RegistryHit } from '../../world/sceneSpec';
 import { AreaSelect, EmptyState, Page, PageHeader, StatTile, fmtWhen, placeOf, useScenes } from '../../survey/ui';
 import { Segmented } from '../../world/ui';
 import { idTypo, issuedId, parseId, ppmToPct, statusOf, USAGE_CLASS } from '../../survey/norms';
+import { useDebounced } from '../../hooks/useDebounced';
 
 const AXIOMS: Record<string, string> = {
   axiom1_closed_solid: 'Axiom 1 · closed solid, positive volume',
@@ -52,11 +53,6 @@ const IdAnatomy: React.FC<{ id: string; compact?: boolean }> = ({ id, compact })
   );
 };
 
-const useDebounced = <T,>(v: T, ms = 250) => {
-  const [d, setD] = useState(v);
-  useEffect(() => { const t = setTimeout(() => setD(v), ms); return () => clearTimeout(t); }, [v, ms]);
-  return d;
-};
 
 type View = 'register' | 'lifecycle' | 'integrity';
 

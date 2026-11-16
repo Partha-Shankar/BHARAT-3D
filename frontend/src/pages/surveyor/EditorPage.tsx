@@ -21,7 +21,7 @@ export const EditorPage: React.FC = () => {
   return (
     <Page wide>
       <PageHeader eyebrow="Review & correct" title="3D editor"
-        lead="Correct the generated model where the open data is wrong or out of date. After every edit the floor plans, 3D ULPINs and compliance findings are recomputed, and the change is appended to the activity log."
+        lead="Correct the generated model where the open data is wrong or out of date. After every edit the floor plans, 3D ULPINs and compliance findings are recomputed. Every edit is recorded and can be undone."
         actions={<button className="b3-btn b3-btn-primary" onClick={() => navigate('/surveyor/area')}><Plus className="w-4 h-4" /> New survey</button>} />
 
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3 b3-stagger">

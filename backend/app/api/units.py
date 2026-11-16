@@ -1,9 +1,8 @@
 import os
 import json
-from typing import List, Optional, Any
-from fastapi import APIRouter, Depends, HTTPException, Query, Response
+from typing import Optional
+from fastapi import APIRouter, Depends, Query, Response
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
 from app.core import access
 from app.core.database import get_db
 from app.core.deps import get_current_user

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { DatasetManifest } from '../world/sceneSpec';
+import type { DatasetManifest, FileInspection } from '../world/sceneSpec';
 
 /**
  * The survey being prepared: the polygon the surveyor drew, its place name, and the datasets attached to it in the
@@ -9,7 +9,9 @@ export type SlotState = {
   status: 'idle' | 'uploading' | 'validating' | 'ready' | 'error';
   progress: number; // 0–100 while uploading
   file?: { name: string; size: number; sample: boolean };
-  checks: string[]; // validation lines shown once ready
+  checks: string[]; // validation lines shown once ready (for an own file: facts the server read from it)
+  /** what the server read from an own file: format, header facts, warnings, the reader that processes it */
+  inspection?: FileInspection;
   error?: string;
 };
 

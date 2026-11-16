@@ -1,5 +1,5 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
-import { getToken, removeToken, removeUser } from './auth';
+import { getToken } from './auth';
 import { sessionId } from './track';
 import {
   busyEstimate, checkNow, ensureAwake, isLimited, limitMessage, markLimited, nextMonthStartUtc, noteServerOk, retryWake,
@@ -27,6 +27,12 @@ const MAX_RETRIES = 2;
 const ACTION_BUDGET_MS = 200_000; // one action never waits longer than this in total, however many retries
 export const SERVER_ASLEEP = 'ERR_SERVER_ASLEEP';
 export const SERVER_BUSY = 'ERR_SERVER_BUSY'; // a free-plan limit was reached; the message says when to come back
+export const OFFLINE = 'ERR_OFFLINE'; // this device has no internet connection: nothing to do with the server
+export const OFFLINE_MESSAGE = 'You are offline. Check your internet connection, then try again.';
+/** Fired on window when the server rejects the current session (expired or invalid); App sends the visitor to sign in. */
+export const SESSION_ENDED_EVENT = 'b3d:session-ended';
+
+const isOffline = () => typeof navigator !== 'undefined' && navigator.onLine === false;
 
 /** Calls that are safe to send again when it is unclear whether the first attempt reached the server. */
 const idempotent = (c: Cfg) => (c.method || 'get').toLowerCase() === 'get'
@@ -49,6 +55,10 @@ api.interceptors.request.use(
       c.headers.Authorization = `Bearer ${token}`;
     }
     if (c.headers) c.headers['X-B3D-Session'] = sessionId(); // ties requests to the visit in analytics
+    if (!EDGE_ONLY.test(c.url || '') && isOffline()) {
+      // No connection on this device: say so at once instead of starting a server wake-up countdown.
+      throw new AxiosError(OFFLINE_MESSAGE, OFFLINE, c);
+    }
     if (!EDGE_ONLY.test(c.url || '')) {
       // While the server is starting, hold new calls instead of letting them fail; they go out when it answers.
       // If we had given up, doing something again counts as "try again". If the wait gives up, the call is not sent.
@@ -93,11 +103,22 @@ api.interceptors.response.use(
     settle(c);
     const status = error?.response?.status;
     const url: string = c?.url || '';
-    // An expired or invalid session sends the user back to sign in (login failures are handled by the form).
-    if (status === 401 && !url.includes('/auth/login') && window.location.pathname !== '/login') {
-      removeToken();
-      removeUser();
-      window.location.assign('/login');
+    if (error?.code === OFFLINE) return Promise.reject(error);
+    // An expired or invalid session sends the user back to sign in (login failures are handled by the form). Only
+    // when the rejected token is still the current one: a late answer to a request sent with an older token must
+    // never sign out a session that started since.
+    if (status === 401 && !url.includes('/auth/login')) {
+      const sent = String(c?.headers?.Authorization ?? '').replace(/^Bearer\s+/i, '');
+      const current = getToken();
+      if (current && sent === current) {
+        window.dispatchEvent(new CustomEvent(SESSION_ENDED_EVENT));
+      }
+      return Promise.reject(error);
+    }
+    // No answer because this device went offline: report that, without waking the server.
+    if (!error?.response && isOffline()) {
+      error.code = OFFLINE;
+      error.message = OFFLINE_MESSAGE;
       return Promise.reject(error);
     }
     // 502/503: the server was not running, so the call never reached it and can always be repeated.
@@ -142,10 +163,15 @@ api.interceptors.response.use(
 let woken = false;
 export function wakeApi() {
   if (woken || typeof fetch === 'undefined') return;
+  if (isOffline()) {
+    // Nothing can reach the server now; start as soon as the connection is back.
+    window.addEventListener('online', () => wakeApi(), { once: true });
+    return;
+  }
   woken = true;
   const url = import.meta.env.VITE_API_URL ? `${String(import.meta.env.VITE_API_URL).replace(/\/$/, '')}/health` : '/api/__wake';
   fetch(url, { cache: 'no-store' }).catch(() => undefined);
-  ensureAwake(); // if the server is asleep, the countdown appears while the visitor reads or types
+  ensureAwake(); // if the server is asleep, it starts while the visitor reads or types
 }
 
 export default api;

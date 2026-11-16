@@ -360,7 +360,10 @@ export function buildDecks(spec: SceneSpec, sampler: TerrainSampler) {
 // ----------------------------------------------------------------------------- trees
 /** Tree positions: OSM tree nodes plus vegetation detected in the satellite image (green-dominant pixels). */
 export function treePositions(spec: SceneSpec, image: HTMLImageElement | null, maxTrees = 1400): XY[] {
-  const pts: XY[] = spec.trees.map((t) => [t.x, t.y]);
+  const planted: XY[] = spec.trees.filter((t) => t.source === 'edited').map((t) => [t.x, t.y]);
+  const pts: XY[] = spec.trees.filter((t) => t.source !== 'edited').map((t) => [t.x, t.y]);
+  const removedZones = spec.trees_removed ?? [];
+  const removed = (x: number, y: number) => removedZones.some((z) => Math.hypot(x - z.x, y - z.y) <= z.r);
   const [ex0, ey0, ex1, ey1] = spec.terrain.extent;
   // spatial hash of footprints so trees never sprout through roofs
   const cell = 25;
@@ -424,9 +427,11 @@ export function treePositions(spec: SceneSpec, image: HTMLImageElement | null, m
       }
     }
   }
-  const filtered = pts.filter(([x, y]) => x > ex0 && x < ex1 && y > ey0 && y < ey1 && !blocked(x, y));
+  const filtered = pts.filter(([x, y]) => x > ex0 && x < ex1 && y > ey0 && y < ey1 && !blocked(x, y) && !removed(x, y));
   const thinned = filtered.length > maxTrees ? filtered.filter((_, i) => i % Math.ceil(filtered.length / maxTrees) === 0) : filtered;
-  return thinned.filter(([x, y]) => !nearRoad(x, y));
+  // Trees a surveyor planted stay exactly where they were placed (street trees may stand beside the carriageway).
+  const ownTrees = planted.filter(([x, y]) => x > ex0 && x < ex1 && y > ey0 && y < ey1 && !blocked(x, y));
+  return [...thinned.filter(([x, y]) => !nearRoad(x, y)), ...ownTrees];
 }
 
 export function buildTrees(points: XY[], sampler: TerrainSampler, leaf: THREE.Texture) {

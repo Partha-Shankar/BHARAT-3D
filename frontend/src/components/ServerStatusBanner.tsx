@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { create } from 'zustand';
 import { CalendarClock, CheckCircle2, Clock3, CloudOff, RefreshCw, Server, X } from 'lucide-react';
 import { checkNow, comeBack, isLimited, secondsLeft, useServerStatus } from '../lib/serverStatus';
 import { Thinking } from '../survey/Thinking';
@@ -11,22 +13,32 @@ const STEPS = [
   'Almost ready…',
 ];
 
-/** Centred at the top with a 12 px gutter on phones. Positioning lives here, not on the animated element, because the
- *  pop-in animation sets `transform` and would cancel a translate-based centring. */
+/**
+ * Pages where the banner never shows: reading pages wake the server silently in the background, and the sign-in page
+ * shows the same status inside its form, where it cannot cover anything.
+ */
+const QUIET_PATHS = /^\/(?:$|welcome$|privacy$|terms$|login$)/;
+
+/** Whether the banner is on screen, so other overlays (tips) can wait for it instead of stacking on top of it. */
+export const useServerBannerShowing = create<{ showing: boolean }>(() => ({ showing: false }));
+
+/** Bottom centre, with a 12 px gutter on phones: the usual place for background status, away from page headings. */
 const Shell: React.FC<{ children: React.ReactNode; wide?: boolean }> = ({ children, wide }) => (
-  <div className="fixed inset-x-0 top-3 z-[1000] flex justify-center px-3 pointer-events-none" role="status" aria-live="polite">
+  <div className="fixed inset-x-0 bottom-3 sm:bottom-5 z-[1000] flex justify-center px-3 pointer-events-none" role="status" aria-live="polite">
     <div className={`pointer-events-auto b3-pop ${wide ? 'w-full max-w-[440px]' : ''}`}>{children}</div>
   </div>
 );
 
 /**
  * Shown while the free API server wakes up: a small pill when nobody is waiting, a card with a countdown when an
- * action (sign-in, opening an area, generating) is waiting; the waiting action continues by itself when the server
+ * action (opening an area, generating, saving) is waiting; the waiting action continues by itself when the server
  * answers. When the server cannot be used for a while (it did not start, too much traffic, or a free monthly limit),
  * a card says so in plain words with the estimated time to come back, and the page keeps checking in the background.
  */
 export const ServerStatusBanner: React.FC = () => {
   const s = useServerStatus();
+  const { pathname } = useLocation();
+  const quiet = QUIET_PATHS.test(pathname);
   const [now, setNow] = useState(Date.now());
   const [hidden, setHidden] = useState(false);
   const [showReady, setShowReady] = useState(false);
@@ -49,13 +61,19 @@ export const ServerStatusBanner: React.FC = () => {
     return () => window.clearTimeout(t);
   }, [s.readyAt]);
 
-  if (!active && !showReady) return null;
+  const visible = !quiet && (active || showReady);
+  useEffect(() => {
+    if (useServerBannerShowing.getState().showing !== visible) useServerBannerShowing.setState({ showing: visible });
+  }, [visible]);
+  useEffect(() => () => useServerBannerShowing.setState({ showing: false }), []);
+
+  if (!visible) return null;
 
   if (!active && showReady) {
     return (
       <Shell>
         <div className="flex items-center gap-2 rounded-full bg-[#15803D] text-white text-[12.5px] font-semibold px-4 py-2 shadow-lg">
-          <CheckCircle2 className="w-4 h-4" /> {s.readyAfterDown ? 'The server is back — please try again' : 'Server ready — continuing'}
+          <CheckCircle2 className="w-4 h-4" /> {s.readyAfterDown ? 'The server is back. Please try again.' : 'Server ready, continuing'}
         </div>
       </Shell>
     );
@@ -75,7 +93,7 @@ export const ServerStatusBanner: React.FC = () => {
     if (hidden) {
       return (
         <Shell>
-          <button onClick={() => setHidden(false)} className="flex items-center gap-2 rounded-full bg-[#7F1D1D] text-white text-[12px] pl-3 pr-4 py-1.5 shadow-lg">
+          <button type="button" onClick={() => setHidden(false)} className="flex items-center gap-2 rounded-full bg-[#7F1D1D] text-white text-[12px] pl-3 pr-4 py-1.5 shadow-lg">
             <Clock3 className="w-3.5 h-3.5" /> Server busy · come back {when.replace(/ \(.*\)$/, '')}
           </button>
         </Shell>
@@ -91,7 +109,7 @@ export const ServerStatusBanner: React.FC = () => {
             <div className="min-w-0 flex-1">
               <div className="flex items-start justify-between gap-2">
                 <div className="font-semibold text-[14px] text-[#7C2D12]">{title}</div>
-                <button onClick={() => setHidden(true)} className="text-[#C2410C]/60 hover:text-[#7C2D12] -mt-0.5" aria-label="Hide">
+                <button type="button" onClick={() => setHidden(true)} className="text-[#C2410C]/60 hover:text-[#7C2D12] -mt-0.5" aria-label="Make this message smaller">
                   <X className="w-4 h-4" />
                 </button>
               </div>
@@ -109,7 +127,7 @@ export const ServerStatusBanner: React.FC = () => {
                   </div>
                 )}
               </div>
-              <button className="b3-btn mt-3 !py-1.5 !bg-white" disabled={checking}
+              <button type="button" className="b3-btn mt-3 !py-1.5 !bg-white" disabled={checking}
                 onClick={async () => { setChecking(true); try { await checkNow(); } finally { setChecking(false); setNow(Date.now()); } }}>
                 <RefreshCw className={`w-4 h-4 ${checking ? 'animate-spin' : ''}`} /> {checking ? 'Checking…' : 'Check now'}
               </button>
@@ -133,11 +151,11 @@ export const ServerStatusBanner: React.FC = () => {
   if (!expanded) {
     return (
       <Shell>
-        <button onClick={() => setHidden(false)} title="The server is waking up"
+        <button type="button" onClick={() => setHidden(false)} title="The server is waking up"
           className="flex items-center gap-2.5 rounded-full bg-[#0B2545]/95 text-white text-[12px] pl-3 pr-4 py-1.5 shadow-lg backdrop-blur">
           <span className="b3-think-dot" style={{ background: '#F2C46A' }} aria-hidden />
           <span>Starting the server · {countdown}</span>
-          <span className="w-16 h-1 rounded-full bg-white/20 overflow-hidden">
+          <span className="w-16 h-1 rounded-full bg-white/20 overflow-hidden" aria-hidden>
             <span className="block h-full bg-[#F2C46A] transition-[width] duration-300 ease-linear" style={{ width: `${pct}%` }} />
           </span>
         </button>
@@ -157,23 +175,23 @@ export const ServerStatusBanner: React.FC = () => {
               <div className="font-semibold text-[14px] text-[#0B2545]">
                 {longOvertime ? 'Taking longer than usual' : overtime ? 'Almost there…' : 'Waking up the server'}
               </div>
-              <button onClick={() => setHidden(true)} className="text-[#94A3B8] hover:text-[#334155] -mt-0.5" aria-label="Hide">
+              <button type="button" onClick={() => setHidden(true)} className="text-[#94A3B8] hover:text-[#334155] -mt-0.5" aria-label="Make this message smaller">
                 <X className="w-4 h-4" />
               </button>
             </div>
             {longOvertime ? (
               <p className="text-[12.5px] text-[#475569] mt-1 leading-relaxed">
                 The free server is slower to start than usual today. <b>Your request is still waiting</b> and will
-                continue by itself — no need to click again.
+                continue by itself, no need to click again.
               </p>
             ) : (
               <p className="text-[12.5px] text-[#475569] mt-1 leading-relaxed">
                 BHARAT 3D runs on a free server that sleeps when nobody is using it. It is starting now and
-                <b> your request will continue by itself</b> — no need to click again.
+                <b> your request will continue by itself</b>, no need to click again.
               </p>
             )}
             <div className="flex items-baseline justify-between mt-3">
-              <Thinking messages={overtime ? ['Taking a little longer than usual…', 'Still starting — hang on…'] : STEPS} every={3200} className="text-[12px]" />
+              <Thinking messages={overtime ? ['Taking a little longer than usual…', 'Still starting, hang on…'] : STEPS} every={3200} className="text-[12px]" />
               <span className="font-mono text-[13px] font-semibold text-[#0B2545] shrink-0 ml-2">
                 {overtime ? `+${Math.floor(-left)} s` : `${Math.ceil(left)} s`}
               </span>

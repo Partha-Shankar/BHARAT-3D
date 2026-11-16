@@ -732,7 +732,7 @@ export class WorldViewer {
     if (!fn) this.showDraft([]);
   }
 
-  showDraft(points: XY[], opts: { closed?: boolean; depth?: number; color?: string } = {}) {
+  showDraft(points: XY[], opts: { closed?: boolean; depth?: number; color?: string; dots?: boolean } = {}) {
     if (!this.loaded) return; // effects can fire before the world finishes loading
     this.draft.clear();
     if (!points.length) return;
@@ -746,7 +746,7 @@ export class WorldViewer {
       dot.renderOrder = 20;
       this.draft.add(dot);
     });
-    if (pts.length > 1) {
+    if (pts.length > 1 && !opts.dots) {
       const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color, depthTest: false }));
       line.renderOrder = 20;
       this.draft.add(line);
