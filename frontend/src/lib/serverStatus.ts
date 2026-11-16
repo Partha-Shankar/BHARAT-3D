@@ -307,6 +307,13 @@ export async function checkNow(): Promise<boolean> {
   return applyProbe(r);
 }
 
+/** The heading for a limit or outage (the banner and the sign-in page use the same words). */
+export function limitTitle(state: ServerState): string {
+  return state === 'suspended' ? 'BHARAT 3D has reached its free monthly limit'
+    : state === 'busy' ? 'BHARAT 3D is getting too much traffic right now'
+      : 'The server is overloaded right now';
+}
+
 /** One sentence for the visitor about the current limit or outage, with the estimated time to come back. */
 export function limitMessage(s: Pick<ServerStatus, 'state' | 'retryAt' | 'limit'>, now = Date.now()): string {
   const when = s.retryAt ? comeBack(s.retryAt, now) : 'in a few minutes';

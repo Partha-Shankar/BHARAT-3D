@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, CalendarClock, CheckCircle2, CloudOff, Info, Loader2, RefreshCw, WifiOff } from 'lucide-react';
 import { useAuthStore } from '../stores/authStore';
 import { BrandLogo } from '../components/layout/BrandLogo';
-import { checkNow, comeBack, isLimited, limitMessage, retryWake, secondsLeft, useServerStatus } from '../lib/serverStatus';
+import { checkNow, comeBack, isLimited, limitMessage, limitTitle, retryWake, secondsLeft, useServerStatus } from '../lib/serverStatus';
 import { OFFLINE, OFFLINE_MESSAGE, SERVER_ASLEEP, SERVER_BUSY } from '../lib/api';
 import { ROLE_LABEL, allowedPath, homeFor, safeNext } from '../lib/roles';
 import type { LoginState } from '../components/ProtectedRoute';
@@ -52,6 +52,11 @@ export const LoginPage: React.FC = () => {
   const [checking, setChecking] = useState(false);
   const [, tick] = useState(0);
   const passwordRef = useRef<HTMLInputElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  // A sign-in stopped by an outage or a limit continues by itself when the server is back.
+  const resumeRef = useRef(false);
+  const [resumePending, setResumePending] = useState(false);
+  const [backNote, setBackNote] = useState<string | null>(null);
 
   // Where to go after signing in: the page the visitor opened (route guard), or a ?next= link.
   const from = safeNext((location.state as LoginState | null)?.from) ?? safeNext(new URLSearchParams(location.search).get('next'));
@@ -69,6 +74,24 @@ export const LoginPage: React.FC = () => {
     return () => window.clearTimeout(t);
   }, [isLoading]);
 
+  useEffect(() => { // the server answers again: continue a sign-in an outage stopped, or say it is back
+    if (!server.readyAt) return;
+    if (resumeRef.current) { // also after "Check now", which goes through a normal wake-up first
+      resumeRef.current = false;
+      setResumePending(false);
+      setError('');
+      setBackNote('The server is back. Signing you in…');
+      formRef.current?.requestSubmit();
+    } else if (server.readyAfterDown) {
+      setError('');
+      setBackNote('The server is back. You can sign in now.');
+    } else {
+      return;
+    }
+    const t = window.setTimeout(() => setBackNote(null), 6000);
+    return () => window.clearTimeout(t);
+  }, [server.readyAt]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const left = waking ? secondsLeft(server) : 0;
   const elapsed = waking && server.since ? (Date.now() - server.since) / 1000 : 0;
   const pct = waking ? Math.min(96, (elapsed / Math.max(server.estimateS, 1)) * 100) : 0;
@@ -82,6 +105,13 @@ export const LoginPage: React.FC = () => {
       resetTips(); // a new sign-in shows the tips again
       navigate(from ? allowedPath(signedIn.role, from) : homeFor(signedIn.role), { replace: true });
     } catch (err: any) {
+      const st = useServerStatus.getState().state;
+      if (err?.code !== OFFLINE && (st === 'down' || isLimited(st))) {
+        // The orange card below explains the outage and when to come back; the sign-in resumes when it is over.
+        resumeRef.current = true;
+        setResumePending(true);
+        return;
+      }
       setError(signInError(err));
       if (err?.response?.status === 401) {
         window.setTimeout(() => passwordRef.current?.select(), 0);
@@ -178,7 +208,7 @@ export const LoginPage: React.FC = () => {
             )}
           </div>
 
-          <form onSubmit={handleLogin} className="mt-6 space-y-4" noValidate={false}>
+          <form ref={formRef} onSubmit={handleLogin} className="mt-6 space-y-4">
             <label className="block">
               <span className="block text-sm font-semibold text-[#1b3344] mb-1.5">Email</span>
               <input
@@ -213,8 +243,13 @@ export const LoginPage: React.FC = () => {
               {buttonText}
             </button>
 
-            {/* Server status, inline so it never covers the form: waking up, or not available for a while. */}
-            <div aria-live="polite">
+            {/* Server status, inline so it never covers the form: waking up, not available for a while, or back. */}
+            <div role="status">
+              {backNote && !waking && !stopped && (
+                <div className="rounded-sm border border-[#b7cfcb] bg-[#eef6f5] px-3.5 py-2.5 text-[13px] text-[#18655e] flex items-center gap-2 b3-fade">
+                  <CheckCircle2 className="w-4 h-4 shrink-0" /> {backNote}
+                </div>
+              )}
               {waking && (
                 <div className="rounded-sm border border-[#d6e4e2] bg-white/70 px-3.5 py-3 b3-fade">
                   <div className="flex items-baseline justify-between gap-3">
@@ -239,8 +274,13 @@ export const LoginPage: React.FC = () => {
                   <div className="flex gap-2.5">
                     {server.state === 'suspended' ? <CalendarClock className="w-4 h-4 mt-0.5 shrink-0 text-[#C2410C]" /> : <CloudOff className="w-4 h-4 mt-0.5 shrink-0 text-[#C2410C]" />}
                     <div className="min-w-0">
-                      <p className="text-[13px] font-semibold">{limitMessage(server)}</p>
-                      <p className="text-[12px] text-[#9A3412]/85 mt-1">This page keeps checking and tells you when the server is ready{server.retryAt ? ` (${comeBack(server.retryAt)})` : ''}.</p>
+                      <p className="text-[13px] font-semibold">{limitTitle(server.state)}</p>
+                      <p className="text-[12.5px] mt-0.5">Please come back {server.retryAt ? comeBack(server.retryAt) : 'in a few minutes'}.</p>
+                      <p className="text-[12px] text-[#9A3412]/85 mt-1">
+                        {resumePending
+                          ? 'This page keeps checking and signs you in by itself as soon as the server is ready.'
+                          : 'This page keeps checking and tells you when the server is ready.'}
+                      </p>
                       <button type="button" disabled={checking}
                         onClick={async () => { setChecking(true); try { await (server.state === 'down' ? retryWake() : checkNow()); } finally { setChecking(false); } }}
                         className="mt-2 inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-[#9A3412] border border-[#FDBA74] bg-white rounded-sm px-2.5 py-1 hover:bg-[#FFEDD5] disabled:opacity-60">

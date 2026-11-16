@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { create } from 'zustand';
 import { CalendarClock, CheckCircle2, Clock3, CloudOff, RefreshCw, Server, X } from 'lucide-react';
-import { checkNow, comeBack, isLimited, secondsLeft, useServerStatus } from '../lib/serverStatus';
+import { checkNow, comeBack, isLimited, limitTitle, secondsLeft, useServerStatus } from '../lib/serverStatus';
 import { Thinking } from '../survey/Thinking';
 
 const STEPS = [
@@ -83,9 +83,7 @@ export const ServerStatusBanner: React.FC = () => {
   if (stopped) {
     const when = s.retryAt ? comeBack(s.retryAt, now) : 'in a few minutes';
     const monthly = s.state === 'suspended';
-    const title = monthly ? 'BHARAT 3D has reached its free monthly limit'
-      : s.state === 'busy' ? 'BHARAT 3D is getting too much traffic right now'
-        : 'The server is overloaded right now';
+    const title = limitTitle(s.state);
     const reason = monthly ? 'The free server has used up this month’s hours, so the host has paused it.'
       : s.state === 'busy' ? 'Too many requests reached the free server at once, so it has paused new ones for a while.'
         : 'The free server did not start in time (the host is overloaded). Your last action was stopped.';
