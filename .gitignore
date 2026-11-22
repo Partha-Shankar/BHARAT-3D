@@ -45,6 +45,7 @@ Thumbs.db
 
 # Chat context & status archives
 context/
+project-status/
 PROJECT_FULL_STATUS_AND_CHAT_CONTEXT.md
 *CHAT_CONTEXT*.md
 *PROJECT_CONTEXT*.md

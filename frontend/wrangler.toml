@@ -5,7 +5,7 @@ pages_build_output_dir = "dist"
 
 # Backend the same-origin /api proxy forwards to (Render web service `bharat-3d-api`, Singapore).
 [vars]
-BACKEND_ORIGIN = "https://bharat-3d-api.onrender.com"
+BACKEND_ORIGIN = "https://bharat-3d-api-qp6y.onrender.com"
 
 # Generated areas, saved by the backend after every change so they survive backend restarts.
 [[r2_buckets]]

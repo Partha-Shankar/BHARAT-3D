@@ -28,7 +28,7 @@ jobs:
         run: |
           end=$(( $(date +%s) + 350*60 ))
           while [ "$(date +%s)" -lt "$end" ]; do
-            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-api.onrender.com/health || echo 000)
+            code=$(curl -s -o /dev/null -m 120 -w '%{http_code}' https://bharat-3d-api-qp6y.onrender.com/health || echo 000)
             echo "$(TZ=Asia/Kolkata date '+%H:%M IST') health $code"
             sleep 300
           done
